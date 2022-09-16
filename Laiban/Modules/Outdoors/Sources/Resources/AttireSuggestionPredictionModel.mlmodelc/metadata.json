@@ -1,0 +1,129 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "clothes",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "clothesProbability",
+        "shortDescription" : ""
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "Tomas Green",
+    "specificationVersion" : 1,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_pipelineClassifier",
+      "structure" : [
+        {
+          "name" : "MLModelType_featureVectorizer"
+        },
+        {
+          "name" : "MLModelType_treeEnsembleClassifier"
+        }
+      ]
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "temperature",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "humidity",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "dewPoint",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "windSpeed",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "windGustSpeed",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "windDirection",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "airPressure",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "totalPrecipitation",
+        "shortDescription" : ""
+      }
+    ],
+    "classLabels" : [
+      "fffffftttfffff",
+      "fffffftttftfff",
+      "fffttfffffttff",
+      "fffttfftfttfff",
+      "ffftttfffftfff",
+      "fttffffffftttt",
+      "fttfffftfftftt",
+      "fttffftttffftt",
+      "fttffftttftftt",
+      "fttfftfffffftt",
+      "fttfftfffftftt",
+      "fttttfffffttff",
+      "fttttfftfttfff",
+      "tfffftffffffff",
+      "tfffftfffftfff"
+    ],
+    "generatedClassName" : "AttireSuggestionPredictionModel",
+    "userDefinedMetadata" : {
+      "com.apple.createml.version" : "12.0.1",
+      "com.apple.createml.app.tag" : "78.6",
+      "com.apple.coreml.model.preview.type" : "tabularClassifier",
+      "com.apple.createml.app.version" : "3.0"
+    },
+    "method" : "predict"
+  }
+]

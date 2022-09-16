@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Monster-Prassel.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

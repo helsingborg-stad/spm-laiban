@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Monster-Nova-Kras.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

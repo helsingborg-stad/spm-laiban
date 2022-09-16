@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Monster-Textilia.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,260 @@
+{
+    "replace": [{
+        "match": " & ",
+        "replacement": " och "
+    },{
+        "match": "&",
+        "replacement": " och "
+    }],
+    "nonVeg": ["fisk", "torsk", "nötkött", "gris", "fläsk", "kött", "blod", "lax", "skinka", "kassler", "kyckling", "revben", "kebab", "msc-", "wienerkorv"],
+    "banned": ["grönsaksbuffé",
+        "msc-certifierad",
+        "msc-märkt",
+        "msc-certifierade",
+        "odlad",
+        "norsk",
+        "norkst",
+        "samt",
+        "goda",
+        "alternativ",
+        "hemlagad",
+        "klimatsmarta",
+        "klimatsmart",
+        "krämig",
+        "ekologiskt",
+        "nötkött",
+        "färsk",
+        "ekologiska",
+        "ekologisk",
+        "svensk",
+        "svenskt",
+        "svenska",
+        "vegetarisk",
+        "vegetariska",
+        "skinkråvara",
+        "skånsk",
+        "danskt",
+        "serveras",
+        "italiensk",
+        "italienska",
+        "råvaror",
+        "god",
+        "som",
+        "färska",
+        "en",
+        "med",
+        "på",
+        "och",
+        "samt",
+        "glacerade",
+        "sprödbakade",
+        "ugnsstekt",
+        "köttråvara",
+        "klassisk",
+        "gratinerad",
+        "nötfärs",
+        "råvara",
+        "marinerad",
+        "matig",
+        "skolavslutning"
+    ],
+    "meals": [{
+        "regex": "tacos",
+        "exclude": []
+    }, {
+        "regex": "\\S*\\snuggets",
+        "exclude": []
+    }, {
+        "regex": "\\S*filé",
+        "exclude": []
+    }, {
+        "regex": "\\S*-\\soch\\s\\S*",
+        "exclude": []
+    }, {
+        "regex": "potatis\\s(och|&)\\spurjolökssoppa",
+        "exclude": []
+    }, {
+        "regex": "chili\\s\\S*\\scarne",
+        "exclude": []
+    }, {
+        "regex": "pasta carbonara",
+        "exclude": ["pasta"]
+    }, {
+        "regex": "spagetti bolognese",
+        "exclude": []
+    }, {
+        "regex": "pasta bolognese",
+        "exclude": []
+    }, {
+        "regex": "korv stroganoff",
+        "exclude": []
+    }, {
+        "regex": "soja stroganoff",
+        "exclude": []
+    }, {
+        "regex": "pease stroganoff",
+        "exclude": []
+    }, {
+        "regex": "\\S*soppa",
+        "exclude": []
+    }, {
+        "regex": "indisk gryta",
+        "exclude": [],
+        "remove": ["tikka masala"]
+    }, {
+        "regex": "tikka masala",
+        "exclude": [],
+        "remove": ["indisk gryta","indisk","gryta"]
+    }, {
+        "regex": "\\S*pudding",
+        "exclude": []
+    }, {
+        "regex": "\\S*färs\\S*",
+        "exclude": []
+    }, {
+        "regex": "\\S*gratäng",
+        "exclude": []
+    }, {
+        "regex": "\\S+gryta",
+        "exclude": []
+    }, {
+        "regex": "\\S*gryta",
+        "exclude": []
+    }, {
+        "regex": "\\S*gröt",
+        "exclude": []
+    }, {
+        "regex": "\\S*snitzel",
+        "exclude": []
+    }, {
+        "regex": "\\S*pytt",
+        "exclude": []
+    }, {
+        "regex": "\\S*stuvning",
+        "exclude": []
+    }, {
+        "regex": "\\S*korv",
+        "exclude": []
+    }, {
+        "regex": "\\S*bullar",
+        "exclude": ["potatis"]
+    }],
+    "mains": [{
+        "name": "nugget",
+        "exclude": []
+    }, {
+        "name": "gratäng",
+        "exclude": []
+    }, {
+        "name": "gryta",
+        "exclude": []
+    }, {
+        "name": "omelett",
+        "exclude": []
+    }, {
+        "name": "marengo",
+        "exclude": []
+    }, {
+        "name": "lasagne",
+        "exclude": []
+    }, {
+        "name": "korv",
+        "exclude": []
+    }, {
+        "name": "falafel",
+        "exclude": []
+    }, {
+        "name": "bouletter",
+        "exclude": []
+    }, {
+        "name": "kebab",
+        "exclude": []
+    }, {
+        "name": "biff",
+        "exclude": []
+    }, {
+        "name": "carbonara",
+        "exclude": ["pasta"]
+    }, {
+        "name": "kalops",
+        "exclude": []
+    }, {
+        "name": "burgare",
+        "exclude": []
+    }, {
+        "name": "sallad",
+        "exclude": []
+    }, {
+        "name": "revben",
+        "exclude": []
+    }, {
+        "name": "quorn",
+        "exclude": []
+    }, {
+        "name": "medaljong",
+        "exclude": []
+    }, {
+        "name": "paj",
+        "exclude": []
+    }, {
+        "name": "torsk",
+        "exclude": []
+    }, {
+        "name": "lax",
+        "exclude": []
+    }, {
+        "name": "vegett",
+        "exclude": []
+    }, {
+        "name": "fisk",
+        "exclude": []
+    }, {
+        "name": "kyckling",
+        "exclude": []
+    }, {
+        "name": "gröt",
+        "exclude": []
+    }, {
+        "name": "snitzel",
+        "exclude": []
+    }, {
+        "name": "stroganoff",
+        "exclude": []
+    }, {
+        "name": "wok",
+        "exclude": []
+    }, {
+        "name": "soja",
+        "exclude": []
+    }, {
+        "name": "pease",
+        "exclude": []
+    }, {
+        "name": "oumph",
+        "exclude": []
+    }, {
+        "name": "köttbullar",
+        "exclude": []
+    }, {
+        "name": "kassler",
+        "exclude": []
+    }, {
+        "name": "pytt",
+        "exclude": []
+    }, {
+        "name": "stuvning",
+        "exclude": []
+    }],
+    "sides": ["risoni", "ris", "potatis", "pasta", "matvete", "tortilla", "nudlar", "bönor", "pannkaka", "spagetti", "plättar", "linser", "kött", "bacon", "skinka", "pommes", "couscous", "quinoa", "bulgur", "makaroner"],
+    "other": ["sås", "dressing", "bärmix", "sylt", "tzatziki", "lingon", "keso", "yoghurt"],
+    "deserts": [{
+        "regex": "\\S*kaka",
+        "exclude": ["pannkaka"]
+    }, {
+        "regex": "vanilj\\S*",
+        "exclude": []
+    }, {
+        "regex": "choklad",
+        "exclude": []
+    }]
+}
