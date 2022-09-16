@@ -35,11 +35,17 @@ public class FeedbackService: CTS<FeedbackServiceType, FeedbackStorageService>, 
     public func add(reaction: LBFeedbackReaction, category: FeedbackCategory, value: String) -> FeedbackValue {
         if let index = self.data.firstIndex(where: { v in v.value == value && v.date.today }) {
             self.data[index].add(reaction: reaction)
+            Task {
+                await save()
+            }
             return self.data[index]
         }
         var val = FeedbackValue(value: value, category: category)
         val.add(reaction: reaction)
         data.append(val)
+        Task {
+            await save()
+        }
         return val
     }
     
