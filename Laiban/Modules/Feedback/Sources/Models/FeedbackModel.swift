@@ -13,25 +13,25 @@ public enum FeedbackCategory: String, Codable, CaseIterable, Identifiable {
     public var id:String {
         return self.rawValue
     }
-    var title:String {
+    public var title:String {
         switch self {
         case .lunch: return "Lunch"
         case .activity: return "Aktiviteter"
         }
     }
-    var timeVisibleAfterReported:TimeInterval {
+    public var timeVisibleAfterReported:TimeInterval {
         switch self {
         case .lunch: return 8
         case .activity: return 8
         }
     }
-    var timeHiddenAfterReported:TimeInterval {
+    public var timeHiddenAfterReported:TimeInterval {
         switch self {
         case .lunch: return 8
         case .activity: return 8
         }
     }
-    var rimColor:Color {
+    public var rimColor:Color {
         switch self {
         case .lunch: return Color("RimColorFood",bundle:LBBundle)
         case .activity: return Color("RimColorActivities",bundle:LBBundle)
@@ -40,10 +40,10 @@ public enum FeedbackCategory: String, Codable, CaseIterable, Identifiable {
 }
 
 public struct FeedbackDataPoint: Codable {
-    var id:String = UUID().uuidString
-    var date:Date = Date()
-    var reaction:Int
-    var reported:Bool = false
+    public private(set) var id:String = UUID().uuidString
+    public private(set) var date:Date = Date()
+    public private(set) var reaction:Int
+    public private(set) var reported:Bool = false
     public init(id:String = UUID().uuidString, date:Date = Date(), reaction:Int, reported:Bool = false) {
         self.id = id
         self.date = date
@@ -54,10 +54,10 @@ public struct FeedbackDataPoint: Codable {
 
 public struct FeedbackValue: Codable, Identifiable {
     public var id: String = UUID().uuidString
-    var date: Date = Date()
-    var value: String
-    var category: FeedbackCategory
-    var data: [FeedbackDataPoint] = []
+    public private(set) var date: Date = Date()
+    public private(set) var value: String
+    public private(set) var category: FeedbackCategory
+    public private(set) var data: [FeedbackDataPoint] = []
     
     public init(id:String, date:Date,value:String,category:FeedbackCategory, data:[FeedbackDataPoint]) {
         self.id = id
@@ -75,7 +75,7 @@ public struct FeedbackValue: Codable, Identifiable {
         self.data.append(FeedbackDataPoint(reaction: reaction.rawValue))
     }
     
-    static func string(for date:Date) -> String {
+    public static func string(for date:Date) -> String {
         let f = DateFormatter()
         f.doesRelativeDateFormatting = true
         f.dateStyle = .medium
@@ -83,16 +83,16 @@ public struct FeedbackValue: Codable, Identifiable {
         return f.string(from: date)
     }
     
-    func sum(_ reaction: LBFeedbackReaction) -> Int {
+    public func sum(_ reaction: LBFeedbackReaction) -> Int {
         self.data.filter { d in d.reaction == reaction.rawValue }.count
     }
     
-    static func numbers(for value: FeedbackValue, reaction: LBFeedbackReaction) -> CGFloat {
+    public static func numbers(for value: FeedbackValue, reaction: LBFeedbackReaction) -> CGFloat {
         let s = CGFloat(value.sum(reaction))
         return s/CGFloat(value.data.count)
     }
     
-    static func graphData(from value: FeedbackValue) -> [LBGraphItem] {
+    public static func graphData(from value: FeedbackValue) -> [LBGraphItem] {
         var arr = [LBGraphItem]()
         for reaction in LBFeedbackReaction.allCases.reversed() {
             arr.append(LBGraphItem(color: Color("FeedbackColor\(reaction.rawValue)"), emoji: reaction.emoji, percentage: self.numbers(for: value, reaction: reaction)))

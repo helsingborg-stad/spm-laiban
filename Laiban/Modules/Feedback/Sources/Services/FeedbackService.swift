@@ -32,14 +32,15 @@ public class FeedbackService: CTS<FeedbackServiceType, FeedbackStorageService>, 
             storageOptions: .init(filename: "Feedback", foldername: "FeedbackService", bundleFilename:"Feedbacks", bundle:.module))
     }
     
-    public func add(reaction: LBFeedbackReaction, category: FeedbackCategory, value: String) {        
+    public func add(reaction: LBFeedbackReaction, category: FeedbackCategory, value: String) -> FeedbackValue {
         if let index = self.data.firstIndex(where: { v in v.value == value && v.date.today }) {
             self.data[index].add(reaction: reaction)
-        } else {
-            var val = FeedbackValue(value: value, category: category)
-            val.add(reaction: reaction)
-            data.append(val)
+            return self.data[index]
         }
+        var val = FeedbackValue(value: value, category: category)
+        val.add(reaction: reaction)
+        data.append(val)
+        return val
     }
     
     public func values(in category: FeedbackCategory) -> [FeedbackValue] {
