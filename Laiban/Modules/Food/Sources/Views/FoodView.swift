@@ -84,6 +84,7 @@ public struct FoodView: View {
                     .onReceive(properties.actionBarNotifier) { action in
                         if action == .back {
                             showStatistics = false
+                            viewState.actionButtons([.languages,.home], for: .food)
                         }
                     }
             } else {
@@ -241,12 +242,9 @@ struct FoodView_Previews: PreviewProvider {
         s.setStaistics(FoodService.Statistics(rating1: 10, rating2: 10, rating3: 20, rating4: 10, food: "Makaroner och korv"))
         return s
     }()
-    static let viewState = LBViewState()
     static var previews: some View {
-        LBFullscreenContainer { _ in
+        LBPreviewContainer(identity:.food) {
             FoodView(service: service)
         }
-        .attachPreviewEnvironmentObjects(ttsDisabled: false)
-        .environmentObject(viewState)
     }
 }
