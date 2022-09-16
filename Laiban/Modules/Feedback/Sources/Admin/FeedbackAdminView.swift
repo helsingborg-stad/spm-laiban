@@ -11,9 +11,11 @@ struct FeedbackAdminView: View {
     @ObservedObject var service: FeedbackService
     
     var body: some View {
-        NavigationLink(destination: FeedbackAdminFeedbacksView(service: service, category: .activity)) {
-            HStack {
-                Text("Aktiviteter")
+        ForEach(FeedbackCategory.allCases) { category in
+            NavigationLink(destination: FeedbackAdminFeedbacksView(service: service, category: category)) {
+                HStack {
+                    Text(category.title)
+                }
             }
         }
     }
