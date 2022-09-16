@@ -95,7 +95,7 @@ public struct FeedbackValue: Codable, Identifiable {
     public static func graphData(from value: FeedbackValue) -> [LBGraphItem] {
         var arr = [LBGraphItem]()
         for reaction in LBFeedbackReaction.allCases.reversed() {
-            arr.append(LBGraphItem(color: Color("FeedbackColor\(reaction.rawValue)"), emoji: reaction.emoji, percentage: self.numbers(for: value, reaction: reaction)))
+            arr.append(LBGraphItem(color: Color("FeedbackColor\(reaction.rawValue)" , bundle:.module), emoji: reaction.emoji, percentage: self.numbers(for: value, reaction: reaction)))
         }
         return arr
     }
