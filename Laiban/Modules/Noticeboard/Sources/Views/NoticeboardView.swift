@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-
 import Assistant
+import Combine
 
 public struct NoticeboardView: View {
     @EnvironmentObject var viewState:LBViewState
@@ -16,11 +16,15 @@ public struct NoticeboardView: View {
     @Environment(\.locale) var locale
     @State private var weather = Set<NoticeboardWeatherCondition>()
     @State private var allMessages = [Message]()
+    @State private var otherMessages = [Message]()
     @State private var diseases = [Message]()
     @State private var messages = [Message]()
     @State private var reminders = [Message]()
-    var contentProvider:NoticeboardContentProvider
-    public init(contentProvider:NoticeboardContentProvider) {
+    @State private var cancellables = Set<AnyCancellable>()
+    var contentProvider:NoticeboardContentProvider?
+    var noticebardService:NoticeboardService
+    public init(noticebardService:NoticeboardService, contentProvider:NoticeboardContentProvider?) {
+        self.noticebardService = noticebardService
         self.contentProvider = contentProvider
     }
     @ViewBuilder var overlay: some View {
@@ -55,6 +59,15 @@ public struct NoticeboardView: View {
             }
         }
         allMessages.forEach({ m in
+            if m.active && !m.automated {
+                switch m.category {
+                case .disease: diseases.append(m)
+                case .info: messages.append(m)
+                case .reminder: reminders.append(m)
+                }
+            }
+        })
+        otherMessages.forEach({ m in
             if m.active && !m.automated {
                 switch m.category {
                 case .disease: diseases.append(m)
@@ -107,14 +120,18 @@ public struct NoticeboardView: View {
         .onAppear {
             LBAnalyticsProxy.shared.logPageView(self)
             update()
+            contentProvider?.noticeboardWeatherConditionsPublisher(from: from(), to: to()).sink { weather in
+                self.weather = weather
+                update()
+            }.store(in: &cancellables)
+            contentProvider?.otherMessagesPublisher().sink { messages in
+                self.otherMessages = messages
+                update()
+            }.store(in: &cancellables)
         }
         .transition(.opacity.combined(with: .scale))
-        .onReceive(contentProvider.messagesPublisher()) { content in
+        .onReceive(noticebardService.$data) { content in
             self.allMessages = content
-            update()
-        }
-        .onReceive(contentProvider.noticeboardWeatherConditionsPublisher(from: from(), to: to())) { weather in
-            self.weather = weather
             update()
         }
     }
@@ -122,9 +139,10 @@ public struct NoticeboardView: View {
 
 struct NoticeBoardView_Previews: PreviewProvider {
     static var contentProvider = PreviewNoticeboardContentProvider()
+    static var noticebardService = NoticeboardService()
     static var previews: some View {
         LBFullscreenContainer { _ in
-            NoticeboardView(contentProvider: contentProvider)
+            NoticeboardView(noticebardService:noticebardService, contentProvider: contentProvider)
         }.attachPreviewEnvironmentObjects()
     }
 }
