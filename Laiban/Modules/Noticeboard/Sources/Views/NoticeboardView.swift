@@ -22,9 +22,9 @@ public struct NoticeboardView: View {
     @State private var reminders = [Message]()
     @State private var cancellables = Set<AnyCancellable>()
     var contentProvider:NoticeboardContentProvider?
-    var noticebardService:NoticeboardService
-    public init(noticebardService:NoticeboardService, contentProvider:NoticeboardContentProvider?) {
-        self.noticebardService = noticebardService
+    var service:NoticeboardService
+    public init(service:NoticeboardService, contentProvider:NoticeboardContentProvider? = nil) {
+        self.service = service
         self.contentProvider = contentProvider
     }
     @ViewBuilder var overlay: some View {
@@ -134,7 +134,7 @@ public struct NoticeboardView: View {
             }.store(in: &cancellables)
         }
         .transition(.opacity.combined(with: .scale))
-        .onReceive(noticebardService.$data) { content in
+        .onReceive(service.$data) { content in
             self.allMessages = content
             update()
         }
@@ -146,7 +146,7 @@ struct NoticeBoardView_Previews: PreviewProvider {
     static var noticebardService = NoticeboardService()
     static var previews: some View {
         LBFullscreenContainer { _ in
-            NoticeboardView(noticebardService:noticebardService, contentProvider: contentProvider)
+            NoticeboardView(service:noticebardService, contentProvider: contentProvider)
         }.attachPreviewEnvironmentObjects()
     }
 }
