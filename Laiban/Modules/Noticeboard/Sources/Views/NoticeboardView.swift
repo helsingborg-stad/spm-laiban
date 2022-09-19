@@ -125,6 +125,10 @@ public struct NoticeboardView: View {
                 update()
             }.store(in: &cancellables)
             contentProvider?.otherMessagesPublisher().sink { messages in
+                guard let messages = messages else {
+                    self.otherMessages = []
+                    return
+                }
                 self.otherMessages = messages
                 update()
             }.store(in: &cancellables)

@@ -16,9 +16,13 @@ public enum NoticeboardWeatherCondition: CaseIterable, Equatable {
 
 public protocol NoticeboardContentProvider {
     func noticeboardWeatherConditionsPublisher(from: Date, to: Date) -> AnyPublisher<Set<NoticeboardWeatherCondition>, Never>
-    func otherMessagesPublisher() -> AnyPublisher<[Message],Never>
+    func otherMessagesPublisher() -> AnyPublisher<[Message]?,Never>
 }
-
+public extension NoticeboardContentProvider {
+    func otherMessagesPublisher() -> AnyPublisher<[Message]?, Never> {
+        Just<[Message]?>(nil).eraseToAnyPublisher()
+    }
+}
 public class PreviewNoticeboardContentProvider : NoticeboardContentProvider {
     @Published var messages:[Message]
     public init() {
