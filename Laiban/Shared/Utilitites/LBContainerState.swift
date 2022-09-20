@@ -82,12 +82,16 @@ public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
         var options:AnyEquatable?
         var inactivityTimerDisabled:Bool = false
     }
+    private let interactionSubject = PassthroughSubject<Void,Never>()
     private var cancellables = Set<AnyCancellable>()
     private var inactivityTimer:Timer? = nil
     private let inactivitySubject = PassthroughSubject<Void,Never>()
-    public var inactivityTimeInterval:TimeInterval = 60
+    public var inactivityTimeInterval:TimeInterval = 0 {
+        didSet {
+            resetInactivityTimer()
+        }
+    }
     public let inactivityPublisher:AnyPublisher<Void,Never>
-    public let interactionSubject = PassthroughSubject<Void,Never>()
     @Published public private(set) var previousValue:T? = nil
     @Published public private(set) var value:T
     @Published public private(set) var rootValue:T
