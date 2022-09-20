@@ -20,7 +20,7 @@ private let lbPreviewAssistantProxySwitchboard:AudioSwitchboard = {
 private let lbPreviewAssistantTTS:TTS = {
     TTS(AppleTTS(audioSwitchBoard: lbPreviewAssistantProxySwitchboard))
 }()
-private func createPreviewAssistant() -> Assistant{
+internal func createPreviewAssistant() -> Assistant{
     let a = Assistant(
         sttService: AppleSTT(audioSwitchboard: lbPreviewAssistantProxySwitchboard),
         ttsServices: AppleTTS(audioSwitchBoard: lbPreviewAssistantProxySwitchboard),
