@@ -10,13 +10,15 @@ import Combine
 import Assistant
 
 public struct LBRootViewConfig {
-    public var dashboardItems:[[LBDashboardItem]]
-    public var adminServices:[LBAdminService]
-    internal var languageService:LanguageService?
+    internal let dashboardItems:[[LBDashboardItem]]
+    internal let adminServices:[LBAdminService]
+    internal let languageService:LanguageService?
+    internal let homescreenService:ReturnToHomeScreenService?
     public init(dashboardItems:[[LBDashboardItem]], adminServices:[LBAdminService]) {
         self.dashboardItems = dashboardItems
         self.adminServices = adminServices
-        self.languageService = adminServices.first(where: { $0.id == "LanguageService" }) as? LanguageService
+        self.languageService = adminServices.first(where: { $0 is LanguageService }) as? LanguageService
+        self.homescreenService = adminServices.first(where: { $0 is ReturnToHomeScreenService }) as? ReturnToHomeScreenService
     }
 }
 public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
@@ -34,7 +36,6 @@ public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
     var config: LBRootViewConfig
     var viewChanged: ViewDidChange?
     var shouldDisable: ShouldDisable?
-    var inactivityTimeInterval: InactivityTimeInterval?
     var containerAction: ContainerAction?
     var langaugeChanged: LanguageDidChange?
     var screen:(LBViewIdentity?,LBFullscreenContainerProperties) -> Screen
@@ -126,6 +127,9 @@ public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
                     }
                 }.store(in: &cancellables)
             }
+            config.homescreenService?.$data.sink { val in
+                self.viewState.inactivityTimeInterval = val.timeInterval
+            }.store(in: &cancellables)
         }
     }
     private func flatten(_ items:[[LBDashboardItem]]) -> [LBDashboardItem] {
@@ -149,7 +153,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval:inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -162,7 +165,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -175,7 +177,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -188,7 +189,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -201,7 +201,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -214,20 +213,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
-            containerAction: containerAction,
-            langaugeChanged: langaugeChanged,
-            screen: screen,
-            icon: icon,
-            actionBar: actionBar
-        )
-    }
-    func inactivityTimeInterval(_ inactivityTimeInterval: InactivityTimeInterval?) -> Self {
-        Self.init(
-            config: config,
-            viewChanged: viewChanged,
-            shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -240,7 +225,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -252,7 +236,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil,
         @ViewBuilder screen: @escaping (LBViewIdentity?,LBFullscreenContainerProperties) -> Screen
@@ -261,7 +244,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -273,7 +255,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil,
         @ViewBuilder icon: @escaping (LBViewIdentity?) -> Icon
@@ -282,7 +263,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: { (_,_) in EmptyView() },
@@ -294,7 +274,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil,
         @ViewBuilder actionBar: @escaping (LBViewIdentity?,LBAactionBarProperties) -> ActionBar
@@ -303,7 +282,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: { (_,_) in EmptyView() },
@@ -315,7 +293,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil,
         @ViewBuilder screen: @escaping (LBViewIdentity?,LBFullscreenContainerProperties) -> Screen,
@@ -325,7 +302,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: screen,
@@ -337,7 +313,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil,
         @ViewBuilder icon: @escaping (LBViewIdentity?) -> Icon,
@@ -347,7 +322,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: { (_,_) in EmptyView() },
@@ -359,7 +333,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil
     ) where Icon == EmptyView, Screen == EmptyView, ActionBar == EmptyView {
@@ -367,7 +340,6 @@ public extension LBRootView {
             config: config,
             viewChanged: viewChanged,
             shouldDisable: shouldDisable,
-            inactivityTimeInterval: inactivityTimeInterval,
             containerAction: containerAction,
             langaugeChanged: langaugeChanged,
             screen: { (_,_) in EmptyView() },
@@ -379,7 +351,6 @@ public extension LBRootView {
         config:LBRootViewConfig,
         viewChanged: ViewDidChange? = nil,
         shouldDisable: ShouldDisable? = nil,
-        inactivityTimeInterval: InactivityTimeInterval? = nil,
         containerAction:ContainerAction? = nil,
         langaugeChanged: LanguageDidChange? = nil,
         @ViewBuilder screen: @escaping (LBViewIdentity?,LBFullscreenContainerProperties) -> Screen,
@@ -389,7 +360,6 @@ public extension LBRootView {
         self.config = config
         self.viewChanged = viewChanged
         self.shouldDisable = shouldDisable
-        self.inactivityTimeInterval = inactivityTimeInterval
         self.containerAction = containerAction
         self.langaugeChanged = langaugeChanged
         self.icon = icon
@@ -405,3 +375,66 @@ public extension LBRootView {
     }
 }
 
+private struct LBRootViewPreview : View {
+    static private let previewItemIdentity: LBViewIdentity = .init("LBRootViewPreview")
+    class PreviewService: ObservableObject, LBDashboardItem {
+        var viewIdentity: LBViewIdentity = LBRootViewPreview.previewItemIdentity
+        var isAvailablePublisher: AnyPublisher<Bool, Never> {
+            return $isAvailable.eraseToAnyPublisher()
+        }
+        @Published var isAvailable: Bool = true
+    }
+    @StateObject var assistant = createPreviewAssistant()
+    @StateObject var dashboardItem = PreviewService()
+    @StateObject var returnToHomeScreenService = ReturnToHomeScreenService()
+    var config: LBRootViewConfig {
+        .init(
+            dashboardItems: [[dashboardItem]],
+            adminServices: [returnToHomeScreenService]
+        )
+    }
+    @State var val:ReturnToHomeScreen = .never
+    var testView: some View {
+        VStack {
+            Spacer()
+            Text("Returns to homescreen interval set to **\(val.title)**")
+            Button {
+                if val == .never {
+                    returnToHomeScreenService.data = .after30seconds
+                } else {
+                    returnToHomeScreenService.data = .never
+                }
+            } label: {
+                Text("Toggle").padding(20)
+            }
+            .buttonStyle(LBPrimaryButtonStyle())
+            Spacer()
+        }
+        .onReceive(returnToHomeScreenService.$data) { val in
+            self.val = val
+        }
+    }
+    var body: some View {
+        LBRootView(config: config)
+            .icon { item in
+                switch item {
+                case LBRootViewPreview.previewItemIdentity: LBEmojiBadgeView(emoji: "🫵", rimColor: .yellow)
+                default: EmptyView()
+                }
+            }
+            .screen { item, propertis in
+                switch item {
+                case LBRootViewPreview.previewItemIdentity: testView
+                default: EmptyView()
+                }
+            }
+            .environmentObject(assistant)
+    }
+}
+
+struct LBRootView_Previews: PreviewProvider {
+    static var previews: some View {
+       LBRootViewPreview()
+            
+    }
+}
