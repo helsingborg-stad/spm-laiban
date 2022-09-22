@@ -178,11 +178,6 @@ public struct OutdoorsView: View {
                 .font(.system(size: itemSize(proxy, columns: columns) * 0.10, weight: .semibold, design: .rounded))
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
-            .padding(10)
-            
-            HorizontalThermometerView(temperature: round(service.weather?.airTemperatureFeelsLike ?? 0), showText: false)
-                .frame(height: properties.contentSize.height * 0.15)
-                .padding(5)
         }
         .wrap(overlay: .emoji(viewModel.currentWeatherEmoji, Color("RimColorWeather",bundle:.module)))
     }
