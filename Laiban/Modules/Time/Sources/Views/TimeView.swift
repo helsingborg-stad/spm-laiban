@@ -224,9 +224,6 @@ public struct TimeView: View {
 struct TimeView_Previews: PreviewProvider {
     static var service: TimeService = {
         let service = TimeService()
-        service.data.events = [
-            .init(id: "1", time: "10:00", emoji: "👻", title: "Ghosthunt")
-        ]
         return service
     }()
     static var previews: some View {
