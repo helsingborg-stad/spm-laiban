@@ -72,9 +72,8 @@ extension OutdoorsView {
             if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] != nil {
                 currentTemperature = "-10"
                 currentWeatherEmoji = "❄️"
-                temperatureString = String(format:NSLocalizedString(WeatherCondition.coldAndRainy.localizationKey, comment: ""),currentTemperature)
+                temperatureString = String(format:NSLocalizedString(WeatherCondition.coldAndRainy.localizationKey, bundle: LBBundle, comment: ""),currentTemperature)
                 garments = WeatherCondition.coldAndRainy.garments
-                garments.append(contentsOf: [.winterOutfit ,.neckwear ,.beanie])
                 return
             }
             guard let service = service,let assistant = assistant else {
