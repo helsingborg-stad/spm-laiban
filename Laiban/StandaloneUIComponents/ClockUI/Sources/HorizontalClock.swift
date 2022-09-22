@@ -141,7 +141,7 @@ public struct HorizontalTimeLineView: View {
                 Group() {
                     HStack() {
                         Rectangle().foregroundColor(viewModel.timeSpanColor).frame(width: proxy.size.width * self.timePassed,height:40)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }.background(viewModel.timeSpanBackgroundColor)
                     ForEach(self.hours,id: \.hashValue) { hour in
                         Rectangle()
