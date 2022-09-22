@@ -9,12 +9,11 @@ import Assistant
 
 public struct OutdoorsView: View {
     func columns(items: Int) -> Int {
-        if horizontalSizeClass == .regular {
-            if viewModel.garments.count > 6 {
-                return 3
-            } else {
-                return 3
+        if properties.layout == .landscape {
+            if verticalSizeClass == .compact {
+                return 7
             }
+            return 4
         }
         return 3
     }
@@ -29,6 +28,7 @@ public struct OutdoorsView: View {
     
     @Environment(\.fullscreenContainerProperties) var properties
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var assistant: Assistant
     @EnvironmentObject var viewState:LBViewState
     @ObservedObject var service: OutdoorsService
@@ -185,7 +185,7 @@ public struct OutdoorsView: View {
     public var body: some View {
         Group {
             if viewModel.viewSection == .clothes {
-                if horizontalSizeClass == .regular {
+                if horizontalSizeClass == .regular && verticalSizeClass == .regular {
                     regularBody
                 } else {
                     compactBody
