@@ -13,7 +13,7 @@ public class ParticipantService: CTS<ParticipantServiceType, ParticipantStorageS
     public var listViewSection: LBAdminListViewSection = .content
     
     public func adminView() -> AnyView {
-        AnyView(Text("Participant admin view placeholder"))
+        AnyView(ParticipantsAdminView(service: self))
     }
     
     public var getParticipantPublisher: AnyPublisher<Set<String>, Never> {
