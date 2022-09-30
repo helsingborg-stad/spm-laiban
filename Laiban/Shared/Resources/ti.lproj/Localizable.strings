@@ -14,6 +14,7 @@
 "are_you_ready" = "ተዳሊኻ'ዶ?";
 "ask_teacher" = "ነቲ መምህር ሕተቶ";
 "calendar_event" = "ኣብዛ መዓልቲ እዚኣ %@";
+"calendar_event_today" = "ሎሚ %@";
 "calendar_free_day" = "ኣብዛ መዓልቲ እዚኣ ሓራ ኢና ።";
 "calendar_free_day_after" = "ንጽብሒቱ ኻብ ስራሕ ወጺእና ።";
 "calendar_free_tomorrow" = "ጽባሕ ሓራ ኢና።";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ሎሚ መዓስ ከም እትማልኣካን ኣየኖት ኣዕሩኽ ከም ዘለዉን ክትፈልጥ ትደሊዶ ? ኣብዚ ጠውቕ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ዓሰርተ";
-"clock_time_11" = "ዓሰርተ ክልተ";
+"clock_time_11" = "ዓሰርተ ሓደ";
+"clock_time_12" = "ዓሰርተ ክልተ";
 "clock_time_2" = "ክልተ";
 "clock_time_3" = "ሰለስተ";
 "clock_time_4" = "ኣርባዕተ";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ሕጂ ንግሆ ኢዩ ኣብዚ ግዜ እዚ ኸኣ ቍርሲ ንበልዕ ኣሎና።";
 "clock_time_description_0730_to_0830" = "ሕጂ ንግሆ እዩ ።";
 "clock_time_description_0830_to_0900" = "ኣብቲ ግዜ እቲ ፍረ ንበልዕ ኢና ።";
+"clock_time_description_0900_to_1045" = "ሕጂ ንግሆ እዩ ።";
 "clock_time_description_1045_to_1230" = "ሕጂ ፍርቂ መዓልትን ምሳሕን እዩ ።";
 "clock_time_description_1230_to_1400" = "ሕጂ ድሕሪ ቐትሪ እዩ ።";
 "clock_time_description_1400_to_1500" = "ሕጂ ድሕሪ ቐትሪ ኢዩ ኣብዚ ግዜ እዚ ኸኣ ጠዓሞት ንበልዕ ኣሎና።";
+"clock_time_description_1500_to_1630" = "ሕጂ ድሕሪ ቐትሪ እዩ ።";
 "clock_time_description_1630_to_1800" = "ዳርጋ ለይቲ እዩ ነይሩ ።";
 "clock_time_description_1800_to_2000" = "እዋኑ ለይቲ እዩ ነይሩ። ፅቡቕ ደቅስ!";
 "clock_time_description_2000_to_0600" = "እዋኑ ለይቲ እዩ ነይሩ።";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "ቍራጽ እንጌራ";
 "emoji_1F41F_name" = "ዓሳ";
 "emoji_1F41F_name_plural" = "ዓሳ";
+"emoji_1F954_name" = "ድንሽ";
 "emoji_1F954_name_plural" = "ድንሽ";
 "emoji_1F955_name" = "ካሮት";
 "emoji_1F955_name_plural" = "ካሮት";
@@ -130,20 +135,33 @@
 "food_waste_title" = "ካብቲ ስፍሓት ምእንቲ ኽትውስኽ ወይ ምእንቲ ኸተልግስ ነቲ ምስልታት ጠውቕ";
 "food_waste_weekly_stats" = "ኣብዛ ሰሙን እዚኣ %@ ግራም ምግቢ ደርቢኻዮ ኢኻ።";
 "garment_beanie" = "ቢኒ";
+"garment_beanie_description" = "ቢኒ";
 "garment_cap" = "ቆብዕ";
+"garment_cap_description" = "ቆብዕ";
 "garment_jacket" = "ጃኬት";
+"garment_jacket_description" = "ጃኬት";
+"garment_mittens" = "ሚተንስ";
 "garment_mittens_description" = "ሚተንስ";
 "garment_neckWear" = "መጠምጠምያ ወይ መጐልበቢ";
 "garment_neckWear_description" = "መጐልበቢ ወይ መጠምጠምያ";
 "garment_pulloverPants" = "ስረን ስረን";
+"garment_pulloverPants_description" = "ስረን ስረን";
+"garment_rainBoots" = "ጫማ";
 "garment_rainBoots_description" = "ጫማ";
+"garment_rainCoat" = "ጃኬት ዝናም";
 "garment_rainCoat_description" = "ጃኬት ዝናም";
 "garment_rainGloves" = "ናይ ዝናም ኢድ";
+"garment_rainGloves_description" = "ናይ ዝናም ኢድ";
+"garment_rainPants" = "ስረን ዝናም";
 "garment_rainPants_description" = "ስረን ዝናም";
 "garment_shoes" = "ጫማ";
+"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ምዉቕ ስረ";
+"garment_sweater_description" = "ምዉቕ ስረ";
+"garment_winterBoots" = "ጫማ";
 "garment_winterBoots_description" = "ኣብ ሓጋይ እተሰርሐ ጫማ";
 "garment_winterOutfit" = "መጐልበቢ ስረን ጃኬትን";
+"garment_winterOutfit_description" = "መጐልበቢ ስረን ጃኬትን";
 "home_feedback_acitivity_title" = "ኣብ ሓደ ንጥፈት ተኻፊልካዶ ትፈልጥ ?
 ብዛዕባኡ እንታይ ከም ዝሓሰብካ ንኽትነግረና ኣብዚ ጠውቕ!";
 "home_holiday" = "ጽባሕ %@እዩ ። ፅቡቕ ቀዳመ ሰንበት ይኹነልካ!";
@@ -195,6 +213,8 @@
 እዚ ዝዀነ ቀቅድሚ %@እዩ ።";
 "tempus_child_arrives_during" = "%@ %@ኣቢሉ ናብ ኣጸደ ሕጻናት ኪበጽሕ እዩ ።
 ኣብቲ እዋን እቲ እዩ %@።";
+"tempus_child_arrives_during_past" = "%@ %@ኣቢሉ ናብ ኣጸደ ሕጻናት መጸ ።
+እዚ ዝዀነ ቀቅድሚ %@እዩ ።";
 "tempus_child_arrives_past" = "%@ ኣብ ከባቢ %@ ኣጸደ ሕጻናት በጽሐ";
 "tempus_child_has_left" = "%@ መዓልቲ እቲኣ ናብ ቤቱ እተመልሰ እዩ ዚመስል ።";
 "tempus_child_has_left_returns_in_days" = "%@ ኣብታ መዓልቲ እቲኣ ናብ ቤቶም እተመልሱ እዮም ዚመስሉ እንተዀነ ግን ኣብ %@ መዓልቲ እንደገና ኺምለሱ ኣለዎም።";

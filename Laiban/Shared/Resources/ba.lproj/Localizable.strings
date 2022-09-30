@@ -14,6 +14,7 @@
 "are_you_ready" = "Һин әҙерме?";
 "ask_teacher" = "Уҡытыусынан һорағыҙ";
 "calendar_event" = "Был көндө %@";
+"calendar_event_today" = "Бөгөн %@";
 "calendar_free_day" = "Был көндө беҙ иректәбеҙ.";
 "calendar_free_day_after" = "Икенсе көндө эштән сығабыҙ.";
 "calendar_free_tomorrow" = "Иртәгә беҙ иректәбеҙ.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "Бөгөн ҡасан алынасағын, бында ниндәй дуҫтар булыуын белергә теләйһегеҙме? Ошонда баҫығыҙ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ун";
-"clock_time_11" = "ун ике";
+"clock_time_11" = "ун бер";
+"clock_time_12" = "ун ике";
 "clock_time_2" = "Ике";
 "clock_time_3" = "Өсәү";
 "clock_time_4" = "Дүртәү";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "Хәҙер иртән һәм ошо ваҡыт тирәһендә иртәнге аш ашайбыҙ.";
 "clock_time_description_0730_to_0830" = "Хәҙер иртә.";
 "clock_time_description_0830_to_0900" = "Ошо ваҡыт тирәһендә емеш-еләк ашайбыҙ.";
+"clock_time_description_0900_to_1045" = "Хәҙер иртә.";
 "clock_time_description_1045_to_1230" = "Хәҙер төшкө аш һәм төшкө аш.";
 "clock_time_description_1230_to_1400" = "Хәҙер төштән һуң.";
 "clock_time_description_1400_to_1500" = "Хәҙер төштән һуң һәм ошо ваҡыт тирәһендә тәмләткестәр ашайбыҙ.";
+"clock_time_description_1500_to_1630" = "Хәҙер төштән һуң.";
 "clock_time_description_1630_to_1800" = "Төн тиерлек.";
 "clock_time_description_1800_to_2000" = "Хәҙер төн. Һәйбәт йоҡла!";
 "clock_time_description_2000_to_0600" = "Хәҙер төн.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "Икмәк киҫәге";
 "emoji_1F41F_name" = "Балыҡтар";
 "emoji_1F41F_name_plural" = "Балыҡтар";
+"emoji_1F954_name" = "Картуф";
 "emoji_1F954_name_plural" = "Картуф";
 "emoji_1F955_name" = "Кишер";
 "emoji_1F955_name_plural" = "Кишер";
@@ -130,20 +135,33 @@
 "food_waste_title" = "Шкаланы өҫтәү йәки алып ташлау өсөн һүрәттәрҙе түрегеҙ";
 "food_waste_weekly_stats" = "Был аҙнала %@ грамм ризыҡ ташланығыҙ.";
 "garment_beanie" = "Бинье";
+"garment_beanie_description" = "Бинье";
 "garment_cap" = "Ҡалпаҡ";
+"garment_cap_description" = "Ҡалпаҡ";
 "garment_jacket" = "Куртка";
+"garment_jacket_description" = "Куртка";
+"garment_mittens" = "Митенс";
 "garment_mittens_description" = "Митенс";
 "garment_neckWear" = "Ташбаҡа йәки яулыҡ";
 "garment_neckWear_description" = "Яулыҡ йәки ташбаҡа";
 "garment_pulloverPants" = "Тышлыҡтағы салбар";
+"garment_pulloverPants_description" = "Тышлыҡтағы салбар";
+"garment_rainBoots" = "Итек";
 "garment_rainBoots_description" = "Итек";
+"garment_rainCoat" = "Ямғыр курткаһы";
 "garment_rainCoat_description" = "Ямғыр курткаһы";
 "garment_rainGloves" = "Ямғыр бирсәткәләре";
+"garment_rainGloves_description" = "Ямғыр бирсәткәләре";
+"garment_rainPants" = "Ямғыр салбары";
 "garment_rainPants_description" = "Ямғыр салбары";
 "garment_shoes" = "Аяҡ кейеме";
+"garment_shoes_description" = "Аяҡ кейеме";
 "garment_sweater" = "Йылы свитер";
+"garment_sweater_description" = "Йылы свитер";
+"garment_winterBoots" = "Аяҡ кейеме";
 "garment_winterBoots_description" = "Ҡышҡы итек";
 "garment_winterOutfit" = "Комплектлы йә тышлыҡлы салбарлы куртка";
+"garment_winterOutfit_description" = "Комплектлы йә тышлыҡлы салбарлы куртка";
 "home_feedback_acitivity_title" = "Һеҙ эшмәкәрлектә ҡатнаштығыҙмы?
 Нимә тураһында уйлағанығыҙҙы һөйләр өсөн ошонда баҫығыҙ!";
 "home_holiday" = "Иртәгә %@. Ял көнөгөҙ һәйбәт үтһен!";
@@ -195,6 +213,8 @@
 Был %@алдынан ғына булған .";
 "tempus_child_arrives_during" = "%@ мәктәпкәсә йәштәге балаларға яҡынса %@килә .
 Был %@.";
+"tempus_child_arrives_during_past" = "%@ мәктәпкәсә йәштәге балаларға яҡынса %@килгән .
+Был %@алдынан ғына булған .";
 "tempus_child_arrives_past" = "%@ мәктәпкәсә йәштәге балаларға яҡынса %@ килә";
 "tempus_child_has_left" = "%@ көнгә өйөнә ҡайтып киткән кеүек.";
 "tempus_child_has_left_returns_in_days" = "%@ көнгә өйөнә ҡайтып киткән кеүек, әммә %@ көндән яңынан ҡайтырға тейеш.";

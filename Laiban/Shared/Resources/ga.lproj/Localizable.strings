@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Ar mhaith leat a fháil amach cathain a phiocfar suas tú inniu agus cé na cairde atá anseo? Cliceáil anseo!";
 "clock_time_1" = "A";
 "clock_time_10" = "deichniúr";
-"clock_time_11" = "dhá cheann déag";
+"clock_time_11" = "aon bhliain déag";
 "clock_time_12" = "dhá cheann déag";
 "clock_time_2" = "Dhá";
 "clock_time_3" = "Triúr";
@@ -155,6 +155,7 @@ Féach an méid atá le caitheamh agat!";
 "garment_rainPants" = "Pants báistí";
 "garment_rainPants_description" = "Pants báistí";
 "garment_shoes" = "Bróga";
+"garment_shoes_description" = "Bróga";
 "garment_sweater" = "Geansaí te";
 "garment_sweater_description" = "Geansaí te";
 "garment_winterBoots" = "Bróga";

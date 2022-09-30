@@ -14,6 +14,7 @@
 "are_you_ready" = "ನೀನು ಸಿದ್ಧವಾಗಿದ್ದೀಯಾ?";
 "ask_teacher" = "ಶಿಕ್ಷಕರನ್ನು ಕೇಳಿ";
 "calendar_event" = "ಈ ದಿನ <span translate='no'>string</span>";
+"calendar_event_today" = "ಇಂದು <span translate='no'>string</span>";
 "calendar_free_day" = "ಈ ದಿನ ನಾವು ಸ್ವತಂತ್ರರಾಗಿದ್ದೇವೆ.";
 "calendar_free_day_after" = "ಮರುದಿನ ನಾವು ಕರ್ತವ್ಯದಿಂದ ಹೊರಗಿದ್ದೇವೆ.";
 "calendar_free_tomorrow" = "ನಾಳೆ ನಾವು ಸ್ವತಂತ್ರರಾಗಿದ್ದೇವೆ.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ಇಂದು ನಿಮ್ಮನ್ನು ಯಾವಾಗ ಎತ್ತಿಕೊಳ್ಳಲಾಗುತ್ತದೆ ಮತ್ತು ಯಾವ ಸ್ನೇಹಿತರು ಇಲ್ಲಿದ್ದಾರೆ ಎಂದು ನೀವು ತಿಳಿಯಲು ಬಯಸುವಿರಾ? ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ಹತ್ತು";
-"clock_time_11" = "ಹನ್ನೆರಡು";
+"clock_time_11" = "ಹನ್ನೊಂದು";
+"clock_time_12" = "ಹನ್ನೆರಡು";
 "clock_time_2" = "ಎರಡು";
 "clock_time_3" = "ಮೂರು";
 "clock_time_4" = "ನಾಲ್ಕು";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ಈಗ ಬೆಳಿಗ್ಗೆ ಮತ್ತು ಈ ಸಮಯದಲ್ಲಿ ನಾವು ಉಪಾಹಾರವನ್ನು ತಿನ್ನುತ್ತೇವೆ.";
 "clock_time_description_0730_to_0830" = "ಈಗ ಬೆಳಿಗ್ಗೆ.";
 "clock_time_description_0830_to_0900" = "ಈ ಸಮಯದಲ್ಲಿ ನಾವು ಹಣ್ಣುಗಳನ್ನು ತಿನ್ನುತ್ತೇವೆ.";
+"clock_time_description_0900_to_1045" = "ಈಗ ಬೆಳಿಗ್ಗೆ.";
 "clock_time_description_1045_to_1230" = "ಈಗ ಮಧ್ಯಾಹ್ನ ಮತ್ತು ಮಧ್ಯಾಹ್ನದ ಊಟದ ಸಮಯ.";
 "clock_time_description_1230_to_1400" = "ಈಗ ಮಧ್ಯಾಹ್ನವಾಗಿದೆ.";
 "clock_time_description_1400_to_1500" = "ಈಗ ಮಧ್ಯಾಹ್ನವಾಗಿದೆ ಮತ್ತು ಈ ಸಮಯದಲ್ಲಿ ನಾವು ತಿಂಡಿಗಳನ್ನು ತಿನ್ನುತ್ತೇವೆ.";
+"clock_time_description_1500_to_1630" = "ಈಗ ಮಧ್ಯಾಹ್ನವಾಗಿದೆ.";
 "clock_time_description_1630_to_1800" = "ಇದು ಬಹುತೇಕ ರಾತ್ರಿಯಾಗಿದೆ.";
 "clock_time_description_1800_to_2000" = "ಈಗ ರಾತ್ರಿಯಾಗಿದೆ. ಚೆನ್ನಾಗಿ ನಿದ್ರಿಸಿ!";
 "clock_time_description_2000_to_0600" = "ಈಗ ರಾತ್ರಿಯಾಗಿದೆ.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "ಬ್ರೆಡ್ ತುಂಡು";
 "emoji_1F41F_name" = "ಮೀನು";
 "emoji_1F41F_name_plural" = "ಮೀನುಗಳು";
+"emoji_1F954_name" = "ಆಲೂಗಡ್ಡೆ";
 "emoji_1F954_name_plural" = "ಆಲೂಗಡ್ಡೆ";
 "emoji_1F955_name" = "ಕ್ಯಾರೇಟು";
 "emoji_1F955_name_plural" = "ಕ್ಯಾರೆಟ್ ಗಳು";
@@ -130,20 +135,33 @@
 "food_waste_title" = "ಸ್ಕೇಲ್ ನಿಂದ ಸೇರಿಸಲು ಅಥವಾ ತೆಗೆದುಹಾಕಲು ಇಮೇಜ್ ಗಳನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ";
 "food_waste_weekly_stats" = "ಈ ವಾರ ನೀವು %@ ಗ್ರಾಂ ಆಹಾರವನ್ನು ಎಸೆದಿದ್ದೀರಿ.";
 "garment_beanie" = "ಬೀನಿ";
+"garment_beanie_description" = "ಬೀನಿ";
 "garment_cap" = "ಕ್ಯಾಪ್";
+"garment_cap_description" = "ಕ್ಯಾಪ್";
 "garment_jacket" = "ಜಾಕೆಟ್";
+"garment_jacket_description" = "ಜಾಕೆಟ್";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "ಟರ್ಟಲ್ ನೆಕ್ ಅಥವಾ ಸ್ಕಾರ್ಫ್";
 "garment_neckWear_description" = "ಸ್ಕಾರ್ಫ್ ಅಥವಾ ಟರ್ಟಲ್ ನೆಕ್";
 "garment_pulloverPants" = "ಕವರ್ ಪ್ಯಾಂಟ್ ಗಳು";
+"garment_pulloverPants_description" = "ಕವರ್ ಪ್ಯಾಂಟ್ ಗಳು";
+"garment_rainBoots" = "ಬೂಟ್ ಗಳು";
 "garment_rainBoots_description" = "ಬೂಟ್ ಗಳು";
+"garment_rainCoat" = "ಮಳೆ ಜಾಕೆಟ್";
 "garment_rainCoat_description" = "ಮಳೆ ಜಾಕೆಟ್";
 "garment_rainGloves" = "ಮಳೆ ಕೈಗವಸುಗಳು";
+"garment_rainGloves_description" = "ಮಳೆ ಕೈಗವಸುಗಳು";
+"garment_rainPants" = "ಮಳೆ ಪ್ಯಾಂಟ್ ಗಳು";
 "garment_rainPants_description" = "ಮಳೆ ಪ್ಯಾಂಟ್ ಗಳು";
 "garment_shoes" = "ಶೂಗಳು";
+"garment_shoes_description" = "ಶೂಗಳು";
 "garment_sweater" = "ಬೆಚ್ಚಗಿನ ಸ್ವೆಟರ್";
+"garment_sweater_description" = "ಬೆಚ್ಚಗಿನ ಸ್ವೆಟರ್";
+"garment_winterBoots" = "ಶೂಗಳು";
 "garment_winterBoots_description" = "ಚಳಿಗಾಲದ ಬೂಟುಗಳು";
 "garment_winterOutfit" = "ಕವರ್ ಪ್ಯಾಂಟ್ ನೊಂದಿಗೆ ಒವೆಲ್ಸ್ ಅಥವಾ ಜಾಕೆಟ್";
+"garment_winterOutfit_description" = "ಕವರ್ ಪ್ಯಾಂಟ್ ನೊಂದಿಗೆ ಒವೆಲ್ಸ್ ಅಥವಾ ಜಾಕೆಟ್";
 "home_feedback_acitivity_title" = "ನೀವು ಒಂದು ಚಟುವಟಿಕೆಯಲ್ಲಿ ಭಾಗವಹಿಸಿದ್ದೀರಾ?
 ನೀವು ಅದರ ಬಗ್ಗೆ ಏನು ಯೋಚಿಸಿದ್ದೀರಿ ಎಂದು ನಮಗೆ ಹೇಳಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ!";
 "home_holiday" = "ನಾಳೆ %@. ಶುಭ ವಾರಾಂತ್ಯ!";
@@ -195,6 +213,8 @@
 ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_arrives_during" = "%@ ಸುಮಾರು %@ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬರುತ್ತಾನೆ.
 ಅದು <span translate='no'>string</span>ಸಮಯದಲ್ಲಿ.";
+"tempus_child_arrives_during_past" = "%@ ಸುಮಾರು %@ಗಂಟೆಗೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬಂದಳು.
+ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_arrives_past" = "%@ ಸುಮಾರು %@ ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬಂದಳು";
 "tempus_child_has_left" = "%@ ಆ ದಿನ ಮನೆಗೆ ಹೋದಂತೆ ತೋರುತ್ತದೆ.";
 "tempus_child_has_left_returns_in_days" = "%@ ಒಂದು ದಿನದ ಮಟ್ಟಿಗೆ ಮನೆಗೆ ಹೋದಂತೆ ತೋರುತ್ತದೆ ಆದರೆ %@ ದಿನಗಳಲ್ಲಿ ಮತ್ತೆ ಹಿಂತಿರುಗಬೇಕು.";

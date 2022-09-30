@@ -14,6 +14,7 @@
 "are_you_ready" = "آیا ته چمتو یې?";
 "ask_teacher" = "له ښوونکی څخه پوښتنه وکړه";
 "calendar_event" = "په دې ورځ %@";
+"calendar_event_today" = "نن %@";
 "calendar_free_day" = "په دې ورځ مونږ آزاد یو.";
 "calendar_free_day_after" = "بله ورځ مونږ د دندې څخه رخصت یو.";
 "calendar_free_tomorrow" = "سبا مونږ آزاد یو.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ایا تاسو غواړئ پوه شئ چې تاسو به نن څه وخت راپورته کړئ او کوم ملګری دلته دی؟ دلته کلیک وکړئ !";
 "clock_time_1" = "A";
 "clock_time_10" = "لس";
-"clock_time_11" = "دولس";
+"clock_time_11" = "یوولس";
+"clock_time_12" = "دولس";
 "clock_time_2" = "دوه";
 "clock_time_3" = "درې";
 "clock_time_4" = "څلور";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "اوس سهار دی او د دې وخت شاوخوا موږ ناشته خورو.";
 "clock_time_description_0730_to_0830" = "اوس سهار دی.";
 "clock_time_description_0830_to_0900" = "په دې وخت کښې مونږ میوې خورو.";
+"clock_time_description_0900_to_1045" = "اوس سهار دی.";
 "clock_time_description_1045_to_1230" = "اوس دا د نیمې ورځې او د غرمې ډوډۍ وخت دی.";
 "clock_time_description_1230_to_1400" = "اوس غرمه ده.";
 "clock_time_description_1400_to_1500" = "اوس غرمه ده او په دې وخت کې مونږ د خوراک خوراک کوو.";
+"clock_time_description_1500_to_1630" = "اوس غرمه ده.";
 "clock_time_description_1630_to_1800" = "دا تقریباً شپه ده.";
 "clock_time_description_1800_to_2000" = "اوس شپه ده. ښه خوب کوه!";
 "clock_time_description_2000_to_0600" = "اوس شپه ده.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "د ډوډۍ ټوټه";
 "emoji_1F41F_name" = "کبان";
 "emoji_1F41F_name_plural" = "کبان";
+"emoji_1F954_name" = "کچالو";
 "emoji_1F954_name_plural" = "کچالو";
 "emoji_1F955_name" = "هویچ";
 "emoji_1F955_name_plural" = "هویچ";
@@ -130,20 +135,33 @@
 "food_waste_title" = "د ترازو څخه د اضافه کولو یا لرې کولو لپاره د تصویرونو تڼۍ ووهئ";
 "food_waste_weekly_stats" = "په دې اونۍ کې تاسو د %@ خوړو څخه لرې غورځولی دی.";
 "garment_beanie" = "بیانی";
+"garment_beanie_description" = "بیانی";
 "garment_cap" = "کیپ";
+"garment_cap_description" = "کیپ";
 "garment_jacket" = "جاکټ";
+"garment_jacket_description" = "جاکټ";
+"garment_mittens" = "میټنس";
 "garment_mittens_description" = "میټنس";
 "garment_neckWear" = "د تورتلغاړه یا د سر پکول";
 "garment_neckWear_description" = "پکول یا تورتله غاړه";
 "garment_pulloverPants" = "پتلون پوښل";
+"garment_pulloverPants_description" = "پتلون پوښل";
+"garment_rainBoots" = "بوټان";
 "garment_rainBoots_description" = "بوټان";
+"garment_rainCoat" = "د باران جاکټ";
 "garment_rainCoat_description" = "د باران جاکټ";
 "garment_rainGloves" = "د باران دستکش";
+"garment_rainGloves_description" = "د باران دستکش";
+"garment_rainPants" = "د باران پتلون";
 "garment_rainPants_description" = "د باران پتلون";
 "garment_shoes" = "بوټونه";
+"garment_shoes_description" = "بوټونه";
 "garment_sweater" = "تاوده سویټر";
+"garment_sweater_description" = "تاوده سویټر";
+"garment_winterBoots" = "بوټونه";
 "garment_winterBoots_description" = "د ژمی بوټان";
 "garment_winterOutfit" = "د پوښ پتلون سره عمومی یا جاکټ";
+"garment_winterOutfit_description" = "د پوښ پتلون سره عمومی یا جاکټ";
 "home_feedback_acitivity_title" = "ایا تاسو په یو فعالیت کې برخه اخستې ده؟
 دلته کلیک وکړئ چې موږ ته ووایاست چې تاسو د دې په اړه څه فکر کړی دی!";
 "home_holiday" = "سبا د %@. ښه اوونیزه رخصتي درته غواړم!";
@@ -195,6 +213,8 @@
 دا د پخوا څخه %@.";
 "tempus_child_arrives_during" = "%@ به د ښوونځی په شاوخوا کې ښوونځی ته %@.
 دا د %@.";
+"tempus_child_arrives_during_past" = "%@ شاوخوا ښوونځی ته %@.
+دا د پخوا څخه %@.";
 "tempus_child_arrives_past" = "%@ شاوخوا ښوونځی ته %@";
 "tempus_child_has_left" = "%@ داسې ښکاری چې د ورځې لپاره کور ته تللی وی.";
 "tempus_child_has_left_returns_in_days" = "%@ داسې ښکاری چې د ورځې لپاره کور ته تللی وی خو په ورځو کې باید %@ راشی.";

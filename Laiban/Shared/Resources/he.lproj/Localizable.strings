@@ -14,6 +14,7 @@
 "are_you_ready" = "אתה מוכן?";
 "ask_teacher" = "שאל את המורה";
 "calendar_event" = "ביום זה %@";
+"calendar_event_today" = "היום %@";
 "calendar_free_day" = "ביום הזה אנחנו חופשיים.";
 "calendar_free_day_after" = "למחרת אנחנו מחוץ לתפקיד.";
 "calendar_free_tomorrow" = "מחר אנחנו חופשיים.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "האם אתה רוצה לדעת מתי יאספו אותך היום ואילו חברים נמצאים כאן? לחצו כאן!";
 "clock_time_1" = "A";
 "clock_time_10" = "עשר";
-"clock_time_11" = "שנים עשר";
+"clock_time_11" = "אחד עשר";
+"clock_time_12" = "שנים עשר";
 "clock_time_2" = "שניים";
 "clock_time_3" = "שלוש";
 "clock_time_4" = "ארבע";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "עכשיו זה בוקר ובסביבות הזמן הזה אנחנו אוכלים ארוחת בוקר.";
 "clock_time_description_0730_to_0830" = "עכשיו זה בוקר.";
 "clock_time_description_0830_to_0900" = "בערך בתקופה זו אנו אוכלים פירות.";
+"clock_time_description_0900_to_1045" = "עכשיו זה בוקר.";
 "clock_time_description_1045_to_1230" = "עכשיו השעה צהריים וצהריים.";
 "clock_time_description_1230_to_1400" = "עכשיו זה אחר הצהריים.";
 "clock_time_description_1400_to_1500" = "עכשיו זה אחר הצהריים ובסביבות הזמן הזה אנחנו אוכלים חטיפים.";
+"clock_time_description_1500_to_1630" = "עכשיו זה אחר הצהריים.";
 "clock_time_description_1630_to_1800" = "זה כמעט לילה.";
 "clock_time_description_1800_to_2000" = "עכשיו זה לילה. תישן טוב!";
 "clock_time_description_2000_to_0600" = "עכשיו זה לילה.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "חתיכת לחם";
 "emoji_1F41F_name" = "דג";
 "emoji_1F41F_name_plural" = "דגים";
+"emoji_1F954_name" = "תפוחי אדמה";
 "emoji_1F954_name_plural" = "תפוחי אדמה";
 "emoji_1F955_name" = "גזר";
 "emoji_1F955_name_plural" = "גזר";
@@ -130,20 +135,33 @@
 "food_waste_title" = "הקש על התמונות כדי להוסיף או להסיר מקנה המידה";
 "food_waste_weekly_stats" = "השבוע זרקתם %@ גרם של מזון.";
 "garment_beanie" = "באני";
+"garment_beanie_description" = "באני";
 "garment_cap" = "כובע";
+"garment_cap_description" = "כובע";
 "garment_jacket" = "הז'קט";
+"garment_jacket_description" = "הז'קט";
+"garment_mittens" = "כפפות";
 "garment_mittens_description" = "כפפות";
 "garment_neckWear" = "גולף או צעיף";
 "garment_neckWear_description" = "צעיף או גולף";
 "garment_pulloverPants" = "מכנסי כיסוי";
+"garment_pulloverPants_description" = "מכנסי כיסוי";
+"garment_rainBoots" = "המגפיים";
 "garment_rainBoots_description" = "המגפיים";
+"garment_rainCoat" = "מעיל גשם";
 "garment_rainCoat_description" = "מעיל גשם";
 "garment_rainGloves" = "כפפות גשם";
+"garment_rainGloves_description" = "כפפות גשם";
+"garment_rainPants" = "מכנסי גשם";
 "garment_rainPants_description" = "מכנסי גשם";
 "garment_shoes" = "נעליים";
+"garment_shoes_description" = "נעליים";
 "garment_sweater" = "סוודר חם";
+"garment_sweater_description" = "סוודר חם";
+"garment_winterBoots" = "נעליים";
 "garment_winterBoots_description" = "מגפי חורף";
 "garment_winterOutfit" = "סרבלים או ז'קט עם מכנסי כיסוי";
+"garment_winterOutfit_description" = "סרבלים או ז'קט עם מכנסי כיסוי";
 "home_feedback_acitivity_title" = "האם השתתפת בפעילות?
 לחצו כאן כדי לספר לנו מה חשבתם על זה!";
 "home_holiday" = "מחר %@. שיהיה לך סוף שבוע נחמד!";
@@ -195,6 +213,8 @@
 זה היה ממש לפני %@.";
 "tempus_child_arrives_during" = "%@ יגיעו לגן בערך בשעה %@.
 זה במהלך %@.";
+"tempus_child_arrives_during_past" = "%@ הגיע לגן בערך בשעה %@.
+זה היה ממש לפני %@.";
 "tempus_child_arrives_past" = "%@ הגיע לגן בערך בשעה %@";
 "tempus_child_has_left" = "נראה %@ הלך הביתה במשך היום.";
 "tempus_child_has_left_returns_in_days" = "נראה %@ הלך הביתה במשך היום אבל צריך לחזור שוב בימים %@.";

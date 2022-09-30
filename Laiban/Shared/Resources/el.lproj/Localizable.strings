@@ -14,6 +14,7 @@
 "are_you_ready" = "Είσαι έτοιμο?";
 "ask_teacher" = "Ρωτήστε τον δάσκαλο";
 "calendar_event" = "Σαν σήμερα %@";
+"calendar_event_today" = "Σήμερα %@";
 "calendar_free_day" = "Την ημέρα αυτή είμαστε ελεύθεροι.";
 "calendar_free_day_after" = "Την επόμενη μέρα είμαστε εκτός υπηρεσίας.";
 "calendar_free_tomorrow" = "Αύριο είμαστε ελεύθεροι.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "Θέλετε να μάθετε πότε θα σας παραλάβουν σήμερα και ποιοι φίλοι είναι εδώ; Κάντε κλικ εδώ!";
 "clock_time_1" = "Ένας";
 "clock_time_10" = "Δέκα";
-"clock_time_11" = "Δώδεκα";
+"clock_time_11" = "Έντεκα";
+"clock_time_12" = "Δώδεκα";
 "clock_time_2" = "Δύο";
 "clock_time_3" = "Τρεις";
 "clock_time_4" = "Τέσσερα";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "Τώρα είναι πρωί και περίπου αυτή την ώρα τρώμε πρωινό.";
 "clock_time_description_0730_to_0830" = "Τώρα είναι πρωί.";
 "clock_time_description_0830_to_0900" = "Περίπου αυτή την εποχή τρώμε φρούτα.";
+"clock_time_description_0900_to_1045" = "Τώρα είναι πρωί.";
 "clock_time_description_1045_to_1230" = "Τώρα είναι μεσημέρι και μεσημέρι.";
 "clock_time_description_1230_to_1400" = "Τώρα είναι απόγευμα.";
 "clock_time_description_1400_to_1500" = "Τώρα είναι απόγευμα και περίπου αυτή την ώρα τρώμε σνακ.";
+"clock_time_description_1500_to_1630" = "Τώρα είναι απόγευμα.";
 "clock_time_description_1630_to_1800" = "Είναι σχεδόν νύχτα.";
 "clock_time_description_1800_to_2000" = "Τώρα είναι νύχτα. Καλό ύπνο!";
 "clock_time_description_2000_to_0600" = "Τώρα είναι νύχτα.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "Κομμάτι ψωμί";
 "emoji_1F41F_name" = "Ψάρι";
 "emoji_1F41F_name_plural" = "Ψάρια";
+"emoji_1F954_name" = "Πατάτες";
 "emoji_1F954_name_plural" = "Πατάτες";
 "emoji_1F955_name" = "Καρότο";
 "emoji_1F955_name_plural" = "Καρότα";
@@ -130,20 +135,33 @@
 "food_waste_title" = "Πατήστε τις εικόνες που θέλετε να προσθέσετε ή να αφαιρέσετε από την κλίμακα";
 "food_waste_weekly_stats" = "Αυτή την εβδομάδα πετάξατε %@ γραμμάρια τροφής.";
 "garment_beanie" = "Σκούφος";
+"garment_beanie_description" = "Σκούφος";
 "garment_cap" = "Καλύπτω";
+"garment_cap_description" = "Καλύπτω";
 "garment_jacket" = "Σακάκι";
+"garment_jacket_description" = "Σακάκι";
+"garment_mittens" = "Γάντια";
 "garment_mittens_description" = "Γάντια";
 "garment_neckWear" = "Ζιβάγκο ή κασκόλ";
 "garment_neckWear_description" = "Κασκόλ ή ζιβάγκο";
 "garment_pulloverPants" = "Καλύψτε τα παντελόνια";
+"garment_pulloverPants_description" = "Καλύψτε τα παντελόνια";
+"garment_rainBoots" = "Μπότες";
 "garment_rainBoots_description" = "Μπότες";
+"garment_rainCoat" = "Αδιάβροχο";
 "garment_rainCoat_description" = "Αδιάβροχο";
 "garment_rainGloves" = "Γάντια βροχής";
+"garment_rainGloves_description" = "Γάντια βροχής";
+"garment_rainPants" = "Παντελόνι βροχής";
 "garment_rainPants_description" = "Παντελόνι βροχής";
 "garment_shoes" = "Παπούτσια";
+"garment_shoes_description" = "Παπούτσια";
 "garment_sweater" = "Ζεστό πουλόβερ";
+"garment_sweater_description" = "Ζεστό πουλόβερ";
+"garment_winterBoots" = "Παπούτσια";
 "garment_winterBoots_description" = "Χειμωνιάτικες μπότες";
 "garment_winterOutfit" = "Φόρμες ή μπουφάν με παντελόνι κάλυψης";
+"garment_winterOutfit_description" = "Φόρμες ή μπουφάν με παντελόνι κάλυψης";
 "home_feedback_acitivity_title" = "Έχετε συμμετάσχει σε κάποια δραστηριότητα;
 Κάντε κλικ εδώ για να μας πείτε τη γνώμη σας!";
 "home_holiday" = "Αύριο είναι %@. Να έχεις καλό σαββατοκύριακο!";
@@ -195,6 +213,8 @@
 Αυτό ήταν λίγο πριν από %@.";
 "tempus_child_arrives_during" = "%@ θα φτάσουν στο νηπιαγωγείο περίπου στις %@.
 Αυτό είναι κατά τη διάρκεια %@.";
+"tempus_child_arrives_during_past" = "%@ έφτασε στο νηπιαγωγείο περίπου στις %@.
+Αυτό ήταν λίγο πριν από %@.";
 "tempus_child_arrives_past" = "%@ έφτασε στο νηπιαγωγείο περίπου %@";
 "tempus_child_has_left" = "%@ φαίνεται να έχει πάει σπίτι για την ημέρα.";
 "tempus_child_has_left_returns_in_days" = "%@ φαίνεται να έχει πάει σπίτι για την ημέρα, αλλά θα πρέπει να επιστρέψει ξανά σε %@ ημέρες.";

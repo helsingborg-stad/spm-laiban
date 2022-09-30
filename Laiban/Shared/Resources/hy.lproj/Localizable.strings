@@ -14,6 +14,7 @@
 "are_you_ready" = "Պատրաստ ես?";
 "ask_teacher" = "Հարցրու ուսուցչին";
 "calendar_event" = "Այս օրը %@";
+"calendar_event_today" = "Այսօր %@";
 "calendar_free_day" = "Այս օրը մենք ազատ ենք...";
 "calendar_free_day_after" = "Հաջորդ օրը մենք դուրս ենք եկել ծառայությունից:";
 "calendar_free_tomorrow" = "Վաղը մենք ազատ ենք...";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "Ուզո՞ւմ եք իմանալ, թե այսօր երբ եք ձեզ վերցնելու եւ որ ընկերներն են այստեղ։ Սեղմեք այստեղ!";
 "clock_time_1" = "A";
 "clock_time_10" = "Տասը";
-"clock_time_11" = "Տասներկու";
+"clock_time_11" = "Տասնմեկ";
+"clock_time_12" = "Տասներկու";
 "clock_time_2" = "Երկու";
 "clock_time_3" = "Երեք";
 "clock_time_4" = "Չորս";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "Այժմ առավոտ է եւ այս անգամ նախաճաշում ենք:";
 "clock_time_description_0730_to_0830" = "Հիմա առավոտ է...";
 "clock_time_description_0830_to_0900" = "Այս ընթացքում մենք միրգ ենք ուտում։";
+"clock_time_description_0900_to_1045" = "Հիմա առավոտ է...";
 "clock_time_description_1045_to_1230" = "Հիմա կեսօրն է եւ ճաշը:";
 "clock_time_description_1230_to_1400" = "Հիմա կեսօրն է:";
 "clock_time_description_1400_to_1500" = "Այժմ կեսօր է, եւ այս անգամ մենք ուտում ենք ուտելիք:";
+"clock_time_description_1500_to_1630" = "Հիմա կեսօրն է:";
 "clock_time_description_1630_to_1800" = "Գրեթե գիշեր է:";
 "clock_time_description_1800_to_2000" = "Հիմա գիշեր է... Բարի քուն!";
 "clock_time_description_2000_to_0600" = "Հիմա գիշեր է...";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "Կտոր հաց";
 "emoji_1F41F_name" = "Ձուկ";
 "emoji_1F41F_name_plural" = "Ձկներ";
+"emoji_1F954_name" = "Կարտոֆիլ";
 "emoji_1F954_name_plural" = "Կարտոֆիլ";
 "emoji_1F955_name" = "Կարագ";
 "emoji_1F955_name_plural" = "Կարիեր";
@@ -130,20 +135,33 @@
 "food_waste_title" = "Սեղմեք պատկերները, որպեսզի ավելացնեք կամ հեռացնեք սանդղակից";
 "food_waste_weekly_stats" = "Այս շաբաթ դուք դեն եք նետել %@ գրամ սնունդը:";
 "garment_beanie" = "Բեանի";
+"garment_beanie_description" = "Բեանի";
 "garment_cap" = "Կապ";
+"garment_cap_description" = "Կապ";
 "garment_jacket" = "Ճենապակի";
+"garment_jacket_description" = "Ճենապակի";
+"garment_mittens" = "Միտենս";
 "garment_mittens_description" = "Միտենս";
 "garment_neckWear" = "Turtleneck կամ շարֆ";
 "garment_neckWear_description" = "Սկարֆ կամ տորտլենեկ";
 "garment_pulloverPants" = "Ծածկոց վարտիքներ";
+"garment_pulloverPants_description" = "Ծածկոց վարտիքներ";
+"garment_rainBoots" = "Բուտս";
 "garment_rainBoots_description" = "Բուտս";
+"garment_rainCoat" = "Անձրեւի բաճկոն";
 "garment_rainCoat_description" = "Անձրեւի բաճկոն";
 "garment_rainGloves" = "Անձրեւի ձեռնոցներ";
+"garment_rainGloves_description" = "Անձրեւի ձեռնոցներ";
+"garment_rainPants" = "Անձրեւային վարտիքներ";
 "garment_rainPants_description" = "Անձրեւային վարտիքներ";
 "garment_shoes" = "Կոշիկ";
+"garment_shoes_description" = "Կոշիկ";
 "garment_sweater" = "Տաք սվիտեր";
+"garment_sweater_description" = "Տաք սվիտեր";
+"garment_winterBoots" = "Կոշիկ";
 "garment_winterBoots_description" = "Ձմեռային կոշիկներ";
 "garment_winterOutfit" = "Ծածկոցով վարտիքներով պատյան կամ բաճկոն";
+"garment_winterOutfit_description" = "Ծածկոցով վարտիքներով պատյան կամ բաճկոն";
 "home_feedback_acitivity_title" = "Մասնակցել ե՞ք որեւէ միջոցառման:
 Սեղմեք այստեղ, որպեսզի պատմեք, թե ինչ եք մտածել դրա մասին!";
 "home_holiday" = "Վաղը %@է . Բարի հանգստյան օրեր!";
@@ -195,6 +213,8 @@
 Որ քիչ առաջ %@.";
 "tempus_child_arrives_during" = "%@ %@կհասնի նախադպրոցական ...
 Դա %@ընթացքում .";
+"tempus_child_arrives_during_past" = "%@ %@-ին հասել է նախադպրոցական ...
+Որ քիչ առաջ %@.";
 "tempus_child_arrives_past" = "%@ %@";
 "tempus_child_has_left" = "%@ թվում է, թե այդ օրը տուն է գնացել։";
 "tempus_child_has_left_returns_in_days" = "%@ թվում է, թե օրվա համար տուն է գնացել, բայց պետք է %@ օրում նորից վերադառնա:";

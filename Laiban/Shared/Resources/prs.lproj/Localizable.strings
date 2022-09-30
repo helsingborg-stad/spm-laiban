@@ -14,6 +14,7 @@
 "are_you_ready" = "آماده ای?";
 "ask_teacher" = "از معلم بپرسید";
 "calendar_event" = "در این روز %@";
+"calendar_event_today" = "امروز %@";
 "calendar_free_day" = "در این روز ما آزاد هستیم.";
 "calendar_free_day_after" = "روز بعد ما از انجام وظیفه خارج شدیم.";
 "calendar_free_tomorrow" = "فردا ما آزاديم";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "آیا می خواهید بدانید که چه زمانی شما امروز برداشت خواهد شد و کدام دوستان اینجا هستند؟ اینجا را کلیک کنید!";
 "clock_time_1" = "A";
 "clock_time_10" = "ده";
-"clock_time_11" = "دوازده";
+"clock_time_11" = "یازده";
+"clock_time_12" = "دوازده";
 "clock_time_2" = "دو";
 "clock_time_3" = "سه";
 "clock_time_4" = "چهار";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "حالا صبح است و در اطراف این زمان ما صبحانه می بخوریم.";
 "clock_time_description_0730_to_0830" = "حالا صبح شده";
 "clock_time_description_0830_to_0900" = "در این زمان ما میوه می بخوریم.";
+"clock_time_description_0900_to_1045" = "حالا صبح شده";
 "clock_time_description_1045_to_1230" = "حالا ظهر و وقت چاشت است.";
 "clock_time_description_1230_to_1400" = "حالا بعد از ظهر است.";
 "clock_time_description_1400_to_1500" = "حالا بعد از ظهر است و در اطراف این زمان ما تنقلات می بخوریم.";
+"clock_time_description_1500_to_1630" = "حالا بعد از ظهر است.";
 "clock_time_description_1630_to_1800" = "تقريبا شب شده";
 "clock_time_description_1800_to_2000" = "حالا شب شده خوب بخوابی!";
 "clock_time_description_2000_to_0600" = "حالا شب شده";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "تکه نان";
 "emoji_1F41F_name" = "ماهی";
 "emoji_1F41F_name_plural" = "ماهی ها";
+"emoji_1F954_name" = "سیب زمینی";
 "emoji_1F954_name_plural" = "سیب زمینی";
 "emoji_1F955_name" = "هویج";
 "emoji_1F955_name_plural" = "هویج";
@@ -130,20 +135,33 @@
 "food_waste_title" = "روی تصاویر ضربه بزنید تا از مقیاس اضافه یا حذف شوند";
 "food_waste_weekly_stats" = "این هفته شما را دور انداخته %@ گرم مواد غذایی.";
 "garment_beanie" = "بینی";
+"garment_beanie_description" = "بینی";
 "garment_cap" = "کلاه";
+"garment_cap_description" = "کلاه";
 "garment_jacket" = "ژاکت";
+"garment_jacket_description" = "ژاکت";
+"garment_mittens" = "دست میتنز";
 "garment_mittens_description" = "دست میتنز";
 "garment_neckWear" = "لاک پشت یا زخم";
 "garment_neckWear_description" = "زخم یا لاک پشت";
 "garment_pulloverPants" = "پوشش شلوار";
+"garment_pulloverPants_description" = "پوشش شلوار";
+"garment_rainBoots" = "چکمه";
 "garment_rainBoots_description" = "چکمه";
+"garment_rainCoat" = "ژاکت باران";
 "garment_rainCoat_description" = "ژاکت باران";
 "garment_rainGloves" = "دستکش باران";
+"garment_rainGloves_description" = "دستکش باران";
+"garment_rainPants" = "شلوار باران";
 "garment_rainPants_description" = "شلوار باران";
 "garment_shoes" = "کفش";
+"garment_shoes_description" = "کفش";
 "garment_sweater" = "بلع گرم";
+"garment_sweater_description" = "بلع گرم";
+"garment_winterBoots" = "کفش";
 "garment_winterBoots_description" = "چکمه های زمستانی";
 "garment_winterOutfit" = "لباس یا جاکت با پتلون روی جلد";
+"garment_winterOutfit_description" = "لباس یا جاکت با پتلون روی جلد";
 "home_feedback_acitivity_title" = "آیا شما در یک فعالیت شرکت کرده اید؟
 اینجا را کلیک کنید به ما بگویید آنچه شما از آن فکر!";
 "home_holiday" = "فردا %@است. آخر هفته خوبی داشته باشی!";
@@ -195,6 +213,8 @@
 اون درست قبل از %@بود";
 "tempus_child_arrives_during" = "%@ به پیش دبستانی در حدود %@.
 که در طول %@.";
+"tempus_child_arrives_during_past" = "%@ حدود ساعت 19 به پیش دبستانی %@.
+اون درست قبل از %@بود";
 "tempus_child_arrives_past" = "%@ حدود ساعت 19 به پیش دبستانی %@";
 "tempus_child_has_left" = "%@ می رسد که او برای روز به خانه رفته است.";
 "tempus_child_has_left_returns_in_days" = "%@ نظر می رسد که آنها برای روز به خانه رفته اند اما باید دوباره در %@ بیایند.";

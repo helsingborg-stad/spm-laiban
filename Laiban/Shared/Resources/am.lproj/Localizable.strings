@@ -14,6 +14,7 @@
 "are_you_ready" = "ዝግጁ ነህ?";
 "ask_teacher" = "አስተማሪውን ጠይቅ";
 "calendar_event" = "በዚህ ቀን %@";
+"calendar_event_today" = "ዛሬ %@";
 "calendar_free_day" = "በዚህ ቀን ነፃ ነን።";
 "calendar_free_day_after" = "በሚቀጥለው ቀን ከሥራ ተፈናቅለናል።";
 "calendar_free_tomorrow" = "ነገ ነፃ ነን።";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ዛሬ መቼ እንደምትወሰድና የትኞቹ ጓደኞች እንዳሉ ማወቅ ትፈልጋለህ? እዚህ ይጫኑ!";
 "clock_time_1" = "A";
 "clock_time_10" = "አስር";
-"clock_time_11" = "አስራ ሁለት";
+"clock_time_11" = "አሰራ አንድ";
+"clock_time_12" = "አስራ ሁለት";
 "clock_time_2" = "ሁለት";
 "clock_time_3" = "ሶስት";
 "clock_time_4" = "አራት";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "አሁን ጠዋት ና በዚህ ሰዓት አካባቢ ቁርስ እንበላለን።";
 "clock_time_description_0730_to_0830" = "አሁን ጠዋት ነው።";
 "clock_time_description_0830_to_0900" = "በዚህ ጊዜ አካባቢ ፍራፍሬ እንበላለን።";
+"clock_time_description_0900_to_1045" = "አሁን ጠዋት ነው።";
 "clock_time_description_1045_to_1230" = "አሁን እኩለ ቀንና የምሳ ሰዓት ነው።";
 "clock_time_description_1230_to_1400" = "አሁን ከሰዓት በኋላ ነው።";
 "clock_time_description_1400_to_1500" = "አሁን ከሰዓት በኋላ እና በዚህ ጊዜ አካባቢ ምግብ እንበላለን።";
+"clock_time_description_1500_to_1630" = "አሁን ከሰዓት በኋላ ነው።";
 "clock_time_description_1630_to_1800" = "ሌሊት ማለት ይቻላል።";
 "clock_time_description_1800_to_2000" = "አሁን ሌሊት ነው። መልካም እንቅልፍ!";
 "clock_time_description_2000_to_0600" = "አሁን ሌሊት ነው።";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "የዳቦ ቁራጭ";
 "emoji_1F41F_name" = "ዓሣ";
 "emoji_1F41F_name_plural" = "ዓሣ";
+"emoji_1F954_name" = "ድንች";
 "emoji_1F954_name_plural" = "ድንች";
 "emoji_1F955_name" = "ካሮት";
 "emoji_1F955_name_plural" = "ካሮት";
@@ -130,20 +135,33 @@
 "food_waste_title" = "ለመጨመር ወይም ለማስወገድ ምስሎቹን ጠቅ ያድርጉ";
 "food_waste_weekly_stats" = "በዚህ ሳምንት %@ ግራም ምግብ ጣላችሁ።";
 "garment_beanie" = "ቢኒ";
+"garment_beanie_description" = "ቢኒ";
 "garment_cap" = "ካፕ";
+"garment_cap_description" = "ካፕ";
 "garment_jacket" = "ጃኬት";
+"garment_jacket_description" = "ጃኬት";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "Turtleneck ወይም መዓዛ";
 "garment_neckWear_description" = "መዓዛ ወይም ዔሊ";
 "garment_pulloverPants" = "የሽፋን ሱሪ";
+"garment_pulloverPants_description" = "የሽፋን ሱሪ";
+"garment_rainBoots" = "ቡትስ";
 "garment_rainBoots_description" = "ቡትስ";
+"garment_rainCoat" = "የዝናብ ጃኬት";
 "garment_rainCoat_description" = "የዝናብ ጃኬት";
 "garment_rainGloves" = "የዝናብ ጓንት";
+"garment_rainGloves_description" = "የዝናብ ጓንት";
+"garment_rainPants" = "የዝናብ ሱሪ";
 "garment_rainPants_description" = "የዝናብ ሱሪ";
 "garment_shoes" = "ጫማ";
+"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ሞቅ ያለ ሹራብ";
+"garment_sweater_description" = "ሞቅ ያለ ሹራብ";
+"garment_winterBoots" = "ጫማ";
 "garment_winterBoots_description" = "የክረምት ጫማዎች";
 "garment_winterOutfit" = "ሽፋን ሱሪ ጋር ጠቅልል ወይም ጃኬት";
+"garment_winterOutfit_description" = "ሽፋን ሱሪ ጋር ጠቅልል ወይም ጃኬት";
 "home_feedback_acitivity_title" = "አንተስ በአንድ እንቅስቃሴ ተካፍለሃል?
 ያሰብከውን ለመናገር እዚህ ይጫኑ!";
 "home_holiday" = "ነገ %@ነው ! መልካም የእረፍት ቀናት!";
@@ -195,6 +213,8 @@
 ይህ የሆነው %@ከመሞቱ ትንሽ ቀደም ብሎ ነው !";
 "tempus_child_arrives_during" = "%@ %@አካባቢ ለትምህርት ያልደረሱ በት/ቤት ይደርሳሉ !
 ይህ %@ወቅት ነው .";
+"tempus_child_arrives_during_past" = "%@ ለትምህርት ያልደረሱት %@አካባቢ ነው !
+ይህ የሆነው %@ከመሞቱ ትንሽ ቀደም ብሎ ነው !";
 "tempus_child_arrives_past" = "%@ ለትምህርት ያልደረሱ %@";
 "tempus_child_has_left" = "%@ ለዕለቱ ወደ ቤት የሄደ ይመስላል።";
 "tempus_child_has_left_returns_in_days" = "%@ ለዕለቱ ወደ ቤት የሄደ ቢመስልም %@ ቀናት ውስጥ ተመልሶ መምጣት አለበት ።";

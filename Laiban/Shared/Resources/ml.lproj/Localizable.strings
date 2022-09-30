@@ -14,6 +14,7 @@
 "are_you_ready" = "നീ തയ്യാറാണോ?";
 "ask_teacher" = "ടീച്ചറോട് ചോദിക്ക്.";
 "calendar_event" = "ഈ ദിവസം <span translate='no'>string</span>";
+"calendar_event_today" = "ഇന്ന് <span translate='no'>string</span>";
 "calendar_free_day" = "ഈ ദിവസം നാം സ്വതന്ത്രരാണ്.";
 "calendar_free_day_after" = "അടുത്ത ദിവസം ഞങ്ങൾ ഡ്യൂട്ടിക്ക് പുറത്താണ്.";
 "calendar_free_tomorrow" = "നാളെ നമ്മള് സ്വതന്ത്രരാണ്.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ഇന്ന് നിങ്ങളെ എപ്പോൾ കൊണ്ടുപോകുമെന്നും ഏതൊക്കെ സുഹൃത്തുക്കൾ ഇവിടെയുണ്ടെന്നും അറിയാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ? ഇവിടെ ക്ലിക്ക് ചെയ്യൂ!";
 "clock_time_1" = "A";
 "clock_time_10" = "പത്ത്";
-"clock_time_11" = "പന്ത്രണ്ട്";
+"clock_time_11" = "പതിനൊന്ന്";
+"clock_time_12" = "പന്ത്രണ്ട്";
 "clock_time_2" = "രണ്ട്";
 "clock_time_3" = "മൂന്ന്";
 "clock_time_4" = "നാല്";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ഇപ്പോൾ രാവിലെയാണ്, ഈ സമയത്ത് ഞങ്ങൾ പ്രഭാതഭക്ഷണം കഴിക്കുന്നു.";
 "clock_time_description_0730_to_0830" = "ഇപ്പോൾ നേരം പുലർന്നിരിക്കുന്നു.";
 "clock_time_description_0830_to_0900" = "ഈ സമയത്ത് ഞങ്ങൾ പഴങ്ങൾ കഴിക്കുന്നു.";
+"clock_time_description_0900_to_1045" = "ഇപ്പോൾ നേരം പുലർന്നിരിക്കുന്നു.";
 "clock_time_description_1045_to_1230" = "ഇപ്പോൾ ഉച്ചയ്ക്കും ഉച്ചഭക്ഷണത്തിനുമാണ്.";
 "clock_time_description_1230_to_1400" = "ഇപ്പോൾ വൈകുന്നേരമാണ്.";
 "clock_time_description_1400_to_1500" = "ഇപ്പോൾ ഇത് ഉച്ചതിരിഞ്ഞാണ്, ഈ സമയത്ത് ഞങ്ങൾ ലഘുഭക്ഷണം കഴിക്കുന്നു.";
+"clock_time_description_1500_to_1630" = "ഇപ്പോൾ വൈകുന്നേരമാണ്.";
 "clock_time_description_1630_to_1800" = "ഏകദേശം രാത്രിയായി.";
 "clock_time_description_1800_to_2000" = "ഇപ്പോൾ രാത്രിയാണ്. നന്നായി ഉറങ്ങ്!";
 "clock_time_description_2000_to_0600" = "ഇപ്പോൾ രാത്രിയാണ്.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "റൊട്ടിയുടെ കഷണം";
 "emoji_1F41F_name" = "മത്സ്യം";
 "emoji_1F41F_name_plural" = "മീനുകൾ";
+"emoji_1F954_name" = "ഉരുളക്കിഴങ്ങ്";
 "emoji_1F954_name_plural" = "ഉരുളക്കിഴങ്ങ്";
 "emoji_1F955_name" = "കാരറ്റ്";
 "emoji_1F955_name_plural" = "കാരറ്റ്";
@@ -130,20 +135,33 @@
 "food_waste_title" = "സ്കെയിലിൽ നിന്ന് ചേർക്കുന്നതിനോ നീക്കംചെയ്യുന്നതിനോ ഇമേജുകൾ സ്പർശിക്കുക";
 "food_waste_weekly_stats" = "ഈ ആഴ്ച നിങ്ങൾ %@ ഗ്രാം ഭക്ഷണം വലിച്ചെറിഞ്ഞു.";
 "garment_beanie" = "ബീനി";
+"garment_beanie_description" = "ബീനി";
 "garment_cap" = "ക്യാപ്";
+"garment_cap_description" = "ക്യാപ്";
 "garment_jacket" = "ജാക്കറ്റ്";
+"garment_jacket_description" = "ജാക്കറ്റ്";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "ടർട്ടിൽനെക്ക് അല്ലെങ്കിൽ സ്കാർഫ്";
 "garment_neckWear_description" = "സ്കാർഫ് അല്ലെങ്കിൽ ടർട്ടിൽനെക്ക്";
 "garment_pulloverPants" = "കവർ പാന്റ്സ്";
+"garment_pulloverPants_description" = "കവർ പാന്റ്സ്";
+"garment_rainBoots" = "ബൂട്ട്സ്";
 "garment_rainBoots_description" = "ബൂട്ട്സ്";
+"garment_rainCoat" = "മഴ ജാക്കറ്റ്";
 "garment_rainCoat_description" = "മഴ ജാക്കറ്റ്";
 "garment_rainGloves" = "മഴ കൈയുറകൾ";
+"garment_rainGloves_description" = "മഴ കൈയുറകൾ";
+"garment_rainPants" = "റെയിൻ പാന്റ്സ്";
 "garment_rainPants_description" = "റെയിൻ പാന്റ്സ്";
 "garment_shoes" = "ഷൂസ്";
+"garment_shoes_description" = "ഷൂസ്";
 "garment_sweater" = "ചൂടുള്ള സ്വെറ്റർ";
+"garment_sweater_description" = "ചൂടുള്ള സ്വെറ്റർ";
+"garment_winterBoots" = "ഷൂസ്";
 "garment_winterBoots_description" = "ശീതകാല ബൂട്ടുകൾ";
 "garment_winterOutfit" = "കവർ പാന്റ്സുള്ള ഓവറോൾസ് അല്ലെങ്കിൽ ജാക്കറ്റ്";
+"garment_winterOutfit_description" = "കവർ പാന്റ്സുള്ള ഓവറോൾസ് അല്ലെങ്കിൽ ജാക്കറ്റ്";
 "home_feedback_acitivity_title" = "നിങ്ങൾ ഒരു പ്രവർത്തനത്തിൽ പങ്കെടുത്തിട്ടുണ്ടോ?
 അതിനെക്കുറിച്ച് നിങ്ങൾ എന്താണ് വിചാരിച്ചതെന്ന് ഞങ്ങളോട് പറയാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക!";
 "home_holiday" = "നാളെ %@. നല്ലൊരു വാരാന്ത്യം ആശംസിക്കുന്നു!";
@@ -195,6 +213,8 @@
 അത് <span translate='no'>string</span>തൊട്ടുമുമ്പായിരുന്നു.";
 "tempus_child_arrives_during" = "ഏകദേശം %@മണിക്ക് %@ പ്രീസ്കൂളിലെത്തും.
 അത് <span translate='no'>string</span>സമയത്താണ്.";
+"tempus_child_arrives_during_past" = "ഏകദേശം %@-ന് %@ പ്രീസ്കൂളിൽ എത്തി.
+അത് <span translate='no'>string</span>തൊട്ടുമുമ്പായിരുന്നു.";
 "tempus_child_arrives_past" = "%@ ഏകദേശം %@ ന് പ്രീസ്കൂളിൽ എത്തി";
 "tempus_child_has_left" = "%@ ദിവസം വീട്ടിലേക്ക് പോയതായി തോന്നുന്നു.";
 "tempus_child_has_left_returns_in_days" = "%@ ദിവസം വീട്ടിലേക്ക് പോയതായി തോന്നുന്നു, പക്ഷേ <span translate='no'>string</span> ദിവസത്തിനുള്ളിൽ വീണ്ടും വരണം.";
