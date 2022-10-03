@@ -47,6 +47,8 @@ struct ActivityAdminActivityView: View {
         var hasTimeRange = false
         var image:Image?
         init(activity:Activity) {
+            defer { populateImage() }
+            
             self.activity = activity
             self.date = activity.date
             self.content = activity.content
