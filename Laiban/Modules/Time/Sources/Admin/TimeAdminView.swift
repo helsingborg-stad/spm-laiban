@@ -55,9 +55,11 @@ struct TimeAdminView: View {
                 service.save()
             }
             NavigationLink(destination: AdminClockEventsView(service: service)) {
-                Text("Händelser")
-                Spacer()
-                Text("\(self.service.data.events.count)")
+                HStack {
+                    Text("Händelser")
+                    Spacer()
+                    Text("\(self.service.data.events.count)")
+                }
             }.id("Clock events")
         }
     }
