@@ -234,7 +234,7 @@ public struct ActivitiesView: View {
         .primaryContainerBackground()
         .multilineTextAlignment(.center)
         .onAppear {
-            for activity in service.data {
+            for activity in service.todaysActivities {
                 items.append(Item(activity))
             }
             setupView()
