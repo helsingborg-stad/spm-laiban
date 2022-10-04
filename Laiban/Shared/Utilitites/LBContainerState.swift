@@ -216,6 +216,8 @@ public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
     }
     public func registerInteraction() {
         interactionSubject.send()
+        
+        self.resetInactivityTimer()
     }
     private func resetInactivityTimer() {
         inactivityTimer?.invalidate()
