@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct ParticipantsAdminView: View {
-    private var vm: ParticipantsAdminViewModel
+    private var viewModel: ParticipantsAdminViewModel
     @State var sortedParticipants = [String]()
     
     init(service: ParticipantService) {
-        vm = ParticipantsAdminViewModel(service: service)
+        viewModel = ParticipantsAdminViewModel(service: service)
     }
     
     var body: some View {
         NavigationLink(destination: LBParticipantsView(allParticipants: $sortedParticipants,
-                                                       updateParticipant: vm.updateParticipants))
+                                                       updateParticipant: viewModel.updateParticipants))
         {
             HStack {
                 Text("Deltagare")
             }
         }
-        .onReceive(vm.participantPublisher) {
+        .onReceive(viewModel.participantPublisher) {
             sortedParticipants = $0.sorted()
         }
     }
