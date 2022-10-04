@@ -73,19 +73,6 @@ struct HouseholdScaleTableView: View {
             }
             .frame(maxWidth:.infinity).padding([.top]).padding([.leading,.trailing])
         }
-        .onAppear {
-            var t:TimeInterval = 0
-            let d = DispatchTime.now()
-            for s in statistics {
-                s.model.reset()
-                if s.model.wasteObjects.count > 0 {
-                    DispatchQueue.main.asyncAfter(deadline: d + t) {
-                        s.model.dropObjects()
-                    }
-                    t += 1
-                }
-            }
-        }
     }
 }
 struct HouseholdScaleTableView_Previews: PreviewProvider {
