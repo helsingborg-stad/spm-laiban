@@ -94,7 +94,7 @@ struct HouseholdScaleView: View {
         }.frame(maxWidth:.infinity, maxHeight:.infinity,alignment: .bottom)
         .onAppear {
             var t:TimeInterval = 0
-            let d = DispatchTime.now()
+            let d = DispatchTime.now() + 0.5
             model.reset()
             if model.wasteObjects.count > 0 {
                 DispatchQueue.main.asyncAfter(deadline: d + t) {
