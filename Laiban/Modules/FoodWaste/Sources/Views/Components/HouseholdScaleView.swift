@@ -92,6 +92,17 @@ struct HouseholdScaleView: View {
                 .frame(height:diff,alignment: .bottom)
             }.frame(maxWidth:.infinity, maxHeight:.infinity,alignment: .bottom)
         }.frame(maxWidth:.infinity, maxHeight:.infinity,alignment: .bottom)
+        .onAppear {
+            var t:TimeInterval = 0
+            let d = DispatchTime.now()
+            model.reset()
+            if model.wasteObjects.count > 0 {
+                DispatchQueue.main.asyncAfter(deadline: d + t) {
+                    model.dropObjects()
+                }
+                t += 1
+            }
+        }
     }
     var body: some View {
         VStack(spacing:0) {
