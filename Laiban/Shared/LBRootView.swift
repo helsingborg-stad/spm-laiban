@@ -113,7 +113,7 @@ public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
             viewChanged?(val)
         }
         .onReceive(assistant.$isSpeaking) { isSpeaking in
-            viewState.registerInteraction()
+            viewState.inactivityTimeInterval = isSpeaking ? 0 : (config.homescreenService?.data.timeInterval ?? 0)
             isDisabled = isSpeaking && shouldDisable?() != false
         }
         .disabled(isDisabled)
