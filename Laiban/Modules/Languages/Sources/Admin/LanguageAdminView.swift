@@ -72,7 +72,7 @@ struct LanguageAdminView: View {
                     pitch: service.data.ttsPitch,
                     tag: "testplay"
                 )
-                assistant.queue(utterance: u)
+                assistant.interrupt(using: [u])
             }
         }.onDisappear {
             service.save()
