@@ -82,16 +82,13 @@ public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
         var options:AnyEquatable?
         var inactivityTimerDisabled:Bool = false
     }
-    private let interactionSubject = PassthroughSubject<Void,Never>()
     private var cancellables = Set<AnyCancellable>()
     private var inactivityTimer:Timer? = nil
-    private let inactivitySubject = PassthroughSubject<Void,Never>()
     public var inactivityTimeInterval:TimeInterval = 0 {
         didSet {
             resetInactivityTimer()
         }
     }
-    public let inactivityPublisher:AnyPublisher<Void,Never>
     @Published public private(set) var previousValue:T? = nil
     @Published public private(set) var value:T
     @Published public private(set) var rootValue:T
@@ -104,10 +101,6 @@ public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
     public init(rootValue:T) {
         self.rootValue = rootValue
         self.value = rootValue
-        inactivityPublisher = inactivitySubject.eraseToAnyPublisher()
-        inactivitySubject.sink { [weak self] in
-            self?.resetInactivityTimer()
-        }.store(in: &cancellables)
     }
     private var states:[T:Config] = [:]
     private var rootState = Config(characterPosition: .right, actionButtons: [.languages,.admin],inactivityTimerDisabled: true)
@@ -215,9 +208,7 @@ public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
         update(using: state(for: value))
     }
     public func registerInteraction() {
-        interactionSubject.send()
-        
-        self.resetInactivityTimer()
+        resetInactivityTimer()
     }
     private func resetInactivityTimer() {
         inactivityTimer?.invalidate()
@@ -226,7 +217,6 @@ public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
             return
         }
         inactivityTimer = Timer.scheduledTimer(withTimeInterval: inactivityTimeInterval, repeats: true, block: { [weak self] timer in
-            self?.inactivitySubject.send()
             withAnimation(.spring()) {
                 self?.clear()
             }
