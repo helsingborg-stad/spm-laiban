@@ -14,7 +14,7 @@ struct InstagramAdminView: View {
     @State var instagramError: Error?
     @State var isAuthenticated: Bool = false
     @State var cancellables = Set<AnyCancellable>()
-    var body: some View {
+    var availableBody: some View {
         Button(action: {
             if service.instagram.isAuthenticated {
                 service.instagram.logout()
@@ -45,6 +45,16 @@ struct InstagramAdminView: View {
         })
         .alert(isPresented: $showInstagramErrorAlert) {
             Alert(title: Text(instagramError?.localizedDescription ?? "Kunde inte koppla användaren"))
+        }
+    }
+    var notAvailableBody: some View {
+        Text("Saknar konfiguration för Instagram").foregroundColor(Color(.secondaryLabel))
+    }
+    var body: some View {
+        if service.instagram.config != nil {
+            availableBody
+        } else {
+            notAvailableBody
         }
     }
 }
