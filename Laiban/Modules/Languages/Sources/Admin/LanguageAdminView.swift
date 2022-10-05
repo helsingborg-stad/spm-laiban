@@ -44,10 +44,8 @@ struct LanguageAdminView: View {
                     service.save()
                 }
             }
-            Picker(selection: $service.data.ttsGender, label: Text("Röstsyntes")) {
-                ForEach(TTSGender.allCases, id:\.id) {
-                    Text($0.description)
-                }
+            LBNonOptionalPicker(title: "Röstsyntes", items: TTSGender.allCases, selection: $service.data.ttsGender) { item in
+                Text(item.description)
             }
             VStack(alignment:.leading,spacing:0) {
                 HStack(alignment:.firstTextBaseline) {
