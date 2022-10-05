@@ -23,6 +23,16 @@ extension TTSGender {
 struct LanguageAdminView: View {
     @ObservedObject var service:LanguageService
     @EnvironmentObject var assistant:Assistant
+    var supportedGenders:[TTSGender] {
+        var genders = [TTSGender]()
+        for g in TTSGender.allCases {
+            guard assistant.tts.hasSupport(for: TTSVoice(gender: g, locale: Locale(identifier: "sv_SE"))) else {
+                continue
+            }
+            genders.append(g)
+        }
+        return genders
+    }
     var body: some View {
         Group {
             NavigationLink(destination: LanguageSelectionAdminView(service: service)) {
@@ -44,9 +54,9 @@ struct LanguageAdminView: View {
                     service.save()
                 }
             }
-            Picker(selection: $service.data.ttsGender, label: Text("Röstsyntes")) {
-                ForEach(TTSGender.allCases, id:\.id) {
-                    Text($0.description)
+            if supportedGenders.count > 1 {
+                LBNonOptionalPicker(title: "Röstsyntes", items: supportedGenders, selection: $service.data.ttsGender) { item in
+                    Text(item.description)
                 }
             }
             VStack(alignment:.leading,spacing:0) {
@@ -74,7 +84,7 @@ struct LanguageAdminView: View {
                     pitch: service.data.ttsPitch,
                     tag: "testplay"
                 )
-                assistant.queue(utterance: u)
+                assistant.interrupt(using: [u])
             }
         }.onDisappear {
             service.save()
