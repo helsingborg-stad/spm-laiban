@@ -8,6 +8,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
+import Assistant
 import SharedActivities
 
 public struct Activity: Codable, Identifiable, Equatable {
@@ -28,6 +29,7 @@ public struct Activity: Codable, Identifiable, Equatable {
     public internal(set) var starts:Date?
     public internal(set) var ends:Date?
     public internal(set) var sharedActivity:SharedActivity? = nil
+    
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(String.self, forKey: .id)
@@ -95,9 +97,10 @@ public struct Activity: Codable, Identifiable, Equatable {
             arr.append(participantsCopy[0])
         } else if participantsCopy.count > 1, let last = participantsCopy.popLast() {
             arr.append(participantsCopy.joined(separator: ", "))
-            arr.append(NSLocalizedString("word_and", comment:"world_and").lowercased())
+            arr.append(NSLocalizedString("word_and", bundle: Bundle.module, comment:"word_and").lowercased())
             arr.append(last)
         }
+        
         switch timeFrame {
         case .now: arr.append(NSLocalizedString("activities_participants", bundle: Bundle.module, comment: "activities_participants").lowercased())
         case .past: arr.append(NSLocalizedString("activities_participants_past", bundle: Bundle.module, comment: "activities_participants_past").lowercased())
