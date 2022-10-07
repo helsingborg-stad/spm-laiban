@@ -8,7 +8,6 @@ import Foundation
 import UIKit
 import SwiftUI
 
-import Assistant
 import SharedActivities
 
 public struct Activity: Codable, Identifiable, Equatable {
