@@ -72,3 +72,12 @@ struct BalanceScaleTableView : View {
         })
     }
 }
+
+struct BalanceScaleTableView_Previews: PreviewProvider {
+    static var service = FoodWasteService()
+    static var viewModel = BalanceScaleView.ViewModel(wasteWeight:200.0)
+    static var previews: some View {
+        BalanceScaleTableView(model:viewModel, foodWasteManager: service.wasteManager).attachPreviewEnvironmentObjects()
+        
+    }
+}

@@ -115,36 +115,13 @@ public struct FoodWasteView : View {
         
     }
 }
-//struct FoodWasteView_Previews: PreviewProvider {
-//    static var statistics:[HouseholdScaleTableView.ViewModel] {
-//        var arr = [HouseholdScaleTableView.ViewModel]()
-//        var date = Date().startOfWeek!
-//        arr.append(HouseholdScaleTableView.ViewModel(date: date, model: HouseholdScaleView.ViewModel(wasteWeight: 200, baseLine: 1250,emojis: "🍏🍏🍓")))
-//        date = date.tomorrow!
-//        arr.append(HouseholdScaleTableView.ViewModel(date: date, model: HouseholdScaleView.ViewModel(wasteWeight: 300, baseLine: 1250,emojis: "🍏🍗🍌🍏🍈🍈")))
-//        date = date.tomorrow!
-//        arr.append(HouseholdScaleTableView.ViewModel(date: date, model: HouseholdScaleView.ViewModel(wasteWeight: 1800, baseLine: 1250,emojis: "🍓🥩🥕🥝🥩🥕🥝🍏🍏🍈🍈🍓🥩🥕🥝🥩🥕🥝🍏🍏🍈🍈")))
-//        date = date.tomorrow!
-//        arr.append(HouseholdScaleTableView.ViewModel(date: date, model: HouseholdScaleView.ViewModel(wasteWeight: 0, baseLine: 1250)))
-//        date = date.tomorrow!
-//        arr.append(HouseholdScaleTableView.ViewModel(date: date, model: HouseholdScaleView.ViewModel(wasteWeight: 0, baseLine: 1250)))
-//        return arr
-//    }
-//    static var manager:FoodWasteViewManager {
-//        let m = FoodWasteViewManager(nil)
-//        m.title = LaibanString(LocalizedString("Test", key: "test", language: .swedish))
-//        FoodWasteManager.delete()
-//        m.weeklyStatistics = statistics
-//        return m
-//    }
-//    static var previews: some View {
-//        Group {
-//            ForEach(AppleDeviceCategory.allCases) { category in
-//                FoodWasteView(manager: manager)
-//                    .modifier(PreviewDeviceCategory(category: category))
-//            }
-//        }
-//        
-//        .environmentObject(Localization())
-//    }
-//}
+
+struct FoodWasteView_Previews: PreviewProvider {
+    static var service = FoodWasteService()
+    static var previews: some View {
+        LBFullscreenContainer { _ in
+            FoodWasteView(service: service)
+        }
+        .attachPreviewEnvironmentObjects()
+    }
+}
