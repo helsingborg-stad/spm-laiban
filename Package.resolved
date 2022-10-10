@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/helsingborg-stad/spm-daisy",
       "state" : {
-        "revision" : "66cca9d9ef8fcc2cc21830c3ad6e9d71b980372d",
-        "version" : "1.0.4"
+        "revision" : "fafd15043203368165fb53431c3c1ff455946a30",
+        "version" : "1.0.5"
       }
     },
     {
