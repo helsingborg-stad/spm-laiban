@@ -14,6 +14,7 @@
 "are_you_ready" = "ເຈົ້າພ້ອມແລ້ວບໍ?";
 "ask_teacher" = "ຖາມຄູ";
 "calendar_event" = "ໃນວັນນີ້ <span translate='no'>string</span>";
+"calendar_event_today" = "ມື້ ນີ້ <span translate='no'>string</span>";
 "calendar_free_day" = "ໃນວັນນີ້ພວກເຮົາເປັນອິດສະຫຼະ.";
 "calendar_free_day_after" = "ມື້ຕໍ່ມາພວກເຮົາບໍ່ໄດ້ປະຕິບັດຫນ້າທີ່.";
 "calendar_free_tomorrow" = "ມື້ອື່ນເຮົາຈະເປັນອິດສະຫຼະ.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ທ່ານຢາກຮູ້ວ່າເມື່ອໃດທີ່ທ່ານຈະໄດ້ຮັບການເກັບກໍາໃນມື້ນີ້ແລະຫມູ່ຄົນໃດຢູ່ທີ່ນີ້? ຄລິກທີ່ນີ້!";
 "clock_time_1" = "A";
 "clock_time_10" = "ສິບ";
-"clock_time_11" = "ສິບສອງ";
+"clock_time_11" = "ສິບເອັດ";
+"clock_time_12" = "ສິບສອງ";
 "clock_time_2" = "ສອງ";
 "clock_time_3" = "ສາມ";
 "clock_time_4" = "ສີ່";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ບັດ ນີ້ ມັນ ເປັນ ຕອນ ເຊົ້າ ແລະ ອ້ອມ ຮອບ ເທື່ອ ນີ້ ພວກ ເຮົາ ກິນ ເຂົ້າ ເຊົ້າ.";
 "clock_time_description_0730_to_0830" = "ດຽວນີ້ຕອນເຊົ້າ.";
 "clock_time_description_0830_to_0900" = "ໃນຊ່ວງນີ້ເຮົາກິນຫມາກໄມ້.";
+"clock_time_description_0900_to_1045" = "ດຽວນີ້ຕອນເຊົ້າ.";
 "clock_time_description_1045_to_1230" = "ດຽວນີ້ແມ່ນຕອນທ່ຽງແລະເວລາທ່ຽງ.";
 "clock_time_description_1230_to_1400" = "ດຽວນີ້ຕອນບ່າຍ.";
 "clock_time_description_1400_to_1500" = "ບັດ ນີ້ ມັນ ເປັນ ຕອນ ບ່າຍ ແລະ ອ້ອມ ຮອບ ເທື່ອ ນີ້ ພວກ ເຮົາ ກິນ ເຂົ້າ ຫົດ.";
+"clock_time_description_1500_to_1630" = "ດຽວນີ້ຕອນບ່າຍ.";
 "clock_time_description_1630_to_1800" = "ເກືອບຄືນແລ້ວ.";
 "clock_time_description_1800_to_2000" = "ດຽວນີ້ຄືນແລ້ວ. ນອນຫຼັບໃຫ້ສະບາຍ!";
 "clock_time_description_2000_to_0600" = "ດຽວນີ້ຄືນແລ້ວ.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "ຊິ້ນສ່ວນເຂົ້າຈີ່";
 "emoji_1F41F_name" = "ປາ";
 "emoji_1F41F_name_plural" = "ປາ";
+"emoji_1F954_name" = "Potatoes";
 "emoji_1F954_name_plural" = "Potatoes";
 "emoji_1F955_name" = "ຄາຣອດ";
 "emoji_1F955_name_plural" = "Carrots";
@@ -130,20 +135,33 @@
 "food_waste_title" = "Tap ຮູບພາບເພື່ອເພີ່ມຫຼືເອົາອອກຈາກຂະຫນາດ";
 "food_waste_weekly_stats" = "ອາທິດນີ້ທ່ານໄດ້ຖິ້ມອາຫານ <span translate='no'>string</span> ກຣາມ.";
 "garment_beanie" = "Beanie";
+"garment_beanie_description" = "Beanie";
 "garment_cap" = "Cap";
+"garment_cap_description" = "Cap";
 "garment_jacket" = "Jacket";
+"garment_jacket_description" = "Jacket";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "Turtleneck ຫຼື scarf";
 "garment_neckWear_description" = "Scarf ຫຼື turtleneck";
 "garment_pulloverPants" = "pants Cover";
+"garment_pulloverPants_description" = "pants Cover";
+"garment_rainBoots" = "ເກີບ";
 "garment_rainBoots_description" = "ເກີບ";
+"garment_rainCoat" = "ເສື້ອຝົນ";
 "garment_rainCoat_description" = "ເສື້ອຝົນ";
 "garment_rainGloves" = "ຖົງມືຝົນ";
+"garment_rainGloves_description" = "ຖົງມືຝົນ";
+"garment_rainPants" = "pants ຝົນ";
 "garment_rainPants_description" = "pants ຝົນ";
 "garment_shoes" = "ເກີບ";
+"garment_shoes_description" = "ເກີບ";
 "garment_sweater" = "ເສື້ອອົບອຸ່ນ";
+"garment_sweater_description" = "ເສື້ອອົບອຸ່ນ";
+"garment_winterBoots" = "ເກີບ";
 "garment_winterBoots_description" = "ເກີບລະດູຫນາວ";
 "garment_winterOutfit" = "ລວມຫຼືເສື້ອຄຸມທີ່ມີpants ປົກ";
+"garment_winterOutfit_description" = "ລວມຫຼືເສື້ອຄຸມທີ່ມີpants ປົກ";
 "home_feedback_acitivity_title" = "ທ່ານໄດ້ເຂົ້າຮ່ວມກິດຈະກໍາບໍ?
 ຄລິກທີ່ນີ້ເພື່ອບອກພວກເຮົາວ່າທ່ານຄິດແນວໃດ!";
 "home_holiday" = "ມື້ອື່ນ %@. ຂໍໃຫ້ມີຄວາມສຸກຕອນທ້າຍອາທິດເດີ!";
@@ -195,6 +213,8 @@
 ນັ້ນກ່ອນ <span translate='no'>string</span>.";
 "tempus_child_arrives_during" = "%@ ຈະມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
  <span translate='no'>string</span>.";
+"tempus_child_arrives_during_past" = "%@ ໄດ້ມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
+ນັ້ນກ່ອນ <span translate='no'>string</span>.";
 "tempus_child_arrives_past" = "%@ ໄດ້ ໄປ ເຖິງ ໂຮງຮຽນ ມັດທະຍົມ ຕອນ ປະມານ <span translate='no'>string</span>";
 "tempus_child_has_left" = "%@ ເບິ່ງ ຄື ວ່າ ໄດ້ ກັບ ບ້ານ ໄປ ແລ້ວ ໃນ ມື້ ນັ້ນ.";
 "tempus_child_has_left_returns_in_days" = "ເບິ່ງ ຄື ວ່າ %@ ໄດ້ ກັບ ບ້ານ ສໍາ ລັບ ມື້ ນັ້ນ ແຕ່ ຄວນ ກັບ ມາ ອີກ ໃນ <span translate='no'>string</span> ມື້.";

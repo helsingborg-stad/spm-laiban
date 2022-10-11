@@ -14,6 +14,7 @@
 "are_you_ready" = "के तपाईं तयार हुनुहुन्छ?";
 "ask_teacher" = "शिक्षकलाई सोध्नुहोस्";
 "calendar_event" = "यस दिन <span translate='no'>string</span>";
+"calendar_event_today" = "आज %@";
 "calendar_free_day" = "यस दिन हामी स्वतन्त्र हुन्छौं।";
 "calendar_free_day_after" = "अर्को दिन हामी ड्युटीबाट हट्छौं।";
 "calendar_free_tomorrow" = "भोलि हामी स्वतन्त्र हुनेछौं।";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "के तपाईं जान्न चाहनुहुन्छ कि आज तपाईंलाई कहिले उठाइनेछ र कुन साथीहरू यहाँ छन्? यहाँ क्लिक गर्नुहोस्!";
 "clock_time_1" = "A";
 "clock_time_10" = "दस";
-"clock_time_11" = "बाह्र";
+"clock_time_11" = "एघार";
+"clock_time_12" = "बाह्र";
 "clock_time_2" = "दुई";
 "clock_time_3" = "तीन";
 "clock_time_4" = "चार";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "अहिले बिहान को समय छ र यस समयमा हामी ब्रेकफास्ट खान्छौं।";
 "clock_time_description_0730_to_0830" = "अब सुबह हो चुकी है।";
 "clock_time_description_0830_to_0900" = "यही समयमा हामी फलफूल खान्छौँ ।";
+"clock_time_description_0900_to_1045" = "अब सुबह हो चुकी है।";
 "clock_time_description_1045_to_1230" = "अहिले मध्याह्न र खाजाको समय छ ।";
 "clock_time_description_1230_to_1400" = "अब दोपहर हो चुकी है।";
 "clock_time_description_1400_to_1500" = "अहिले दिउँसोको समय छ र यस समयमा हामी स्न्याक्स खान्छौं।";
+"clock_time_description_1500_to_1630" = "अब दोपहर हो चुकी है।";
 "clock_time_description_1630_to_1800" = "रात लगभग हो चुकी है।";
 "clock_time_description_1800_to_2000" = "अब रात हो चुकी है। राम्ररी सुत्नुहोस्!";
 "clock_time_description_2000_to_0600" = "अब रात हो चुकी है।";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "रोटीको टुक्रा";
 "emoji_1F41F_name" = "माछा";
 "emoji_1F41F_name_plural" = "माछाहरू";
+"emoji_1F954_name" = "आलु";
 "emoji_1F954_name_plural" = "आलु";
 "emoji_1F955_name" = "गाजर";
 "emoji_1F955_name_plural" = "गाजर";
@@ -130,20 +135,33 @@
 "food_waste_title" = "स्केलबाट थप्न वा हटाउन छविहरू ट्याप गर्नुहोस्";
 "food_waste_weekly_stats" = "यो साता तपाईंले %@ ग्राम खाना फ्याँकिदिनुभएको छ ।";
 "garment_beanie" = "Beanie";
+"garment_beanie_description" = "Beanie";
 "garment_cap" = "क्याप";
+"garment_cap_description" = "क्याप";
 "garment_jacket" = "ज्याकेट";
+"garment_jacket_description" = "ज्याकेट";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "टर्टलनेक वा स्कार्फ";
 "garment_neckWear_description" = "स्कार्फ या टर्टलनेक";
 "garment_pulloverPants" = "आवरण प्यान्ट";
+"garment_pulloverPants_description" = "आवरण प्यान्ट";
+"garment_rainBoots" = "बुट";
 "garment_rainBoots_description" = "बुट";
+"garment_rainCoat" = "वर्षा जैकेट";
 "garment_rainCoat_description" = "वर्षा जैकेट";
 "garment_rainGloves" = "वर्षा पञ्जा";
+"garment_rainGloves_description" = "वर्षा पञ्जा";
+"garment_rainPants" = "रेन पैंट";
 "garment_rainPants_description" = "रेन पैंट";
 "garment_shoes" = "जुत्ता";
+"garment_shoes_description" = "जुत्ता";
 "garment_sweater" = "गर्म स्वेटर";
+"garment_sweater_description" = "गर्म स्वेटर";
+"garment_winterBoots" = "जुत्ता";
 "garment_winterBoots_description" = "शीतकालीन बूट";
 "garment_winterOutfit" = "कभर प्यान्टको साथ चौघेरा वा ज्याकेट";
+"garment_winterOutfit_description" = "कभर प्यान्टको साथ चौघेरा वा ज्याकेट";
 "home_feedback_acitivity_title" = "के तपाईं कुनै गतिविधिमा भाग लिनुभएको छ?
 यहाँ क्लिक गर्नुहोस् हामीलाई बताउन कि तपाईले यसको बारेमा के सोच्नुभयो!";
 "home_holiday" = "भोलि %@छ । सप्ताहन्त राम्रो रहोस्!";
@@ -195,6 +213,8 @@
 यो %@ठीक अघिको कुरा हो ।";
 "tempus_child_arrives_during" = "%@ लगभग %@मा प्रीस्कूल पुग्नेछ।
 त्यो <span translate='no'>string</span>दौडानको कुरा हो ।";
+"tempus_child_arrives_during_past" = "%@ लगभग %@मा पूर्वस्कूली मा पुगे।
+यो %@ठीक अघिको कुरा हो ।";
 "tempus_child_arrives_past" = "%@ लगभग %@ मा पूर्वस्कूली मा पुगे";
 "tempus_child_has_left" = "%@ दिनको लागि घर गएको जस्तो देखिन्छ।";
 "tempus_child_has_left_returns_in_days" = "%@ दिनको लागि घर गएको जस्तो देखिन्छ तर %@ दिनमा फेरि फर्कनु पर्छ।";

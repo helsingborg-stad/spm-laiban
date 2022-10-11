@@ -14,6 +14,7 @@
 "are_you_ready" = "준비되었습니까?";
 "ask_teacher" = "교사에게 물어보십시오.";
 "calendar_event" = "이날 %@";
+"calendar_event_today" = "오늘 %@";
 "calendar_free_day" = "이 날 우리는 자유롭습니다.";
 "calendar_free_day_after" = "다음날 우리는 근무를 그만 둡니다.";
 "calendar_free_tomorrow" = "내일 우리는 자유롭습니다.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "오늘 언제 데리러 올지, 어떤 친구가 여기에 있는지 알고 싶습니까? 여기를 클릭하십시오!";
 "clock_time_1" = "A";
 "clock_time_10" = "10";
-"clock_time_11" = "12";
+"clock_time_11" = "11";
+"clock_time_12" = "12";
 "clock_time_2" = "2";
 "clock_time_3" = "3";
 "clock_time_4" = "4";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "이제 아침이고 이쯤 되면 우리는 아침을 먹는다.";
 "clock_time_description_0730_to_0830" = "이제 아침입니다.";
 "clock_time_description_0830_to_0900" = "이 무렵에 우리는 과일을 먹습니다.";
+"clock_time_description_0900_to_1045" = "이제 아침입니다.";
 "clock_time_description_1045_to_1230" = "이제 정오와 점심 시간입니다.";
 "clock_time_description_1230_to_1400" = "이제 오후입니다.";
 "clock_time_description_1400_to_1500" = "지금은 오후이고 이쯤 되면 간식을 먹는다.";
+"clock_time_description_1500_to_1630" = "이제 오후입니다.";
 "clock_time_description_1630_to_1800" = "거의 밤입니다.";
 "clock_time_description_1800_to_2000" = "이제 밤입니다. 안녕히 주무세요!";
 "clock_time_description_2000_to_0600" = "이제 밤입니다.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "빵 조각";
 "emoji_1F41F_name" = "물고기";
 "emoji_1F41F_name_plural" = "물고기";
+"emoji_1F954_name" = "감자";
 "emoji_1F954_name_plural" = "감자";
 "emoji_1F955_name" = "당근";
 "emoji_1F955_name_plural" = "당근";
@@ -130,20 +135,33 @@
 "food_waste_title" = "배율에서 추가 또는 제거할 이미지를 탭합니다.";
 "food_waste_weekly_stats" = "이번 주에 당신은 %@ 그램의 음식을 버렸습니다.";
 "garment_beanie" = "베 레모";
+"garment_beanie_description" = "베 레모";
 "garment_cap" = "모자";
+"garment_cap_description" = "모자";
 "garment_jacket" = "재킷";
+"garment_jacket_description" = "재킷";
+"garment_mittens" = "장갑";
 "garment_mittens_description" = "장갑";
 "garment_neckWear" = "터틀넥 또는 스카프";
 "garment_neckWear_description" = "스카프 또는 터틀넥";
 "garment_pulloverPants" = "커버 바지";
+"garment_pulloverPants_description" = "커버 바지";
+"garment_rainBoots" = "장화";
 "garment_rainBoots_description" = "장화";
+"garment_rainCoat" = "비 재킷";
 "garment_rainCoat_description" = "비 재킷";
 "garment_rainGloves" = "비 장갑";
+"garment_rainGloves_description" = "비 장갑";
+"garment_rainPants" = "레인 바지";
 "garment_rainPants_description" = "레인 바지";
 "garment_shoes" = "신발";
+"garment_shoes_description" = "신발";
 "garment_sweater" = "따뜻한 스웨터";
+"garment_sweater_description" = "따뜻한 스웨터";
+"garment_winterBoots" = "신발";
 "garment_winterBoots_description" = "겨울 부츠";
 "garment_winterOutfit" = "커버 팬츠가있는 작업복 또는 재킷";
+"garment_winterOutfit_description" = "커버 팬츠가있는 작업복 또는 재킷";
 "home_feedback_acitivity_title" = "활동에 참여하셨습니까?
 여기를 클릭하여 당신이 그것에 대해 어떻게 생각했는지 알려주십시오!";
 "home_holiday" = "내일은 %@입니다. 주말 잘 보내세요!";
@@ -195,6 +213,8 @@
 그것은 %@직전이었습니다.";
 "tempus_child_arrives_during" = "%@ 약 %@에 유치원에 도착할 것입니다.
 그것은 %@동안입니다.";
+"tempus_child_arrives_during_past" = "%@ 약 %@에 유치원에 도착했다.
+그것은 %@직전이었습니다.";
 "tempus_child_arrives_past" = "%@ 약 %@에 유치원에 도착했다.";
 "tempus_child_has_left" = "%@ 하루 동안 집에 간 것 같습니다.";
 "tempus_child_has_left_returns_in_days" = "%@ 하루 동안 집에 간 것 같지만 %@ 일 후에 다시 돌아 와야합니다.";

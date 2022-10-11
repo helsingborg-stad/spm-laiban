@@ -14,6 +14,7 @@
 "are_you_ready" = "ཁྱེད་རང་གྲ་སྒྲིག་ཡིན་ནམ།?";
 "ask_teacher" = "དགེ་རྒན་ལ་འདྲི་རྩད་བྱས།";
 "calendar_event" = "%@་པའི་ཉིན་དེར།";
+"calendar_event_today" = "དེ་རིང་ <span translate='no'>string</span>";
 "calendar_free_day" = "ཉིན་འདི་ལ་ང་ཚོར་རང་དབང་ཡོད།";
 "calendar_free_day_after" = "ཉིན་གཉིས་པར་ང་ཚོ་ལས་གནས་ལས་བྲལ་བ་རེད།";
 "calendar_free_tomorrow" = "སང་ཉིན་ང་ཚོར་ཁོམ་པ་ཡོད།";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ཁྱེད་ཀྱིས་དེ་རིང་ནམ་ཞིག་ལ་ལེན་དུ་ཡོང་བ་དང་གྲོགས་པོ་གང་དག་འདི་ན་ཡོད་པ་ཤེས་འདོད། འདི་ནས་མནན་དང་།";
 "clock_time_1" = "A";
 "clock_time_10" = "བཅུ།";
-"clock_time_11" = "བཅུ་གཉིས།";
+"clock_time_11" = "བཅུ་གཅིག";
+"clock_time_12" = "བཅུ་གཉིས།";
 "clock_time_2" = "གཉིས།";
 "clock_time_3" = "གསུམ།";
 "clock_time_4" = "བཞི།";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ད་ལྟ་སྔ་དྲོ་རེད། དུས་ཚོད་འདིའི་ཡས་མས་སུ་ང་ཚོས་ནངས་ཇ་འཐུང་བ་ཡིན།";
 "clock_time_description_0730_to_0830" = "ད་ལྟ་ནི་ཞོགས་པ་རེད།";
 "clock_time_description_0830_to_0900" = "དུས་ཚོད་འདིའི་ཡས་མས་སུ་ང་ཚོས་ཤིང་ཏོག་ཟ་བ་";
+"clock_time_description_0900_to_1045" = "ད་ལྟ་ནི་ཞོགས་པ་རེད།";
 "clock_time_description_1045_to_1230" = "ད་ལྟ་ཉིན་གུང་དང་དྲོས་ཇའི་དུས་ཚོད་རེད།";
 "clock_time_description_1230_to_1400" = "ད་ལྟ་ཕྱི་དྲོ་རེད།";
 "clock_time_description_1400_to_1500" = "ད་ལྟ་ཕྱི་དྲོ་རེད། དུས་ཚོད་འདིའི་ཡས་མས་སུ་ང་ཚོས་ཞོར་ཟས་ཟ་བཞིན་ཡོད།";
+"clock_time_description_1500_to_1630" = "ད་ལྟ་ཕྱི་དྲོ་རེད།";
 "clock_time_description_1630_to_1800" = "ད་ལྟ་ཕལ་ཆེར་མཚན་མོ་རེད།";
 "clock_time_description_1800_to_2000" = "ད་ལྟ་མཚན་མོ་རེད། གཉིད་ཡག་པོ་ཉོལ།!";
 "clock_time_description_2000_to_0600" = "ད་ལྟ་མཚན་མོ་རེད།";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "བག་ལེབ་ཀོར་མོ།";
 "emoji_1F41F_name" = "ཉ་རིགས།";
 "emoji_1F41F_name_plural" = "ཉ་རིགས།";
+"emoji_1F954_name" = "ཞོག་ཁོག";
 "emoji_1F954_name_plural" = "ཞོག་ཁོག";
 "emoji_1F955_name" = "ལ་ཕུག";
 "emoji_1F955_name_plural" = "ལ་ཕུག";
@@ -130,20 +135,33 @@
 "food_waste_title" = "པར་རིས་ལ་སྔོག་འདོན་བྱས་ནས་རྒྱ་མ་ཁ་སྣོན་དང་ཡང་ན་མེད་པར་བཟོ་";
 "food_waste_weekly_stats" = "གཟའ་འཁོར་འདིར་ཁྱེད་ཚོས་ཟ་མ %@ ཁེ་གང་གཡུགས་ཟིན།";
 "garment_beanie" = "པེ་ཉི་ཡ།";
+"garment_beanie_description" = "པེ་ཉི་ཡ།";
 "garment_cap" = "ཁ་པར་གྱི་ཁ་";
+"garment_cap_description" = "ཁ་པར་གྱི་ཁ་";
 "garment_jacket" = "སྟོད་གོས།";
+"garment_jacket_description" = "སྟོད་གོས།";
+"garment_mittens" = "སྨི་ཐེ་སི།";
 "garment_mittens_description" = "སྨི་ཐེ་སི།";
 "garment_neckWear" = "ཐུའུ་ལུན་ཁེ་དང་སྐེ་དཀྲིས་དམར་པོ།";
 "garment_neckWear_description" = "སྐེ་དཀྲིས་སམ་ཡང་ན་ཀྱག་ཀྭ།";
 "garment_pulloverPants" = "རྐང་སྣམ་ཁེབས་པ།";
+"garment_pulloverPants_description" = "རྐང་སྣམ་ཁེབས་པ།";
+"garment_rainBoots" = "ལྷམ་ཡུ་རིང་།";
 "garment_rainBoots_description" = "ལྷམ་ཡུ་རིང་།";
+"garment_rainCoat" = "ཆར་ལྭ།";
 "garment_rainCoat_description" = "ཆར་ལྭ།";
 "garment_rainGloves" = "ཆར་བའི་ལག་ཤུབས།";
+"garment_rainGloves_description" = "ཆར་བའི་ལག་ཤུབས།";
+"garment_rainPants" = "ཆར་བའི་རྐང་སྣམ།";
 "garment_rainPants_description" = "ཆར་བའི་རྐང་སྣམ།";
 "garment_shoes" = "ལྷམ།";
+"garment_shoes_description" = "ལྷམ།";
 "garment_sweater" = "དྲོད་འཇམ་གྱི་བལ་ལྭ།";
+"garment_sweater_description" = "དྲོད་འཇམ་གྱི་བལ་ལྭ།";
+"garment_winterBoots" = "ལྷམ།";
 "garment_winterBoots_description" = "དགུན་དུས་ཀྱི་ལྷམ་ཡུ་རིང་།";
 "garment_winterOutfit" = "སྟོད་གོས་དང་སྟོད་གོས་ལ་ཁེབས་པའི་རྐང་སྣམ།";
+"garment_winterOutfit_description" = "སྟོད་གོས་དང་སྟོད་གོས་ལ་ཁེབས་པའི་རྐང་སྣམ།";
 "home_feedback_acitivity_title" = "ཁྱོད་བྱ་འགུལ་ཞིག་ལ་ཞུགས་མྱོང་ངམ།
 འདི་ནས་ང་ཚོར་ཁྱོད་ཀྱིས་ཅི་ཞིག་དྲན་གྱིན་ཡོད་པ་བཤད་རོགས།";
 "home_holiday" = "སང་ཉིན་ནི་ %@་པ་ཞིག་རེད། གཟའ་མཇུག་སྤྲོ་པོ་ཡོང་བར་སྨོན།!";
@@ -195,6 +213,8 @@
 དེ་ནི་ %@་གོང་གི་བྱ་བ་ཞིག་རེད།";
 "tempus_child_arrives_during" = "%@ ་ཧ་ལམ་ཟླ་བ་ %@་ཙམ་འགོར་རྗེས་སློབ་གྲྭར་འབྱོར་རྒྱུ་རེད །
 དེ་ནི་ %@་བའི་སྐབས་སུ་བྱུང་བ་ཞིག་རེད།";
+"tempus_child_arrives_during_past" = "%@ ཡས་མས་སུ་སློབ་གྲྭར་འབྱོར་ %@བ་དང་ །
+དེ་ནི་ %@་གོང་གི་བྱ་བ་ཞིག་རེད།";
 "tempus_child_arrives_past" = "%@་ཧ་ལམ་ཟླ་བ་%@་ཙམ་འགོར་རྗེས་སློབ་གྲྭར་འབྱོར།";
 "tempus_child_has_left" = "%@ ་ཉིན་གང་བོར་ཡུལ་ལ་ལོག་པ་འདྲ།";
 "tempus_child_has_left_returns_in_days" = "%@ ་ཉིན་གང་བོར་ཡུལ་ལ་ལོག་པ་འདྲ། འོན་ཀྱང་ཉིན་ %@ ་ཡང་བསྐྱར་ཕྱིར་ཡོང་དགོས།";

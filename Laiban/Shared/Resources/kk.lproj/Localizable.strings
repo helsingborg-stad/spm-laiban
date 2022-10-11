@@ -14,6 +14,7 @@
 "are_you_ready" = "Дайынсың ба?";
 "ask_teacher" = "Мұғалімнен сұраңыз";
 "calendar_event" = "Осы күні %@";
+"calendar_event_today" = "Бүгін %@";
 "calendar_free_day" = "Бұл күні біз тегінміз.";
 "calendar_free_day_after" = "Келесі күні кезекшіліктен шығамыз.";
 "calendar_free_tomorrow" = "Ертең біз тегінміз.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "Бүгін қашан таңдалатыныңызды және қай достарыңыздың осында екенін білгіңіз келе ме? Осы жерді басыңыз!";
 "clock_time_1" = "A";
 "clock_time_10" = "он";
-"clock_time_11" = "он екі";
+"clock_time_11" = "он бір";
+"clock_time_12" = "он екі";
 "clock_time_2" = "Екі";
 "clock_time_3" = "Үш";
 "clock_time_4" = "Төрт";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "Қазір таңертең және осы уақыттың төңірегінде таңертеңгі ас ішеміз.";
 "clock_time_description_0730_to_0830" = "Енді таңертең.";
 "clock_time_description_0830_to_0900" = "Осы уақыттың төңірегінде біз жеміс-жидек жейміз.";
+"clock_time_description_0900_to_1045" = "Енді таңертең.";
 "clock_time_description_1045_to_1230" = "Қазір ол күндіз де, түскі аста да.";
 "clock_time_description_1230_to_1400" = "Енді күннің екінші жартысында.";
 "clock_time_description_1400_to_1500" = "Қазір күндіз және осы уақыттың төңірегінде біз жыландарды жейміз.";
+"clock_time_description_1500_to_1630" = "Енді күннің екінші жартысында.";
 "clock_time_description_1630_to_1800" = "Бұл түні дерлік.";
 "clock_time_description_1800_to_2000" = "Енді ол түн. Жайлы жатып жақсы тұр!";
 "clock_time_description_2000_to_0600" = "Енді ол түн.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "Нан кесектері";
 "emoji_1F41F_name" = "Балықтар";
 "emoji_1F41F_name_plural" = "Балықтар";
+"emoji_1F954_name" = "Картоп";
 "emoji_1F954_name_plural" = "Картоп";
 "emoji_1F955_name" = "Сәбіз";
 "emoji_1F955_name_plural" = "Сәбіз";
@@ -130,20 +135,33 @@
 "food_waste_title" = "Масштабтан қосу немесе жою үшін суреттерді түртіңіз";
 "food_waste_weekly_stats" = "Осы аптада сіз %@ грамм азық-түлік тастадыңыз.";
 "garment_beanie" = "Бэни";
+"garment_beanie_description" = "Бэни";
 "garment_cap" = "Қалпақша";
+"garment_cap_description" = "Қалпақша";
 "garment_jacket" = "Күртеше";
+"garment_jacket_description" = "Күртеше";
+"garment_mittens" = "Миттенс";
 "garment_mittens_description" = "Миттенс";
 "garment_neckWear" = "Тасбақа немесе орамал";
 "garment_neckWear_description" = "Орамал немесе тасбақа";
 "garment_pulloverPants" = "Мұқаба шалбары";
+"garment_pulloverPants_description" = "Мұқаба шалбары";
+"garment_rainBoots" = "Етік";
 "garment_rainBoots_description" = "Етік";
+"garment_rainCoat" = "Жаңбырлы күртеше";
 "garment_rainCoat_description" = "Жаңбырлы күртеше";
 "garment_rainGloves" = "Жаңбыр қолғаптары";
+"garment_rainGloves_description" = "Жаңбыр қолғаптары";
+"garment_rainPants" = "Жаңбыр шалбары";
 "garment_rainPants_description" = "Жаңбыр шалбары";
 "garment_shoes" = "Аяқ киім";
+"garment_shoes_description" = "Аяқ киім";
 "garment_sweater" = "Жылы свитер";
+"garment_sweater_description" = "Жылы свитер";
+"garment_winterBoots" = "Аяқ киім";
 "garment_winterBoots_description" = "Қысқы етік";
 "garment_winterOutfit" = "Жабынды шалбары бар жалпы немесе күртеше";
+"garment_winterOutfit_description" = "Жабынды шалбары бар жалпы немесе күртеше";
 "home_feedback_acitivity_title" = "Сіз әрекетке қатыстыңыз ба?
 Не ойлағаныңызды айту үшін осы жерді басыңыз!";
 "home_holiday" = "Ертең - %@. Демалыс жақсы өтсін!";
@@ -195,6 +213,8 @@
 Бұл %@алдында болған еді .";
 "tempus_child_arrives_during" = "%@ мектепке дейінгі мекемеге шамамен %@келеді .
 Бұл %@кезінде .";
+"tempus_child_arrives_during_past" = "%@ мектепке дейінгі мекемеге шамамен %@келді .
+Бұл %@алдында болған еді .";
 "tempus_child_arrives_past" = "%@ мектепке дейінгі мекемеге шамамен %@";
 "tempus_child_has_left" = "%@ күні бойы үйіне кеткен сияқты.";
 "tempus_child_has_left_returns_in_days" = "%@ күні бойы үйіне кеткен сияқты, бірақ %@ күнде қайта оралуы керек.";

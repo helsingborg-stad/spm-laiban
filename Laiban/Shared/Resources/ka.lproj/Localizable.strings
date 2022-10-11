@@ -14,6 +14,7 @@
 "are_you_ready" = "მზად ხარ?";
 "ask_teacher" = "ჰკითხეთ მასწავლებელს";
 "calendar_event" = "ამ დღეს %@";
+"calendar_event_today" = "დღეს %@";
 "calendar_free_day" = "ამ დღეს ჩვენ თავისუფალი ვართ.";
 "calendar_free_day_after" = "მეორე დღეს ჩვენ მორიგეობით ვართ.";
 "calendar_free_tomorrow" = "სრპვ ჟმვ ჟგჲბჲევნთ.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "გსურთ იცოდეთ, როდის აირჩევთ დღეს და რომელი მეგობრები არიან აქ? დააჭირეთ აქ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ათი";
-"clock_time_11" = "თორმეტი";
+"clock_time_11" = "თერთმეტი";
+"clock_time_12" = "თორმეტი";
 "clock_time_2" = "ორი";
 "clock_time_3" = "სამი";
 "clock_time_4" = "ოთხი";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ახლა დილით და ამ დროს საუზმეს ვჭამთ.";
 "clock_time_description_0730_to_0830" = "ახლა დილაა.";
 "clock_time_description_0830_to_0900" = "დაახლოებით ამ დროს ჩვენ ვჭამთ ხილს.";
+"clock_time_description_0900_to_1045" = "ახლა დილაა.";
 "clock_time_description_1045_to_1230" = "ახლა ეს შუადღისა და სადილის დროა.";
 "clock_time_description_1230_to_1400" = "ახლა ნაშუადღევს არის.";
 "clock_time_description_1400_to_1500" = "ახლა ნაშუადღევს და დაახლოებით ამ დროს საჭმელს ვჭამთ.";
+"clock_time_description_1500_to_1630" = "ახლა ნაშუადღევს არის.";
 "clock_time_description_1630_to_1800" = "ოჲფრთ ნჲღ ვ.";
 "clock_time_description_1800_to_2000" = "ახლა ღამეა. ძილინებისა!";
 "clock_time_description_2000_to_0600" = "ახლა ღამეა.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "პურის ნაჭერი";
 "emoji_1F41F_name" = "თევზი";
 "emoji_1F41F_name_plural" = "თევზები";
+"emoji_1F954_name" = "კარტოფილი";
 "emoji_1F954_name_plural" = "კარტოფილი";
 "emoji_1F955_name" = "სტაფილო";
 "emoji_1F955_name_plural" = "სტაფილო";
@@ -130,20 +135,33 @@
 "food_waste_title" = "შეეხეთ სურათებს მასშტაბიდან დასამატებლად ან ამოღების მიზნით";
 "food_waste_weekly_stats" = "ამ კვირაში თქვენ %@ გრამი საკვები გადააგდოთ.";
 "garment_beanie" = "ლობიო";
+"garment_beanie_description" = "ლობიო";
 "garment_cap" = "Cap";
+"garment_cap_description" = "Cap";
 "garment_jacket" = "ქურთუკი";
+"garment_jacket_description" = "ქურთუკი";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "კუს ან შარფი";
 "garment_neckWear_description" = "Scarf ან turtleneck";
 "garment_pulloverPants" = "საფარი შარვალი";
+"garment_pulloverPants_description" = "საფარი შარვალი";
+"garment_rainBoots" = "ჩექმები";
 "garment_rainBoots_description" = "ჩექმები";
+"garment_rainCoat" = "წვიმის ქურთუკი";
 "garment_rainCoat_description" = "წვიმის ქურთუკი";
 "garment_rainGloves" = "წვიმის ხელთათმანები";
+"garment_rainGloves_description" = "წვიმის ხელთათმანები";
+"garment_rainPants" = "წვიმის შარვალი";
 "garment_rainPants_description" = "წვიმის შარვალი";
 "garment_shoes" = "ფეხსაცმელი";
+"garment_shoes_description" = "ფეხსაცმელი";
 "garment_sweater" = "თბილი სვიტერი";
+"garment_sweater_description" = "თბილი სვიტერი";
+"garment_winterBoots" = "ფეხსაცმელი";
 "garment_winterBoots_description" = "ზამთრის ჩექმები";
 "garment_winterOutfit" = "სამოსელები ან ქურთუკი საფარის შარვალით";
+"garment_winterOutfit_description" = "სამოსელები ან ქურთუკი საფარის შარვალით";
 "home_feedback_acitivity_title" = "მონაწილეობდით საქმიანობაში?
 დააწკაპუნეთ აქ, რომ გვითხრათ, რას ფიქრობდით ამაზე!";
 "home_holiday" = "ხვალ %@. სასიამოვნო უქმეებს გისურვებთ!";
@@ -195,6 +213,8 @@
 ეს იყო %@წინ .";
 "tempus_child_arrives_during" = "%@ დაახლოებით %@სკოლამდელი აღზრდის სკოლაში ჩამოვა.
 ეს %@დროს .";
+"tempus_child_arrives_during_past" = "%@ სკოლამდელი აღზრდის დროს დაახლოებით %@ჩავიდა.
+ეს იყო %@წინ .";
 "tempus_child_arrives_past" = "%@ სკოლამდელი აღზრდის დროს დაახლოებით %@ მივიდა";
 "tempus_child_has_left" = "%@ , როგორც ჩანს, დღის განმავლობაში სახლში წავიდა.";
 "tempus_child_has_left_returns_in_days" = "%@ , როგორც ჩანს, დღის განმავლობაში სახლში წავიდა, მაგრამ %@ დღეში კვლავ უნდა დაბრუნებულიყო.";

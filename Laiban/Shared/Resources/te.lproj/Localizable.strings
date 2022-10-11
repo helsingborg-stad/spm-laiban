@@ -14,6 +14,7 @@
 "are_you_ready" = "మీరు సిద్ధంగా ఉన్నారా?";
 "ask_teacher" = "టీచర్ ని అడగండి.";
 "calendar_event" = "ఈ రోజున <span translate='no'>string</span>";
+"calendar_event_today" = "నేడు <span translate='no'>string</span>";
 "calendar_free_day" = "ఈ రోజున మనం స్వేచ్ఛగా ఉంటాం.";
 "calendar_free_day_after" = "మరుసటి రోజు మేము డ్యూటీకి దూరంగా ఉన్నాము.";
 "calendar_free_tomorrow" = "రేపు మేము స్వేచ్ఛగా ఉన్నాము.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ఈ రోజు మిమ్మల్ని ఎప్పుడు పికప్ చేసుకుంటారు మరియు ఏ స్నేహితులు ఇక్కడ ఉన్నారో మీరు తెలుసుకోవాలని అనుకుంటున్నారా? ఇక్కడ క్లిక్ చేయండి!";
 "clock_time_1" = "A";
 "clock_time_10" = "పది";
-"clock_time_11" = "పన్నెండు";
+"clock_time_11" = "పదకొండు";
+"clock_time_12" = "పన్నెండు";
 "clock_time_2" = "రెండు";
 "clock_time_3" = "మూడు";
 "clock_time_4" = "నాలుగు";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ఇప్పుడు ఇది ఉదయం మరియు ఈ సమయంలో మేము అల్పాహారం తింటాము.";
 "clock_time_description_0730_to_0830" = "ఇప్పుడు ఉదయం అయింది.";
 "clock_time_description_0830_to_0900" = "ఈ సమయంలో మేము పండ్లను తింటాము.";
+"clock_time_description_0900_to_1045" = "ఇప్పుడు ఉదయం అయింది.";
 "clock_time_description_1045_to_1230" = "ఇప్పుడు ఇది మధ్యాహ్న మరియు మధ్యాహ్న భోజనం.";
 "clock_time_description_1230_to_1400" = "ఇప్పుడు మధ్యాహ్నం అయింది.";
 "clock_time_description_1400_to_1500" = "ఇప్పుడు మధ్యాహ్నం మరియు ఈ సమయంలో మేము స్నాక్స్ తింటాము.";
+"clock_time_description_1500_to_1630" = "ఇప్పుడు మధ్యాహ్నం అయింది.";
 "clock_time_description_1630_to_1800" = "ఇది దాదాపు రాత్రి.";
 "clock_time_description_1800_to_2000" = "ఇప్పుడు రాత్రి అయింది. బాగా నిద్రపోండి!";
 "clock_time_description_2000_to_0600" = "ఇప్పుడు రాత్రి అయింది.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "బ్రెడ్ ముక్క";
 "emoji_1F41F_name" = "చేప";
 "emoji_1F41F_name_plural" = "చేపలు[మార్చు]";
+"emoji_1F954_name" = "బంగాళాదుంపలు";
 "emoji_1F954_name_plural" = "బంగాళాదుంపలు";
 "emoji_1F955_name" = "గాజర్ గడ్డ";
 "emoji_1F955_name_plural" = "క్యారెట్లు";
@@ -130,20 +135,33 @@
 "food_waste_title" = "స్కేల్ నుంచి జోడించడానికి లేదా తొలగించడానికి ఇమేజ్ లను ట్యాప్ చేయండి";
 "food_waste_weekly_stats" = "ఈ వారం మీరు %@ గ్రాముల ఆహారాన్ని విసిరేశారు.";
 "garment_beanie" = "బీనీ";
+"garment_beanie_description" = "బీనీ";
 "garment_cap" = "టోపీ";
+"garment_cap_description" = "టోపీ";
 "garment_jacket" = "చొక్కా";
+"garment_jacket_description" = "చొక్కా";
+"garment_mittens" = "మిటెన్స్";
 "garment_mittens_description" = "మిటెన్స్";
 "garment_neckWear" = "తాబేలునెక్ లేదా స్కార్ఫ్";
 "garment_neckWear_description" = "స్కార్ఫ్ లేదా తాబేలునెక్";
 "garment_pulloverPants" = "కవర్ ప్యాంట్ లు";
+"garment_pulloverPants_description" = "కవర్ ప్యాంట్ లు";
+"garment_rainBoots" = "బూట్లు";
 "garment_rainBoots_description" = "బూట్లు";
+"garment_rainCoat" = "రెయిన్ జాకెట్";
 "garment_rainCoat_description" = "రెయిన్ జాకెట్";
 "garment_rainGloves" = "రెయిన్ గ్లవుజులు";
+"garment_rainGloves_description" = "రెయిన్ గ్లవుజులు";
+"garment_rainPants" = "రెయిన్ ప్యాంట్లు";
 "garment_rainPants_description" = "రెయిన్ ప్యాంట్లు";
 "garment_shoes" = "బూట్లు";
+"garment_shoes_description" = "బూట్లు";
 "garment_sweater" = "వెచ్చని స్వెటర్";
+"garment_sweater_description" = "వెచ్చని స్వెటర్";
+"garment_winterBoots" = "బూట్లు";
 "garment_winterBoots_description" = "శీతాకాలపు బూట్లు";
 "garment_winterOutfit" = "కవర్ ప్యాంట్ తో ఓవరాల్స్ లేదా జాకెట్";
+"garment_winterOutfit_description" = "కవర్ ప్యాంట్ తో ఓవరాల్స్ లేదా జాకెట్";
 "home_feedback_acitivity_title" = "మీరు ఏదైనా యాక్టివిటీలో పాల్గొన్నారా?
 మీరు దాని గురించి ఏమనుకుంటున్నారో మాకు చెప్పడానికి ఇక్కడ క్లిక్ చేయండి!";
 "home_holiday" = "రేపు %@. వారాంతము చక్కగా గడుచునని ఆశిస్తున్నాను!";
@@ -195,6 +213,8 @@
 అది <span translate='no'>string</span>ముందు జరిగింది.";
 "tempus_child_arrives_during" = "%@ సుమారు %@గంటలకు ప్రీస్కూల్ కు చేరుకుంటారు.
 అది <span translate='no'>string</span>సమయంలో.";
+"tempus_child_arrives_during_past" = "%@ సుమారు %@వద్ద ప్రీస్కూల్ కు చేరుకున్నారు.
+అది <span translate='no'>string</span>ముందు జరిగింది.";
 "tempus_child_arrives_past" = "%@ సుమారు %@ ప్రీస్కూల్ కు చేరుకున్నాను";
 "tempus_child_has_left" = "%@ ఆ రోజు ఇంటికి వెళ్లినట్లు తెలుస్తోంది.";
 "tempus_child_has_left_returns_in_days" = "%@ ఆ రోజు ఇంటికి వెళ్ళినట్లు అనిపిస్తుంది కాని <span translate='no'>string</span> రోజుల్లో తిరిగి రావాలి.";

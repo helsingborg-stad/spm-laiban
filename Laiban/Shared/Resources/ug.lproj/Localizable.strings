@@ -14,6 +14,7 @@
 "are_you_ready" = "تەييار بولدىڭمۇ?";
 "ask_teacher" = "مۇئەللىمدىن سوراڭ";
 "calendar_event" = "بۇ كۈندە %@";
+"calendar_event_today" = "تارىخ-بۈگۈن %@";
 "calendar_free_day" = "بۇ كۈنى بىز ئەركىنلىككە ئىرىشتۇق.";
 "calendar_free_day_after" = "ئەتىسى بىز دەم ئېلىشقا قويۇپ بېرىمىز.";
 "calendar_free_tomorrow" = "ئەتە ۋاقتىمىز بار.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "بۈگۈن قاچاندىن باشلاپ، قايسى دوستلارنىڭ بۇ يەردە ئىكەنلىكىنى بىلگۈڭىز بارمۇ؟ بۇ يەرنى چېكىڭ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ئون";
-"clock_time_11" = "ئون ئىككى";
+"clock_time_11" = "ئون بىر";
+"clock_time_12" = "ئون ئىككى";
 "clock_time_2" = "ئىككى";
 "clock_time_3" = "ئۈچ";
 "clock_time_4" = "4";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ھازىر ئەتىگەن بولۇپ، بۇ چاغدا بىز ناشتىلىق يەيمىز.";
 "clock_time_description_0730_to_0830" = "ھازىر تاڭ سەھەر بولدى.";
 "clock_time_description_0830_to_0900" = "بۇ چاغدا بىز مېۋە يەيمىز.";
+"clock_time_description_0900_to_1045" = "ھازىر تاڭ سەھەر بولدى.";
 "clock_time_description_1045_to_1230" = "ھازىر چۈشلۈك ۋە چۈشلۈك تاماق ۋاقتى بولۇپ قالدى.";
 "clock_time_description_1230_to_1400" = "ھازىر چۈشتىن كېيىن بولدى.";
 "clock_time_description_1400_to_1500" = "ھازىر چۈشتىن كېيىن بولۇپ، بۇ چاغدا ئۇششاق-چۈششەك يېمەكلىكلەرنى يەيمىز.";
+"clock_time_description_1500_to_1630" = "ھازىر چۈشتىن كېيىن بولدى.";
 "clock_time_description_1630_to_1800" = "كەچ بولاي دەپ قالدى.";
 "clock_time_description_1800_to_2000" = "ھازىر كېچە بولدى. ياخشى چۈش كۆر!";
 "clock_time_description_2000_to_0600" = "ھازىر كېچە بولدى.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "بولكا پارچىسى";
 "emoji_1F41F_name" = "بېلىق گۆشى";
 "emoji_1F41F_name_plural" = "بېلىقلار";
+"emoji_1F954_name" = "ياڭيۇ";
 "emoji_1F954_name_plural" = "ياڭيۇ";
 "emoji_1F955_name" = "سەۋزە";
 "emoji_1F955_name_plural" = "سەۋزە";
@@ -130,20 +135,33 @@
 "food_waste_title" = "رەسىمنى چېكىپ كۆلەمنى قوشۇش ياكى چىقىرىۋېتىش";
 "food_waste_weekly_stats" = "بۇ ھەپتە سىز %@ گىرام يېمەكلىكنى تاشلىۋەتتىڭىز.";
 "garment_beanie" = "Beanie";
+"garment_beanie_description" = "Beanie";
 "garment_cap" = "كاپور";
+"garment_cap_description" = "كاپور";
 "garment_jacket" = "چاپان";
+"garment_jacket_description" = "چاپان";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "تاشپاقا ياكى ياغلىق";
 "garment_neckWear_description" = "ياغلىق ياكى تاشپاقا";
 "garment_pulloverPants" = "ياپقۇچ ئىشتان";
+"garment_pulloverPants_description" = "ياپقۇچ ئىشتان";
+"garment_rainBoots" = "ئۆتۈك";
 "garment_rainBoots_description" = "ئۆتۈك";
+"garment_rainCoat" = "يامغۇرلۇق چاپان";
 "garment_rainCoat_description" = "يامغۇرلۇق چاپان";
 "garment_rainGloves" = "يامغۇر پەلەي";
+"garment_rainGloves_description" = "يامغۇر پەلەي";
+"garment_rainPants" = "يامغۇرلۇق ئىشتان";
 "garment_rainPants_description" = "يامغۇرلۇق ئىشتان";
 "garment_shoes" = "ئاياغ";
+"garment_shoes_description" = "ئاياغ";
 "garment_sweater" = "ئىلمان پوپايكا";
+"garment_sweater_description" = "ئىلمان پوپايكا";
+"garment_winterBoots" = "ئاياغ";
 "garment_winterBoots_description" = "قىشلىق ئۆتۈك";
 "garment_winterOutfit" = "ياپقۇچ ئىشتانلىق يۇڭلۇق ياكى چاپان";
+"garment_winterOutfit_description" = "ياپقۇچ ئىشتانلىق يۇڭلۇق ياكى چاپان";
 "home_feedback_acitivity_title" = "سىز پائالىيەتكە قاتناشتىڭىزمۇ؟
 بۇ يەرنى چېكىپ بىزگە بۇ ئىشنى ئويلىغانلىرىڭىزنى ئېيتىپ بېرىڭ!";
 "home_holiday" = "ئەتە %@. خەيرلىك  ھەپتە ئاخىرى   بولسۇن!";
@@ -195,6 +213,8 @@
 ئۇ دەل %@بۇرۇنلا ئىدى .";
 "tempus_child_arrives_during" = "%@ %@ئەتراپىدا ئوتتۇرا مەكتەپتە يېتىپ بارىدۇ .
 يەنى %@مەزگىلىدە .";
+"tempus_child_arrives_during_past" = "%@ %@ئەتراپىدا يەسلىگە يېتىپ كەلدى .
+ئۇ دەل %@بۇرۇنلا ئىدى .";
 "tempus_child_arrives_past" = "%@ تەخمىنەن %@";
 "tempus_child_has_left" = "%@ بىر كۈن ئۆيگە قايتىپ كەتكەندەك قىلىدۇ.";
 "tempus_child_has_left_returns_in_days" = "%@ بىر كۈن ئۆيگە قايتىپ كەتكەندەك قىلىدۇ، ئەمما %@ كۈندىن كېيىن يەنە قايتىپ كېلىشى كېرەك ئىدى.";

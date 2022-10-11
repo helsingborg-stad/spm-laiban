@@ -14,6 +14,7 @@
 "are_you_ready" = "အဆင်သင့်ဖြစ်ပြီလား?";
 "ask_teacher" = "ဆရာမမေးပါ";
 "calendar_event" = "ဒီနေ့မှာ <span translate='no'>string</span>";
+"calendar_event_today" = "ယနေ့ %@ ယနေ့ ";
 "calendar_free_day" = "ဒီနေ့မှာ ကျွန်တော်တို့ လွတ်လပ်နေပါတယ်။";
 "calendar_free_day_after" = "နောက်တစ်နေ့မှာ တာဝန်မကျတော့ဘူး။";
 "calendar_free_tomorrow" = "မနက်ဖြန်မှာ ကျွန်တော်တို့ အခမဲ့ပါ။";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "ဒီနေ့ ဘယ်အချိန်မှာ ကောက်ယူခံရမလဲ၊ ဘယ်သူငယ်ချင်းတွေ ဒီမှာရောက်နေတယ်ဆိုတာ သိချင်သလား။ ဒီမှာနှိပ်ပါ!";
 "clock_time_1" = "A";
 "clock_time_10" = "တစ်ဆယ်";
-"clock_time_11" = "တစ်ဆယ့်နှစ်";
+"clock_time_11" = "တစ်ဆယ့်တစ်";
+"clock_time_12" = "တစ်ဆယ့်နှစ်";
 "clock_time_2" = "နှစ်";
 "clock_time_3" = "သုံး";
 "clock_time_4" = "လေး";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "အခု နံနက်ခင်းနဲ့ ဒီအချိန်လောက်မှာ နံနက်စာစားကြတယ်။";
 "clock_time_description_0730_to_0830" = "အခုတော့ နံနက်ခင်းပါပဲ။";
 "clock_time_description_0830_to_0900" = "ဒီအချိန်လောက်မှာ အသီးတွေကို စားကြတယ်။";
+"clock_time_description_0900_to_1045" = "အခုတော့ နံနက်ခင်းပါပဲ။";
 "clock_time_description_1045_to_1230" = "အခုတော့ မွန်းတည့်နဲ့ နေ့လယ်စာပါ။";
 "clock_time_description_1230_to_1400" = "အခုတော့ မွန်းလွဲပိုင်းပါ။";
 "clock_time_description_1400_to_1500" = "အခုတော့ မွန်းလွဲပိုင်းနဲ့ ဒီအချိန်လောက်မှာ ကျွန်တော်တို့ ဟင်းလျာတွေကို စားကြတယ်။";
+"clock_time_description_1500_to_1630" = "အခုတော့ မွန်းလွဲပိုင်းပါ။";
 "clock_time_description_1630_to_1800" = "ညနီးပါးပါပဲ။";
 "clock_time_description_1800_to_2000" = "အခုတော့ ညပဲ။ ကောင်းကောင်းအိပ်ပါ!";
 "clock_time_description_2000_to_0600" = "အခုတော့ ညပဲ။";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "မုန့်အပိုင်းအစ";
 "emoji_1F41F_name" = "ငါး";
 "emoji_1F41F_name_plural" = "ငါးများ";
+"emoji_1F954_name" = "အာလူး";
 "emoji_1F954_name_plural" = "အာလူး";
 "emoji_1F955_name" = "ကာရော့";
 "emoji_1F955_name_plural" = "ကြက်သွန်ဖြူ";
@@ -130,20 +135,33 @@
 "food_waste_title" = "စကေးမှ ဖြည့်စွက်ရန် သို့မဟုတ် ဖယ်ရှားရန် ရုပ်ပုံများကို ခပ်ယူပါ";
 "food_waste_weekly_stats" = "ဒီအပတ်မှာ %@ အစားအစာတွေကို စွန့်ပစ်လိုက်ပြီ။";
 "garment_beanie" = "ဘီနီ";
+"garment_beanie_description" = "ဘီနီ";
 "garment_cap" = "ကပ်ပိုး";
+"garment_cap_description" = "ကပ်ပိုး";
 "garment_jacket" = "ဂျက်ကက်";
+"garment_jacket_description" = "ဂျက်ကက်";
+"garment_mittens" = "မစ်တန်";
 "garment_mittens_description" = "မစ်တန်";
 "garment_neckWear" = "ခါးတလင်းကုန်း (သို့) အထည်အထည်";
 "garment_neckWear_description" = "အင်္ကျီ ဒါမှမဟုတ် လိပ်ခုံး";
 "garment_pulloverPants" = "မျက်နှာဖုံးဘောင်းဘီ";
+"garment_pulloverPants_description" = "မျက်နှာဖုံးဘောင်းဘီ";
+"garment_rainBoots" = "ဘွတ်ဖိနပ်";
 "garment_rainBoots_description" = "ဘွတ်ဖိနပ်";
+"garment_rainCoat" = "မိုးအင်္ကျီ";
 "garment_rainCoat_description" = "မိုးအင်္ကျီ";
 "garment_rainGloves" = "မိုးလက်ကိုင်များ";
+"garment_rainGloves_description" = "မိုးလက်ကိုင်များ";
+"garment_rainPants" = "မိုးဘောင်းဘီ";
 "garment_rainPants_description" = "မိုးဘောင်းဘီ";
 "garment_shoes" = "ရှူးဖိနပ်";
+"garment_shoes_description" = "ရှူးဖိနပ်";
 "garment_sweater" = "နွေးထွေးသော ဆွယ်တာ";
+"garment_sweater_description" = "နွေးထွေးသော ဆွယ်တာ";
+"garment_winterBoots" = "ရှူးဖိနပ်";
 "garment_winterBoots_description" = "ဆောင်းရာသီ ဘွတ်ဖိနပ်များ";
 "garment_winterOutfit" = "အဖုံးဘောင်းဘီပါတဲ့ ခြုံငုံတွေ ဒါမှမဟုတ် ဂျက်ကက်";
+"garment_winterOutfit_description" = "အဖုံးဘောင်းဘီပါတဲ့ ခြုံငုံတွေ ဒါမှမဟုတ် ဂျက်ကက်";
 "home_feedback_acitivity_title" = "လှုပ်ရှားမှုတစ်ခုတွင် သင်ပါဝင်ဖူးပါသလော။
 ဒါနဲ့ပတ်သက်ပြီး ဘယ်လိုထင်သလဲဆိုတာ ပြောပြဖို့ ဒီမှာနှိပ်ပါ။";
 "home_holiday" = "မနက်ဖြန်မှာ %@။ ကောင်းသောနားရက်ဖြစ်ပါစေ!";
@@ -195,6 +213,8 @@
  %@ မတိုင်မီလေးတွင်  ။";
 "tempus_child_arrives_during" = "%@ %@ ။
 အဲဒီအချိန်မှာ <span translate='no'>string</span>။";
+"tempus_child_arrives_during_past" = "%@ %@ ။
+ %@ မတိုင်မီလေးတွင်  ။";
 "tempus_child_arrives_past" = "%@ %@";
 "tempus_child_has_left" = "%@ တစ်နေ့တာအတွက် အိမ်ပြန်နေပုံရတယ်။";
 "tempus_child_has_left_returns_in_days" = "%@ တစ်နေ့တာအတွက် အိမ်ပြန်သွားပုံရပေမဲ့ %@ ရက်တွေမှာ ပြန်လာသင့်တယ်။";

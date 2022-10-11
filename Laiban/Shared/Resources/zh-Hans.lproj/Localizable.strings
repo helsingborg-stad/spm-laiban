@@ -10,11 +10,10 @@
 "activities_participants_future" = "参加";
 "activities_participants_past" = "参与";
 "activities_title" = "这就是我们今天要做的！";
-"activity_today" = "今日 %@";
 "are_you_ready" = "准备好了吗？";
 "ask_teacher" = "询问老师";
 "calendar_event" = "在这一天 %@";
-"calendar_event_today" = "今天 %@";
+"calendar_event_today" = "今日 %@";
 "calendar_free_day" = "在这一天，我们是自由的。";
 "calendar_free_day_after" = "第二天我们下班了。";
 "calendar_free_tomorrow" = "明天我们就自由了。";
@@ -33,7 +32,7 @@
 "clock_select_show_tempus_info" = "你想知道你今天什么时候会被接走，哪些朋友在这里？点击这里！";
 "clock_time_1" = "一个";
 "clock_time_10" = "十";
-"clock_time_11" = "十二";
+"clock_time_11" = "十一";
 "clock_time_12" = "十二";
 "clock_time_2" = "二";
 "clock_time_3" = "三";
@@ -48,7 +47,6 @@
 "clock_time_description_0830_to_0900" = "大约在这个时候，我们吃水果。";
 "clock_time_description_0900_to_1045" = "现在是早上了。";
 "clock_time_description_1045_to_1230" = "现在是中午和午餐时间。";
-"clock_time_description_1230_to_1400" = "现在是下午。";
 "clock_time_description_1400_to_1500" = "现在是下午，大约在这个时候我们吃零食。";
 "clock_time_description_1500_to_1630" = "现在是下午。";
 "clock_time_description_1630_to_1800" = "快到晚上了。";
@@ -86,7 +84,6 @@
 "emoji_1F35E_name_plural" = "一块面包";
 "emoji_1F41F_name" = "鱼";
 "emoji_1F41F_name_plural" = "鱼";
-"emoji_1F954_name" = "土豆";
 "emoji_1F954_name_plural" = "土豆";
 "emoji_1F955_name" = "胡萝卜";
 "emoji_1F955_name_plural" = "胡萝卜";
@@ -135,33 +132,20 @@
 "food_waste_title" = "点击图像以在比例中添加或删除";
 "food_waste_weekly_stats" = "本周你扔掉了 %@ 克食物。";
 "garment_beanie" = "豆 豆";
-"garment_beanie_description" = "豆 豆";
 "garment_cap" = "帽";
-"garment_cap_description" = "帽";
 "garment_jacket" = "夹克";
-"garment_jacket_description" = "夹克";
-"garment_mittens" = "中间";
 "garment_mittens_description" = "手套";
 "garment_neckWear" = "高领毛衣或围巾";
 "garment_neckWear_description" = "围巾或高领毛衣";
-"garment_pulloverPants" = "套裤";
-"garment_pulloverPants_description" = "覆盖裤";
-"garment_rainBoots" = "靴子";
+"garment_pulloverPants_description" = "套裤";
 "garment_rainBoots_description" = "靴子";
-"garment_rainCoat" = "雨衣";
 "garment_rainCoat_description" = "雨衣";
-"garment_rainGloves" = "雨手套";
 "garment_rainGloves_description" = "雨手套";
-"garment_rainPants" = "雨裤";
 "garment_rainPants_description" = "雨裤";
-"garment_shoes" = "鞋";
 "garment_shoes_description" = "鞋";
-"garment_sweater" = "保暖毛衣";
 "garment_sweater_description" = "保暖毛衣";
-"garment_winterBoots" = "鞋";
 "garment_winterBoots_description" = "冬季靴子";
-"garment_winterOutfit" = "工作服或夹克配盖裤";
-"garment_winterOutfit_description" = "工作服或夹克，搭配遮盖裤";
+"garment_winterOutfit_description" = "工作服或夹克配盖裤";
 "home_feedback_acitivity_title" = "你参加过活动吗？
 点击这里告诉我们您的想法！";
 "home_holiday" = "明天是 %@。周末愉快！";
@@ -213,8 +197,6 @@
 那是在 %@之前。";
 "tempus_child_arrives_during" = "%@ 将在大约 %@到达学前班。
 那是在 %@期间。";
-"tempus_child_arrives_during_past" = "%@ 大约 %@到达幼儿园。
-那是在 %@之前。";
 "tempus_child_arrives_past" = "%@大约%@到达学前班";
 "tempus_child_has_left" = "%@ 似乎已经回家了一天。";
 "tempus_child_has_left_returns_in_days" = "%@ 似乎已经回家了一天，但应该 %@ 天再回来。";

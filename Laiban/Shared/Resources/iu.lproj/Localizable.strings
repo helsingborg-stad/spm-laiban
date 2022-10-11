@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ᖃᐅᔨᔪᒪᕖᑦ ᖃᖓ ᐊᐃᔭᐅᓂᐊᕐᒪᖔᖅᐱᑦ ᐅᓪᓗᒥ ᓇᓕᐊᒡᓗ ᐱᖃᓐᓇᕆᔭᑎᑦ ᑕᒫᓃᒻᒪᖔᑕ? ᐅᕘᓇ ᓇᕿᓪᓗᒍ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ᑕᓪᓕᒪᐅᔪᕐᑐᑦ";
-"clock_time_11" = "ᑕᓪᓕᒪᐅᔪᕐᑐᓗ ᒪᕐᕉᓗ";
+"clock_time_11" = "ᑕᓪᓕᒪᐅᔪᕐᑐᓗ ᐊᑕᐅᓯᕐᓗ";
 "clock_time_12" = "ᑕᓪᓕᒪᐅᔪᕐᑐᓗ ᒪᕐᕉᓗ";
 "clock_time_2" = "ᒪᕐᕉᒃ";
 "clock_time_3" = "ᐱᖓᓱᑦ";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "ᖃᕐᓖᒃ";
 "garment_rainPants_description" = "ᖃᕐᓖᒃ";
 "garment_shoes" = "ᐃᓯᒐᐅᔭᑦ";
+"garment_shoes_description" = "ᐃᓯᒐᐅᔭᑦ";
 "garment_sweater" = "ᐅᖅᑰᔪᒥᒃ ᐊᐅᒪᔮᕈᑎ";
 "garment_sweater_description" = "ᐅᖅᑰᔪᒥᒃ ᐊᐅᒪᔮᕈᑎ";
 "garment_winterBoots" = "ᐃᓯᒐᐅᔭᑦ";

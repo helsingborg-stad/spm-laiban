@@ -14,6 +14,7 @@
 "are_you_ready" = "Готови ли сте?";
 "ask_teacher" = "Попитайте учителя";
 "calendar_event" = "На този ден %@";
+"calendar_event_today" = "Днес %@";
 "calendar_free_day" = "На този ден сме свободни.";
 "calendar_free_day_after" = "На следващия ден сме извън дежурство.";
 "calendar_free_tomorrow" = "Утре сме свободни.";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "Искате ли да знаете кога ще бъдете прибрани днес и кои приятели са тук? Кликнете тук!";
 "clock_time_1" = "Една";
 "clock_time_10" = "Десет";
-"clock_time_11" = "Дванадесет";
+"clock_time_11" = "Единадесет";
+"clock_time_12" = "Дванадесет";
 "clock_time_2" = "Две";
 "clock_time_3" = "Три";
 "clock_time_4" = "Четири";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "Сега е сутрин и около това време ядем закуска.";
 "clock_time_description_0730_to_0830" = "Сега е сутрин.";
 "clock_time_description_0830_to_0900" = "Около това време ядем плодове.";
+"clock_time_description_0900_to_1045" = "Сега е сутрин.";
 "clock_time_description_1045_to_1230" = "Сега е обед и обяд.";
 "clock_time_description_1230_to_1400" = "Сега е следобед.";
 "clock_time_description_1400_to_1500" = "Сега е следобед и около това време ядем закуски.";
+"clock_time_description_1500_to_1630" = "Сега е следобед.";
 "clock_time_description_1630_to_1800" = "Почти вечер е.";
 "clock_time_description_1800_to_2000" = "Сега е нощ. Да спиш добре!";
 "clock_time_description_2000_to_0600" = "Сега е нощ.";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "Парче хляб";
 "emoji_1F41F_name" = "Риба";
 "emoji_1F41F_name_plural" = "Риби";
+"emoji_1F954_name" = "Картофи";
 "emoji_1F954_name_plural" = "Картофи";
 "emoji_1F955_name" = "Морков";
 "emoji_1F955_name_plural" = "Моркови";
@@ -130,20 +135,33 @@
 "food_waste_title" = "Докоснете изображенията, за да добавите или премахнете от мащаба";
 "food_waste_weekly_stats" = "Тази седмица сте изхвърлили %@ грама храна.";
 "garment_beanie" = "Бийни";
+"garment_beanie_description" = "Биани";
 "garment_cap" = "Осп";
+"garment_cap_description" = "Осп";
 "garment_jacket" = "Яке";
+"garment_jacket_description" = "Яке";
+"garment_mittens" = "Ръкавици";
 "garment_mittens_description" = "Ръкавици";
 "garment_neckWear" = "Поло или шал";
 "garment_neckWear_description" = "Шал или поло яка";
 "garment_pulloverPants" = "Панталони за капак";
+"garment_pulloverPants_description" = "Капаци панталони";
+"garment_rainBoots" = "Ботуши";
 "garment_rainBoots_description" = "Ботуши";
+"garment_rainCoat" = "Дъждовно яке";
 "garment_rainCoat_description" = "Яке за дъжд";
 "garment_rainGloves" = "Ръкавици за дъжд";
+"garment_rainGloves_description" = "Дъждовни ръкавици";
+"garment_rainPants" = "Дъждовни панталони";
 "garment_rainPants_description" = "Панталони за дъжд";
 "garment_shoes" = "Обувки";
+"garment_shoes_description" = "Обувки";
 "garment_sweater" = "Топъл пуловер";
+"garment_sweater_description" = "Топъл пуловер";
+"garment_winterBoots" = "Обувки";
 "garment_winterBoots_description" = "Зимни ботуши";
 "garment_winterOutfit" = "Гащеризони или яке с покривни панталони";
+"garment_winterOutfit_description" = "Гащеризони или якета с капаци";
 "home_feedback_acitivity_title" = "Участвали ли сте в дейност?
 Кликнете тук, за да ни кажете какво сте се сетили за това!";
 "home_holiday" = "Утре е %@. Приятен уикенд!";
@@ -195,6 +213,8 @@
 Това беше точно преди %@.";
 "tempus_child_arrives_during" = "%@ ще пристигне в предучилищна на около %@.
 Това е по време на %@.";
+"tempus_child_arrives_during_past" = "%@ пристигна в предучилищна възраст около %@.
+Това беше точно преди %@.";
 "tempus_child_arrives_past" = "%@ пристигна в предучилищна, около %@";
 "tempus_child_has_left" = "%@ изглежда се е прибрала за деня.";
 "tempus_child_has_left_returns_in_days" = "%@ изглежда се е прибрал за деня, но трябва да се върне отново след %@ дни.";

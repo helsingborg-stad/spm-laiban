@@ -10,10 +10,10 @@
 "activities_participants_future" = "оролцох";
 "activities_participants_past" = "Оролцсон";
 "activities_title" = "Өнөөдөр бид ингэж л явна!";
-"activity_today" = "Өнөөдөр %@";
 "are_you_ready" = "Бэлэн үү?";
 "ask_teacher" = "Багшаас асуу";
 "calendar_event" = "Энэ өдөр %@";
+"calendar_event_today" = "Өнөөдөр %@";
 "calendar_free_day" = "Энэ өдөр бид эрх чөлөөтэй.";
 "calendar_free_day_after" = "Маргааш нь бид ажлаасаа гарсан.";
 "calendar_free_tomorrow" = "Маргааш бид эрх чөлөөтэй.";
@@ -32,7 +32,8 @@
 "clock_select_show_tempus_info" = "Та өнөөдөр хэзээ авах, ямар найзууд энд байгааг мэдэхийг хүсч байна уу? Энд дарна уу!";
 "clock_time_1" = "A";
 "clock_time_10" = "арав";
-"clock_time_11" = "арван хоёр";
+"clock_time_11" = "арван нэг";
+"clock_time_12" = "арван хоёр";
 "clock_time_2" = "Хоёр";
 "clock_time_3" = "Гурван";
 "clock_time_4" = "Дөрвөн";
@@ -42,11 +43,11 @@
 "clock_time_8" = "найм";
 "clock_time_9" = "ес";
 "clock_time_description_0600_to_0730" = "Одоо өглөө болж, энэ үед бид өглөөний хоол иддэг болсон.";
-"clock_time_description_0730_to_0830" = "Одоо өглөө.";
 "clock_time_description_0830_to_0900" = "Энэ үед бид жимс иддэг.";
+"clock_time_description_0900_to_1045" = "Одоо өглөө.";
 "clock_time_description_1045_to_1230" = "Одоо үд дунд, өдрийн хоолны цаг болж байна.";
-"clock_time_description_1230_to_1400" = "Одоо үдээс хойш.";
 "clock_time_description_1400_to_1500" = "Одоо үдээс хойш, энэ үед бид зууш иддэг болсон.";
+"clock_time_description_1500_to_1630" = "Одоо үдээс хойш.";
 "clock_time_description_1630_to_1800" = "Бараг л шөнө болж дээ.";
 "clock_time_description_1800_to_2000" = "Одоо шөнө болж байна. Сайхан амар!";
 "clock_time_description_2000_to_0600" = "Одоо шөнө болж байна.";
@@ -135,15 +136,15 @@
 "garment_mittens_description" = "Миттенс";
 "garment_neckWear" = "Яст мэлхий эсвэл ороолт";
 "garment_neckWear_description" = "Ороолт эсвэл яст мэлхий";
-"garment_pulloverPants" = "Ковер өмд";
+"garment_pulloverPants_description" = "Ковер өмд";
 "garment_rainBoots_description" = "Бутлуур";
 "garment_rainCoat_description" = "Борооны хантааз";
-"garment_rainGloves" = "Борооны бээлий";
+"garment_rainGloves_description" = "Борооны бээлий";
 "garment_rainPants_description" = "Борооны өмд";
-"garment_shoes" = "Гутал";
-"garment_sweater" = "Дулаан хөлс";
+"garment_shoes_description" = "Гутал";
+"garment_sweater_description" = "Дулаан хөлс";
 "garment_winterBoots_description" = "Өвлийн гутал";
-"garment_winterOutfit" = "Хүрэм эсвэл хүрэмтэй өмд";
+"garment_winterOutfit_description" = "Хүрэм эсвэл хүрэмтэй өмд";
 "home_feedback_acitivity_title" = "Та ямар нэгэн үйл ажиллагаанд оролцсон уу?
 Та энэ талаар юу гэж бодож байгаагаа энд дарж хэлнэ үү!";
 "home_holiday" = "Маргааш %@. Амралтын өдрөө сайхан өнгөрүүлээрэй!";

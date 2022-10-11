@@ -14,6 +14,7 @@
 "are_you_ready" = "តើ​អ្នក​រួចរាល់​ឬ​នៅ?";
 "ask_teacher" = "សួរលោកគ្រូ";
 "calendar_event" = "នៅ ថ្ងៃ នេះ <span translate='no'>string</span>";
+"calendar_event_today" = "ថ្ងៃនេះ <span translate='no'>string</span>";
 "calendar_free_day" = "នៅ ថ្ងៃ នេះ យើង មាន សេរីភាព ។";
 "calendar_free_day_after" = "ថ្ងៃ បន្ទាប់ យើង គ្មាន ភារកិច្ច ។";
 "calendar_free_tomorrow" = "ថ្ងៃ ស្អែក យើង មាន សេរីភាព ។";
@@ -32,7 +33,8 @@
 "clock_select_show_tempus_info" = "តើអ្នកចង់ដឹងថាអ្នកនឹងបានយកថ្ងៃណា ហើយតើមិត្ដភក្ដិណាខ្លះនៅទីនេះ? ចុចត្រង់នេះ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ដប់";
-"clock_time_11" = "ដប់ពីរ";
+"clock_time_11" = "ដប់មួយ";
+"clock_time_12" = "ដប់ពីរ";
 "clock_time_2" = "ពីរ";
 "clock_time_3" = "បី";
 "clock_time_4" = "បួន";
@@ -44,9 +46,11 @@
 "clock_time_description_0600_to_0730" = "ឥឡូវ នេះ វា នៅ ព្រឹក ហើយ នៅ ជុំវិញ ពេល នេះ យើង បរិភោគ អាហារ ពេល ព្រឹក ។";
 "clock_time_description_0730_to_0830" = "ឥឡូវ ព្រឹក ។";
 "clock_time_description_0830_to_0900" = "នៅជុំវិញគ្រានេះយើងបរិភោគផ្លែឈើ។";
+"clock_time_description_0900_to_1045" = "ឥឡូវ ព្រឹក ។";
 "clock_time_description_1045_to_1230" = "ឥឡូវ នេះ វា ជា ពេល ថ្ងៃ ត្រង់ និង ពេល អាហារ ថ្ងៃ ត្រង់ ។";
 "clock_time_description_1230_to_1400" = "ឥឡូវ វា នៅ រសៀល ។";
 "clock_time_description_1400_to_1500" = "ឥឡូវ នេះ វា នៅ រសៀល ហើយ នៅ ជុំវិញ ពេល នេះ យើង បរិភោគ អាហារ សម្រន់ ។";
+"clock_time_description_1500_to_1630" = "ឥឡូវ វា នៅ រសៀល ។";
 "clock_time_description_1630_to_1800" = "ស្ទើរតែយប់។";
 "clock_time_description_1800_to_2000" = "ឥឡូវ រាត្រី។ គេងលក់​ស្រួល!";
 "clock_time_description_2000_to_0600" = "ឥឡូវ រាត្រី។";
@@ -82,6 +86,7 @@
 "emoji_1F35E_name_plural" = "១. នំប៉័ង";
 "emoji_1F41F_name" = "ត្រី";
 "emoji_1F41F_name_plural" = "ត្រី";
+"emoji_1F954_name" = "ដំឡូង";
 "emoji_1F954_name_plural" = "ដំឡូង";
 "emoji_1F955_name" = "ការ៉ារ៉ូត";
 "emoji_1F955_name_plural" = "ការ៉ូត";
@@ -130,20 +135,33 @@
 "food_waste_title" = "វាយ រូបភាព ដើម្បី បន្ថែម ឬ ដក ចេញ ពី មាត្រដ្ឋាន";
 "food_waste_weekly_stats" = "សប្តាហ៍ នេះ អ្នក បាន បោះ ចោល អាហារ <span translate='no'>string</span> ក្រាម ។";
 "garment_beanie" = "បេនី";
+"garment_beanie_description" = "បេនី";
 "garment_cap" = "មួក";
+"garment_cap_description" = "មួក";
 "garment_jacket" = "Jacket";
+"garment_jacket_description" = "Jacket";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "ខ្លាឃ្មុំ ឬ ស្បៃ បាំង មុខ";
 "garment_neckWear_description" = "ស្កាហ្វ ឬ ខ្លា ឃ្មុំ";
 "garment_pulloverPants" = "គម្រប pants";
+"garment_pulloverPants_description" = "គម្រប pants";
+"garment_rainBoots" = "ស្បែកជើង";
 "garment_rainBoots_description" = "ស្បែកជើង";
+"garment_rainCoat" = "អាវភ្លៀង";
 "garment_rainCoat_description" = "អាវភ្លៀង";
 "garment_rainGloves" = "ស្រោមដៃទឹកភ្លៀង";
+"garment_rainGloves_description" = "ស្រោមដៃទឹកភ្លៀង";
+"garment_rainPants" = "ខោភ្លៀង";
 "garment_rainPants_description" = "ខោភ្លៀង";
 "garment_shoes" = "ស្បែកជើង";
+"garment_shoes_description" = "ស្បែកជើង";
 "garment_sweater" = "ក្ដៅៗ ញាក់សាច់";
+"garment_sweater_description" = "ក្ដៅៗ ញាក់សាច់";
+"garment_winterBoots" = "ស្បែកជើង";
 "garment_winterBoots_description" = "ស្បែក ជើង រដូវ រងារ";
 "garment_winterOutfit" = "សរុប ឬ អាវ យឺត ដែល មាន ខោ គ្រប";
+"garment_winterOutfit_description" = "សរុប ឬ អាវ យឺត ដែល មាន ខោ គ្រប";
 "home_feedback_acitivity_title" = "តើ អ្នក បាន ចូល រួម ក្នុង សកម្មភាព មួយ ដែរ ឬ ទេ ?
 ចុចត្រង់នេះដើម្បីប្រាប់យើងពីអ្វីដែលអ្នកគិតអំពីវា!";
 "home_holiday" = "ថ្ងៃស្អែក %@. រីករាយ​ក្នុង​ថ្ងៃ​ចុង​ស​ប្តា​ហ៍!";
@@ -195,6 +213,8 @@
 ពីមុន <span translate='no'>string</span>.";
 "tempus_child_arrives_during" = "%@ %@។
 កំឡុងពេល <span translate='no'>string</span>.";
+"tempus_child_arrives_during_past" = "%@ មកដល់មុននៅ %@។
+ពីមុន <span translate='no'>string</span>.";
 "tempus_child_arrives_past" = "%@ បានទៅដល់មុននៅប្រហែល <span translate='no'>string</span>";
 "tempus_child_has_left" = "%@ ហាក់ដូចជាបានទៅផ្ទះសម្រាប់ថ្ងៃនោះ។";
 "tempus_child_has_left_returns_in_days" = "%@ ហាក់ដូចជាបានទៅផ្ទះវិញ មួយថ្ងៃ ប៉ុន្តែគួរតែត្រឡប់មកវិញម្តងទៀតក្នុងរយៈពេល <span translate='no'>string</span> ថ្ងៃ។";
