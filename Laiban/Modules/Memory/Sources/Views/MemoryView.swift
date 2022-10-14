@@ -7,6 +7,7 @@
 import SwiftUI
 import Combine
 import Assistant
+import Analytics
 
 public struct MemoryView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -35,7 +36,7 @@ public struct MemoryView: View {
         let imageSize = properties.contentSize.width * (horizontalSizeClass == .regular ? 0.25 : 0.3)
         return Button(action: {
             selectDeck(.undp)
-            LBAnalyticsProxy.shared.log("Memory-UNDPSelected", category: "Memory", action: "Button")
+            AnalyticsService.shared.log("Memory-UNDPSelected", category: "Memory", action: "Button")
         }, label: {
             VStack {
                 LBImageBadgeView(image: UNDPGoal.logotype, rimColor: Color("RimColorGames", bundle: LBBundle))
@@ -50,7 +51,7 @@ public struct MemoryView: View {
         let imageSize = properties.contentSize.width * (horizontalSizeClass == .regular ? 0.25 : 0.3)
         return Button(action: {
             selectDeck(.trashmonsters)
-            LBAnalyticsProxy.shared.log("Memory-TrashMonstersSelected", category: "Memory", action: "Button")
+            AnalyticsService.shared.log("Memory-TrashMonstersSelected", category: "Memory", action: "Button")
         }, label: {
             VStack {
                 LBEmojiBadgeView(emoji: "♻️", rimColor: Color("RimColorGames", bundle: LBBundle))
@@ -90,7 +91,7 @@ public struct MemoryView: View {
                 ("word_or","word_or"),
                 ("memory_game_default_trashmonsters","memory_game_default_trashmonsters"),
             ])
-            LBAnalyticsProxy.shared.logPageView("MemoryView/Choose")
+            AnalyticsService.shared.logPageView("MemoryView/Choose")
         }
         .animation(.spring(), value: selectedDeck)
         .transition(.opacity.combined(with: .scale))

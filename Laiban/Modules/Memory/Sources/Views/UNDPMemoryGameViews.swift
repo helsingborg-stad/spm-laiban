@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 import Assistant
+import Analytics
 
 struct UNDPGoalInfoCompactView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -138,7 +139,7 @@ struct UNDPMemoryGameView: View {
         }
         .onAppear {
             assistant.speak("memory_game_start")
-            LBAnalyticsProxy.shared.logPageView("MemoryView/UNDP")
+            AnalyticsService.shared.logPageView("MemoryView/UNDP")
         }
         .transition(.opacity.combined(with: .scale))
         .onRotate { o in

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import Analytics
 
 struct InstagramAdminView: View {
     @ObservedObject var service: InstagramService
@@ -18,7 +19,7 @@ struct InstagramAdminView: View {
         Button(action: {
             if service.instagram.isAuthenticated {
                 service.instagram.logout()
-                LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button": "UnLinkInstagramAccount"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button": "UnLinkInstagramAccount"])
             } else {
                 service.instagram.authorize().receive(on: DispatchQueue.main).sink { completion in
                     switch completion {

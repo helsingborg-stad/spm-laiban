@@ -8,6 +8,7 @@
 import SwiftUI
 import Assistant
 import Combine
+import Analytics
 
 public struct NoticeboardView: View {
     @EnvironmentObject var viewState:LBViewState
@@ -118,7 +119,7 @@ public struct NoticeboardView: View {
         .frame(maxWidth:.infinity,maxHeight: .infinity)
         .wrap(scrollable: true, overlay: .emoji("💁",Color("RimColorNoticeboard",bundle:LBBundle)))
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
             update()
             contentProvider?.noticeboardWeatherConditionsPublisher(from: from(), to: to()).sink { weather in
                 self.weather = weather

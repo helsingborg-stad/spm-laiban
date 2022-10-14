@@ -5,8 +5,9 @@
 //  Created by Ehsan Zilaei on 2022-05-06.
 //
 
-import SwiftUI
+import Analytics
 import Combine
+import SwiftUI
 
 struct ActivityAdminActivitiesView: View {
     struct ItemView : View {
@@ -42,16 +43,16 @@ struct ActivityAdminActivitiesView: View {
             service.remove(newActivity)
             service.save()
             
-            LBAnalyticsProxy.shared.log("AdminAction", properties: ["Action":"Remove","ObjectType":"Activity"])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue, properties: ["Action":"Remove","ObjectType":"Activity"])
         } else if newActivity != oldActivity {
             if service.contains(newActivity) {
                 service.update(newActivity)
 
-                LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Update","ObjectType":"Activity"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Update","ObjectType":"Activity"])
             } else {
                 service.add(newActivity)
                 
-                LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Add","ObjectType":"Activity"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Add","ObjectType":"Activity"])
             }
             
             service.save()
@@ -99,7 +100,7 @@ struct ActivityAdminActivitiesView: View {
                     }
                     service.data.remove(atOffsets: indexSet)
                     service.save()
-                    LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Delete","ObjectType":"Activity"])
+                    AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Delete","ObjectType":"Activity"])
                 }
             }
         }

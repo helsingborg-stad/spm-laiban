@@ -6,6 +6,7 @@
 
 import CoreLocation
 import SwiftUI
+import Analytics
 
 struct AdminMapView: View {
     @ObservedObject var service: OutdoorsService
@@ -22,7 +23,7 @@ struct AdminMapView: View {
                 service.data.coordinates = Coordinates(address: nil, latitude: loc.latitude, longitude: loc.longitude)
                 service.save()
                 self.visible = false
-                LBAnalyticsProxy.shared.log("AdminAction", properties: ["Action": "Update", "ObjectType": "Coordinates"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue, properties: ["Action": "Update", "ObjectType": "Coordinates"])
             }) {
                 Text("Använd nuvarande position").foregroundColor(.white)
             }.frame(maxWidth: .infinity).padding().background(Color.blue).cornerRadius(10).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
@@ -31,7 +32,7 @@ struct AdminMapView: View {
                     service.data.coordinates = nil
                     service.save()
                     self.visible = false
-                    LBAnalyticsProxy.shared.log("AdminAction", properties: ["Action": "Delete", "ObjectType": "Coordinates"])
+                    AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue, properties: ["Action": "Delete", "ObjectType": "Coordinates"])
                 }) {
                     Text("Radera position").foregroundColor(.white)
                 }.frame(maxWidth: .infinity).padding().background(Color.red).cornerRadius(10).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
@@ -42,7 +43,7 @@ struct AdminMapView: View {
             .edgesIgnoringSafeArea(.all))
         .navigationBarTitle("Koordinater för väder")
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

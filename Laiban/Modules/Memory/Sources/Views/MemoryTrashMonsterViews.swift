@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 import Assistant
+import Analytics
 
 struct TrashMontersMemoryGameView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -61,7 +62,7 @@ struct TrashMontersMemoryGameView: View {
         .primaryContainerBackground()
         .onAppear {
             assistant.speak("memory_game_start")
-            LBAnalyticsProxy.shared.logPageView("MemoryView/TrashMonsters")
+            AnalyticsService.shared.logPageView("MemoryView/TrashMonsters")
         }
         .transition(.opacity.combined(with: .scale))
         .onRotate { o in

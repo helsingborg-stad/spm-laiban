@@ -6,7 +6,7 @@
 
 import SwiftUI
 import UIKit
-
+import Analytics
 import Assistant
 
 struct AttributedText: UIViewRepresentable {
@@ -82,7 +82,7 @@ public struct SingalongView: View {
                     if self.viewModel.enabled {
                         Button(action: {
                             self.viewModel.play()
-                            LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"PlaySingalong"])
+                            AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"PlaySingalong"])
                         }) {
                             PlayButtonView(size: proxy.size.width * 0.2, color: Color("RimColorSingalong",bundle:LBBundle))
                         }.opacity(self.viewModel.completedStages.contains(.waiting) ? 1 : 0)
@@ -102,7 +102,7 @@ public struct SingalongView: View {
         })
         .onAppear {
             viewModel.initiate(using: assistant)
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .onReceive(viewModel.$completedStages) { stages in 
             if stages.contains(.done) || stages.contains(.waiting) {

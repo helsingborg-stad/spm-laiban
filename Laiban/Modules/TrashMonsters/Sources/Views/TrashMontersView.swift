@@ -6,7 +6,7 @@
 //
 
 import Combine
-
+import Analytics
 import SwiftUI
 import Assistant
 
@@ -104,7 +104,7 @@ public struct TrashMontersView: View {
                 let m = monsters[index]
                 Button(action: {
                     selectedMonster = m
-                    LBAnalyticsProxy.shared.logContentImpression("TrashMonster", piece: m.name)
+                    AnalyticsService.shared.logContentImpression("TrashMonster", piece: m.name)
                 }, label: {
                     m.avatar
                         .resizable()
@@ -129,7 +129,7 @@ public struct TrashMontersView: View {
             assistant.speak([
                 ("trashmonster_press_to_learn_more", "trashmonster_press_to_learn_more"),
             ])
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

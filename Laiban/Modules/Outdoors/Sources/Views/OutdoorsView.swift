@@ -6,6 +6,7 @@
 
 import SwiftUI
 import Assistant
+import Analytics
 
 public struct OutdoorsView: View {
     func columns(items: Int) -> Int {
@@ -46,7 +47,7 @@ public struct OutdoorsView: View {
             let columns = columns(items: viewModel.garments.count)
             LBGridView(items: viewModel.garments.count, columns: columns, horizontalSpacing: self.padding(proxy), verticalAlignment: .top) { index in
                 GarmentView(garment: self.viewModel.garments[index]) { garment in
-                    LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"RepeatGarment","Garment":self.viewModel.garments[index].rawValue])
+                    AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"RepeatGarment","Garment":self.viewModel.garments[index].rawValue])
                     assistant.speak([(self.viewModel.garments[index].localizationKey, self.viewModel.garments[index].localizationKey)])
                 }
                 .frame(width:itemSize(proxy, columns: columns),height:itemSize(proxy, columns: columns) * 1.1)
@@ -157,7 +158,7 @@ public struct OutdoorsView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
     
@@ -168,7 +169,7 @@ public struct OutdoorsView: View {
             GeometryReader { proxy in
                 LBGridView(items: viewModel.garments.count, columns: columns, horizontalSpacing: self.padding(proxy), verticalAlignment: .top) { index in
                     GarmentView(garment: self.viewModel.garments[index]) { garment in
-                        LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"RepeatGarment","Garment":self.viewModel.garments[index].rawValue])
+                        AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"RepeatGarment","Garment":self.viewModel.garments[index].rawValue])
                         assistant.speak([(self.viewModel.garments[index].localizationKey, self.viewModel.garments[index].localizationKey)])
                     }
                     .frame(width:itemSize(proxy, columns: columns),height:itemSize(proxy, columns: columns) * 1.1)
@@ -202,7 +203,7 @@ public struct OutdoorsView: View {
         }.onAppear {
             viewModel.initiate(using: assistant,viewState:viewState)
             viewState.characterHidden(true, for: .outdoors)
-            // LBAnalyticsProxy.shared.logPageView(self)
+            // AnalyticsService.shared.logPageView(self)
         }.onDisappear {
             if viewModel.didChange == false && viewModel.didRateBad == false {
                 viewModel.rate(.good, tag: .system)

@@ -5,8 +5,8 @@
 //
 
 import SwiftUI
-
 import Assistant
+import Analytics
 
 public struct FoodWasteView : View {
     @EnvironmentObject var viewState:LBViewState
@@ -51,7 +51,7 @@ public struct FoodWasteView : View {
         .primaryContainerBackground()
         .transition(.opacity.combined(with: .scale))
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView("FoodWasteView/WeeklyPlateWasteStatistics")
+            AnalyticsService.shared.logPageView("FoodWasteView/WeeklyPlateWasteStatistics")
         }
     }
     var balanceScaleView: some View {
@@ -61,7 +61,7 @@ public struct FoodWasteView : View {
             .primaryContainerBackground()
             .transition(.opacity.combined(with: .scale))
             .onAppear {
-                LBAnalyticsProxy.shared.logPageView("FoodWasteView/BalanceWaste")
+                AnalyticsService.shared.logPageView("FoodWasteView/BalanceWaste")
             }
     }
     var dailyStatistics: some View {
@@ -79,7 +79,7 @@ public struct FoodWasteView : View {
         .primaryContainerBackground()
         .transition(.opacity.combined(with: .scale))
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView("FoodWasteView/DailyPlateWasteStatistics")
+            AnalyticsService.shared.logPageView("FoodWasteView/DailyPlateWasteStatistics")
         }
     }
     var register: some View {

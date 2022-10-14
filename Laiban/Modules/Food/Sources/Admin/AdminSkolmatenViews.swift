@@ -7,7 +7,7 @@
 import Combine
 import Meals
 import SwiftUI
-
+import Analytics
 
 private struct AdminSkolmatenSelectionView: View {
     @State var rootVisible: Bool = false
@@ -67,7 +67,7 @@ struct AdminSkolmatenSchoolListView: View {
                 self.items = items
                 isLoading = false
             })
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .navigationBarTitle("Välj skola")
     }
@@ -111,7 +111,7 @@ struct AdminSkolmatenMunicipalityListView: View {
                 self.items = items
                 isLoading = false
             })
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }.navigationBarTitle("Välj kommun")
     }
 }
@@ -155,7 +155,7 @@ struct AdminSkolmatenCountyListView: View {
                 self.items = items
                 isLoading = false
             })
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }.navigationBarTitle("Välj län")
     }
 }

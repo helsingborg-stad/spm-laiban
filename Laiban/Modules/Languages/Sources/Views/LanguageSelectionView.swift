@@ -5,8 +5,8 @@
 //
 
 import SwiftUI
-
 import Assistant
+import Analytics
 
 public struct LanguageSelectionView: View {
     @EnvironmentObject var viewState:LBViewState
@@ -43,7 +43,7 @@ public struct LanguageSelectionView: View {
             ForEach(service.data.languages, id: \.self) { language in
                 Button(action: {
                     onSelectLanguage(language)
-                    //LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button": "Language-\(language.identifier)"])
+                    AnalyticsService.shared.log("LanguageChanged", properties: ["Language": "\(language.identifier)"])
                 }) {
                     HStack(spacing: properties.spacing[.m]) {
                         Text(self.string(from: language))
@@ -64,6 +64,7 @@ public struct LanguageSelectionView: View {
         .onAppear {
             viewState.inactivityTimerDisabled(true, for: .languages)
             viewState.actionButtons([.back], for: .languages)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

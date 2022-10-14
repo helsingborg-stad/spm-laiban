@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Assistant
+import Analytics
 
 struct UNDPInfoRegularView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -101,7 +102,7 @@ public struct UNDPInfoView: View {
             LBGridView(items: items.count, columns: 6, verticalSpacing: spacing, horizontalSpacing: spacing, verticalAlignment: .top, horizontalAlignment: .center) { index in
                 Button(action: {
                     selectedItem = items[index]
-                    LBAnalyticsProxy.shared.logContentImpression("UNDPGoalInfo", piece: "\(items[index].rawValue)")
+                    AnalyticsService.shared.logContentImpression("UNDPGoalInfo", piece: "\(items[index].rawValue)")
                 }, label: {
                     UNDPCircleView(goal: items[index], size: (properties.contentSize.width / 6) * 0.5)
                         .shadow(radius: assistant.isSpeaking ? 0 : 5)
@@ -125,7 +126,7 @@ public struct UNDPInfoView: View {
             assistant.speak([
                 ("undp_press_to_learn_more", "undp_press_to_learn_more"),
             ])
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

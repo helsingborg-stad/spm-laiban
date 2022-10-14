@@ -7,7 +7,7 @@
 import SwiftUI
 import CoreHaptics
 import Combine
-
+import Analytics
 
 struct AdminFoodWasteView: View {
     @ObservedObject var service:FoodWasteService
@@ -82,7 +82,7 @@ struct AdminFoodWasteView: View {
         .listStyle(GroupedListStyle())
         .navigationBarTitle("Hantera tallrikssvinn")
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

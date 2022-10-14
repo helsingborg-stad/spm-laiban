@@ -7,7 +7,7 @@
 import Foundation
 import Combine
 
-public class LBAnalyticsProxy {
+public class LBOldAnalyticsProxy {
     public struct PageViewEvent {
         public let page:String
         public let properties:[String:Any]?
@@ -44,7 +44,7 @@ public class LBAnalyticsProxy {
     public let customPublisher:AnyPublisher<CustomEvent,Never>
     public let userActionPublisher:AnyPublisher<UserActionEvent,Never>
     
-    public static var shared = LBAnalyticsProxy()
+    public static var shared = LBOldAnalyticsProxy()
     init() {
         pageViewPublisher = pageViewSubject.eraseToAnyPublisher()
         impressionPublisher = impressionSubject.eraseToAnyPublisher()

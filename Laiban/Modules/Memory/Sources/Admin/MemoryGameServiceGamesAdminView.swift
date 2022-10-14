@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Analytics
 
 struct MemoryGameServiceGamesAdminView: View {
     @ObservedObject var service:MemoryGameService
@@ -38,7 +39,7 @@ struct MemoryGameServiceGamesAdminView: View {
         }
         .listStyle(GroupedListStyle())
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .navigationBarTitle("Memoryspel")
     }
