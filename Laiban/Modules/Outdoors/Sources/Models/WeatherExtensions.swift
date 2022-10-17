@@ -41,20 +41,6 @@ public extension Weather {
     }
 }
 public enum WeatherCondition:String, CaseIterable, Codable {
-    public enum SeasonalBreakPoint {
-        case winterStarts
-        case winterEnds
-        case autumnStarts
-        case springEnds
-        func dateString(year:Int) -> String {
-            switch self {
-            case .winterStarts: return "\(year)-11-01"
-            case .winterEnds: return "\(year)-03-31"
-            case .autumnStarts: return "\(year)-09-15"
-            case .springEnds: return "\(year)-05-15"
-            }
-        }
-    }
     case unknown
     case rainy
     case cold
@@ -75,31 +61,10 @@ public enum WeatherCondition:String, CaseIterable, Codable {
         if (20...Double(Int.max)).contains(temperature) { return .hot}
         return .unknown
     }
-    public static func condition(for temperature:Double, precipitation:Double) -> Self {
-        let c1 = condition(for: temperature)
-        if precipitation > 0 {
-            switch c1 {
-            case .cold: return .coldAndRainy
-            case .cool: return .coolAndRainy
-            default: return .rainy
-            }
-        }
-        return c1
-    }
     public var garments:[Garment] {
-        let date = Date()
-        let year = date.year
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let winterStarts   = dateFormatter.date(from: SeasonalBreakPoint.winterStarts.dateString(year: year))!
-        let winterEnds     = dateFormatter.date(from: SeasonalBreakPoint.winterEnds.dateString(year: year))!
-        let autumnStarts   = dateFormatter.date(from: SeasonalBreakPoint.autumnStarts.dateString(year: year))!
-        let springEnds     = dateFormatter.date(from: SeasonalBreakPoint.springEnds.dateString(year: year))!
-        return garments(date: date, winterStarts: winterStarts, winterEnds: winterEnds, autumnStarts: autumnStarts, springEnds: springEnds)
-    }
-    func garments(date:Date, winterStarts:Date,winterEnds:Date,autumnStarts:Date,springEnds:Date) -> [Garment] {
         var arr = Set(baseGarments)
-        if date > winterStarts  || date < winterEnds {
+        let now = Date()
+        if now > date(month: "11", day: "01")  || now < date(month: "03", day: "31") {
             arr.remove(.pulloverPants)
             arr.remove(.jacket)
             arr.remove(.cap)
@@ -108,7 +73,7 @@ public enum WeatherCondition:String, CaseIterable, Codable {
             arr.insert(.neckwear)
             arr.insert(.beanie)
             arr.insert(.mittens)
-        } else if isCold && (date > autumnStarts || date < springEnds) {
+        } else if isCold && (now > date(month: "09", day: "15") || now < date(month: "05", day: "15")) {
             arr.insert(.beanie)
             arr.insert(.mittens)
             arr.remove(.cap)
@@ -131,4 +96,16 @@ public enum WeatherCondition:String, CaseIterable, Codable {
     public var isCold:Bool {
         [Self.cold, Self.coldAndRainy].contains(self)
     }
+}
+/// Creates a date object based on the given data
+/// - Parameters:
+///   - year: the year
+///   - month: the month (leading 0)
+///   - day: the day (leading 0)
+/// - Returns: a date object based on the given parameters
+fileprivate func date(month:String,day:String) -> Date!{
+    let garmentDF = DateFormatter()
+    garmentDF.dateFormat = "yyyy-MM-dd"
+    
+    return garmentDF.date(from: "\(Date().year)-\(month)-\(day)")
 }
