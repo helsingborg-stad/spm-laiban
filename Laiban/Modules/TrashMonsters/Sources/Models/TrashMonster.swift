@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import SwiftUI
+import Analytics
 
 public enum LoadMonsterError : Error {
     case filemissing
@@ -46,6 +47,7 @@ public struct Monster : Codable, Equatable {
         do {
             return try JSONDecoder().decode([Monster].self, from: try Data(contentsOf: url))
         } catch {
+            AnalyticsService.shared.logError(error)
             print(error)
         }
         return []

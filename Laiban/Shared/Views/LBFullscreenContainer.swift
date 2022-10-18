@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import Analytics
 
 public struct LBSpacing {
     public enum Amount {
@@ -262,6 +263,7 @@ public struct LBFullscreenContainer<Content:View,ActionBar:View>: View {
                     self.showAdminScreen = false
                 } else {
                     self.showAdminSheet = true
+                    AnalyticsService.shared.logPageView("AdminView")
                 }
             }
             .transition(.opacity.combined(with: .scale))

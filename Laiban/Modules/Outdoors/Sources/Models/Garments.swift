@@ -8,6 +8,7 @@ import Foundation
 import Weather
 import Combine
 import SwiftUI
+import Analytics
 
 fileprivate func date(month:String,day:String) -> Date!{
     let garmentDF = DateFormatter()
@@ -109,6 +110,7 @@ public class GarmentStore: ObservableObject {
         do{
             try FileManager.default.removeItem(at: filepath)
         } catch {
+            AnalyticsService.shared.logError(error)
             print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
     }
@@ -118,6 +120,7 @@ public class GarmentStore: ObservableObject {
             let encoded = try JSONEncoder().encode(self.data)
             try encoded.write(to: filepath)
         } catch {
+            AnalyticsService.shared.logError(error)
             print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
     }
@@ -138,6 +141,7 @@ public class GarmentStore: ObservableObject {
             print("ℹ️ [\(#fileID):\(#function):\(#line)] " + String(describing: "GamrmentStore loaded from file"))
             return m
         } catch {
+            AnalyticsService.shared.logError(error)
             print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
         return nil
@@ -161,6 +165,7 @@ public class GarmentStore: ObservableObject {
                     let val = try model.prediction(input: input)
                     return Garment.garments(from: val.clothes).sorted { (g1, g2) in g1.sortPriority < g2.sortPriority }
                 } catch {
+                    AnalyticsService.shared.logError(error)
                     print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
                 }
             }

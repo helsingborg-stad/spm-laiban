@@ -7,6 +7,8 @@
 import Foundation
 import Combine
 import UDPipe
+import Analytics
+
 public var cancellables = Set<AnyCancellable>()
 public enum FoodProcessingMethod: String,CaseIterable,Identifiable,Hashable,Codable {
     public struct Result {
@@ -255,6 +257,7 @@ fileprivate struct WordFilter {
             let data = try Data(contentsOf: url)
             return try decoder.decode(Rules.self, from: data)
         } catch {
+            AnalyticsService.shared.logError(error)
             print(error)
         }
         return nil

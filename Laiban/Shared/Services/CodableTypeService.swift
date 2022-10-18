@@ -5,6 +5,7 @@
 
 import Foundation
 import Combine
+import Analytics
 
 public enum CTSStatus: Equatable {
     case initializing
@@ -44,6 +45,7 @@ open class CTS<T,Storage> : LBService, ObservableObject where Storage: CodableSt
             do {
                 try await storage.write(data)
             } catch {
+                AnalyticsService.shared.logError(error)
                 debugPrint(error)
             }
             self.status = .idle
@@ -97,6 +99,7 @@ open class CTS<T,Storage> : LBService, ObservableObject where Storage: CodableSt
             do {
                 try await storage.delete()
             } catch {
+                AnalyticsService.shared.logError(error)
                 debugPrint(error)
             }
             self.status = .idle
