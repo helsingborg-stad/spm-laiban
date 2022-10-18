@@ -82,7 +82,7 @@ struct RecreationRegularView: View {
 
 struct RecreationRegularView_Previews: PreviewProvider {
     static let item: Recreation.Inventory.Item = .init(prefix: "en", name: "elefant",emoji:"🐘")
-    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️")
+    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️", isActive: true)
     
     static var previews: some View {
         LBFullscreenContainer { _ in

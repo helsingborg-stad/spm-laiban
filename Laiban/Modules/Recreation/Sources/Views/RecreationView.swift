@@ -16,9 +16,11 @@ public struct RecreationView: View {
     @State var activity: Recreation.Activity?
     @State var item: Recreation.Inventory.Item?
     @EnvironmentObject var viewState:LBViewState
-    let recreations = Recreation.standard
-    public init() {
-        
+    var service:RecreationService
+    let recreations:Recreation
+    public init(service:RecreationService) {
+        self.service = service
+        self.recreations = service.getRecreation()
     }
     public var body: some View {
         Group() {
@@ -60,10 +62,10 @@ public struct RecreationView: View {
 
 struct RecreationView_Previews: PreviewProvider {
     static var contentProvider = 1
-    
+    static var service = RecreationService()
     static var previews: some View {
         LBFullscreenContainer { _ in 
-            RecreationView()
+            RecreationView(service: service)
         }
         .attachPreviewEnvironmentObjects()
     }
