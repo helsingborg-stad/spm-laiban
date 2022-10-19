@@ -64,7 +64,7 @@ struct RecreationCompactView_Previews: PreviewProvider {
         LBFullscreenContainer { _ in
             RecreationCompactView(activity: activity, item: item)
         }
-        .previewDevice("iPod touch (7th generation)")
+//        .previewDevice("iPod touch (7th generation)")
         .attachPreviewEnvironmentObjects()
     }
 }

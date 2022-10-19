@@ -23,6 +23,8 @@ struct AdminRecreationViews: View {
     }
 }
 
+
+
 struct AdminRecreationActivityListItem:View {
     
     var activity: Recreation.Activity
@@ -39,9 +41,11 @@ struct AdminRecreationActivityListItem:View {
     }
 }
 
+
 struct AdminRecreationActivityListView: View {
     
-    
+    @State private var showingSheet = false
+
     @ObservedObject var service:RecreationService
     var body: some View {
         Section {
@@ -50,28 +54,24 @@ struct AdminRecreationActivityListView: View {
                     .onTapGesture {
                         service.toggleEnabledFlag(type: .Activity, id: activity.id)
                     }
-            }
+            }.onDelete(perform: service.deleteActivity)
         } header: {
+            
             VStack(alignment: .leading){
-                Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Jag har tråkigt' genom att markera/avmarkera dessa i listorna här nedan.")
-                //Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Jag har tråkigt' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
+                
+                Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Jag har tråkigt' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
                 Spacer(minLength: 40.0)
                 HStack{
                     Text("Aktiviteter")
-//                    Spacer()
-//                    Button(
-//                        action: {
-//                            service.addActivity()
-//                            print("button pressed")
-//                        }
-//                    ) {
-//                        Image(systemName: "plus")
-//                            .resizable()
-//                            .padding(6)
-//                            .frame(width: 24, height: 24)
-//                            .clipShape(Circle())
-//                            .foregroundColor(.blue)
-//                    }
+                    Spacer()
+                    NavigationLink(destination: AdminRecreationAddActivityView(service: service)){
+                        Image(systemName: "plus")
+                            .resizable()
+                            .padding(6)
+                            .frame(width: 24, height: 24)
+                            .clipShape(Circle())
+                            .foregroundColor(.blue)
+                    }
                 }
             }
         }
@@ -106,26 +106,22 @@ struct AdminRecreationIventoriesListView: View {
                             service.toggleEnabledFlag(type: .Inventory, inventoryType: inventory.name, id: item.id)
                         }
                         .foregroundColor(item.isActive ? .black : .gray)
+                }.onDelete { indexSet in
+                    service.deleteInventoryItem(at: indexSet, inventoryType: InventoryType(rawValue: inventory.name)!)
                 }
             } header: {
 
                 HStack {
                     Text(inventory.name)
                     Spacer()
-//                    Button(
-//                        action: {
-//                            let newItem:Recreation.Inventory.Item =
-//                                .init(id:"Test\(service.data[0].inventories[0].items.count)",prefix: "Ett",name: "Test\(service.data[0].inventories[0].items.count)",emoji: "🌳",isActive: true)
-//                            service.addInventoryItem(type: .songs, inventoryItem: newItem)
-//                        }
-//                    ) {
-//                        Image(systemName: "plus")
-//                            .resizable()
-//                            .padding(6)
-//                            .frame(width: 24, height: 24)
-//                            .clipShape(Circle())
-//                            .foregroundColor(.blue)
-//                    }
+                    NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.name)!)){
+                        Image(systemName: "plus")
+                            .resizable()
+                            .padding(6)
+                            .frame(width: 24, height: 24)
+                            .clipShape(Circle())
+                            .foregroundColor(.blue)
+                    }
                 }
             }
         }

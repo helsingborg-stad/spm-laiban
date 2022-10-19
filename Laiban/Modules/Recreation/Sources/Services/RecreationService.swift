@@ -9,19 +9,19 @@ import Combine
 public typealias RecreationServiceType = [Recreation]
 public typealias RecreationStorageService = CodableLocalJSONService<RecreationServiceType>
 
+
+public enum InventoryType: String, CaseIterable, Identifiable {
+    case misc = "Diverse", animals = "Djur", songs = "Sånger"
+    public var id: Self { self }
+}
+
+enum RecreationType {
+    case Inventory
+    case Activity
+}
+
+
 public class RecreationService: CTS<RecreationServiceType,RecreationStorageService>, LBDashboardItem, LBAdminService {
-    
-    public enum InventoryType: String {
-        case misc = "Diverse"
-        case animals = "Djur"
-        case songs = "Sånger"
-    }
-    
-    enum RecreationType {
-        case Inventory
-        case Activity
-    }
-    
     
     private let defaultIndexForRecreationObject = 0
     
@@ -72,19 +72,21 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         return recreation
     }
     
-    func addActivity(){
+    func addActivity(newActivity:Recreation.Activity, callback: () -> Void) {
         
-        data[defaultIndexForRecreationObject].activities.append(.init(name: "Test\(data[defaultIndexForRecreationObject].activities.count)", sentence: "Det är kul att testa \(data[defaultIndexForRecreationObject].activities.count)", emoji: "🌳", isActive: true))
+        data[defaultIndexForRecreationObject].activities.append(newActivity)
         
         Task {
             await self.save()
         }
+        
+        callback()
     }
     
-    func removeActivity(){
+    
+    func deleteActivity(at offsets: IndexSet) {
+        data[0].activities.remove(atOffsets: offsets)
         
-        data[defaultIndexForRecreationObject].activities.removeAll(where: {$0.name.contains("Test")})
-      
         Task {
             await self.save()
         }
@@ -113,7 +115,7 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
     }
     
     
-    func addInventoryItem(type:InventoryType, inventoryItem:Recreation.Inventory.Item){
+    func addInventoryItem(type:InventoryType, inventoryItem:Recreation.Inventory.Item, callback: () -> Void){
         
         switch type {
         case .misc:
@@ -133,10 +135,30 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         Task {
             await self.save()
         }
+        
+        callback()
     }
     
-    func removeInventoryItem(){
+    func deleteInventoryItem(at offsets: IndexSet, inventoryType:InventoryType) {
         
+        switch inventoryType {
+        case .misc:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.misc.rawValue }) {
+                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
+            }
+        case .animals:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.animals.rawValue }) {
+                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
+            }
+        case .songs:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.songs.rawValue }) {
+                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
+            }
+        }
+        
+        Task {
+            await self.save()
+        }
     }
     
     
