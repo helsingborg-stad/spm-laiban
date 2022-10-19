@@ -16,10 +16,10 @@ struct AdminRecreationViews: View {
         Section{
             List(){
                 AdminRecreationActivityListView(service: service)
-                AdminRecreationIventoriesListView(service: service)
+                AdminRecreationInventoriesListView(service: service)
             }
         }
-        .navigationBarTitle(Text("Jag har tråkigt"))
+        .navigationBarTitle(Text("Något att göra"))
     }
 }
 
@@ -59,7 +59,7 @@ struct AdminRecreationActivityListView: View {
             
             VStack(alignment: .leading){
                 
-                Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Jag har tråkigt' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
+                Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Något att göra' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
                 Spacer(minLength: 40.0)
                 HStack{
                     Text("Aktiviteter")
@@ -92,7 +92,7 @@ struct InventoryListViewItem: View {
     }
 }
 
-struct AdminRecreationIventoriesListView: View {
+struct AdminRecreationInventoriesListView: View {
     
     @ObservedObject var service:RecreationService
     
