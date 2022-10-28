@@ -34,7 +34,7 @@ import TabularData
 #endif
 
 /// `LocalAttireSuggestionProvider` uses a tablular classficication model to train and predict what types of clothes once should wear depending on a number of weather parameters
-public actor LocalAttireSuggestionProvider {
+@available(iOS 16, macOS 13.0, *) public actor LocalAttireSuggestionProvider {
     /// Clothes predction results
     public struct Results {
         /// Encoded list of garments,, see `Garment` for more information

@@ -12,7 +12,7 @@ public enum SMHIAttireSuggestionDataProviderError: Error {
     case garmentProviderMissing
     case unsupportedPlatform
 }
-public actor SMHIAttireSuggestionDataProvider : LocalAttireSuggestionDataProvider {
+@available(iOS 16, macOS 13.0, *) public actor SMHIAttireSuggestionDataProvider : LocalAttireSuggestionDataProvider {
     public private(set) var latitude:Double? = nil
     public private(set) var longitude:Double? = nil
     public private(set) var period:String? = nil
