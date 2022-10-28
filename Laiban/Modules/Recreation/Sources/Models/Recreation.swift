@@ -59,12 +59,33 @@ public struct Recreation : Codable {
         public var id:String = UUID().uuidString
         var name:String
         var sentence:String
-        var objectSentence:String? = nil
+        var objectSentence:String?
         var emoji:String
-        var inventories:[String] = []
+        var inventories:[String] = []{
+            willSet{
+                if(newValue.count > 0){
+                    deleteImage()
+                    imageOrEmojiDescription = nil
+                }
+            }
+        }
         var isActive:Bool
-        var imageName:String? = nil
+        var imageName:String? {
+            willSet{
+                if newValue != nil {
+                    self.activityEmoji = ""
+                    self.inventories = []
+                }
+            }
+        }
         var imageOrEmojiDescription: String? = nil
+        var activityEmoji:String {
+            willSet{
+                if newValue != "" {
+                    deleteImage()
+                }
+            }
+        }
 
         static let imageStorage = LBImageStorage(folder: "recreationActivityImages")
         
@@ -74,6 +95,11 @@ public struct Recreation : Codable {
                 result += " " + assistant.string(forKey: objectSentence)
             }
             return result
+        }
+        
+        mutating func deleteImage() {
+            Activity.imageStorage.delete(image: self.imageName)
+            imageName = nil
         }
     }
 }

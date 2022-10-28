@@ -104,14 +104,14 @@ struct AdminRecreationInventoriesListView: View {
                         }
                         .foregroundColor(item.isActive ? .black : .gray)
                 }.onDelete { indexSet in
-                    service.deleteInventoryItem(at: indexSet, inventoryType: InventoryType(rawValue: inventory.name)!)
+                    service.deleteInventoryItem(at: indexSet, inventoryType: InventoryType(rawValue: inventory.id)!)
                 }
             } header: {
 
                 HStack {
                     Text(inventory.name)
                     Spacer()
-                    NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.name)!)){
+                    NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!)){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)

@@ -6,6 +6,7 @@
          "id":"singing",
          "objectSentence":"Till kan till exempel sjunga...",
          "sentence":"Gå till någon bra plats för att dansa och sjunga med en eller flera kompisar.",
+         "activityEmoji":"",
          "name":"Sjunga",
          "inventories":[
             "songs"
@@ -17,6 +18,7 @@
          "id":"puzzleSolving",
          "objectSentence":"Till exempel...",
          "sentence":"Gå och lägg ett pussel.",
+         "activityEmoji":"",
          "name":"Pussel",
          "inventories":[
             
@@ -28,6 +30,7 @@
          "id":"games",
          "objectSentence":"Till exempel kan ni spela...",
          "sentence":"Gå och spela ett spel tillsammans med en kompis.",
+         "activityEmoji":"",
          "name":"Spel",
          "inventories":[
             
@@ -39,6 +42,7 @@
          "id":"listen",
          "objectSentence":"Ni kan till exempel lyssna på...",
          "sentence":"Gå och hämta en iPad med en kompis och lyssna på en saga.",
+         "activityEmoji":"",
          "name":"Spel",
          "inventories":[
             
@@ -50,6 +54,7 @@
          "id":"read",
          "objectSentence":"Ni kan till exempel titta i...",
          "sentence":"Gå och hämta en bok tillsammans med en kompis och prata om bilderna.",
+         "activityEmoji":"",
          "name":"Läsa",
          "inventories":[
             
@@ -61,6 +66,7 @@
          "id":"trace",
          "objectSentence":"Till exempel...",
          "sentence":"Gå och hämta en iPad och be en vuxen om hjälp för att kalkera av ett djur.",
+         "activityEmoji":"",
          "name":"Kalkera",
          "inventories":[
             
@@ -72,6 +78,7 @@
          "id":"painting",
          "objectSentence":"Försök att måla...",
          "sentence":"Gå till ateljén och måla.",
+         "activityEmoji":"",
          "name":"Måla",
          "inventories":[
             "misc",
@@ -84,6 +91,7 @@
          "id":"drawing",
          "objectSentence":"Ni kanske kan rita...",
          "sentence":"Gå till ateljén tillsammans med en kompis och rita.",
+         "activityEmoji":"",
          "name":"Draw",
          "inventories":[
             "misc",
@@ -96,6 +104,7 @@
          "id":"legoBuilding",
          "objectSentence":"Testa att bygga...",
          "sentence":"Gå till legot och bygg.",
+         "activityEmoji":"",
          "name":"Lego",
          "inventories":[
             "misc"
@@ -109,7 +118,8 @@
          "emoji":"🗼",
          "name":"Bygga",
          "isActive":true,
-         "sentence":"Gå till byggrummet tillsammans med en kompis och bygg ett så högt torn som möjligt."
+         "sentence":"Gå till byggrummet tillsammans med en kompis och bygg ett så högt torn som möjligt.",
+         "activityEmoji":""
       },
       {
          "id":"movie",
@@ -119,7 +129,8 @@
          "emoji":"🎬",
          "name":"Skapa film",
          "isActive":true,
-         "sentence":"Hämta en iPad och gå till fantasirummet och skapa en film tillsammans med en kompis."
+         "sentence":"Hämta en iPad och gå till fantasirummet och skapa en film tillsammans med en kompis.",
+         "activityEmoji":""
       },
       {
          "id":"create",
@@ -129,7 +140,8 @@
          "emoji":"✂️",
          "name":"Skapa",
          "isActive":true,
-         "sentence":"Gå till ateljén och skapa med lim och annat material."
+         "sentence":"Gå till ateljén och skapa med lim och annat material.",
+         "activityEmoji":""
       },
       {
          "isActive":true,
@@ -137,6 +149,7 @@
          "id":"clay",
          "objectSentence":"Försök göra...",
          "sentence":"Gå till något bra bord och skapa med lera.",
+         "activityEmoji":"",
          "name":"Lera",
          "inventories":[
             "misc",
@@ -151,7 +164,8 @@
          "emoji":"🔍",
          "name":"Förstora",
          "isActive":true,
-         "sentence":"Gå och hämta en iPad och förstora saker så du kan undersöka dem nära."
+         "sentence":"Gå och hämta en iPad och förstora saker så du kan undersöka dem nära.",
+         "activityEmoji":""
       }
    ],
    "inventories":[

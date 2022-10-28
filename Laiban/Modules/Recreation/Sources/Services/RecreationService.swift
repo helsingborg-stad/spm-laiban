@@ -11,20 +11,37 @@ public typealias RecreationStorageService = CodableLocalJSONService<RecreationSe
 
 
 public enum InventoryType: String, CaseIterable, Identifiable {
-    case misc = "Diverse", animals = "Djur", songs = "Sånger"
+    case misc = "misc", animals = "animals", songs = "songs"
     public var id: Self { self }
 }
+
+
+public struct InventoryCategory {
+    private let misc:InventoryCategoryType = InventoryCategoryType(id: "misc", displayName: "Diverse")
+    private let animals:InventoryCategoryType = InventoryCategoryType(id: "animals", displayName: "Djur")
+    private let songs:InventoryCategoryType = InventoryCategoryType(id: "songs", displayName: "Sånger")
+    let all:[InventoryCategoryType]
+    
+    init() {
+        all = [misc,animals,songs]
+    }
+}
+
+
+public struct InventoryCategoryType:Identifiable {
+    public let id:String
+    let displayName:String
+}
+
 
 enum RecreationType {
     case Inventory
     case Activity
 }
 
-
 public class RecreationService: CTS<RecreationServiceType,RecreationStorageService>, LBDashboardItem, LBAdminService {
     
     private let defaultIndexForRecreationObject = 0
-    
     
     public var id: String = "RecreationService"
     public var listOrderPriority: Int = 15
@@ -55,6 +72,11 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
        
     }
     
+    public var recreation:Recreation {
+        
+        return data[0]
+    }
+    
     func getRecreation() -> Recreation {
         
         guard var recreation = self.data.first else {
@@ -64,7 +86,7 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         recreation.activities = recreation.activities.filter({$0.isActive})
         
         recreation.inventories.forEach({ inventory in
-            if let index = recreation.inventories.firstIndex(where: {$0.name == inventory.name}) {
+            if let index = recreation.inventories.firstIndex(where: {$0.id == inventory.id}) {
                 recreation.inventories[index].items = recreation.inventories[index].items.filter({$0.isActive})
             }
         })
@@ -119,15 +141,15 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         
         switch type {
         case .misc:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.misc.rawValue }) {
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
                 data[defaultIndexForRecreationObject].inventories[index].items.append(inventoryItem)
             }
         case .animals:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.animals.rawValue }) {
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
                 data[defaultIndexForRecreationObject].inventories[index].items.append(inventoryItem)
             }
         case .songs:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.songs.rawValue }) {
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
                 data[defaultIndexForRecreationObject].inventories[index].items.append(inventoryItem)
             }
         }
@@ -143,15 +165,15 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         
         switch inventoryType {
         case .misc:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.misc.rawValue }) {
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
                 data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
             }
         case .animals:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.animals.rawValue }) {
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
                 data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
             }
         case .songs:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == InventoryType.songs.rawValue }) {
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
                 data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
             }
         }
@@ -161,5 +183,27 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         }
     }
     
+    func randomInventoryItemFor(inventoryType:InventoryType) -> Recreation.Inventory.Item? {
+        
+        var item:Recreation.Inventory.Item? = nil
+        
+        switch inventoryType {
+        case .misc:
+            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
+                 item = recreation.inventories[index].items.randomElement()
+            }
+            
+        case .animals:
+            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
+                item =  recreation.inventories[index].items.randomElement()
+            }
+        case .songs:
+            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
+                item =  recreation.inventories[index].items.randomElement()
+            }
+        }
+        
+        return item
+    }
     
 }

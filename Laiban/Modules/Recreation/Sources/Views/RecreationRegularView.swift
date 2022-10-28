@@ -39,6 +39,7 @@ struct RecreationRegularView: View {
                             .font(properties.font, ofSize: .n)
                             .frame(maxWidth: .infinity, alignment: .center)
                         if item?.imageName != nil   {
+                            
                             Image(item!.imageName!)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -46,6 +47,16 @@ struct RecreationRegularView: View {
                                 .clipped()
                                 .cornerRadius(20)
                                 .shadow(radius: 4)
+                            
+                        }else if item?.emoji != nil   {
+                          
+                            Text(item!.emoji!)
+                                .font(Font.system(size: proxy.size.height*0.3))
+                                .frame(width:proxy.size.height*0.5,height:proxy.size.height*0.5)
+                                .background(Color.white)
+                                .cornerRadius(20)
+                                .shadow(radius: 4)
+                            
                         }else if let imageName = activity?.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
                             
                             image.resizable()
@@ -55,19 +66,30 @@ struct RecreationRegularView: View {
                                 .cornerRadius(20)
                                 .shadow(radius: 4)
                             
-                            if let sentence = activity?.objectSentence {
+                            if let imageDescrition = activity?.imageOrEmojiDescription {
+                                Text(assistant.string(forKey: imageDescrition))
+                                    .font(properties.font, ofSize: .l)
+                            }else if let sentence = activity?.objectSentence {
                                 Text(assistant.string(forKey: sentence))
                                     .font(properties.font, ofSize: .l)
                             }
                             
+                        }else if let activityEmoji = activity?.activityEmoji, activityEmoji != ""{
                             
-                        }else if item?.emoji != nil   {
-                            Text(item!.emoji!)
+                            Text(activityEmoji)
                                 .font(Font.system(size: proxy.size.height*0.3))
                                 .frame(width:proxy.size.height*0.5,height:proxy.size.height*0.5)
                                 .background(Color.white)
                                 .cornerRadius(20)
                                 .shadow(radius: 4)
+                            
+                            if let emojiDescrition = activity?.imageOrEmojiDescription {
+                                Text(assistant.string(forKey: emojiDescrition))
+                                    .font(properties.font, ofSize: .l)
+                            }else if let sentence = activity?.objectSentence {
+                                Text(assistant.string(forKey: sentence))
+                                    .font(properties.font, ofSize: .l)
+                            }
                         }
                         
                         
@@ -100,7 +122,8 @@ struct RecreationRegularView: View {
 
 struct RecreationRegularView_Previews: PreviewProvider {
     static let item: Recreation.Inventory.Item = .init(prefix: "en", name: "elefant",emoji:"🐘")
-    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️", isActive: true, imageName: "4210AAE1-4264-477D-AA5B-582EB7744F5F.jpeg" )
+//    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️", isActive: true, imageName: "4210AAE1-4264-477D-AA5B-582EB7744F5F.jpeg",activityEmoji: "" )
+    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️", isActive: true ,activityEmoji: "" )
     
     static var previews: some View {
         LBFullscreenContainer { _ in
