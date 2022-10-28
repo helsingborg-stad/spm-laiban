@@ -15,6 +15,7 @@ public struct RecreationView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     @State var activity: Recreation.Activity?
     @State var item: Recreation.Inventory.Item?
+    @State var image:Image?
     @EnvironmentObject var viewState:LBViewState
     var service:RecreationService
     let recreations:Recreation
@@ -23,7 +24,7 @@ public struct RecreationView: View {
         self.recreations = service.getRecreation()
     }
     public var body: some View {
-        Group() {
+        Group(){
             if horizontalSizeClass == .regular {
                 RecreationRegularView(activity: activity, item: item)
             } else {
@@ -33,6 +34,7 @@ public struct RecreationView: View {
         .onAppear {
             if let act = recreations.activities.randomElement() {
                 activity = act
+                
                 if let inv = activity?.inventories.randomElement(), let inventory = recreations.inventories.first(where: { i in i.id == inv }) {
                     item = inventory.items.randomElement()
                 } else {

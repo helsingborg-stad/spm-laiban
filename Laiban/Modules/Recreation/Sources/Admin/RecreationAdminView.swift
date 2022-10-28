@@ -14,7 +14,7 @@ struct RecreationAdminView: View {
         NavigationLink(
             destination:AdminRecreationViews(service: service),
             label: {
-                Text("Något att göra")
+                Text("Laiban föreslår aktivitet")
             }
         )
     }

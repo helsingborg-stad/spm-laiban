@@ -13,30 +13,33 @@ struct AdminRecreationAddInventoryItemView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var newInventoryItem: Recreation.Inventory.Item = .init()
     @State var emoji:String = String()
+    
+    
     var body: some View {
-        Form {
-            Section{
-                TextField("Inventarie", text:$newInventoryItem.name)
-            }header: {
-                Text("Lägg till ny Inventarie")
-            }footer: {
-                Text("Ange en ny inventarie. Exempel: Träd")
-            }
-            
-            Section{
-                TextField("Prefix", text:$newInventoryItem.prefix)
-            }header: {
-                Text("Prefix")
-            }footer: {
-                Text("Exempel: Ett")
-            }
-            
-            Section{
-                TextField("🌳", text:$emoji)
-            }header: {
-                Text("Emoji (Valfritt)")
-            }
-        }.navigationBarTitle(Text("Lägg till ny inventarie - \(inventoryType.rawValue)"))
+        
+            Form {
+                Section{
+                    TextField("Objekt/Föremål", text:$newInventoryItem.name)
+                }header: {
+                    Text("Lägg till nytt föremål")
+                }footer: {
+                    Text("Ange ett nytt föremål. Exempel: Träd")
+                }
+                
+                Section{
+                    TextField("Prefix", text:$newInventoryItem.prefix)
+                }header: {
+                    Text("Prefix")
+                }footer: {
+                    Text("Exempel: Ett")
+                }
+                
+                Section{
+                    TextField("🌳", text:$emoji)
+                }header: {
+                    Text("Emoji (Valfritt)")
+                }
+            }.navigationBarTitle(Text("Lägg till nytt föremål - \(inventoryType.rawValue)"))
             .listStyle(GroupedListStyle())
             .navigationBarItems(trailing:
                 Button(action: {

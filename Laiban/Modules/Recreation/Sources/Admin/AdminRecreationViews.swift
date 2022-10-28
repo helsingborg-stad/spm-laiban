@@ -19,11 +19,9 @@ struct AdminRecreationViews: View {
                 AdminRecreationInventoriesListView(service: service)
             }
         }
-        .navigationBarTitle(Text("Något att göra"))
+        .navigationBarTitle(Text("Laiban föreslår aktivitet"))
     }
 }
-
-
 
 struct AdminRecreationActivityListItem:View {
     
@@ -40,7 +38,6 @@ struct AdminRecreationActivityListItem:View {
         }.foregroundColor(activity.isActive ? .black : .gray)
     }
 }
-
 
 struct AdminRecreationActivityListView: View {
     
@@ -59,7 +56,7 @@ struct AdminRecreationActivityListView: View {
             
             VStack(alignment: .leading){
                 
-                Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Något att göra' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
+                Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Laiban föreslår aktivitet' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
                 Spacer(minLength: 40.0)
                 HStack{
                     Text("Aktiviteter")

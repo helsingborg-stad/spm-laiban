@@ -6,7 +6,7 @@
 
 import Foundation
 import Combine
-
+import SwiftUI
 import Assistant
 
 public struct Recreation : Codable {
@@ -63,7 +63,11 @@ public struct Recreation : Codable {
         var emoji:String
         var inventories:[String] = []
         var isActive:Bool
+        var imageName:String? = nil
+        var imageOrEmojiDescription: String? = nil
 
+        static let imageStorage = LBImageStorage(folder: "recreationActivityImages")
+        
         func activityDescription(hasObject: Bool, using assistant:Assistant) -> String {
             var result = assistant.string(forKey: sentence)
             if hasObject, let objectSentence = objectSentence {

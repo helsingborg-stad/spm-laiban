@@ -29,7 +29,22 @@ struct RecreationCompactView: View {
                     .multilineTextAlignment(.center)
                     .font(properties.font, ofSize: .n)
                     .frame(maxWidth: .infinity, alignment: .center)
-                if item?.imageName != nil   {
+                
+                if let imageName = activity?.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
+                    
+                    image.resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:200,height:200)
+                        .clipped()
+                        .cornerRadius(20)
+                        .shadow(radius: 4)
+                    
+                    if let sentence = activity?.objectSentence {
+                        Text(assistant.string(forKey: sentence))
+                    }
+                    
+                    
+                }else if item?.imageName != nil   {
                     Image(item!.imageName!)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
