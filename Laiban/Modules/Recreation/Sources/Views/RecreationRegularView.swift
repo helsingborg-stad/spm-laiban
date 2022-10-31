@@ -74,7 +74,7 @@ struct RecreationRegularView: View {
                                     .font(properties.font, ofSize: .l)
                             }
                             
-                        }else if let activityEmoji = activity?.activityEmoji, activityEmoji != ""{
+                        }else if let activityEmoji = activity?.activityEmoji, activityEmoji != "?" && activityEmoji != ""{
                             
                             Text(activityEmoji)
                                 .font(Font.system(size: proxy.size.height*0.3))

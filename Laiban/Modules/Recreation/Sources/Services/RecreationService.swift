@@ -94,7 +94,29 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         return recreation
     }
     
-    func addActivity(newActivity:Recreation.Activity, callback: () -> Void) {
+    
+    func saveActivity(activity:Recreation.Activity, callback: () -> Void) {
+        
+        if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == activity.id} ) {
+            
+            data[defaultIndexForRecreationObject].activities[index] = activity
+            
+            Task {
+                await self.save()
+            }
+            
+            callback()
+            
+        }else{
+            
+            addActivity(newActivity: activity, callback: {
+                callback()
+            })
+        }
+        
+    }
+    
+    private func addActivity(newActivity:Recreation.Activity, callback: () -> Void) {
         
         data[defaultIndexForRecreationObject].activities.append(newActivity)
         
@@ -105,6 +127,19 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         callback()
     }
     
+    
+    func deleteActivity(activity:Recreation.Activity, callback: () -> Void){
+        
+        if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == activity.id}){
+            data[defaultIndexForRecreationObject].activities.remove(at: index)
+             
+            Task {
+                await self.save()
+            }
+            
+            callback()
+        }
+    }
     
     func deleteActivity(at offsets: IndexSet) {
         data[0].activities.remove(atOffsets: offsets)
@@ -123,11 +158,11 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
                let inventoryIndex = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == inventoryType}),
                let index = data[defaultIndexForRecreationObject].inventories[inventoryIndex].items.firstIndex(where: {$0.id == id}) {
                
-                data[defaultIndexForRecreationObject].inventories[inventoryIndex].items[index].isActive = data[defaultIndexForRecreationObject].inventories[inventoryIndex].items[index].isActive ? false : true
+                data[defaultIndexForRecreationObject].inventories[inventoryIndex].items[index].isActive.toggle()
             }
         case .Activity:
             if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == id}) {
-                data[defaultIndexForRecreationObject].activities[index].isActive = data[defaultIndexForRecreationObject].activities[index].isActive ? false : true
+                data[defaultIndexForRecreationObject].activities[index].isActive.toggle()
             }
         }
         

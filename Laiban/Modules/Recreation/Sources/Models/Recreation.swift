@@ -78,10 +78,10 @@ public struct Recreation : Codable {
                 }
             }
         }
-        var imageOrEmojiDescription: String? = nil
+        var imageOrEmojiDescription:String?
         var activityEmoji:String {
             willSet{
-                if newValue != "" {
+                if newValue != "" && newValue != "?" {
                     deleteImage()
                 }
             }

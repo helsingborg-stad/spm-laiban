@@ -18,24 +18,32 @@ struct AdminRecreationViews: View {
                 AdminRecreationActivityListView(service: service)
                 AdminRecreationInventoriesListView(service: service)
             }
-        }
-        .navigationBarTitle(Text("Laiban föreslår aktivitet"))
+        }.navigationBarTitle(Text("Laiban föreslår aktivitet"))
     }
 }
 
 struct AdminRecreationActivityListItem:View {
     
-    var activity: Recreation.Activity
-    
+    @State var activity: Recreation.Activity
+    @ObservedObject var service:RecreationService
     var body:some View {
-        HStack {
-            Text(activity.emoji)
-            Text(activity.sentence)
-            Spacer()
-            Image(systemName: "checkmark")
-                .foregroundColor(.blue)
-                .invisible(!activity.isActive)
-        }.foregroundColor(activity.isActive ? .black : .gray)
+        NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: activity)){
+            HStack(alignment: .center) {
+                
+                Text(activity.emoji)
+                
+                VStack(alignment: .leading) {
+                    Text(activity.sentence)
+                    activity.objectSentence != nil ? Text(activity.objectSentence ?? "") : nil
+                }
+                
+                Spacer()
+             
+                Toggle("", isOn: $activity.isActive).onTapGesture {
+                    service.toggleEnabledFlag(type: .Activity, inventoryType: activity.name, id: activity.id)
+                }
+            }.foregroundColor(activity.isActive ? .black : .gray)
+        }
     }
 }
 
@@ -47,10 +55,7 @@ struct AdminRecreationActivityListView: View {
     var body: some View {
         Section {
             ForEach(service.data[0].activities, id: \.self) { activity in
-                AdminRecreationActivityListItem( activity: activity)
-                    .onTapGesture {
-                        service.toggleEnabledFlag(type: .Activity, id: activity.id)
-                    }
+                AdminRecreationActivityListItem(activity: activity, service: service)
             }.onDelete(perform: service.deleteActivity)
         } header: {
             
@@ -61,7 +66,7 @@ struct AdminRecreationActivityListView: View {
                 HStack{
                     Text("Aktiviteter")
                     Spacer()
-                    NavigationLink(destination: AdminRecreationAddActivityView(service: service)){
+                    NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: .init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: ""))){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)
