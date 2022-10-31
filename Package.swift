@@ -34,7 +34,8 @@ let package = Package(
                 .product(name: "PublicCalendar",     package: "spm-daisy"),
                 .product(name: "Meals",              package: "spm-daisy"),
                 .product(name: "Instagram",          package: "spm-daisy"),
-                .product(name: "Weather",            package: "spm-daisy")
+                .product(name: "Weather",            package: "spm-daisy"),
+                .product(name: "Analytics",          package: "spm-daisy"),
             ],
             path: "Laiban",
             resources: [

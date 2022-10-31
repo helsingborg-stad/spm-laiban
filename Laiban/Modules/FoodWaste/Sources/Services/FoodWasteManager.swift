@@ -6,6 +6,7 @@
 
 import Foundation
 import Combine
+import Analytics
 
 public class FoodWasteManager : ObservableObject {
     public struct FoodWaste: Codable,Hashable,Identifiable {
@@ -213,6 +214,7 @@ public class FoodWasteManager : ObservableObject {
             do {
                 return try decoder.decode([String:FoodWaste].self, from: data)
             } catch {
+                AnalyticsService.shared.logError(error)
                 print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
             }
         }

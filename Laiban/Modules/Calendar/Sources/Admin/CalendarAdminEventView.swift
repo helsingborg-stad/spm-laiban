@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Analytics
 
 struct CalendarAdminEventView: View {
     @ObservedObject var service: CalendarService
@@ -24,7 +24,7 @@ struct CalendarAdminEventView: View {
     func save() {
         var item = self.item
         if self.content == "" {
-            LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Remove","ObjectType":"CalendarEvent"])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Remove","ObjectType":"CalendarEvent"])
             service.remove(item)
             service.save()
         } else if item.content != self.content || self.date != item.date || self.icon != item.icon {
@@ -33,10 +33,10 @@ struct CalendarAdminEventView: View {
             item.icon = self.icon
             if service.contains(item)  {
                 service.update(item)
-                LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Update","ObjectType":"CalendarEvent"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Update","ObjectType":"CalendarEvent"])
             } else {
                 service.add(item)
-                LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Add","ObjectType":"CalendarEvent"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Add","ObjectType":"CalendarEvent"])
             }
             service.save()
         }
@@ -56,7 +56,7 @@ struct CalendarAdminEventView: View {
             save()
         }
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("AdminWillDismiss"))) { (pub) in
             save()

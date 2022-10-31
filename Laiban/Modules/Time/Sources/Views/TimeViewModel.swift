@@ -9,6 +9,7 @@ import Combine
 import SwiftUI
 import PublicCalendar
 import Assistant
+import Analytics
 
 class TimeViewModel : ObservableObject {
     weak var service:TimeService? = nil

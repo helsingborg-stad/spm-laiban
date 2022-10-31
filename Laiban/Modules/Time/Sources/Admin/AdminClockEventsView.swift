@@ -6,7 +6,7 @@
 
 import SwiftUI
 import Combine
-
+import Analytics
 
 struct AdminClockEventsView: View {
     @ObservedObject var service:TimeService
@@ -33,14 +33,14 @@ struct AdminClockEventsView: View {
                 }.onDelete { (indexSet) in
                     self.service.data.events.remove(atOffsets: indexSet)
                     self.service.save()
-                    LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Delete","ObjectType":"ClockEvent"])
+                    AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Delete","ObjectType":"ClockEvent"])
                 }
             }
         }
         .listStyle(GroupedListStyle())
         .navigationBarTitle("Händelse")
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

@@ -11,6 +11,7 @@ import Instagram
 import SDWebImageSwiftUI
 import SwiftUI
 import Assistant
+import Analytics
 
 public struct InstagramView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -126,7 +127,7 @@ public struct InstagramView: View {
                             .aspectRatio(1, contentMode: .fill)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .onTapGesture {
-                                LBAnalyticsProxy.shared.log("InstagramMediaPressed", properties: ["MediaId": section.items[index].id])
+                                AnalyticsService.shared.log(AnalyticsService.CustomEventType.InstagramMediaPressed.rawValue, properties: ["MediaId": section.items[index].id])
                                 // self.navigation.advance(InstagramFullscreenViewManager(item: section.items[index]))
                                 clickedImage = section.items[index]
                                 onImageClick(item: clickedImage!)
@@ -134,7 +135,7 @@ public struct InstagramView: View {
                             .id(section.items[index].mediaUrl)
                     } else {
                         PlayerView(url: section.items[index].mediaUrl).aspectRatio(1, contentMode: .fill).frame(maxWidth: .infinity, maxHeight: .infinity).onTapGesture {
-                            LBAnalyticsProxy.shared.log("InstagramMediaPressed", properties: ["MediaId": section.items[index].id])
+                            AnalyticsService.shared.log(AnalyticsService.CustomEventType.InstagramMediaPressed.rawValue, properties: ["MediaId": section.items[index].id])
                             // self.navigation.advance(InstagramFullscreenViewManager(item: section.items[index]))
                             clickedImage = section.items[index]
                             onImageClick(item: clickedImage!)
@@ -172,7 +173,7 @@ public struct InstagramView: View {
             })
             update()
             assistant.speak("instagram_very_old_title")
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .onReceive(properties.actionBarNotifier) { action in
             if action == .back {

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Analytics
 import Assistant
 
 public struct RecreationView: View {
@@ -53,7 +53,7 @@ public struct RecreationView: View {
                 assistant.speak(sentences)
             }
             
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

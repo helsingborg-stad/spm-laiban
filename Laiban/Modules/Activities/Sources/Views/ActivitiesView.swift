@@ -10,6 +10,7 @@ import SwiftUI
 import Combine
 import SDWebImageSwiftUI
 import Assistant
+import Analytics
 
 enum CirleViewRimWidth {
     case thin
@@ -220,7 +221,7 @@ public struct ActivitiesView: View {
                         }
                         .animation(.easeInOut(duration: 0.2))
                         .onAppear {
-                            LBAnalyticsProxy.shared.logContentImpression("Activity", piece: item?.activity?.content)
+                            AnalyticsService.shared.logContentImpression("Activity", piece: item?.activity?.content)
                         }
                     }
                     if items.count > 1 {
@@ -238,7 +239,7 @@ public struct ActivitiesView: View {
                 items.append(Item(activity))
             }
             setupView()
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .onReceive(assistant.tts.speaking) { utterance in
             guard let item = items.first(where: { $0.id == utterance.tag}) else {

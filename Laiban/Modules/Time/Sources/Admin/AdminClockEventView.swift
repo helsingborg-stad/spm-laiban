@@ -5,7 +5,7 @@
 //
 
 import SwiftUI
-
+import Analytics
 
 struct AdminClockEventView: View {
     var dateFormatter: DateFormatter {
@@ -48,7 +48,7 @@ struct AdminClockEventView: View {
     func save() {
         var item = self.item
         if self.title == "" && self.emoji == "" {
-            LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Remove","ObjectType":"ClockEvent"])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Remove","ObjectType":"ClockEvent"])
             remove(item)
             self.service.save()
         } else if item.title != self.title || timeStringfrom(date: self.date) != item.time || self.emoji != item.emoji {
@@ -57,10 +57,10 @@ struct AdminClockEventView: View {
             item.emoji = self.emoji
             if contains(item)  {
                 update(item)
-                LBAnalyticsProxy.shared.log("AdminAction", properties: ["Action":"Update","ObjectType":"ClockEvent"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue, properties: ["Action":"Update","ObjectType":"ClockEvent"])
             } else {
                 add(item)
-                LBAnalyticsProxy.shared.log("AdminAction", properties: ["Action":"Add","ObjectType":"ClockEvent"])
+                AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue, properties: ["Action":"Add","ObjectType":"ClockEvent"])
             }
             self.service.save()
         }
@@ -79,7 +79,7 @@ struct AdminClockEventView: View {
             self.save()
         }
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

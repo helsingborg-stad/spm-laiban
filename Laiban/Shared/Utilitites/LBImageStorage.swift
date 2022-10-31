@@ -8,6 +8,7 @@ import Foundation
 import SwiftUI
 import UIKit
 import Shout
+import Analytics
 
 extension UIImage.Orientation {
     var imageOrienatation:Image.Orientation {
@@ -59,6 +60,7 @@ public struct LBImageStorage {
                 return name
             }
         } catch {
+            AnalyticsService.shared.logError(error)
             print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
         return nil
@@ -68,6 +70,7 @@ public struct LBImageStorage {
             do {
                 try FileManager.default.removeItem(at: url)
             } catch {
+                AnalyticsService.shared.logError(error)
                 print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
             }
         }
@@ -85,6 +88,7 @@ public struct LBImageStorage {
         do {
             return try Data(contentsOf: url)
         } catch {
+            AnalyticsService.shared.logError(error)
             print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
         return nil
@@ -99,6 +103,7 @@ public struct LBImageStorage {
                 return Image(img.cgImage!, scale: img.scale, orientation: img.imageOrientation.imageOrienatation, label: Text(name))
             }
         } catch {
+            AnalyticsService.shared.logError(error)
             print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
         return nil

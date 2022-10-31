@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 
 import SharedActivities
+import Analytics
 
 public struct Activity: Codable, Identifiable, Equatable {
     enum TimeFrame {
@@ -158,6 +159,7 @@ public struct Activity: Codable, Identifiable, Equatable {
             do {
                 try FileManager.default.copyItem(at: url, to: url2)
             } catch {
+                AnalyticsService.shared.logError(error)
                 print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
             }
         } else {

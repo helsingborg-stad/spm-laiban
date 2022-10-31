@@ -9,6 +9,7 @@ import Meals
 import SwiftUI
 import Assistant
 import Combine
+import Analytics
 
 public struct FoodView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -105,7 +106,7 @@ public struct FoodView: View {
             }
         }
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
             viewState.actionButtons([.home,.languages], for: .food)
             viewState.characterHidden(true, for: .food)
         }

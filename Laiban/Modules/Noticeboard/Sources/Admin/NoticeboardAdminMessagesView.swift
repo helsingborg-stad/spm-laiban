@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Combine
-
+import Analytics
 
 struct NoticeboardAdminMessagesView: View {
     @ObservedObject var service:NoticeboardService
@@ -103,7 +103,7 @@ struct NoticeboardAdminMessagesView: View {
                 secondaryButton: Alert.Button.cancel())
         }
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
     }
 }

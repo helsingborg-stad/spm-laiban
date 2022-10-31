@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Analytics
 
 struct CalendarAdminEventsView: View {
     @ObservedObject var service: CalendarService
@@ -42,7 +43,7 @@ struct CalendarAdminEventsView: View {
                 }.onDelete { (indexSet) in
                     service.data.remove(atOffsets: indexSet)
                     service.save()
-                    LBAnalyticsProxy.shared.log("AdminAction",properties: ["Action":"Delete","ObjectType":"CalendarEvent"])
+                    AnalyticsService.shared.log(AnalyticsService.CustomEventType.AdminAction.rawValue,properties: ["Action":"Delete","ObjectType":"CalendarEvent"])
                 }
             }
         }

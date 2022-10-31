@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Analytics
 
 public enum MessageCategory : String, Codable, Identifiable, CaseIterable {
     public var id:String {
@@ -78,6 +79,7 @@ public struct Message : Identifiable, Codable,Equatable {
         do {
             return try JSONDecoder().decode([Message].self, from: try Data(contentsOf: url))
         } catch {
+            AnalyticsService.shared.logError(error)
             print(error)
         }
         return []

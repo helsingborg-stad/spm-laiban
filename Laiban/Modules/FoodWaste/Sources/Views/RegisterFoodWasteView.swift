@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-
 import Assistant
+import Analytics
 
 struct RegisterFoodWasteView: View {
     @EnvironmentObject var viewState:LBViewState
@@ -20,7 +20,7 @@ struct RegisterFoodWasteView: View {
     @State var numpadString:String = ""
     func evalWeight() {
         if numpadString.count > 0, let weight = Double(numpadString) {
-            LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"RegisterFoodWaste"])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"RegisterFoodWaste"])
             service.wasteManager.add(value: weight,numEating: numEating, for:manager.selectedDate)
             manager.setCurrentView(.balanceScale)
             numpadString = ""
@@ -29,7 +29,7 @@ struct RegisterFoodWasteView: View {
     }
     func evalNumEating() {
         if numpadString.count > 0, let eating = Int(numpadString) {
-            LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"NumberOfPeopleEating"])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"NumberOfPeopleEating"])
             numEating = eating
             numpadString = ""
             manager.setCurrentView(.enterFoodWaste)
@@ -73,7 +73,7 @@ struct RegisterFoodWasteView: View {
         .padding(properties.spacing[.m])
         .primaryContainerBackground()
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView("FoodWasteView/EnterDailyPlateWaste")
+            AnalyticsService.shared.logPageView("FoodWasteView/EnterDailyPlateWaste")
             numpadString = ""
         }
     }
@@ -109,7 +109,7 @@ struct RegisterFoodWasteView: View {
         .padding(properties.spacing[.m])
         .primaryContainerBackground()
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView("FoodWasteView/EnterDailyPlateWaste")
+            AnalyticsService.shared.logPageView("FoodWasteView/EnterDailyPlateWaste")
             numpadString = ""
         }
     }

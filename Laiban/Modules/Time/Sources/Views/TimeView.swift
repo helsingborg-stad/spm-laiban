@@ -8,7 +8,7 @@ import SwiftUI
 import Compression
 import SDWebImageSwiftUI
 import Combine
-
+import Analytics
 import Assistant
 
 struct PersonView :View {
@@ -91,7 +91,7 @@ public struct TimeView: View {
                         if assistant.isSpeaking {
                             return
                         }
-                        LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"ClockEmoji", "Emoji":item.emoji, "EmojiText":item.text])
+                        AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"ClockEmoji", "Emoji":item.emoji, "EmojiText":item.text])
                         self.viewModel.showText(text: LBVoiceString(viewModel.localizedString(for: item)), speakAfter: true)
                     }
                     .frame(maxWidth:.infinity,maxHeight:.infinity)
@@ -112,7 +112,7 @@ public struct TimeView: View {
                         if assistant.isSpeaking {
                             return
                         }
-                        LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"ClockEmoji", "Emoji":item.emoji, "EmojiText":item.text])
+                        AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"ClockEmoji", "Emoji":item.emoji, "EmojiText":item.text])
                         self.viewModel.showText(text: LBVoiceString(viewModel.localizedString(for: item)), speakAfter: true)
                     }
                     .frame(maxWidth:.infinity,maxHeight:.infinity)
@@ -126,7 +126,7 @@ public struct TimeView: View {
             if assistant.isSpeaking {
                 return
             }
-            LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"ClockEmoji", "Emoji":item.emoji, "EmojiText":item.text])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"ClockEmoji", "Emoji":item.emoji, "EmojiText":item.text])
             self.viewModel.showText(text: LBVoiceString(viewModel.localizedString(for: item)), speakAfter: true)
         }
         .onTapGesture {
@@ -136,7 +136,7 @@ public struct TimeView: View {
             if let ts = TimeSpan.currentTimeLabel() {
                 self.viewModel.showText(text: LBVoiceString(assistant.string(forKey: ts.localizedKey), id: UUID().uuidString), speakAfter: true)
             }
-            LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"ClockFace"])
+            AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"ClockFace"])
         }
         .frame(maxWidth:.infinity,maxHeight:.infinity)
     }
@@ -173,7 +173,7 @@ public struct TimeView: View {
                 //.frame(height: proxy.size.height * 0.06, alignment: .top)
                 if self.horizontalSizeClass == .regular, viewModel.showChildInfo == false {
                     HorizontalTimeLineView(viewModel: viewModel.clockViewModel) { item in
-                        LBAnalyticsProxy.shared.log("ButtonPressed", properties: ["Button":"TimeLineEmoji", "Emoji":item.emoji, "EmojiText":item.text])
+                        AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"TimeLineEmoji", "Emoji":item.emoji, "EmojiText":item.text])
                         self.viewModel.showText(text: LBVoiceString(viewModel.localizedString(for: item)), speakAfter: true)
                     }
                     .padding(properties.spacing[.m])
@@ -198,7 +198,7 @@ public struct TimeView: View {
                 viewModel.otherClockItems = items ?? []
                 viewModel.update()
             }).store(in: &cancellables)
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
         }
         .onReceive(viewState.$options) { val in
             guard let opt = viewState.options, opt == TimeView.showChildInfoId else {

@@ -8,6 +8,7 @@ import SwiftUI
 import PublicCalendar
 
 import Assistant
+import Analytics
 
 struct TodayView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
@@ -260,7 +261,7 @@ public struct CalendarView: View {
         .wrap(overlay: .emoji("🗓", Color("RimColorCalendar",bundle: .module)))
         .transition(.opacity.combined(with: .scale))
         .onAppear {
-            LBAnalyticsProxy.shared.logPageView(self)
+            AnalyticsService.shared.logPageView(self)
             viewModel.initiate(with: service, and: assistant,contentProvider: contentProvider)
         }
         .onReceive(assistant.$translationBundle) { _ in
