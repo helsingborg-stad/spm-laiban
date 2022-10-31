@@ -112,7 +112,6 @@ public struct FoodWasteView : View {
                 manager.setCurrentView(.statistics)
             }
         }
-        
     }
 }
 

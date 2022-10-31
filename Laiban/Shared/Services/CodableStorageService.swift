@@ -106,14 +106,37 @@ public actor CodableLocalJSONService<T>: CodableStorage where T: Codable {
         guard let filename = options.bundleFilename else {
             throw CodableLocalJSONServiceError.missingDefaultBundleFilenameOption
         }
+        if(filename.lowercased().contains("moveme")) {
+            print("---- Filename: \(filename)")
+            print("---- Bundle: \(options.bundle.bundlePath)")
+            print("---- Bundle path: \(options.bundle)")
+            print("---- Bundle url: \(options.bundle.url(forResource: filename, withExtension: "json")?.path ?? "nil")")
+            
+            let tempUrl = URL(string: "\(options.bundle.bundlePath)/\(filename).json")!
+            let test = try? JSONDecoder().decode(T.self, from: try Data(contentsOf: tempUrl))
+            print("tempurl: \(tempUrl)")
+            print("Temp path: " + tempUrl.path)
+            print("test: \(test)")
+            print("")
+            
+        }
+        
         guard let url = options.bundle.url(forResource: filename, withExtension: "json") else {
             throw CodableLocalJSONServiceError.noSuchResourceInBundle
         }
+        let mydata = try? JSONDecoder().decode(T.self, from: try Data(contentsOf: url))
+        if let my = mydata as? [MovementManager.Movement] {
+            print("---- data: \(my)")
+        } else {
+            print("weird")
+        }
+        
         return try JSONDecoder().decode(T.self, from: try Data(contentsOf: url))
     }
     public func read() async throws -> T {
         let fm = FileManager.default
         let file = fileURL
+        print("------- File: \(file.path)")
         if !fm.fileExists(atPath: file.path) {
             throw CodableLocalJSONServiceError.noSuchFile
         }

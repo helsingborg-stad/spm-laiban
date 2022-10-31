@@ -48,6 +48,7 @@ let package = Package(
                 .process("Modules/Singalong/Sources/Resources"),
                 .process("Modules/TrashMonsters/Sources/Resources"),
                 .process("Modules/Recreation/Sources/Resources"),
+                .process("Modules/Movement/Sources/Resources"),
                 .process("Modules/Time/Sources/Resources"),
                 .process("Modules/Noticeboard/Sources/Resources"),
                 .process("Modules/Outdoors/Sources/Resources/ClothesAssets.xcassets"),

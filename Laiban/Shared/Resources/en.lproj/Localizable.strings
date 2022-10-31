@@ -134,6 +134,7 @@ Look what you're going to wear!";
 "food_waste_tip_3" = "Remember to sit in peace and quiet and taste all the food. Your taste buds need to practice new flavors many times for you to learn to like them. The taste buds are on your tongue";
 "food_waste_title" = "Tap the images to add or remove from the scale";
 "food_waste_weekly_stats" = "This week you have thrown away %@ grams of food.";
+"movement_nothing" = "So far this week you haven't registered any movement.";
 "garment_beanie" = "Beanie";
 "garment_beanie_description" = "Beanie";
 "garment_cap" = "Cap";
