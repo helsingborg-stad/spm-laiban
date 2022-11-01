@@ -52,6 +52,13 @@ public struct Recreation : Codable {
                 
                 return name
             }
+           
+           mutating func deleteImage() {
+               Activity.imageStorage.delete(image: self.imageName)
+               imageName = nil
+           }
+           
+           
         }
     }
     

@@ -155,7 +155,7 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         case .Inventory:
             
             if let inventoryType = inventoryType,
-               let inventoryIndex = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.name == inventoryType}),
+               let inventoryIndex = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == inventoryType}),
                let index = data[defaultIndexForRecreationObject].inventories[inventoryIndex].items.firstIndex(where: {$0.id == id}) {
                
                 data[defaultIndexForRecreationObject].inventories[inventoryIndex].items[index].isActive.toggle()
@@ -194,6 +194,31 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         }
         
         callback()
+    }
+    
+    func saveInventoryItem(type:InventoryType, inventoryItem:Recreation.Inventory.Item){
+        
+        switch type {
+        case .misc:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }), let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == inventoryItem.id})  {
+                
+                data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = inventoryItem
+            }
+        case .animals:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }), let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == inventoryItem.id}) {
+                
+                data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = inventoryItem
+            }
+        case .songs:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }), let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == inventoryItem.id}) {
+                
+                data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = inventoryItem
+            }
+        }
+        
+        Task {
+            await self.save()
+        }
     }
     
     func deleteInventoryItem(at offsets: IndexSet, inventoryType:InventoryType) {

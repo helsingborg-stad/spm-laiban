@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum ActivityContentSelection: String, CaseIterable, Hashable {
+    case image = "Bild", emoji = "Emoji", objects = "Objekt/Föremål"
+    public var id: Self { self }
+}
+
 struct AdminRecreationAddActivityView: View {
     
     @Environment(\.fullscreenContainerProperties) var properties
@@ -20,13 +25,8 @@ struct AdminRecreationAddActivityView: View {
     var inventoryCategories = InventoryCategory()
 
     @State private var segmentedControlSelection = ActivityContentSelection.image
-
-    enum ActivityContentSelection: String, CaseIterable, Hashable {
-        case image = "Bild", emoji = "Emoji", objects = "Objekt/Föremål"
-        public var id: Self { self }
-    }
     
-    var imagePickerView: some View {
+    var ImagePickerView: some View {
         
         Section{
             Button(action: {
@@ -45,7 +45,7 @@ struct AdminRecreationAddActivityView: View {
     }
     
     
-    var categoryPickerView: some View {
+    var CategoryPickerView: some View {
         
         Section {
             List{
@@ -74,7 +74,7 @@ struct AdminRecreationAddActivityView: View {
     }
     
     
-    var emojiPickerView: some View {
+    var EmojiPickerView: some View {
         
         Section{
             TextField(activity.inventories.count > 0 ? "Välj emoji" : activity.activityEmoji == "" ? "Välj emoji" : activity.activityEmoji, text:$activity.activityEmoji)
@@ -85,7 +85,22 @@ struct AdminRecreationAddActivityView: View {
     }
     
     
-    var deleteActivityView:some View {
+    var ToggleActivityIsActiveView: some View {
+        Section{
+            HStack{
+                Text("Aktiverad").foregroundColor(activity.isActive ? .black : .gray)
+                Spacer()
+                Toggle("", isOn: $activity.isActive).onTapGesture {
+                    service.toggleEnabledFlag(type: .Activity, inventoryType: activity.name, id: activity.id)
+                }
+            }
+        } footer: {
+            Text("Välj att aktivera/inaktivera aktiviteten. Om aktiviteten inaktiveras visas den ej för användaren i 'Laiban föreslår aktivitet' - modulen.")
+        }
+    }
+    
+    
+    var DeleteActivityView:some View {
         Section{
             Button(action: {
                 self.showDeleteConfirmation = true
@@ -95,6 +110,7 @@ struct AdminRecreationAddActivityView: View {
             }
         }
     }
+    
     
     var body: some View {
         
@@ -173,15 +189,15 @@ struct AdminRecreationAddActivityView: View {
                     
                     switch (segmentedControlSelection){
                     case .image:
-                        imagePickerView
+                        ImagePickerView
                     case .objects:
-                        categoryPickerView
+                        CategoryPickerView
                     case .emoji:
-                        emojiPickerView
+                        EmojiPickerView
                     }
                     
-                    
-                    deleteActivityView
+                    ToggleActivityIsActiveView
+                    DeleteActivityView
                     
                 }.navigationBarTitle(Text("Lägg till ny 'Laiban föreslår-aktivitet'"))
                     .listStyle(GroupedListStyle())

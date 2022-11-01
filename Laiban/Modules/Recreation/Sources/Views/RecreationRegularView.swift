@@ -17,7 +17,7 @@ struct RecreationRegularView: View {
     let item: Recreation.Inventory.Item?
     
     var justText:Bool {
-        return item?.imageName == nil && item?.emoji == nil
+        return item?.imageName == nil && (item?.emoji == nil || item?.emoji == "")
     }
     
     var body: some View {
@@ -38,19 +38,19 @@ struct RecreationRegularView: View {
                             .multilineTextAlignment(.center)
                             .font(properties.font, ofSize: .n)
                             .frame(maxWidth: .infinity, alignment: .center)
-                        if item?.imageName != nil   {
+                        
+                        if let unwrappedItem = item, let imageName = unwrappedItem.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
                             
-                            Image(item!.imageName!)
-                                .resizable()
+                            image.resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width:proxy.size.height*0.5,height:proxy.size.height*0.5)
                                 .clipped()
                                 .cornerRadius(20)
                                 .shadow(radius: 4)
                             
-                        }else if item?.emoji != nil   {
+                        }else if let unwrappedItem = item, let emoji = unwrappedItem.emoji, emoji != "" {
                           
-                            Text(item!.emoji!)
+                            Text(emoji)
                                 .font(Font.system(size: proxy.size.height*0.3))
                                 .frame(width:proxy.size.height*0.5,height:proxy.size.height*0.5)
                                 .background(Color.white)
@@ -92,16 +92,16 @@ struct RecreationRegularView: View {
                             }
                         }
                         
-                        
-                         if item != nil   {
+                        if let unwrappedItem = item  {
+                            
                             if self.justText {
-                                Text(assistant.string(forKey: item!.itemDescription()))
+                                Text(assistant.string(forKey: unwrappedItem.itemDescription()))
                                     .font(properties.font, ofSize: .n)
                                     .background(Color.white)
                                     .cornerRadius(36)
                                     .shadow(color: Color.black.opacity(0.2), radius: 7, x: 0, y: 0)
                             } else {
-                                Text(assistant.string(forKey: item!.itemDescription()))
+                                Text(assistant.string(forKey: unwrappedItem.itemDescription()))
                                     .font(properties.font, ofSize: .l)
                             }
                         }

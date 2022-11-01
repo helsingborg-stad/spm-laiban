@@ -30,6 +30,7 @@ struct AdminRecreationActivityListItem:View {
         NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: activity)){
             HStack(alignment: .center) {
                 
+        
                 Text(activity.emoji)
                 
                 VStack(alignment: .leading) {
@@ -81,15 +82,20 @@ struct AdminRecreationActivityListView: View {
 }
 
 struct InventoryListViewItem: View {
-    let item: Recreation.Inventory.Item
+    let inventory:Recreation.Inventory
+    @State var item: Recreation.Inventory.Item
+    @ObservedObject var service:RecreationService
     var body: some View {
-        HStack{
-            Text((item.emoji ?? item.emoji) ?? "")
-            Text(item.name)
-            Spacer()
-            Image(systemName: "checkmark")
-                .foregroundColor(.blue)
-                .invisible(!item.isActive)
+        NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!, inventoryCategory: InventoryCategory().all.first(where: {$0.displayName == inventory.name})!, inventoryItem: item, workingItem: .init(inventoryItem: item, service: service, inventoryType: InventoryType(rawValue: inventory.id)!))){
+            HStack{
+                Text((item.emoji ?? item.emoji) ?? "")
+                Text(item.name)
+                Spacer()
+                
+                Toggle("", isOn: $item.isActive).onTapGesture {
+                    service.toggleEnabledFlag(type: .Inventory, inventoryType: inventory.id, id: item.id)
+                }
+            }.foregroundColor(item.isActive ? .black : .gray)
         }
     }
 }
@@ -103,10 +109,7 @@ struct AdminRecreationInventoriesListView: View {
         ForEach(service.data[0].inventories, id:\.self){ inventory in
             Section {
                 ForEach(inventory.items, id:\.self){ item in
-                    InventoryListViewItem(item:item )
-                        .onTapGesture {
-                            service.toggleEnabledFlag(type: .Inventory, inventoryType: inventory.name, id: item.id)
-                        }
+                    InventoryListViewItem(inventory:inventory, item:item, service: service)
                         .foregroundColor(item.isActive ? .black : .gray)
                 }.onDelete { indexSet in
                     service.deleteInventoryItem(at: indexSet, inventoryType: InventoryType(rawValue: inventory.id)!)
@@ -116,7 +119,7 @@ struct AdminRecreationInventoriesListView: View {
                 HStack {
                     Text(inventory.name)
                     Spacer()
-                    NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!)){
+                    NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!, inventoryCategory: InventoryCategory().all.first(where: {$0.displayName == inventory.name})!, inventoryItem: .init(),  workingItem: .init(inventoryItem: .init(), service: service, inventoryType: InventoryType(rawValue: inventory.id)!))){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)
