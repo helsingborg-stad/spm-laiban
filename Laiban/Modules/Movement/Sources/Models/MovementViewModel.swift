@@ -19,7 +19,7 @@ class MovementViewModel: ObservableObject {
         case balanceScale
         case dailyMovemnent
     }
-    var balanceViwModel:MovementScaleView.ViewModel = MovementScaleView.ViewModel.init(movementTime: 0)
+    var balanceViwModel:MovementBarView.ViewModel = MovementBarView.ViewModel.init(movementTime: 0)
     var listeners = [AnyCancellable]()
     weak var assistant:Assistant? = nil
     weak var service:MovementService? = nil
@@ -51,7 +51,7 @@ class MovementViewModel: ObservableObject {
             self.parentalGateStatus = .passed
         }
         if view == .balanceScale {
-            balanceViwModel.reset(to: MovementScaleView.ViewModel.round(movementManager.movement(for: self.selectedDate)?.minutes ?? 0))
+            balanceViwModel.reset(to: MovementBarView.ViewModel.round(movementManager.movement(for: self.selectedDate)?.first?.minutes ?? 0))
         }
         viewState?.inactivityTimerDisabled(view == .enterNumMoving, for: .movement)
         switch view {
@@ -90,9 +90,9 @@ class MovementViewModel: ObservableObject {
         date = Date().startOfWeek!
         for _ in 0..<5 {
             if let w = movementManager.movement(for: date) {
-                arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: w.minutes)))
+                arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: w.compactMap({ $0.minutes }).reduce(0, +))))
             } else {
-                arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: 0)))
+                arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 0)))
             }
             date = date.tomorrow!
         }
@@ -103,7 +103,7 @@ class MovementViewModel: ObservableObject {
         self.assistant = assistant
         self.service = service
         self.viewState = viewState
-        self.balanceViwModel = MovementScaleView.ViewModel.init(movementTime: MovementScaleView.ViewModel.round(service.movementManager.movement(for: self.selectedDate)?.minutes ?? 0))
+        self.balanceViwModel = MovementBarView.ViewModel.init(movementTime: MovementBarView.ViewModel.round(0))
         service.movementManager.objectWillChange.sink { [weak self] _ in
             guard let this = self else {
                 return
@@ -165,7 +165,7 @@ class MovementViewModel: ObservableObject {
             } else {
                 str = "food_waste_statistics_title_weekday_\(selectedDate.actualWeekDay)"
             }
-            let t = assistant.formattedString(forKey: str, String(Int(movementManager.movement(for: selectedDate)?.minutes ?? 0)))
+            let t = assistant.formattedString(forKey: str, String(Int(movementManager.movement(for: selectedDate)?.compactMap({ $0.minutes }).reduce(0, +) ?? 0)))
             if let s = dailyWasteStrings {
                 return LBVoiceString(display: t, voice: s)
             }
@@ -174,11 +174,11 @@ class MovementViewModel: ObservableObject {
             let lastWeeksMovement = movementManager.getWeeklyMovement(for: Date().startOfWeek!.dateOffsetBy(days: -1)!)
             let thisWeeksMovement = movementManager.getWeeklyMovement(for: Date())
             if lastWeeksMovement > 0 {
-                let s = assistant.formattedString(forKey: "food_waste_last_week","\(Int(lastWeeksMovement))","\(Int(thisWeeksMovement))")
+                let s = assistant.formattedString(forKey: "movement_last_week","\(Int(lastWeeksMovement))","\(Int(thisWeeksMovement))")
                 return LBVoiceString(s)
             } else {
                 if thisWeeksMovement > 0 {
-                    let s = assistant.formattedString(forKey: "food_waste_weekly_stats","\(Int(thisWeeksMovement))")
+                    let s = assistant.formattedString(forKey: "movement_weekly_stats","\(Int(thisWeeksMovement))")
                     return LBVoiceString(s)
                 } else {
                     let s = assistant.string(forKey: "movement_nothing")
@@ -200,7 +200,7 @@ class MovementViewModel: ObservableObject {
             self.title = s
             speak()
         }
-        if selectedDate.isSameDay(as: Date()), let w = service?.movementManager.movementCompared(to: selectedDate) {
+        /*if selectedDate.isSameDay(as: Date()), let w = service?.movementManager.movementCompared(to: selectedDate) {
             switch w {
             case .orderedAscending:
                 infoTitle = assistant.string(forKey: "food_waste_info_more")
@@ -219,7 +219,7 @@ class MovementViewModel: ObservableObject {
             infoTitle = nil
             infoDescription = nil
             infoEmoji = nil
-        }
+        }*/
     }
     func speak() {
         guard let assistant = assistant else {
@@ -254,7 +254,7 @@ class MovementViewModel: ObservableObject {
         } else {
             str = "food_waste_statistics_title_weekday_\(selectedDate.actualWeekDay)"
         }
-        let t = assistant.formattedString(forKey: str, String(Int(movementManager.movement(for: selectedDate)?.minutes ?? 0)))
+        let t = assistant.formattedString(forKey: str, String(Int(movementManager.movement(for: selectedDate)?.compactMap({ $0.minutes }).reduce(0, +) ?? 0)))
         let and = assistant.string(forKey: "word_and")
         /*if dailyStatisticItems.count == 1 {
             var strings = [t]

@@ -10,9 +10,9 @@ import Assistant
 
 extension Animation {
     static func ripple(index: Int) -> Animation {
-            Animation.spring(dampingFraction: 0.4)
-            .speed(1.5)
-            .delay(0.08 * Double(index))
+            Animation.spring(dampingFraction: 0.5)
+            .speed(1.2)
+            .delay(0.15 * Double(index))
         }
 }
 
@@ -34,7 +34,7 @@ struct MovementTableView: View {
             d.locale = locale
             return capitalizingFirstLetter(d.string(from: date))
         }
-        var model:MovementScaleView.ViewModel
+        var model:MovementBarView.ViewModel
     }
 
     
@@ -50,7 +50,7 @@ struct MovementTableView: View {
         VStack(spacing:0) {
             HStack(spacing: 20) {
                 ForEach(statistics) { s in
-                    MovementScaleView(model: s.model).frame(maxWidth:.infinity).onTapGesture {
+                    MovementBarView(model: s.model).frame(maxWidth:.infinity).onTapGesture {
                         userAction?(s,.didPressScale)
                     }.animation(.ripple(index: statistics.firstIndex {$0.id == s.id} ?? 1))
                 }
@@ -64,7 +64,7 @@ struct MovementTableView: View {
                             .frame(maxWidth:.infinity)
                         let size:CGFloat = horizontalSizeClass == .regular ? 50 : 40
                         let visible = s.date <= Date().startOfDay!
-                        let color = movementManager.isBalanced(for: s.date) ? Color("FeedbackColor4", bundle:.module) : Color("FeedbackColor1", bundle:.module)
+                        let color = Color.black
                         Button {
                             userAction?(s,.didPressIcon)
                         } label: {
@@ -87,19 +87,19 @@ struct MovementTableView_Previews: PreviewProvider {
     static var statistics: [MovementTableView.ViewModel] {
         var arr = [MovementTableView.ViewModel]()
         var date = Date().startOfWeek!
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: 24)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 24)))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: 45)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 45)))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: 60)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 60)))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: 100)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 100)))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementScaleView.ViewModel(movementTime: 120)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 120)))
         date = date.tomorrow!
         
         return arr

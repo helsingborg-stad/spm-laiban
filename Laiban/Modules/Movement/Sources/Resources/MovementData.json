@@ -1,12 +1,18 @@
 [{
     "emojis": "",
-    "minutes": 12,
+    "minutes": 25,
     "reported": false,
     "numMoving": 12,
     "date": "2022-10-31"
 }, {
     "emojis": "",
     "minutes": 25,
+    "reported": false,
+    "numMoving": 4,
+    "date": "2022-10-31"
+}, {
+    "emojis": "",
+    "minutes": 60,
     "reported": false,
     "numMoving": 4,
     "date": "2022-10-31"

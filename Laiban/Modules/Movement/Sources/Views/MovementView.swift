@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Assistant
+import Analytics
 
 public struct MovementView: View {
     @EnvironmentObject var viewState:LBViewState
@@ -59,7 +60,7 @@ public struct MovementView: View {
             .onAppear {
                 print("Data array: \(service.data)")
                 print("Data count: \(service.data.count)")
-                LBAnalyticsProxy.shared.logPageView(self)
+                AnalyticsService.shared.logPageView(self)
         }
         }
     }
@@ -89,7 +90,6 @@ public struct MovementView: View {
         }
         .animation(.spring(),value:manager.currentView)
         .onAppear {
-            viewState.characterImage(Monster(name:"Kompostina").image, for: .movement)
             manager.initiate(with: assistant,service:service, viewState: viewState)
         }
         .onReceive(properties.actionBarNotifier) { action in
