@@ -95,7 +95,7 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
     }
     
     
-    func saveActivity(activity:Recreation.Activity, callback: () -> Void) {
+    func saveActivity(activity:Recreation.Activity) {
         
         if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == activity.id} ) {
             
@@ -104,19 +104,10 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
             Task {
                 await self.save()
             }
-            
-            callback()
-            
-        }else{
-            
-            addActivity(newActivity: activity, callback: {
-                callback()
-            })
         }
-        
     }
     
-    private func addActivity(newActivity:Recreation.Activity, callback: () -> Void) {
+    func addActivity(newActivity:Recreation.Activity, callback: () -> Void) {
         
         data[defaultIndexForRecreationObject].activities.append(newActivity)
         

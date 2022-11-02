@@ -12,33 +12,120 @@ enum ActivityContentSelection: String, CaseIterable, Hashable {
     public var id: Self { self }
 }
 
+struct WorkingActivity {
+    
+    let id:String
+    var emoji:String {
+        didSet{
+            self.currentActivity.emoji = emoji
+        }
+    }
+    var name:String{
+        didSet{
+            self.currentActivity.name = name
+        }
+    }
+    
+    var sentence:String {
+        didSet{
+            self.currentActivity.sentence = sentence
+        }
+    }
+    
+    var objectSentence:String {
+        didSet{
+            self.currentActivity.objectSentence = objectSentence
+        }
+    }
+    var activityEmoji:String {
+        didSet{
+            self.currentActivity.activityEmoji = activityEmoji
+        }
+    }
+    var imageName:String {
+        didSet{
+            self.currentActivity.imageName = imageName
+        }
+    }
+    var imageOrEmojiDescription:String {
+        didSet{
+            self.currentActivity.imageOrEmojiDescription = imageOrEmojiDescription
+        }
+    }
+    var inventories:[String]{
+        didSet{
+            self.currentActivity.inventories = inventories
+        }
+    }
+    
+    var isActive:Bool{
+        didSet{
+            self.currentActivity.isActive = isActive
+        }
+    }
+    
+    var service:RecreationService
+    var currentActivity:Recreation.Activity {
+        didSet{
+            save()
+        }
+    }
+    
+    func save(){
+        service.saveActivity(activity: currentActivity)
+    }
+    
+    init(service:RecreationService, activity:Recreation.Activity){
+        self.id = activity.id
+        self.service = service
+        self.currentActivity = activity
+        self.name = activity.name
+        self.emoji = activity.emoji
+        self.isActive = activity.isActive
+        self.activityEmoji = activity.activityEmoji
+        self.sentence = activity.sentence
+        self.objectSentence = activity.objectSentence ?? ""
+        self.imageName = activity.imageName ?? ""
+        self.imageOrEmojiDescription = activity.imageOrEmojiDescription ?? ""
+        self.inventories = activity.inventories
+    }
+}
+
+
 struct AdminRecreationAddActivityView: View {
     
     @Environment(\.fullscreenContainerProperties) var properties
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var service:RecreationService
     @State var activity:Recreation.Activity
-    @State var imageOrEmojiDescription:String = String()
-    @State var objectSentence:String = String()
+
+    //    @State var imageOrEmojiDescription:String = String()
+//    @State var objectSentence:String = String()
+    
+    
+    var inventoryCategories = InventoryCategory()
+    @State private var segmentedControlSelection = ActivityContentSelection.image
     @State private var showImagePicker: Bool = false
     @State private var showDeleteConfirmation: Bool = false
-    var inventoryCategories = InventoryCategory()
-
-    @State private var segmentedControlSelection = ActivityContentSelection.image
+    
+    @State var workingActivity:WorkingActivity
+    @State private var isEditigMode: Bool = false
+    
+    
     
     var ImagePickerView: some View {
         
         Section{
             Button(action: {
-                if activity.imageName == nil {
+                if workingActivity.imageName == "" {
                     self.showImagePicker = true
                 } else {
-                    activity.deleteImage()
+                    self.activity.deleteImage()
                 }
             }) {
-                Text(activity.imageName == nil ? "Välj bild" : "Radera bild").foregroundColor(activity.imageName == nil ? .accentColor : .red)
+                Text(workingActivity.imageName == "" ? "Välj bild" : "Radera bild").foregroundColor(workingActivity.imageName == "" ? .accentColor : .red)
             }
-            TextField("Beskrivning av bild", text:$imageOrEmojiDescription)
+            TextField("Beskrivning av bild", text:$workingActivity.imageOrEmojiDescription)
         }footer: {
             Text("Beskriv den valda bilden, till exempel : 'Ett träd'.")
         }
@@ -55,15 +142,15 @@ struct AdminRecreationAddActivityView: View {
                         Spacer()
                         Image(systemName: "checkmark")
                             .foregroundColor(.blue)
-                            .invisible(!activity.inventories.contains(where: {$0 == type.id}))
+                            .invisible(!workingActivity.inventories.contains(where: {$0 == type.id}))
                     }.onTapGesture {
-                        if activity.inventories.contains(where: {$0 == type.id}){
-                            activity.inventories.removeAll(where: {$0 == type.id})
-                            activity.activityEmoji = ""
+                        if workingActivity.inventories.contains(where: {$0 == type.id}){
+                            workingActivity.inventories.removeAll(where: {$0 == type.id})
+                            workingActivity.activityEmoji = ""
                         }else{
                             
-                            activity.inventories.append(type.id)
-                            activity.activityEmoji = "?"
+                            workingActivity.inventories.append(type.id)
+                            workingActivity.activityEmoji = "?"
                         }
                     }
                 }
@@ -77,8 +164,8 @@ struct AdminRecreationAddActivityView: View {
     var EmojiPickerView: some View {
         
         Section{
-            TextField(activity.inventories.count > 0 ? "Välj emoji" : activity.activityEmoji == "" ? "Välj emoji" : activity.activityEmoji, text:$activity.activityEmoji)
-            TextField("Beskrivning av emoji", text:$imageOrEmojiDescription)
+            TextField(workingActivity.inventories.count > 0 ? "Välj emoji" : workingActivity.activityEmoji == "" ? "Välj emoji" : workingActivity.activityEmoji, text:$workingActivity.activityEmoji)
+            TextField("Beskrivning av emoji", text:$workingActivity.imageOrEmojiDescription)
         } footer: {
             Text("Beskriv den valda emojin, till exempel : 'En tärning'.")
         }
@@ -90,9 +177,10 @@ struct AdminRecreationAddActivityView: View {
             HStack{
                 Text("Aktiverad").foregroundColor(activity.isActive ? .black : .gray)
                 Spacer()
-                Toggle("", isOn: $activity.isActive).onTapGesture {
-                    service.toggleEnabledFlag(type: .Activity, inventoryType: activity.name, id: activity.id)
-                }
+                Toggle("", isOn: $workingActivity.isActive)
+//                    .onTapGesture {
+//                    service.toggleEnabledFlag(type: .Activity, inventoryType: workingActivity.name, id: workingActivity.id)
+//                }
             }
         } footer: {
             Text("Välj att aktivera/inaktivera aktiviteten. Om aktiviteten inaktiveras visas den ej för användaren i 'Laiban föreslår aktivitet' - modulen.")
@@ -127,10 +215,10 @@ struct AdminRecreationAddActivityView: View {
                                     .font(properties.font, ofSize: .xxs, weight: .heavy)
                                     .padding(.top, properties.spacing[.xs])
                                 
-                                Text(activity.sentence)
-                                activity.objectSentence != nil ? Text(activity.objectSentence ?? "") : nil
+                                Text(workingActivity.sentence)
+                                workingActivity.objectSentence != "" ? Text(workingActivity.objectSentence) : nil
                                 
-                                if let imageName = activity.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
+                                if  workingActivity.imageName != "" , let image = Recreation.Activity.imageStorage.image(with: workingActivity.imageName){
                                     
                                     image.resizable()
                                         .aspectRatio(contentMode: .fill)
@@ -139,7 +227,7 @@ struct AdminRecreationAddActivityView: View {
                                         .cornerRadius(20)
                                         .shadow(radius: 4)
                                     
-                                }else if let activityEmoji = activity.activityEmoji, activityEmoji != ""{
+                                }else if let activityEmoji = workingActivity.activityEmoji, activityEmoji != ""{
                                     
                                     Text(activityEmoji)
                                         .font(Font.system(size: proxy.size.height*0.05))
@@ -150,22 +238,19 @@ struct AdminRecreationAddActivityView: View {
                                     
                                 }
                                 
-                                
-                                Text(imageOrEmojiDescription)
+                                Text(workingActivity.imageOrEmojiDescription)
                                 
                             }.frame(maxWidth:proxy.size.width*0.33 ,maxHeight: proxy.size.height, alignment: .center)
-                                .wrap(scrollable: false, overlay: .emoji(activity.emoji, Color("RimColorActivities",bundle:LBBundle)))
+                                .wrap(scrollable: false, overlay: .emoji(workingActivity.emoji, Color("RimColorActivities",bundle:LBBundle)))
                         }
                     }
                     .listRowBackground(Color.clear)
                     .frame(width: proxy.size.width,height: proxy.size.height*0.3)
                         
                     Section{
-                        TextField("Emoji", text:$activity.emoji)
-                        TextField("Hitta på något att göra", text:$activity.sentence)
-                        activity.objectSentence != nil ? TextField(activity.objectSentence ?? "", text: $objectSentence ).onAppear(perform: {
-                            objectSentence = activity.objectSentence ?? ""
-                        }) : nil
+                        TextField("Emoji", text:$workingActivity.emoji)
+                        TextField("Hitta på något att göra", text:$workingActivity.sentence)
+                        workingActivity.objectSentence != "" ? TextField(workingActivity.objectSentence, text: $workingActivity.objectSentence ) : nil
                     }header: {
                         Text("Ny aktivitet")
                     }footer: {
@@ -206,31 +291,25 @@ struct AdminRecreationAddActivityView: View {
                         
                         switch (segmentedControlSelection){
                             case .emoji:
-                                activity.inventories = []
+                                workingActivity.inventories = []
                             case .objects:
-                                activity.activityEmoji = ""
+                                workingActivity.activityEmoji = ""
                             default:
                             break
                         }
-                        
-                        if imageOrEmojiDescription != "" {
-                            activity.imageOrEmojiDescription = imageOrEmojiDescription
-                        }
-                    
-                        activity.objectSentence = objectSentence == "" ? nil : objectSentence
-                    
-                        service.saveActivity(activity: activity, callback: {
+                       
+                        service.addActivity(newActivity: self.workingActivity.currentActivity, callback: {
                             presentationMode.wrappedValue.dismiss()
                         })
                     
                     }, label: {
-                        Text("Spara")
-                    }).disabled(activity.sentence == "" || activity.emoji == "")
+                        Text("Lägg till")
+                    }).disabled(workingActivity.sentence == "" || workingActivity.emoji == "").invisible(isEditigMode)
                 )
                 .sheet(isPresented: self.$showImagePicker){
                     PhotoCaptureView(showImagePicker: self.$showImagePicker, imageStorage: Recreation.Activity.imageStorage) { asset in
                         print(asset)
-                        activity.imageName = asset
+                        workingActivity.imageName = asset
                     }
                 }.alert(isPresented: self.$showDeleteConfirmation, content: {
                     Alert(
@@ -244,13 +323,15 @@ struct AdminRecreationAddActivityView: View {
                         secondaryButton: .cancel(Text("Avbryt"))
                     )
                 }).onAppear(perform: {
-                    segmentedControlSelection = activity.inventories.count > 0 ? .objects : activity.activityEmoji != "" ? .emoji : .image
+                    self.isEditigMode = activity.emoji != "" && activity.sentence != ""
                     
-                    if segmentedControlSelection == .objects {
-                        if let inventoryType = activity.inventories.first, let item = service.randomInventoryItemFor(inventoryType: InventoryType(rawValue: inventoryType)! ), let emoji = item.emoji {
-                            activity.activityEmoji = emoji
-                        }
-                    }
+                    segmentedControlSelection = workingActivity.inventories.count > 0 ? .objects : workingActivity.activityEmoji != "" ? .emoji : .image
+                    
+//                    if segmentedControlSelection == .objects {
+//                        if let inventoryType = activity.inventories.first, let item = service.randomInventoryItemFor(inventoryType: InventoryType(rawValue: inventoryType)! ), let emoji = item.emoji {
+//                            activity.activityEmoji = emoji
+//                        }
+//                    }
                 })
             }
         }
@@ -260,7 +341,9 @@ struct AdminRecreationAddActivityView: View {
 struct AdminRecreationAddActivityView_Previews: PreviewProvider {
     static var service = RecreationService()
     static var activity:Recreation.Activity = .init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: "")
+    
+    static var workingActivity:WorkingActivity = WorkingActivity(service:service, activity: activity)
     static var previews: some View {
-        AdminRecreationAddActivityView(service: service, activity: activity )
+        AdminRecreationAddActivityView(service: service, activity: activity, workingActivity: workingActivity )
     }
 }

@@ -26,8 +26,9 @@ struct AdminRecreationActivityListItem:View {
     
     @State var activity: Recreation.Activity
     @ObservedObject var service:RecreationService
+    
     var body:some View {
-        NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: activity)){
+        NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: activity, workingActivity: .init(service: service, activity: activity))){
             HStack(alignment: .center) {
                 
         
@@ -67,7 +68,7 @@ struct AdminRecreationActivityListView: View {
                 HStack{
                     Text("Aktiviteter")
                     Spacer()
-                    NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: .init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: ""))){
+                    NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: .init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: ""), workingActivity: .init(service: service, activity: Recreation.Activity.init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: "") ))){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)
@@ -88,10 +89,13 @@ struct InventoryListViewItem: View {
     var body: some View {
         NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!, inventoryCategory: InventoryCategory().all.first(where: {$0.displayName == inventory.name})!, inventoryItem: item, workingItem: .init(inventoryItem: item, service: service, inventoryType: InventoryType(rawValue: inventory.id)!))){
             HStack{
-                Text((item.emoji ?? item.emoji) ?? "")
-                Text(item.name)
+                if let emoji = item.emoji, emoji != "" {
+                    Text(emoji)
+                }else if let imageName = item.imageName, imageName != "" {
+                    Image(systemName: "photo")
+                }
+                Text(item.itemDescription())
                 Spacer()
-                
                 Toggle("", isOn: $item.isActive).onTapGesture {
                     service.toggleEnabledFlag(type: .Inventory, inventoryType: inventory.id, id: item.id)
                 }
@@ -99,7 +103,6 @@ struct InventoryListViewItem: View {
         }
     }
 }
-
 struct AdminRecreationInventoriesListView: View {
     
     @ObservedObject var service:RecreationService

@@ -64,7 +64,6 @@ struct AdminRecreationAddInventoryItemView: View {
         
         mutating func save(){
             self.service.saveInventoryItem(type: self.inventoryType, inventoryItem: self.inventoryItem)
-            print("SAVE INVENTORY ITEM")
         }
     }
     
@@ -129,7 +128,7 @@ struct AdminRecreationAddInventoryItemView: View {
                                         .cornerRadius(20)
                                         .shadow(radius: 4)
                                     
-                                }else if let activityEmoji = workingItem.emoji {
+                                }else if let activityEmoji = workingItem.emoji, activityEmoji != "" {
                                     
                                     Text(activityEmoji)
                                         .font(Font.system(size: proxy.size.height*0.05))
