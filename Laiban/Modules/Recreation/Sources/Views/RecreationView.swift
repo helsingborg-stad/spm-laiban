@@ -46,13 +46,21 @@ public struct RecreationView: View {
 
                 if (activity != nil) {
                     let activitySentence = activity!.activityDescription(hasObject: item != nil, using: assistant)
+                    
                     sentences.append((activitySentence, activitySentence))
+                }
+                
+                if let unWrappedActivity = activity, let unWrappedImageOrEmojiDescription = unWrappedActivity.imageOrEmojiDescription, unWrappedImageOrEmojiDescription != ""{
+                    
+                    sentences.append((unWrappedImageOrEmojiDescription, unWrappedImageOrEmojiDescription))
                 }
                 
                 if (item != nil) {
                     let itemSentence = item!.itemDescription()
                     sentences.append((itemSentence, itemSentence))
                 }
+                
+                
                 viewState.characterHidden(true, for: .recreation)
                 assistant.speak(sentences)
             }

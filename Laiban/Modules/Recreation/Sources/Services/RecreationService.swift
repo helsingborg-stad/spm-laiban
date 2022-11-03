@@ -212,23 +212,39 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         }
     }
     
-    func deleteInventoryItem(at offsets: IndexSet, inventoryType:InventoryType) {
+    func deleteInventoryItem(itemId:String? = nil, at offsets: IndexSet? = nil, inventoryType:InventoryType, callback: (() -> Void)? = nil) {
         
+        var inventoryTypeIndex:Int?
         switch inventoryType {
         case .misc:
             if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
-                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
+                
+                inventoryTypeIndex = index
+                
             }
         case .animals:
             if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
-                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
+                
+                inventoryTypeIndex = index
             }
         case .songs:
             if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
-                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offsets)
+                
+                inventoryTypeIndex = index
             }
         }
         
+        
+        if let index = inventoryTypeIndex {
+            if let offset = offsets {
+                data[defaultIndexForRecreationObject].inventories[index].items.remove(atOffsets: offset)
+            
+            }else if let id = itemId {
+                data[defaultIndexForRecreationObject].inventories[index].items.removeAll(where: {$0.id == id})
+                callback!()
+            }
+        }
+            
         Task {
             await self.save()
         }

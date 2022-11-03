@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct AdminRecreationAddInventoryItemView: View {
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var service:RecreationService
     var inventoryType:InventoryType
     var inventoryCategory:InventoryCategoryType
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State var inventoryItem: Recreation.Inventory.Item
     @State var emoji:String = String()
     @State private var segmentedControlSelection = ActivityContentSelection.emoji
@@ -34,11 +38,17 @@ struct AdminRecreationAddInventoryItemView: View {
         var imageName:String{
             didSet{
                 self.inventoryItem.imageName = imageName == "" ? nil : imageName
+                if imageName != "" {
+                    self.emoji = ""
+                }
             }
         }
         var emoji:String{
             didSet{
                 self.inventoryItem.emoji = emoji == "" ? nil : emoji
+                if emoji != "" {
+                    self.imageName = ""
+                }
             }
         }
         
@@ -118,31 +128,33 @@ struct AdminRecreationAddInventoryItemView: View {
             VStack{
                 Form{
                     Section{
-                             VStack(alignment: .center, spacing: 13) {
-                                
-                                if let imageName = workingItem.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
-                                    
-                                    image.resizable()
-                                        .aspectRatio(contentMode: .fill )
-                                        .frame(width:proxy.size.height*0.1,height:proxy.size.height*0.1)
-                                        .cornerRadius(20)
-                                        .shadow(radius: 4)
-                                    
-                                }else if let activityEmoji = workingItem.emoji, activityEmoji != "" {
-                                    
-                                    Text(activityEmoji)
-                                        .font(Font.system(size: proxy.size.height*0.05))
-                                        .frame(width:proxy.size.height*0.1,height:proxy.size.height*0.1)
-                                        .background(Color.white)
-                                        .cornerRadius(20)
-                                        .shadow(radius: 4)
-                                    
-                                }
-                                    
-                                Text(workingItem.prefix + " " + workingItem.name)
-                                
-                            }.frame(width: proxy.size.width, alignment: .center)
-                    }.frame(alignment: .center)
+                        HStack{
+                            Spacer()
+                            VStack(){
+                               
+                               if let imageName = workingItem.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
+                                   
+                                   image.resizable()
+                                       .aspectRatio(contentMode: .fill )
+                                       .frame(width:proxy.size.height*0.2,height:proxy.size.height*0.2)
+                                       .cornerRadius(20)
+                                       .shadow(radius: 4)
+                                   
+                               }else if let activityEmoji = workingItem.emoji, activityEmoji != "" {
+                                   
+                                   Text(activityEmoji)
+                                       .font(Font.system(size: proxy.size.height*0.1))
+                                       .frame(width:proxy.size.height*0.2,height:proxy.size.height*0.2)
+                                       .background(Color.white)
+                                       .cornerRadius(20)
+                                       .shadow(radius: 4)
+                               }
+                                   
+                               Text(workingItem.prefix + " " + workingItem.name)
+                            }
+                            Spacer()
+                        }
+                    }
                     .listRowBackground(Color.clear)
                     
                     
@@ -211,7 +223,19 @@ struct AdminRecreationAddInventoryItemView: View {
                 PhotoCaptureView(showImagePicker: self.$showImagePicker, imageStorage: Recreation.Activity.imageStorage) { asset in
                     workingItem.imageName = asset
                 }
-            }
+            }.alert(isPresented: self.$showDeleteConfirmation, content: {
+                Alert(
+                    title: Text("Du är påväg att radera föremålet/objektet."),
+                    message: Text("Vill du fortsätta?"),
+                    primaryButton: .destructive(Text("Ja, radera föremål/objekt.")) {
+                        
+                        service.deleteInventoryItem(itemId: inventoryItem.id , inventoryType: self.inventoryType, callback: {
+                            presentationMode.wrappedValue.dismiss()
+                        })
+                    },
+                    secondaryButton: .cancel(Text("Avbryt"))
+                )
+            })
             
         }.onAppear(perform: {
             self.isEditigMode = inventoryItem.prefix != "" && inventoryItem.name != ""
