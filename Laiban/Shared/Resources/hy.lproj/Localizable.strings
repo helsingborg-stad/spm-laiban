@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Ուզո՞ւմ եք իմանալ, թե այսօր երբ եք ձեզ վերցնելու եւ որ ընկերներն են այստեղ։ Սեղմեք այստեղ!";
 "clock_time_1" = "A";
 "clock_time_10" = "Տասը";
-"clock_time_11" = "Տասնմեկ";
+"clock_time_11" = "Տասներկու";
 "clock_time_12" = "Տասներկու";
 "clock_time_2" = "Երկու";
 "clock_time_3" = "Երեք";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "Անձրեւային վարտիքներ";
 "garment_rainPants_description" = "Անձրեւային վարտիքներ";
 "garment_shoes" = "Կոշիկ";
-"garment_shoes_description" = "Կոշիկ";
 "garment_sweater" = "Տաք սվիտեր";
 "garment_sweater_description" = "Տաք սվիտեր";
 "garment_winterBoots" = "Կոշիկ";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "Աշխատակազմի հաղորդագրություններ";
 "message_category_reminder_title" = "Հիշիր";
 "message_no_messages" = "Այս պահին հաղորդագրություններ չունենք:";
+"movement_choose_activity" = "— Ի՞նչ գործունեություն եք ծավալել:";
+"movement_last_week" = "Անցած շաբաթ դուք ընդհանուր %@ մետր էներգիա եք հավաքել, իսկ այս շաբաթ %@ մետր";
+"movement_nothing" = "Այս շաբաթ դուք ոչ մի շարժում չեք գրանցել:";
+"movement_statistics_title_today" = "Լավ աշխատանք, դու %@ քայլեր ես ամբողջացրել, դա %@ մետր է:";
+"movement_statistics_title_weekday_1" = "Լավ աշխատանք, երկուշաբթի օրը %@ քայլերը ամբողջությամբ, դա %@ մետր";
+"movement_statistics_title_weekday_2" = "Լավ գործ, երեքշաբթի օրը %@ քայլեր ես ամբողջացրել, դա %@ մետր";
+"movement_statistics_title_weekday_3" = "Լավ աշխատանք, չորեքշաբթի օրը %@ քայլեր ես արել, դա %@ մետր";
+"movement_statistics_title_weekday_4" = "Լավ աշխատանք, հինգշաբթի օրը դու %@ քայլեր ես , դա %@ մետր";
+"movement_statistics_title_weekday_5" = "Լավ գործ, ուրբաթ օրը %@ քայլերը ամբողջությամբ, դա %@ մետր";
+"movement_statistics_title_weekday_6" = "Լավ աշխատանք, շաբաթ օրը դու %@ քայլեր ես , դա %@ մետր";
+"movement_statistics_title_weekday_7" = "Լավ աշխատանք, կիրակի օրը դու %@ քայլեր ես ամբողջացրել, դա %@ մետր";
+"movement_weekly_stats" = "Դուք այս շաբաթ ընդհանուր %@ մետր էներգիա եք հավաքել";
 "outdoors_feedback_change_description" = "Արդյո՞ք իմ առաջարկները լավ չեն։ Խնդրեք ձեր ուսուցչին օգնել ձեզ փոխել իմ առաջարկած հագուստը:";
 "outdoors_feedback_change_title" = "Ընտրեք, թե որ հագուստն է հարմար դրսում եղանակին";
 "outdoors_feedback_confirm" = "Խնդիր չկա! Դուք եւ ձեր ուսուցիչը ցանկանո՞ւմ եք փոխել այն հագուստը, որը ես պետք է ցույց տամ:";

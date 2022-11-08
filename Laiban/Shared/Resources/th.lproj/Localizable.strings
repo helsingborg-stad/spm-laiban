@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "คุณต้องการทราบหรือไม่ว่าวันนี้คุณจะได้รับการมารับคุณเมื่อไหร่และเพื่อนคนไหนอยู่ที่นี่? คลิกที่นี่!";
 "clock_time_1" = "A";
 "clock_time_10" = "สิบ";
-"clock_time_11" = "สิบเอ็ด";
+"clock_time_11" = "สิบสอง";
 "clock_time_12" = "สิบสอง";
 "clock_time_2" = "สอง";
 "clock_time_3" = "สาม";
@@ -46,7 +46,7 @@
 "clock_time_description_0600_to_0730" = "ตอนนี้มันเช้าและรอบเวลานี้เรากินอาหารเช้า";
 "clock_time_description_0730_to_0830" = "ตอนนี้ก็เช้า";
 "clock_time_description_0830_to_0900" = "ในช่วงเวลานี้เรากินผลไม้";
-"clock_time_description_0900_to_1045" = "ตอนนี้ก็เช้า";
+"clock_time_description_0900_to_1045" = "ตอนนี้ก็เช้าแล้ว";
 "clock_time_description_1045_to_1230" = "ตอนนี้เป็นเวลาเที่ยงวันและอาหารกลางวัน";
 "clock_time_description_1230_to_1400" = "ตอนนี้ก็บ่ายแล้ว";
 "clock_time_description_1400_to_1500" = "ตอนนี้ก็บ่ายและประมาณคราวนี้เรากินของว่าง";
@@ -135,7 +135,7 @@
 "food_waste_title" = "แตะรูปภาพเพื่อเพิ่มหรือลบออกจากเครื่องชั่ง";
 "food_waste_weekly_stats" = "สัปดาห์นี้คุณได้ทิ้งอาหาร <span translate='no'>string</span> กรัม";
 "garment_beanie" = "บีนี่";
-"garment_beanie_description" = "บีนี่";
+"garment_beanie_description" = "บีนนี่";
 "garment_cap" = "หมวก";
 "garment_cap_description" = "หมวก";
 "garment_jacket" = "เสื้อนอก";
@@ -155,13 +155,12 @@
 "garment_rainPants" = "กางเกงกันฝน";
 "garment_rainPants_description" = "กางเกงกันฝน";
 "garment_shoes" = "รองเท้า";
-"garment_shoes_description" = "รองเท้า";
 "garment_sweater" = "เสื้อสเวตเตอร์อุ่นๆ";
-"garment_sweater_description" = "เสื้อสเวตเตอร์อุ่นๆ";
+"garment_sweater_description" = "เสื้อกันหนาวอุ่น";
 "garment_winterBoots" = "รองเท้า";
 "garment_winterBoots_description" = "รองเท้าบูทฤดูหนาว";
 "garment_winterOutfit" = "ชุดหลวมๆ หรือเสื้อแจ็คเก็ตที่มีกางเกงครอบ";
-"garment_winterOutfit_description" = "ชุดหลวมๆ หรือเสื้อแจ็คเก็ตที่มีกางเกงครอบ";
+"garment_winterOutfit_description" = "ชุดหลวมหรือแจ็คเก็ตพร้อมกางเกงคลุม";
 "home_feedback_acitivity_title" = "คุณเคยเข้าร่วมกิจกรรมหรือไม่?
 คลิกที่นี่เพื่อบอกเราว่าคุณคิดอย่างไรกับมัน!";
 "home_holiday" = "พรุ่งนี้เป็น %@. ขอให้มีวันหยุดสุดสัปดาห์แสนสุข!";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "ข้อความจากเจ้าหน้าที่";
 "message_category_reminder_title" = "จำ";
 "message_no_messages" = "เราไม่มีข้อความใด ๆ ในขณะนี้";
+"movement_choose_activity" = "ท่านได้ทํากิจกรรมอะไรมาบ้าง";
+"movement_last_week" = "สัปดาห์ที่แล้วคุณรวบรวมพลังงานทั้งหมด %@ เมตรและสัปดาห์นี้ <span translate='no'>string</span> เมตร";
+"movement_nothing" = "จนถึงสัปดาห์นี้คุณยังไม่ได้ลงทะเบียนการเคลื่อนไหวใด ๆ";
+"movement_statistics_title_today" = "งานที่ดีคุณมีทั้งหมด %@ ขั้นตอนนั่นคือ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_1" = "งานที่ดีในวันจันทร์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_2" = "งานที่ดีในวันอังคารที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_3" = "งานที่ดีในวันพุธที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_4" = "งานที่ดีในวันพฤหัสบดีที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_5" = "งานที่ดีในวันศุกร์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_6" = "งานที่ดีในวันเสาร์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_weekday_7" = "งานที่ดีในวันอาทิตย์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_weekly_stats" = "คุณได้รวบรวมพลังงานทั้งหมด %@ เมตรในสัปดาห์นี้";
 "outdoors_feedback_change_description" = "คําแนะนําของฉันไม่ดีหรือไม่? ขอให้ครูของคุณช่วยท่านเปลี่ยนเสื้อผ้าที่ผมแนะนํา";
 "outdoors_feedback_change_title" = "เลือกเสื้อผ้าที่เหมาะกับสภาพอากาศภายนอก";
 "outdoors_feedback_confirm" = "ไม่มีปัญหา! คุณและครูของคุณต้องการเปลี่ยนเสื้อผ้าที่ฉันควรแสดงหรือไม่?";
@@ -213,8 +224,8 @@
 นั่นคือก่อน <span translate='no'>string</span>.";
 "tempus_child_arrives_during" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@.
 นั่นคือในช่วง <span translate='no'>string</span>.";
-"tempus_child_arrives_during_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ %@.
-นั่นคือก่อน <span translate='no'>string</span>.";
+"tempus_child_arrives_during_past" = "%@ มาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@
+นั่นเป็นเพียงก่อน <span translate='no'>string</span>.";
 "tempus_child_arrives_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ <span translate='no'>string</span>";
 "tempus_child_has_left" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น";
 "tempus_child_has_left_returns_in_days" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น แต่ควรกลับมาอีกครั้งในอีก <span translate='no'>string</span> วัน";

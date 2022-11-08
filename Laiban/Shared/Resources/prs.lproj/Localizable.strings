@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "آیا می خواهید بدانید که چه زمانی شما امروز برداشت خواهد شد و کدام دوستان اینجا هستند؟ اینجا را کلیک کنید!";
 "clock_time_1" = "A";
 "clock_time_10" = "ده";
-"clock_time_11" = "یازده";
+"clock_time_11" = "دوازده";
 "clock_time_12" = "دوازده";
 "clock_time_2" = "دو";
 "clock_time_3" = "سه";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "شلوار باران";
 "garment_rainPants_description" = "شلوار باران";
 "garment_shoes" = "کفش";
-"garment_shoes_description" = "کفش";
 "garment_sweater" = "بلع گرم";
 "garment_sweater_description" = "بلع گرم";
 "garment_winterBoots" = "کفش";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "پیام های کارکنان";
 "message_category_reminder_title" = "به یاد داشته باشید";
 "message_no_messages" = "ما در حال حاضر هیچ پیامی ندارهیم";
+"movement_choose_activity" = "چه فعالیتی انجام داده اید؟";
+"movement_last_week" = "هفته گذشته شما جمع آوری مجموع %@ متر در انرژی، و این هفته %@ متر";
+"movement_nothing" = "تا کنون این هفته شما هیچ جنبش ثبت نام نیست.";
+"movement_statistics_title_today" = "کار خوب، شما در مجموع %@ مراحل، که %@ متر است.";
+"movement_statistics_title_weekday_1" = "کار خوب، در روز دوشنبه شما %@ مراحل، که %@ متر";
+"movement_statistics_title_weekday_2" = "کار خوب ، در روز سه شنبه شما %@ مراحل ، که در %@ متر";
+"movement_statistics_title_weekday_3" = "کار خوب، در روز چهارشنبه شما %@ مراحل، که %@ متر";
+"movement_statistics_title_weekday_4" = "کار خوب ، در تاریخ پنجشنبه شما %@ مراحل ، که %@ متر";
+"movement_statistics_title_weekday_5" = "کار خوب ، در روز جمعه شما %@ مراحل ، که %@ متر";
+"movement_statistics_title_weekday_6" = "کار خوب ، در روز شنبه شما %@ در مجموع ، که %@ متر";
+"movement_statistics_title_weekday_7" = "کار خوب ، در تاریخ یکشنبه شما %@ مراحل ، که %@ متر";
+"movement_weekly_stats" = "شما جمع آوری کرده اند در مجموع %@ متر در انرژی این هفته";
 "outdoors_feedback_change_description" = "آیا پیشنهادات من خوب نیست؟ از معلم خود بخواهید که به شما کمک کند لباس هایی را که پیشنهاد می کنم تغییر دهید.";
 "outdoors_feedback_change_title" = "انتخاب کنید که لباس مناسب برای آب و هوای خارج";
 "outdoors_feedback_confirm" = "مشکلی نیست! آیا شما و معلم خود را می خواهید برای تغییر چه لباس من باید نشان می دهد؟";

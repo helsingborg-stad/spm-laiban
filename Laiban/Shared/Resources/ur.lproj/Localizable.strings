@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "کیا آپ جاننا چاہتے ہیں کہ آج آپ کو کب اٹھایا جائے گا اور یہاں کون سے دوست ہیں؟ یہاں کلک کریں!";
 "clock_time_1" = "ایک";
 "clock_time_10" = "دس";
-"clock_time_11" = "گیارہ";
+"clock_time_11" = "بارہ";
 "clock_time_12" = "بارہ";
 "clock_time_2" = "دو";
 "clock_time_3" = "تین";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "بارش پتلون";
 "garment_rainPants_description" = "بارش پتلون";
 "garment_shoes" = "جوتے";
-"garment_shoes_description" = "جوتے";
 "garment_sweater" = "گرم سویٹر";
 "garment_sweater_description" = "گرم سویٹر";
 "garment_winterBoots" = "جوتے";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "عملے کے پیغامات";
 "message_category_reminder_title" = "یاد کرنا";
 "message_no_messages" = "ہمارے پاس ابھی کوئی پیغام نہیں ہے۔";
+"movement_choose_activity" = "آپ نے کیا سرگرمی کی ہے؟";
+"movement_last_week" = "گزشتہ ہفتے آپ نے توانائی میں کل %@ میٹر جمع کیے، اور اس ہفتے %@ میٹر";
+"movement_nothing" = "اس ہفتے اب تک آپ نے کسی بھی تحریک کو رجسٹر نہیں کیا ہے.";
+"movement_statistics_title_today" = "اچھا کام، آپ نے %@ اقدامات کو کل کیا ہے، یہ %@ میٹر ہے.";
+"movement_statistics_title_weekday_1" = "اچھا کام، پیر کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_weekday_2" = "اچھا کام، منگل کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_weekday_3" = "اچھا کام، بدھ کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_weekday_4" = "اچھا کام، جمعرات کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_weekday_5" = "اچھا کام، جمعہ کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_weekday_6" = "اچھا کام، ہفتے کے روز آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_weekday_7" = "اچھا کام، اتوار کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_weekly_stats" = "آپ نے اس ہفتے توانائی میں مجموعی طور پر %@ میٹر جمع کیے ہیں";
 "outdoors_feedback_change_description" = "کیا میری تجاویز اچھی نہیں ہیں؟ اپنے استاد سے کہیں کہ وہ میرے تجویز مطابق کپڑے تبدیل کرنے میں آپ کی مدد کریں۔";
 "outdoors_feedback_change_title" = "انتخاب کریں کہ کون سے کپڑے باہر کے موسم کے لئے موزوں ہیں";
 "outdoors_feedback_confirm" = "کوئی مسئلہ نہيں! کیا آپ اور آپ کے استاد وہ کپڑے تبدیل کرنا چاہتے ہیں جو مجھے دکھانا چاہئے؟";

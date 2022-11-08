@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "你想知你今日幾時會被接走，哪些朋友喺呢度？ 點擊呢度！";
 "clock_time_1" = "一個";
 "clock_time_10" = "十";
-"clock_time_11" = "十一";
+"clock_time_11" = "十二";
 "clock_time_12" = "十二";
 "clock_time_2" = "二";
 "clock_time_3" = "三";
@@ -145,7 +145,7 @@
 "garment_neckWear" = "樽領毛衣或頸巾";
 "garment_neckWear_description" = "頸巾或樽領毛衣";
 "garment_pulloverPants" = "套褲";
-"garment_pulloverPants_description" = "套褲";
+"garment_pulloverPants_description" = "罩褲";
 "garment_rainBoots" = "靴子";
 "garment_rainBoots_description" = "靴子";
 "garment_rainCoat" = "雨衣";
@@ -155,13 +155,12 @@
 "garment_rainPants" = "雨褲";
 "garment_rainPants_description" = "雨褲";
 "garment_shoes" = "鞋";
-"garment_shoes_description" = "鞋";
 "garment_sweater" = "保暖毛衣";
 "garment_sweater_description" = "保暖毛衣";
 "garment_winterBoots" = "鞋";
 "garment_winterBoots_description" = "冬季鞾子";
 "garment_winterOutfit" = "工作服或jacket配蓋褲";
-"garment_winterOutfit_description" = "工作服或jacket配蓋褲";
+"garment_winterOutfit_description" = "工作服或jacket配罩褲";
 "home_feedback_acitivity_title" = "你參加過活動嗎？
 點擊呢度話畀我哋您的想法！";
 "home_holiday" = "聽日係 %@。 周末愉快!";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "員工寄語";
 "message_category_reminder_title" = "記得";
 "message_no_messages" = "我哋而家冇任何消息。";
+"movement_choose_activity" = "你做咗乜嘢活動？";
+"movement_last_week" = "上周你總共收集咗 %@ 米嘅能量，本周你收集咗 %@ 米嘅能量";
+"movement_nothing" = "本周到目前為止，你仲未記錄任何動靜。";
+"movement_statistics_title_today" = "做得好，你總共走咗 %@ 步，係 %@ 米。";
+"movement_statistics_title_weekday_1" = "做得好，周一你總共走咗 %@ 步，係 %@ 米";
+"movement_statistics_title_weekday_2" = "做得好，周二你總共走咗 %@ 步，係 %@ 米";
+"movement_statistics_title_weekday_3" = "做得好，周三你總共走咗 %@ 步，係 %@ 米";
+"movement_statistics_title_weekday_4" = "做得好，周四你總共走咗 %@ 步，係 %@ 米";
+"movement_statistics_title_weekday_5" = "做得好，周五你總共走咗 %@ 步，係 %@ 米";
+"movement_statistics_title_weekday_6" = "做得好，禮拜六你總共走咗 %@ 步，係 %@ 米";
+"movement_statistics_title_weekday_7" = "做得好，星期天你總共走咗 %@ 步，係 %@ 米";
+"movement_weekly_stats" = "本周你總共收集咗 %@ 米嘅能量";
 "outdoors_feedback_change_description" = "我嘅建議唔好咩？ 請你嘅老師幫你換我建議嘅衫。";
 "outdoors_feedback_change_title" = "選擇哪些衫適合外面嘅天氣";
 "outdoors_feedback_confirm" = "唔緊要! 你和你的老師想換一件我應該着嘅衫呀？";

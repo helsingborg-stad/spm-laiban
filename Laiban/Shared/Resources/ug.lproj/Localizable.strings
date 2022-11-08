@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "بۈگۈن قاچاندىن باشلاپ، قايسى دوستلارنىڭ بۇ يەردە ئىكەنلىكىنى بىلگۈڭىز بارمۇ؟ بۇ يەرنى چېكىڭ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ئون";
-"clock_time_11" = "ئون بىر";
+"clock_time_11" = "ئون ئىككى";
 "clock_time_12" = "ئون ئىككى";
 "clock_time_2" = "ئىككى";
 "clock_time_3" = "ئۈچ";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "يامغۇرلۇق ئىشتان";
 "garment_rainPants_description" = "يامغۇرلۇق ئىشتان";
 "garment_shoes" = "ئاياغ";
-"garment_shoes_description" = "ئاياغ";
 "garment_sweater" = "ئىلمان پوپايكا";
 "garment_sweater_description" = "ئىلمان پوپايكا";
 "garment_winterBoots" = "ئاياغ";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "خىزمەتچى خادىملارنىڭ ئۇچۇرى";
 "message_category_reminder_title" = "ئېسىڭىزدە بولسۇن";
 "message_no_messages" = "بىزنىڭ ھازىر ھېچقانداق ئۇچۇرىمىز يوق.";
+"movement_choose_activity" = "سىز قانداق پائالىيەت قىلدىڭىز؟";
+"movement_last_week" = "ئالدىنقى ھەپتە سىز جەمئىي %@ مېتىر ئېنىرگىيە يىغدىڭىز، بۇ ھەپتە %@ مېتىر";
+"movement_nothing" = "ھازىرغا قەدەر بۇ ھەپتە سىز ھېچقانداق ھەرىكەتنى تىزىملىمىدىڭىز.";
+"movement_statistics_title_today" = "ياخشى ئىشلىدىڭىز، %@ قەدەمنى ئومومىي قىلدىڭىز، ئۇ بولسىمۇ %@ مېتىر.";
+"movement_statistics_title_weekday_1" = "ياخشى خىزمەت، دۈشەنبە كۈنى سىز %@ قەدەمنى ئومومىيۈزۈزۈپسىز، يەنى %@ مېتىر";
+"movement_statistics_title_weekday_2" = "ياخشى ئىش قىلدىڭىز، سەيشەنبە كۈنى سىز %@ قەدەمنى ئومومىي %@";
+"movement_statistics_title_weekday_3" = "ياخشى خىزمەت، چارشەنبە كۈنى سىز %@ قەدەمنى ئومومىي %@";
+"movement_statistics_title_weekday_4" = "ياخشى قىلدىڭىز، پەيشەنبە كۈنى سىز %@ قەدەمنى ئومومىي %@";
+"movement_statistics_title_weekday_5" = "ياخشى خىزمەت، جۈمە كۈنى سىز %@ قەدەمنى ئومومىي قىلىۋەتتىڭىز، يەنى %@ مېتىر";
+"movement_statistics_title_weekday_6" = "ياخشى خىزمەت، شەنبە كۈنى سىز %@ قەدەمنى ئومومىي %@";
+"movement_statistics_title_weekday_7" = "ياخشى خىزمەت، يەكشەنبە كۈنى سىز %@ قەدەمنى ئومومىي %@";
+"movement_weekly_stats" = "سىز بۇ ھەپتە جەمئىي %@ مېتىر ئېنىرگىيە يىغدىڭىز";
 "outdoors_feedback_change_description" = "مېنىڭ تەكلىپىم ياخشى ئەمەسمۇ؟ مۇئەللىمىڭدىن مەن تەۋسىيە قىلغان كىيىملەرنى ئالماشتۇرۇپ بېرىشىنى سورايمەن.";
 "outdoors_feedback_change_title" = "سىرتنىڭ ھاۋارايىغا ماس كېلىدىغان كىيىملەرنى تاللاش";
 "outdoors_feedback_confirm" = "چاتاق يوق! سىز بىلەن مۇئەللىم قانداق كىيىملەرنى ئالماشتۇرماقچى؟";

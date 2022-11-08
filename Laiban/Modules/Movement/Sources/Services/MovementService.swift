@@ -12,19 +12,17 @@ import Shout
 import SwiftUI
 import Combine
 
-public typealias MovementData = [MovementManager.Movement]
-public typealias MovementStorageService = CodableLocalJSONService<MovementData>
-
+public typealias MovementStorageService = CodableLocalJSONService<MovementModel>
 
 public protocol MovementStorage {
-    func remove(_ item: MovementManager.Movement)
-    func update(_ item: MovementManager.Movement)
-    func add(_ item: MovementManager.Movement)
-    func getData() -> MovementData
-    func save(movements: MovementData)
+    func remove(_ item: Movement)
+    func update(_ item: Movement)
+    func add(_ item: Movement)
+    func getData() -> MovementModel
+    func save(movements: [Movement])
 }
 
-public class MovementService: CTS<MovementData, MovementStorageService>, LBAdminService, LBDashboardItem, MovementStorage {
+public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdminService, LBDashboardItem, MovementStorage {
     public let viewIdentity: LBViewIdentity = .movement
     public var isAvailablePublisher: AnyPublisher<Bool, Never> {
         $isAvailable.eraseToAnyPublisher()
@@ -37,7 +35,6 @@ public class MovementService: CTS<MovementData, MovementStorageService>, LBAdmin
 
     @Published public var movementManager = MovementManager()
     @Published public private(set) var stringsToTranslate: [String] = []
-    // @Published public var food:[String]? = nil
     @Published public var backendStorageEnabled = false
     public func adminView() -> AnyView {
         AnyView(MovementAdminView(service: self))
@@ -45,42 +42,46 @@ public class MovementService: CTS<MovementData, MovementStorageService>, LBAdmin
     
     public convenience init() {
         self.init(
-            emptyValue: [],
+            emptyValue: MovementModel(settings: MovementSettings(maxMetersPerDay: 250000, stepsPerMinute: 100), movement: [], activities: []),
             storageOptions: .init(filename: "MovementData", foldername: "MovementService", bundleFilename:"MovementData", bundle:.module)
         )
+        
         movementManager.delegate = self
         
         $data.sink { [weak self] values in
-            self?.movementManager.updateData(newData: values)
+            if let self = self {
+                self.movementManager.settings = self.data.settings
+                self.movementManager.updateData(newData: values.movement)
+            }
+            
         }.store(in: &cancellables)
     }
     
-    public func remove(_ item: MovementManager.Movement) {
-        data.removeAll(where: { $0.id == item.id })
+    public func remove(_ item: Movement) {
+        data.movement.removeAll(where: { $0.id == item.id })
     }
     
-    public func update(_ item: MovementManager.Movement) {
-        if let index = data.firstIndex(where: { $0.id == item.id }) {
-            data[index] = item
+    public func update(_ item: Movement) {
+        if let index = data.movement.firstIndex(where: { $0.id == item.id }) {
+            data.movement[index] = item
         } else {
             add(item)
         }
     }
     
-    public func add(_ item: MovementManager.Movement) {
-        if data.contains(where: {$0.id == item.id}) {
+    public func add(_ item: Movement) {
+        if data.movement.contains(where: {$0.id == item.id}) {
             return
         }
-        data.append(item)
+        data.movement.append(item)
     }
-    
-    public func getData() -> MovementData {
-        print("Data: \(data.count)")
+
+    public func getData() -> MovementModel {
         return data
     }
     
-    @MainActor public func save(movements: MovementData) {
-        data = movements
+    @MainActor public func save(movements: [Movement]) {
+        data.movement = movements
         save()
     }
 }

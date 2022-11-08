@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Θέλετε να μάθετε πότε θα σας παραλάβουν σήμερα και ποιοι φίλοι είναι εδώ; Κάντε κλικ εδώ!";
 "clock_time_1" = "Ένας";
 "clock_time_10" = "Δέκα";
-"clock_time_11" = "Έντεκα";
+"clock_time_11" = "Δώδεκα";
 "clock_time_12" = "Δώδεκα";
 "clock_time_2" = "Δύο";
 "clock_time_3" = "Τρεις";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "Παντελόνι βροχής";
 "garment_rainPants_description" = "Παντελόνι βροχής";
 "garment_shoes" = "Παπούτσια";
-"garment_shoes_description" = "Παπούτσια";
 "garment_sweater" = "Ζεστό πουλόβερ";
 "garment_sweater_description" = "Ζεστό πουλόβερ";
 "garment_winterBoots" = "Παπούτσια";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "Μηνύματα από το προσωπικό";
 "message_category_reminder_title" = "Θυμάμαι";
 "message_no_messages" = "Δεν έχουμε μηνύματα αυτή τη στιγμή.";
+"movement_choose_activity" = "Τι δραστηριότητα έχετε κάνει;";
+"movement_last_week" = "Την περασμένη εβδομάδα συλλέξατε συνολικά %@ μετρητές σε ενέργεια και αυτή την εβδομάδα %@ μέτρα";
+"movement_nothing" = "Μέχρι στιγμής αυτή την εβδομάδα δεν έχετε καταγράψει καμία κίνηση.";
+"movement_statistics_title_today" = "Καλή δουλειά, έχετε συνολικά %@ βήματα, δηλαδή %@ μέτρα.";
+"movement_statistics_title_weekday_1" = "Καλή δουλειά, τη Δευτέρα αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_statistics_title_weekday_2" = "Καλή δουλειά, την Τρίτη αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_statistics_title_weekday_3" = "Καλή δουλειά, την Τετάρτη αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_statistics_title_weekday_4" = "Καλή δουλειά, την Πέμπτη αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_statistics_title_weekday_5" = "Καλή δουλειά, την Παρασκευή αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_statistics_title_weekday_6" = "Καλή δουλειά, το Σάββατο αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_statistics_title_weekday_7" = "Καλή δουλειά, την Κυριακή αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
+"movement_weekly_stats" = "Συλλέξατε συνολικά %@ μετρητές σε ενέργεια αυτή την εβδομάδα";
 "outdoors_feedback_change_description" = "Οι προτάσεις μου δεν είναι καλές; Ζητήστε από τον δάσκαλό σας να σας βοηθήσει να αλλάξετε τα ρούχα που προτείνω.";
 "outdoors_feedback_change_title" = "Επιλέξτε ποια ρούχα είναι κατάλληλα για τον καιρό έξω";
 "outdoors_feedback_confirm" = "Κανένα πρόβλημα! Εσείς και ο δάσκαλός σας θέλετε να αλλάξετε ποια ρούχα πρέπει να δείξω;";

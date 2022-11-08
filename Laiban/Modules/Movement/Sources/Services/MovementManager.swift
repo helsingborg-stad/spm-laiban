@@ -9,37 +9,7 @@ import Foundation
 import Combine
 
 public class MovementManager : ObservableObject {
-    public struct Movement: Codable,Hashable,Identifiable {
-        public var id:String {
-            return date
-        }
-        public var date:String
-        public var minutes:Int
-        public var reported:Bool = false
-        public var numMoving:Int = 0
-        public var emojis:String = ""
-        public init(minutes:Int,date:Date = Date(), numMoving:Int) {
-            let f = DateFormatter()
-            f.dateFormat = "yyyy-MM-dd"
-            self.date = f.string(from: date)
-            self.numMoving = numMoving
-            self.minutes = minutes
-        }
-        public init(minutes:Int,date:String, numMoving:Int, emojis:String = "") {
-            self.date = date
-            self.minutes = minutes
-            self.numMoving = numMoving
-            self.emojis = emojis
-        }
-        public init(from decoder: Decoder) throws {
-            let values = try decoder.container(keyedBy: CodingKeys.self)
-            self.date = try values.decode(String.self, forKey: .date)
-            self.minutes = try values.decode(Int.self, forKey: .minutes)
-            self.reported = (try? values.decode(Bool.self, forKey: .reported)) ?? false
-            self.numMoving = (try? values.decode(Int.self, forKey: .numMoving)) ?? 0
-            self.emojis = try values.decode(String.self, forKey: .emojis)
-        }
-    }
+    
     private static let userDefaultsKey = "MovementStatistics"
     private var reportInProgress = false
     public var delegate: MovementStorage? {
@@ -48,6 +18,8 @@ public class MovementManager : ObservableObject {
         }
     }
     @Published public private(set) var array:[Movement]
+    var settings = MovementSettings()
+    
     public init() {
         self.array = [Movement]()
     }
@@ -56,7 +28,7 @@ public class MovementManager : ObservableObject {
         if let newData = newData {
             self.array = newData
         } else if let vals = delegate?.getData() {
-            self.array = vals
+            self.array = vals.movement
         }
         self.updateArray()
     }
@@ -64,56 +36,76 @@ public class MovementManager : ObservableObject {
         guard var start = date.startOfWeek else {
             return 0
         }
-        var minutes:Int = 0
+        var totalMinutes:Int = 0
         for _ in 0..<5 {
-            if let w = array.first { $0.date == start.laibanFormattedString }?.minutes {
-                minutes += w
-            }
+            let w = array.filter { $0.date == start.laibanFormattedString }
+            let minutes = w.map { $0.minutes * $0.numMoving }.reduce(0, +)
+            totalMinutes += minutes
             start = start.tomorrow!
         }
-        return minutes
+        return Int(Double(totalMinutes * settings.stepsPerMinute) * settings.stepLength)
     }
-    public func getWeeklyAverage(for date:Date = Date()) -> Double {
-        guard var start = date.startOfWeek else {
-            return 0
-        }
-        var minutes:Int = 0
-        var num = 0
-        for _ in 0..<5 {
-            if let w = array.first { $0.date == start.laibanFormattedString }?.minutes {
-                num += 1
-                minutes += w
-            }
-            start = start.tomorrow!
-        }
-        if num > 0 {
-            return Double(minutes)/Double(num)
-        }
-        return Double(minutes)
-    }
-    public func getWeeklyHigh(for date:Date = Date()) -> Int {
-        guard var start = date.startOfWeek else {
-            return 0
-        }
-        var most:Int = 0
-        for _ in 0..<5 {
-            if let w = movement(for: date) {
-                let total = w.map { $0.minutes }.reduce(0, +)
-                if total > most {
-                    most = total
-                }
-            }
-            start = start.tomorrow!
-        }
-        
-        return most
-    }
+//    public func getWeeklyAverage(for date:Date = Date()) -> Double {
+//        guard var start = date.startOfWeek else {
+//            return 0
+//        }
+//        var minutes:Int = 0
+//        var num = 0
+//        for _ in 0..<5 {
+//            if let w = array.first { $0.date == start.laibanFormattedString }?.minutes {
+//                num += 1
+//                minutes += w
+//            }
+//            start = start.tomorrow!
+//        }
+//        if num > 0 {
+//            return Double(minutes)/Double(num)
+//        }
+//        return Double(minutes)
+//    }
+//    public func getWeeklyHigh(for date:Date = Date()) -> Int {
+//        guard var start = date.startOfWeek else {
+//            return 0
+//        }
+//        var most:Int = 0
+//        for _ in 0..<5 {
+//            if let w = movement(for: date) {
+//                let total = w.map { $0.minutes }.reduce(0, +)
+//                if total > most {
+//                    most = total
+//                }
+//            }
+//            start = start.tomorrow!
+//        }
+//
+//        return most
+//    }
     
     public func movement(for date:Date = Date()) -> [Movement]? {
-        print("arr dates: \(array.map {$0.date}.joined(separator: ", "))")
-        print("date: \(date.laibanFormattedString)")
-        print("arr: \(array)")
         return array.filter { $0.date == date.laibanFormattedString }
+    }
+    
+    public func movementMinutes(for date: Date = Date()) -> Int {
+        if let w = movement(for: date) {
+            return w.map { $0.minutes * $0.numMoving }.reduce(0, +)
+        } else {
+            return 0
+        }
+    }
+    
+    public func movementSteps(for date: Date = Date()) -> Int {
+        let minutes = movementMinutes(for: date)
+        return minutes * settings.stepsPerMinute
+    }
+    
+    public func movementMeters(for date: Date = Date()) -> Int {
+        let steps = movementSteps(for: date)
+        // 100 steps a minute, 3 steps a meter
+        return Int(Double(steps) * settings.stepLength)
+    }
+    
+    public func meters(from minutes: Int) -> Int {
+        Int(round(Double(minutes * settings.stepsPerMinute) * settings.stepLength))
     }
     
     public func clean() {

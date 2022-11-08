@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ଆପଣ ଜାଣିବାକୁ ଚାହାଁନ୍ତି କି ଆଜି ଆପଣଙ୍କୁ କେବେ ଉଠାଯିବ ଏବଂ କେଉଁ ବନ୍ଧୁମାନେ ଏଠାରେ ଅଛନ୍ତି? ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ଦଶ";
-"clock_time_11" = "ଏଗାର";
+"clock_time_11" = "ବାର";
 "clock_time_12" = "ବାର";
 "clock_time_2" = "ଦୁଇ";
 "clock_time_3" = "ତିନି";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "ବର୍ଷା ପ୍ୟାଣ୍ଟ";
 "garment_rainPants_description" = "ବର୍ଷା ପ୍ୟାଣ୍ଟ";
 "garment_shoes" = "ଜୋତା";
-"garment_shoes_description" = "ଜୋତା";
 "garment_sweater" = "ଉଷ୍ମ ସ୍ୱେଟର";
 "garment_sweater_description" = "ଉଷ୍ମ ସ୍ୱେଟର";
 "garment_winterBoots" = "ଜୋତା";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "କର୍ମଚାରୀଙ୍କ ଠାରୁ ସନ୍ଦେଶଗୁଡିକ";
 "message_category_reminder_title" = "ମନେରଖନ୍ତୁ";
 "message_no_messages" = "ବର୍ତ୍ତମାନ ଆମ ପାଖରେ କୌଣସି ବାର୍ତ୍ତା ନାହିଁ।";
+"movement_choose_activity" = "ଆପଣ କେଉଁ କାର୍ଯ୍ୟକଳାପ କରିଛନ୍ତି?";
+"movement_last_week" = "ଗତ ସପ୍ତାହରେ ଆପଣ ଶକ୍ତିରେ ମୋଟ %@ ମିଟର ସଂଗ୍ରହ କରିଥିଲେ, ଏବଂ ଏହି ସପ୍ତାହରେ <span translate='no'>string</span> ମିଟର୍";
+"movement_nothing" = "ଏହି ସପ୍ତାହରେ ଏପର୍ଯ୍ୟନ୍ତ ଆପଣ କୌଣସି ଗତିବିଧି ପଞ୍ଜିକରଣ କରିନାହାଁନ୍ତି।";
+"movement_statistics_title_today" = "ଭଲ କାମ, ଆପଣ ଷ୍ଟେପ୍ %@ ମୋଟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର ।";
+"movement_statistics_title_weekday_1" = "ଭଲ କାମ, ସୋମବାର ଆପଣ %@ ଷ୍ଟେପ୍ ସମୁଦାୟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_statistics_title_weekday_2" = "ଭଲ କାମ, ମଙ୍ଗଳବାର ଦିନ ଆପଣ %@ ପାଦ ସମୁଦାୟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_statistics_title_weekday_3" = "ଭଲ କାମ, ବୁଧବାର ଦିନ ଆପଣ %@ ଷ୍ଟେପ୍ ସମୁଦାୟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_statistics_title_weekday_4" = "ଭଲ କାମ, ଗୁରୁବାର ଦିନ ଆପଣ %@ ପାଦ ସମୁଦାୟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_statistics_title_weekday_5" = "ଭଲ କାମ, ଶୁକ୍ରବାର ଦିନ ଆପଣ %@ ଷ୍ଟେପ୍ ସମୁଦାୟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_statistics_title_weekday_6" = "ଭଲ କାମ, ଶନିବାର ଦିନ ଆପଣ %@ ଷ୍ଟେପ୍ ସମୁଦାୟ କରିଛନ୍ତି, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_statistics_title_weekday_7" = "ଭଲ କାମ, ରବିବାର ଦିନ ଆପଣ ମୋଟ %@ ପଦକ୍ଷେପ, ତାହା <span translate='no'>string</span> ମିଟର";
+"movement_weekly_stats" = "ଆପଣ ଏହି ସପ୍ତାହରେ ମୋଟ %@ ମିଟର ଶକ୍ତି ସଂଗ୍ରହ କରିଛନ୍ତି";
 "outdoors_feedback_change_description" = "ମୋର ପରାମର୍ଶ ଭଲ ନୁହେଁ କି? ମୁଁ ପରାମର୍ଶ ଦେଉଛି ଯେ ତୁମଶିକ୍ଷକଙ୍କୁ ପୋଷାକ ବଦଳାଇବାରେ ସାହାଯ୍ୟ କରିବାକୁ କୁହ |";
 "outdoors_feedback_change_title" = "ବାହାରେ ପାଗ ପାଇଁ କେଉଁ ପୋଷାକ ଉପଯୁକ୍ତ ତାହା ବାଛନ୍ତୁ";
 "outdoors_feedback_confirm" = "କୌଣସି ସମସ୍ୟା ନାହିଁ! ତୁମେ ଏବଂ ତୁମର ଶିକ୍ଷକ ମୁଁ କେଉଁ ପୋଷାକ ଦେଖାଇବା ଉଚିତ୍ ତାହା ପରିବର୍ତ୍ତନ କରିବାକୁ ଚାହୁଁଛ କି?";

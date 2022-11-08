@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ميخواي بدوني امروز کي دستگير ميشي و کدوم دوستا اينجا هستن؟ اینجا را کلیک کنید!";
 "clock_time_1" = "A";
 "clock_time_10" = "ده";
-"clock_time_11" = "یازده";
+"clock_time_11" = "دوازده";
 "clock_time_12" = "دوازده";
 "clock_time_2" = "دو";
 "clock_time_3" = "سه";
@@ -185,6 +185,18 @@
 "message_category_info_title" = "پیام های کارکنان";
 "message_category_reminder_title" = "خاطر داشته باشید";
 "message_no_messages" = "ما الان هيچ پيغامي نداريم .";
+"movement_choose_activity" = "چه فعالیتی انجام داده ای؟";
+"movement_last_week" = "هفته گذشته شما جمع آوری مجموع %@ متر در انرژی، و این هفته %@ متر";
+"movement_nothing" = "تا حالا اين هفته هيچ حرکتي ثبت نام نکردي .";
+"movement_statistics_title_today" = "کار خوب، شما در مجموع %@ مراحل، که بیش از %@ است.";
+"movement_statistics_title_weekday_1" = "کار خوبي بود، روز دوشنبه تو %@ يه قدمي گرفتي، %@ متر";
+"movement_statistics_title_weekday_2" = "کار خوبي بود، روز سه شنبه %@ يه قدمي زدي، اون %@ متره";
+"movement_statistics_title_weekday_3" = "کار خوب ، در روز چهارشنبه شما %@ مراحل ، که %@ متر";
+"movement_statistics_title_weekday_4" = "کار خوب ، در روز پنجشنبه شما %@ مراحل ، که %@ متر";
+"movement_statistics_title_weekday_5" = "کار خوب ، در روز جمعه شما %@ مراحل ، که %@ متر";
+"movement_statistics_title_weekday_6" = "کار خوبي بود، روز شنبه تو %@ قدم ها بودي، اون %@ متره";
+"movement_statistics_title_weekday_7" = "کار خوب ، در روز یکشنبه شما در %@ مراحل ، که %@ متر";
+"movement_weekly_stats" = "شما جمع آوری کرده اند در مجموع %@ متر در انرژی این هفته";
 "outdoors_feedback_change_description" = "آیا پیشنهادهای من خوب نیست؟ از معلمت بخواه که کمکت کنه لباس هايي که پيشنهاد ميکنم رو عوض کني";
 "outdoors_feedback_change_title" = "انتخاب کنید که لباس مناسب برای آب و هوا در خارج";
 "outdoors_feedback_confirm" = "مشکلی نیست! آیا شما و معلمتان می خواهید چه لباس هایی را که باید نشان دهم تغییر دهید؟";

@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Бүгін қашан таңдалатыныңызды және қай достарыңыздың осында екенін білгіңіз келе ме? Осы жерді басыңыз!";
 "clock_time_1" = "A";
 "clock_time_10" = "он";
-"clock_time_11" = "он бір";
+"clock_time_11" = "он екі";
 "clock_time_12" = "он екі";
 "clock_time_2" = "Екі";
 "clock_time_3" = "Үш";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "Жаңбыр шалбары";
 "garment_rainPants_description" = "Жаңбыр шалбары";
 "garment_shoes" = "Аяқ киім";
-"garment_shoes_description" = "Аяқ киім";
 "garment_sweater" = "Жылы свитер";
 "garment_sweater_description" = "Жылы свитер";
 "garment_winterBoots" = "Аяқ киім";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "Персоналдан келіп түскен хабарламалар";
 "message_category_reminder_title" = "Есте сақтау";
 "message_no_messages" = "Бізде қазір ешқандай хабар жоқ.";
+"movement_choose_activity" = "Сіз қандай қызмет атқардыңыз?";
+"movement_last_week" = "Өткен аптада сіз барлығы %@ метр энергия жинадыңыз, ал осы аптада %@ метр";
+"movement_nothing" = "Осы аптаға дейін сіз ешқандай қозғалысты тіркемегенсіз.";
+"movement_statistics_title_today" = "Жақсы жұмыс, сіздер %@ қадамдар жасадыңыз, яғни %@ метр.";
+"movement_statistics_title_weekday_1" = "Жақсы жұмыс, дүйсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_statistics_title_weekday_2" = "Жақсы жұмыс, сейсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_statistics_title_weekday_3" = "Жақсы жұмыс, сәрсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_statistics_title_weekday_4" = "Жақсы жұмыс, бейсенбі күні сіз %@ қадамдар жасадыңыз, яғни %@ метр";
+"movement_statistics_title_weekday_5" = "Жақсы жұмыс, жұма күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_statistics_title_weekday_6" = "Жақсы жұмыс, сенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_statistics_title_weekday_7" = "Жақсы жұмыс, жексенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_weekly_stats" = "Сіз осы аптада барлығы %@ метр энергия жинадыңыз";
 "outdoors_feedback_change_description" = "Менің ұсыныстарым жақсы емес пе? Ұстазыңыздан мен ұсынып отырған киімді өзгертуге көмектесуіңізді сұраңыз.";
 "outdoors_feedback_change_title" = "Сыртындағы ауа райына қандай киім жарамды екенін таңдау";
 "outdoors_feedback_confirm" = "Әңгіме жоқ! Сіз және сіздің ұстазыңыз қандай киімді көрсетуім керек екенін өзгерткіңіз келе ме?";

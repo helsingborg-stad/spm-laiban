@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "މިއަދު ހޮވާނީ ކޮން އިރަކުންތޯ އާއި މިތާ ތިބީ ކޮން ރަހުމަތްތެރިންތަކެއްތޯ އެނގެން ބޭނުން ހެއްޔެވެ؟ މިލިންކަށް ފިތާލާ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ދިހަ";
-"clock_time_11" = "އެގާރަ";
+"clock_time_11" = "ބާރަ";
 "clock_time_12" = "ބާރަ";
 "clock_time_2" = "ދެ";
 "clock_time_3" = "ތިން";
@@ -46,11 +46,11 @@
 "clock_time_description_0600_to_0730" = "މިހާރު ހެނދުނު ހެނދުނާއި މި ހާއިރު ހެނދުނުގެ ނާސްތާ ކާން އާދަކުރާށެވެ.";
 "clock_time_description_0730_to_0830" = "މިހާރު ހެނދުނު ވެއްޖެ.";
 "clock_time_description_0830_to_0900" = "މި ހާއިރު އަޅުގަނޑުމެން މޭވާ ކައި ފިންގަ.";
-"clock_time_description_0900_to_1045" = "މިހާރު ހެނދުނު ވެއްޖެ.";
+"clock_time_description_0900_to_1045" = "މިހާރު ފަތިސްވެއްޖެއެވެ.";
 "clock_time_description_1045_to_1230" = "މިހާރު އިރުއޮއްސުމާއި މެންދުރުގެ ކެއުން ވެސް އޮތީ މެދުނުގައެވެ.";
 "clock_time_description_1230_to_1400" = "މިހާރު މެންދުރު ވެއްޖެ.";
 "clock_time_description_1400_to_1500" = "މިހާރު މެންދުރު ފަހު އަދި މި ވަގުތު އަހަރެމެން ނާސްތާ ކާން އާދަކުރާށެވެ.";
-"clock_time_description_1500_to_1630" = "މިހާރު މެންދުރު ވެއްޖެ.";
+"clock_time_description_1500_to_1630" = "މިހާރު މެންދުރު ވެއްޖެއެވެ.";
 "clock_time_description_1630_to_1800" = "ރޭގަނޑު ވެސް ގާތްގަނޑަކަށް އެރެއެވެ.";
 "clock_time_description_1800_to_2000" = "މިހާރު އެރެއަކީ. ރަނގަޅަށް ނިދާލާ!";
 "clock_time_description_2000_to_0600" = "މިހާރު އެރެއަކީ.";
@@ -86,7 +86,7 @@
 "emoji_1F35E_name_plural" = "ރޮށި ފިހި";
 "emoji_1F41F_name" = "މަސް";
 "emoji_1F41F_name_plural" = "މަސްތައް";
-"emoji_1F954_name" = "ޕޮޓޭޓޯ";
+"emoji_1F954_name" = "Potatoes";
 "emoji_1F954_name_plural" = "ޕޮޓޭޓޯ";
 "emoji_1F955_name" = "ކެރެޓް";
 "emoji_1F955_name_plural" = "ކެރެޓް";
@@ -135,33 +135,32 @@
 "food_waste_title" = "ސްކޭ";
 "food_waste_weekly_stats" = "މި ހަފުތާގައި ކަލޭ ވަނީ %@ ގްރާމް ގެ ކާނާ އެއްލާލައިފަ އެވެ.";
 "garment_beanie" = "ބެނީ";
-"garment_beanie_description" = "ބެނީ";
+"garment_beanie_description" = "Beanie";
 "garment_cap" = "ކެޕް";
 "garment_cap_description" = "ކެޕް";
 "garment_jacket" = "ޖެކެޓް";
 "garment_jacket_description" = "ޖެކެޓް";
-"garment_mittens" = "މިޓެންސް";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "މިޓެންސް";
 "garment_neckWear" = "ޓާޓްލްނެކް ނުވަތަ ސްކާފް";
 "garment_neckWear_description" = "ސްކާފް ނުވަތަ ޓާޓްލްނެކް";
 "garment_pulloverPants" = "ކަވާ ޕޭންޓްސް";
-"garment_pulloverPants_description" = "ކަވާ ޕޭންޓްސް";
-"garment_rainBoots" = "ބޫޓު";
+"garment_pulloverPants_description" = "ކަވަރު ޕެންޓް";
+"garment_rainBoots" = "ބޫޓްސް";
 "garment_rainBoots_description" = "ބޫޓު";
-"garment_rainCoat" = "ވާރޭ ޖެކެޓް";
+"garment_rainCoat" = "ރެއިން ޖެކެޓް";
 "garment_rainCoat_description" = "ވާރޭ ޖެކެޓް";
 "garment_rainGloves" = "ވާރޭ ގެ ގްލަވްސް";
-"garment_rainGloves_description" = "ވާރޭ ގެ ގްލަވްސް";
-"garment_rainPants" = "ވާރޭ ޕެޓާން";
+"garment_rainGloves_description" = "ވާރޭ ގްލޯވްސް";
+"garment_rainPants" = "ރެއިން ޕެންޓް";
 "garment_rainPants_description" = "ވާރޭ ޕެޓާން";
 "garment_shoes" = "ބޫޓު";
-"garment_shoes_description" = "ބޫޓު";
 "garment_sweater" = "ހޫނު ސްވެޓަރު";
-"garment_sweater_description" = "ހޫނު ސްވެޓަރު";
+"garment_sweater_description" = "ހޫނު ސްވެޓާ";
 "garment_winterBoots" = "ބޫޓު";
 "garment_winterBoots_description" = "ފިނިމޫސުމުގެ ބޫޓު";
 "garment_winterOutfit" = "ކަކަ";
-"garment_winterOutfit_description" = "ކަކަ";
+"garment_winterOutfit_description" = "ކަވަރު ޕެންޓާއެކު އޯވަރޯލް ނުވަތަ ޖެކެޓް";
 "home_feedback_acitivity_title" = "ހަރަކާތެއްގައި ބައިވެރިވީމުހެއްޔެވެ؟
 ވިސްނަންވީ ކަންތައް ބުނެދިނުމަށް މިލިންކަށް ފިތާލާށެވެ!";
 "home_holiday" = "މާދަމާއަކީ %@. ބާއްޖަވެރި ހަފްތާ ބަންދަކަށް އެދެން!";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "މުވައްޒަފުންގެ ފަރާތުން ލިބޭ މެސެޖްތައް";
 "message_category_reminder_title" = "ހަނދާންކުރާތި";
 "message_no_messages" = "މިހާރު އަޅުގަނޑުމެންނަށް އެއްވެސް މެސެޖެއް ނުލިބޭ.";
+"movement_choose_activity" = "ކޮން ހަރަކާތެއް ހެއްޔެވެ؟";
+"movement_last_week" = "މިދިޔަ ހަފުތާގައި ޖުމްލަ %@ މީޓަރުގެ ހަކަތަ އެއްކުރި އިރު، މި ހަފުތާގައި <span translate='no'>string</span> މީޓަރު";
+"movement_nothing" = "މި ހަފުތާގެ މިހާތަނަށް އެއްވެސް ހަރަކާތެއް ރަޖިސްޓްރީކޮށްފައެއް ނުވޭ.";
+"movement_statistics_title_today" = "ގުޑް ޖޮބް، ޔޫ ހޭވް ޓޯޓަލް %@ ސްޓެޕްސް، އެއީ <span translate='no'>string</span> މީޓަރު.";
+"movement_statistics_title_weekday_1" = "ގުޑް ޖޮބް، ހޯމަ ދުވަހު %@ ސްޓެޕްސް ޓޯޓަލް ކުރީ، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_statistics_title_weekday_2" = "ގުޑް ޖޮބް، އަންގާރަ ދުވަހު %@ ސްޓެޕްސް، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_statistics_title_weekday_3" = "ރަނގަޅު މަސައްކަތެއް، ބުދަ ދުވަހު %@ ފިޔަވަޅެއް، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_statistics_title_weekday_4" = "ގުޑް ޖޮބް، ބުރާސްފަތި ދުވަހު ކަލޭ ޓޯޓަލް %@ ސްޓެޕްސް، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_statistics_title_weekday_5" = "ގުޑް ޖޮބް، ހުކުރު ދުވަހު ކަލޭ ޓޯޓަލް %@ ސްޓެޕްސް، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_statistics_title_weekday_6" = "ރަނގަޅު މަސައްކަތެއް، ހޮނިހިރު ދުވަހު ކަލޭ ޓޯޓަލް %@ ސްޓެޕްސް، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_statistics_title_weekday_7" = "ގުޑް ޖޮބް، އާދީއްތަ ދުވަހު %@ ސްޓެޕްސް، އެއީ <span translate='no'>string</span> މީޓަރު";
+"movement_weekly_stats" = "މި ހަފުތާގައި ޖުމްލަ %@ މީޓަރުގެ ހަކަތަ އެއްކޮށްފައި ވޭ";
 "outdoors_feedback_change_description" = "އަޅުގަނޑުގެ ހުށަހެޅުންތައް ރަނގަޅު ނޫންތޯ. ތިބާގެ މުދައްރިސަށް އަޅުގަނޑު ލަފާކުރާ ފޭރާން ބަދަލުކުރުމަށް އެހީތެރިވެދިނުމަށް އެދޭށެވެ.";
 "outdoors_feedback_change_title" = "ބޭރަށް މޫ";
 "outdoors_feedback_confirm" = "މައްސަލައެއް ނެތް! އަހަރެން ދައްކަން ޖެހޭ ފޭރާން ބަދަލުކުރަން ތިބާ އާއި ތިބާގެ ޓީޗަރު ބޭނުން ހެއްޔެވެ؟";
@@ -213,8 +224,8 @@
 އެއީ <span translate='no'>string</span>ކުރިން ނެވެ.";
 "tempus_child_arrives_during" = "%@ ޕްރީސްކޫލަށް އަންނާނީ ގާތްގަނޑަކަށް %@.
 އެއީ <span translate='no'>string</span>ދުވަސްވަރު .";
-"tempus_child_arrives_during_past" = "ޕްރީސްކޫލަށް %@ އައިސްފައިވަނީ ގާތްގަނޑަކަށް %@.
-އެއީ <span translate='no'>string</span>ކުރިން ނެވެ.";
+"tempus_child_arrives_during_past" = "%@ ޕްރީސްކޫލަށް އައީ ގާތްގަނޑަކަށް %@ހާއިރު -- ފޮޓޯ: ނިޝާން އަލީ/ މިހާރު
+އެއީ <span translate='no'>string</span>ކުރިންނެވެ.";
 "tempus_child_arrives_past" = "%@ ޕްރީސްކޫލަށް އައިސްފައިވަނީ ގާތްގަނޑަކަށް <span translate='no'>string</span>";
 "tempus_child_has_left" = "%@ ހީވަނީ އެދުވަހަށް ގެއަށް ދިޔަހެންނެވެ.";
 "tempus_child_has_left_returns_in_days" = "%@ ހީވަނީ އެދުވަހަށް ގެއަށް ދިޔަހެން، އެކަމަކު %@ ދުވަސްފަހުން އަނެއްކާވެސް އަންނަން ޖެހޭހެން.";

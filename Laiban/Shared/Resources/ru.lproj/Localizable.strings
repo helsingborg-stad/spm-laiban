@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Вы хотите знать, когда вас заберут сегодня и какие друзья здесь? Нажмите здесь!";
 "clock_time_1" = "A";
 "clock_time_10" = "десять";
-"clock_time_11" = "Одиннадцать";
+"clock_time_11" = "одиннадцать";
 "clock_time_12" = "двенадцать";
 "clock_time_2" = "Два";
 "clock_time_3" = "Три";
@@ -185,6 +185,18 @@
 "message_category_info_title" = "Сообщения от персонала";
 "message_category_reminder_title" = "Помнить";
 "message_no_messages" = "Сейчас у нас нет никаких сообщений.";
+"movement_choose_activity" = "Какую деятельность вы выполнили?";
+"movement_last_week" = "На прошлой неделе вы собрали в общей сложности %@ счетчиков энергии, а на этой неделе %@ метров.";
+"movement_nothing" = "До сих пор на этой неделе вы не зарегистрировали ни одного движения.";
+"movement_statistics_title_today" = "Хорошая работа, вы набрали %@ шагов, это %@ метров.";
+"movement_statistics_title_weekday_1" = "Хорошая работа, в понедельник вы набрали %@ шагов, это %@ метров";
+"movement_statistics_title_weekday_2" = "Хорошая работа, во вторник вы набрали %@ шагов, это %@ метров";
+"movement_statistics_title_weekday_3" = "Хорошая работа, в среду вы набрали %@ шагов, это %@ метров";
+"movement_statistics_title_weekday_4" = "Хорошая работа, в четверг вы набрали %@ шагов, это %@ метров";
+"movement_statistics_title_weekday_5" = "Хорошая работа, в пятницу вы набрали %@ шагов, это %@ метров";
+"movement_statistics_title_weekday_6" = "Хорошая работа, в субботу вы набрали %@ шагов, это %@ метров";
+"movement_statistics_title_weekday_7" = "Хорошая работа, в воскресенье вы набрали %@ шагов, это %@ метров";
+"movement_weekly_stats" = "На этой неделе вы собрали в общей сложности %@ метров энергии.";
 "outdoors_feedback_change_description" = "Не являются ли мои предложения хорошими? Попросите своего учителя помочь вам переодеться, которую я предлагаю.";
 "outdoors_feedback_change_title" = "Выберите, какая одежда подходит для погоды на улице";
 "outdoors_feedback_confirm" = "Ничего! Вы и ваш учитель хотите переодеться, какую одежду я должен показывать?";

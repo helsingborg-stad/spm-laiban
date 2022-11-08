@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Vil du vite når du vil bli hentet i dag og hvilke venner som er her? Klikk her!";
 "clock_time_1" = "En";
 "clock_time_10" = "Ti";
-"clock_time_11" = "Elleve";
+"clock_time_11" = "Tolv";
 "clock_time_12" = "Tolv";
 "clock_time_2" = "To";
 "clock_time_3" = "Tre";
@@ -155,7 +155,6 @@ Se hva du skal ha på deg!";
 "garment_rainPants" = "Regnbukser";
 "garment_rainPants_description" = "Regn bukser";
 "garment_shoes" = "Sko";
-"garment_shoes_description" = "Sko";
 "garment_sweater" = "Varm genser";
 "garment_sweater_description" = "Varm genser";
 "garment_winterBoots" = "Sko";
@@ -185,6 +184,18 @@ Klikk her for å fortelle oss hva du syntes om det!";
 "message_category_info_title" = "Meldinger fra personalet";
 "message_category_reminder_title" = "Huske";
 "message_no_messages" = "Vi har ingen beskjeder akkurat nå.";
+"movement_choose_activity" = "Hvilken aktivitet har du gjort?";
+"movement_last_week" = "Forrige uke samlet du inn totalt %@ meter i energi, og denne uken %@ målere";
+"movement_nothing" = "Så langt denne uken har du ikke registrert noen bevegelse.";
+"movement_statistics_title_today" = "God jobb, du har totalt %@ trinn, det er %@ meter.";
+"movement_statistics_title_weekday_1" = "God jobb, på mandag utgjorde du %@ trinn, det er %@ meter";
+"movement_statistics_title_weekday_2" = "God jobb, på tirsdag utgjorde du %@ skritt, det er %@ meter";
+"movement_statistics_title_weekday_3" = "God jobb, på onsdag utgjorde du %@ trinn, det er %@ meter";
+"movement_statistics_title_weekday_4" = "God jobb, på torsdag utgjorde du %@ skritt, det er %@ meter";
+"movement_statistics_title_weekday_5" = "God jobb, på fredag utgjorde du %@ trinn, det er %@ meter";
+"movement_statistics_title_weekday_6" = "God jobb, på lørdag utgjorde du %@ skritt, det er %@ meter";
+"movement_statistics_title_weekday_7" = "God jobb, på søndag utgjorde du %@ skritt, det er %@ meter";
+"movement_weekly_stats" = "Du har samlet totalt %@ meter i energi denne uken";
 "outdoors_feedback_change_description" = "Er ikke forslagene mine gode? Be læreren din hjelpe deg med å skifte klær jeg foreslår.";
 "outdoors_feedback_change_title" = "Velg hvilke klær som passer for været ute";
 "outdoors_feedback_confirm" = "Ingen fare! Vil du og læreren din skifte hvilke klær jeg skal vise?";
@@ -213,7 +224,7 @@ Det er like før %@.";
 Det var like før %@.";
 "tempus_child_arrives_during" = "%@ vil komme til barnehagen på omtrent %@.
 Det er under %@.";
-"tempus_child_arrives_during_past" = "%@ kom til førskolen ca %@.
+"tempus_child_arrives_during_past" = "%@ kom til førskolen på ca %@.
 Det var like før %@.";
 "tempus_child_arrives_past" = "%@ kom til barnehagen rundt %@";
 "tempus_child_has_left" = "%@ ser ut til å ha dratt hjem for dagen.";

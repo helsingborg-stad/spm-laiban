@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ایا تاسو غواړئ پوه شئ چې تاسو به نن څه وخت راپورته کړئ او کوم ملګری دلته دی؟ دلته کلیک وکړئ !";
 "clock_time_1" = "A";
 "clock_time_10" = "لس";
-"clock_time_11" = "یوولس";
+"clock_time_11" = "دولس";
 "clock_time_12" = "دولس";
 "clock_time_2" = "دوه";
 "clock_time_3" = "درې";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "د باران پتلون";
 "garment_rainPants_description" = "د باران پتلون";
 "garment_shoes" = "بوټونه";
-"garment_shoes_description" = "بوټونه";
 "garment_sweater" = "تاوده سویټر";
 "garment_sweater_description" = "تاوده سویټر";
 "garment_winterBoots" = "بوټونه";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "د کارکوونکو پیغامونه";
 "message_category_reminder_title" = "په یاد";
 "message_no_messages" = "موږ اوس هیڅ پیغام نه لرو.";
+"movement_choose_activity" = "تاسو څه فعالیت کړی دی؟";
+"movement_last_week" = "تیره اونۍ تاسو د انرژۍ په برخه کې ټول ټال %@ ، او په دې اونۍ کې %@ متره";
+"movement_nothing" = "تر اوسه په دې اونۍ کې تاسو هیڅ حرکت نه دی ثبت کړی.";
+"movement_statistics_title_today" = "ښه دنده، تاسو ټول %@ ګامونه ترلاسه کړی دی، دا %@ دی.";
+"movement_statistics_title_weekday_1" = "ښه دنده ، د دوشنبې په ورځ تاسو %@ ګامونه ټول کړل ، دا %@ متره دی";
+"movement_statistics_title_weekday_2" = "ښه دنده، تاسو د سه شنبې په ورځ %@ ګامونه ټول کړل ، دا %@ متره دی";
+"movement_statistics_title_weekday_3" = "ښه دنده، د چهارشنبې په ورځ تاسو %@ ګامونه جمع کړل ، دا %@ متره ده";
+"movement_statistics_title_weekday_4" = "ښه دنده، د پنجشنبې په ورځ تاسو %@ ګامونه ټول کړل ، دا %@ متره دی";
+"movement_statistics_title_weekday_5" = "ښه دنده، د جمعې په ورځ تاسو ټول %@ ګامونه ، دا %@ متره دی";
+"movement_statistics_title_weekday_6" = "ښه دنده ، د شنبې په ورځ تاسو ټول %@ ګامونه ، دا %@ متره دی";
+"movement_statistics_title_weekday_7" = "ښه دنده، د اتوار په ورځ تاسو ټول %@ ګامونه ، دا %@ متره دی";
+"movement_weekly_stats" = "تاسو په دې اونۍ کې د %@ متره انرژی کې ټول ټال راټول کړی دی";
 "outdoors_feedback_change_description" = "ایا زما وړاندیزونه ښه نه دی؟ له خپل ښوونکی څخه وغواړئ چې تاسو سره مرسته وکړی چې هغه جامې بدلې کړی چې زه یې وړاندیز کوم.";
 "outdoors_feedback_change_title" = "غوره کړئ چې د بهر د هوا لپاره کومې جامې مناسبې دی";
 "outdoors_feedback_confirm" = "هیڅ خبره نه ده! ایا تاسو او ستاسو ښوونکی غواړئ چې څه جامې بدلې کړئ چې زه یې باید ښکاره کړم؟";

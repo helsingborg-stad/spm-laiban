@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "តើអ្នកចង់ដឹងថាអ្នកនឹងបានយកថ្ងៃណា ហើយតើមិត្ដភក្ដិណាខ្លះនៅទីនេះ? ចុចត្រង់នេះ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ដប់";
-"clock_time_11" = "ដប់មួយ";
+"clock_time_11" = "ដប់ពីរ";
 "clock_time_12" = "ដប់ពីរ";
 "clock_time_2" = "ពីរ";
 "clock_time_3" = "បី";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "ខោភ្លៀង";
 "garment_rainPants_description" = "ខោភ្លៀង";
 "garment_shoes" = "ស្បែកជើង";
-"garment_shoes_description" = "ស្បែកជើង";
 "garment_sweater" = "ក្ដៅៗ ញាក់សាច់";
 "garment_sweater_description" = "ក្ដៅៗ ញាក់សាច់";
 "garment_winterBoots" = "ស្បែកជើង";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "សារពីបុគ្គលិក";
 "message_category_reminder_title" = "ចាំចាំ";
 "message_no_messages" = "យើង មិន មាន សារ ណា មួយ នៅ ពេល នេះ ទេ ។";
+"movement_choose_activity" = "តើ អ្នក បាន ធ្វើ សកម្មភាព អ្វី ខ្លះ ?";
+"movement_last_week" = "សប្តាហ៍ មុន អ្នក ប្រមូល ថាមពល %@ ម៉ែត្រ សរុប ហើយ សប្តាហ៍ នេះ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_nothing" = "រហូត មក ដល់ សប្តាហ៍ នេះ អ្នក មិន ទាន់ បាន ចុះ ឈ្មោះ ចលនា ណា មួយ នៅ ឡើយ ទេ ។";
+"movement_statistics_title_today" = "ការងារល្អ អ្នកបាន %@ ជំហាន <span translate='no'>string</span> ម៉ែត្រ។";
+"movement_statistics_title_weekday_1" = "ការងារ ល្អ នៅ ថ្ងៃ ចន្ទ នេះ អ្នក បាន សរុប ជំហាន %@ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_statistics_title_weekday_2" = "ការងារ ល្អ នៅ ថ្ងៃ អង្គារ នេះ អ្នក បាន %@ ជំហាន ទាំង អស់ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_statistics_title_weekday_3" = "ការងារ ល្អ នៅ ថ្ងៃ ពុធ នេះ អ្នក បាន %@ ជំហាន ទាំង អស់ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_statistics_title_weekday_4" = "ការងារ ល្អ នៅ ថ្ងៃ ព្រហស្បតិ៍ នេះ អ្នក បាន %@ ជំហាន ទាំង អស់ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_statistics_title_weekday_5" = "ការងារ ល្អ នៅ ថ្ងៃ សុក្រ នេះ អ្នក បាន សរុប ជំហាន %@ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_statistics_title_weekday_6" = "ការងារ ល្អ នៅ ថ្ងៃ សៅរ៍ នេះ អ្នក បាន %@ ជំហាន ទាំង អស់ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_statistics_title_weekday_7" = "ការងារ ល្អ នៅ ថ្ងៃ អាទិត្យ អ្នក បាន សរុប ជំហាន %@ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
+"movement_weekly_stats" = "អ្នក បាន ប្រមូល ថាមពល សរុប %@ ម៉ែត្រ នៅ សប្តាហ៍ នេះ";
 "outdoors_feedback_change_description" = "តើ យោបល់ របស់ ខ្ញុំ មិន ល្អ ឬ ទេ ? សុំគ្រូជួយកែប្រែសម្លៀកបំពាក់ដែលខ្ញុំផ្តល់យោបល់។";
 "outdoors_feedback_change_title" = "ជ្រើស រើស សម្លៀកបំពាក់ ណា ដែល សមរម្យ សម្រាប់ អាកាសធាតុ នៅ ខាង ក្រៅ";
 "outdoors_feedback_confirm" = "គ្មាន​បញ្ហា! តើ អ្នក និង គ្រូ របស់ អ្នក ចង់ ផ្លាស់ប្ដូរ សម្លៀកបំពាក់ អ្វី ដែល ខ្ញុំ គួរ បង្ហាញ ដែរ ឬ ទេ ?";

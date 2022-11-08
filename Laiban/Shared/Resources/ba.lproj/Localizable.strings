@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Бөгөн ҡасан алынасағын, бында ниндәй дуҫтар булыуын белергә теләйһегеҙме? Ошонда баҫығыҙ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ун";
-"clock_time_11" = "ун бер";
+"clock_time_11" = "ун ике";
 "clock_time_12" = "ун ике";
 "clock_time_2" = "Ике";
 "clock_time_3" = "Өсәү";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "Ямғыр салбары";
 "garment_rainPants_description" = "Ямғыр салбары";
 "garment_shoes" = "Аяҡ кейеме";
-"garment_shoes_description" = "Аяҡ кейеме";
 "garment_sweater" = "Йылы свитер";
 "garment_sweater_description" = "Йылы свитер";
 "garment_winterBoots" = "Аяҡ кейеме";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "Хеҙмәткәрҙәрҙең хәбәрҙәре";
 "message_category_reminder_title" = "Хәтерегеҙҙә тотоғоҙ";
 "message_no_messages" = "Беҙҙең әлеге ваҡытта хәбәрҙәребеҙ юҡ.";
+"movement_choose_activity" = "Һеҙ ниндәй эшмәкәрлек алып барҙығыҙ?";
+"movement_last_week" = "Үткән аҙнала һеҙ энергияла дөйөм алғанда %@ метр йыйҙығыҙ, ә был аҙнала %@ метр";
+"movement_nothing" = "Әлегә был аҙнала бер ниндәй ҙә хәрәкәт теркәлмәгән.";
+"movement_statistics_title_today" = "Хәйер, һеҙ %@ аҙымдар яһанығыҙ, йәғни %@ метр.";
+"movement_statistics_title_weekday_1" = "Хәйерле эш, дүшәм һеҙ %@ аҙымдар яһанығыҙ, ул %@ метр";
+"movement_statistics_title_weekday_2" = "Хәйерле эш, шишәмбе һеҙ %@ аҙымдар яһанығыҙ, ул %@ метр";
+"movement_statistics_title_weekday_3" = "Хәйерле эш, шаршамбы һеҙ %@ аҙымдар яһанығыҙ, ул %@ метр";
+"movement_statistics_title_weekday_4" = "Хәйер, кесаҙна һеҙ %@ аҙымдар яһанығыҙ, ул %@ метр";
+"movement_statistics_title_weekday_5" = "Хәйерле эш, йома көнө һеҙ %@ аҙымдар яһанығыҙ, ул %@ метр";
+"movement_statistics_title_weekday_6" = "Хәйерле эш, шәмбе һеҙ %@ аҙымдар яһанығыҙ, был %@ метр";
+"movement_statistics_title_weekday_7" = "Хәйерле эш, йәкшәмбе һеҙ %@ аҙымдар яһанығыҙ, ул %@ метр";
+"movement_weekly_stats" = "Һеҙ был аҙнала дөйөм алғанда %@ метр энергия йыйҙығыҙ";
 "outdoors_feedback_change_description" = "Минең тәҡдимдәрем яҡшы түгелме ни? Уҡытыусығыҙҙан мин тәҡдим иткән кейемде алмаштырырға ярҙам итеүен һорағыҙ.";
 "outdoors_feedback_change_title" = "Тышта һауа торошона ниндәй кейем яраҡлы икәнен һайлағыҙ";
 "outdoors_feedback_confirm" = "Әлбиттә! Һеҙ уҡытыусығыҙ менән ниндәй кейем күрһәтергә кәрәклеген үҙгәртергә теләйһегеҙме?";

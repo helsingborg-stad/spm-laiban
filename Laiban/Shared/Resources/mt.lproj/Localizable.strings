@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Trid tkun taf meta se tinġabar illum u liema ħbieb qegħdin hawn? Ikklikkja hawn!";
 "clock_time_1" = "A";
 "clock_time_10" = "Għaxra";
-"clock_time_11" = "Ħdax";
+"clock_time_11" = "Tnax";
 "clock_time_12" = "Tnax";
 "clock_time_2" = "Tnejn";
 "clock_time_3" = "Tlieta";
@@ -155,13 +155,12 @@ Ejja naraw dak li int ser tilbes!";
 "garment_rainPants" = "Qliezet tax-xita";
 "garment_rainPants_description" = "Qliezet tax-xita";
 "garment_shoes" = "Żraben";
-"garment_shoes_description" = "Żraben";
 "garment_sweater" = "Sweater sħun";
 "garment_sweater_description" = "Għaraq sħun";
 "garment_winterBoots" = "Żraben";
 "garment_winterBoots_description" = "Stvali tax-xitwa";
 "garment_winterOutfit" = "Overalls jew ġakketta bi qliezet ta' kopertura";
-"garment_winterOutfit_description" = "Overalls jew ġakketta bil-qliezet ta' kopertura";
+"garment_winterOutfit_description" = "Baverolli jew ġakketta bil-qliezet tal-għata";
 "home_feedback_acitivity_title" = "Ipparteċipajt f'attività?
 Ikklikkja hawn biex tgħidilna dak li ħsibt dwaru!";
 "home_holiday" = "Għada %@. Gawdi tmiem il-ġimgħa!";
@@ -185,6 +184,18 @@ Ikklikkja hawn biex tgħidilna dak li ħsibt dwaru!";
 "message_category_info_title" = "Messaġġi mill-persunal";
 "message_category_reminder_title" = "Ftakar";
 "message_no_messages" = "M'għandniex messaġġi bħalissa.";
+"movement_choose_activity" = "X'attività għamilt?";
+"movement_last_week" = "Il-ġimgħa li għaddiet ġbart total ta ' %@ metri fl-enerġija, u din il-ġimgħa %@ metri";
+"movement_nothing" = "S'issa din il-ġimgħa ma rreġistrajt l-ebda moviment.";
+"movement_statistics_title_today" = "Xogħol tajjeb, int ammontaw għal %@ passi, dak huwa %@ metru.";
+"movement_statistics_title_weekday_1" = "Xogħol tajjeb, nhar it-Tnejn int ammontaw għal %@ passi, dak huwa %@ metru";
+"movement_statistics_title_weekday_2" = "Xogħol tajjeb, nhar it-Tlieta ammontaw għal %@ passi, dak huwa %@ metru";
+"movement_statistics_title_weekday_3" = "Xogħol tajjeb, nhar l-Erbgħa ammontaw għal %@ passi, dak huwa %@ metru";
+"movement_statistics_title_weekday_4" = "Xogħol tajjeb, nhar il-Ħamis int ammontaw għal passi %@ , dak huwa %@ metru";
+"movement_statistics_title_weekday_5" = "Xogħol tajjeb, nhar il-Ġimgħa ammontaw għal %@ passi, dak huwa %@ metru";
+"movement_statistics_title_weekday_6" = "Xogħol tajjeb, nhar is-Sibt int ammontaw għal %@ passi, dak huwa %@ metru";
+"movement_statistics_title_weekday_7" = "Xogħol tajjeb, nhar il-Ħadd int ammontaw għal %@ passi, dak huwa %@ metru";
+"movement_weekly_stats" = "Din il-ġimgħa ġbart total ta ' %@ metri fl-enerġija";
 "outdoors_feedback_change_description" = "Is-suġġerimenti tiegħi mhumiex tajbin? Staqsi lill-għalliem tiegħek biex jgħinek tibdel il-ħwejjeġ li nissuġġerixxi.";
 "outdoors_feedback_change_title" = "Agħżel liema ħwejjeġ huma adattati għat-temp barra";
 "outdoors_feedback_confirm" = "Mhemmx problema! Int u l-għalliem tiegħek trid tibdel liema ħwejjeġ għandi nuri?";
@@ -213,7 +224,7 @@ Dan eżatt qabel %@.";
 Dan kien eżatt qabel %@.";
 "tempus_child_arrives_during" = "%@ se jasal għall-iskola ta ' qabel l-iskola għal madwar %@.
 Dak hu matul il- %@.";
-"tempus_child_arrives_during_past" = "%@ wasal għal qabel l-iskola għall-ħabta %@.
+"tempus_child_arrives_during_past" = "%@ wasal qabel l-iskola għall-ħabta tal- %@.
 Dan kien eżatt qabel %@.";
 "tempus_child_arrives_past" = "%@ waslu qabel l-iskola għall-ħabta tal- %@";
 "tempus_child_has_left" = "%@ jidher li mar id-dar għall-ġurnata.";

@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "क्या आप जानना चाहते हैं कि आज आपको कब उठाया जाएगा और कौन से दोस्त यहां हैं? यहाँ क्लिक करें!";
 "clock_time_1" = "एक";
 "clock_time_10" = "दस";
-"clock_time_11" = "ग्यारह";
+"clock_time_11" = "बारह";
 "clock_time_12" = "बारह";
 "clock_time_2" = "दो";
 "clock_time_3" = "तीन";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "बारिश पैंट";
 "garment_rainPants_description" = "बारिश पैंट";
 "garment_shoes" = "जूते";
-"garment_shoes_description" = "जूते";
 "garment_sweater" = "गर्म स्वेटर";
 "garment_sweater_description" = "गर्म स्वेटर";
 "garment_winterBoots" = "जूते";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "कर्मचारियों के संदेश";
 "message_category_reminder_title" = "याद करना";
 "message_no_messages" = "अभी हमारे पास कोई संदेश नहीं है।";
+"movement_choose_activity" = "आपने कौन सी गतिविधि की है?";
+"movement_last_week" = "पिछले हफ्ते आपने कुल %@ मीटर ऊर्जा एकत्र की, और इस सप्ताह <span translate='no'>string</span> मीटर";
+"movement_nothing" = "इस सप्ताह अब तक आपने कोई मूवमेंट रजिस्टर नहीं कराया है।";
+"movement_statistics_title_today" = "अच्छा काम, आपने %@ कदम उठाए हैं, यह <span translate='no'>string</span> मीटर है।";
+"movement_statistics_title_weekday_1" = "अच्छा काम, सोमवार को आप कदम %@ कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_weekday_2" = "अच्छा काम, मंगलवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_weekday_3" = "अच्छा काम, बुधवार को आप कदम %@ कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_weekday_4" = "अच्छा काम, गुरुवार को आप कदम %@ कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_weekday_5" = "अच्छा काम, शुक्रवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_weekday_6" = "अच्छा काम, शनिवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_weekday_7" = "अच्छा काम, रविवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_weekly_stats" = "आपने इस सप्ताह कुल %@ मीटर ऊर्जा एकत्र की है";
 "outdoors_feedback_change_description" = "क्या मेरे सुझाव अच्छे नहीं हैं? अपने शिक्षक से मेरे द्वारा सुझाए गए कपड़े बदलने में आपकी मदद करने के लिए कहें।";
 "outdoors_feedback_change_title" = "चुनें कि कौन से कपड़े बाहर के मौसम के लिए उपयुक्त हैं";
 "outdoors_feedback_confirm" = "कोई बात नहीं! क्या आप और आपके शिक्षक बदलना चाहते हैं कि मुझे कौन से कपड़े दिखाने चाहिए?";

@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ఈ రోజు మిమ్మల్ని ఎప్పుడు పికప్ చేసుకుంటారు మరియు ఏ స్నేహితులు ఇక్కడ ఉన్నారో మీరు తెలుసుకోవాలని అనుకుంటున్నారా? ఇక్కడ క్లిక్ చేయండి!";
 "clock_time_1" = "A";
 "clock_time_10" = "పది";
-"clock_time_11" = "పదకొండు";
+"clock_time_11" = "పన్నెండు";
 "clock_time_12" = "పన్నెండు";
 "clock_time_2" = "రెండు";
 "clock_time_3" = "మూడు";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "రెయిన్ ప్యాంట్లు";
 "garment_rainPants_description" = "రెయిన్ ప్యాంట్లు";
 "garment_shoes" = "బూట్లు";
-"garment_shoes_description" = "బూట్లు";
 "garment_sweater" = "వెచ్చని స్వెటర్";
 "garment_sweater_description" = "వెచ్చని స్వెటర్";
 "garment_winterBoots" = "బూట్లు";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "సిబ్బంది నుంచి సందేశాలు";
 "message_category_reminder_title" = "ఙ్ఞాపకం";
 "message_no_messages" = "ప్రస్తుతం మాకు ఎలాంటి సందేశాలు లేవు.";
+"movement_choose_activity" = "మీరు ఏ యాక్టివిటీ చేశారు?";
+"movement_last_week" = "గత వారం మీరు మొత్తం %@ మీటర్ల శక్తిని సేకరించారు, మరియు ఈ వారం <span translate='no'>string</span> మీటర్లు";
+"movement_nothing" = "ఈ వారం ఇప్పటివరకు మీరు ఎలాంటి ఉద్యమాన్ని నమోదు చేయలేదు.";
+"movement_statistics_title_today" = "మంచి ఉద్యోగం, మీరు %@ దశలను మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_1" = "మంచి ఉద్యోగం, సోమవారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_2" = "మంచి ఉద్యోగం, మంగళవారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_3" = "మంచి పని, బుధవారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_4" = "గుడ్ జాబ్, గురువారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_5" = "మంచి ఉద్యోగం, శుక్రవారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_6" = "మంచి పని, శనివారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_statistics_title_weekday_7" = "మంచి పని, ఆదివారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
+"movement_weekly_stats" = "ఈ వారం మీరు %@ మీటర్ల ఎనర్జీ యొక్క టోటల్ ని సేకరించారు.";
 "outdoors_feedback_change_description" = "నా సూచనలు మంచివి కావా? నేను సూచించిన దుస్తులను మార్చడానికి మీకు సహాయం చేయమని మీ ఉపాధ్యాయుడిని అడగండి.";
 "outdoors_feedback_change_title" = "వెలుపల వాతావరణానికి ఏ దుస్తులు సరిపోతాయో ఎంచుకోండి";
 "outdoors_feedback_confirm" = "ఇబ్బంది లేదు! నేను ఏ బట్టలు చూపించాలో మీరు మరియు మీ టీచర్ మార్చాలని అనుకుంటున్నారా?";

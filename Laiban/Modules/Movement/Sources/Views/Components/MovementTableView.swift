@@ -87,19 +87,19 @@ struct MovementTableView_Previews: PreviewProvider {
     static var statistics: [MovementTableView.ViewModel] {
         var arr = [MovementTableView.ViewModel]()
         var date = Date().startOfWeek!
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 24)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementMeters: 24, settings: MovementSettings())))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 45)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementMeters: 60, settings: MovementSettings())))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 60)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementMeters: 45, settings: MovementSettings())))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 100)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementMeters: 100, settings: MovementSettings())))
         date = date.tomorrow!
         
-        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementTime: 120)))
+        arr.append(MovementTableView.ViewModel(date: date, model: MovementBarView.ViewModel(movementMeters: 120, settings: MovementSettings())))
         date = date.tomorrow!
         
         return arr

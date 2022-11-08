@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "دەتەوێت بزانیت ئەمڕۆ کەی هەڵدەگیرێن و کام هاوڕێی لێرەن؟ کلیک لێرە بکە!";
 "clock_time_1" = "A";
 "clock_time_10" = "دە";
-"clock_time_11" = "یازدە";
+"clock_time_11" = "دوازدە";
 "clock_time_12" = "دوازدە";
 "clock_time_2" = "دوو";
 "clock_time_3" = "سێ";
@@ -185,6 +185,18 @@
 "message_category_info_title" = "نامەکان لە ستافەکەوە";
 "message_category_reminder_title" = "بیرت بێت";
 "message_no_messages" = "ئێمە ئێستا هیچ پەیامێکمان نیە.";
+"movement_choose_activity" = "چ چالاکییەکت ئەنجام داوە؟";
+"movement_last_week" = "هەفتەی ڕابردوو سەرجەمی %@ مەتری وزەت کۆکردەوەو ئەم هەفتەیەش %@ مەتر";
+"movement_nothing" = "تا ئێستا ئەم هەفتەیە هیچ جووڵەیەکت تۆمار نەکردووە.";
+"movement_statistics_title_today" = "کارێکی باش، تۆ %@ هەنگاوت تەواو کردووە، ئەوە %@ مەترە.";
+"movement_statistics_title_weekday_1" = "کارێکی باش، ڕۆژی دووشەممە %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_statistics_title_weekday_2" = "کارێکی باش، ڕۆژی سێشەممە تۆ %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_statistics_title_weekday_3" = "کارێکی باش، ڕۆژی چوارشەممە %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_statistics_title_weekday_4" = "کارێکی باش، ڕۆژی پێنج شەممە %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_statistics_title_weekday_5" = "کارێکی باش، ڕۆژی هەینی %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_statistics_title_weekday_6" = "کارێکی باش، ڕۆژی شەممە %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_statistics_title_weekday_7" = "کارێکی باش، ڕۆژی یەکشەمە %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
+"movement_weekly_stats" = "تۆ لەم هەفتەیەدا کۆی %@ مەترت لە وزەدا کۆکردۆتەوە";
 "outdoors_feedback_change_description" = "ئایا پێشنیارەکانم باش نین؟ داوا لە مامۆستاکەت بکە کە یارمەتیت بدات ئەو جلانەی کە پێشنیاری دەکەم بگۆڕیت.";
 "outdoors_feedback_change_title" = "هەڵبژێرە کام جل و بەرگ گونجاوە بۆ کەش و هەوای دەرەوە";
 "outdoors_feedback_confirm" = "کێشه نیه! ئایا تۆ و مامۆستاکەت دەتەوێت چ جلوبەرگێک بگۆڕن کە دەبێت پیشانی بدەم؟";

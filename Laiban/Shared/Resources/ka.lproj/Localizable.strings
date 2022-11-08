@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "გსურთ იცოდეთ, როდის აირჩევთ დღეს და რომელი მეგობრები არიან აქ? დააჭირეთ აქ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ათი";
-"clock_time_11" = "თერთმეტი";
+"clock_time_11" = "თორმეტი";
 "clock_time_12" = "თორმეტი";
 "clock_time_2" = "ორი";
 "clock_time_3" = "სამი";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "წვიმის შარვალი";
 "garment_rainPants_description" = "წვიმის შარვალი";
 "garment_shoes" = "ფეხსაცმელი";
-"garment_shoes_description" = "ფეხსაცმელი";
 "garment_sweater" = "თბილი სვიტერი";
 "garment_sweater_description" = "თბილი სვიტერი";
 "garment_winterBoots" = "ფეხსაცმელი";
@@ -185,6 +184,18 @@
 "message_category_info_title" = "შეტყობინებები პერსონალისგან";
 "message_category_reminder_title" = "დაიმახსოვრე";
 "message_no_messages" = "ახლა შეტყობინებები არ გვაქვს.";
+"movement_choose_activity" = "რა საქმიანობა გააკეთეთ?";
+"movement_last_week" = "გასულ კვირას თქვენ შეაგროვეთ სულ %@ მეტრი ენერგია და ამ კვირაში %@ მეტრი";
+"movement_nothing" = "ჯერჯერობით ამ კვირაში თქვენ არ დაარეგისტრირათ მოძრაობა.";
+"movement_statistics_title_today" = "კარგი სამუშაო, თქვენ სულ %@ ნაბიჯები, ეს %@ მეტრია.";
+"movement_statistics_title_weekday_1" = "კარგი სამუშაო, ორშაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_statistics_title_weekday_2" = "კარგი სამუშაო, სამშაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_statistics_title_weekday_3" = "კარგი სამუშაო, ოთხშაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_statistics_title_weekday_4" = "კარგი სამუშაო, ხუთშაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_statistics_title_weekday_5" = "კარგი სამუშაო, პარასკევს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_statistics_title_weekday_6" = "კარგი სამუშაო, შაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_statistics_title_weekday_7" = "კარგი სამუშაო, კვირას თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
+"movement_weekly_stats" = "ამ კვირაში თქვენ შეაგროვეთ %@ მეტრი ენერგია";
 "outdoors_feedback_change_description" = "ჩემი წინადადებები არ არის კარგი? სთხოვეთ თქვენს მასწავლებელს, დაგეხმაროთ ტანსაცმლის შეცვლაში, რომელსაც მე გთავაზობთ.";
 "outdoors_feedback_change_title" = "აირჩიეთ რომელი ტანსაცმელი შესაფერისია ამინდის გარეთ";
 "outdoors_feedback_confirm" = "არ არის პრობლემა! გსურთ თუ არა თქვენ და თქვენს მასწავლებელს შეცვალოთ რა ტანსაცმელი უნდა ვაჩვენო?";
