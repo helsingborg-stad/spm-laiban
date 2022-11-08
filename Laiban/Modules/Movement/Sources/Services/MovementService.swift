@@ -47,11 +47,15 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
         )
         
         movementManager.delegate = self
+        self.movementManager.settings = data.settings
         
         $data.sink { [weak self] values in
             if let self = self {
-                self.movementManager.settings = self.data.settings
+                self.movementManager.settings = values.settings
                 self.movementManager.updateData(newData: values.movement)
+                Task {
+                    await self.save()
+                }
             }
             
         }.store(in: &cancellables)
@@ -78,6 +82,53 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
 
     public func getData() -> MovementModel {
         return data
+    }
+    
+    func saveActivity(activity:MovementActivity, callback: () -> Void) {
+        if let index = data.activities.firstIndex(where: {$0.id == activity.id} ) {
+            data.activities[index] = activity
+            Task {
+                await self.save()
+            }
+        } else {
+            addActivity(newActivity: activity, callback: callback)
+        }
+    }
+
+    func addActivity(newActivity:MovementActivity, callback: () -> Void) {
+        data.activities.append(newActivity)
+        Task {
+            await self.save()
+        }
+        callback()
+    }
+
+
+    func deleteActivity(activity:MovementActivity, callback: () -> Void){
+        if let index = data.activities.firstIndex(where: {$0.id == activity.id}){
+            data.activities.remove(at: index)
+            Task {
+                await self.save()
+            }
+            callback()
+        }
+    }
+    
+    func deleteActivity(at offsets: IndexSet) {
+        data.activities.remove(atOffsets: offsets)
+        Task {
+            await self.save()
+        }
+    }
+    
+    func toggleEnabled(activity: MovementActivity) {
+        if let index = data.activities.firstIndex(where: {$0.id == activity.id}) {
+            data.activities[index].isActive.toggle()
+        }
+
+        Task{
+            await self.save()
+        }
     }
     
     @MainActor public func save(movements: [Movement]) {

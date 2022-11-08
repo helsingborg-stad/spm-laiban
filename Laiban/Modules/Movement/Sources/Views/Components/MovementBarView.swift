@@ -17,39 +17,36 @@ struct MovementBarView : View {
 
     var movementPercentage:CGFloat {
         guard model.settings.maxMetersPerDay != 0 else { return 1 }
-        
         let percentage = Double(model.movementMeters) / Double(model.settings.maxMetersPerDay)
-
         return min(max(percentage, 0), 1)
     }
-    /*func animateChanges(deletion:Bool = false) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + (deletion ? 0.01 : 0.4)) {
-            withAnimation(.interpolatingSpring(mass: 0.2, stiffness: 2, damping: 0.8, initialVelocity: 2)) {
-
-            }
-        }
-    }*/
-
+    
+    func background(proxy: GeometryProxy, mask: Bool) -> some View {
+        RoundedRectangle(cornerRadius: mask ? 0 : proxy.size.width * 0.15)
+            .strokeBorder(Color("BarBorder",bundle: .module), lineWidth: mask ? 0 : lineWidth)
+            .background(RoundedRectangle(cornerRadius: proxy.size.width * 0.15).fill(Color("BarBackground",bundle:.module)))
+            .frame(width: mask ? proxy.size.width - lineWidth*2 : proxy.size.width, height: mask ? proxy.size.height : proxy.size.height+lineWidth)
+    }
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack {
-                RoundedRectangle(cornerRadius: proxy.size.width * 0.15)
-                    .strokeBorder(Color("BarBorder",bundle: .module),lineWidth: lineWidth)
-                    .background(RoundedRectangle(cornerRadius: proxy.size.width * 0.15).fill(Color("BarBackground",bundle:.module)))
-                    .frame(height: proxy.size.height+lineWidth*2)
+                background(proxy: proxy, mask: false)
                 VStack {
                     Spacer()
-                    RoundedRectangle(cornerRadius: proxy.size.width * 0.13)
+                    Rectangle()
                         .fill(Color("BarColor",bundle:.module))
-                        .frame(width: (proxy.size.width - lineWidth*2), height: animate ? proxy.size.height * movementPercentage : 0, alignment: .bottom)
-                        .offset(CGSize(width: 0, height: -lineWidth-(1*(movementPercentage))))
+                        .frame(width: proxy.size.width, height: animate ? (proxy.size.height + lineWidth * 2) * movementPercentage : 0, alignment: .bottom)
+                        .offset(CGSize(width: -lineWidth, height: -lineWidth+(1*(movementPercentage))))
                         
                         .onAppear {
                             withAnimation {
                                 self.animate = true
                             }
                         }
+                        
                 }
+                .mask(background(proxy: proxy, mask: true))
             }
         }
     }
@@ -75,7 +72,6 @@ extension MovementBarView {
         init(movementMeters: Int, settings: MovementSettings) {
             self.movementMeters = movementMeters
             self.settings = settings
-            // TODO: Fill table?
         }
         static func round(_ movementMinutes:Int) -> Int {
             let w = (Double(movementMinutes)/50).rounded(.toNearestOrEven) * 50

@@ -46,41 +46,54 @@ public struct MovementView: View {
     }
     var statistics: some View {
         GeometryReader { proxy in
-            VStack {
-                if manager.title != nil {
-                    Text(manager.title!.display)
-                        .font(properties.font, ofSize: .n)
-                        .multilineTextAlignment(.center)
+            
+            ZStack {
+                VStack{
+                    Spacer()
+                    Image("MovementBackground", bundle: .module)
+                        .resizable()
+                        .padding(.top, 250)
+                        .padding([.bottom, .leading, .trailing], 20)
                 }
-                Spacer()
-                MovementTableView(movementManager: service.movementManager, statistics: manager.weeklyStatistics) { scale, action in
-                    if scale.date > Date() {
-                        return
+                VStack {
+                    if manager.title != nil {
+                        Text(manager.title!.display)
+                            .font(properties.font, ofSize: .n)
+                            .multilineTextAlignment(.center)
                     }
-                    manager.selectedDate = scale.date
-                    if action == .didPressIcon {
-                        manager.setCurrentView(.activityChooser)
-                    } else {
-                        if service.movementManager.movement(for: scale.date) != nil {
-                            manager.setCurrentView(.dailyMovemnent)
+                    Spacer()
+                    MovementTableView(movementManager: service.movementManager, statistics: manager.weeklyStatistics) { scale, action in
+                        if scale.date > Date() {
+                            return
+                        }
+                        manager.selectedDate = scale.date
+                        if action == .didPressIcon {
+                            manager.setCurrentView(.activityChooser)
                         } else {
-                            manager.setCurrentView(.enterNumMoving)
+                            if service.movementManager.movement(for: scale.date) != nil {
+                                manager.setCurrentView(.dailyMovemnent)
+                            } else {
+                                manager.setCurrentView(.enterNumMoving)
+                            }
                         }
                     }
+                    .background(
+                        LinearGradient(gradient: Gradient(colors: [Color("TableBackgroundEnds",bundle:.module), Color("TableBackgroundMiddle",bundle:.module), Color("TableBackgroundEnds",bundle:.module)]), startPoint: .bottom, endPoint: .top)
+                    )
+                    .cornerRadius(20, corners: .allCorners)
+                    .padding([.top, .bottom], 100)
+                    //.frame(maxWidth:.infinity, maxHeight: .infinity)
                 }
-                .background(
-                    LinearGradient(gradient: Gradient(colors: [Color("TableBackgroundEnds",bundle:.module), Color("TableBackgroundMiddle",bundle:.module), Color("TableBackgroundEnds",bundle:.module)]), startPoint: .bottom, endPoint: .top)
-                )
-                .padding([.top, .bottom], 100)
+                .padding(.top, 10)
+                .frame(maxWidth:.infinity, maxHeight: .infinity)
+                .padding(proxy.size.width * 0.08)
+                
             }
-            .padding(.top, 10)
-            .frame(maxWidth:.infinity, maxHeight: .infinity)
-            .padding(proxy.size.width * 0.1)
-            .primaryContainerBackground()
-            .transition(.opacity.combined(with: .scale))
-            .onAppear {
-                AnalyticsService.shared.logPageView(self)
-        }
+                .primaryContainerBackground()
+                .transition(.opacity.combined(with: .scale))
+                .onAppear {
+                    AnalyticsService.shared.logPageView(self)
+                }
         }
     }
     var dailyStatistics: some View {

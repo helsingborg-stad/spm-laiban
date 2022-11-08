@@ -38,12 +38,12 @@ struct RegisterMovementView: View {
             manager.setCurrentView(.enterNumMoving)
         }
     }
-    
+
     var enterMovementTime: some View {
         VStack() {
             Text("⏱").padding(.bottom, 10)
                 .font(properties.font, ofSize: .xxl)
-            Text("Hur länge har ni rört på er?")
+            Text(assistant.string(forKey: "movement_register_how_long"))
                 .font(properties.font, ofSize: .l)
             Spacer()
             HStack(alignment:.bottom) {
@@ -57,7 +57,7 @@ struct RegisterMovementView: View {
             LBNumpadView(maxNum: manager.maxMinutesOfActivity, string: $numpadString).padding(30)
             Spacer()
             Button(action: evalNumTime, label: {
-                Text("Nästa")
+                Text(assistant.string(forKey: "movement_next"))
                     .padding()
                     .frame(width: properties.windowRatio * 100 * 5)
                     .font(properties.font, ofSize: .l,color:.white)
@@ -79,7 +79,7 @@ struct RegisterMovementView: View {
         VStack() {
             Text("👩‍👧‍👦👨‍👧‍👦").padding(.bottom, 10)
                 .font(properties.font, ofSize: .xxl)
-            Text("Hur många var ni som rörde på er?")
+            Text(assistant.string(forKey: "movement_register_how_many"))
                 .font(properties.font, ofSize: .l)
             Spacer()
             HStack(alignment:.bottom) {
@@ -93,7 +93,7 @@ struct RegisterMovementView: View {
             LBNumpadView(maxNum: manager.maxNumberOfPeople, string: $numpadString).padding(30)
             Spacer()
             Button(action: evalNumMoving, label: {
-                Text("Registrera")
+                Text(assistant.string(forKey: "movement_register"))
                     .padding()
                     .frame(width: properties.windowRatio * 100 * 5)
                     .font(properties.font, ofSize: .l,color:.white)

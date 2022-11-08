@@ -45,42 +45,7 @@ public class MovementManager : ObservableObject {
         }
         return Int(Double(totalMinutes * settings.stepsPerMinute) * settings.stepLength)
     }
-//    public func getWeeklyAverage(for date:Date = Date()) -> Double {
-//        guard var start = date.startOfWeek else {
-//            return 0
-//        }
-//        var minutes:Int = 0
-//        var num = 0
-//        for _ in 0..<5 {
-//            if let w = array.first { $0.date == start.laibanFormattedString }?.minutes {
-//                num += 1
-//                minutes += w
-//            }
-//            start = start.tomorrow!
-//        }
-//        if num > 0 {
-//            return Double(minutes)/Double(num)
-//        }
-//        return Double(minutes)
-//    }
-//    public func getWeeklyHigh(for date:Date = Date()) -> Int {
-//        guard var start = date.startOfWeek else {
-//            return 0
-//        }
-//        var most:Int = 0
-//        for _ in 0..<5 {
-//            if let w = movement(for: date) {
-//                let total = w.map { $0.minutes }.reduce(0, +)
-//                if total > most {
-//                    most = total
-//                }
-//            }
-//            start = start.tomorrow!
-//        }
-//
-//        return most
-//    }
-    
+
     public func movement(for date:Date = Date()) -> [Movement]? {
         return array.filter { $0.date == date.laibanFormattedString }
     }

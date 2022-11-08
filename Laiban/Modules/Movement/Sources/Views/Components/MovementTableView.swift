@@ -18,7 +18,7 @@ extension Animation {
 
 struct MovementTableView: View {
     enum Action {
-        case didPressScale
+        case didPressBar
         case didPressIcon
     }
     typealias UserAction = (MovementTableView.ViewModel, Action) -> Void
@@ -51,7 +51,7 @@ struct MovementTableView: View {
             HStack(spacing: 20) {
                 ForEach(statistics) { s in
                     MovementBarView(model: s.model).frame(maxWidth:.infinity).onTapGesture {
-                        userAction?(s,.didPressScale)
+                        userAction?(s,.didPressBar)
                     }.animation(.ripple(index: statistics.firstIndex {$0.id == s.id} ?? 1))
                 }
             }.frame(maxHeight:.infinity,alignment: .bottom).padding([.leading,.trailing])
@@ -62,7 +62,8 @@ struct MovementTableView: View {
                             .font(properties.font, ofSize: .xs)
                             .lineLimit(1)
                             .frame(maxWidth:.infinity)
-                        let size:CGFloat = horizontalSizeClass == .regular ? 50 : 40
+                            .padding([.leading,.trailing],0)
+                        let size:CGFloat = horizontalSizeClass == .regular ? (LBDevice.isIpad ? 40 : 30) : 30
                         let visible = s.date <= Date().startOfDay!
                         let color = Color.black
                         Button {

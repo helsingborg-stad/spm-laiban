@@ -46,27 +46,32 @@
         "id": "1",
         "colorString": "RimColorClock",
         "title": "Springa",
-        "emoji": "🏃‍♀️"
+        "emoji": "🏃‍♀️",
+        "isActive": true
     },{
         "id": "2",
         "colorString": "RimColorInstagram",
         "title": "Klättra",
-        "emoji": "🧗"
+        "emoji": "🧗",
+        "isActive": true
     },{
         "id": "3",
         "colorString": "RimColorActivities",
         "title": "Cykla",
-        "emoji": "🚴"
+        "emoji": "🚴",
+        "isActive": true
     },{
         "id": "4",
         "colorString": "RimColorInstagram",
         "title": "Jogga",
-        "emoji": "🚶"
+        "emoji": "🚶",
+        "isActive": true
     },{
         "id": "5",
         "colorString": "RimColorWeather",
         "title": "Dansa",
-        "emoji": "💃"
+        "emoji": "💃",
+        "isActive": true
     }],
     "settings": {
       "id": "1",

@@ -40,7 +40,6 @@ struct MovementActivitiesView_Previews: PreviewProvider {
     
     static var previews: some View {
         MovementActivitiyView(activity: activity, action: {action in
-            
         }).attachPreviewEnvironmentObjects()
     }
 }

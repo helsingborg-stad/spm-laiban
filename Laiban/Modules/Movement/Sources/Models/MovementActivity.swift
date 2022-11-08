@@ -8,12 +8,13 @@
 import Foundation
 import SwiftUI
 
-public struct MovementActivity: Codable, Identifiable, Equatable {
-    public let id: String
-    let colorString: String
-    let title: String
-    let emoji: String
-    let localizationKey: String?
+public struct MovementActivity: Codable, Identifiable, Equatable, Hashable {
+    public var id: String
+    var colorString: String
+    var title: String
+    var emoji: String
+    var isActive: Bool = true
+    var localizationKey: String?
 }
 
 extension MovementActivity {
