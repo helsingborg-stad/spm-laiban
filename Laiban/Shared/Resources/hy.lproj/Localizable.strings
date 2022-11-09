@@ -155,6 +155,7 @@
 "garment_rainPants" = "Անձրեւային վարտիքներ";
 "garment_rainPants_description" = "Անձրեւային վարտիքներ";
 "garment_shoes" = "Կոշիկ";
+"garment_shoes_description" = "Կոշիկ";
 "garment_sweater" = "Տաք սվիտեր";
 "garment_sweater_description" = "Տաք սվիտեր";
 "garment_winterBoots" = "Կոշիկ";
@@ -186,8 +187,12 @@
 "message_no_messages" = "Այս պահին հաղորդագրություններ չունենք:";
 "movement_choose_activity" = "— Ի՞նչ գործունեություն եք ծավալել:";
 "movement_last_week" = "Անցած շաբաթ դուք ընդհանուր %@ մետր էներգիա եք հավաքել, իսկ այս շաբաթ %@ մետր";
+"movement_next" = "Հաջորդը";
 "movement_nothing" = "Այս շաբաթ դուք ոչ մի շարժում չեք գրանցել:";
-"movement_statistics_title_today" = "Լավ աշխատանք, դու %@ քայլեր ես ամբողջացրել, դա %@ մետր է:";
+"movement_register" = "Գրանցվել";
+"movement_register_how_long" = "Քանի՞ րոպեով եք կատարել վարժությունը:";
+"movement_register_how_many" = "Ձեզանից քանի՞սն են մասնակցել միջոցառմանը:";
+"movement_statistics_title_today" = "Լավ աշխատանք, այսօր %@ քայլեր եք հավաքել, դա %@ մետր է:";
 "movement_statistics_title_weekday_1" = "Լավ աշխատանք, երկուշաբթի օրը %@ քայլերը ամբողջությամբ, դա %@ մետր";
 "movement_statistics_title_weekday_2" = "Լավ գործ, երեքշաբթի օրը %@ քայլեր ես ամբողջացրել, դա %@ մետր";
 "movement_statistics_title_weekday_3" = "Լավ աշխատանք, չորեքշաբթի օրը %@ քայլեր ես արել, դա %@ մետր";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "Լավ գործ, ուրբաթ օրը %@ քայլերը ամբողջությամբ, դա %@ մետր";
 "movement_statistics_title_weekday_6" = "Լավ աշխատանք, շաբաթ օրը դու %@ քայլեր ես , դա %@ մետր";
 "movement_statistics_title_weekday_7" = "Լավ աշխատանք, կիրակի օրը դու %@ քայլեր ես ամբողջացրել, դա %@ մետր";
+"movement_statistics_title_yesterday" = "Լավ աշխատանք, երեկ %@ քայլերն ամբողջությամբ կատարեցիք, դա %@ մետր է:";
 "movement_weekly_stats" = "Դուք այս շաբաթ ընդհանուր %@ մետր էներգիա եք հավաքել";
 "outdoors_feedback_change_description" = "Արդյո՞ք իմ առաջարկները լավ չեն։ Խնդրեք ձեր ուսուցչին օգնել ձեզ փոխել իմ առաջարկած հագուստը:";
 "outdoors_feedback_change_title" = "Ընտրեք, թե որ հագուստն է հարմար դրսում եղանակին";

@@ -155,6 +155,7 @@
 "garment_rainPants" = "بارش پتلون";
 "garment_rainPants_description" = "بارش پتلون";
 "garment_shoes" = "جوتے";
+"garment_shoes_description" = "جوتے";
 "garment_sweater" = "گرم سویٹر";
 "garment_sweater_description" = "گرم سویٹر";
 "garment_winterBoots" = "جوتے";
@@ -186,8 +187,12 @@
 "message_no_messages" = "ہمارے پاس ابھی کوئی پیغام نہیں ہے۔";
 "movement_choose_activity" = "آپ نے کیا سرگرمی کی ہے؟";
 "movement_last_week" = "گزشتہ ہفتے آپ نے توانائی میں کل %@ میٹر جمع کیے، اور اس ہفتے %@ میٹر";
+"movement_next" = "اگلا";
 "movement_nothing" = "اس ہفتے اب تک آپ نے کسی بھی تحریک کو رجسٹر نہیں کیا ہے.";
-"movement_statistics_title_today" = "اچھا کام، آپ نے %@ اقدامات کو کل کیا ہے، یہ %@ میٹر ہے.";
+"movement_register" = "رجسٹر";
+"movement_register_how_long" = "آپ نے کتنے منٹ کے لئے سرگرمی کی؟";
+"movement_register_how_many" = "آپ میں سے کتنے لوگوں نے اس سرگرمی میں حصہ لیا؟";
+"movement_statistics_title_today" = "اچھا کام، آج آپ نے %@ قدم جمع کیے ہیں، یہ %@ میٹر ہے.";
 "movement_statistics_title_weekday_1" = "اچھا کام، پیر کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
 "movement_statistics_title_weekday_2" = "اچھا کام، منگل کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
 "movement_statistics_title_weekday_3" = "اچھا کام، بدھ کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "اچھا کام، جمعہ کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
 "movement_statistics_title_weekday_6" = "اچھا کام، ہفتے کے روز آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
 "movement_statistics_title_weekday_7" = "اچھا کام، اتوار کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
+"movement_statistics_title_yesterday" = "اچھا کام، کل آپ نے %@ اقدامات کو کل کیا، یہ %@ میٹر ہے.";
 "movement_weekly_stats" = "آپ نے اس ہفتے توانائی میں مجموعی طور پر %@ میٹر جمع کیے ہیں";
 "outdoors_feedback_change_description" = "کیا میری تجاویز اچھی نہیں ہیں؟ اپنے استاد سے کہیں کہ وہ میرے تجویز مطابق کپڑے تبدیل کرنے میں آپ کی مدد کریں۔";
 "outdoors_feedback_change_title" = "انتخاب کریں کہ کون سے کپڑے باہر کے موسم کے لئے موزوں ہیں";

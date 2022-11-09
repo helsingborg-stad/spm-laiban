@@ -116,10 +116,10 @@ public struct MovementView: View {
                 }
                 Spacer()
 
-                let columns = columns(items: service.data.activities.count)
+                let columns = columns(items: service.data.activities.filter {$0.isActive}.count)
                 ScrollView {
-                    LBGridView(items: service.data.activities.count, columns: columns, horizontalSpacing: self.padding(proxy), verticalAlignment: .top) { index in
-                        MovementActivitiyView(activity: service.data.activities[index]) { activity in
+                    LBGridView(items: service.data.activities.filter {$0.isActive}.count, columns: columns, horizontalSpacing: self.padding(proxy), verticalAlignment: .top) { index in
+                        MovementActivitiyView(activity: service.data.activities.filter {$0.isActive}[index]) { activity in
                             AnalyticsService.shared.log(AnalyticsService.CustomEventType.ButtonPressed.rawValue, properties: ["Button":"MovementActivity","Activity":activity.title])
                             if let toSpeak = activity.localizationKey {
                                 assistant.speak([toSpeak])
@@ -139,7 +139,7 @@ public struct MovementView: View {
             .frame(maxWidth:.infinity, maxHeight: .infinity)
             .padding(0)
             .primaryContainerBackground()
-            .parentalGate(properties: properties)
+            .parentalGate(properties: properties) // , status: $manager.parentalGateStatus
             .transition(.opacity.combined(with: .scale))
         }
     }

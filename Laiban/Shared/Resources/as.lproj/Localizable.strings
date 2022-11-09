@@ -155,6 +155,7 @@
 "garment_rainPants" = "ৰেইন পেণ্ট";
 "garment_rainPants_description" = "ৰেইন পেণ্ট";
 "garment_shoes" = "জোতা";
+"garment_shoes_description" = "জোতা";
 "garment_sweater" = "গৰম চুৱেটাৰ";
 "garment_sweater_description" = "গৰম চুৱেটাৰ";
 "garment_winterBoots" = "জোতা";
@@ -186,8 +187,12 @@
 "message_no_messages" = "আমাৰ ওচৰত এতিয়া কোনো বাৰ্তা নাই।";
 "movement_choose_activity" = "আপুনি কি কাৰ্যকলাপ কৰিছে?";
 "movement_last_week" = "যোৱা সপ্তাহত আপুনি মুঠ %@ মিটাৰ শক্তি সংগ্ৰহ কৰিছিল, আৰু এই সপ্তাহত <span translate='no'>string</span> মিটাৰ";
+"movement_next" = "পৰৱৰ্তী";
 "movement_nothing" = "এই সপ্তাহত এতিয়ালৈকে আপুনি কোনো আন্দোলন পঞ্জীয়ন কৰা নাই।";
-"movement_statistics_title_today" = "ভাল কাম, আপুনি মুঠ %@ পদক্ষেপ লৈছে, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ।";
+"movement_register" = "পঞ্জীয়ন কৰক";
+"movement_register_how_long" = "আপুনি কিমান মিনিটৰ বাবে কাৰ্যকলাপটো কৰিছিল?";
+"movement_register_how_many" = "আপোনালোকৰ কিমানজনে এই কাৰ্যকলাপত অংশগ্ৰহণ কৰিছিল?";
+"movement_statistics_title_today" = "ভাল কাম, আজি আপুনি %@ পদক্ষেপ সংগ্ৰহ কৰিছে, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ।";
 "movement_statistics_title_weekday_1" = "ভাল কাম, সোমবাৰে আপুনি %@ পদক্ষেপমুঠ কৰিছিল, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ";
 "movement_statistics_title_weekday_2" = "ভাল কাম, মঙলবাৰে আপুনি %@ পদক্ষেপমুঠ কৰিছিল, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ";
 "movement_statistics_title_weekday_3" = "ভাল কাম, বুধবাৰে আপুনি %@ পদক্ষেপ মুঠ কৰিছে, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "ভাল কাম, শুক্ৰবাৰে আপুনি %@ পদক্ষেপমুঠ কৰিছিল, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ";
 "movement_statistics_title_weekday_6" = "ভাল কাম, শনিবাৰে আপুনি %@ পদক্ষেপমুঠ কৰিছিল, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ";
 "movement_statistics_title_weekday_7" = "ভাল কাম, দেওবাৰে আপুনি %@ পদক্ষেপবোৰ মুঠ কৰিছিল, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ";
+"movement_statistics_title_yesterday" = "ভাল কাম, কালি আপুনি %@ পদক্ষেপমুঠ কৰিছিল, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ।";
 "movement_weekly_stats" = "আপুনি এই সপ্তাহত মুঠ %@ মিটাৰ শক্তি সংগ্ৰহ কৰিছে";
 "outdoors_feedback_change_description" = "মোৰ পৰামৰ্শবোৰ ভাল নহয় নেকি? মই পৰামৰ্শ দিয়া কাপোৰবোৰ সলনি কৰাত আপোনাক সহায় কৰিবলৈ আপোনাৰ শিক্ষকক কওঁক।";
 "outdoors_feedback_change_title" = "বাহিৰৰ বতৰৰ বাবে কোনবোৰ কাপোৰ উপযুক্ত বাছনি কৰক";

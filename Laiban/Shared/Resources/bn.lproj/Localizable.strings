@@ -155,6 +155,7 @@
 "garment_rainPants" = "বৃষ্টি প্যান্ট";
 "garment_rainPants_description" = "বৃষ্টি প্যান্ট";
 "garment_shoes" = "জুতা";
+"garment_shoes_description" = "জুতা";
 "garment_sweater" = "গরম সোয়েটার";
 "garment_sweater_description" = "গরম সোয়েটার";
 "garment_winterBoots" = "জুতা";
@@ -186,8 +187,12 @@
 "message_no_messages" = "এই মুহূর্তে আমাদের কাছে কোনো বার্তা নেই।";
 "movement_choose_activity" = "আপনি কি ধরনের কাজ করেছেন?";
 "movement_last_week" = "গত সপ্তাহে আপনি মোট %@ মিটার শক্তি সংগ্রহ করেছেন, এবং এই সপ্তাহে মিটার <span translate='no'>string</span>";
+"movement_next" = "পরবর্তী";
 "movement_nothing" = "এই সপ্তাহে এখন পর্যন্ত আপনি কোনও আন্দোলন নথিভুক্ত করেননি।";
-"movement_statistics_title_today" = "ভাল কাজ, আপনি %@ ধাপ মোট করেছেন, এটি <span translate='no'>string</span> মিটার।";
+"movement_register" = "নিবন্ধন";
+"movement_register_how_long" = "আপনি কত মিনিটের জন্য এই কাজটি করেছেন?";
+"movement_register_how_many" = "আপনাদের মধ্যে কতজন এই কার্যক্রমে অংশ নিয়েছেন?";
+"movement_statistics_title_today" = "ভাল কাজ, আজ আপনি %@ পদক্ষেপ সংগ্রহ করেছেন, এটি <span translate='no'>string</span> মিটার।";
 "movement_statistics_title_weekday_1" = "ভাল কাজ, সোমবার আপনি %@ ধাপ মোট, যে <span translate='no'>string</span> মিটার";
 "movement_statistics_title_weekday_2" = "ভাল কাজ, মঙ্গলবার আপনি %@ ধাপ মোট, যে <span translate='no'>string</span> মিটার";
 "movement_statistics_title_weekday_3" = "ভাল কাজ, বুধবার আপনি %@ ধাপ মোট, যে <span translate='no'>string</span> মিটার";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "ভাল কাজ, শুক্রবারে আপনি %@ ধাপগুলি মোট করেছেন, এটি <span translate='no'>string</span> মিটার";
 "movement_statistics_title_weekday_6" = "ভাল কাজ, শনিবার আপনি %@ ধাপগুলি মোট করেছেন, এটি <span translate='no'>string</span> মিটার";
 "movement_statistics_title_weekday_7" = "ভাল কাজ, রবিবার আপনি %@ ধাপগুলি মোট করেছেন, এটি <span translate='no'>string</span> মিটার";
+"movement_statistics_title_yesterday" = "ভাল কাজ, গতকাল আপনি %@ ধাপ মোট, যে <span translate='no'>string</span> মিটার।";
 "movement_weekly_stats" = "আপনি এই সপ্তাহে মোট %@ মিটার শক্তি সংগ্রহ করেছেন";
 "outdoors_feedback_change_description" = "আমার পরামর্শগুলো কি ভালো নয়? আপনার শিক্ষককে আমার প্রস্তাবিত পোশাক পরিবর্তন করতে সহায়তা করতে বলুন।";
 "outdoors_feedback_change_title" = "বাইরের আবহাওয়ার জন্য কোন পোশাকগুলি উপযুক্ত তা চয়ন করুন";

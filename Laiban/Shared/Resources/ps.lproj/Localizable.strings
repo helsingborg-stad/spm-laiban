@@ -155,6 +155,7 @@
 "garment_rainPants" = "د باران پتلون";
 "garment_rainPants_description" = "د باران پتلون";
 "garment_shoes" = "بوټونه";
+"garment_shoes_description" = "بوټونه";
 "garment_sweater" = "تاوده سویټر";
 "garment_sweater_description" = "تاوده سویټر";
 "garment_winterBoots" = "بوټونه";
@@ -186,8 +187,12 @@
 "message_no_messages" = "موږ اوس هیڅ پیغام نه لرو.";
 "movement_choose_activity" = "تاسو څه فعالیت کړی دی؟";
 "movement_last_week" = "تیره اونۍ تاسو د انرژۍ په برخه کې ټول ټال %@ ، او په دې اونۍ کې %@ متره";
+"movement_next" = "وروسته";
 "movement_nothing" = "تر اوسه په دې اونۍ کې تاسو هیڅ حرکت نه دی ثبت کړی.";
-"movement_statistics_title_today" = "ښه دنده، تاسو ټول %@ ګامونه ترلاسه کړی دی، دا %@ دی.";
+"movement_register" = "راجستر";
+"movement_register_how_long" = "د څو دقیقو لپاره تاسو فعالیت ترسره کړ؟";
+"movement_register_how_many" = "تاسو څو کسانو په دې فعالیت کې برخه اخستې وه؟";
+"movement_statistics_title_today" = "ښه دنده، نن تاسو %@ راټول کړی دی، دا %@ دی.";
 "movement_statistics_title_weekday_1" = "ښه دنده ، د دوشنبې په ورځ تاسو %@ ګامونه ټول کړل ، دا %@ متره دی";
 "movement_statistics_title_weekday_2" = "ښه دنده، تاسو د سه شنبې په ورځ %@ ګامونه ټول کړل ، دا %@ متره دی";
 "movement_statistics_title_weekday_3" = "ښه دنده، د چهارشنبې په ورځ تاسو %@ ګامونه جمع کړل ، دا %@ متره ده";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "ښه دنده، د جمعې په ورځ تاسو ټول %@ ګامونه ، دا %@ متره دی";
 "movement_statistics_title_weekday_6" = "ښه دنده ، د شنبې په ورځ تاسو ټول %@ ګامونه ، دا %@ متره دی";
 "movement_statistics_title_weekday_7" = "ښه دنده، د اتوار په ورځ تاسو ټول %@ ګامونه ، دا %@ متره دی";
+"movement_statistics_title_yesterday" = "ښه دنده، پرون تاسو ټول %@ ګامونه ترلاسه کړل، دا %@ دی.";
 "movement_weekly_stats" = "تاسو په دې اونۍ کې د %@ متره انرژی کې ټول ټال راټول کړی دی";
 "outdoors_feedback_change_description" = "ایا زما وړاندیزونه ښه نه دی؟ له خپل ښوونکی څخه وغواړئ چې تاسو سره مرسته وکړی چې هغه جامې بدلې کړی چې زه یې وړاندیز کوم.";
 "outdoors_feedback_change_title" = "غوره کړئ چې د بهر د هوا لپاره کومې جامې مناسبې دی";

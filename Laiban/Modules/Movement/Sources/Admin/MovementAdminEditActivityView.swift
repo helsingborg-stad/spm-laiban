@@ -40,7 +40,7 @@ struct MovementTempActivity {
     }
 
     func save(){
-        service.saveActivity(activity: currentActivity, callback: {})
+        service.saveActivity(activity: currentActivity)
     }
 
     init(service:MovementService, activity:MovementActivity){
@@ -132,13 +132,15 @@ struct MovementAdminEditActivityView: View {
                 ToggleActivityIsActiveView
                 DeleteActivityView
 
-            }.navigationBarTitle(Text(isEditingMode ? "Spara aktivitet" : "Lägg till ny aktivitet"))
+            }.navigationBarTitle(Text(isEditingMode ? "Spara aktivitet" : "Lägg till aktivitet"))
                 .listStyle(GroupedListStyle())
                 .navigationBarItems(trailing:
                 Button(action: {
 
                     service.saveActivity(activity: self.workingActivity.currentActivity, callback: {
-                        presentationMode.wrappedValue.dismiss()
+                        DispatchQueue.main.async {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     })
 
                 }, label: {
@@ -151,7 +153,9 @@ struct MovementAdminEditActivityView: View {
                     message: Text("Vill du fortsätta?"),
                     primaryButton: .destructive(Text("Ja, radera aktivitet.")) {
                         service.deleteActivity(activity: self.activity, callback: {
-                            presentationMode.wrappedValue.dismiss()
+                            DispatchQueue.main.async {
+                                presentationMode.wrappedValue.dismiss()
+                            }
                         })
                     },
                     secondaryButton: .cancel(Text("Avbryt"))

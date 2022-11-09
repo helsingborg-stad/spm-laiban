@@ -155,6 +155,7 @@
 "garment_rainPants" = "ስረን ዝናም";
 "garment_rainPants_description" = "ስረን ዝናም";
 "garment_shoes" = "ጫማ";
+"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ምዉቕ ስረ";
 "garment_sweater_description" = "ምዉቕ ስረ";
 "garment_winterBoots" = "ጫማ";
@@ -186,8 +187,12 @@
 "message_no_messages" = "ኣብዚ እዋን እዚ ዋላ ሓንቲ መልእኽቲ የብልናን።";
 "movement_choose_activity" = "እንታይ ንጥፈት ኢኻ ፈጺምካ ?";
 "movement_last_week" = "ዝሓለፈ ሰሙን ብጠቕላላ %@ ሜተር ጸዓት ኣኪብካ ኢኻ ኣብዛ ሰሙን እዚኣ ኸኣ ሜትሮ %@";
+"movement_next" = "ቀጺሉ";
 "movement_nothing" = "ክሳዕ እዛ ሰሙን እዚኣ ዝዀነ ይኹን ምንቅስቓስ ኣይተመዝገብኩምን።";
-"movement_statistics_title_today" = "ጽቡቕ ስራሕ %@ ስጕምትታት ወሲድካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ።";
+"movement_register" = "መዝገብ";
+"movement_register_how_long" = "ንኽንደይ ደቓይቕ ኢኻ ነዚ ንጥፈት እዚ ፈጺምካዮ?";
+"movement_register_how_many" = "ክንደይ ካባኻትኩም ኢኹም ኣብቲ ንጥፈት ተኻፊልኩም ?";
+"movement_statistics_title_today" = "ጽቡቕ ስራሕ ሎሚ %@ ስጕምትታት ኣኪብካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ።";
 "movement_statistics_title_weekday_1" = "ጽቡቕ ስራሕ ሰኑይ %@ ስጕምትታት ወሲድካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ";
 "movement_statistics_title_weekday_2" = "ጽቡቕ ስራሕ ሰሉስ %@ ስጕምትታት ወሲድካ እዚ %@ ሜተር እዩ";
 "movement_statistics_title_weekday_3" = "ጽቡቕ ስራሕ ረቡዕ %@ ስጕምትታት ወሲድካ፣ እዚ ኸኣ %@ ሜተር እዩ";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "ጽቡቕ ስራሕ ዓርቢ %@ ስጕምትታት ወሲድካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ";
 "movement_statistics_title_weekday_6" = "ጽቡቕ ስራሕ ቀዳም %@ ስጕምትታት ወሲድካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ";
 "movement_statistics_title_weekday_7" = "ጽቡቕ ስራሕ ሰንበት %@ ስጕምትታት ወሲድካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ";
+"movement_statistics_title_yesterday" = "ጽቡቕ ስራሕ ትማሊ %@ ስጕምትታት ወሲድካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ።";
 "movement_weekly_stats" = "ኣብዛ ሰሙን እዚኣ ብድምር %@ ሜተር ጸዓት ኣኪብካ ኢኻ";
 "outdoors_feedback_change_description" = "እቲ ዘቕረብክዎ ርእይቶ ጽቡቕዶ ኸይዀነ ? ነቲ ዝሓተትክዎ ኽዳውንቲ ንኽትቅይር ኪሕግዘካ ንመምህርካ ሕተቶ ።";
 "outdoors_feedback_change_title" = "ኣብ ደገ ንዘሎ ዅነታት ኣየር ዚምሽእ ኣየናይ ክዳውንቲ ምረጽ";

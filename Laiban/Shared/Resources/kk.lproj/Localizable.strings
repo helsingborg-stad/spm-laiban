@@ -155,6 +155,7 @@
 "garment_rainPants" = "Жаңбыр шалбары";
 "garment_rainPants_description" = "Жаңбыр шалбары";
 "garment_shoes" = "Аяқ киім";
+"garment_shoes_description" = "Аяқ киім";
 "garment_sweater" = "Жылы свитер";
 "garment_sweater_description" = "Жылы свитер";
 "garment_winterBoots" = "Аяқ киім";
@@ -186,8 +187,12 @@
 "message_no_messages" = "Бізде қазір ешқандай хабар жоқ.";
 "movement_choose_activity" = "Сіз қандай қызмет атқардыңыз?";
 "movement_last_week" = "Өткен аптада сіз барлығы %@ метр энергия жинадыңыз, ал осы аптада %@ метр";
+"movement_next" = "Келесі";
 "movement_nothing" = "Осы аптаға дейін сіз ешқандай қозғалысты тіркемегенсіз.";
-"movement_statistics_title_today" = "Жақсы жұмыс, сіздер %@ қадамдар жасадыңыз, яғни %@ метр.";
+"movement_register" = "Регистр";
+"movement_register_how_long" = "Сіз әрекетті қанша минут жасадыңыз?";
+"movement_register_how_many" = "Сіз қанша іс-шараға қатыстыңыз?";
+"movement_statistics_title_today" = "Жақсы жұмыс, бүгін сіздер %@ қадамдар жинадыңыздар, яғни %@ метр.";
 "movement_statistics_title_weekday_1" = "Жақсы жұмыс, дүйсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
 "movement_statistics_title_weekday_2" = "Жақсы жұмыс, сейсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
 "movement_statistics_title_weekday_3" = "Жақсы жұмыс, сәрсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "Жақсы жұмыс, жұма күні сіз %@ қадам жасадыңыз, яғни %@ метр";
 "movement_statistics_title_weekday_6" = "Жақсы жұмыс, сенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
 "movement_statistics_title_weekday_7" = "Жақсы жұмыс, жексенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
+"movement_statistics_title_yesterday" = "Жақсы жұмыс, кеше сіз %@ қадам жасадыңыз, яғни %@ метр.";
 "movement_weekly_stats" = "Сіз осы аптада барлығы %@ метр энергия жинадыңыз";
 "outdoors_feedback_change_description" = "Менің ұсыныстарым жақсы емес пе? Ұстазыңыздан мен ұсынып отырған киімді өзгертуге көмектесуіңізді сұраңыз.";
 "outdoors_feedback_change_title" = "Сыртындағы ауа райына қандай киім жарамды екенін таңдау";

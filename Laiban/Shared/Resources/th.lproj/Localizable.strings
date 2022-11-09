@@ -155,6 +155,7 @@
 "garment_rainPants" = "กางเกงกันฝน";
 "garment_rainPants_description" = "กางเกงกันฝน";
 "garment_shoes" = "รองเท้า";
+"garment_shoes_description" = "รองเท้า";
 "garment_sweater" = "เสื้อสเวตเตอร์อุ่นๆ";
 "garment_sweater_description" = "เสื้อกันหนาวอุ่น";
 "garment_winterBoots" = "รองเท้า";
@@ -186,8 +187,12 @@
 "message_no_messages" = "เราไม่มีข้อความใด ๆ ในขณะนี้";
 "movement_choose_activity" = "ท่านได้ทํากิจกรรมอะไรมาบ้าง";
 "movement_last_week" = "สัปดาห์ที่แล้วคุณรวบรวมพลังงานทั้งหมด %@ เมตรและสัปดาห์นี้ <span translate='no'>string</span> เมตร";
+"movement_next" = "ต่อไป";
 "movement_nothing" = "จนถึงสัปดาห์นี้คุณยังไม่ได้ลงทะเบียนการเคลื่อนไหวใด ๆ";
-"movement_statistics_title_today" = "งานที่ดีคุณมีทั้งหมด %@ ขั้นตอนนั่นคือ <span translate='no'>string</span> เมตร";
+"movement_register" = "ลงทะเบียน";
+"movement_register_how_long" = "คุณทํากิจกรรมนี้กี่นาที?";
+"movement_register_how_many" = "มีกี่คนที่เข้าร่วมกิจกรรมนี้?";
+"movement_statistics_title_today" = "งานที่ดีวันนี้คุณได้รวบรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
 "movement_statistics_title_weekday_1" = "งานที่ดีในวันจันทร์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
 "movement_statistics_title_weekday_2" = "งานที่ดีในวันอังคารที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
 "movement_statistics_title_weekday_3" = "งานที่ดีในวันพุธที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "งานที่ดีในวันศุกร์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
 "movement_statistics_title_weekday_6" = "งานที่ดีในวันเสาร์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
 "movement_statistics_title_weekday_7" = "งานที่ดีในวันอาทิตย์ที่คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
+"movement_statistics_title_yesterday" = "งานที่ดีเมื่อวานนี้คุณรวม %@ ขั้นตอนที่ <span translate='no'>string</span> เมตร";
 "movement_weekly_stats" = "คุณได้รวบรวมพลังงานทั้งหมด %@ เมตรในสัปดาห์นี้";
 "outdoors_feedback_change_description" = "คําแนะนําของฉันไม่ดีหรือไม่? ขอให้ครูของคุณช่วยท่านเปลี่ยนเสื้อผ้าที่ผมแนะนํา";
 "outdoors_feedback_change_title" = "เลือกเสื้อผ้าที่เหมาะกับสภาพอากาศภายนอก";

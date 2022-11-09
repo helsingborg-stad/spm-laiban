@@ -155,6 +155,7 @@
 "garment_rainPants" = "የዝናብ ሱሪ";
 "garment_rainPants_description" = "የዝናብ ሱሪ";
 "garment_shoes" = "ጫማ";
+"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ሞቅ ያለ ሹራብ";
 "garment_sweater_description" = "ሞቅ ያለ ሹራብ";
 "garment_winterBoots" = "ጫማ";
@@ -186,8 +187,12 @@
 "message_no_messages" = "አሁን ምንም መልዕክት የለንም።";
 "movement_choose_activity" = "ምን ዓይነት እንቅስቃሴ አድርገሃል?";
 "movement_last_week" = "ባለፈው ሳምንት %@ ሜትር የኃይል መጠን አሰባስባችኋል፤ በዚህ ሳምንት %@ ሜትር";
+"movement_next" = "ቀጣይ";
 "movement_nothing" = "እስከዚህ ሳምንት ድረስ ምንም ዓይነት እንቅስቃሴ አልመዘገብክም።";
-"movement_statistics_title_today" = "መልካም ሥራ, %@ ደረጃዎች, ያ %@ ሜትር ነው.";
+"movement_register" = "ይመዝገቡ";
+"movement_register_how_long" = "እንቅስቃሴውን ለምን ያህል ደቂቃ አከናወናችሁ?";
+"movement_register_how_many" = "በዚህ እንቅስቃሴ ምን ያህል ተሳትፎ አድርገሃል?";
+"movement_statistics_title_today" = "መልካም ሥራ, ዛሬ %@ እርምጃዎች ሰብስበሃል, ያ %@ ሜትር ነው.";
 "movement_statistics_title_weekday_1" = "መልካም ሥራ, ሰኞ ላይ %@ ደረጃዎች, ያ %@ ሜትር";
 "movement_statistics_title_weekday_2" = "መልካም ሥራ, ማክሰኞ ላይ %@ ደረጃዎች, ያ %@ ሜትር";
 "movement_statistics_title_weekday_3" = "ጥሩ ሥራ, ረቡዕ ላይ %@ ደረጃዎች, ያ %@ ሜትር ነው";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "ጥሩ ሥራ, ዓርብ ላይ %@ ደረጃዎች, ይህ %@ ሜትር ነው";
 "movement_statistics_title_weekday_6" = "ጥሩ ሥራ, ቅዳሜ %@ ደረጃዎች, ያ %@ ሜትር";
 "movement_statistics_title_weekday_7" = "መልካም ሥራ, እሁድ ላይ %@ ደረጃዎች, ያ %@ ሜትር ነው";
+"movement_statistics_title_yesterday" = "መልካም ሥራ, ትናንት %@ ደረጃዎች, ያ %@ ሜትር.";
 "movement_weekly_stats" = "በዚህ ሳምንት %@ ሜትር የኃይል መጠን አሰባስባችኋል";
 "outdoors_feedback_change_description" = "የምለው ሐሳብ ጥሩ አይደለም? አስተማሪህ የምሰጠውን ልብስ እንድትቀይር እንዲረዳህ ጠይቀው።";
 "outdoors_feedback_change_title" = "ውጭ ለአየር ሁኔታ ተስማሚ የሆኑ ልብሶች የትኞቹን ይምረጡ";

@@ -42,22 +42,19 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     
     public convenience init() {
         self.init(
-            emptyValue: MovementModel(settings: MovementSettings(maxMetersPerDay: 250000, stepsPerMinute: 100), movement: [], activities: []),
+            emptyValue: Self.getDefaultModel(),
             storageOptions: .init(filename: "MovementData", foldername: "MovementService", bundleFilename:"MovementData", bundle:.module)
         )
-        
-        movementManager.delegate = self
-        self.movementManager.settings = data.settings
-        
+
         $data.sink { [weak self] values in
             if let self = self {
+                self.movementManager.delegate = self
                 self.movementManager.settings = values.settings
                 self.movementManager.updateData(newData: values.movement)
                 Task {
                     await self.save()
                 }
             }
-            
         }.store(in: &cancellables)
     }
     
@@ -81,17 +78,21 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     }
 
     public func getData() -> MovementModel {
+        print("Data: \(data)")
         return data
     }
     
-    func saveActivity(activity:MovementActivity, callback: () -> Void) {
+    func saveActivity(activity:MovementActivity, callback: @escaping () -> Void = {}) {
         if let index = data.activities.firstIndex(where: {$0.id == activity.id} ) {
             data.activities[index] = activity
             Task {
                 await self.save()
+                callback()
             }
         } else {
-            addActivity(newActivity: activity, callback: callback)
+            addActivity(newActivity: activity, callback: {
+                callback()
+            })
         }
     }
 
@@ -133,7 +134,20 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     
     @MainActor public func save(movements: [Movement]) {
         data.movement = movements
+        print("Data: \(data)")
         save()
     }
+    
+    private static func getDefaultModel() -> MovementModel {
+        MovementModel(
+            settings: MovementSettings(maxMetersPerDay: 250000, stepsPerMinute: 100),
+            movement: [],
+            activities: [
+                MovementActivity(id: "1", colorString: "RimColorClock", title: "Springa", emoji: "🏃‍♀️"),
+                MovementActivity(id: "2", colorString: "RimColorInstagram", title: "Klättra", emoji: "🧗"),
+                MovementActivity(id: "3", colorString: "RimColorActivities", title: "Cykla", emoji: "🚴"),
+                MovementActivity(id: "4", colorString: "RimColorInstagram", title: "Jogga", emoji: "🚶"),
+                MovementActivity(id: "5", colorString: "RimColorWeather", title: "Dansa", emoji: "💃"),
+            ])
+    }
 }
-

@@ -155,6 +155,7 @@
 "garment_rainPants" = "पावसाची पँट";
 "garment_rainPants_description" = "पावसाची पँट";
 "garment_shoes" = "शूज";
+"garment_shoes_description" = "शूज";
 "garment_sweater" = "गरम स्वेटर";
 "garment_sweater_description" = "गरम स्वेटर";
 "garment_winterBoots" = "शूज";
@@ -186,8 +187,12 @@
 "message_no_messages" = "आमच्याकडे सध्या कोणताही संदेश नाही.";
 "movement_choose_activity" = "तुम्ही कोणती कृती केली आहे?";
 "movement_last_week" = "गेल्या आठवड्यात तुम्ही एकूण %@ मीटर ऊर्जा गोळा केली आणि या आठवड्यात <span translate='no'>string</span> मीटर";
+"movement_next" = "पुढील";
 "movement_nothing" = "या आठवड्यात आतापर्यंत आपण कोणतीही हालचाल नोंदविली नाही.";
-"movement_statistics_title_today" = "चांगली नोकरी आहे, आपण %@ चरणांची बेरीज केली आहे, ती म्हणजे <span translate='no'>string</span> मीटर.";
+"movement_register" = "नोंदणी करणे";
+"movement_register_how_long" = "आपण किती मिनिटे क्रियाकलाप केला?";
+"movement_register_how_many" = "तुमच्यापैकी किती जणांनी या उपक्रमात भाग घेतला?";
+"movement_statistics_title_today" = "चांगली नोकरी, आज तुम्ही %@ पायऱ्या गोळा केल्या आहेत, म्हणजे <span translate='no'>string</span> मीटर.";
 "movement_statistics_title_weekday_1" = "चांगली नोकरी आहे, सोमवारी तुम्ही एकूण %@ पावले उचललीत, म्हणजे <span translate='no'>string</span> मीटर";
 "movement_statistics_title_weekday_2" = "चांगली नोकरी आहे, मंगळवारी आपण %@ चरणांची बेरीज केली, ती म्हणजे <span translate='no'>string</span> मीटर";
 "movement_statistics_title_weekday_3" = "चांगली नोकरी, बुधवारी आपण %@ चरणांची बेरीज केली, ती म्हणजे <span translate='no'>string</span> मीटर";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "चांगली नोकरी, शुक्रवारी आपण %@ चरणांची बेरीज केली, ती म्हणजे <span translate='no'>string</span> मीटर";
 "movement_statistics_title_weekday_6" = "चांगली नोकरी, शनिवारी आपण %@ चरणांची बेरीज केली, म्हणजे <span translate='no'>string</span> मीटर";
 "movement_statistics_title_weekday_7" = "चांगली नोकरी आहे, रविवारी तू %@ पायऱ्यांची बेरीज केलीस, म्हणजे <span translate='no'>string</span> मीटर";
+"movement_statistics_title_yesterday" = "चांगली नोकरी, काल तू %@ पायऱ्यांची बेरीज केलीस, म्हणजे <span translate='no'>string</span> मीटर.";
 "movement_weekly_stats" = "आपने इस सप्ताह ऊर्जा में कुल %@ मीटर का संग्रहित किया है";
 "outdoors_feedback_change_description" = "माझ्या सूचना चांगल्या नाहीत का? मी सुचवलेले कपडे बदलण्यात मदत करण्यासाठी आपल्या शिक्षकांना सांगा.";
 "outdoors_feedback_change_title" = "बाहेरील हवामानासाठी कोणते कपडे योग्य आहेत ते निवडा";

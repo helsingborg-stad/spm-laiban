@@ -21,7 +21,7 @@ struct MovementFootsteps: View {
                     .position(x: point.x, y: point.y)
                     .animation(nil)
                     .opacity(animating ? 1 : 0)
-                    .animation(Animation.easeIn.delay(0.35*Double(i)), value: animating)
+                    .animation(Animation.easeIn.delay(0.28*Double(i)), value: animating)
             }
         }.onAppear {
             animating = true

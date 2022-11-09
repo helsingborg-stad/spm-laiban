@@ -187,8 +187,12 @@
 "message_no_messages" = "Зараз у нас немає повідомлень.";
 "movement_choose_activity" = "Яку діяльність ви виконували?";
 "movement_last_week" = "Минулого тижня ви зібрали в цілому %@ метрів енергії, а на цьому тижні %@ метрів";
+"movement_next" = "Наступний";
 "movement_nothing" = "Поки що на цьому тижні ви не зареєстрували жодного руху.";
-"movement_statistics_title_today" = "Хороша робота, ви набрали %@ кроків, це %@ метрів.";
+"movement_register" = "Зареєструватися";
+"movement_register_how_long" = "За скільки хвилин ви виконували вправу?";
+"movement_register_how_many" = "Скільки з вас брали участь у вправі?";
+"movement_statistics_title_today" = "Хороша робота, сьогодні ви зібрали %@ сходинок, ось %@ метрів.";
 "movement_statistics_title_weekday_1" = "Хороша робота, в понеділок ви підсумували %@ кроків, це %@ метрів";
 "movement_statistics_title_weekday_2" = "Хороша робота, у вівторок ви підсумували %@ кроків, це %@ метрів";
 "movement_statistics_title_weekday_3" = "Хороша робота, в середу ви підсумували %@ кроків, це %@ метрів";
@@ -196,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "Хороша робота, в п'ятницю ви підсумували %@ кроків, це %@ метрів";
 "movement_statistics_title_weekday_6" = "Хороша робота, в суботу ви підсумували %@ кроків, це %@ метрів";
 "movement_statistics_title_weekday_7" = "Хороша робота, в неділю ви підсумували %@ кроків, це %@ метрів";
+"movement_statistics_title_yesterday" = "Хороша робота, вчора ви підсумували %@ кроків, це %@ метрів.";
 "movement_weekly_stats" = "Цього тижня ви зібрали загалом %@ метрів енергії";
 "outdoors_feedback_change_description" = "Хіба мої пропозиції не є добрими? Попросіть свого вчителя допомогти вам переодягнутися, який я пропоную.";
 "outdoors_feedback_change_title" = "Вибираємо, який одяг підходить для погоди на вулиці";

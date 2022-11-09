@@ -155,6 +155,7 @@
 "garment_rainPants" = "雨袴";
 "garment_rainPants_description" = "雨袴";
 "garment_shoes" = "鞋";
+"garment_shoes_description" = "鞋";
 "garment_sweater" = "暖毛衣";
 "garment_sweater_description" = "暖毛衣";
 "garment_winterBoots" = "鞋";
@@ -186,8 +187,12 @@
 "message_no_messages" = "我今无消息。";
 "movement_choose_activity" = "你做甚么事?";
 "movement_last_week" = "上周君凡得 %@ 米之量,本周足下得 %@ 米之量";
+"movement_next" = "次者";
 "movement_nothing" = "本周至目前为止,未有所记。";
-"movement_statistics_title_today" = "干好,你凡去 %@ 步,是 %@ 米。";
+"movement_register" = "注册";
+"movement_register_how_long" = "你做了多少分钟?";
+"movement_register_how_many" = "你有多少人?";
+"movement_statistics_title_today" = "干得好,今日你已收拾了 %@ 步,是 %@ 米。";
 "movement_statistics_title_weekday_1" = "干好,周一你凡去 %@ 步,是 %@ 米";
 "movement_statistics_title_weekday_2" = "周二你凡走了 %@ 步,是 %@ 米";
 "movement_statistics_title_weekday_3" = "周三你凡走了 %@ 步,是 %@ 米";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "干好,周五你凡去 %@ 步,是 %@ 米";
 "movement_statistics_title_weekday_6" = "干好,星期六你凡去 %@ 步,是 %@ 米";
 "movement_statistics_title_weekday_7" = "干好,星期天你凡去 %@ 步,是 %@ 米";
+"movement_statistics_title_yesterday" = "干好,昨日你凡去 %@ 步,是 %@ 米。";
 "movement_weekly_stats" = "本周君凡得 %@ 米之量";
 "outdoors_feedback_change_description" = "吾言不善乎? 请你的师子助你换我衣服。";
 "outdoors_feedback_change_title" = "择衣宜外气";

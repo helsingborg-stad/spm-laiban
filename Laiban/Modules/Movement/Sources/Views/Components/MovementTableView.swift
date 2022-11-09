@@ -9,9 +9,9 @@ import SwiftUI
 import Assistant
 
 extension Animation {
-    static func ripple(index: Int) -> Animation {
-            Animation.spring(dampingFraction: 0.5)
-            .speed(1.2)
+    static func ripple(index: Int, damping: Double = 0.5, speed: Double = 1.2) -> Animation {
+            Animation.spring(dampingFraction: damping)
+            .speed(speed)
             .delay(0.15 * Double(index))
         }
 }

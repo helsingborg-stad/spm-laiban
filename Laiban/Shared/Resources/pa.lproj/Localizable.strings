@@ -155,6 +155,7 @@
 "garment_rainPants" = "ਪੈਂਟਾਂ ਮੀਂਹ";
 "garment_rainPants_description" = "ਪੈਂਟਾਂ ਮੀਂਹ";
 "garment_shoes" = "ਜੁੱਤੇ";
+"garment_shoes_description" = "ਜੁੱਤੇ";
 "garment_sweater" = "ਗਰਮ ਸਵੈਟਰ";
 "garment_sweater_description" = "ਗਰਮ ਸਵੈਟਰ";
 "garment_winterBoots" = "ਜੁੱਤੇ";
@@ -186,8 +187,12 @@
 "message_no_messages" = "ਸਾਡੇ ਕੋਲ ਇਸ ਸਮੇਂ ਕੋਈ ਸੰਦੇਸ਼ ਨਹੀਂ ਹਨ।";
 "movement_choose_activity" = "ਤੁਸੀਂ ਕਿਹੜੀ ਸਰਗਰਮੀ ਕੀਤੀ ਹੈ?";
 "movement_last_week" = "ਪਿਛਲੇ ਹਫਤੇ ਤੁਸੀਂ ਊਰਜਾ ਵਿੱਚ ਕੁੱਲ %@ ਮੀਟਰ ਇਕੱਤਰ ਕੀਤੇ ਸਨ, ਅਤੇ ਇਸ ਹਫਤੇ <span translate='no'>string</span> ਮੀਟਰ";
+"movement_next" = "ਅੱਗੇ";
 "movement_nothing" = "ਇਸ ਹਫਤੇ ਅਜੇ ਤੱਕ ਤੁਸੀਂ ਕੋਈ ਅੰਦੋਲਨ ਦਰਜ ਨਹੀਂ ਕੀਤਾ ਹੈ।";
-"movement_statistics_title_today" = "ਵਧੀਆ ਕੰਮ ਹੈ, ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ ਹੈ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ।";
+"movement_register" = "ਰਜਿਸਟਰ";
+"movement_register_how_long" = "ਇਹ ਕਿਰਿਆ ਤੁਸੀਂ ਕਿੰਨ੍ਹੇ ਕੁ ਮਿੰਟਾਂ ਵਾਸਤੇ ਕੀਤੀ?";
+"movement_register_how_many" = "ਤੁਹਾਡੇ ਵਿੱਚੋਂ ਕਿੰਨਿਆਂ ਨੇ ਇਸ ਸਰਗਰਮੀ ਵਿੱਚ ਭਾਗ ਲਿਆ ਸੀ?";
+"movement_statistics_title_today" = "ਵਧੀਆ ਕੰਮ ਹੈ, ਅੱਜ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਨੂੰ ਇਕੱਤਰ ਕਰ ਲਿਆ ਹੈ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ।";
 "movement_statistics_title_weekday_1" = "ਵਧੀਆ ਕੰਮ, ਸੋਮਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
 "movement_statistics_title_weekday_2" = "ਵਧੀਆ ਕੰਮ, ਮੰਗਲਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
 "movement_statistics_title_weekday_3" = "ਵਧੀਆ ਕੰਮ, ਬੁੱਧਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "ਵਧੀਆ ਕੰਮ, ਸ਼ੁੱਕਰਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
 "movement_statistics_title_weekday_6" = "ਵਧੀਆ ਕੰਮ, ਸ਼ਨੀਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
 "movement_statistics_title_weekday_7" = "ਵਧੀਆ ਕੰਮ, ਐਤਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
+"movement_statistics_title_yesterday" = "ਵਧੀਆ ਕੰਮ, ਕੱਲ੍ਹ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ।";
 "movement_weekly_stats" = "ਤੁਸੀਂ ਇਸ ਹਫਤੇ ਊਰਜਾ ਵਿੱਚ ਕੁੱਲ %@ ਮੀਟਰ ਇਕੱਤਰ ਕੀਤੇ ਹਨ";
 "outdoors_feedback_change_description" = "ਕੀ ਮੇਰੇ ਸੁਝਾਅ ਚੰਗੇ ਨਹੀਂ ਹਨ? ਆਪਣੇ ਅਧਿਆਪਕ ਨੂੰ ਮੇਰੇ ਵੱਲੋਂ ਸੁਝਾਏ ਗਏ ਕੱਪੜੇ ਬਦਲਣ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਨ ਲਈ ਕਹੋ।";
 "outdoors_feedback_change_title" = "ਚੋਣ ਕਰੋ ਕਿ ਕਿਹੜੇ ਕੱਪੜੇ ਬਾਹਰਦੇ ਮੌਸਮ ਵਾਸਤੇ ਢੁਕਵੇਂ ਹਨ";

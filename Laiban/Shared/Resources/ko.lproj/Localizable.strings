@@ -155,6 +155,7 @@
 "garment_rainPants" = "레인 팬츠";
 "garment_rainPants_description" = "레인 바지";
 "garment_shoes" = "신발";
+"garment_shoes_description" = "신발";
 "garment_sweater" = "따뜻한 스웨터";
 "garment_sweater_description" = "따뜻한 스웨터";
 "garment_winterBoots" = "신발";
@@ -186,8 +187,12 @@
 "message_no_messages" = "우리는 지금 어떤 메시지도 가지고 있지 않습니다.";
 "movement_choose_activity" = "어떤 활동을 했습니까?";
 "movement_last_week" = "지난주에는 총 %@ 미터의 에너지를 모았고 이번 주에는 %@ 미터의 에너지를 수집했습니다.";
+"movement_next" = "다음";
 "movement_nothing" = "이번 주까지 어떤 움직임도 등록하지 않았습니다.";
-"movement_statistics_title_today" = "잘 했어, 당신은 총 %@ 단계, 즉 %@ 미터입니다.";
+"movement_register" = "등록기";
+"movement_register_how_long" = "몇 분 동안 활동을 했습니까?";
+"movement_register_how_many" = "활동에 참여한 분은 몇 명입니까?";
+"movement_statistics_title_today" = "잘 했어, 오늘 당신은 %@ 단계를 수집했습니다, 그것은 %@ 미터입니다.";
 "movement_statistics_title_weekday_1" = "잘했어, 월요일에 총 %@ 걸음, %@ 미터입니다";
 "movement_statistics_title_weekday_2" = "잘했어, 화요일에 당신은 총 %@ 걸음, 그것은 %@ 미터입니다";
 "movement_statistics_title_weekday_3" = "잘했어, 수요일에 당신은 총 %@ 걸음, 그것은 %@ 미터입니다";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "잘했어, 금요일에 당신은 총 %@ 걸음, 그것은 %@ 미터입니다";
 "movement_statistics_title_weekday_6" = "잘했어, 토요일에 총 %@ 걸음, 그건 %@ 미터야.";
 "movement_statistics_title_weekday_7" = "잘했어, 일요일에 총 %@ 걸음, %@ 미터야.";
+"movement_statistics_title_yesterday" = "잘했어, 어제 당신은 총 %@ 걸음, 즉 %@ 미터입니다.";
 "movement_weekly_stats" = "이번 주에 총 %@ 미터의 에너지를 수집했습니다.";
 "outdoors_feedback_change_description" = "내 제안이 좋지 않습니까? 선생님께 제가 제안하는 옷을 갈아 입을 수 있도록 도와달라고 부탁하십시오.";
 "outdoors_feedback_change_title" = "외부 날씨에 적합한 옷을 선택하십시오.";

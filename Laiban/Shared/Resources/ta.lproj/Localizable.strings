@@ -155,6 +155,7 @@
 "garment_rainPants" = "மழை பேன்ட்ஸ்";
 "garment_rainPants_description" = "மழை பேன்ட்ஸ்";
 "garment_shoes" = "காலணிகள்";
+"garment_shoes_description" = "காலணிகள்";
 "garment_sweater" = "சூடான ஸ்வெட்டர்";
 "garment_sweater_description" = "சூடான ஸ்வெட்டர்";
 "garment_winterBoots" = "காலணிகள்";
@@ -186,8 +187,12 @@
 "message_no_messages" = "எங்களிடம் இப்போது எந்த செய்தியும் இல்லை.";
 "movement_choose_activity" = "நீங்கள் என்ன வேலை செய்தீர்கள்?";
 "movement_last_week" = "கடந்த வாரம் நீங்கள் ஆற்றலில் மொத்தம் %@ மீட்டர்களை சேகரித்தீர்கள், இந்த வாரம் <span translate='no'>string</span> மீட்டர்கள்";
+"movement_next" = "அடுத்தவர்";
 "movement_nothing" = "இந்த வாரம் இதுவரை நீங்கள் எந்த இயக்கத்தையும் பதிவு செய்யவில்லை.";
-"movement_statistics_title_today" = "நல்ல வேலை, நீங்கள் %@ படிகள் மொத்தமாக, என்று <span translate='no'>string</span> மீட்டர் தான்.";
+"movement_register" = "பதிவுசெய்";
+"movement_register_how_long" = "நீங்கள் எத்தனை நிமிடங்களுக்கு இந்த செயலைச் செய்தீர்கள்?";
+"movement_register_how_many" = "உங்களில் எத்தனை பேர் இந்த நடவடிக்கையில் பங்கெடுத்தீர்கள்?";
+"movement_statistics_title_today" = "நல்ல வேலை, இன்று நீங்கள் %@ படிகளை சேகரித்துள்ளீர்கள், அது <span translate='no'>string</span> மீட்டர்.";
 "movement_statistics_title_weekday_1" = "நல்ல வேலை, திங்களன்று நீங்கள் %@ படிகளை மொத்தமாக செய்தீர்கள், அது <span translate='no'>string</span> மீட்டர்";
 "movement_statistics_title_weekday_2" = "நல்ல வேலை, செவ்வாயன்று நீங்கள் %@ படிகளை மொத்தமாக எடுத்தீர்கள், அது <span translate='no'>string</span> மீட்டர்கள்";
 "movement_statistics_title_weekday_3" = "நல்ல வேலை, புதன்கிழமை நீங்கள் %@ படிகளை மொத்தமாக செய்தீர்கள், அது <span translate='no'>string</span> மீட்டர்";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "நல்ல வேலை, வெள்ளிக்கிழமை நீங்கள் %@ படிகளை மொத்தமாக எடுத்தீர்கள், அது <span translate='no'>string</span> மீட்டர்கள்";
 "movement_statistics_title_weekday_6" = "நல்ல வேலை, சனிக்கிழமை நீங்கள் %@ படிகள் மொத்தமாக, என்று <span translate='no'>string</span> மீட்டர் தான்";
 "movement_statistics_title_weekday_7" = "நல்ல வேலை, ஞாயிற்றுக்கிழமை நீங்கள் %@ படிகளை மொத்தமாக செய்தீர்கள், அது <span translate='no'>string</span> மீட்டர்";
+"movement_statistics_title_yesterday" = "நல்ல வேலை, நேற்று நீங்கள் %@ படிகள், என்று <span translate='no'>string</span> மீட்டர் தான்.";
 "movement_weekly_stats" = "இந்த வாரம் நீங்கள் மொத்தம் %@ மீட்டர் ஆற்றலை சேகரித்துள்ளீர்கள்";
 "outdoors_feedback_change_description" = "எனது ஆலோசனைகள் நல்லதல்லவா? நான் பரிந்துரைக்கும் ஆடைகளை மாற்ற உதவுமாறு உங்கள் ஆசிரியரிடம் கேளுங்கள்.";
 "outdoors_feedback_change_title" = "எந்த ஆடைகள் வெளிப்புற வானிலைக்கு பொருத்தமானவை என்பதைத் தேர்வுசெய்யவும்";

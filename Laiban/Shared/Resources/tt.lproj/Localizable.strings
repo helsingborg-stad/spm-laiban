@@ -155,6 +155,7 @@
 "garment_rainPants" = "Яңгыр чалбарлары";
 "garment_rainPants_description" = "Яңгыр чалбарлары";
 "garment_shoes" = "Аяк киеме";
+"garment_shoes_description" = "Аяк киеме";
 "garment_sweater" = "Җылы тире";
 "garment_sweater_description" = "Җылы тире";
 "garment_winterBoots" = "Аяк киеме";
@@ -186,8 +187,12 @@
 "message_no_messages" = "Бездә хәзер хәбәрләр юк.";
 "movement_choose_activity" = "Сез нинди эшчәнлек эшләдегез?";
 "movement_last_week" = "Узган атнада сез %@ метр энергия тупладыгыз, ә бу атнада %@ метр";
+"movement_next" = "Киләсе";
 "movement_nothing" = "Әлегә сез бу атнада бернинди хәрәкәт теркәмәдегез.";
-"movement_statistics_title_today" = "Яхшы эш, сез %@ адымнарны, бу %@ метр.";
+"movement_register" = "Реестр";
+"movement_register_how_long" = "Эшчәнлекне ничә минутка эшләдегез?";
+"movement_register_how_many" = "Сездән кайсыгыз эшчәнлектә катнаштыгыз?";
+"movement_statistics_title_today" = "Яхшы эш, бүген сез %@ адымнар тупладыгыз, бу %@ метр.";
 "movement_statistics_title_weekday_1" = "Яхшы эш, дүшәмбедә сез %@ адымнар ясадыгыз, бу %@ метр";
 "movement_statistics_title_weekday_2" = "Яхшы эш, сишәмбе сез %@ адымнар ясадыгыз, бу %@ метр";
 "movement_statistics_title_weekday_3" = "Яхшы эш, чәршәмбе көнне сез %@ адымнар ясадыгыз, бу %@ метр";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "Яхшы эш, җомга сез %@ адымнар ясадыгыз, бу %@ метр";
 "movement_statistics_title_weekday_6" = "Яхшы эш, шимбәдә сез %@ адымнар ясадыгыз, бу %@ метр";
 "movement_statistics_title_weekday_7" = "Яхшы эш, якшәмбедә сез %@ адымнар ясадыгыз, бу %@ метр";
+"movement_statistics_title_yesterday" = "Хәерле эш, кичә син %@ адымнар ясадың, бу %@ метр.";
 "movement_weekly_stats" = "Сез бу атнада %@ метр энергия тупладыгыз";
 "outdoors_feedback_change_description" = "Минем тәкъдимнәрем яхшы түгелме? Укытучыңнан тәкъдим иткән киемнәрне үзгәртергә ярдәм итүен сорагыз.";
 "outdoors_feedback_change_title" = "Тышкы һава торышына нинди кием яраклы икәнен сайлагыз";

@@ -1,6 +1,6 @@
 //
 //  MovementViewModel.swift
-//  
+//
 //
 //  Created by Fredrik Häggbom on 2022-10-27.
 //
@@ -48,11 +48,11 @@ class MovementViewModel: ObservableObject {
         if view == currentView {
             return
         }
-        if view == .enterNumMoving {
+        /*if view == .activityChooser {
             self.parentalGateStatus = .undetermined
         } else {
             self.parentalGateStatus = .passed
-        }
+        }*/
         viewState?.inactivityTimerDisabled(view == .enterNumMoving, for: .movement)
         switch view {
         case .statistics: viewState?.actionButtons([.home,.languages], for: .movement)
@@ -99,6 +99,11 @@ class MovementViewModel: ObservableObject {
         self.service = service
         self.viewState = viewState
         self.activityViewModel = MovementBarView.ViewModel.init(movementMeters: MovementBarView.ViewModel.round(0), settings: service.data.settings)
+        
+        $parentalGateStatus.sink { value in
+            self.updateTitle(speakAfter: true)
+        }.store(in: &cancellables)
+        
         service.movementManager.objectWillChange.sink { [weak self] _ in
             guard let this = self else {
                 return
@@ -145,8 +150,11 @@ class MovementViewModel: ObservableObject {
         }
 
         if currentView == .activityChooser {
-            let translated = assistant.string(forKey: "movement_choose_activity")
-            return LBVoiceString(translated)
+            if parentalGateStatus == .passed {
+                let translated = assistant.string(forKey: "movement_choose_activity")
+                return LBVoiceString(translated)
+            }
+            return LBVoiceString("")
         } else if currentView == .dailyMovemnent {
             let str:String
             let a = Int(Date().timeIntervalSince(selectedDate) / 60 / 60 / 24)

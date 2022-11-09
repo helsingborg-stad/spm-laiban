@@ -155,6 +155,7 @@
 "garment_rainPants" = "מכנסי גשם";
 "garment_rainPants_description" = "מכנסי גשם";
 "garment_shoes" = "נעליים";
+"garment_shoes_description" = "נעליים";
 "garment_sweater" = "סוודר חם";
 "garment_sweater_description" = "סוודר חם";
 "garment_winterBoots" = "נעליים";
@@ -186,8 +187,12 @@
 "message_no_messages" = "אין לנו הודעות כרגע.";
 "movement_choose_activity" = "איזו פעילות עשית?";
 "movement_last_week" = "בשבוע שעבר אספתם סך של %@ מטר אנרגיה, והשבוע %@ מטר";
+"movement_next" = "הבא";
 "movement_nothing" = "עד כה השבוע לא רשמת שום תנועה.";
-"movement_statistics_title_today" = "עבודה טובה, יש לך בסך הכל %@ צעדים, זה %@ מטר.";
+"movement_register" = "משלב";
+"movement_register_how_long" = "במשך כמה דקות עשית את הפעילות?";
+"movement_register_how_many" = "כמה מכם השתתפו בפעילות?";
+"movement_statistics_title_today" = "עבודה טובה, היום אספתם %@ צעדים, זה %@ מטר.";
 "movement_statistics_title_weekday_1" = "עבודה טובה, ביום שני סיכמתם %@ צעדים, זה %@ מטר";
 "movement_statistics_title_weekday_2" = "עבודה טובה, ביום שלישי סיכמתם %@ צעדים, זה %@ מטר";
 "movement_statistics_title_weekday_3" = "עבודה טובה, ביום רביעי סיכמתם %@ צעדים, זה %@ מטר";
@@ -195,6 +200,7 @@
 "movement_statistics_title_weekday_5" = "עבודה טובה, ביום שישי סיכמתם %@ צעדים, זה %@ מטר";
 "movement_statistics_title_weekday_6" = "עבודה טובה, בשבת הסתכמתם %@ צעדים, זה %@ מטר";
 "movement_statistics_title_weekday_7" = "עבודה טובה, ביום ראשון סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_yesterday" = "עבודה טובה, אתמול הסתכמת %@ צעדים, זה %@ מטר.";
 "movement_weekly_stats" = "אספתם השבוע סך של %@ מטרים באנרגיה";
 "outdoors_feedback_change_description" = "האם ההצעות שלי לא טובות? בקש מהמורה שלך לעזור לך להחליף את הבגדים שאני מציע.";
 "outdoors_feedback_change_title" = "בחר אילו בגדים מתאימים למזג האוויר בחוץ";

@@ -13,6 +13,7 @@ struct MovementActivitiyView: View {
     @EnvironmentObject var assistant:Assistant
     var activity:MovementActivity
     var action:((MovementActivity) -> Void)
+    
     var body: some View {
         GeometryReader { proxy in
             Button(action: {
