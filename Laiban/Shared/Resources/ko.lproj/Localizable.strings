@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "기억하다";
 "message_no_messages" = "우리는 지금 어떤 메시지도 가지고 있지 않습니다.";
 "movement_choose_activity" = "어떤 활동을 했습니까?";
+"movement_close" = "닫다";
 "movement_last_week" = "지난주에는 총 %@ 미터의 에너지를 모았고 이번 주에는 %@ 미터의 에너지를 수집했습니다.";
 "movement_next" = "다음";
 "movement_nothing" = "이번 주까지 어떤 움직임도 등록하지 않았습니다.";
 "movement_register" = "등록기";
 "movement_register_how_long" = "몇 분 동안 활동을 했습니까?";
 "movement_register_how_many" = "활동에 참여한 분은 몇 명입니까?";
+"movement_statistics_how_far" = "얼마나 멀리 떨어져 있습니까?";
+"movement_statistics_see_distance" = "교사에게 다른 iPad를 구입하고 %@ 미터를 걸을 때 얼마나 멀리 떨어져 있는지 함께 보도록 요청하십시오.";
 "movement_statistics_title_today" = "잘 했어, 오늘 당신은 %@ 단계를 수집했습니다, 그것은 %@ 미터입니다.";
 "movement_statistics_title_weekday_1" = "잘했어, 월요일에 총 %@ 걸음, %@ 미터입니다";
 "movement_statistics_title_weekday_2" = "잘했어, 화요일에 당신은 총 %@ 걸음, 그것은 %@ 미터입니다";

@@ -16,21 +16,7 @@ struct MovementDailyStatisticsView: View {
     @EnvironmentObject var viewState:LBViewState
     @State private var animating = false
     @State private var showSheet = false
-    
     @ObservedObject var service:MovementService
-    
-    var title:String {
-        let str:String
-        let a = Int(Date().timeIntervalSince(date) / 60 / 60 / 24)
-        if a == 0 {
-            str = "movement_statistics_title_today"
-        } else if a == 1 {
-            str = "movement_statistics_title_yesterday"
-        } else {
-            str = "movement_statistics_title_weekday_\(date.actualWeekDay)"
-        }
-        return assistant.formattedString(forKey: str, String(Int(service.movementManager.movementSteps(for: date))), String(service.movementManager.movementMeters(for: date)))
-    }
 
     var date:Date
     var infoTitle:String? = nil
@@ -51,12 +37,13 @@ struct MovementDailyStatisticsView: View {
             ZStack {
                 VStack {
                     VStack(spacing: 20) {
-                        Text(title)
+                        Text(service.viewModel.title!.display)
                             .font(properties.font, ofSize: .n)
                             .multilineTextAlignment(.center)
                             .padding(.top,10)
                         HStack(spacing: 50) {
                             MovementBarView(model: model).frame(maxWidth:.infinity).onTapGesture {
+                                animating = true
                             }
                             .animation(.ripple(index: 1))
                             .frame(maxWidth: proxy.size.width * 0.25, maxHeight:.infinity,alignment: .bottom)
@@ -78,7 +65,7 @@ struct MovementDailyStatisticsView: View {
                         Spacer()
                         withAnimation {
                             Button(action: setShowSheet, label: {
-                                Text("Hur långt är det?")
+                                Text(assistant.string(forKey: "movement_statistics_how_far"))
                                     .padding([.top,.bottom])
                                     .font(properties.font, ofSize: .n,color: .white)
                                     .frame(maxWidth: 250)
@@ -97,6 +84,10 @@ struct MovementDailyStatisticsView: View {
             let meters = service.movementManager.movementMeters(for: date)
             withAnimation {
                 DailyStatisticsSheet(showSheet: $showSheet, meters: meters)
+                    .onAppear {
+                        let title = assistant.formattedString(forKey: "movement_statistics_see_distance", String(meters))
+                        assistant.speak(title)
+                    }
             }
         })
     }
@@ -104,16 +95,22 @@ struct MovementDailyStatisticsView: View {
 
 struct DailyStatisticsSheet: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @EnvironmentObject var assistant:Assistant
     @Binding var showSheet: Bool
     @State private var animate = false
     let meters: Int
+    
+    private func getTitle() -> String {
+        let title = assistant.formattedString(forKey: "movement_statistics_see_distance", String(meters))
+        return title
+    }
     
     var body: some View {
         ZStack {
             VStack {
                 ScrollView {
                     VStack {
-                        Text("Be en pedagog hämta en annan iPad och titta tillsammans hur långt ni kommer när ni går \(meters) m")
+                        Text(getTitle())
                             .font(properties.font, ofSize: .n)
                             .multilineTextAlignment(.center)
                             .padding(.top,10)
@@ -130,7 +127,7 @@ struct DailyStatisticsSheet: View {
                 Button(action: {
                     self.showSheet = false
                 }) {
-                    Text("Stäng")
+                    Text(assistant.string(forKey: "movement_close"))
                         .foregroundColor(.white)
                         .font(.headline)
                         .padding([.leading, .trailing], 80)

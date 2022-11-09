@@ -48,11 +48,7 @@ class MovementViewModel: ObservableObject {
         if view == currentView {
             return
         }
-        /*if view == .activityChooser {
-            self.parentalGateStatus = .undetermined
-        } else {
-            self.parentalGateStatus = .passed
-        }*/
+
         viewState?.inactivityTimerDisabled(view == .enterNumMoving, for: .movement)
         switch view {
         case .statistics: viewState?.actionButtons([.home,.languages], for: .movement)
@@ -108,8 +104,7 @@ class MovementViewModel: ObservableObject {
             guard let this = self else {
                 return
             }
-            // this.updateDailyStatistics()
-             this.updateWeeklyStatistics()
+            this.updateWeeklyStatistics()
             this.objectWillChange.send()
         }.store(in: &listeners)
         activityViewModel.objectWillChange.sink { [weak self,activityViewModel] _ in
@@ -119,9 +114,7 @@ class MovementViewModel: ObservableObject {
             if activityViewModel.calculatedBalance {
                 this.updateTitle()
             }
-            //this.clearReturnToHomeScreenTimer()
-            // this.updateDailyStatistics()
-             this.updateWeeklyStatistics()
+            this.updateWeeklyStatistics()
         }.store(in: &listeners)
         activityViewModel.$objects.sink { [weak self,activityViewModel,service] objects in
             guard let this = self else {
@@ -130,15 +123,13 @@ class MovementViewModel: ObservableObject {
             guard activityViewModel.movementMeters == activityViewModel.meters(from: objects) else {
                 return
             }
-            if var w = service.movementManager.movement(for: this.selectedDate) {
-                // w.emojis = objects.map({ i in i.emoji }).joined()
+            if let w = service.movementManager.movement(for: this.selectedDate) {
                 service.movementManager.update(movement: w)
             }
         }.store(in: &listeners)
 
         updateTitle()
         updateWeeklyStatistics()
-        // updateDailyStatistics()
         self.objectWillChange.send()
     }
     func getTitleAndVoice() -> LBVoiceString? {
@@ -165,7 +156,7 @@ class MovementViewModel: ObservableObject {
             } else {
                 str = "movement_statistics_title_weekday_\(selectedDate.actualWeekDay)"
             }
-            let t = assistant.formattedString(forKey: str, String(Int(movementManager.movementMeters(for: selectedDate))))
+            let t = assistant.formattedString(forKey: str, String(Int(movementManager.movementSteps(for: selectedDate))), String(movementManager.movementMeters(for: selectedDate)))
             if let s = dailyMovementStrings {
                 return LBVoiceString(display: t, voice: s)
             }
@@ -227,6 +218,6 @@ class MovementViewModel: ObservableObject {
         } else {
             str = "movement_statistics_title_weekday_\(selectedDate.actualWeekDay)"
         }
-        return assistant.formattedString(forKey: str, String(Int(movementManager.movementMeters(for: selectedDate))))
+        return assistant.formattedString(forKey: str, String(Int(movementManager.movementSteps(for: selectedDate))), String(movementManager.movementMeters(for: selectedDate)))
     }
 }

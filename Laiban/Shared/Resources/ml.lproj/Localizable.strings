@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "ഓർക്കുക.";
 "message_no_messages" = "ഞങ്ങൾക്ക് ഇപ്പോൾ സന്ദേശങ്ങളൊന്നുമില്ല.";
 "movement_choose_activity" = "എന്ത് പ്രവർത്തനമാണ് നിങ്ങൾ ചെയ്തത്?";
+"movement_close" = "അടയ്ക്കുക";
 "movement_last_week" = "കഴിഞ്ഞയാഴ്ച നിങ്ങൾ മൊത്തം %@ മീറ്റർ ഊർജ്ജം ശേഖരിച്ചു, ഈ ആഴ്ച <span translate='no'>string</span> മീറ്റർ";
 "movement_next" = "അടുത്തത്";
 "movement_nothing" = "ഈ ആഴ്ച ഇതുവരെ നിങ്ങൾ ഒരു ചലനവും രജിസ്റ്റർ ചെയ്തിട്ടില്ല.";
 "movement_register" = "രജിസ്റ്റർ ചെയ്യുക";
 "movement_register_how_long" = "എത്ര മിനിറ്റാണ് നിങ്ങൾ ഈ പ്രവർത്തനം നടത്തിയത്?";
 "movement_register_how_many" = "നിങ്ങളിൽ എത്രപേർ ഈ പ്രവർത്തനത്തിൽ പങ്കെടുത്തു?";
+"movement_statistics_how_far" = "അതെത്ര ദൂരമുണ്ട്?";
+"movement_statistics_see_distance" = "മറ്റൊരു ഐപാഡ് എടുക്കാൻ ഒരു അധ്യാപകനോട് ആവശ്യപ്പെടുക, നിങ്ങൾ %@ മീറ്റർ നടക്കുമ്പോൾ നിങ്ങൾക്ക് എത്ര ദൂരം പോകുന്നുവെന്ന് ഒരുമിച്ച് കാണുക";
 "movement_statistics_title_today" = "നല്ല ജോലി, ഇന്ന് നിങ്ങൾ %@ ഘട്ടങ്ങൾ ശേഖരിച്ചു, അത് <span translate='no'>string</span> മീറ്ററാണ്.";
 "movement_statistics_title_weekday_1" = "നല്ല ജോലി, തിങ്കളാഴ്ച നിങ്ങൾ %@ സ്റ്റെപ്പുകൾ മൊത്തം ചെയ്തു, അത് <span translate='no'>string</span> മീറ്ററാണ്";
 "movement_statistics_title_weekday_2" = "നല്ല ജോലി, ചൊവ്വാഴ്ച നിങ്ങൾ %@ സ്റ്റെപ്പുകൾ മൊത്തം, അതായത് <span translate='no'>string</span> മീറ്റർ";

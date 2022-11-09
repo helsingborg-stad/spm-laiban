@@ -42,8 +42,8 @@
 "clock_time_8" = "chorgh";
 "clock_time_9" = "Hut";
 "clock_time_description_0600_to_0730" = "yapbe' ghu' neH vIghojmoH.";
+"clock_time_description_0730_to_0830" = "'ej DaH vIDel.";
 "clock_time_description_0830_to_0900" = "HuDtaHghachmaj Hoch";
-"clock_time_description_0900_to_1045" = "'ej DaH vIDel.";
 "clock_time_description_1045_to_1230" = "'ej DaH vIQoy'meH jIjatlh.";
 "clock_time_description_1400_to_1500" = "nuHmey ghew potlhna' je ghajbe' ghewmey.";
 "clock_time_description_1500_to_1630" = "DaH QaQ wISIQrup.";
@@ -129,21 +129,21 @@ DaH bIcheghdI' 'e' vIpIH.";
 "food_waste_tip_3" = "reH 'ej romuluSDaq tlhegh, 'ej SIqawbogh ghoS. wanI'vam Da'IjmeH ghoSpu'lIj lutu'lu' 'e' DaHar'a'? vanglI' HoHlu'meH DuHbe'";
 "food_waste_title" = "mIw'a' pabmeH mIw'a'";
 "food_waste_weekly_stats" = "%@ tlhoghvam wIqelta' 'e' vItu'.";
-"garment_beanie" = "qurgh";
+"garment_beanie_description" = "qurgh";
 "garment_cap" = "yuvtlhe'";
 "garment_jacket_description" = "wep";
 "garment_mittens" = "tlhIl";
 "garment_neckWear" = "nge'rup";
 "garment_neckWear_description" = "ghe''or";
-"garment_pulloverPants" = "toy'wI'";
-"garment_rainBoots_description" = "pIq";
+"garment_pulloverPants_description" = "toy'wI'";
+"garment_rainBoots" = "pIq";
 "garment_rainCoat" = "Qa'";
 "garment_rainGloves_description" = "Qogh";
-"garment_rainPants_description" = "yopwaH";
-"garment_shoes" = "waqmey";
+"garment_rainPants" = "yopwaH";
+"garment_shoes_description" = "waqmey";
 "garment_sweater_description" = "bIQ'a'";
 "garment_winterBoots_description" = "'Iq loDnI'pu'";
-"garment_winterOutfit_description" = "lItlh lo'laHbe'chugh vay'";
+"garment_winterOutfit" = "lItlh lo'laHbe'chugh vay'";
 "home_feedback_acitivity_title" = "bI'angtaHvIS, DotlhlIj DaSov'a'?
 qeylIS dIghajbogh qeylIS'e' jay'!";
 "home_holiday" = "%@' nugh chu' vIghaj!";
@@ -168,12 +168,15 @@ qeylIS dIghajbogh qeylIS'e' jay'!";
 "message_category_reminder_title" = "qaw";
 "message_no_messages" = "ghu' vISovbe'bej.";
 "movement_choose_activity" = "qatlh nuq Data'nIS?";
+"movement_close" = "SoQmoH";
 "movement_last_week" = "%@ %@ juHDajvo' yabDajvo' 'uSDu'lIj.";
 "movement_next" = "veb";
 "movement_nothing" = "qaStaHvIS poHmey, sabtaHvIS.";
 "movement_register" = "qech";
 "movement_register_how_long" = "chay' bIpIv'a'?";
 "movement_register_how_many" = "qaStaHvIS DIS 'ar wuq daleghlaH'a'?";
+"movement_statistics_how_far" = "nuqneH, vavlI' 'ar DaneH?";
+"movement_statistics_see_distance" = "%@ yejquv vaS'e' Daghajchugh, 'ach qech daqvam vIt Da'angchugh, vaj beyvetlh Dadabchugh, vaj yay' Davangchugh, 'ej chep'a'meH ngeb Dachegh 'e' DavItmeH SuvwI' yo'a'mey DacheghDI' 'ej bIdel 'e' DachIDmeH, yablIj ngeb DacheghdI' 'ej bIdoy'moHlaH 'e' DaqelmeH,";
 "movement_statistics_title_today" = "%@ %@ juppu', nuqneH.";
 "movement_statistics_title_weekday_1" = "SuH %@ %@ ,' puqloDwI'";
 "movement_statistics_title_weekday_2" = "jIHvo'%@,%@";
@@ -208,10 +211,10 @@ bImejrup'a'?";
  %@ghewmeH neH ta'nISmoH.";
 "tempus_child_arrives_before" = "%@%@' ghot
 %@el.";
+"tempus_child_arrives_before_past" = "%@ %@'' ghItlhmey' ghItlhmey
+daH qaSmoHpu','n %@ISmoH.";
 "tempus_child_arrives_during" = "%@%@' ghot
 %@net";
-"tempus_child_arrives_during_past" = "%@ %@'' ghItlhmey' ghItlhmey
-daH qaSmoHpu','n %@ISmoH.";
 "tempus_child_arrives_past" = "%@ %@''DI'";
 "tempus_child_has_left" = "%@ qaStaHvIS poH nI' tay juHDaq 'e' vItu'.";
 "tempus_child_has_left_returns_in_days" = "qaSt %@aHvIS ramjep, tugh qaSpu' QIchvammo' qa'daj. %@";

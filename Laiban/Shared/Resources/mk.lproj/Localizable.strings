@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "Запамти се.";
 "message_no_messages" = "Сега немаме пораки.";
 "movement_choose_activity" = "Каква активност направи?";
+"movement_close" = "Затвори";
 "movement_last_week" = "Минатата недела собра вкупно %@ метри енергија, а оваа недела %@ метри";
 "movement_next" = "Следна";
 "movement_nothing" = "Досега оваа недела не сте регистрирале никакво движење.";
 "movement_register" = "Регистрирај се.";
 "movement_register_how_long" = "За колку минути ја извршивте активноста?";
 "movement_register_how_many" = "Колку од вас учествуваа во активноста?";
+"movement_statistics_how_far" = "Колку далеку е тоа?";
+"movement_statistics_see_distance" = "Побарајте од наставникот да добие друг iPad и да гледа заедно колку далеку ќе стигнете кога одите %@ метри";
 "movement_statistics_title_today" = "Добра работа, денес сте собрале %@ чекори, тоа е %@ метри.";
 "movement_statistics_title_weekday_1" = "Добра работа, во понеделникот %@ чекори, тоа е %@ метри.";
 "movement_statistics_title_weekday_2" = "Добра работа, во вторникот %@ чекори, тоа е %@ метри.";

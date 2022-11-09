@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "思い出す";
 "message_no_messages" = "現在、メッセージはありません。";
 "movement_choose_activity" = "どのような活動をしましたか?";
+"movement_close" = "閉める";
 "movement_last_week" = "先週は合計 %@ メートルのエネルギーを集めましたが、今週は %@ メートルを集めました";
 "movement_next" = "次に";
 "movement_nothing" = "今週のこれまでのところ、動きは登録されていません。";
 "movement_register" = "登録する";
 "movement_register_how_long" = "何分間アクティビティを行いましたか?";
 "movement_register_how_many" = "何人の人が活動に参加しましたか?";
+"movement_statistics_how_far" = "それはどこまでですか?";
+"movement_statistics_see_distance" = "先生に別のiPadを持ってきてもらい、 %@ メートル歩いたときにどれだけ遠くまで行くかを一緒に見てもらいます";
 "movement_statistics_title_today" = "よくやった、今日あなたは %@ ステップを集めました、それは %@ メートルです。";
 "movement_statistics_title_weekday_1" = "よくやった、月曜日にあなたは %@ 歩を合計しました、それは %@ メートルです";
 "movement_statistics_title_weekday_2" = "よくやった、火曜日にあなたは %@ 歩を合計しました、それは %@ メートルです";

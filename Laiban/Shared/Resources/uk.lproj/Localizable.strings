@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "Пам'ятати";
 "message_no_messages" = "Зараз у нас немає повідомлень.";
 "movement_choose_activity" = "Яку діяльність ви виконували?";
+"movement_close" = "Закрити";
 "movement_last_week" = "Минулого тижня ви зібрали в цілому %@ метрів енергії, а на цьому тижні %@ метрів";
 "movement_next" = "Наступний";
 "movement_nothing" = "Поки що на цьому тижні ви не зареєстрували жодного руху.";
 "movement_register" = "Зареєструватися";
 "movement_register_how_long" = "За скільки хвилин ви виконували вправу?";
 "movement_register_how_many" = "Скільки з вас брали участь у вправі?";
+"movement_statistics_how_far" = "Наскільки це далеко?";
+"movement_statistics_see_distance" = "Попросіть викладача придбати ще один iPad і разом подивіться, як далеко ви зайдете, коли йдете %@ метрів";
 "movement_statistics_title_today" = "Хороша робота, сьогодні ви зібрали %@ сходинок, ось %@ метрів.";
 "movement_statistics_title_weekday_1" = "Хороша робота, в понеділок ви підсумували %@ кроків, це %@ метрів";
 "movement_statistics_title_weekday_2" = "Хороша робота, у вівторок ви підсумували %@ кроків, це %@ метрів";

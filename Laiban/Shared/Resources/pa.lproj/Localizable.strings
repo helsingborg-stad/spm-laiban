@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "ਯਾਦ ਰੱਖੋ";
 "message_no_messages" = "ਸਾਡੇ ਕੋਲ ਇਸ ਸਮੇਂ ਕੋਈ ਸੰਦੇਸ਼ ਨਹੀਂ ਹਨ।";
 "movement_choose_activity" = "ਤੁਸੀਂ ਕਿਹੜੀ ਸਰਗਰਮੀ ਕੀਤੀ ਹੈ?";
+"movement_close" = "ਬੰਦ ਕਰੋ";
 "movement_last_week" = "ਪਿਛਲੇ ਹਫਤੇ ਤੁਸੀਂ ਊਰਜਾ ਵਿੱਚ ਕੁੱਲ %@ ਮੀਟਰ ਇਕੱਤਰ ਕੀਤੇ ਸਨ, ਅਤੇ ਇਸ ਹਫਤੇ <span translate='no'>string</span> ਮੀਟਰ";
 "movement_next" = "ਅੱਗੇ";
 "movement_nothing" = "ਇਸ ਹਫਤੇ ਅਜੇ ਤੱਕ ਤੁਸੀਂ ਕੋਈ ਅੰਦੋਲਨ ਦਰਜ ਨਹੀਂ ਕੀਤਾ ਹੈ।";
 "movement_register" = "ਰਜਿਸਟਰ";
 "movement_register_how_long" = "ਇਹ ਕਿਰਿਆ ਤੁਸੀਂ ਕਿੰਨ੍ਹੇ ਕੁ ਮਿੰਟਾਂ ਵਾਸਤੇ ਕੀਤੀ?";
 "movement_register_how_many" = "ਤੁਹਾਡੇ ਵਿੱਚੋਂ ਕਿੰਨਿਆਂ ਨੇ ਇਸ ਸਰਗਰਮੀ ਵਿੱਚ ਭਾਗ ਲਿਆ ਸੀ?";
+"movement_statistics_how_far" = "ਇਹ ਕਿੰਨੀ ਦੂਰ ਹੈ?";
+"movement_statistics_see_distance" = "ਕਿਸੇ ਅਧਿਆਪਕ ਨੂੰ ਇੱਕ ਹੋਰ iPad ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਕਹੋ ਅਤੇ ਇਕੱਠਿਆਂ ਇਹ ਦੇਖਣ ਲਈ ਕਹੋ ਕਿ ਜਦ ਤੁਸੀਂ %@ ਮੀਟਰ ਪੈਦਲ ਚੱਲਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਕਿੰਨ੍ਹੀ ਕੁ ਦੂਰ ਜਾਂਦੇ ਹੋ";
 "movement_statistics_title_today" = "ਵਧੀਆ ਕੰਮ ਹੈ, ਅੱਜ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਨੂੰ ਇਕੱਤਰ ਕਰ ਲਿਆ ਹੈ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ।";
 "movement_statistics_title_weekday_1" = "ਵਧੀਆ ਕੰਮ, ਸੋਮਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";
 "movement_statistics_title_weekday_2" = "ਵਧੀਆ ਕੰਮ, ਮੰਗਲਵਾਰ ਨੂੰ ਤੁਸੀਂ %@ ਕਦਮਾਂ ਦਾ ਕੁੱਲ ਜੋੜ ਲਿਆ, ਇਹ <span translate='no'>string</span> ਮੀਟਰ ਹੈ";

@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "یاد کرنا";
 "message_no_messages" = "ہمارے پاس ابھی کوئی پیغام نہیں ہے۔";
 "movement_choose_activity" = "آپ نے کیا سرگرمی کی ہے؟";
+"movement_close" = "بند کرنا";
 "movement_last_week" = "گزشتہ ہفتے آپ نے توانائی میں کل %@ میٹر جمع کیے، اور اس ہفتے %@ میٹر";
 "movement_next" = "اگلا";
 "movement_nothing" = "اس ہفتے اب تک آپ نے کسی بھی تحریک کو رجسٹر نہیں کیا ہے.";
 "movement_register" = "رجسٹر";
 "movement_register_how_long" = "آپ نے کتنے منٹ کے لئے سرگرمی کی؟";
 "movement_register_how_many" = "آپ میں سے کتنے لوگوں نے اس سرگرمی میں حصہ لیا؟";
+"movement_statistics_how_far" = "یہ کتنی دور ہے؟";
+"movement_statistics_see_distance" = "کسی استاد سے ایک اور رکن حاصل کرنے کے لئے کہیں اور ایک ساتھ دیکھیں کہ جب آپ %@ میٹر چلتے ہیں تو آپ کتنی دور جاتے ہیں۔";
 "movement_statistics_title_today" = "اچھا کام، آج آپ نے %@ قدم جمع کیے ہیں، یہ %@ میٹر ہے.";
 "movement_statistics_title_weekday_1" = "اچھا کام، پیر کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";
 "movement_statistics_title_weekday_2" = "اچھا کام، منگل کو آپ نے %@ قدموں کو کل کیا، یہ %@ میٹر ہے";

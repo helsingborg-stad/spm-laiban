@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "بیرت بێت";
 "message_no_messages" = "ئێمە ئێستا هیچ پەیامێکمان نیە.";
 "movement_choose_activity" = "چ چالاکییەکت ئەنجام داوە؟";
+"movement_close" = "داخستن";
 "movement_last_week" = "هەفتەی ڕابردوو سەرجەمی %@ مەتری وزەت کۆکردەوەو ئەم هەفتەیەش %@ مەتر";
 "movement_next" = "دواتر";
 "movement_nothing" = "تا ئێستا ئەم هەفتەیە هیچ جووڵەیەکت تۆمار نەکردووە.";
 "movement_register" = "تۆمارکردن";
 "movement_register_how_long" = "بۆ چەند خولەک چالاکیەکەت ئەنجام دا؟";
 "movement_register_how_many" = "چەندتان بەشدارییان لە چالاکییەکەدا کردووە؟";
+"movement_statistics_how_far" = "ئەوە چەند دوورە؟";
+"movement_statistics_see_distance" = "داوا لە مامۆستاکە بکە ئایپادێکی تر بەدەست بهێنیت و بەیەکەوە سەیری بکە کە چەند دوور ئەکەیت کاتێک %@ مەتردا پیاسە دەکەیت";
 "movement_statistics_title_today" = "کارێکی باش، ئەمڕۆ %@ هەنگاوت کۆکردۆتەوە، ئەوە %@ مەترە.";
 "movement_statistics_title_weekday_1" = "کارێکی باش، ڕۆژی دووشەممە %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";
 "movement_statistics_title_weekday_2" = "کارێکی باش، ڕۆژی سێشەممە تۆ %@ هەنگاوت تەواو کرد، ئەوە %@ مەترە";

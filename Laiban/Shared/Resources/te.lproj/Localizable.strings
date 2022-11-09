@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "ఙ్ఞాపకం";
 "message_no_messages" = "ప్రస్తుతం మాకు ఎలాంటి సందేశాలు లేవు.";
 "movement_choose_activity" = "మీరు ఏ యాక్టివిటీ చేశారు?";
+"movement_close" = "దగ్గర";
 "movement_last_week" = "గత వారం మీరు మొత్తం %@ మీటర్ల శక్తిని సేకరించారు, మరియు ఈ వారం <span translate='no'>string</span> మీటర్లు";
 "movement_next" = "తరువాత";
 "movement_nothing" = "ఈ వారం ఇప్పటివరకు మీరు ఎలాంటి ఉద్యమాన్ని నమోదు చేయలేదు.";
 "movement_register" = "రిజిస్టర్ చేసుకోండి";
 "movement_register_how_long" = "యాక్టివిటీని మీరు ఎన్ని నిమిషాలపాటు చేశారు?";
 "movement_register_how_many" = "మీలో ఎంతమంది యాక్టివిటీలో పాల్గొన్నారు?";
+"movement_statistics_how_far" = "అది ఎంత దూరంలో ఉంది?";
+"movement_statistics_see_distance" = "మరో ఐప్యాడ్ ని పొందమని టీచర్ ని అడగండి మరియు మీరు %@ మీటర్లు నడిచినప్పుడు మీరు ఎంత దూరం వెళ్తారో కలిసి చూడండి.";
 "movement_statistics_title_today" = "మంచి ఉద్యోగం, ఈ రోజు మీరు %@ దశలను సేకరించారు, అది <span translate='no'>string</span> మీటర్లు.";
 "movement_statistics_title_weekday_1" = "మంచి ఉద్యోగం, సోమవారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";
 "movement_statistics_title_weekday_2" = "మంచి ఉద్యోగం, మంగళవారం నాడు మీరు %@ స్టెప్స్ ని మొత్తం చేశారు, అది <span translate='no'>string</span> మీటర్లు.";

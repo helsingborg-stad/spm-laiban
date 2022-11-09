@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "ᐃᖅᑲᖅᓴᖅᑐᖅ";
 "message_no_messages" = "ᐅᖃᐅᓯᒃᓴᖃᖏᑦᑐᒍᑦ ᒫᓐᓇᐅᔪᖅ.";
 "movement_choose_activity" = "ᖃᓄᐃᓕᐅᖅᓯᒪᕕᑦ?";
+"movement_close" = "ᖃᓂᑦᑐᖅ";
 "movement_last_week" = "ᐱᓇᓱᐊᕈᓯᐅᓵᖅᑐᒥ ᑲᑎᖅᓱᐃᓚᐅᖅᐳᑎᑦ ᑲᑎᖦᖢᒋᑦ %@ ᒦᑕᓂᒃ ᐆᒻᒪᖅᑯᑎᒥᒃ, ᑕᒪᑐᒪᓂᓗ ᐱᓇᓱᐊᕈᓯᕐᒥ %@ ᒦᑕᓂᒃ";
 "movement_next" = "ᑭᖑᓪᓕᖅ";
 "movement_nothing" = "ᒫᓐᓇᒧᑦ ᑎᑭᖦᖢᒍ ᑕᒪᑐᒪᓂ ᐱᓇᓱᐊᕈᓯᕐᒥ ᐊᑎᓕᐅᖃᑕᐅᓯᒪᙱᓚᑎᑦ ᓱᓕ ᓇᒧᙵᐅᕙᓪᓕᐊᓂᕆᔭᐅᔪᒥᒃ.";
 "movement_register" = "ᐊᑎᓕᐅᕐᕕᒃ";
 "movement_register_how_long" = "ᖃᔅᓯᓄᑦ ᑎᑦᑕᑯᓗᒃᑯᑦ ᐱᓕᕆᓚᐅᖅᐱᑦ?";
 "movement_register_how_many" = "ᖃᔅᓯᓂᒃ ᐃᓚᐅᓚᐅᖅᐱᑦ ᐱᓕᕆᓕᖅᑕᔅᓯᓐᓂ?";
+"movement_statistics_how_far" = "ᖃᓄᑎᒋᐅᕙ?";
+"movement_statistics_see_distance" = "ᐃᓕᓴᐃᔨᒥᒃ ᐊᐱᕆᓗᑎᑦ iPad−ᑖᒃᑲᓐᓂᖁᓗᒍ ᑕᐅᑐᖃᑎᒌᒡᓗᓯᓗ ᖃᓄᖅ ᐅᖓᓯᒃᑎᒋᖕᒪᖔᖅᐱᑦ ᐱᓱᒃᑎᓪᓗᑎᑦ %@ ᒦᑕᓂᒃ";
 "movement_statistics_title_today" = "ᐱᓕᕆᑦᑎᐊᖅᐳᑎᑦ, ᐅᓪᓗᒥ ᓄᐊᑦᑎᓯᒪᕗᓯ %@ , %@ ᒦᑕᓂᒃ.";
 "movement_statistics_title_weekday_1" = "ᐱᓕᕆᑦᑎᐊᖅᐳᑎᑦ, ᓇᒡᒐᔾᔭᒥ ᑲᑎᖦᖢᒋᑦ %@ ᐱᓕᕆᐊᒃᓴᑦ, %@ ᒦᑕᔅ";
 "movement_statistics_title_weekday_2" = "ᐱᓕᕆᑦᑎᐊᖅᑐᑎᑦ, ᐊᐃᑉᐱᐅᑎᓪᓗᒍ ᑲᑎᖦᖢᒋᑦ %@ ᐊᓪᓗᕆᐊᕈᑎᑦ, %@ ᒦᑕᑦ";

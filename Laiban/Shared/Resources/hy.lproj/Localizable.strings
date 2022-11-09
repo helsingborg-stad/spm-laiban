@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "Հիշիր";
 "message_no_messages" = "Այս պահին հաղորդագրություններ չունենք:";
 "movement_choose_activity" = "— Ի՞նչ գործունեություն եք ծավալել:";
+"movement_close" = "Փակ";
 "movement_last_week" = "Անցած շաբաթ դուք ընդհանուր %@ մետր էներգիա եք հավաքել, իսկ այս շաբաթ %@ մետր";
 "movement_next" = "Հաջորդը";
 "movement_nothing" = "Այս շաբաթ դուք ոչ մի շարժում չեք գրանցել:";
 "movement_register" = "Գրանցվել";
 "movement_register_how_long" = "Քանի՞ րոպեով եք կատարել վարժությունը:";
 "movement_register_how_many" = "Ձեզանից քանի՞սն են մասնակցել միջոցառմանը:";
+"movement_statistics_how_far" = "Որքա՞ ն հեռու է դա:";
+"movement_statistics_see_distance" = "Խնդրեք ուսուցչին ստանալ եւս մեկ iPad եւ միասին դիտել, թե որքան հեռու եք հասնում, երբ քայլում եք %@ մետրով";
 "movement_statistics_title_today" = "Լավ աշխատանք, այսօր %@ քայլեր եք հավաքել, դա %@ մետր է:";
 "movement_statistics_title_weekday_1" = "Լավ աշխատանք, երկուշաբթի օրը %@ քայլերը ամբողջությամբ, դա %@ մետր";
 "movement_statistics_title_weekday_2" = "Լավ գործ, երեքշաբթի օրը %@ քայլեր ես ամբողջացրել, դա %@ մետր";

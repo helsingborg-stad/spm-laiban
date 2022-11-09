@@ -42,8 +42,8 @@
 "clock_time_8" = "Oito";
 "clock_time_9" = "Nove";
 "clock_time_description_0600_to_0730" = "Agora é de manhã e desta vez damos café da manhã.";
+"clock_time_description_0730_to_0830" = "Agora é de manhã.";
 "clock_time_description_0830_to_0900" = "Por volta desta hora comemos frutas.";
-"clock_time_description_0900_to_1045" = "Agora é de manhã.";
 "clock_time_description_1045_to_1230" = "Agora é meio-dia e hora do almoço.";
 "clock_time_description_1400_to_1500" = "Agora é tarde e desta vez comemos lanches.";
 "clock_time_description_1500_to_1630" = "Agora é tarde.";
@@ -129,21 +129,21 @@ Olha o que você vai vestir!";
 "food_waste_tip_3" = "Lembre-se de sentar em paz e quieto e provar toda a comida. Suas papilas gustativas precisam praticar novos sabores muitas vezes para você aprender a gostar deles. As papilas gustativas estão em sua língua";
 "food_waste_title" = "Toque nas imagens para adicionar ou remover da escala";
 "food_waste_weekly_stats" = "Esta semana você jogou fora %@ gramas de comida.";
-"garment_beanie" = "Gorro";
+"garment_beanie_description" = "Gorro";
 "garment_cap" = "Boné";
 "garment_jacket_description" = "Jaqueta";
 "garment_mittens" = "Luvas";
 "garment_neckWear" = "Gola alta ou cachecol";
 "garment_neckWear_description" = "Cachecol ou gola alta";
-"garment_pulloverPants" = "Calças de capa";
-"garment_rainBoots_description" = "Botas";
+"garment_pulloverPants_description" = "Calças de capa";
+"garment_rainBoots" = "Botas";
 "garment_rainCoat" = "Jaqueta de chuva";
 "garment_rainGloves_description" = "Luvas de chuva";
-"garment_rainPants_description" = "Calças de chuva";
-"garment_shoes" = "Calçado";
+"garment_rainPants" = "Calças de chuva";
+"garment_shoes_description" = "Calçado";
 "garment_sweater_description" = "Suéter quente";
 "garment_winterBoots_description" = "Botas de inverno";
-"garment_winterOutfit_description" = "Macacão ou jaqueta com calças de capa";
+"garment_winterOutfit" = "Macacão ou jaqueta com calças de capa";
 "home_feedback_acitivity_title" = "Você participou de uma atividade?
 Clique aqui para nos dizer o que achou disso!";
 "home_holiday" = "Amanhã é %@. Um ótimo final de semana para você!";
@@ -168,12 +168,15 @@ Clique aqui para nos dizer o que achou disso!";
 "message_category_reminder_title" = "Lembrar";
 "message_no_messages" = "Não temos nenhuma mensagem agora.";
 "movement_choose_activity" = "Que atividade você fez?";
+"movement_close" = "Fechar";
 "movement_last_week" = "Na semana passada você coletou um total de %@ metros em energia, e esta semana %@ metros";
 "movement_next" = "Próximo";
 "movement_nothing" = "Até agora esta semana você não registrou nenhum movimento.";
 "movement_register" = "Registro";
 "movement_register_how_long" = "Por quantos minutos você fez a atividade?";
 "movement_register_how_many" = "Quantos de vocês participaram da atividade?";
+"movement_statistics_how_far" = "Qual é a quantidade?";
+"movement_statistics_see_distance" = "Peça a um professor para pegar outro iPad e observe juntos o quão longe você chega quando anda %@ metros";
 "movement_statistics_title_today" = "Bom trabalho, hoje você coletou %@ passos, isso é %@ metros.";
 "movement_statistics_title_weekday_1" = "Bom trabalho, na segunda-feira você totalizou %@ passos, que é %@ metros";
 "movement_statistics_title_weekday_2" = "Bom trabalho, na terça-feira você totalizou %@ passos, que é %@ metros";
@@ -208,10 +211,10 @@ Isso é logo depois de %@.";
 Isso foi logo depois %@.";
 "tempus_child_arrives_before" = "%@ chegará à pré-escola por volta %@.
 Isso foi pouco antes de %@.";
+"tempus_child_arrives_before_past" = "%@ chegou à pré-escola por volta %@.
+Isso foi pouco antes de %@.";
 "tempus_child_arrives_during" = "%@ chegará à pré-escola por volta %@.
 Isso é durante %@.";
-"tempus_child_arrives_during_past" = "%@ chegou à pré-escola por volta %@.
-Isso foi pouco antes de %@.";
 "tempus_child_arrives_past" = "%@ chegou à pré-escola por volta %@";
 "tempus_child_has_left" = "%@ parece ter ido para casa por um dia.";
 "tempus_child_has_left_returns_in_days" = "%@ parece ter ido para casa por um dia, mas deve voltar em %@ dias.";

@@ -42,8 +42,8 @@
 "clock_time_8" = "Osam";
 "clock_time_9" = "Devet";
 "clock_time_description_0600_to_0730" = "Sada je jutro i negde u ovo vreme doručkujemo.";
+"clock_time_description_0730_to_0830" = "Sada je jutro.";
 "clock_time_description_0830_to_0900" = "Negde u ovo vreme jedemo voжe.";
-"clock_time_description_0900_to_1045" = "Sada je jutro.";
 "clock_time_description_1045_to_1230" = "Sada je podne i vreme ručka.";
 "clock_time_description_1400_to_1500" = "Sada je popodne i negde u ovo vreme jedemo grickalice.";
 "clock_time_description_1500_to_1630" = "Sada je popodne.";
@@ -129,21 +129,21 @@ Vidi šta ćeš da obučeš!";
 "food_waste_tip_3" = "Ne zaboravite da sedite u miru i tišini i okusite svu hranu. Vaši pupoljci ukusa moraju mnogo puta da vežbaju nove ukuse da biste naučili da ih volite. Pupoljci ukusa su ti na jeziku";
 "food_waste_title" = "Dodirnite slike da biste dodali ili uklonili iz skale";
 "food_waste_weekly_stats" = "Ove nedelje ste bacili %@ grama hrane.";
-"garment_beanie" = "Beanie";
+"garment_beanie_description" = "Beanie";
 "garment_cap" = "Kapetane";
 "garment_jacket_description" = "Jaknu";
 "garment_mittens" = "Rukavico";
 "garment_neckWear" = "Rolka ili šal";
 "garment_neckWear_description" = "Šal ili rolka";
-"garment_pulloverPants" = "Naslovna Pantalone";
-"garment_rainBoots_description" = "Иizme";
+"garment_pulloverPants_description" = "Naslovna Pantalone";
+"garment_rainBoots" = "Иizme";
 "garment_rainCoat" = "Kišna jakna";
 "garment_rainGloves_description" = "Kišne rukavice";
-"garment_rainPants_description" = "Kišne pantalone";
-"garment_shoes" = "Cipele";
+"garment_rainPants" = "Kišne pantalone";
+"garment_shoes_description" = "Cipele";
 "garment_sweater_description" = "Topao džemper";
 "garment_winterBoots_description" = "Zimske čizme";
-"garment_winterOutfit_description" = "Kombinezon ili jakna sa maskotama";
+"garment_winterOutfit" = "Kombinezon ili jakna sa maskotama";
 "home_feedback_acitivity_title" = "Da li ste učestvovali u aktivnosti?
 Kliknite ovde da biste nam rekli šta рeta рavole o tome!";
 "home_holiday" = "Sutra je %@. Ugodan vikend!";
@@ -168,12 +168,15 @@ Kliknite ovde da biste nam rekli šta рeta рavole o tome!";
 "message_category_reminder_title" = "Zapamti";
 "message_no_messages" = "Trenutno nemamo nikakve poruke.";
 "movement_choose_activity" = "Koju aktivnost ste uradili?";
+"movement_close" = "Zatvorite";
 "movement_last_week" = "Prošle nedelje ste sakupili ukupno %@ metara energije, a ove nedelje %@ metara";
 "movement_next" = "Sledeжi";
 "movement_nothing" = "Do sada ove nedelje niste registrovali nikakvo kretanje.";
 "movement_register" = "Registrujete";
 "movement_register_how_long" = "Koliko minuta ste radili aktivnost?";
 "movement_register_how_many" = "Koliko vas je učestvovalo u aktivnosti?";
+"movement_statistics_how_far" = "Koliko je to daleko?";
+"movement_statistics_see_distance" = "Zamolite učitelja da nabavi još jedan iPad i gledajte zajedno dokle ćete ćili kad hodate %@ metara";
 "movement_statistics_title_today" = "Svaka cast, danas ste sakupili %@ korake, to je %@ metara.";
 "movement_statistics_title_weekday_1" = "Svaka cast, u ponedeljak si %@ korake, to je %@ metara";
 "movement_statistics_title_weekday_2" = "Svaka cast, u utorak si %@ korake, to je %@ metara";
@@ -208,10 +211,10 @@ To je odmah posle %@.";
 To je bilo odmah posle %@.";
 "tempus_child_arrives_before" = "%@ će stići u predškolsko oko %@.
 To je bilo pre %@.";
+"tempus_child_arrives_before_past" = "%@ je stigla u predškolsko oko %@.
+To je bilo neposredno pre %@.";
 "tempus_child_arrives_during" = "%@ će stići u predškolsko oko %@.
 To je tokom %@.";
-"tempus_child_arrives_during_past" = "%@ je stigla u predškolsko oko %@.
-To je bilo neposredno pre %@.";
 "tempus_child_arrives_past" = "%@ je stigla u predškolsko oko %@";
 "tempus_child_has_left" = "%@ izgleda da je otiљao kuжi za danas.";
 "tempus_child_has_left_returns_in_days" = "%@ da je otiљao kuжi na jedan dan, ali bi trebalo da se vrati %@ dana.";

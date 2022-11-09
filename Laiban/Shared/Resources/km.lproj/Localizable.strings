@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "ចាំចាំ";
 "message_no_messages" = "យើង មិន មាន សារ ណា មួយ នៅ ពេល នេះ ទេ ។";
 "movement_choose_activity" = "តើ អ្នក បាន ធ្វើ សកម្មភាព អ្វី ខ្លះ ?";
+"movement_close" = "បិទ";
 "movement_last_week" = "សប្តាហ៍ មុន អ្នក ប្រមូល ថាមពល %@ ម៉ែត្រ សរុប ហើយ សប្តាហ៍ នេះ <span translate='no'>string</span> ម៉ែត្រ";
 "movement_next" = "Next";
 "movement_nothing" = "រហូត មក ដល់ សប្តាហ៍ នេះ អ្នក មិន ទាន់ បាន ចុះ ឈ្មោះ ចលនា ណា មួយ នៅ ឡើយ ទេ ។";
 "movement_register" = "ចុះឈ្មោះ";
 "movement_register_how_long" = "តើ អ្នក បាន ធ្វើ សកម្មភាព នេះ ប៉ុន្មាន នាទី ?";
 "movement_register_how_many" = "តើ អ្នក បាន ចូលរួម សកម្មភាព ប៉ុន្មាន ?";
+"movement_statistics_how_far" = "តើ វា ដល់ កម្រិត ណា ?";
+"movement_statistics_see_distance" = "សុំ ឲ្យ គ្រូ យក iPad មួយ ផ្សេង ទៀត ហើយ មើល ជាមួយ គ្នា ថា តើ អ្នក ទៅ ដល់ កម្រិត ណា ពេល អ្នក ដើរ <span translate='no'>string</span> ម៉ែត្រ";
 "movement_statistics_title_today" = "ការងារល្អ ថ្ងៃនេះអ្នកបានប្រមូល %@ ជំហាននោះ <span translate='no'>string</span> ម៉ែត្រ។";
 "movement_statistics_title_weekday_1" = "ការងារ ល្អ នៅ ថ្ងៃ ចន្ទ នេះ អ្នក បាន សរុប ជំហាន %@ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";
 "movement_statistics_title_weekday_2" = "ការងារ ល្អ នៅ ថ្ងៃ អង្គារ នេះ អ្នក បាន %@ ជំហាន ទាំង អស់ នោះ គឺ <span translate='no'>string</span> ម៉ែត្រ";

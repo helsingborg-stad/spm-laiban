@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "დაიმახსოვრე";
 "message_no_messages" = "ახლა შეტყობინებები არ გვაქვს.";
 "movement_choose_activity" = "რა საქმიანობა გააკეთეთ?";
+"movement_close" = "დახურვა";
 "movement_last_week" = "გასულ კვირას თქვენ შეაგროვეთ სულ %@ მეტრი ენერგია და ამ კვირაში %@ მეტრი";
 "movement_next" = "შემდეგი";
 "movement_nothing" = "ჯერჯერობით ამ კვირაში თქვენ არ დაარეგისტრირათ მოძრაობა.";
 "movement_register" = "რეგისტრაცია";
 "movement_register_how_long" = "რამდენი წუთის განმავლობაში გააკეთეთ საქმიანობა?";
 "movement_register_how_many" = "რამდენი თქვენგანი მონაწილეობდით საქმიანობაში?";
+"movement_statistics_how_far" = "რამდენად შორს არის ეს?";
+"movement_statistics_see_distance" = "სთხოვეთ მასწავლებელს, რომ მიიღოთ კიდევ ერთი iPad და უყუროთ ერთად, თუ რამდენად შორს მიდიხართ %@ მეტრის ";
 "movement_statistics_title_today" = "კარგი სამუშაო, დღეს თქვენ შეაგროვეთ %@ ნაბიჯები, ეს %@ მეტრია.";
 "movement_statistics_title_weekday_1" = "კარგი სამუშაო, ორშაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";
 "movement_statistics_title_weekday_2" = "კარგი სამუშაო, სამშაბათს თქვენ შეადგინეთ %@ ნაბიჯები, ეს %@ მეტრია";

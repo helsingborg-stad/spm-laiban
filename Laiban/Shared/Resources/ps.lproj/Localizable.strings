@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "په یاد";
 "message_no_messages" = "موږ اوس هیڅ پیغام نه لرو.";
 "movement_choose_activity" = "تاسو څه فعالیت کړی دی؟";
+"movement_close" = "بند";
 "movement_last_week" = "تیره اونۍ تاسو د انرژۍ په برخه کې ټول ټال %@ ، او په دې اونۍ کې %@ متره";
 "movement_next" = "وروسته";
 "movement_nothing" = "تر اوسه په دې اونۍ کې تاسو هیڅ حرکت نه دی ثبت کړی.";
 "movement_register" = "راجستر";
 "movement_register_how_long" = "د څو دقیقو لپاره تاسو فعالیت ترسره کړ؟";
 "movement_register_how_many" = "تاسو څو کسانو په دې فعالیت کې برخه اخستې وه؟";
+"movement_statistics_how_far" = "دا څومره لرې دې؟";
+"movement_statistics_see_distance" = "له یو ښوونکی څخه وغواړئ چې یو بل آی پډ ترلاسه کړی او په ګډه سره وګورئ کله چې تاسو د میترو په %@ ترلاسه کوئ";
 "movement_statistics_title_today" = "ښه دنده، نن تاسو %@ راټول کړی دی، دا %@ دی.";
 "movement_statistics_title_weekday_1" = "ښه دنده ، د دوشنبې په ورځ تاسو %@ ګامونه ټول کړل ، دا %@ متره دی";
 "movement_statistics_title_weekday_2" = "ښه دنده، تاسو د سه شنبې په ورځ %@ ګامونه ټول کړل ، دا %@ متره دی";

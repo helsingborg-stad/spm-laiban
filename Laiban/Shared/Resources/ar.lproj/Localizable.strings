@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "تذكر";
 "message_no_messages" = "ليس لدينا أي رسائل الآن";
 "movement_choose_activity" = "ما النشاط الذي قمت به؟";
+"movement_close" = "غلق";
 "movement_last_week" = "في الأسبوع الماضي جمعت ما مجموعه %@ متر من الطاقة ، وهذا الأسبوع %@ متر";
 "movement_next" = "مقبل";
 "movement_nothing" = "حتى الآن هذا الأسبوع لم تسجل أي حركة.";
 "movement_register" = "سجل";
 "movement_register_how_long" = "كم دقيقة قمت بهذا النشاط؟";
 "movement_register_how_many" = "كم منكم شارك في النشاط؟";
+"movement_statistics_how_far" = "إلى أي مدى هذا الحد؟";
+"movement_statistics_see_distance" = "اطلب من المعلم الحصول على جهاز iPad آخر ومشاهدة المسافة التي تصل إليها عند المشي %@ متر";
 "movement_statistics_title_today" = "عمل جيد ، اليوم قمت بجمع خطوات %@ ، وهذا %@ متر.";
 "movement_statistics_title_weekday_1" = "عمل جيد ، يوم الاثنين ، بلغ مجموعك خطوات %@ ، وهذا %@ متر";
 "movement_statistics_title_weekday_2" = "عمل جيد ، يوم الثلاثاء ، بلغ مجموعك %@ خطوة ، أي %@ متر";

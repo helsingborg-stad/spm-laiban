@@ -36,13 +36,12 @@ public struct MovementView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @ObservedObject var service:MovementService
-    @StateObject var manager = MovementViewModel()
     
     public init(service:MovementService) {
         self.service = service
     }
     func cancelParentalGate() {
-        manager.setCurrentView(.statistics)
+        service.viewModel.setCurrentView(.statistics)
     }
     var statistics: some View {
         GeometryReader { proxy in
@@ -56,24 +55,24 @@ public struct MovementView: View {
                         .padding([.bottom, .leading, .trailing], 20)
                 }
                 VStack {
-                    if manager.title != nil {
-                        Text(manager.title!.display)
+                    if service.viewModel.title != nil {
+                        Text(service.viewModel.title!.display)
                             .font(properties.font, ofSize: .n)
                             .multilineTextAlignment(.center)
                     }
                     Spacer()
-                    MovementTableView(movementManager: service.movementManager, statistics: manager.weeklyStatistics) { scale, action in
+                    MovementTableView(movementManager: service.movementManager, statistics: service.viewModel.weeklyStatistics) { scale, action in
                         if scale.date > Date() {
                             return
                         }
-                        manager.selectedDate = scale.date
+                        service.viewModel.selectedDate = scale.date
                         if action == .didPressIcon {
-                            manager.setCurrentView(.activityChooser)
+                            service.viewModel.setCurrentView(.activityChooser)
                         } else {
                             if service.movementManager.movement(for: scale.date) != nil {
-                                manager.setCurrentView(.dailyMovemnent)
+                                service.viewModel.setCurrentView(.dailyMovemnent)
                             } else {
-                                manager.setCurrentView(.enterNumMoving)
+                                service.viewModel.setCurrentView(.enterNumMoving)
                             }
                         }
                     }
@@ -97,7 +96,7 @@ public struct MovementView: View {
         }
     }
     var dailyStatistics: some View {
-        return MovementDailyStatisticsView(service: service, date: manager.selectedDate)
+        return MovementDailyStatisticsView(service: service, date: service.viewModel.selectedDate)
         .frame(maxWidth:.infinity,maxHeight: .infinity)
         .padding(properties.spacing[.m])
         .primaryContainerBackground()
@@ -109,8 +108,8 @@ public struct MovementView: View {
     var activityChooser: some View {
         GeometryReader { proxy in
             VStack {
-                if manager.title != nil {
-                    Text(manager.title!.display)
+                if service.viewModel.title != nil {
+                    Text(service.viewModel.title!.display)
                         .font(properties.font, ofSize: .n)
                         .multilineTextAlignment(.center)
                 }
@@ -124,7 +123,7 @@ public struct MovementView: View {
                             if let toSpeak = activity.localizationKey {
                                 assistant.speak([toSpeak])
                             }
-                            manager.setCurrentView(.enterMovementTime)
+                            service.viewModel.setCurrentView(.enterMovementTime)
                         }
                         .frame(width:itemSize(proxy, columns: columns),height:itemSize(proxy, columns: columns) * 1.1)
                         .animation(Animation.easeInOut(duration: 0.2))
@@ -139,23 +138,30 @@ public struct MovementView: View {
             .frame(maxWidth:.infinity, maxHeight: .infinity)
             .padding(0)
             .primaryContainerBackground()
-            .parentalGate(properties: properties) // , status: $manager.parentalGateStatus
+            .parentalGate(properties: properties, status: $service.viewModel.parentalGateStatus)
+            .onStatusChanged { status in
+                if status == .cancelled {
+                    service.viewModel.setCurrentView(.statistics)
+                } else if status == .passed {
+                    service.viewModel.updateTitle(speakAfter: true)
+                }
+            }
             .transition(.opacity.combined(with: .scale))
         }
     }
     
     var register: some View {
-        RegisterMovementView(manager: manager, service:service)
+        RegisterMovementView(manager: service.viewModel, service:service)
             .transition(.opacity.combined(with: .scale))
     }
     @ViewBuilder var root: some View {
-        if manager.currentView == .statistics {
+        if service.viewModel.currentView == .statistics {
             statistics
-        } else if manager.currentView == .enterMovementTime || manager.currentView == .enterNumMoving  {
+        } else if service.viewModel.currentView == .enterMovementTime || service.viewModel.currentView == .enterNumMoving  {
             register
-        } else if manager.currentView == .activityChooser {
+        } else if service.viewModel.currentView == .activityChooser {
             activityChooser
-        } else if manager.currentView == .dailyMovemnent {
+        } else if service.viewModel.currentView == .dailyMovemnent {
             dailyStatistics
         }
     }
@@ -163,13 +169,13 @@ public struct MovementView: View {
         Group {
             root
         }
-        .animation(.spring(),value:manager.currentView)
+        .animation(.spring(),value: service.viewModel.currentView)
         .onAppear {
-            manager.initiate(with: assistant,service:service, viewState: viewState)
+            service.viewModel.initiate(with: assistant,service:service, viewState: viewState)
         }
         .onReceive(properties.actionBarNotifier) { action in
             if action == .back {
-                manager.setCurrentView(.statistics)
+                service.viewModel.setCurrentView(.statistics)
             }
         }
     }

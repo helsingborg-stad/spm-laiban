@@ -32,6 +32,7 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     public var listViewSection: LBAdminListViewSection = .init(id: "Movement", title: "Rörelse", listOrderPriority: .content.after)
     public var listOrderPriority: Int = 1
     public var cancellables = Set<AnyCancellable>()
+    @ObservedObject var viewModel = MovementViewModel()
 
     @Published public var movementManager = MovementManager()
     @Published public private(set) var stringsToTranslate: [String] = []

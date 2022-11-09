@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "Θυμάμαι";
 "message_no_messages" = "Δεν έχουμε μηνύματα αυτή τη στιγμή.";
 "movement_choose_activity" = "Τι δραστηριότητα έχετε κάνει;";
+"movement_close" = "Κλείνω";
 "movement_last_week" = "Την περασμένη εβδομάδα συλλέξατε συνολικά %@ μετρητές σε ενέργεια και αυτή την εβδομάδα %@ μέτρα";
 "movement_next" = "Επόμενος";
 "movement_nothing" = "Μέχρι στιγμής αυτή την εβδομάδα δεν έχετε καταγράψει καμία κίνηση.";
 "movement_register" = "Εγγράψου";
 "movement_register_how_long" = "Για πόσα λεπτά κάνατε τη δραστηριότητα;";
 "movement_register_how_many" = "Πόσοι από εσάς συμμετείχατε στη δραστηριότητα;";
+"movement_statistics_how_far" = "Πόσο μακριά είναι αυτό;";
+"movement_statistics_see_distance" = "Ζητήστε από έναν δάσκαλο να πάρει ένα άλλο iPad και να παρακολουθεί μαζί πόσο μακριά φτάνετε όταν περπατάτε %@ μέτρα";
 "movement_statistics_title_today" = "Καλή δουλειά, σήμερα έχετε συλλέξει %@ βήματα, δηλαδή %@ μέτρα.";
 "movement_statistics_title_weekday_1" = "Καλή δουλειά, τη Δευτέρα αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";
 "movement_statistics_title_weekday_2" = "Καλή δουλειά, την Τρίτη αθροίσατε %@ βήματα, δηλαδή %@ μέτρα";

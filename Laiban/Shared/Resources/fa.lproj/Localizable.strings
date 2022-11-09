@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "خاطر داشته باشید";
 "message_no_messages" = "ما الان هيچ پيغامي نداريم .";
 "movement_choose_activity" = "چه فعالیتی انجام داده ای؟";
+"movement_close" = "نزدیک";
 "movement_last_week" = "هفته گذشته شما جمع آوری مجموع %@ متر در انرژی، و این هفته %@ متر";
 "movement_next" = "بعدی";
 "movement_nothing" = "تا حالا اين هفته هيچ حرکتي ثبت نام نکردي .";
 "movement_register" = "ثبت";
 "movement_register_how_long" = "برای چند دقیقه فعالیت را انجام دادید؟";
 "movement_register_how_many" = "چند نفر از شما در این فعالیت شرکت کرده بودید؟";
+"movement_statistics_how_far" = "چقدر دور است؟";
+"movement_statistics_see_distance" = "از یک معلم بخواهید که آی پد دیگری دریافت کند و با هم تماشا کند که وقتی در چند متر راه می روید %@ کنید";
 "movement_statistics_title_today" = "کار خوب ، امروز شما %@ جمع آوری شده است ، که %@ متر است.";
 "movement_statistics_title_weekday_1" = "کار خوبي بود، روز دوشنبه تو %@ يه قدمي گرفتي، %@ متر";
 "movement_statistics_title_weekday_2" = "کار خوبي بود، روز سه شنبه %@ يه قدمي زدي، اون %@ متره";

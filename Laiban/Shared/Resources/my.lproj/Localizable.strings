@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "အောက်မေ့";
 "message_no_messages" = "အခု ကျွန်တော်တို့မှာ သတင်းအချက်အလက်တွေ မရှိပါဘူး။";
 "movement_choose_activity" = "အဘယ်လုပ်ဆောင်မှုပြုလုပ်ခဲ့ပြီနည်း။";
+"movement_close" = "ပိတ်ပါ";
 "movement_last_week" = "ပြီး ခဲ့ သည့် အပတ် က သင် သည် စွမ်းအင် စုစုပေါင်း မီတာ တစ် ခု ကို %@ စုဆောင်း ခဲ့ ပြီး ၊ ဒီ အပတ် <span translate='no'>string</span> မီတာ များ";
 "movement_next" = "နောက်တစ်ခေါ";
 "movement_nothing" = "ဒီအပတ်အထိ ဘယ်လှုပ်ရှားမှုကိုမှ မှတ်ပုံတင်မထားပါဘူး။";
 "movement_register" = "မှတ်ပုံတင်";
 "movement_register_how_long" = "ဒီလုပ်ဆောင်မှုကို မိနစ်ဘယ်နှစ်မိနစ်လောက် လုပ်ခဲ့သလဲ။";
 "movement_register_how_many" = "ဒီလုပ်ငန်းမှာ ခင်ဗျားတို့ ဘယ်နှစ်ယောက် ပါဝင်ခဲ့သလဲ။";
+"movement_statistics_how_far" = "ယင်းသည် မည်မျှအထိအထိရှိသနည်း။";
+"movement_statistics_see_distance" = "ဆရာတစ်ယောက်ကို iPad နောက်တစ်ခုရဖို့ တောင်းဆိုပြီး မီတာလမ်းလျှောက်တဲ့အခါ ဘယ်လောက်ဝေးသွားမလဲဆိုတာ အတူကြည့်ပါလို့ <span translate='no'>string</span> မီတာတွေမှာ ";
 "movement_statistics_title_today" = "ကောင်းတဲ့အလုပ်ကတော့ ဒီနေ့ ခင်ဗျားတို့ဟာ %@ အဆင့်တွေကို စုဆောင်းပြီး <span translate='no'>string</span> မီတာပါ။";
 "movement_statistics_title_weekday_1" = "တနင်္လာနေ့မှာ ခင်ဗျားဟာ %@ စုစုပေါင်း  <span translate='no'>string</span>";
 "movement_statistics_title_weekday_2" = "အင်္ဂါနေ့မှာ အင်္ဂါနေ့မှာ %@ စုစုပေါင်း ခြေလှမ်းတွေရှိတယ်၊ ဒါက <span translate='no'>string</span> မီတာတွေပါ";

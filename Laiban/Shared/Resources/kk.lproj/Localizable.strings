@@ -186,12 +186,15 @@
 "message_category_reminder_title" = "Есте сақтау";
 "message_no_messages" = "Бізде қазір ешқандай хабар жоқ.";
 "movement_choose_activity" = "Сіз қандай қызмет атқардыңыз?";
+"movement_close" = "Жабу";
 "movement_last_week" = "Өткен аптада сіз барлығы %@ метр энергия жинадыңыз, ал осы аптада %@ метр";
 "movement_next" = "Келесі";
 "movement_nothing" = "Осы аптаға дейін сіз ешқандай қозғалысты тіркемегенсіз.";
 "movement_register" = "Регистр";
 "movement_register_how_long" = "Сіз әрекетті қанша минут жасадыңыз?";
 "movement_register_how_many" = "Сіз қанша іс-шараға қатыстыңыз?";
+"movement_statistics_how_far" = "Бұл қаншалықты алыс?";
+"movement_statistics_see_distance" = "Мұғалімнен басқа iPad-ты алуын сұрап, %@ метрмен жүріп өткенде қаншалықты алысқа баратыныңызды бірге көруді сұраңыз";
 "movement_statistics_title_today" = "Жақсы жұмыс, бүгін сіздер %@ қадамдар жинадыңыздар, яғни %@ метр.";
 "movement_statistics_title_weekday_1" = "Жақсы жұмыс, дүйсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
 "movement_statistics_title_weekday_2" = "Жақсы жұмыс, сейсенбі күні сіз %@ қадам жасадыңыз, яғни %@ метр";
