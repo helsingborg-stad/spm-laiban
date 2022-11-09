@@ -126,6 +126,7 @@ struct DailyStatisticsSheet: View {
                 Spacer()
                 Button(action: {
                     self.showSheet = false
+                    assistant.speak("", interrupt: true)
                 }) {
                     Text(assistant.string(forKey: "movement_close"))
                         .foregroundColor(.white)

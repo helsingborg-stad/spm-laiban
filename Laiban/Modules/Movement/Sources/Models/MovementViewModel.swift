@@ -185,9 +185,9 @@ class MovementViewModel: ObservableObject {
         }
 
         if let s = getTitleAndVoice() {
-            if s.display == title?.display {
+            /*if s.display == title?.display {
                 return
-            }
+            }*/
             self.title = s
             speak()
         }
