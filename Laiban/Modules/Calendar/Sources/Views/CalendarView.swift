@@ -21,10 +21,11 @@ struct TodayView: View {
             .background(Circle().foregroundColor(day.color))
     }
 }
-struct TodayViewModifier: ViewModifier {
+struct SelectedDayViewModifier: ViewModifier {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.locale) var locale
     var day: DayView.Day
+    var selectedDay: DayView.Day
     var name:String {
         return self.horizontalSizeClass == .regular ? self.day.name(in:locale) : self.day.shortName(in:locale)
     }
@@ -41,16 +42,20 @@ struct TodayViewModifier: ViewModifier {
                         .font(.system(size: size, weight: .semibold, design: .rounded))
                         .foregroundColor(self.day.altColor)
                 }
-                .opacity(self.day.isToday ? 1 : 0)
+                .opacity(self.day == self.selectedDay ? 1 : 0)
                 .frame(width: proxy.size.width + self.padding, height: proxy.size.width + self.padding).position(x: proxy.size.width / 2, y: proxy.size.height / 2)
             }).frame(alignment: .center)
     }
 }
+
 struct DayView: View {
     @EnvironmentObject var assistant:Assistant
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.locale) var locale
     @Environment(\.fullscreenContainerProperties) var properties
+    
+    @Binding var selectedDay:Day
+    
     enum Day : Int,CaseIterable {
         case monday = 1
         case tuesday
@@ -70,6 +75,7 @@ struct DayView: View {
             case .sunday: return Date().startOfWeek!.dateOffsetBy(days: 6)!
             }
         }
+   
         private var backgroundColorName:String {
             switch self {
             case .monday: return "CalendarColorMonday"
@@ -149,14 +155,19 @@ struct DayView: View {
                 return backgroundColor.opacity(0.5)
             }
             return backgroundColor
-
         }
         var isToday:Bool {
             date.actualWeekDay == self.rawValue
         }
+        
+        private var viewmodel:CalendarViewModel {
+            return CalendarViewModel()
+        }
+        
         func isFree(events:[OtherCalendarEvent]?) -> Bool {
             return events?.contains(where: { $0.date.isSameDay(as: day)}) ?? false
         }
+        
         static var current:Day {
             Day(rawValue: Date().actualWeekDay)!
         }
@@ -167,15 +178,16 @@ struct DayView: View {
     var day:Day
     var body: some View {
         Text(self.horizontalSizeClass == .regular ? self.day.name(in: locale) : self.day.shortName(in: locale))
+            .underline(day.isToday)
             .padding(EdgeInsets(top: 0, leading: self.padding, bottom: 0, trailing: self.padding))
             .frame(maxHeight: .infinity)
             .lineLimit(1)
             .foregroundColor(self.day.textColor)
             .font(properties.font, ofSize: .xs)
             .frame(alignment:.center)
-            .zIndex(day.isToday ? 10 : 0)
+            .zIndex(day == selectedDay ? 10 : 0)
             .background(DayBG(day: self.day))
-            .modifier(TodayViewModifier(day: self.day))
+            .modifier(SelectedDayViewModifier(day: self.day, selectedDay: self.selectedDay))
     }
 }
 
@@ -200,6 +212,7 @@ struct DayBG : View {
         .zIndex(day.isToday ? 10 : 0)
     }
 }
+
 public struct CalendarView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.fullscreenContainerProperties) var properties
@@ -223,8 +236,9 @@ public struct CalendarView: View {
             
             HStack(spacing: 0) {
                 ForEach(DayView.Day.allCases, id: \.self) { day in
-                    DayView(day: day).onTapGesture {
-                        //self.viewModel.didTap(day: day)
+                    DayView(selectedDay:$viewModel.selectedDay, day: day).onTapGesture {
+                        print(day.descriptionKey)
+                        self.viewModel.didTap(day: day)
                     }
                 }
             }

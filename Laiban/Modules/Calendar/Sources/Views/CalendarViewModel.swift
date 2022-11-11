@@ -95,11 +95,14 @@ class CalendarViewModel : ObservableObject {
     }
     func didTap(day:DayView.Day) {
         self.selectedDay = day
+        print("did tap \(day.descriptionKey), but the tap-event is not activated")
         update()
+        
         //defaultLogger.info("did tap \(day.name(in: language)), but the tap-event is not activated")
     }
     func didTapToday() {
         self.selectedDay = DayView.Day.current
+        print("did tap today, but the tap-event is not activated")
         update()
         //defaultLogger.info("did tap today, but the tap-event is not activated")
     }
