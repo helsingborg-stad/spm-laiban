@@ -27,9 +27,7 @@ public class MovementManager : ObservableObject {
     public func updateData(newData: [Movement]? = nil) {
         if let newData = newData {
             self.array = newData
-        }/* else if let vals = delegate?.getData() {
-            self.array = vals.movement
-        }*/
+        }
         self.updateArray()
     }
     public func getWeeklyMovement(for date:Date = Date()) -> Int {

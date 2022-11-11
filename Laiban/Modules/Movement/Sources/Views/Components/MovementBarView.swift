@@ -44,7 +44,6 @@ struct MovementBarView : View {
                                 self.animate = true
                             }
                         }
-                        
                 }
                 .mask(background(proxy: proxy, mask: true))
             }

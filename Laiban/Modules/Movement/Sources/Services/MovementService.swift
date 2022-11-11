@@ -52,15 +52,13 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
                 self.movementManager.delegate = self
                 self.movementManager.settings = values.settings
                 self.movementManager.updateData(newData: values.movement)
-                Task {
-                    await self.save()
-                }
             }
         }.store(in: &cancellables)
     }
     
     public func remove(_ item: Movement) {
         data.movement.removeAll(where: { $0.id == item.id })
+        save()
     }
     
     public func update(_ item: Movement) {
@@ -69,6 +67,7 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
         } else {
             add(item)
         }
+        save()
     }
     
     public func add(_ item: Movement) {
@@ -76,6 +75,7 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
             return
         }
         data.movement.append(item)
+        save()
     }
 
     public func getData() -> MovementModel {
@@ -86,10 +86,8 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     func saveActivity(activity:MovementActivity, callback: @escaping () -> Void = {}) {
         if let index = data.activities.firstIndex(where: {$0.id == activity.id} ) {
             data.activities[index] = activity
-            Task {
-                await self.save()
-                callback()
-            }
+            save()
+            callback()
         } else {
             addActivity(newActivity: activity, callback: {
                 callback()
@@ -99,9 +97,7 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
 
     func addActivity(newActivity:MovementActivity, callback: () -> Void) {
         data.activities.append(newActivity)
-        Task {
-            await self.save()
-        }
+        save()
         callback()
     }
 
@@ -109,33 +105,25 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     func deleteActivity(activity:MovementActivity, callback: () -> Void){
         if let index = data.activities.firstIndex(where: {$0.id == activity.id}){
             data.activities.remove(at: index)
-            Task {
-                await self.save()
-            }
+            save()
             callback()
         }
     }
     
     func deleteActivity(at offsets: IndexSet) {
         data.activities.remove(atOffsets: offsets)
-        Task {
-            await self.save()
-        }
+        save()
     }
     
     func toggleEnabled(activity: MovementActivity) {
         if let index = data.activities.firstIndex(where: {$0.id == activity.id}) {
             data.activities[index].isActive.toggle()
         }
-
-        Task{
-            await self.save()
-        }
+        save()
     }
     
     @MainActor public func save(movements: [Movement]) {
         data.movement = movements
-        print("Data: \(data)")
         save()
     }
     
