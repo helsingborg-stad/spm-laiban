@@ -38,7 +38,7 @@ public struct Movement: Codable,Hashable,Identifiable {
     }
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try values.decode(String.self, forKey: .id) ?? UUID().uuidString
+        self.id = try values.decode(String.self, forKey: .id)
         self.date = try values.decode(String.self, forKey: .date)
         self.minutes = try values.decode(Int.self, forKey: .minutes)
         self.reported = (try? values.decode(Bool.self, forKey: .reported)) ?? false

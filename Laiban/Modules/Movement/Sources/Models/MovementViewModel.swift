@@ -41,10 +41,6 @@ class MovementViewModel: ObservableObject {
         }
     }
     func setCurrentView(_ view:MovementViews) {
-        guard let movementManager = service?.movementManager else {
-            return
-        }
-
         if view == currentView {
             return
         }
@@ -180,14 +176,7 @@ class MovementViewModel: ObservableObject {
         return nil
     }
     func updateTitle(speakAfter:Bool = false) {
-        guard let assistant = assistant else {
-            return
-        }
-
         if let s = getTitleAndVoice() {
-            /*if s.display == title?.display {
-                return
-            }*/
             self.title = s
             speak()
         }
