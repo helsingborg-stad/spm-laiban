@@ -21,7 +21,17 @@ class CalendarViewModel : ObservableObject {
     @Published var voiceStrings = [String]()
     @Published var eventString:String? = nil
     @Published var eventIcon:String = "🎉"
-    @Published var selectedDay = DayView.Day.current
+    @Published var selectedDay = DayView.Day.current {
+        didSet{
+            self.todaysEvents = service?.calendarEvents(on: selectedDay.day) ?? []
+            voiceStrings = []
+            title = todayString
+            eventString = nil
+            update()
+        }
+    }
+    @Published var todaysEvents:[CalendarEvent] = [CalendarEvent]()
+    
     var formattedDate:String {
         guard let assistant = assistant else {
             return "ERROR"
@@ -57,17 +67,13 @@ class CalendarViewModel : ObservableObject {
         }
         return assistant.formattedString(forKey: "public_calendar_celebration", e)
     }
+    
     var otherEvents = [OtherCalendarEvent]()
+    
     func update() {
-        guard let assistant = assistant else {
+        guard let assistant = assistant, let service = service else {
             return
         }
-        guard let service = service else {
-            return
-        }
-        voiceStrings = []
-        title = todayString
-        eventString = nil
         
         var strings = [title]
         strings.append(assistant.string(forKey: selectedDay.descriptionKey))
@@ -80,7 +86,7 @@ class CalendarViewModel : ObservableObject {
         }
         if let h = eventString {
             strings.append(h)
-            strings.append(assistant.string(forKey: "calendar_free_day"))
+            //strings.append(assistant.string(forKey: "calendar_free_day"))
         }
         assistant.speak(strings)
     }
@@ -88,6 +94,8 @@ class CalendarViewModel : ObservableObject {
         self.service = service
         self.assistant = assistant
         self.contentProvider = contentProvider
+        self.todaysEvents = service.todaysCalendarEvents
+        self.selectedDay = DayView.Day.current
         contentProvider?.otherCalendarEventsPublisher().sink { events in
             self.otherEvents = events ?? []
             self.update()
@@ -95,15 +103,5 @@ class CalendarViewModel : ObservableObject {
     }
     func didTap(day:DayView.Day) {
         self.selectedDay = day
-        print("did tap \(day.descriptionKey), but the tap-event is not activated")
-        update()
-        
-        //defaultLogger.info("did tap \(day.name(in: language)), but the tap-event is not activated")
-    }
-    func didTapToday() {
-        self.selectedDay = DayView.Day.current
-        print("did tap today, but the tap-event is not activated")
-        update()
-        //defaultLogger.info("did tap today, but the tap-event is not activated")
     }
 }
