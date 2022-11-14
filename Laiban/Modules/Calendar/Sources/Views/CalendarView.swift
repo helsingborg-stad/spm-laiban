@@ -227,9 +227,12 @@ public struct CalendarView: View {
         self.service = service
         self.contentProvider = contentProvider
     }
+    
+    let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    
     public var body: some View {
         GeometryReader { geometry in
-            
+    
             VStack(alignment: .center, spacing: self.horizontalSizeClass == .regular ? 40 : 20) {
                 Text(self.viewModel.title)
                     .font(properties.font, ofSize: .n, weight: .heavy)
@@ -302,6 +305,15 @@ public struct CalendarView: View {
                 .onAppear(perform: {
                     self.calendarEvent = self.viewModel.todaysEvents.first ?? nil
                 })
+                .onReceive(timer) { time in
+                    
+                    if let calEv = self.calendarEvent {
+                        let currentIndex = self.viewModel.todaysEvents.firstIndex(of: calEv) ?? -1
+                        var nextIndex = currentIndex+1
+                        nextIndex = self.viewModel.todaysEvents.indices.contains(nextIndex) ? nextIndex : 0
+                        self.calendarEvent = self.viewModel.todaysEvents[nextIndex]
+                    }
+                }
                 
                 
             }.font(properties.font, ofSize: .n)
@@ -317,7 +329,9 @@ public struct CalendarView: View {
                 .onReceive(assistant.$translationBundle) { _ in
                     viewModel.update()
                 }
-        }
+        }.onDisappear(perform: {
+            timer.upstream.connect().cancel()
+        })
     }
 }
 

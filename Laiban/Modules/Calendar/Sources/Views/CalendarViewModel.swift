@@ -32,6 +32,8 @@ class CalendarViewModel : ObservableObject {
     }
     @Published var todaysEvents:[CalendarEvent] = [CalendarEvent]()
     
+    
+    
     var formattedDate:String {
         guard let assistant = assistant else {
             return "ERROR"
