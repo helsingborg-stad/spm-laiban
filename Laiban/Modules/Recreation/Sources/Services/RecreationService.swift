@@ -39,7 +39,7 @@ enum RecreationType {
     case Activity
 }
 
-public class RecreationService: CTS<RecreationServiceType,RecreationStorageService>, LBDashboardItem, LBAdminService {
+public class RecreationService: CTS<RecreationServiceType,RecreationStorageService>,LBTranslatableContentProvider, LBDashboardItem, LBAdminService {
     
     private let defaultIndexForRecreationObject = 0
     
@@ -59,6 +59,12 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
     
     public var cancellables = Set<AnyCancellable>()
     
+    public var stringsToTranslatePublisher: AnyPublisher<[String], Never> {
+        return $stringsToTranslate.eraseToAnyPublisher()
+    }
+    
+    @Published public var stringsToTranslate: [String] = []
+    
     
     public convenience init() {
         self.init(
@@ -69,7 +75,37 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
         Task {
             await self.load()
         }
-       
+        
+        $data.sink { [weak self] data in
+            var strings = [String]()
+            
+            for recreation in data {
+                recreation.activities.forEach({ activity in
+                    strings.append(activity.name)
+                    if let _ = activity.imageOrEmojiDescription {
+                        strings.append(activity.imageOrEmojiDescription!)
+                    }
+                    strings.append(activity.sentence)
+                    if let _ = activity.objectSentence {
+                        strings.append(activity.objectSentence!)
+                    }
+                    
+                    activity.inventories.forEach({inventory in
+                        print(inventory.description)
+                        strings.append(inventory.description)
+                    })
+                })
+                recreation.inventories.forEach({inventory in
+                    inventory.items.forEach({inventoryItem in
+                        strings.append(inventoryItem.name)
+                        strings.append(inventoryItem.prefix)
+                        strings.append(inventoryItem.itemDescription())
+                    })
+                })
+            }
+            
+            self?.stringsToTranslate = strings
+        }.store(in: &cancellables)
     }
     
     public var recreation:Recreation {
