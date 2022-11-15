@@ -93,7 +93,9 @@ class MovementViewModel: ObservableObject {
         self.activityViewModel = MovementBarView.ViewModel.init(movementMeters: MovementBarView.ViewModel.round(0), settings: service.data.settings)
         
         $parentalGateStatus.sink { value in
-            self.updateTitle(speakAfter: true)
+            if self.currentView != .statistics {
+                self.updateTitle(speakAfter: true)
+            }
         }.store(in: &cancellables)
         
         service.movementManager.objectWillChange.sink { [weak self] _ in
@@ -123,9 +125,9 @@ class MovementViewModel: ObservableObject {
                 service.movementManager.update(movement: w)
             }
         }.store(in: &listeners)
-
-        updateTitle()
         updateWeeklyStatistics()
+        updateTitle()
+        
         self.objectWillChange.send()
     }
     func getTitleAndVoice() -> LBVoiceString? {

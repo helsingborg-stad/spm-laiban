@@ -22,7 +22,7 @@ public protocol MovementStorage {
     func save(movements: [Movement])
 }
 
-public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdminService, LBDashboardItem, MovementStorage {
+public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdminService, LBTranslatableContentProvider, LBDashboardItem, MovementStorage {
     public let viewIdentity: LBViewIdentity = .movement
     public var isAvailablePublisher: AnyPublisher<Bool, Never> {
         $isAvailable.eraseToAnyPublisher()
@@ -37,6 +37,10 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     @Published public var movementManager = MovementManager()
     @Published public private(set) var stringsToTranslate: [String] = []
     @Published public var backendStorageEnabled = false
+    public var stringsToTranslatePublisher: AnyPublisher<[String], Never> {
+        return $stringsToTranslate.eraseToAnyPublisher()
+    }
+    
     public func adminView() -> AnyView {
         AnyView(MovementAdminView(service: self))
     }
@@ -52,6 +56,7 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
                 self.movementManager.delegate = self
                 self.movementManager.settings = values.settings
                 self.movementManager.updateData(newData: values.movement)
+                self.stringsToTranslate = values.activities.map { $0.title }
             }
         }.store(in: &cancellables)
     }
@@ -79,7 +84,6 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
     }
 
     public func getData() -> MovementModel {
-        print("Data: \(data)")
         return data
     }
     

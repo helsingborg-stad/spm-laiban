@@ -15,7 +15,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.0.0"),
-        //.package(url: "https://github.com/ashleymills/Reachability.swift.git", from: "5.1.0"),
         .package(url: "https://github.com/helsingborg-stad/spm-daisy", from: "1.0.4")
     ],
     targets: [
@@ -38,6 +37,7 @@ let package = Package(
                 .product(name: "Analytics",          package: "spm-daisy"),
             ],
             path: "Laiban",
+            exclude: ["Modules/Movement/Tests"],
             resources: [
                 .process("Shared/Resources"),
                 .process("StandaloneUIComponents/ClockUI/Sources/Resources"),
@@ -57,24 +57,9 @@ let package = Package(
                 .process("Modules/UNDP/Sources/Resources")
             ]
         ),
-        .target(
-            name: "UDPipe",
-            path: "UDPipe/Sources"
-        ),
-        .target(
-            name: "TextAutoCorrector",
-            path: "TextAutoCorrector/Sources"
-        ),
-        .target(
-            name: "SharedActivities",
-            dependencies: [
-                .product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI")
-            ],
-            path: "SharedActivities/Sources",
-            resources: [
-                .process("Resources")
-            ]
-        )
+        .target(name: "UDPipe",                     path: "UDPipe/Sources"),
+        .target(name: "TextAutoCorrector",          path: "TextAutoCorrector/Sources"),
+        .target(name: "SharedActivities",           dependencies: [.product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI")],          path: "SharedActivities/Sources",           resources: [.process("Resources")]),
+        .testTarget(name: "MovementTests", dependencies: ["Laiban"], path: "Laiban/Modules/Movement/Tests")
     ]
 )
-
