@@ -68,8 +68,8 @@ struct LanguagesSelectionAdminView: View {
             return locales
         }
         return locales.filter({
-            $0.displayName?.contains(searchString) == true ||
-            $0.localizedDisplayName?.contains(searchString) == true
+            $0.displayName?.lowercased().contains(searchString.lowercased()) == true ||
+            $0.localizedDisplayName?.lowercased().contains(searchString.lowercased()) == true
         })
     }
     func updateLocales() {
