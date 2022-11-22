@@ -216,6 +216,7 @@ struct DayBG : View {
 public struct CalendarView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.fullscreenContainerProperties) var properties
+    @Environment(\.locale) var locale
     @EnvironmentObject var viewState:LBViewState
     @EnvironmentObject var assistant:Assistant
     @State var calendarEvent:CalendarEvent?
@@ -252,11 +253,15 @@ public struct CalendarView: View {
                 .frame(height: 44)
                 .padding(.top, 20)
                 
-                if let selectedItem = calendarEvent {
+                if let selectedItem = self.calendarEvent {
                     GeometryReader() { proxy in
                         VStack() {
+                            
                             Text(selectedItem.icon ?? "").font(Font.system(size: proxy.size.height * 0.3)).padding(.bottom, self.horizontalSizeClass == .regular ? 30 : 10)
-                            Text(selectedItem.content)
+                            
+                            Text(viewModel.localizedString(for: selectedItem))
+                            Text(viewModel.assistant?.string(forKey: selectedItem.content, in: locale ) ?? "")
+                            Text(assistant.string(forKey: selectedItem.content))
                             if self.viewModel.selectedDay.isFree(events: self.viewModel.otherEvents) {
                                 Text(LocalizedStringKey("calendar_free_day"), bundle: .module)
                             }
@@ -283,7 +288,7 @@ public struct CalendarView: View {
                         ForEach(self.viewModel.todaysEvents, id:\.id) { item in
                             Button(action: {
                                 calendarEvent = item
-//                                assistant.speak(item.title)
+                                assistant.speak(assistant.string(forKey:item.content))
                             }) {
                                 
                                 if let icon = item.icon {

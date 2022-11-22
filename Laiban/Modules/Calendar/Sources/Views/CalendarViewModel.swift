@@ -33,7 +33,6 @@ class CalendarViewModel : ObservableObject {
     @Published var todaysEvents:[CalendarEvent] = [CalendarEvent]()
     
     
-    
     var formattedDate:String {
         guard let assistant = assistant else {
             return "ERROR"
@@ -78,17 +77,21 @@ class CalendarViewModel : ObservableObject {
         }
         
         var strings = [title]
+        //strings.append(assistant.string(forKey: todayString))
         strings.append(assistant.string(forKey: selectedDay.descriptionKey))
+        
         if let event = service.calendarEvents(on: selectedDay.day).first {
+            print(event.content)
             eventString = localizedString(for: event)
             eventIcon = event.icon ?? "🗓"
+            
         } else if let event = otherEvents.first(where: { $0.date.isSameDay(as: selectedDay.day) }) {
             eventString = assistant.string(forKey: event.title)
             eventIcon = event.emoji ?? "🗓"
         }
         if let h = eventString {
             strings.append(h)
-            //strings.append(assistant.string(forKey: "calendar_free_day"))
+//            strings.append(assistant.string(forKey: "calendar_free_day"))
         }
         assistant.speak(strings)
     }
@@ -100,8 +103,8 @@ class CalendarViewModel : ObservableObject {
         self.selectedDay = DayView.Day.current
         contentProvider?.otherCalendarEventsPublisher().sink { events in
             self.otherEvents = events ?? []
-            self.update()
         }.store(in: &cancellables)
+        self.update()
     }
     func didTap(day:DayView.Day) {
         self.selectedDay = day

@@ -14,7 +14,7 @@ import Combine
 public typealias CalendarServiceType = [CalendarEvent]
 public typealias CalendarStorageService = CodableLocalJSONService<CalendarServiceType>
 
-public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, LBAdminService,LBDashboardItem {
+public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, LBAdminService,LBDashboardItem,LBTranslatableContentProvider {
     public let viewIdentity: LBViewIdentity = .calendar
     public var isAvailablePublisher: AnyPublisher<Bool, Never> {
         $isAvailable.eraseToAnyPublisher()
@@ -25,11 +25,30 @@ public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, 
     public var listOrderPriority: Int = 1
     public var listViewSection: LBAdminListViewSection = .content
     
+    public var stringsToTranslatePublisher: AnyPublisher<[String], Never> {
+        return $stringsToTranslate.eraseToAnyPublisher()
+    }
+    
+    @Published public var stringsToTranslate: [String] = []
+    
+    
     public convenience init() {
         self.init(
             emptyValue: [],
             storageOptions: .init(filename: "CalendarEvents", foldername: "CalendarService", bundleFilename:"CalendarEvents")
         )
+        
+        $data.sink { [weak self] data in
+            var strings = [String]()
+            print("------------------------Strings To Translate CalendarService----------------------------")
+            for e in data {
+                print(e.content)
+                strings.append(e.content)
+            }
+            print("------------------------END Strings To Translate CalendarService----------------------------")
+            
+            self?.stringsToTranslate = strings
+        }.store(in: &cancellables)
     }
     
     public func adminView() -> AnyView {
@@ -67,7 +86,10 @@ public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, 
         data.sort { (a1, a2) in a1.date > a2.date }
     }
     public var todaysCalendarEvents:[CalendarEvent] {
-        data.filter { event  in event.date.today == true }
+        Task {
+            await load()
+        }
+        return data.filter { event  in event.date.today == true }
     }
     public func data(on date:Date) -> [CalendarEvent] {
         data.filter { event in event.date.isSameDay(as: date)}
