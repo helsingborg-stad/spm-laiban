@@ -193,6 +193,7 @@ Pāwhiri ki konei hei kōrero mai ki a mātou he aha tōu whakaaro!";
 "movement_register" = "Rēhita";
 "movement_register_how_long" = "E hia meneti i mahia ai e koe te ngohe?";
 "movement_register_how_many" = "E hia o koutou i whai wāhi ki te ngohe?";
+"movement_statistics_cities" = "Ko tēnā e pā ana ki te tawhiti i waenganui i %@ me %@";
 "movement_statistics_how_far" = "Pēhea tērā?";
 "movement_statistics_see_distance" = "Pātai atu ki tētahi kaiako kia whiwhi i tētahi atu iPad me te mātakitaki tahi i tō tawhiti ina haere koe %@ ine";
 "movement_statistics_title_today" = "He mahi pai, i tēnei rā kua kohia e koe %@ hipanga, he ine %@ tēnā.";

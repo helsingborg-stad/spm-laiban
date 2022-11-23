@@ -193,6 +193,7 @@ A pata i ônei no te parau mai ia matou eaha to oe mana'o no ni'a i te reira !";
 "movement_register" = "Tapa'oraa";
 "movement_register_how_long" = "Ehia minuti to outou raveraa i te ohipa?";
 "movement_register_how_many" = "E hia o outou tei amui atu i roto i te faaoaoaraa ?";
+"movement_statistics_cities" = "Mai te reira ïa te atearaa i rotopu i te %@ e te %@";
 "movement_statistics_how_far" = "Eaha ïa te atearaa?";
 "movement_statistics_see_distance" = "A ani i te hoê orometua ia haere e tii i te tahi atu hoho'a e ia mata'ita'i amui i te atearaa e tae mai ia haere ana'e outou %@ metera";
 "movement_statistics_title_today" = "E ohipa maitai, i teie mahana ua haaputu outou %@ mau taahiraa avae, e %@ metera te roa.";

@@ -193,6 +193,7 @@ Bu barada näme pikir edýändigiňizi aýtmak üçin şu ýere basyň!";
 "movement_register" = "Registrasiýa";
 "movement_register_how_long" = "Siz bu işi näçe minut etdiňiz?";
 "movement_register_how_many" = "Siziň näçeňiz bu çärä gatnaşdyňyz?";
+"movement_statistics_cities" = "Bu %@ bilen %@ arasyndaky uzaklyk barada,";
 "movement_statistics_how_far" = "Bu näçeräk uzakda?";
 "movement_statistics_see_distance" = "Mugallymdan başga bir iPad alyp, %@ metr ýöräp barýarkaň näçeräk uzaga çekendigiňe bile syn etmegi haýyş ediň";
 "movement_statistics_title_today" = "Gowy iş, bu gün sen %@ ädikleri ýygnadyň, bu %@ metr.";

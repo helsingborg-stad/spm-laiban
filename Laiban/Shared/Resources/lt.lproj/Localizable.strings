@@ -193,6 +193,7 @@ Spauskite čia norėdami papasakoti, ką apie tai galvojote!";
 "movement_register" = "Užsiregistruok";
 "movement_register_how_long" = "Kiek minučių užsiėmėte šia veikla?";
 "movement_register_how_many" = "Kiek iš jūsų dalyvavo veikloje?";
+"movement_statistics_cities" = "Tai maždaug tiek, kiek atstumas tarp %@ ir %@";
 "movement_statistics_how_far" = "Kaip toli tai yra?";
 "movement_statistics_see_distance" = "Paprašykite mokytojo įsigyti kitą "iPad" ir kartu stebėkite, kiek toli nueisite nuėję %@ metrus";
 "movement_statistics_title_today" = "Geras darbas, šiandien jūs surinkote %@ žingsnius, tai yra %@ metrų.";

@@ -193,6 +193,7 @@ Ikklikkja hawn biex tgħidilna dak li ħsibt dwaru!";
 "movement_register" = "Reġistru";
 "movement_register_how_long" = "Għal kemm-il minuta għamilt l-attività?";
 "movement_register_how_many" = "Kemm minnkom ipparteċipajt fl-attività?";
+"movement_statistics_cities" = "Dan wasal sad-distanza bejn %@ u %@";
 "movement_statistics_how_far" = "Kemm hu dan?";
 "movement_statistics_see_distance" = "Staqsi għalliem biex tikseb iPad ieħor u ara flimkien kemm tasal meta timxi %@ metri";
 "movement_statistics_title_today" = "Xogħol tajjeb, illum ġbart passi %@ , dak huwa %@ metru.";

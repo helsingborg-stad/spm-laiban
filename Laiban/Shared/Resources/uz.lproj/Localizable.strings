@@ -193,6 +193,7 @@ Bu haqda nima deb o'ylaganingizni aytib berish uchun shu yerni bosing!";
 "movement_register" = "Ro'yxatdan o'tish";
 "movement_register_how_long" = "Faollikni necha daqiqa davomida amalga oshirdingiz?";
 "movement_register_how_many" = "Sizlardan nechtasi faollikda ishtirok etgan?";
+"movement_statistics_cities" = "Bu %@ va %@ orasidagi masofagacha";
 "movement_statistics_how_far" = "Bu qanchalik uzoq?";
 "movement_statistics_see_distance" = "O'qituvchidan boshqa iPad olishini va %@ metr yurganingizda qanchalik uzoqqa borishingizni birgalikda tomosha qilishini so'rang";
 "movement_statistics_title_today" = "Yaxshi ish, bugun siz %@ qadamlarni to'pladingiz, bu %@ metr.";

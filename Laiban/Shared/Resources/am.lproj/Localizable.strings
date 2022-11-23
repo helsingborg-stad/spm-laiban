@@ -193,6 +193,7 @@
 "movement_register" = "ይመዝገቡ";
 "movement_register_how_long" = "እንቅስቃሴውን ለምን ያህል ደቂቃ አከናወናችሁ?";
 "movement_register_how_many" = "በዚህ እንቅስቃሴ ምን ያህል ተሳትፎ አድርገሃል?";
+"movement_statistics_cities" = "ይህም %@ እና %@ መካከል ያለውን ርቀት ያህል ነው";
 "movement_statistics_how_far" = "ይህ እስከ ምን ድረስ ነው?";
 "movement_statistics_see_distance" = "አንድ አስተማሪ ሌላ iPad እንዲያገኝ ይጠይቁ እና %@ ሜትር ስትራመዱ ምን ያህል ርቀት ላይ እንደምትደርሱ አብረው ይመልከቱ";
 "movement_statistics_title_today" = "መልካም ሥራ, ዛሬ %@ እርምጃዎች ሰብስበሃል, ያ %@ ሜትር ነው.";

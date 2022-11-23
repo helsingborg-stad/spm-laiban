@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 
+
 public class MovementManager : ObservableObject {
     
     private static let userDefaultsKey = "MovementStatistics"
@@ -19,6 +20,8 @@ public class MovementManager : ObservableObject {
     }
     @Published public private(set) var array:[Movement]
     var settings = MovementSettings()
+    var distanceHelper = DistanceHelper()
+    @Published public var cities: [City]?
     
     public init() {
         self.array = [Movement]()
@@ -70,6 +73,24 @@ public class MovementManager : ObservableObject {
     public func meters(from minutes: Int) -> Int {
         Int(round(Double(minutes * settings.stepsPerMinute) * settings.stepLength))
     }
+    
+    public func updateCities(for date: Date) {
+        let kilometers = Double(movementMeters(for: date)) / 1000.00
+        let kilometersRange = kilometers * 1.5
+        distanceHelper.getCities(withRange: kilometersRange, actualDistance: kilometers) { cities in
+            self.cities = cities
+        }
+    }
+    
+    public func getCities() -> [City]? {
+        if let cities = cities, let start = cities.first(where: {$0.start}), let destination = cities.first(where: {$0.destination}) {
+            if start.name != destination.name {
+                return cities
+            }
+        }
+        return nil
+    }
+    
     
     public func clean() {
         let f = DateFormatter()

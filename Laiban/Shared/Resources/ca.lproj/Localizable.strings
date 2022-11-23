@@ -193,6 +193,7 @@ Clica aquí per explicar-nos què en pensaves!";
 "movement_register" = "Registrar";
 "movement_register_how_long" = "Durant quants minuts vas fer l'activitat?";
 "movement_register_how_many" = "Quants de vosaltres heu participat en l'activitat?";
+"movement_statistics_cities" = "Això és aproximadament pel que fa a la distància entre %@ i %@";
 "movement_statistics_how_far" = "Fins on arriba això?";
 "movement_statistics_see_distance" = "Demaneu a un professor que aconsegueixi un altre iPad i mireu junts fins on arribeu quan camineu %@ metres";
 "movement_statistics_title_today" = "Bona feina, avui heu recollit %@ passos, això són %@ metres.";

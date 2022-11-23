@@ -193,6 +193,7 @@
 "movement_register" = "تىزىملىتىڭ";
 "movement_register_how_long" = "سىز بۇ پائالىيەتنى قانچە مىنۇت ئىشلىدىڭىز؟";
 "movement_register_how_many" = "بۇ پائالىيەتكە سىلەردىن قانچە ئادەم قاتناشتى؟";
+"movement_statistics_cities" = "يەنى %@ بىلەن %@ ئارىلىقىغا يېقىن";
 "movement_statistics_how_far" = "ئۇ قانچىلىك يىراقلىقتا؟";
 "movement_statistics_see_distance" = "مۇئەللىمدىن يەنە بىر iPad ئالغۇزۇپ، %@ مېتىر ماڭغاندا قانچىلىك يىراقلىققا بارغىنىڭىزنى بىرلىكتە كۆرۈشنى تەلەپ قىلىڭ";
 "movement_statistics_title_today" = "ياخشى خىزمەت، بۈگۈن سىز %@ قەدەملەرنى يىغدىڭىز، ئۇ بولسىمۇ %@ مېتىر.";

@@ -193,6 +193,7 @@ Klikńće tu, zo byšće nam prajili, što wo tym dźeržiće!";
 "movement_register" = "Registrować";
 "movement_register_how_long" = "Kelko mjeńšin sće aktiwitu přewjedł?";
 "movement_register_how_many" = "Kelko z Was je so na aktiwiće wobdźěliło?";
+"movement_statistics_cities" = "To je něhdźe tak daloko kaž zdalenosć mjez %@ a %@";
 "movement_statistics_how_far" = "Kak daloko to je?";
 "movement_statistics_see_distance" = "Poprošće wučerja, sej dalši iPad wobstarać a wobkedźbujće zhromadnje, kak daloko přińdźeće, hdyž dźeće %@ metrow";
 "movement_statistics_title_today" = "Dobre dźěło, dźensa sće %@ kroki hromadźił, to su %@ metrow.";

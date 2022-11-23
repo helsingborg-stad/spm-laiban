@@ -193,6 +193,7 @@ Nyem qhov no qhia rau peb seb koj xav li cas ntawm nws!";
 "movement_register" = "Sau Npe";
 "movement_register_how_long" = "Yuav ua li cas koj thiaj ua tau qhov kev ua?";
 "movement_register_how_many" = "Koj koom tes nrog txoj kev ua ub no no li cas?";
+"movement_statistics_cities" = "Uas yog hais txog kom deb li deb ntawm %@ thiab %@";
 "movement_statistics_how_far" = "Nyob deb li cas?";
 "movement_statistics_see_distance" = "Nug ib tug xib fwb kom tau lwm iPad thiab saib ua ke deb li cas koj tau thaum koj taug kev %@ meters";
 "movement_statistics_title_today" = "Zoo txoj hauj lwm zoo, hnub no koj tau sau %@ kauj ruam, uas yog %@ meters.";

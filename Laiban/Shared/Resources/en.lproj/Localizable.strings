@@ -193,6 +193,7 @@ Click here to tell us what you thought of it!";
 "movement_register" = "Register";
 "movement_register_how_long" = "For how many minutes did you do the activity?";
 "movement_register_how_many" = "How many of you participated in the activity?";
+"movement_statistics_cities" = "That's about as far as the distance between %@ and %@";
 "movement_statistics_how_far" = "How far is that?";
 "movement_statistics_see_distance" = "Ask a teacher to get another iPad and watch together how far you get when you walk %@ meters";
 "movement_statistics_title_today" = "Good job, today you have collected %@ steps, that's %@ meters.";

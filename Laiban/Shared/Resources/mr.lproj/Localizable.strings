@@ -193,6 +193,7 @@
 "movement_register" = "नोंदणी करणे";
 "movement_register_how_long" = "आपण किती मिनिटे क्रियाकलाप केला?";
 "movement_register_how_many" = "तुमच्यापैकी किती जणांनी या उपक्रमात भाग घेतला?";
+"movement_statistics_cities" = "हे %@ आणि %@ मधील अंतरापर्यंत आहे";
 "movement_statistics_how_far" = "ते किती दूर आहे?";
 "movement_statistics_see_distance" = "एका शिक्षकाला दुसरा आयपॅड घ्यायला सांगा आणि तुम्ही %@ मीटर चालल्यावर तुम्हाला किती दूरपर्यंत पोहोचता हे एकत्र बघा";
 "movement_statistics_title_today" = "चांगली नोकरी, आज तुम्ही %@ पायऱ्या गोळा केल्या आहेत, म्हणजे <span translate='no'>string</span> मीटर.";

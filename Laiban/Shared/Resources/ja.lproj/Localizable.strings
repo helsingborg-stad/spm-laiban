@@ -193,6 +193,7 @@
 "movement_register" = "登録する";
 "movement_register_how_long" = "何分間アクティビティを行いましたか?";
 "movement_register_how_many" = "何人の人が活動に参加しましたか?";
+"movement_statistics_cities" = "それは%@と%@の間の距離と同じくらいです";
 "movement_statistics_how_far" = "それはどこまでですか?";
 "movement_statistics_see_distance" = "先生に別のiPadを持ってきてもらい、 %@ メートル歩いたときにどれだけ遠くまで行くかを一緒に見てもらいます";
 "movement_statistics_title_today" = "よくやった、今日あなたは %@ ステップを集めました、それは %@ メートルです。";

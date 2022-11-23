@@ -193,6 +193,7 @@
 "movement_register" = "পঞ্জীয়ন কৰক";
 "movement_register_how_long" = "আপুনি কিমান মিনিটৰ বাবে কাৰ্যকলাপটো কৰিছিল?";
 "movement_register_how_many" = "আপোনালোকৰ কিমানজনে এই কাৰ্যকলাপত অংশগ্ৰহণ কৰিছিল?";
+"movement_statistics_cities" = "সেয়া %@ আৰু %@ মাজৰ দূৰত্বৰ বিষয়ে";
 "movement_statistics_how_far" = "সেইটো কিমান দূৰ?";
 "movement_statistics_see_distance" = "শিক্ষক এজনক আন এটা আইপেড ল'বলৈ কওঁক আৰু আপুনি %@ মিটাৰ খোজ কাঢ়িলে আপুনি কিমান দূৰ যায় একেলগে চাব";
 "movement_statistics_title_today" = "ভাল কাম, আজি আপুনি %@ পদক্ষেপ সংগ্ৰহ কৰিছে, সেয়া হৈছে <span translate='no'>string</span> মিটাৰ।";

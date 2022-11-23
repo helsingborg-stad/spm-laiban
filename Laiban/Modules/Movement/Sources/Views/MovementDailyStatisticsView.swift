@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Assistant
+import Combine
 
 struct MovementDailyStatisticsView: View {
     @Environment(\.fullscreenContainerProperties) var properties
@@ -79,13 +80,21 @@ struct MovementDailyStatisticsView: View {
             }
         }.onAppear {
             animating = true
+            Task {
+                service.movementManager.updateCities(for: date)
+            }
         }
         .sheet(isPresented: $showSheet, content: {
             let meters = service.movementManager.movementMeters(for: date)
+            
             withAnimation {
-                DailyStatisticsSheet(showSheet: $showSheet, meters: meters)
+                DailyStatisticsSheet(showSheet: $showSheet, meters: meters, service: service)
                     .onAppear {
-                        let title = assistant.formattedString(forKey: "movement_statistics_see_distance", String(meters))
+                        var title = assistant.formattedString(forKey: "movement_statistics_see_distance", String(meters))
+                        if let cities = service.movementManager.getCities(), let startName = cities.first(where: {$0.start})?.name, let destinationName = cities.first(where: {$0.destination})?.name {
+                            let cityTitle = assistant.formattedString(forKey: "movement_statistics_cities", startName, destinationName)
+                            title =  "\(title).\r\n\(cityTitle)"
+                        }
                         assistant.speak(title)
                     }
             }
@@ -98,10 +107,18 @@ struct DailyStatisticsSheet: View {
     @EnvironmentObject var assistant:Assistant
     @Binding var showSheet: Bool
     @State private var animate = false
+    @State private var title: String = ""
+    @State private var cancellables = Set<AnyCancellable>()
+
     let meters: Int
+    @ObservedObject var service: MovementService
     
     private func getTitle() -> String {
-        let title = assistant.formattedString(forKey: "movement_statistics_see_distance", String(meters))
+        var title = assistant.formattedString(forKey: "movement_statistics_see_distance", String(meters))
+        if let cities = service.movementManager.getCities(), let startName = cities.first(where: {$0.start})?.name, let destinationName = cities.first(where: {$0.destination})?.name {
+            let cityTitle = assistant.formattedString(forKey: "movement_statistics_cities", startName, destinationName)
+            title =  "\(title).\r\n\(cityTitle)"
+        }
         return title
     }
     
@@ -110,7 +127,7 @@ struct DailyStatisticsSheet: View {
             VStack {
                 ScrollView {
                     VStack {
-                        Text(getTitle())
+                        Text(title)
                             .font(properties.font, ofSize: .n)
                             .multilineTextAlignment(.center)
                             .padding(.top,10)
@@ -140,6 +157,9 @@ struct DailyStatisticsSheet: View {
             }.padding(.vertical)
                 .onAppear {
                     animate = true
+                    service.movementManager.$cities.sink { value in
+                        title = getTitle()
+                    }.store(in: &cancellables)
                 }
         }
         .padding(50)

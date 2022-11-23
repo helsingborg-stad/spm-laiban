@@ -193,6 +193,7 @@
 "movement_register" = "משלב";
 "movement_register_how_long" = "במשך כמה דקות עשית את הפעילות?";
 "movement_register_how_many" = "כמה מכם השתתפו בפעילות?";
+"movement_statistics_cities" = "זה בערך עד המרחק בין %@ ל- %@";
 "movement_statistics_how_far" = "עד כמה זה רחוק?";
 "movement_statistics_see_distance" = "בקשו ממורה להשיג אייפד נוסף וצפו יחד כמה רחוק אתם מגיעים כשאתם הולכים %@ מטרים";
 "movement_statistics_title_today" = "עבודה טובה, היום אספתם %@ צעדים, זה %@ מטר.";

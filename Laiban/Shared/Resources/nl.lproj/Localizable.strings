@@ -193,6 +193,7 @@ Klik hier om ons te vertellen wat je ervan vond!";
 "movement_register" = "Registreren";
 "movement_register_how_long" = "Voor hoeveel minuten heb je de activiteit gedaan?";
 "movement_register_how_many" = "Hoeveel van jullie hebben deelgenomen aan de activiteit?";
+"movement_statistics_cities" = "Dat is ongeveer zo ver als de afstand tussen %@ en %@";
 "movement_statistics_how_far" = "Hoe ver is dat?";
 "movement_statistics_see_distance" = "Vraag een leraar om een andere iPad te nemen en kijk samen hoe ver je komt als je %@ meter loopt";
 "movement_statistics_title_today" = "Goed gedaan, vandaag heb je %@ stappen verzameld, dat is %@ meter.";

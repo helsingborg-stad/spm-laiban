@@ -193,6 +193,7 @@ Kiliki eke mo tukuna mai na nomu nanuma!";
 "movement_register" = "Volayaca";
 "movement_register_how_long" = "E vica na miniti o a cakava kina na itaviqaravi oqo?";
 "movement_register_how_many" = "E vica vei kemuni o ni a vakaitavi ena itaviqaravi oqo?";
+"movement_statistics_cities" = "Oqori e rauta sara ga na kedrau maliwa na %@ kei na %@";
 "movement_statistics_how_far" = "E vakacava na kena yawa?";
 "movement_statistics_see_distance" = "Kerea e dua na qasenivuli me taura e dua tale na iPad ka sarava vata na yawa ni vanua o rawata ni o taubaletaka %@ na mita";
 "movement_statistics_title_today" = "Na cakacaka vinaka, nikua o sa kumuna na ikalawa %@ , oya %@ na mita.";

@@ -193,6 +193,7 @@ Naqillugu hamna unniutiluta hunanik ihumagijarnik!";
 "movement_register" = "Atiliurniq";
 "movement_register_how_long" = "Qaffinik minutesnik hulilukaaqqit?";
 "movement_register_how_many" = "Qaffinik ilauvit hulidjutini?";
+"movement_statistics_cities" = "Ungahiktumik ungahiktilaanga qitqani %@ uvalu %@";
 "movement_statistics_how_far" = "Qanuq ungahiktumi?";
 "movement_statistics_see_distance" = "Apirilutit ilihaiyimik aallamik iPad-mik qun'ngiarlutit qanuqtut ungahiktumik pihuliruvit %@ miitanik";
 "movement_statistics_title_today" = "Nakuujut havaakhat, ublumi katitiqtauhimajut %@ havaktaujukhat, tamna %@ miitanik.";

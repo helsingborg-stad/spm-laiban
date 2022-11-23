@@ -193,6 +193,7 @@
 "movement_register" = "تۆمارکردن";
 "movement_register_how_long" = "بۆ چەند خولەک چالاکیەکەت ئەنجام دا؟";
 "movement_register_how_many" = "چەندتان بەشدارییان لە چالاکییەکەدا کردووە؟";
+"movement_statistics_cities" = "ئەوە نزیکەی ئەوەندەی مەودای نێوان %@ و %@";
 "movement_statistics_how_far" = "ئەوە چەند دوورە؟";
 "movement_statistics_see_distance" = "داوا لە مامۆستاکە بکە ئایپادێکی تر بەدەست بهێنیت و بەیەکەوە سەیری بکە کە چەند دوور ئەکەیت کاتێک %@ مەتردا پیاسە دەکەیت";
 "movement_statistics_title_today" = "کارێکی باش، ئەمڕۆ %@ هەنگاوت کۆکردۆتەوە، ئەوە %@ مەترە.";

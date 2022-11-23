@@ -193,6 +193,7 @@ Halkan guji si aad nooga sheegtid waxa aad ka fikirtay!";
 "movement_register" = "Loona Diiwaangeliya";
 "movement_register_how_long" = "Imisa daqiiqo ayaad wax qabadkan ku samaysay?";
 "movement_register_how_many" = "imisa idinka mid ah ayaa ka qayb qaatay waxqabadka?";
+"movement_statistics_cities" = "Taasi waxay ku saabsan tahay inta ay u dhexeyso %@ iyo %@";
 "movement_statistics_how_far" = "Intee in le'edu waa?";
 "movement_statistics_see_distance" = "Macalinka ka codso in uu helo iPad kale oo uu wada daawado inta uu le'eg yahay markaad socoto %@ mitir";
 "movement_statistics_title_today" = "Shaqo wacan, maanta waxaad aruurisay talaabooyin %@ , taasi waa %@ mitir.";

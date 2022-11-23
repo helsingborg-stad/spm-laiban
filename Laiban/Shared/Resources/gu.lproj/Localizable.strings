@@ -193,6 +193,7 @@
 "movement_register" = "ચોપડો";
 "movement_register_how_long" = "તમે કેટલી મિનિટ સુધી આ પ્રવૃત્તિ કરી?";
 "movement_register_how_many" = "તમારામાંથી કેટલાએ આ પ્રવૃત્તિમાં ભાગ લીધો હતો?";
+"movement_statistics_cities" = "તે %@ અને %@ વચ્ચેના અંતરની વાત છે.";
 "movement_statistics_how_far" = "તે કેટલું દૂર છે?";
 "movement_statistics_see_distance" = "એક શિક્ષકને બીજું આઇપેડ મેળવવા કહો અને જ્યારે તમે મીટર %@ ચાલો છો ત્યારે તમે કેટલું દૂર જાઓ છો તે સાથે મળીને જુઓ";
 "movement_statistics_title_today" = "સરસ કામ, આજે તમે %@ સ્ટેપ્સ એકઠા કર્યા છે, તે <span translate='no'>string</span> મીટર છે.";

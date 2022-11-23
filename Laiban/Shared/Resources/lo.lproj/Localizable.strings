@@ -193,6 +193,7 @@
 "movement_register" = "ລົງທະບຽນ";
 "movement_register_how_long" = "ຈັກ ນາ ທີ ທີ່ ທ່ານ ເຮັດ ກິດ ຈະ ກໍາ ?";
 "movement_register_how_many" = "ມີຈັກທ່ານທີ່ເຂົ້າຮ່ວມກິດຈະກໍາ?";
+"movement_statistics_cities" = "ນັ້ນແມ່ນກ່ຽວກັບໄລຍະຫ່າງລະຫວ່າງ %@ ແລະ <span translate='no'>string</span>";
 "movement_statistics_how_far" = "ໄກປານໃດ?";
 "movement_statistics_see_distance" = "ຂໍໃຫ້ຄູໄດ້ຮັບ iPad ອີກຫນຶ່ງແລະເບິ່ງນໍາກັນວ່າທ່ານໄດ້ໄກປານໃດເມື່ອຍ່າງ <span translate='no'>string</span> ແມັດ";
 "movement_statistics_title_today" = "ວຽກທີ່ດີ, ມື້ນີ້ທ່ານໄດ້ເກັບກໍາ %@ ຂັ້ນຕອນ, <span translate='no'>string</span> ແມັດ.";

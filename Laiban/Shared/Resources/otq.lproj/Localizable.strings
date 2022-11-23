@@ -193,6 +193,7 @@ Gi hyoki ya clic nuwa pa contar ga nä'ä pensaste ar nä'ä di 'bui!";
 "movement_register" = "Registro";
 "movement_register_how_long" = "¿Tengu ya t'olo ora Nxoge gá 'yo̲t'e ar nt'ot'e?";
 "movement_register_how_many" = "¿Cuántos nu'u̲hu̲ participaron jar ar nt'ot'e?";
+"movement_statistics_cities" = "Ge'ä kasu̲ ga̲tho nä'ä na ya'bu̲ mbi entre %@ ne <span translate='no'>string</span>";
 "movement_statistics_how_far" = "¿Temu̲ xi na ya'bu̲ 'bu̲i nä'ä?";
 "movement_statistics_see_distance" = "Da bí ma 'nar xa̲mbate compre ma'na iPad ne miren ga̲tho Temu̲ ngut'ä na ya'bu̲ llegan nu'bu̲ caminan %@ metros.";
 "movement_statistics_title_today" = "Ar hño 'be̲fi, nu'bya xka recogido %@ 'be̲fi ts'u̲t'u̲bi, ge'ä %@ ar metros.";

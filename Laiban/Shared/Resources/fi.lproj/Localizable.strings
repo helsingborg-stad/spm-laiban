@@ -193,6 +193,7 @@ Klikkaa tästä kertoaksemme meille, mitä ajattelit siitä!";
 "movement_register" = "Rekisteröidy";
 "movement_register_how_long" = "Kuinka monta minuuttia teit toimintaa?";
 "movement_register_how_many" = "Kuinka moni teistä osallistui toimintaan?";
+"movement_statistics_cities" = "Se on suunnilleen niin pitkälle kuin %@ ja %@ välinen etäisyys";
 "movement_statistics_how_far" = "Kuinka kaukana se on?";
 "movement_statistics_see_distance" = "Pyydä opettajaa hankkimaan toinen iPad ja katso yhdessä, kuinka pitkälle pääset, kun kävelet %@ metriä";
 "movement_statistics_title_today" = "Hyvää työtä, tänään olet kerännyt %@ askelta, se on %@ metriä.";

@@ -193,6 +193,7 @@ Lomiʻi heni ke talamai pe ko e hā hoʻo fakakaukau ki aí!";
 "movement_register" = "Lesisita";
 "movement_register_how_long" = "Ko e miniti ʻe fiha naʻá ke fai ai e ʻekitivitií?";
 "movement_register_how_many" = "Ko e toko fiha ʻo kimoutolu naʻe kau ʻi he ʻekitivitii?";
+"movement_statistics_cities" = "ʻOku fekauʻaki ia mo e vamamaʻo ʻo e %@ mo e %@";
 "movement_statistics_how_far" = "Ko e hā hono mamaʻó?";
 "movement_statistics_see_distance" = "Kole ki ha faiako ke ne toe ʻomi ha iPad ʻe taha pea siofi fakataha pe ko e hā e mamaʻo ʻokú ke aʻu ki aí ʻi he taimi ʻokú ke lue ai ʻi he mita ʻe %@";
 "movement_statistics_title_today" = "Ngaue lelei, kuo ke tanaki he ʻaho ni %@ ngaahi sitepu, ko e mita ia ʻe %@ .";

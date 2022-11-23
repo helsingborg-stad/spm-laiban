@@ -193,6 +193,7 @@
 "movement_register" = "Գրանցվել";
 "movement_register_how_long" = "Քանի՞ րոպեով եք կատարել վարժությունը:";
 "movement_register_how_many" = "Ձեզանից քանի՞սն են մասնակցել միջոցառմանը:";
+"movement_statistics_cities" = "Դա վերաբերում է %@ եւ %@ միջեւ եղած հեռավորությանը";
 "movement_statistics_how_far" = "Որքա՞ ն հեռու է դա:";
 "movement_statistics_see_distance" = "Խնդրեք ուսուցչին ստանալ եւս մեկ iPad եւ միասին դիտել, թե որքան հեռու եք հասնում, երբ քայլում եք %@ մետրով";
 "movement_statistics_title_today" = "Լավ աշխատանք, այսօր %@ քայլեր եք հավաքել, դա %@ մետր է:";

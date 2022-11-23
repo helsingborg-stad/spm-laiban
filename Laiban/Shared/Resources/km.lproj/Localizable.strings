@@ -193,6 +193,7 @@
 "movement_register" = "ចុះឈ្មោះ";
 "movement_register_how_long" = "តើ អ្នក បាន ធ្វើ សកម្មភាព នេះ ប៉ុន្មាន នាទី ?";
 "movement_register_how_many" = "តើ អ្នក បាន ចូលរួម សកម្មភាព ប៉ុន្មាន ?";
+"movement_statistics_cities" = "នោះ គឺ ចំងាយ ឆ្ងាយ ពី ចម្ងាយ រវាង %@ និង <span translate='no'>string</span>";
 "movement_statistics_how_far" = "តើ វា ដល់ កម្រិត ណា ?";
 "movement_statistics_see_distance" = "សុំ ឲ្យ គ្រូ យក iPad មួយ ផ្សេង ទៀត ហើយ មើល ជាមួយ គ្នា ថា តើ អ្នក ទៅ ដល់ កម្រិត ណា ពេល អ្នក ដើរ <span translate='no'>string</span> ម៉ែត្រ";
 "movement_statistics_title_today" = "ការងារល្អ ថ្ងៃនេះអ្នកបានប្រមូល %@ ជំហាននោះ <span translate='no'>string</span> ម៉ែត្រ។";

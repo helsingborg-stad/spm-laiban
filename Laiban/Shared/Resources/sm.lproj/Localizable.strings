@@ -193,6 +193,7 @@ Kiliki i i e ta'u mai ai po o le a sou manatu i ai!";
 "movement_register" = "Lesitala";
 "movement_register_how_long" = "E fia minute na e faia ai le gaoioiga?";
 "movement_register_how_many" = "E toafia outou na auai i le gaoioiga?";
+"movement_statistics_cities" = "O le mamao lena i le va o %@ ma %@";
 "movement_statistics_how_far" = "O le ā le mamao o lenā mea?";
 "movement_statistics_see_distance" = "Fai atu i se faiaoga e aumai se isi iPad ma matamata faatasi po o le a le mamao e te oo i ai pe a e savali %@ mita";
 "movement_statistics_title_today" = "Lelei le galuega, o le asō ua e aoina mai ai %@ laasaga, e %@ mita lena.";

@@ -193,6 +193,7 @@ Bonyeza hapa kutuambia kile ulichofikiria juu yake!";
 "movement_register" = "Kujiandikisha";
 "movement_register_how_long" = "Kwa dakika ngapi ulifanya shughuli hiyo?";
 "movement_register_how_many" = "Ni wangapi kati yenu walishiriki katika shughuli hiyo?";
+"movement_statistics_cities" = "Hiyo ni mbali na umbali kati ya %@ na %@";
 "movement_statistics_how_far" = "Hiyo ni umbali gani?";
 "movement_statistics_see_distance" = "Muulize mwalimu kupata iPad nyingine na uangalie pamoja unapata umbali gani unapotembea mita %@";
 "movement_statistics_title_today" = "Kazi nzuri, leo umekusanya hatua %@ , hiyo ni mita %@ .";

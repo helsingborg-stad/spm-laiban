@@ -193,6 +193,7 @@
 "movement_register" = "பதிவுசெய்";
 "movement_register_how_long" = "நீங்கள் எத்தனை நிமிடங்களுக்கு இந்த செயலைச் செய்தீர்கள்?";
 "movement_register_how_many" = "உங்களில் எத்தனை பேர் இந்த நடவடிக்கையில் பங்கெடுத்தீர்கள்?";
+"movement_statistics_cities" = "இது %@ மற்றும் %@ இடையிலான தூரம் வரை உள்ளது";
 "movement_statistics_how_far" = "அது எவ்வளவு தூரம்?";
 "movement_statistics_see_distance" = "மற்றொரு ஐபாட் பெற ஒரு ஆசிரியரிடம் கேளுங்கள், நீங்கள் %@ மீட்டர் நடக்கும்போது நீங்கள் எவ்வளவு தூரம் செல்கிறீர்கள் என்பதை ஒன்றாகப் பாருங்கள்";
 "movement_statistics_title_today" = "நல்ல வேலை, இன்று நீங்கள் %@ படிகளை சேகரித்துள்ளீர்கள், அது <span translate='no'>string</span> மீட்டர்.";

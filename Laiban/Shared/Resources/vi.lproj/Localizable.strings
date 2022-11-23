@@ -193,6 +193,7 @@ Click vào đây để cho chúng tôi biết bạn nghĩ gì về nó!";
 "movement_register" = "Đăng ký";
 "movement_register_how_long" = "Bạn đã thực hiện hoạt động này trong bao nhiêu phút?";
 "movement_register_how_many" = "Có bao nhiêu người trong số các bạn đã tham gia hoạt động này?";
+"movement_statistics_cities" = "Đó là khoảng cách xa như khoảng cách giữa %@ và %@";
 "movement_statistics_how_far" = "Điều đó là bao xa?";
 "movement_statistics_see_distance" = "Yêu cầu giáo viên lấy một chiếc iPad khác và cùng nhau xem bạn đi được bao xa khi đi bộ %@ mét";
 "movement_statistics_title_today" = "Làm tốt lắm, hôm nay bạn đã thu thập được %@ bước, đó là %@ mét.";

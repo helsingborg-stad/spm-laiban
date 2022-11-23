@@ -193,6 +193,7 @@ Bu barədə nə düşündüyünüz barədə məlumat vermək üçün buraya tık
 "movement_register" = "Qeydiyyatdan keç";
 "movement_register_how_long" = "Fəaliyyəti neçə dəqiqə ərzində etdin?";
 "movement_register_how_many" = "– Fəaliyyətdə neçə nəfəriniz iştirak etdiniz?";
+"movement_statistics_cities" = "Bu, %@ ilə %@ arasındakı məsafəyə qədərdir";
 "movement_statistics_how_far" = "Bu nə qədər uzaqdır?";
 "movement_statistics_see_distance" = "Müəllimdən xahiş edin ki, daha bir iPad əldə edin və %@ metr gəzərkən nə qədər uzaqlaşdığınızı birlikdə izləyin";
 "movement_statistics_title_today" = "Yaxşı iş, bu gün %@ pillə yığmısan, yəni %@ metr.";

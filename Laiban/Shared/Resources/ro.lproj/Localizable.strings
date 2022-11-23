@@ -193,6 +193,7 @@ Click aici pentru a ne spune ce te-ai gândit la ea!";
 "movement_register" = "Înregistrează-te";
 "movement_register_how_long" = "Pentru câte minute ai făcut activitatea?";
 "movement_register_how_many" = "Câți dintre voi ați participat la activitate?";
+"movement_statistics_cities" = "Cam atât în ceea ce privește distanța dintre %@ și %@";
 "movement_statistics_how_far" = "Cât de departe este asta?";
 "movement_statistics_see_distance" = "Rugați un profesor să obțină un alt iPad și urmăriți împreună cât de departe ajungeți atunci când mergeți %@ metri";
 "movement_statistics_title_today" = "Bună treabă, astăzi ați strâns %@ pași, adică %@ metri.";

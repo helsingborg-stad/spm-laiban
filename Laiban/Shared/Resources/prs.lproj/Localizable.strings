@@ -193,6 +193,7 @@
 "movement_register" = "ثبت نام";
 "movement_register_how_long" = "برای چند دقیقه فعالیت را انجام دادید؟";
 "movement_register_how_many" = "چند نفر از شما در این فعالیت شرکت کردید؟";
+"movement_statistics_cities" = "که در مورد تا آنجا که فاصله بین %@ و %@";
 "movement_statistics_how_far" = "چقدر دور است؟";
 "movement_statistics_see_distance" = "از یک معلم بخواهید که آی پد دیگری دریافت کند و با هم تماشا کند که وقتی با متر راه می روید تا %@ کنید";
 "movement_statistics_title_today" = "کار خوب، امروز شما %@ جمع آوری کرده اند، که %@ متر است.";

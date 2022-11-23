@@ -193,6 +193,7 @@ Klik her for at fortælle os, hvad du syntes om det!";
 "movement_register" = "Registrer";
 "movement_register_how_long" = "I hvor mange minutter udførte du aktiviteten?";
 "movement_register_how_many" = "Hvor mange af jer deltog i aktiviteten?";
+"movement_statistics_cities" = "Det er omtrent så langt som afstanden mellem %@ og %@";
 "movement_statistics_how_far" = "Hvor langt er det?";
 "movement_statistics_see_distance" = "Bed en lærer om at hente en anden iPad og se sammen, hvor langt I kommer, når I går %@ meter";
 "movement_statistics_title_today" = "Godt arbejde, i dag har du samlet %@ trin, det er %@ meter.";

@@ -193,6 +193,7 @@
 "movement_register" = "पंजीकृत करें";
 "movement_register_how_long" = "आपने कितने मिनट के लिए गतिविधि की?";
 "movement_register_how_many" = "आप में से कितने लोगों ने गतिविधि में भाग लिया?";
+"movement_statistics_cities" = "यह %@ और %@ के बीच की दूरी के बारे में है";
 "movement_statistics_how_far" = "यह कहां तक है?";
 "movement_statistics_see_distance" = "एक शिक्षक को एक और आईपैड प्राप्त करने के लिए कहें और एक साथ देखें कि जब आप %@ मीटर चलते हैं तो आप कितनी दूर जाते हैं";
 "movement_statistics_title_today" = "अच्छा काम, आज आपने %@ कदम उठाए हैं, यानी मीटर <span translate='no'>string</span> .";

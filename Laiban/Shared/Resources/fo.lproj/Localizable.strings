@@ -193,6 +193,7 @@ Trýst/trýstið her fyri at siga okkum, hvat tú/helt/hildu um tað!";
 "movement_register" = "Register";
 "movement_register_how_long" = "Í hvussu nógvar minuttir gjørdi tú ítrivið?";
 "movement_register_how_many" = "Hvussu nógv av tykkum tók lut í ítrivinum?";
+"movement_statistics_cities" = "Hatta er umleið so langt sum langt millum %@ og %@";
 "movement_statistics_how_far" = "Hvussu langt er hatta?";
 "movement_statistics_see_distance" = "Bið/biðið ein lærara um at fáa ein annan iPad og hyggja saman, hvussu langt tú/gongur/ganga %@ metrar";
 "movement_statistics_title_today" = "Gott arbeiði í dag hevur tú savnað %@ fet, tað er %@ metrar.";

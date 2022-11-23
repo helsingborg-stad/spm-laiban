@@ -193,6 +193,7 @@ Kattintson ide, hogy elmondja nekünk, mit gondolt róla!";
 "movement_register" = "Regisztráció";
 "movement_register_how_long" = "Hány percig csináltad a tevékenységet?";
 "movement_register_how_many" = "Hányan vettek részt a tevékenységben?";
+"movement_statistics_cities" = "Ez körülbelül olyan messze van, mint a %@ és a %@ közötti távolság";
 "movement_statistics_how_far" = "Milyen messze van ez?";
 "movement_statistics_see_distance" = "Kérj meg egy tanárt, hogy szerezzen be egy másik iPadet, és nézzék meg együtt, milyen messzire juttok, ha %@ métert sétáltok!";
 "movement_statistics_title_today" = "Jó munka, ma összegyűjtöttél %@ lépést, ez %@ méter.";

@@ -193,6 +193,7 @@
 "movement_register" = "Регистр";
 "movement_register_how_long" = "Нисә минут дауамында эшмәкәрлек алып барҙығыҙ?";
 "movement_register_how_many" = "Эшмәкәрлектә нисәгеҙ ҡатнаштығыҙ?";
+"movement_statistics_cities" = "Был %@ менән %@ араһындағы алыҫлыҡҡа тиклем";
 "movement_statistics_how_far" = "Ул ни тиклем алыҫ?";
 "movement_statistics_see_distance" = "Уҡытыусынан тағы бер iPad алыуын һорағыҙ һәм метр %@ йөрөгәндә ни тиклем алыҫҡа китеүегеҙҙе бергәләп күҙәтегеҙ";
 "movement_statistics_title_today" = "Хәйер, бөгөн %@ аҙым йыйҙығыҙ, ул %@ метр.";

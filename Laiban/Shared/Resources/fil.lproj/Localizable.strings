@@ -193,6 +193,7 @@ Mag-click dito upang sabihin sa amin kung ano ang naisip mo tungkol dito!";
 "movement_register" = "Magrehistro";
 "movement_register_how_long" = "Ilang minuto mo ginawa ang aktibidad?";
 "movement_register_how_many" = "Ilan po ba sa inyo ang sumali sa activity";
+"movement_statistics_cities" = "Yun kasing layo ng distansya ng %@ at %@";
 "movement_statistics_how_far" = "Hanggang saan po ba yun";
 "movement_statistics_see_distance" = "Hilingin sa isang guro na kumuha ng isa pang iPad at panoorin nang magkasama kung gaano kalayo ang makukuha mo kapag naglalakad ka %@ metro";
 "movement_statistics_title_today" = "Good job, ngayon nakakolekta ka na ng %@ steps, %@ meters na yan.";

@@ -193,6 +193,7 @@ Klõpsake siin, et öelda meile, mida te sellest arvasite!";
 "movement_register" = "Registreeru";
 "movement_register_how_long" = "Mitu minutit sa seda harjutust tegid?";
 "movement_register_how_many" = "Kui paljud teist selles tegevuses osalesid?";
+"movement_statistics_cities" = "See on umbes sama kaugel kui %@ ja %@ vaheline kaugus";
 "movement_statistics_how_far" = "Kui kaugel see on?";
 "movement_statistics_see_distance" = "Paluge õpetajal hankida veel üks iPad ja vaadake koos, kui kaugele jõuate, kui kõnnite %@ meetrit";
 "movement_statistics_title_today" = "Hea töö, täna olete kogunud %@ sammu, see on %@ meetrit.";

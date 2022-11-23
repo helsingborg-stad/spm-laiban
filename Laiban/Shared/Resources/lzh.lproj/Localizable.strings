@@ -193,6 +193,7 @@
 "movement_register" = "注册";
 "movement_register_how_long" = "你做了多少分钟?";
 "movement_register_how_many" = "你有多少人?";
+"movement_statistics_cities" = "盖%@%@之间也";
 "movement_statistics_how_far" = "彼其之远?";
 "movement_statistics_see_distance" = "请师更取一台iPad,共看君行 %@ 米时行远。";
 "movement_statistics_title_today" = "干得好,今日你已收拾了 %@ 步,是 %@ 米。";

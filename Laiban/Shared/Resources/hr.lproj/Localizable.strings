@@ -193,6 +193,7 @@ Kliknite ovdje da biste nam rekli što mislite o tome!";
 "movement_register" = "Registar";
 "movement_register_how_long" = "Koliko ste minuta obavljali tu aktivnost?";
 "movement_register_how_many" = "Koliko vas je sudjelovalo u aktivnosti?";
+"movement_statistics_cities" = "To je otprilike do udaljenosti između %@ i %@";
 "movement_statistics_how_far" = "Koliko je to daleko?";
 "movement_statistics_see_distance" = "Zatražite od učitelja da uzme još jedan iPad i zajedno gleda koliko daleko stignete dok hodate %@ metara";
 "movement_statistics_title_today" = "Dobar posao, danas ste prikupili %@ korake, to je %@ metara.";

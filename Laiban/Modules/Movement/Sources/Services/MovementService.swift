@@ -123,7 +123,6 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
         if let index = data.activities.firstIndex(where: {$0.id == activity.id}) {
             data.activities[index].isActive.toggle()
         }
-        save()
     }
     
     @MainActor public func save(movements: [Movement]) {

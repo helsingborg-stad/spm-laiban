@@ -193,6 +193,7 @@ Beet clic waye' utia'al xook k ba'ax ta tukultaj u beyo'!";
 "movement_register" = "Registro";
 "movement_register_how_long" = "Ba'ax ti' Jaytúul minutos ta meentaj le actividad.";
 "movement_register_how_many" = "Ba'ax Jaytúul ti' te'ex táakpajo'ob ti' le actividad.";
+"movement_statistics_cities" = "Lelo' óol ti' le jach náach u le distancia ichil %@ %@";
 "movement_statistics_how_far" = "Ba'ax jach náach yaan le je'elo'.";
 "movement_statistics_see_distance" = "K'áat ti' juntúul aj ka'ansaj ku manej uláak' iPad yéetel miren múuch' ba'ax jach náach ku talo'ob ka caminan %@ metros.";
 "movement_statistics_title_today" = "Ma'alo'ob meyaj, bejla'e' a recogido %@ escalones, lelo' %@ metros.";

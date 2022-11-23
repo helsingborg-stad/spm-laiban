@@ -193,6 +193,7 @@
 "movement_register" = "ރަޖިސްޓްރީ ކުރުން";
 "movement_register_how_long" = "ކިތައް މިނެޓު ވަންދެން އެ ހަރަކާތް ކުރީ ހެއްޔެވެ؟";
 "movement_register_how_many" = "އެ ހަރަކާތުގައި ބައިވެރިވީ ކިތައް މީހުން ހެއްޔެވެ؟";
+"movement_statistics_cities" = "އެއީ %@ އާއި %@ ދެމެދުގެ ދުރުމިނާ ހަމައަށެވެ.";
 "movement_statistics_how_far" = "އެއީ ކިހާ ހިސާބެއްގައި ހެއްޔެވެ؟";
 "movement_statistics_see_distance" = "ޓީޗަރަކު އެހެން އައިޕެޑެއް ނަގައި، މީޓަރު %@ ހިނގާއިރު ކިހާ ހިސާބަކަށް ދެވޭތޯ އެކުގައި ބަލާށެވެ.";
 "movement_statistics_title_today" = "ރަނގަޅު މަސައްކަތެއް، މިއަދު %@ ފިޔަވަޅެއް އެއްކުރެވިއްޖެ، އެއީ <span translate='no'>string</span> މީޓަރު.";

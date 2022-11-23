@@ -193,6 +193,7 @@
 "movement_register" = "Каттоо";
 "movement_register_how_long" = "Канча мүнөт бою иш жүргүздүңөр?";
 "movement_register_how_many" = "Иш-чарага канчаңыз катыштыңыз?";
+"movement_statistics_cities" = "Бул %@ менен %@ ортосундагы аралыкка чейин";
 "movement_statistics_how_far" = "Бул канчалык алыс?";
 "movement_statistics_see_distance" = "Мугалимден дагы бир iPad алып, метр %@ жүргөндө канчалык алыстап баратканыңарды чогуу көрүшүн сураныңыз";
 "movement_statistics_title_today" = "Жакшы жумуш, бүгүн сиз %@ кадамдарды чогулттуңуз, бул %@ метр.";

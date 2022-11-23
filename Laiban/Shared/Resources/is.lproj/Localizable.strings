@@ -193,6 +193,7 @@ Smelltu hér til að segja okkur hvað þér fannst um það!";
 "movement_register" = "Skrá";
 "movement_register_how_long" = "Í hversu margar mínútur stundaðir þú athöfnina?";
 "movement_register_how_many" = "Hversu mörg ykkar tóku þátt í verkefninu?";
+"movement_statistics_cities" = "Það er um það bil eins langt og fjarlægðin milli %@ og %@";
 "movement_statistics_how_far" = "Hvað er langt þangað?";
 "movement_statistics_see_distance" = "Biddu kennara um að fá þér annan iPad og horfa saman á hversu langt þú kemst þegar þú gengur %@ metra";
 "movement_statistics_title_today" = "Vel gert, í dag hefur þú safnað %@ skrefum, það eru %@ metrar.";

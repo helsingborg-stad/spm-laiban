@@ -193,6 +193,7 @@
 "movement_register" = "سجل";
 "movement_register_how_long" = "كم دقيقة قمت بهذا النشاط؟";
 "movement_register_how_many" = "كم منكم شارك في النشاط؟";
+"movement_statistics_cities" = "هذا هو تقريبا المسافة بين %@ و %@";
 "movement_statistics_how_far" = "إلى أي مدى هذا الحد؟";
 "movement_statistics_see_distance" = "اطلب من المعلم الحصول على جهاز iPad آخر ومشاهدة المسافة التي تصل إليها عند المشي %@ متر";
 "movement_statistics_title_today" = "عمل جيد ، اليوم قمت بجمع خطوات %@ ، وهذا %@ متر.";

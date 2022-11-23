@@ -193,6 +193,7 @@ Klik di sini untuk memberi tahu kami pendapat Anda tentang hal itu!";
 "movement_register" = "Daftar";
 "movement_register_how_long" = "Selama berapa menit Anda melakukan aktivitas tersebut?";
 "movement_register_how_many" = "Berapa banyak dari Anda yang berpartisipasi dalam kegiatan tersebut?";
+"movement_statistics_cities" = "Itu kira-kira sejauh jarak antara %@ dan %@";
 "movement_statistics_how_far" = "Seberapa jauh itu?";
 "movement_statistics_see_distance" = "Mintalah seorang guru untuk mendapatkan iPad lain dan menyaksikan bersama seberapa jauh Anda melangkah %@ meter";
 "movement_statistics_title_today" = "Kerja bagus, hari ini Anda telah mengumpulkan %@ langkah, itu %@ meter.";

@@ -193,6 +193,7 @@ Noklikšķiniet šeit, lai pastāstītu mums, ko jūs par to domājāt!";
 "movement_register" = "Reģistrēties";
 "movement_register_how_long" = "Cik minūtes jūs veicāt aktivitāti?";
 "movement_register_how_many" = "Cik no jums piedalījās šajā aktivitātē?";
+"movement_statistics_cities" = "Tas ir apmēram tik tālu, cik tālu attālums starp %@ un %@";
 "movement_statistics_how_far" = "Cik tālu tas ir?";
 "movement_statistics_see_distance" = "Palūdziet skolotājam iegūt vēl vienu iPad un kopā vērojiet, cik tālu jūs nokļūstat, ejot %@ metrus";
 "movement_statistics_title_today" = "Labs darbs, šodien jūs esat savācis %@ soļus, tas ir %@ metri.";

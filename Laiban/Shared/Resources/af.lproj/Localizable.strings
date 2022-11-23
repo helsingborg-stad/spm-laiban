@@ -193,6 +193,7 @@ Klik hier om ons te vertel wat jy daarvan gedink het!";
 "movement_register" = "Register";
 "movement_register_how_long" = "Vir hoeveel minute het jy die aktiwiteit gedoen?";
 "movement_register_how_many" = "Hoeveel van julle het aan die aktiwiteit deelgeneem?";
+"movement_statistics_cities" = "Dit is omtrent so ver as die afstand tussen %@ en %@";
 "movement_statistics_how_far" = "Hoe ver is dit?";
 "movement_statistics_see_distance" = "Vra 'n onderwyser om nog 'n iPad te kry en kyk saam hoe ver u kom as u %@ meter loop";
 "movement_statistics_title_today" = "Goeie werk, vandag het jy %@ stappe versamel, dit is %@ meter.";

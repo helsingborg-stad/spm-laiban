@@ -193,6 +193,7 @@ Kliko këtu për të na treguar se çfarë mendove për të!";
 "movement_register" = "Regjistro";
 "movement_register_how_long" = "Sa minuta e bëre këtë aktivitet?";
 "movement_register_how_many" = "Sa prej jush morën pjesë në aktivitet?";
+"movement_statistics_cities" = "Kjo është aq larg sa distanca midis %@ dhe %@";
 "movement_statistics_how_far" = "Sa larg është kjo?";
 "movement_statistics_see_distance" = "Kërkoji një mësuesi të marrë një iPad tjetër dhe të shikojë së bashku se sa larg arrin kur ecën %@ metra";
 "movement_statistics_title_today" = "Punë e mirë, sot ke mbledhur %@ hapa, janë %@ metra.";

@@ -193,6 +193,7 @@ Ne düşündüğünüzü bize anlatmak için buraya tıklayın!";
 "movement_register" = "Kaydolmak";
 "movement_register_how_long" = "Aktiviteyi kaç dakika boyunca yaptınız?";
 "movement_register_how_many" = "Etkinliğe kaçınız katıldı?";
+"movement_statistics_cities" = "Bu, %@ ile %@ arasındaki mesafeye kadar";
 "movement_statistics_how_far" = "Bu ne kadar uzaklıkta?";
 "movement_statistics_see_distance" = "Bir öğretmenden başka bir iPad almasını isteyin ve %@ metre yürürken ne kadar uzağa gittiğinizi birlikte izleyin";
 "movement_statistics_title_today" = "Aferin, bugün %@ basamak topladın, bu %@ metre.";

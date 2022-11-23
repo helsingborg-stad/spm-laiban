@@ -193,6 +193,7 @@ Klicken Sie hier, um uns zu sagen, was Sie davon halten!";
 "movement_register" = "Registrieren";
 "movement_register_how_long" = "Wie viele Minuten haben Sie die Aktivität durchgeführt?";
 "movement_register_how_many" = "Wie viele von Ihnen haben an der Aktivität teilgenommen?";
+"movement_statistics_cities" = "Das ist ungefähr so weit wie die Entfernung zwischen %@ und %@";
 "movement_statistics_how_far" = "Wie weit ist das?";
 "movement_statistics_see_distance" = "Bitten Sie einen Lehrer, sich ein weiteres iPad zu besorgen und beobachten Sie gemeinsam, wie weit Sie kommen, wenn Sie %@ Meter gehen";
 "movement_statistics_title_today" = "Gute Arbeit, heute haben Sie %@ Schritte gesammelt, das sind %@ Meter.";

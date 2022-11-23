@@ -193,6 +193,7 @@
 "movement_register" = "Регистр";
 "movement_register_how_long" = "Сіз әрекетті қанша минут жасадыңыз?";
 "movement_register_how_many" = "Сіз қанша іс-шараға қатыстыңыз?";
+"movement_statistics_cities" = "Бұл %@ мен %@ арасындағы қашықтыққа қарағанда";
 "movement_statistics_how_far" = "Бұл қаншалықты алыс?";
 "movement_statistics_see_distance" = "Мұғалімнен басқа iPad-ты алуын сұрап, %@ метрмен жүріп өткенде қаншалықты алысқа баратыныңызды бірге көруді сұраңыз";
 "movement_statistics_title_today" = "Жақсы жұмыс, бүгін сіздер %@ қадамдар жинадыңыздар, яғни %@ метр.";

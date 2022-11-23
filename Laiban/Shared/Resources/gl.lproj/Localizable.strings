@@ -193,6 +193,7 @@ Clica aquí para contarnos o que pensaches!";
 "movement_register" = "Rexistro";
 "movement_register_how_long" = "Cantos minutos fixeches a actividade?";
 "movement_register_how_many" = "Cantos de vós participastes na actividade?";
+"movement_statistics_cities" = "É a distancia entre %@ e %@";
 "movement_statistics_how_far" = "A que distancia está iso?";
 "movement_statistics_see_distance" = "Pídelle a un profesor que obteña outro iPad e mire ata onde chega cando camiñas %@ metros.";
 "movement_statistics_title_today" = "Bo traballo, hoxe recolleches %@ pasos, que é %@ metros.";

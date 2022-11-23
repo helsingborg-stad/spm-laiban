@@ -193,6 +193,7 @@ Cliciwch yma i ddweud wrthym beth oeddech chi'n feddwl ohono!";
 "movement_register" = "Cofrestr";
 "movement_register_how_long" = "Am sawl munud wnest ti'r gweithgaredd?";
 "movement_register_how_many" = "Faint ohonoch chi gymerodd ran yn y gweithgaredd?";
+"movement_statistics_cities" = "Mae hynny ynglŷn â chyn belled â'r pellter rhwng %@ a %@";
 "movement_statistics_how_far" = "Pa mor bell yw hynny?";
 "movement_statistics_see_distance" = "Gofynnwch i athro gael iPad arall a gwylio gyda'ch gilydd pa mor bell rydych chi'n ei gael pan fyddwch chi'n cerdded %@ medr";
 "movement_statistics_title_today" = "Swydd dda, heddiw rydych chi wedi casglu %@ gamau, dyna %@ medr.";

@@ -193,6 +193,7 @@ Klicka här för att berätta vad du tyckte om den!";
 "movement_register" = "Registrera";
 "movement_register_how_long" = "Hur länge har ni rört på er?";
 "movement_register_how_many" = "Hur många var ni som rörde på er?";
+"movement_statistics_cities" = "Det är ungefär lika långt som mellan %@ och %@";
 "movement_statistics_how_far" = "Hur långt är det?";
 "movement_statistics_see_distance" = "Be en pedagog hämta en annan iPad och titta tillsammans hur långt ni kommer när ni går %@ meter";
 "movement_statistics_title_today" = "Bra jobbat, idag har ni fått ihop %@ steg, det blir %@ meter.";

@@ -193,6 +193,7 @@
 "movement_register" = "መዝገብ";
 "movement_register_how_long" = "ንኽንደይ ደቓይቕ ኢኻ ነዚ ንጥፈት እዚ ፈጺምካዮ?";
 "movement_register_how_many" = "ክንደይ ካባኻትኩም ኢኹም ኣብቲ ንጥፈት ተኻፊልኩም ?";
+"movement_statistics_cities" = "እዚ ኽሳዕ እቲ ኣብ መንጎ %@ ዘሎ ርሕቀት %@";
 "movement_statistics_how_far" = "እዚ ኽሳዕ ክንደይ እዩ ?";
 "movement_statistics_see_distance" = "ንመምህሩ ኻልእ iPad ኪወስደካ እሞ %@ ሜተር ብእግርኻ ኽትከይድ ከለኻ ኽሳዕ ክንደይ ከም እትበጽሕ ብሓባር ኪከታተሎ ሕተቶ";
 "movement_statistics_title_today" = "ጽቡቕ ስራሕ ሎሚ %@ ስጕምትታት ኣኪብካ ኢኻ፣ እዚ ኸኣ %@ ሜተር እዩ።";

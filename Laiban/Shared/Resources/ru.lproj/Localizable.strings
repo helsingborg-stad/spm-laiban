@@ -193,6 +193,7 @@
 "movement_register" = "Регистрировать";
 "movement_register_how_long" = "В течение каких минут вы выполняли упражнение?";
 "movement_register_how_many" = "Сколько из вас участвовало в мероприятии?";
+"movement_statistics_cities" = "Это примерно столько же, сколько расстояние между %@ и %@";
 "movement_statistics_how_far" = "Как далеко это?";
 "movement_statistics_see_distance" = "Попросите учителя взять еще один iPad и вместе посмотреть, как далеко вы заходите, когда идете %@ метров.";
 "movement_statistics_title_today" = "Хорошая работа, сегодня вы собрали %@ ступеней, это %@ метров.";

@@ -193,6 +193,7 @@
 "movement_register" = "Регистрирайте се";
 "movement_register_how_long" = "В продължение на колко минути се занимавахте с дейността?";
 "movement_register_how_many" = "Колко от вас са участвали в дейността?";
+"movement_statistics_cities" = "Това е горе-долу до разстоянието между %@ и %@";
 "movement_statistics_how_far" = "Докъде е това?";
 "movement_statistics_see_distance" = "Помолете учител да си вземе друг iPad и да гледате заедно колко далеч стигате, когато ходите %@ метра";
 "movement_statistics_title_today" = "Добра работа, днес сте събрали %@ стъпки, това са %@ метра.";

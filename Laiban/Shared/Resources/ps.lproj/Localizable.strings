@@ -193,6 +193,7 @@
 "movement_register" = "راجستر";
 "movement_register_how_long" = "د څو دقیقو لپاره تاسو فعالیت ترسره کړ؟";
 "movement_register_how_many" = "تاسو څو کسانو په دې فعالیت کې برخه اخستې وه؟";
+"movement_statistics_cities" = "دا د افغانستان او امریکا تر منځ د واټن تر %@ واټن %@";
 "movement_statistics_how_far" = "دا څومره لرې دې؟";
 "movement_statistics_see_distance" = "له یو ښوونکی څخه وغواړئ چې یو بل آی پډ ترلاسه کړی او په ګډه سره وګورئ کله چې تاسو د میترو په %@ ترلاسه کوئ";
 "movement_statistics_title_today" = "ښه دنده، نن تاسو %@ راټول کړی دی، دا %@ دی.";

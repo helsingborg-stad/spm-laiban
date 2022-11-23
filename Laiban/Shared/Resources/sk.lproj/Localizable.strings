@@ -193,6 +193,7 @@ Kliknite sem a povedzte nám, čo si o tom myslíte!";
 "movement_register" = "Zaregistrovať sa";
 "movement_register_how_long" = "Koľko minút ste aktivitu robili?";
 "movement_register_how_many" = "Koľkí z vás sa na aktivite zúčastnili?";
+"movement_statistics_cities" = "To je asi tak ďaleko, ako je vzdialenosť medzi %@ a %@";
 "movement_statistics_how_far" = "Ako ďaleko je to?";
 "movement_statistics_see_distance" = "Požiadajte učiteľa, aby si zaobstaral ďalší iPad, a spoločne sledujte, ako ďaleko sa dostanete, keď prejdete %@ metrov";
 "movement_statistics_title_today" = "Dobrá práca, dnes ste nazbierali %@ krokov, to je %@ metrov.";

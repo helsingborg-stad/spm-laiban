@@ -193,6 +193,7 @@ Klike la a pou di nou sa ou te panse de li!";
 "movement_register" = "Anrejistre";
 "movement_register_how_long" = "Pou konbyen minit ou te fè aktivite a?";
 "movement_register_how_many" = "Konbyen nan nou te patisipe nan aktivite a?";
+"movement_statistics_cities" = "Sa a sou osi lwen ke distans ant %@ ak %@";
 "movement_statistics_how_far" = "Nan ki distans sa ye?";
 "movement_statistics_see_distance" = "Mande yon pwofesè pou jwenn yon lòt iPad epi gade ansanm ki jan lwen ou jwenn lè ou mache %@ mèt";
 "movement_statistics_title_today" = "Bon travay, jodi a ou te ranmase etap %@ , sa a %@ mèt.";

@@ -193,6 +193,7 @@ Cliceáil anseo chun a insint dúinn cad a shíl tú de!";
 "movement_register" = "Cláraigh";
 "movement_register_how_long" = "Cé mhéad nóiméad a rinne tú an ghníomhaíocht?";
 "movement_register_how_many" = "Cé mhéad agaibh a ghlac páirt sa ghníomhaíocht?";
+"movement_statistics_cities" = "Sin thart chomh fada leis an bhfad idir %@ agus %@";
 "movement_statistics_how_far" = "Cá fhad é sin?";
 "movement_statistics_see_distance" = "Iarr ar mhúinteoir iPad eile a fháil agus féachaint le chéile cé chomh fada a fhaigheann tú nuair a shiúlann tú %@ méadar";
 "movement_statistics_title_today" = "Post maith, inniu tá céimeanna %@ bailithe agat, sin %@ méadar.";
