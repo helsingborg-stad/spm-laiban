@@ -56,7 +56,15 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
                 self.movementManager.delegate = self
                 self.movementManager.settings = values.settings
                 self.movementManager.updateData(newData: values.movement)
-                self.stringsToTranslate = values.activities.map { $0.title }
+                var newStringsToTranslate: [String] = []
+                values.activities.filter { $0.isActive }.map { $0.title }.forEach { activityTitle in
+                    if !self.stringsToTranslate.contains(activityTitle) {
+                        newStringsToTranslate.append(activityTitle)
+                    }
+                }
+                if !newStringsToTranslate.isEmpty {
+                    self.stringsToTranslate.append(contentsOf: newStringsToTranslate)
+                }
             }
         }.store(in: &cancellables)
     }
@@ -105,7 +113,6 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
         callback()
     }
 
-
     func deleteActivity(activity:MovementActivity, callback: () -> Void){
         if let index = data.activities.firstIndex(where: {$0.id == activity.id}){
             data.activities.remove(at: index)
@@ -119,10 +126,13 @@ public class MovementService: CTS<MovementModel, MovementStorageService>, LBAdmi
         save()
     }
     
-    func toggleEnabled(activity: MovementActivity) {
+    func toggleEnabled(activity: MovementActivity) -> Bool {
         if let index = data.activities.firstIndex(where: {$0.id == activity.id}) {
             data.activities[index].isActive.toggle()
+            save()
+            return data.activities[index].isActive
         }
+        return false
     }
     
     @MainActor public func save(movements: [Movement]) {

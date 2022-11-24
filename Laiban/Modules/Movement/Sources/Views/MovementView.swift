@@ -81,7 +81,6 @@ public struct MovementView: View {
                     )
                     .cornerRadius(20, corners: .allCorners)
                     .padding([.top, .bottom], 100)
-                    //.frame(maxWidth:.infinity, maxHeight: .infinity)
                 }
                 .padding(.top, 10)
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
@@ -96,6 +95,7 @@ public struct MovementView: View {
         }
     }
     var dailyStatistics: some View {
+        service.movementManager.updateCities(for: service.viewModel.selectedDate)
         return MovementDailyStatisticsView(service: service, date: service.viewModel.selectedDate)
         .frame(maxWidth:.infinity,maxHeight: .infinity)
         .padding(properties.spacing[.m])

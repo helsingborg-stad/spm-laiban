@@ -78,11 +78,9 @@ struct MovementDailyStatisticsView: View {
                     }
                 }
             }
-        }.onAppear {
+        }.onAppear() {
             animating = true
-            Task {
-                service.movementManager.updateCities(for: date)
-            }
+            
         }
         .sheet(isPresented: $showSheet, content: {
             let meters = service.movementManager.movementMeters(for: date)

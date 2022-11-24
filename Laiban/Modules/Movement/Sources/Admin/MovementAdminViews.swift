@@ -25,23 +25,19 @@ struct MovementAdminViews: View {
 struct MovementActivityListItem:View {
 
     @State var activity: MovementActivity
-    @ObservedObject var service:MovementService
+    @ObservedObject var service: MovementService
 
     var body:some View {
         NavigationLink(destination: MovementAdminEditActivityView(service: service, activity: activity, workingActivity: .init(service: service, activity: activity))){
             HStack(alignment: .center) {
-
-
                 Text(activity.emoji)
-
                 VStack(alignment: .leading) {
                     Text(activity.title)
                 }
-
                 Spacer()
-
                 Toggle("", isOn: $activity.isActive).onTapGesture {
-                    service.toggleEnabled(activity: activity)
+                    let isActive = service.toggleEnabled(activity: activity)
+                    activity.isActive = isActive
                 }
             }.foregroundColor(activity.isActive ? .black : .gray)
         }
@@ -54,7 +50,7 @@ struct MovementActivityListView: View {
     @ObservedObject var service:MovementService
     var body: some View {
         Section {
-            ForEach(service.data.activities, id: \.self) { activity in
+            ForEach(service.data.activities, id: \.id) { activity in
                 MovementActivityListItem(activity: activity, service: service)
             }.onDelete(perform: service.deleteActivity)
         } header: {

@@ -36,23 +36,21 @@ public class DistanceHelper: NSObject, CLLocationManagerDelegate {
         if let urlString = prepareUrl(range: withRange), let url = URL(string: urlString) {
             let task = URLSession.shared.dataTask(with: url){
                     data, response, error in
-                    
                     if let data = data, let string = String(data: data, encoding: .utf8){
                         print(string)
                         if let cities = try? JSONDecoder().decode(MovementCityModel.self, from: data){
                             if var startCity = self.findCityClosestTo(distance: 0, from: cities), var desinationCity = self.findCityClosestTo(distance: actualDistance, from: cities) {
                                 startCity.start = true
                                 desinationCity.destination = true
-                                
                                 completion([startCity, desinationCity])
                                 return
                             }
                         }
+                    } else {
+                        completion(nil)
                     }
-                    completion(nil)
                 }
-
-                task.resume()
+            task.resume()
         }
     }
     
