@@ -69,6 +69,8 @@ class CalendarViewModel : ObservableObject {
         return assistant.formattedString(forKey: "public_calendar_celebration", e)
     }
     
+    
+    
     var otherEvents = [OtherCalendarEvent]()
     
     func update() {

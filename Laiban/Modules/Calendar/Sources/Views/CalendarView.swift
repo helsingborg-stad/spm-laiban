@@ -260,8 +260,7 @@ public struct CalendarView: View {
                             Text(selectedItem.icon ?? "").font(Font.system(size: proxy.size.height * 0.3)).padding(.bottom, self.horizontalSizeClass == .regular ? 30 : 10)
                             
                             Text(viewModel.localizedString(for: selectedItem))
-                            Text(viewModel.assistant?.string(forKey: selectedItem.content, in: locale ) ?? "")
-                            Text(assistant.string(forKey: selectedItem.content))
+                            
                             if self.viewModel.selectedDay.isFree(events: self.viewModel.otherEvents) {
                                 Text(LocalizedStringKey("calendar_free_day"), bundle: .module)
                             }
