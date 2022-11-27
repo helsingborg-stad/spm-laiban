@@ -32,7 +32,7 @@ struct RecreationRegularView: View {
                     Text("Vet inte")
                 } else {
                     VStack(spacing: properties.spacing[.m]) {
-                        Text(activity!.activityDescription(hasObject: item != nil, using: assistant))
+                        Text( activity!.activityDescription(hasObject: item != nil, using: assistant))
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
                             .multilineTextAlignment(.center)

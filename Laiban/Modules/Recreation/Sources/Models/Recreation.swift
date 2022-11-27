@@ -101,9 +101,7 @@ public struct Recreation : Codable {
             if hasObject, let objectSentence = objectSentence {
                 result += " " + assistant.string(forKey: objectSentence)
             }
-//            if let unWrappedImageOrEmojiDescription = imageOrEmojiDescription, unWrappedImageOrEmojiDescription != "" {
-//                result += " " + assistant.string(forKey: unWrappedImageOrEmojiDescription)
-//            }
+
             return result
         }
         

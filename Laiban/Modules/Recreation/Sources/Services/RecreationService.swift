@@ -12,14 +12,18 @@ public typealias RecreationStorageService = CodableLocalJSONService<RecreationSe
 
 public enum InventoryType: String, CaseIterable, Identifiable {
     case misc = "misc", animals = "animals", songs = "songs"
+    public var id: Self { self }    
+}
+
+enum ActivityContentSelection: String, CaseIterable, Hashable {
+    case image = "Bild", emoji = "Emoji", objects = "Objekt/Föremål"
     public var id: Self { self }
 }
 
-
 public struct InventoryCategory {
-    private let misc:InventoryCategoryType = InventoryCategoryType(id: "misc", displayName: "Diverse")
-    private let animals:InventoryCategoryType = InventoryCategoryType(id: "animals", displayName: "Djur")
-    private let songs:InventoryCategoryType = InventoryCategoryType(id: "songs", displayName: "Sånger")
+    let misc:InventoryCategoryType = InventoryCategoryType(id: "misc", displayName: "Diverse")
+    let animals:InventoryCategoryType = InventoryCategoryType(id: "animals", displayName: "Djur")
+    let songs:InventoryCategoryType = InventoryCategoryType(id: "songs", displayName: "Sånger")
     let all:[InventoryCategoryType]
     
     init() {
@@ -72,18 +76,22 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
             storageOptions: .init(filename: "Recreation", foldername: "RecreationService", bundleFilename:"Recreation", bundle:.module)
         )
         
-        Task {
+        Task{
             await self.load()
         }
         
         $data.sink { [weak self] data in
             var strings = [String]()
             
+            guard let _ = self else {
+                return
+            }
+            
             for recreation in data {
                 recreation.activities.forEach({ activity in
                     strings.append(activity.name)
-                    if let _ = activity.imageOrEmojiDescription {
-                        strings.append(activity.imageOrEmojiDescription!)
+                    if let imageOrEmojiDescription = activity.imageOrEmojiDescription {
+                        strings.append(imageOrEmojiDescription)
                     }
                     strings.append(activity.sentence)
                     if let _ = activity.objectSentence {
@@ -91,7 +99,6 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
                     }
                     
                     activity.inventories.forEach({inventory in
-                        print(inventory.description)
                         strings.append(inventory.description)
                     })
                 })
@@ -104,80 +111,38 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
                 })
             }
             
-            self?.stringsToTranslate = strings
+            strings.forEach({string in
+                if !self!.stringsToTranslate.contains(string){
+                    self?.stringsToTranslate.append(string)
+                }
+            })
+            
         }.store(in: &cancellables)
     }
     
+   
     public var recreation:Recreation {
         
         return data[0]
     }
-    
+ 
     func getRecreation() -> Recreation {
         
         guard var recreation = self.data.first else {
             return Recreation()
         }
-        
         recreation.activities = recreation.activities.filter({$0.isActive})
-        
         recreation.inventories.forEach({ inventory in
             if let index = recreation.inventories.firstIndex(where: {$0.id == inventory.id}) {
                 recreation.inventories[index].items = recreation.inventories[index].items.filter({$0.isActive})
             }
         })
-        
         return recreation
     }
     
     
-    func saveActivity(activity:Recreation.Activity) {
-        
-        if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == activity.id} ) {
-            
-            data[defaultIndexForRecreationObject].activities[index] = activity
-            
-            Task {
-                await self.save()
-            }
-        }
-    }
-    
-    func addActivity(newActivity:Recreation.Activity, callback: () -> Void) {
-        
-        data[defaultIndexForRecreationObject].activities.append(newActivity)
-        
-        Task {
-            await self.save()
-        }
-        
-        callback()
-    }
-    
-    
-    func deleteActivity(activity:Recreation.Activity, callback: () -> Void){
-        
-        if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == activity.id}){
-            data[defaultIndexForRecreationObject].activities.remove(at: index)
-             
-            Task {
-                await self.save()
-            }
-            
-            callback()
-        }
-    }
-    
-    func deleteActivity(at offsets: IndexSet) {
-        data[0].activities.remove(atOffsets: offsets)
-        
-        Task {
-            await self.save()
-        }
-    }
-    
     func toggleEnabledFlag(type: RecreationType, inventoryType: String? = nil, id: String){
-    
+
         switch type {
         case .Inventory:
             
@@ -189,62 +154,100 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
             }
         case .Activity:
             if let index = data[defaultIndexForRecreationObject].activities.firstIndex(where: {$0.id == id}) {
+                
                 data[defaultIndexForRecreationObject].activities[index].isActive.toggle()
             }
         }
-        
+     
         Task{
             await self.save()
         }
     }
     
-    
-    func addInventoryItem(type:InventoryType, inventoryItem:Recreation.Inventory.Item, callback: () -> Void){
+    func randomInventoryItemFor(inventoryType:InventoryType) -> Recreation.Inventory.Item? {
         
-        switch type {
+        var item:Recreation.Inventory.Item? = nil
+        
+        switch inventoryType {
         case .misc:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
-                data[defaultIndexForRecreationObject].inventories[index].items.append(inventoryItem)
+            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
+                 item = recreation.inventories[index].items.randomElement()
             }
+            
         case .animals:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
-                data[defaultIndexForRecreationObject].inventories[index].items.append(inventoryItem)
+            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
+                item =  recreation.inventories[index].items.randomElement()
             }
         case .songs:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
-                data[defaultIndexForRecreationObject].inventories[index].items.append(inventoryItem)
+            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
+                item =  recreation.inventories[index].items.randomElement()
             }
         }
         
-        Task {
-            await self.save()
-        }
-        
-        callback()
+        return item
     }
     
-    func saveInventoryItem(type:InventoryType, inventoryItem:Recreation.Inventory.Item){
-        
-        switch type {
-        case .misc:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }), let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == inventoryItem.id})  {
-                
-                data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = inventoryItem
-            }
-        case .animals:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }), let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == inventoryItem.id}) {
-                
-                data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = inventoryItem
-            }
-        case .songs:
-            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }), let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == inventoryItem.id}) {
-                
-                data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = inventoryItem
-            }
+    //MANAGE ACTIVITIES
+    func update(_ activity:Recreation.Activity){
+        guard let index = recreation.activities.firstIndex(where: { $0.id == activity.id }) else {
+            data[0].activities.append(activity)
+            return
         }
+        data[0].activities[index] = activity
+    }
+    
+    func delete(_ activity:Recreation.Activity) {
+        guard let index = recreation.activities.firstIndex(where: { $0.id == activity.id }) else {
+            data[0].activities.append(activity)
+            return
+        }
+        data[0].activities.remove(at: index)
+    }
+    
+    func deleteActivity(at offsets: IndexSet) {
+        data[0].activities.remove(atOffsets: offsets)
         
         Task {
             await self.save()
+        }
+    }
+    
+    
+    
+    // MANAGE ITEMS
+    func update(_ item:Recreation.Inventory.Item, type:InventoryType){
+       
+        switch type {
+        case .misc:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }){
+              
+                if let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == item.id})  {
+                    
+                    data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = item
+                }else{
+                    data[defaultIndexForRecreationObject].inventories[index].items.append(item)
+                }
+            }
+        case .animals:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }){
+              
+                if let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == item.id})  {
+                    
+                    data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = item
+                }else{
+                    data[defaultIndexForRecreationObject].inventories[index].items.append(item)
+                }
+            }
+        case .songs:
+            if let index = data[defaultIndexForRecreationObject].inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }){
+              
+                if let itemIndex = data[defaultIndexForRecreationObject].inventories[index].items.firstIndex(where: {$0.id == item.id})  {
+                    
+                    data[defaultIndexForRecreationObject].inventories[index].items[itemIndex] = item
+                }else{
+                    data[defaultIndexForRecreationObject].inventories[index].items.append(item)
+                }
+            }
         }
     }
     
@@ -277,36 +280,7 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
             
             }else if let id = itemId {
                 data[defaultIndexForRecreationObject].inventories[index].items.removeAll(where: {$0.id == id})
-                callback!()
             }
-        }
-            
-        Task {
-            await self.save()
         }
     }
-    
-    func randomInventoryItemFor(inventoryType:InventoryType) -> Recreation.Inventory.Item? {
-        
-        var item:Recreation.Inventory.Item? = nil
-        
-        switch inventoryType {
-        case .misc:
-            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.misc.rawValue }) {
-                 item = recreation.inventories[index].items.randomElement()
-            }
-            
-        case .animals:
-            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.animals.rawValue }) {
-                item =  recreation.inventories[index].items.randomElement()
-            }
-        case .songs:
-            if let index = recreation.inventories.firstIndex(where: {$0.id == InventoryType.songs.rawValue }) {
-                item =  recreation.inventories[index].items.randomElement()
-            }
-        }
-        
-        return item
-    }
-    
 }

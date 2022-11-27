@@ -27,23 +27,52 @@ struct AdminRecreationActivityListItem:View {
     @State var activity: Recreation.Activity
     @ObservedObject var service:RecreationService
     
+    func update(_ activity:Recreation.Activity) {
+        service.update(activity)
+        save()
+    }
+    
+    func delete(_ activity:Recreation.Activity) {
+        service.delete(activity)
+        save()
+    }
+    
+    func save() {
+        service.save()
+    }
+    
+    func toggleIsActiveForActivity(activity:Recreation.Activity){
+        
+        if let index = service.data[0].activities.firstIndex(where:{$0.id == activity.id}) {
+            service.data[0].activities[index].isActive.toggle()
+        }
+    }
+    
     var body:some View {
-        NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: activity, workingActivity: .init(service: service, activity: activity))){
+        
+        NavigationLink(destination: AdminRecreationActivityView(activity: activity) { a in
+            update(a)
+        } onDelete: {a in
+            delete(a)
+        }){
+          
             HStack(alignment: .center) {
                 
-        
                 Text(activity.emoji)
                 
                 VStack(alignment: .leading) {
                     Text(activity.sentence)
-                    activity.objectSentence != nil ? Text(activity.objectSentence ?? "") : nil
+                    if let os = activity.objectSentence, os != "" {
+                        Text(os)
+                    }
                 }
                 
                 Spacer()
-             
-                Toggle("", isOn: $activity.isActive).onTapGesture {
-                    service.toggleEnabledFlag(type: .Activity, inventoryType: activity.name, id: activity.id)
-                }
+  
+                LBToggleView(isOn: activity.isActive, changed: {c in
+                    toggleIsActiveForActivity(activity: activity)
+                })
+
             }.foregroundColor(activity.isActive ? .black : .gray)
         }
     }
@@ -51,14 +80,30 @@ struct AdminRecreationActivityListItem:View {
 
 struct AdminRecreationActivityListView: View {
     
-    @State private var showingSheet = false
-
     @ObservedObject var service:RecreationService
+    @State private var showingSheet = false
+    
+    func delete(_ activity:Recreation.Activity) {
+        service.delete(activity)
+        save()
+    }
+    
+    func update(_ activity:Recreation.Activity) {
+        service.update(activity)
+        save()
+    }
+    
+    func save() {
+        service.save()
+    }
+    
     var body: some View {
         Section {
+        
             ForEach(service.data[0].activities, id: \.self) { activity in
                 AdminRecreationActivityListItem(activity: activity, service: service)
             }.onDelete(perform: service.deleteActivity)
+            
         } header: {
             
             VStack(alignment: .leading){
@@ -68,7 +113,11 @@ struct AdminRecreationActivityListView: View {
                 HStack{
                     Text("Aktiviteter")
                     Spacer()
-                    NavigationLink(destination: AdminRecreationAddActivityView(service: service, activity: .init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: ""), workingActivity: .init(service: service, activity: Recreation.Activity.init(name: "", sentence: "", emoji: "", isActive: true, activityEmoji: "") ))){
+                    NavigationLink(destination: AdminRecreationActivityView(activity: nil) { a in
+                        update(a)
+                    } onDelete: {a in
+                        delete(a)
+                    }){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)
@@ -86,8 +135,37 @@ struct InventoryListViewItem: View {
     let inventory:Recreation.Inventory
     @State var item: Recreation.Inventory.Item
     @ObservedObject var service:RecreationService
+    
+    
+    func delete(_ item:Recreation.Inventory.Item,type:InventoryType) {
+        service.deleteInventoryItem(itemId: item.id,inventoryType: type)
+        save()
+    }
+    
+    func update(_ item:Recreation.Inventory.Item, type:InventoryType) {
+        service.update(item,type: type)
+        save()
+    }
+    
+    func save() {
+        service.save()
+    }
+    
+    var type:InventoryType{
+        guard let type  = InventoryType(rawValue: inventory.id) else
+        {
+            return InventoryType.misc
+        }
+        return type
+    }
+    
     var body: some View {
-        NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!, inventoryCategory: InventoryCategory().all.first(where: {$0.displayName == inventory.name})!, inventoryItem: item, workingItem: .init(inventoryItem: item, service: service, inventoryType: InventoryType(rawValue: inventory.id)!))){
+        
+        NavigationLink(destination: AdminRecreationInventoryItemView(inventoryItem: item,type: type, onUpdate: {i,t in
+            update(i ,type: t)
+        }, onDelete: { i,t in
+            delete(i,type:t)
+        })){
             HStack{
                 if let emoji = item.emoji, emoji != "" {
                     Text(emoji)
@@ -103,26 +181,48 @@ struct InventoryListViewItem: View {
         }
     }
 }
+
+
 struct AdminRecreationInventoriesListView: View {
     
     @ObservedObject var service:RecreationService
+    
+    func delete(_ item:Recreation.Inventory.Item,type:InventoryType) {
+        service.deleteInventoryItem(itemId: item.id,inventoryType: type)
+        save()
+    }
+    
+    func update(_ item:Recreation.Inventory.Item, type: InventoryType) {
+        service.update(item,type: type)
+        save()
+    }
+    
+    func save() {
+        service.save()
+    }
     
     var body: some View {
         
         ForEach(service.data[0].inventories, id:\.self){ inventory in
             Section {
-                ForEach(inventory.items, id:\.self){ item in
-                    InventoryListViewItem(inventory:inventory, item:item, service: service)
-                        .foregroundColor(item.isActive ? .black : .gray)
+                ForEach(inventory.items, id:\.id){ item in
+                    InventoryListViewItem(inventory:inventory, item:item, service: service).foregroundColor(item.isActive ? .black : .gray)
                 }.onDelete { indexSet in
                     service.deleteInventoryItem(at: indexSet, inventoryType: InventoryType(rawValue: inventory.id)!)
                 }
             } header: {
 
+                let type = InventoryType(rawValue: inventory.id) ?? InventoryType.misc
+                let item = Recreation.Inventory.Item()
+                
                 HStack {
                     Text(inventory.name)
                     Spacer()
-                    NavigationLink(destination: AdminRecreationAddInventoryItemView(service: service, inventoryType: InventoryType(rawValue: inventory.id)!, inventoryCategory: InventoryCategory().all.first(where: {$0.displayName == inventory.name})!, inventoryItem: .init(),  workingItem: .init(inventoryItem: .init(), service: service, inventoryType: InventoryType(rawValue: inventory.id)!))){
+                    NavigationLink(destination: AdminRecreationInventoryItemView(inventoryItem: item, type: type, onUpdate:{i,t in
+                        update(i, type: t)
+                    } , onDelete: {i,t in
+                        delete(i, type: t)
+                    })){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)
