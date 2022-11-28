@@ -83,7 +83,6 @@ final class MovementTests: XCTestCase {
         let initialMeters = service.movementManager.movementMeters()
         service.data.settings.stepsPerMinute = service.data.settings.stepsPerMinute / 2
         let updatedMeters = service.movementManager.movementMeters()
-        print("\(initialMeters), \( updatedMeters)")
         XCTAssertEqual(initialMeters / 2, updatedMeters)
     }
 }

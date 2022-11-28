@@ -39,10 +39,11 @@ struct MovementTableView: View {
 
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @EnvironmentObject var viewState:LBViewState
-    @EnvironmentObject var assistant:Assistant
     @Environment(\.fullscreenContainerProperties) var properties
     @Environment(\.locale) var locale
+    @Environment(\.isEnabled) var isEnabled
+    @EnvironmentObject var viewState:LBViewState
+    @EnvironmentObject var assistant:Assistant
     @ObservedObject var movementManager:MovementManager
     var statistics:[ViewModel]
     var userAction:UserAction?
@@ -53,6 +54,7 @@ struct MovementTableView: View {
                     MovementBarView(model: s.model).frame(maxWidth:.infinity).onTapGesture {
                         userAction?(s,.didPressBar)
                     }.animation(.ripple(index: statistics.firstIndex {$0.id == s.id} ?? 1))
+                        .opacity(isEnabled ? 1 : 0.8)
                 }
             }.frame(maxHeight:.infinity,alignment: .bottom).padding([.leading,.trailing])
             HStack(spacing: 20) {

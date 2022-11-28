@@ -13,6 +13,7 @@ struct MovementDailyStatisticsView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     @Environment(\.locale) var locale
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.isEnabled) var isEnabled
     @EnvironmentObject var assistant:Assistant
     @EnvironmentObject var viewState:LBViewState
     @State private var animating = false
@@ -72,7 +73,7 @@ struct MovementDailyStatisticsView: View {
                                     .frame(maxWidth: 250)
                                     .background(Capsule().fill(Color("DefaultTextColor",bundle:.module)))
                                     .shadow(enabled: true)
-                                    .opacity(animating ? 1 : 0)
+                                    .opacity(isEnabled ? 1 : 0.5)
                             })
                         }
                     }
@@ -102,6 +103,7 @@ struct MovementDailyStatisticsView: View {
 
 struct DailyStatisticsSheet: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @Environment(\.isEnabled) var isEnabled
     @EnvironmentObject var assistant:Assistant
     @Binding var showSheet: Bool
     @State private var animate = false
@@ -150,6 +152,7 @@ struct DailyStatisticsSheet: View {
                         .padding([.top, .bottom], 20)
                         .background(Color("DefaultTextColor",bundle:.module))
                         .cornerRadius(26)
+                        .opacity(isEnabled ? 1 : 0.5)
                         .shadow(color: Color.gray.opacity(0.5), radius: 8)
                 }
             }.padding(.vertical)

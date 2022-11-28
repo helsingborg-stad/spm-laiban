@@ -10,6 +10,18 @@ import Assistant
 import Analytics
 
 public struct MovementView: View {
+    @EnvironmentObject var viewState:LBViewState
+    @EnvironmentObject var assistant:Assistant
+    @Environment(\.fullscreenContainerProperties) var properties
+    @Environment(\.locale) var locale
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @Environment(\.isEnabled) var isEnabled
+    @ObservedObject var service:MovementService
+
+    public init(service:MovementService) {
+        self.service = service
+    }
     func columns(items: Int) -> Int {
         if properties.layout == .landscape {
             if verticalSizeClass == .compact {
@@ -26,19 +38,6 @@ public struct MovementView: View {
     
     func itemSize(_ proxy: GeometryProxy, columns: Int) -> CGFloat {
         return (proxy.size.width - padding(proxy) * CGFloat(columns + 1)) / CGFloat(columns)
-    }
-    
-    
-    @EnvironmentObject var viewState:LBViewState
-    @EnvironmentObject var assistant:Assistant
-    @Environment(\.fullscreenContainerProperties) var properties
-    @Environment(\.locale) var locale
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @Environment(\.verticalSizeClass) var verticalSizeClass
-    @ObservedObject var service:MovementService
-    
-    public init(service:MovementService) {
-        self.service = service
     }
     func cancelParentalGate() {
         service.viewModel.setCurrentView(.statistics)
@@ -86,11 +85,11 @@ public struct MovementView: View {
                 .padding(proxy.size.width * 0.08)
                 
             }
-                .primaryContainerBackground()
-                .transition(.opacity.combined(with: .scale))
-                .onAppear {
-                    AnalyticsService.shared.logPageView(self)
-                }
+            .primaryContainerBackground()
+            .transition(.opacity.combined(with: .scale))
+            .onAppear {
+                AnalyticsService.shared.logPageView(self)
+            }
         }
     }
     var dailyStatistics: some View {
