@@ -19,6 +19,9 @@ struct AdminRecreationViews: View {
                 AdminRecreationInventoriesListView(service: service)
             }
         }.navigationBarTitle(Text("Laiban föreslår aktivitet"))
+            .onDisappear(perform: {
+            service.save()
+        })
     }
 }
 
@@ -68,10 +71,10 @@ struct AdminRecreationActivityListItem:View {
                 }
                 
                 Spacer()
-  
-                LBToggleView(isOn: activity.isActive, changed: {c in
+                
+                Toggle("", isOn: $activity.isActive).onTapGesture {
                     toggleIsActiveForActivity(activity: activity)
-                })
+                }
 
             }.foregroundColor(activity.isActive ? .black : .gray)
         }

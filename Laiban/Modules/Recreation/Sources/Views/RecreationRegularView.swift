@@ -28,16 +28,16 @@ struct RecreationRegularView: View {
                 .font(properties.font, ofSize: .n, weight: .heavy)
                 .padding(.top, properties.spacing[.m])
             GeometryReader() { proxy in
-                if activity == nil {
-                    Text("Vet inte")
-                } else {
+                if let a = activity {
                     VStack(spacing: properties.spacing[.m]) {
-                        Text( activity!.activityDescription(hasObject: item != nil, using: assistant))
+                        
+                        Text(assistant.string(forKey: a.sentence))
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
                             .multilineTextAlignment(.center)
                             .font(properties.font, ofSize: .n)
                             .frame(maxWidth: .infinity, alignment: .center)
+                            
                         
                         if let unwrappedItem = item, let imageName = unwrappedItem.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
                             
@@ -110,6 +110,11 @@ struct RecreationRegularView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: self.justText ? .top : .center)
                     .wrap(scrollable: false, overlay: .emoji(activity?.emoji ?? "?", Color("RimColorActivities",bundle:LBBundle)),overlayScale: .small,background: .secondary)
                     .padding(properties.spacing[.m])
+                    
+                } else {
+                    Text(assistant.string(forKey: "Be din pedagog att lägga till några aktiviteter, just nu har jag inget att föreslå.."))
+                        .font(properties.font, ofSize: .l)
+                        .padding([.leading,.trailing,.top],properties.spacing[.m])
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)

@@ -16,7 +16,6 @@ public struct Recreation : Codable {
     
     struct Inventory : Codable,Identifiable,Hashable {
        
-        
         func hash(into hasher: inout Hasher) {
             hasher.combine(id)
         }

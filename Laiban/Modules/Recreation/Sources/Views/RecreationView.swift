@@ -60,7 +60,6 @@ public struct RecreationView: View {
                     sentences.append((itemSentence, itemSentence))
                 }
                 
-                
                 viewState.characterHidden(true, for: .recreation)
                 assistant.speak(sentences)
             }
