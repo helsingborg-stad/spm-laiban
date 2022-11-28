@@ -23,12 +23,10 @@ struct MovementAdminViews: View {
 }
 
 struct MovementActivityListItem:View {
-
     @State var activity: MovementActivity
     @ObservedObject var service: MovementService
-
     var body:some View {
-        NavigationLink(destination: MovementAdminEditActivityView(service: service, activity: activity, workingActivity: .init(service: service, activity: activity))){
+        NavigationLink(destination: MovementAdminEditActivityView(service: service, activity: $activity)){
             HStack(alignment: .center) {
                 Text(activity.emoji)
                 VStack(alignment: .leading) {
@@ -39,30 +37,32 @@ struct MovementActivityListItem:View {
                     let isActive = service.toggleEnabled(activity: activity)
                     activity.isActive = isActive
                 }
-            }.foregroundColor(activity.isActive ? .black : .gray)
+            }
+            .foregroundColor(activity.isActive ? .black : .gray)
+            .id(activity.id)
         }
     }
 }
 struct MovementActivityListView: View {
 
     @State private var showingSheet = false
+    @State private var activity: MovementActivity = .init(id: UUID().uuidString, colorString: MovementActivity.colorStrings.randomElement()!, title: "", emoji: "")
 
     @ObservedObject var service:MovementService
+    
     var body: some View {
         Section {
             ForEach(service.data.activities, id: \.id) { activity in
                 MovementActivityListItem(activity: activity, service: service)
             }.onDelete(perform: service.deleteActivity)
         } header: {
-
             VStack(alignment: .leading){
-
                 Text("")
                 Spacer(minLength: 40.0)
                 HStack{
                     Text("Aktiviteter")
                     Spacer()
-                    NavigationLink(destination: MovementAdminEditActivityView(service: service, activity: .init(id: UUID().uuidString, colorString: MovementActivity.colorStrings.randomElement()!, title: "", emoji: ""), workingActivity: .init(service: service, activity: .init(id: UUID().uuidString, colorString: MovementActivity.colorStrings.randomElement()!, title: "", emoji: "") ))){
+                    NavigationLink(destination: MovementAdminEditActivityView(service: service, activity: $activity)){
                         Image(systemName: "plus")
                             .resizable()
                             .padding(6)
