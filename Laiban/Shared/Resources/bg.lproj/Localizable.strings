@@ -216,7 +216,7 @@
 "public_calendar_celebration_today" = "Днес празнуваме %@";
 "public_calendar_respect" = "На този ден обръщаме внимание на %@";
 "recreation_nothing_to_do" = "Нямаш ли какво да правиш?";
-"schedule_date_format" = "ЕЕО "the" d MMMM";
+"schedule_date_format" = "ЕЕО 'the' d MMMM";
 "singalong_repeat" = "Искате ли да пеете отново?";
 "singalong_started" = "Да пеем!
 Готови ли сте?";

@@ -216,7 +216,7 @@ Kliknite sem a povedzte nám, čo si o tom myslíte!";
 "public_calendar_celebration_today" = "Dnes oslavujeme %@";
 "public_calendar_respect" = "V tento deň venujeme pozornosť %@";
 "recreation_nothing_to_do" = "Nemáte čo robiť?";
-"schedule_date_format" = "EEZE "the" d MMMM";
+"schedule_date_format" = "EEZE 'the' d MMMM";
 "singalong_repeat" = "Chceli by ste znova spievať?";
 "singalong_started" = "Poďme si zaspievať!
 Ste pripravený?";

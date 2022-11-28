@@ -1,7 +1,7 @@
 "about_laiban_1" = "jupwI' vImaS, law', jItlheDpu' 'e' vImaS. Hu'tegh, naDev tlho'wIj vIHoHmoHmeH jIjatlh: vIHoHqangpu'. Hoch Soj'eghmoHmeH qoH rur";
 "about_laiban_2" = "nuqneH! ngoQ vISov? yIntagh jIH. jItlhobQo', jIjatlhtaHvIS. Do' rIQmoHlaHchugh, Qo'noS TarghwI' 'e' Danobbogh.";
 "about_laiban_3" = "baQa'! qarqu' ghaH. chovnaDHa'wI' DaDa'a'? QEHqu'chugh, qaSpa', ramjep Hoch vIHoHqangbej. naDev DaSovchugh, vaj tugh ngemHom neH.";
-"about_laiban_4" = "toH, HIja'! qarqu' ghaH. puqbe'wI' vIchovmeH, jIHvaD 'e' vI'Ip. mInDu'wIj vIchenmoHmeH, jItlho'qu' 'e' vIchIDmeH, jIvumlaHbe'bogh. ngoDvam Hoch vIDelmeH ngoD puS."";
+"about_laiban_4" = "toH, HIja'! qarqu' ghaH. puqbe'wI' vIchovmeH, jIHvaD 'e' vI'Ip. mInDu'wIj vIchenmoHmeH, jItlho'qu' 'e' vIchIDmeH, jIvumlaHbe'bogh. ngoDvam Hoch vIDelmeH ngoD puS.'";
 "about_laiban_5" = "baQa'! yapwI' vImoj 'ej tera'ngan. jI'IQtaHghachwIj vI'oghlaHbe' 'e' vItlhob. ngoDmeyvam vIchohmoHlu', ru'chugh, nI'taHvIS Heghvetlh vIchov.";
 "about_laiban_6" = "yIqIm! laH vIghajbe' je. *tlhaw'DIyo* qaStaHvIS Wa'DIch vItlhob. choqaDev tlhInganpu' vIQoypu'. naDevvo' dIqelpu', qaStaHvIS poH 'ej tlhIH.";
 "activities_nothing" = "SoHvaD porghlIj tIqDaj, 'ej pagh 'e' Dalajbe'chugh,";
@@ -42,11 +42,11 @@
 "clock_time_8" = "chorgh";
 "clock_time_9" = "Hut";
 "clock_time_description_0600_to_0730" = "yapbe' ghu' neH vIghojmoH.";
-"clock_time_description_0730_to_0830" = "'ej DaH vIDel.";
 "clock_time_description_0830_to_0900" = "HuDtaHghachmaj Hoch";
+"clock_time_description_0900_to_1045" = "'ej DaH vIDel.";
 "clock_time_description_1045_to_1230" = "'ej DaH vIQoy'meH jIjatlh.";
+"clock_time_description_1230_to_1400" = "DaH QaQ wISIQrup.";
 "clock_time_description_1400_to_1500" = "nuHmey ghew potlhna' je ghajbe' ghewmey.";
-"clock_time_description_1500_to_1630" = "DaH QaQ wISIQrup.";
 "clock_time_description_1630_to_1800" = "net ram.";
 "clock_time_description_1800_to_2000" = "DaH Qapbe'choH. yIQongchu!";
 "clock_time_description_2000_to_0600" = "DaH Qapbe'choH.";
@@ -82,7 +82,7 @@ DaH bIcheghdI' 'e' vIpIH.";
 "emoji_1F35E_name_plural" = "ghu' naD";
 "emoji_1F41F_name" = "ghotI'";
 "emoji_1F41F_name_plural" = "ghotI'";
-"emoji_1F954_name" = "patat 'oQqarmey";
+"emoji_1F954_name_plural" = "patat 'oQqarmey";
 "emoji_1F955_name" = "qe'rot 'oQqar";
 "emoji_1F955_name_plural" = "qoS";
 "emoji_1F95D_name" = "qIr";
@@ -129,21 +129,21 @@ DaH bIcheghdI' 'e' vIpIH.";
 "food_waste_tip_3" = "reH 'ej romuluSDaq tlhegh, 'ej SIqawbogh ghoS. wanI'vam Da'IjmeH ghoSpu'lIj lutu'lu' 'e' DaHar'a'? vanglI' HoHlu'meH DuHbe'";
 "food_waste_title" = "mIw'a' pabmeH mIw'a'";
 "food_waste_weekly_stats" = "%@ tlhoghvam wIqelta' 'e' vItu'.";
-"garment_beanie_description" = "qurgh";
+"garment_beanie" = "qurgh";
 "garment_cap" = "yuvtlhe'";
 "garment_jacket_description" = "wep";
 "garment_mittens" = "tlhIl";
 "garment_neckWear" = "nge'rup";
 "garment_neckWear_description" = "ghe''or";
-"garment_pulloverPants_description" = "toy'wI'";
+"garment_pulloverPants" = "toy'wI'";
 "garment_rainBoots" = "pIq";
-"garment_rainCoat" = "Qa'";
+"garment_rainCoat_description" = "Qa'";
 "garment_rainGloves_description" = "Qogh";
 "garment_rainPants" = "yopwaH";
 "garment_shoes_description" = "waqmey";
 "garment_sweater_description" = "bIQ'a'";
 "garment_winterBoots_description" = "'Iq loDnI'pu'";
-"garment_winterOutfit" = "lItlh lo'laHbe'chugh vay'";
+"garment_winterOutfit_description" = "lItlh lo'laHbe'chugh vay'";
 "home_feedback_acitivity_title" = "bI'angtaHvIS, DotlhlIj DaSov'a'?
 qeylIS dIghajbogh qeylIS'e' jay'!";
 "home_holiday" = "%@' nugh chu' vIghaj!";
@@ -175,6 +175,7 @@ qeylIS dIghajbogh qeylIS'e' jay'!";
 "movement_register" = "qech";
 "movement_register_how_long" = "chay' bIpIv'a'?";
 "movement_register_how_many" = "qaStaHvIS DIS 'ar wuq daleghlaH'a'?";
+"movement_statistics_cities" = "%@ %@ vaj ghumHa'choHmeH, vaj ghotvaD";
 "movement_statistics_how_far" = "nuqneH, vavlI' 'ar DaneH?";
 "movement_statistics_see_distance" = "%@ yejquv vaS'e' Daghajchugh, 'ach qech daqvam vIt Da'angchugh, vaj beyvetlh Dadabchugh, vaj yay' Davangchugh, 'ej chep'a'meH ngeb Dachegh 'e' DavItmeH SuvwI' yo'a'mey DacheghDI' 'ej bIdel 'e' DachIDmeH, yablIj ngeb DacheghdI' 'ej bIdoy'moHlaH 'e' DaqelmeH,";
 "movement_statistics_title_today" = "%@ %@ juppu', nuqneH.";
@@ -199,7 +200,7 @@ qeylIS dIghajbogh qeylIS'e' jay'!";
 "recreation_nothing_to_do" = "petaQ ghopwIj?";
 "schedule_date_format" = "bolegh";
 "singalong_repeat" = "mahtaHvIS, qatlh tlhIngan nuq Data'?";
-"singalong_started" = ""yIlegh!
+"singalong_started" = "'yIlegh!
 bImejrup'a'?";
 "singalong_time_deactivated" = "chaq pagh vISovbe'chugh, vaj pagh vIchol. batlh maHeghbej.";
 "tempus_arrives_short" = "%@ %@";
@@ -211,10 +212,10 @@ bImejrup'a'?";
  %@ghewmeH neH ta'nISmoH.";
 "tempus_child_arrives_before" = "%@%@' ghot
 %@el.";
-"tempus_child_arrives_before_past" = "%@ %@'' ghItlhmey' ghItlhmey
-daH qaSmoHpu','n %@ISmoH.";
 "tempus_child_arrives_during" = "%@%@' ghot
 %@net";
+"tempus_child_arrives_during_past" = "%@ %@'' ghItlhmey' ghItlhmey
+daH qaSmoHpu','n %@ISmoH.";
 "tempus_child_arrives_past" = "%@ %@''DI'";
 "tempus_child_has_left" = "%@ qaStaHvIS poH nI' tay juHDaq 'e' vItu'.";
 "tempus_child_has_left_returns_in_days" = "qaSt %@aHvIS ramjep, tugh qaSpu' QIchvammo' qa'daj. %@";
@@ -249,7 +250,7 @@ daH qaSmoHpu','n %@ISmoH.";
 "trashmonster_glas-klara_description" = "tlhogh tach qoghDaj rur qechDaj quvmoHbogh bochchugh leghchu'wI' neH luDa.";
 "trashmonster_glasmo_description" = "jabbe'chugh Qu', vaj malja' wIbuSchugh. ghaHDaq Sup rur tlhInganpu' 'ej SalchoHpu'DI', qelI'qam choH ghaH.";
 "trashmonster_kompostina_description" = "tlhIngan SuvwI' yo' qIj Hoch. HoSghajbe'chugh Soj vIleghlaHnIS.";
-"trashmonster_lysien_description" = "Hu' rur tIqDaj, 'ach ja'meH Qu' rur tIqDaj. pay' ghopDaj pe'vIl 'ej naDev qochDaj." QongDaqpa' Qoylu'Pu'DI', QongDaq Qoy'lu'pu'DI', QongDaq Qoylu'pu' 'e' luHar 'oH.";
+"trashmonster_lysien_description" = "Hu' rur tIqDaj, 'ach ja'meH Qu' rur tIqDaj. pay' ghopDaj pe'vIl 'ej naDev qochDaj.' QongDaqpa' Qoylu'Pu'DI', QongDaq Qoy'lu'pu'DI', QongDaq Qoylu'pu' 'e' luHar 'oH.";
 "trashmonster_metallika_description" = "batlh HuD. rInpu'DI' vay', rIQorghha'laHchugh, vaj quvHa'mo', puqwI' ghaH.";
 "trashmonster_nova-kras_description" = "pay' tlhIngan suvwI'pu' lutmeyvam tlhaQ.";
 "trashmonster_pantomen_description" = "tIj ghotvam raPwI' 'ej ghotpu' 'arqon. 'ach Qay'rupbe' qeylIS, ghaHvaD jatlh: ghojmoHwI' GhaH.";

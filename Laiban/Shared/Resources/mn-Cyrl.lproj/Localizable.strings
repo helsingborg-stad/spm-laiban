@@ -42,11 +42,11 @@
 "clock_time_8" = "найм";
 "clock_time_9" = "ес";
 "clock_time_description_0600_to_0730" = "Одоо өглөө болж, энэ үед бид өглөөний хоол иддэг болсон.";
-"clock_time_description_0730_to_0830" = "Одоо өглөө.";
 "clock_time_description_0830_to_0900" = "Энэ үед бид жимс иддэг.";
+"clock_time_description_0900_to_1045" = "Одоо өглөө.";
 "clock_time_description_1045_to_1230" = "Одоо үд дунд, өдрийн хоолны цаг болж байна.";
+"clock_time_description_1230_to_1400" = "Одоо үдээс хойш.";
 "clock_time_description_1400_to_1500" = "Одоо үдээс хойш, энэ үед бид зууш иддэг болсон.";
-"clock_time_description_1500_to_1630" = "Одоо үдээс хойш.";
 "clock_time_description_1630_to_1800" = "Бараг л шөнө болж дээ.";
 "clock_time_description_1800_to_2000" = "Одоо шөнө болж байна. Сайхан амар!";
 "clock_time_description_2000_to_0600" = "Одоо шөнө болж байна.";
@@ -82,7 +82,7 @@
 "emoji_1F35E_name_plural" = "Талхны хэсэг";
 "emoji_1F41F_name" = "Загас";
 "emoji_1F41F_name_plural" = "Загас";
-"emoji_1F954_name" = "Төмс";
+"emoji_1F954_name_plural" = "Төмс";
 "emoji_1F955_name" = "Карот";
 "emoji_1F955_name_plural" = "Каротууд";
 "emoji_1F95D_name" = "Киви";
@@ -129,21 +129,21 @@
 "food_waste_tip_3" = "Амар амгалан, нам гүм сууж, бүх хоолыг амтлахаа санаарай. Таны амтлах нахиа дуртай болж сурахын тулд олон удаа шинэ амтыг дадлага хийх хэрэгтэй. Амт нахиа чиний хэл дээр";
 "food_waste_title" = "Зургийг нэмэх эсвэл масштабаас хасахын тулд наа";
 "food_waste_weekly_stats" = "Энэ долоо хоногт та %@ грамм хоол хаялаа.";
-"garment_beanie_description" = "Бэйни";
+"garment_beanie" = "Бэйни";
 "garment_cap" = "Малгай";
 "garment_jacket_description" = "Жийргэвч";
 "garment_mittens" = "Миттенс";
 "garment_neckWear" = "Яст мэлхий эсвэл ороолт";
 "garment_neckWear_description" = "Ороолт эсвэл яст мэлхий";
-"garment_pulloverPants_description" = "Ковер өмд";
+"garment_pulloverPants" = "Ковер өмд";
 "garment_rainBoots" = "Бутлуур";
-"garment_rainCoat" = "Борооны хантааз";
+"garment_rainCoat_description" = "Борооны хантааз";
 "garment_rainGloves_description" = "Борооны бээлий";
 "garment_rainPants" = "Борооны өмд";
 "garment_shoes_description" = "Гутал";
 "garment_sweater_description" = "Дулаан хөлс";
 "garment_winterBoots_description" = "Өвлийн гутал";
-"garment_winterOutfit" = "Хүрэм эсвэл хүрэмтэй өмд";
+"garment_winterOutfit_description" = "Хүрэм эсвэл хүрэмтэй өмд";
 "home_feedback_acitivity_title" = "Та ямар нэгэн үйл ажиллагаанд оролцсон уу?
 Та энэ талаар юу гэж бодож байгаагаа энд дарж хэлнэ үү!";
 "home_holiday" = "Маргааш %@. Амралтын өдрөө сайхан өнгөрүүлээрэй!";
@@ -175,6 +175,7 @@
 "movement_register" = "Бүртгүүлэх";
 "movement_register_how_long" = "Та хэдэн минутын турш энэ үйл ажиллагааг хийсэн бэ?";
 "movement_register_how_many" = "-Та бүхэн энэ үйл ажиллагаанд хичнээн хүн оролцсон бэ?";
+"movement_statistics_cities" = "Энэ нь %@ болон %@ хоорондох зай хүртэл";
 "movement_statistics_how_far" = "Энэ хэр хол байна вэ?";
 "movement_statistics_see_distance" = "Багшаас өөр iPad авч, %@ метр алхахдаа хэр хол явдгаа хамтдаа ажиглахыг хүс";
 "movement_statistics_title_today" = "Сайн ажил байна. Өнөөдөр та %@ алхам цуглуулсан. Энэ %@ метр.";
@@ -211,10 +212,10 @@
 Яг %@дараа болсон юм.";
 "tempus_child_arrives_before" = "%@ сургуулийн өмнөх насны %@орчимд ирнэ.
 Энэ %@өмнөхөн .";
-"tempus_child_arrives_before_past" = "%@ сургуулийн өмнөх насны %@орчимд ирсэн юм.
-Энэ бол %@өмнөхөн болсон явдал юм.";
 "tempus_child_arrives_during" = "%@ сургуулийн өмнөх насны %@орчимд ирнэ.
 Энэ %@үед .";
+"tempus_child_arrives_during_past" = "%@ сургуулийн өмнөх насны %@орчимд ирсэн юм.
+Энэ бол %@өмнөхөн болсон явдал юм.";
 "tempus_child_arrives_past" = "%@ сургуулийн өмнөх насны %@";
 "tempus_child_has_left" = "%@ өдөр гэртээ харьсан бололтой.";
 "tempus_child_has_left_returns_in_days" = "%@ өдөр гэртээ харьсан мэт боловч %@ өдрийн дараа дахин ирэх ёстой.";

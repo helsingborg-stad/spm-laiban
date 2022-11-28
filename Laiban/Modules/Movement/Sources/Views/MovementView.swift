@@ -45,7 +45,6 @@ public struct MovementView: View {
     }
     var statistics: some View {
         GeometryReader { proxy in
-            
             ZStack {
                 VStack{
                     Spacer()

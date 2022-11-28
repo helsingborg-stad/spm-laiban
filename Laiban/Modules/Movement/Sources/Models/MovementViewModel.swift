@@ -143,7 +143,7 @@ class MovementViewModel: ObservableObject {
                 let translated = assistant.string(forKey: "movement_choose_activity")
                 return LBVoiceString(translated)
             }
-            return LBVoiceString("")
+            return nil
         } else if currentView == .dailyMovemnent {
             let str:String
             let a = Int(Date().timeIntervalSince(selectedDate) / 60 / 60 / 24)

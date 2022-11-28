@@ -216,7 +216,7 @@ Kliknite tukaj, da nam poveste, kaj ste mislili o tem!";
 "public_calendar_celebration_today" = "Danes praznujemo %@";
 "public_calendar_respect" = "Na ta dan smo pozorni na %@";
 "recreation_nothing_to_do" = "Nimaš kaj delati?";
-"schedule_date_format" = "EEEO "the" d MMMM";
+"schedule_date_format" = "EEEO 'the' d MMMM";
 "singalong_repeat" = "Bi še enkrat zajele?";
 "singalong_started" = "Pojva!
 Si pripravljen?";

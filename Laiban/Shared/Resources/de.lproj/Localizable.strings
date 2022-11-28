@@ -216,7 +216,7 @@ Klicken Sie hier, um uns zu sagen, was Sie davon halten!";
 "public_calendar_celebration_today" = "Heute feiern wir %@";
 "public_calendar_respect" = "An diesem Tag achten wir auf %@";
 "recreation_nothing_to_do" = "Sie haben nichts zu tun?";
-"schedule_date_format" = "EEEE "die" d MMMM";
+"schedule_date_format" = "EEEE 'die' d MMMM";
 "singalong_repeat" = "Möchten Sie wieder singen?";
 "singalong_started" = "Lass uns singen!
 Bist du so weit?";

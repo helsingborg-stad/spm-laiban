@@ -216,7 +216,7 @@ Kliknij tutaj, aby powiedzieć nam, co o tym myślisz!";
 "public_calendar_celebration_today" = "Dziś świętujemy %@";
 "public_calendar_respect" = "W tym dniu zwracamy uwagę na %@";
 "recreation_nothing_to_do" = "Nie masz nic do roboty?";
-"schedule_date_format" = "EEEE "the" d MMMM";
+"schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "Chciałbyś jeszcze raz zaśpiewać?";
 "singalong_started" = "Śpiewajmy!
 Czy jesteś gotowy?";

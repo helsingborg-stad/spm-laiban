@@ -42,11 +42,11 @@
 "clock_time_8" = "八";
 "clock_time_9" = "九";
 "clock_time_description_0600_to_0730" = "现在是早上，大约在这个时候我们吃早餐。";
-"clock_time_description_0730_to_0830" = "现在是早上。";
 "clock_time_description_0830_to_0900" = "大约在这个时候，我们吃水果。";
+"clock_time_description_0900_to_1045" = "现在是早上。";
 "clock_time_description_1045_to_1230" = "现在是中午和午餐时间。";
+"clock_time_description_1230_to_1400" = "现在是下午。";
 "clock_time_description_1400_to_1500" = "现在是下午，大约在这个时候我们吃零食。";
-"clock_time_description_1500_to_1630" = "现在是下午。";
 "clock_time_description_1630_to_1800" = "快到晚上了。";
 "clock_time_description_1800_to_2000" = "现在是晚上。睡得好！";
 "clock_time_description_2000_to_0600" = "现在是晚上。";
@@ -82,7 +82,7 @@
 "emoji_1F35E_name_plural" = "一块面包";
 "emoji_1F41F_name" = "鱼";
 "emoji_1F41F_name_plural" = "鱼";
-"emoji_1F954_name" = "土豆";
+"emoji_1F954_name_plural" = "土豆";
 "emoji_1F955_name" = "胡萝卜";
 "emoji_1F955_name_plural" = "胡萝卜";
 "emoji_1F95D_name" = "几维鸟";
@@ -129,21 +129,21 @@
 "food_waste_tip_3" = "记得安静地坐着，品尝所有的食物。您的味蕾需要多次练习新口味，才能学会喜欢它们。味蕾在你的舌头上";
 "food_waste_title" = "点按要在比例中添加或删除的图像";
 "food_waste_weekly_stats" = "本周你扔掉了 %@ 克食物。";
-"garment_beanie_description" = "豆 豆";
+"garment_beanie" = "豆 豆";
 "garment_cap" = "帽";
 "garment_jacket_description" = "夹克";
 "garment_mittens" = "手套";
 "garment_neckWear" = "高领毛衣或围巾";
 "garment_neckWear_description" = "围巾或高领毛衣";
-"garment_pulloverPants_description" = "罩裤";
+"garment_pulloverPants" = "罩裤";
 "garment_rainBoots" = "靴子";
-"garment_rainCoat" = "雨衣";
+"garment_rainCoat_description" = "雨衣";
 "garment_rainGloves_description" = "雨手套";
 "garment_rainPants" = "雨裤";
 "garment_shoes_description" = "鞋";
 "garment_sweater_description" = "保暖毛衣";
 "garment_winterBoots_description" = "冬季靴子";
-"garment_winterOutfit" = "工作服或夹克配罩裤";
+"garment_winterOutfit_description" = "工作服或夹克配罩裤";
 "home_feedback_acitivity_title" = "你参加过活动吗？
 点击这里告诉我们你的想法！";
 "home_holiday" = "明天是 %@.周末愉快！";
@@ -175,6 +175,7 @@
 "movement_register" = "注册";
 "movement_register_how_long" = "你做了多少分钟的活动？";
 "movement_register_how_many" = "你们中有多少人参加了这次活动？";
+"movement_statistics_cities" = "这大约是%@和%@之间的距离";
 "movement_statistics_how_far" = "那有多远？";
 "movement_statistics_see_distance" = "让老师再拿一台iPad，一起观察你走 %@ 米时能走多远。";
 "movement_statistics_title_today" = "干得好，今天你已经收集了 %@ 步，那是 %@ 米。";
@@ -211,10 +212,10 @@
 那是在 %@之后.";
 "tempus_child_arrives_before" = "%@ 将在大约 %@到达幼儿园。
 那是在 %@之前.";
-"tempus_child_arrives_before_past" = "%@ 大约 %@到达幼儿园。
-那是在 %@之前.";
 "tempus_child_arrives_during" = "%@ 将在大约 %@到达幼儿园。
 那是在 %@期间.";
+"tempus_child_arrives_during_past" = "%@ 大约 %@到达幼儿园。
+那是在 %@之前.";
 "tempus_child_arrives_past" = "%@大约%@到达幼儿园";
 "tempus_child_has_left" = "%@ 似乎已经回家了一天。";
 "tempus_child_has_left_returns_in_days" = "%@ 似乎已经回家了一天，但应该 %@ 天后再回来。";

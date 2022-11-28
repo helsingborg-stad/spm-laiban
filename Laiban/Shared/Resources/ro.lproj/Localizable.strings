@@ -216,7 +216,7 @@ Click aici pentru a ne spune ce te-ai gândit la ea!";
 "public_calendar_celebration_today" = "Astăzi sărbătorim %@";
 "public_calendar_respect" = "În această zi, acordăm atenție %@";
 "recreation_nothing_to_do" = "Nu aveți nimic de făcut?";
-"schedule_date_format" = "EEEE "the" d MMMM";
+"schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "Vrei să cânți din nou?";
 "singalong_started" = "Să cântăm!
 Eşti gata?";
