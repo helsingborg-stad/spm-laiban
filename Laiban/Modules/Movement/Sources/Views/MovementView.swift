@@ -83,7 +83,9 @@ public struct MovementView: View {
                 .padding(.top, 10)
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .padding(proxy.size.width * 0.08)
-                
+                .onAppear {
+                    service.viewModel.parentalGateStatus = .undetermined
+                }
             }
             .primaryContainerBackground()
             .transition(.opacity.combined(with: .scale))
