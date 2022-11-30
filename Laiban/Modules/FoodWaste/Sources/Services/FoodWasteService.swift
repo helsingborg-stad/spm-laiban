@@ -14,7 +14,7 @@ import Combine
 
 public typealias FoodWasteStorageService = CodableLocalJSONService<FoodWasteServiceModel>
 
-public class FoodWasteService: CTS<FoodWasteServiceModel, FoodWasteStorageService>, LBAdminService,LBDashboardItem {
+public class FoodWasteService: CTS<FoodWasteServiceModel, FoodWasteStorageService>, LBAdminService, LBDashboardItem {
     public let viewIdentity: LBViewIdentity = .foodwaste
     public var isAvailablePublisher: AnyPublisher<Bool, Never> {
         $isAvailable.eraseToAnyPublisher()

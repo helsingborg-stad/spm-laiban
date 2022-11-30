@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Chcete vědět, kdy vás dnes vyzvednou a kteří přátelé jsou tady? Klikněte zde!";
 "clock_time_1" = "A";
 "clock_time_10" = "Deset";
-"clock_time_11" = "Jedenáct";
+"clock_time_11" = "Dvanáct";
 "clock_time_12" = "Dvanáct";
 "clock_time_2" = "Dva";
 "clock_time_3" = "Tři";
@@ -161,7 +161,7 @@ Podívejte se, co budete mít na sobě!";
 "garment_winterBoots" = "Boty";
 "garment_winterBoots_description" = "Zimní boty";
 "garment_winterOutfit" = "Kombinézy nebo bundy s krycími kalhotami";
-"garment_winterOutfit_description" = "Kombinézy nebo bundy s krycími kalhotami";
+"garment_winterOutfit_description" = "Kombinézy nebo bunda s krycími kalhotami";
 "home_feedback_acitivity_title" = "Zúčastnili jste se nějaké aktivity?
 Klikněte zde a řekněte nám, co si o tom myslíte!";
 "home_holiday" = "Zítra je %@. Hezký víkend!";
@@ -185,6 +185,27 @@ Klikněte zde a řekněte nám, co si o tom myslíte!";
 "message_category_info_title" = "Zprávy od zaměstnanců";
 "message_category_reminder_title" = "Pamatovat";
 "message_no_messages" = "Momentálně nemáme žádné zprávy.";
+"movement_choose_activity" = "Jakou činnost jste dělali?";
+"movement_close" = "Zavřít";
+"movement_last_week" = "Minulý týden jste nasbírali celkem %@ metrů energie a tento týden %@ metrů";
+"movement_next" = "Další";
+"movement_nothing" = "Zatím jste tento týden nezaznamenali žádný pohyb.";
+"movement_register" = "Registrace";
+"movement_register_how_long" = "Kolik minut jste aktivitu dělali?";
+"movement_register_how_many" = "Kolik z vás se na aktivitě podílelo?";
+"movement_statistics_cities" = "To je asi tak daleko jako vzdálenost mezi %@ a %@";
+"movement_statistics_how_far" = "Jak je to daleko?";
+"movement_statistics_see_distance" = "Požádejte učitele, aby si vzal další iPad, a společně sledujte, jak daleko se dostanete, když ujdete %@ metrů";
+"movement_statistics_title_today" = "Dobrá práce, dnes jste shromáždili %@ kroků, to je %@ metrů.";
+"movement_statistics_title_weekday_1" = "Dobrá práce, v pondělí jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_weekday_2" = "Dobrá práce, v úterý jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_weekday_3" = "Dobrá práce, ve středu jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_weekday_4" = "Dobrá práce, ve čtvrtek jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_weekday_5" = "Dobrá práce, v pátek jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_weekday_6" = "Dobrá práce, v sobotu jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_weekday_7" = "Dobrá práce, v neděli jste sečetli %@ kroků, to je %@ metrů";
+"movement_statistics_title_yesterday" = "Dobrá práce, včera jste sečetli %@ kroků, to je %@ metrů.";
+"movement_weekly_stats" = "Tento týden jste nasbírali celkem %@ metrů energie";
 "outdoors_feedback_change_description" = "Nejsou mé návrhy dobré? Požádejte svého učitele, aby vám pomohl změnit oblečení, které navrhuji.";
 "outdoors_feedback_change_title" = "Vyberte si, které oblečení je vhodné pro venkovní počasí";
 "outdoors_feedback_confirm" = "Žádný problém! Chcete vy a váš učitel změnit, jaké oblečení bych měl ukázat?";
@@ -195,7 +216,7 @@ Klikněte zde a řekněte nám, co si o tom myslíte!";
 "public_calendar_celebration_today" = "Dnes slavíme %@";
 "public_calendar_respect" = "V tento den věnujeme pozornost %@";
 "recreation_nothing_to_do" = "Nemáte co dělat?";
-"schedule_date_format" = "EEZE "the" d MMMM";
+"schedule_date_format" = "EEZE 'the' d MMMM";
 "singalong_repeat" = "Chcete si znovu zazpívat?";
 "singalong_started" = "Pojďme zpívat!
 Můžeš?";
@@ -213,7 +234,7 @@ To je těsně před %@.";
 To bylo těsně před %@.";
 "tempus_child_arrives_during" = "%@ dorazí do školky asi v %@.
 To je během %@.";
-"tempus_child_arrives_during_past" = "do školky %@ přišel asi v %@.
+"tempus_child_arrives_during_past" = "Do školky %@ dorazil asi ve %@.
 To bylo těsně před %@.";
 "tempus_child_arrives_past" = "%@ do školky přišel asi v %@";
 "tempus_child_has_left" = "Zdá se, že %@ se na ten den vrátil domů.";

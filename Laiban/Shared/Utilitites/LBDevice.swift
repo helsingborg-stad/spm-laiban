@@ -24,4 +24,7 @@ public class LBDevice {
     public static var isPreview:Bool {
         return ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] != nil
     }
+    public static var isIpad:Bool {
+        return UIDevice.current.userInterfaceIdiom == .pad
+    }
 }

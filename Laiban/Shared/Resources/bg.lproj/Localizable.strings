@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Искате ли да знаете кога ще бъдете прибрани днес и кои приятели са тук? Кликнете тук!";
 "clock_time_1" = "Една";
 "clock_time_10" = "Десет";
-"clock_time_11" = "Единадесет";
+"clock_time_11" = "Дванадесет";
 "clock_time_12" = "Дванадесет";
 "clock_time_2" = "Две";
 "clock_time_3" = "Три";
@@ -135,7 +135,7 @@
 "food_waste_title" = "Докоснете изображенията, за да добавите или премахнете от мащаба";
 "food_waste_weekly_stats" = "Тази седмица сте изхвърлили %@ грама храна.";
 "garment_beanie" = "Бийни";
-"garment_beanie_description" = "Биани";
+"garment_beanie_description" = "Бийни";
 "garment_cap" = "Осп";
 "garment_cap_description" = "Осп";
 "garment_jacket" = "Яке";
@@ -145,14 +145,14 @@
 "garment_neckWear" = "Поло или шал";
 "garment_neckWear_description" = "Шал или поло яка";
 "garment_pulloverPants" = "Панталони за капак";
-"garment_pulloverPants_description" = "Капаци панталони";
+"garment_pulloverPants_description" = "Покриващи панталони";
 "garment_rainBoots" = "Ботуши";
 "garment_rainBoots_description" = "Ботуши";
-"garment_rainCoat" = "Дъждовно яке";
+"garment_rainCoat" = "Яке за дъжд";
 "garment_rainCoat_description" = "Яке за дъжд";
 "garment_rainGloves" = "Ръкавици за дъжд";
-"garment_rainGloves_description" = "Дъждовни ръкавици";
-"garment_rainPants" = "Дъждовни панталони";
+"garment_rainGloves_description" = "Ръкавици за дъжд";
+"garment_rainPants" = "Панталони за дъжд";
 "garment_rainPants_description" = "Панталони за дъжд";
 "garment_shoes" = "Обувки";
 "garment_shoes_description" = "Обувки";
@@ -161,7 +161,7 @@
 "garment_winterBoots" = "Обувки";
 "garment_winterBoots_description" = "Зимни ботуши";
 "garment_winterOutfit" = "Гащеризони или яке с покривни панталони";
-"garment_winterOutfit_description" = "Гащеризони или якета с капаци";
+"garment_winterOutfit_description" = "Гащеризон или яке с покриващи панталони";
 "home_feedback_acitivity_title" = "Участвали ли сте в дейност?
 Кликнете тук, за да ни кажете какво сте се сетили за това!";
 "home_holiday" = "Утре е %@. Приятен уикенд!";
@@ -185,6 +185,27 @@
 "message_category_info_title" = "Съобщения от персонала";
 "message_category_reminder_title" = "Помня";
 "message_no_messages" = "В момента нямаме никакви съобщения.";
+"movement_choose_activity" = "Каква дейност сте правили?";
+"movement_close" = "Затварям";
+"movement_last_week" = "Миналата седмица събрахте общо %@ метра енергия, а тази седмица %@ метра";
+"movement_next" = "Следващ";
+"movement_nothing" = "До момента тази седмица не сте регистрирали никакво движение.";
+"movement_register" = "Регистрирайте се";
+"movement_register_how_long" = "В продължение на колко минути се занимавахте с дейността?";
+"movement_register_how_many" = "Колко от вас са участвали в дейността?";
+"movement_statistics_cities" = "Това е горе-долу до разстоянието между %@ и %@";
+"movement_statistics_how_far" = "Докъде е това?";
+"movement_statistics_see_distance" = "Помолете учител да си вземе друг iPad и да гледате заедно колко далеч стигате, когато ходите %@ метра";
+"movement_statistics_title_today" = "Добра работа, днес сте събрали %@ стъпки, това са %@ метра.";
+"movement_statistics_title_weekday_1" = "Добра работа, в понеделник сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_weekday_2" = "Добра работа, във вторник сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_weekday_3" = "Добра работа, в сряда сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_weekday_4" = "Добра работа, в четвъртък сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_weekday_5" = "Добра работа, в петък сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_weekday_6" = "Добра работа, в събота сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_weekday_7" = "Добра работа, в неделя сте общо %@ стъпки, това е %@ метра";
+"movement_statistics_title_yesterday" = "Добра работа, вчера сте общо %@ стъпки, това е %@ метра.";
+"movement_weekly_stats" = "Събрали сте общо %@ метра енергия тази седмица";
 "outdoors_feedback_change_description" = "Предложенията ми не са ли добри? Помолете учителя си да ви помогне да промените дрехите, които предлагам.";
 "outdoors_feedback_change_title" = "Изберете кои дрехи са подходящи за времето навън";
 "outdoors_feedback_confirm" = "Няма проблеми! Вие и вашият учител искате ли да промените какви дрехи трябва да покажа?";
@@ -195,7 +216,7 @@
 "public_calendar_celebration_today" = "Днес празнуваме %@";
 "public_calendar_respect" = "На този ден обръщаме внимание на %@";
 "recreation_nothing_to_do" = "Нямаш ли какво да правиш?";
-"schedule_date_format" = "ЕЕО "the" d MMMM";
+"schedule_date_format" = "ЕЕО 'the' d MMMM";
 "singalong_repeat" = "Искате ли да пеете отново?";
 "singalong_started" = "Да пеем!
 Готови ли сте?";

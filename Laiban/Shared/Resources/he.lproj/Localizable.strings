@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "האם אתה רוצה לדעת מתי יאספו אותך היום ואילו חברים נמצאים כאן? לחצו כאן!";
 "clock_time_1" = "A";
 "clock_time_10" = "עשר";
-"clock_time_11" = "אחד עשר";
+"clock_time_11" = "שנים עשר";
 "clock_time_12" = "שנים עשר";
 "clock_time_2" = "שניים";
 "clock_time_3" = "שלוש";
@@ -46,11 +46,11 @@
 "clock_time_description_0600_to_0730" = "עכשיו זה בוקר ובסביבות הזמן הזה אנחנו אוכלים ארוחת בוקר.";
 "clock_time_description_0730_to_0830" = "עכשיו זה בוקר.";
 "clock_time_description_0830_to_0900" = "בערך בתקופה זו אנו אוכלים פירות.";
-"clock_time_description_0900_to_1045" = "עכשיו זה בוקר.";
+"clock_time_description_0900_to_1045" = "עכשיו בוקר.";
 "clock_time_description_1045_to_1230" = "עכשיו השעה צהריים וצהריים.";
 "clock_time_description_1230_to_1400" = "עכשיו זה אחר הצהריים.";
 "clock_time_description_1400_to_1500" = "עכשיו זה אחר הצהריים ובסביבות הזמן הזה אנחנו אוכלים חטיפים.";
-"clock_time_description_1500_to_1630" = "עכשיו זה אחר הצהריים.";
+"clock_time_description_1500_to_1630" = "עכשיו אחר הצהריים.";
 "clock_time_description_1630_to_1800" = "זה כמעט לילה.";
 "clock_time_description_1800_to_2000" = "עכשיו זה לילה. תישן טוב!";
 "clock_time_description_2000_to_0600" = "עכשיו זה לילה.";
@@ -161,7 +161,7 @@
 "garment_winterBoots" = "נעליים";
 "garment_winterBoots_description" = "מגפי חורף";
 "garment_winterOutfit" = "סרבלים או ז'קט עם מכנסי כיסוי";
-"garment_winterOutfit_description" = "סרבלים או ז'קט עם מכנסי כיסוי";
+"garment_winterOutfit_description" = "אוברול או ז'קט עם מכנסי כיסוי";
 "home_feedback_acitivity_title" = "האם השתתפת בפעילות?
 לחצו כאן כדי לספר לנו מה חשבתם על זה!";
 "home_holiday" = "מחר %@. שיהיה לך סוף שבוע נחמד!";
@@ -185,6 +185,27 @@
 "message_category_info_title" = "הודעות מהצוות";
 "message_category_reminder_title" = "נזכר";
 "message_no_messages" = "אין לנו הודעות כרגע.";
+"movement_choose_activity" = "איזו פעילות עשית?";
+"movement_close" = "קרוב";
+"movement_last_week" = "בשבוע שעבר אספתם סך של %@ מטר אנרגיה, והשבוע %@ מטר";
+"movement_next" = "הבא";
+"movement_nothing" = "עד כה השבוע לא רשמת שום תנועה.";
+"movement_register" = "משלב";
+"movement_register_how_long" = "במשך כמה דקות עשית את הפעילות?";
+"movement_register_how_many" = "כמה מכם השתתפו בפעילות?";
+"movement_statistics_cities" = "זה בערך עד המרחק בין %@ ל- %@";
+"movement_statistics_how_far" = "עד כמה זה רחוק?";
+"movement_statistics_see_distance" = "בקשו ממורה להשיג אייפד נוסף וצפו יחד כמה רחוק אתם מגיעים כשאתם הולכים %@ מטרים";
+"movement_statistics_title_today" = "עבודה טובה, היום אספתם %@ צעדים, זה %@ מטר.";
+"movement_statistics_title_weekday_1" = "עבודה טובה, ביום שני סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_weekday_2" = "עבודה טובה, ביום שלישי סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_weekday_3" = "עבודה טובה, ביום רביעי סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_weekday_4" = "עבודה טובה, ביום חמישי סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_weekday_5" = "עבודה טובה, ביום שישי סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_weekday_6" = "עבודה טובה, בשבת הסתכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_weekday_7" = "עבודה טובה, ביום ראשון סיכמתם %@ צעדים, זה %@ מטר";
+"movement_statistics_title_yesterday" = "עבודה טובה, אתמול הסתכמת %@ צעדים, זה %@ מטר.";
+"movement_weekly_stats" = "אספתם השבוע סך של %@ מטרים באנרגיה";
 "outdoors_feedback_change_description" = "האם ההצעות שלי לא טובות? בקש מהמורה שלך לעזור לך להחליף את הבגדים שאני מציע.";
 "outdoors_feedback_change_title" = "בחר אילו בגדים מתאימים למזג האוויר בחוץ";
 "outdoors_feedback_confirm" = "אין בעיה! האם אתה והמורה שלך רוצים להחליף את הבגדים שאני צריך להראות?";
@@ -213,7 +234,7 @@
 זה היה ממש לפני %@.";
 "tempus_child_arrives_during" = "%@ יגיעו לגן בערך בשעה %@.
 זה במהלך %@.";
-"tempus_child_arrives_during_past" = "%@ הגיע לגן בערך בשעה %@.
+"tempus_child_arrives_during_past" = "%@ הגיע לגן בסביבות %@.
 זה היה ממש לפני %@.";
 "tempus_child_arrives_past" = "%@ הגיע לגן בערך בשעה %@";
 "tempus_child_has_left" = "נראה %@ הלך הביתה במשך היום.";

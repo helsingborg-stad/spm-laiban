@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Szeretnéd tudni, hogy mikor vesznek fel ma, és mely barátok vannak itt? Kattintson ide!";
 "clock_time_1" = "Egy";
 "clock_time_10" = "Tíz";
-"clock_time_11" = "Tizenegy";
+"clock_time_11" = "Tizenkettő";
 "clock_time_12" = "Tizenkettő";
 "clock_time_2" = "Kettő";
 "clock_time_3" = "Három";
@@ -185,6 +185,27 @@ Kattintson ide, hogy elmondja nekünk, mit gondolt róla!";
 "message_category_info_title" = "A személyzet üzenetei";
 "message_category_reminder_title" = "Emlékezik";
 "message_no_messages" = "Jelenleg nincsenek üzeneteink.";
+"movement_choose_activity" = "Milyen tevékenységet végeztél?";
+"movement_close" = "Bezár";
+"movement_last_week" = "A múlt héten összesen %@ métert gyűjtöttél össze energiában, ezen a héten pedig %@ métert";
+"movement_next" = "Következő";
+"movement_nothing" = "Ezen a héten eddig nem regisztráltál semmilyen mozgást.";
+"movement_register" = "Regisztráció";
+"movement_register_how_long" = "Hány percig csináltad a tevékenységet?";
+"movement_register_how_many" = "Hányan vettek részt a tevékenységben?";
+"movement_statistics_cities" = "Ez körülbelül olyan messze van, mint a %@ és a %@ közötti távolság";
+"movement_statistics_how_far" = "Milyen messze van ez?";
+"movement_statistics_see_distance" = "Kérj meg egy tanárt, hogy szerezzen be egy másik iPadet, és nézzék meg együtt, milyen messzire juttok, ha %@ métert sétáltok!";
+"movement_statistics_title_today" = "Jó munka, ma összegyűjtöttél %@ lépést, ez %@ méter.";
+"movement_statistics_title_weekday_1" = "Jó munka, hétfőn összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_weekday_2" = "Jó munka, kedden összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_weekday_3" = "Jó munka, szerdán összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_weekday_4" = "Jó munka, csütörtökön összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_weekday_5" = "Jó munka, pénteken összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_weekday_6" = "Jó munka, szombaton összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_weekday_7" = "Jó munka, vasárnap összesen %@ lépést tettél meg, ez %@ méter";
+"movement_statistics_title_yesterday" = "Jó munka, tegnap összesen %@ lépést tettél meg, ez %@ méter.";
+"movement_weekly_stats" = "Ezen a héten összesen %@ méter energiát gyűjtöttél össze";
 "outdoors_feedback_change_description" = "Nem jók a javaslataim? Kérd meg a tanárodat, hogy segítsen neked átöltözni az általam javasolt ruhákat.";
 "outdoors_feedback_change_title" = "Válassza ki, hogy mely ruhák alkalmasak a kinti időjárásra";
 "outdoors_feedback_confirm" = "Nem gond! Te és a tanárod szeretnéd megváltoztatni, hogy milyen ruhákat mutassak?";
@@ -213,8 +234,8 @@ Ez közvetlenül %@előtt van .";
 Ez közvetlenül %@előtt volt .";
 "tempus_child_arrives_during" = "%@ körülbelül %@-kor érkezik az óvodába .
 Ez a %@alatt van .";
-"tempus_child_arrives_during_past" = "%@ kb. %@-kor érkezett az óvodába .
-Ez közvetlenül %@előtt volt .";
+"tempus_child_arrives_during_past" = "%@ körülbelül %@érkezett az óvodába .
+Ez közvetlenül %@előtt volt.";
 "tempus_child_arrives_past" = "%@ körülbelül %@-kor érkezett az óvodába";
 "tempus_child_has_left" = "úgy tűnik, %@ hazament a napra.";
 "tempus_child_has_left_returns_in_days" = "úgy tűnik, hogy %@ hazament aznapra, de %@ napon belül újra vissza kell térnie.";

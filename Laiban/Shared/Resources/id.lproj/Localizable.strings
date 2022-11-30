@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Apakah Anda ingin tahu kapan Anda akan dijemput hari ini dan teman mana yang ada di sini? Klik di sini!";
 "clock_time_1" = "Sebuah";
 "clock_time_10" = "Sepuluh";
-"clock_time_11" = "Sebelas";
+"clock_time_11" = "Dua belas";
 "clock_time_12" = "Dua belas";
 "clock_time_2" = "Dua";
 "clock_time_3" = "Tiga";
@@ -185,6 +185,27 @@ Klik di sini untuk memberi tahu kami pendapat Anda tentang hal itu!";
 "message_category_info_title" = "Pesan dari staf";
 "message_category_reminder_title" = "Ingat";
 "message_no_messages" = "Kami tidak memiliki pesan apa pun saat ini.";
+"movement_choose_activity" = "Kegiatan apa yang telah Anda lakukan?";
+"movement_close" = "Tutup";
+"movement_last_week" = "Minggu lalu Anda mengumpulkan total energi %@ meter, dan minggu ini %@ meter";
+"movement_next" = "Depan";
+"movement_nothing" = "Sejauh minggu ini Anda belum mendaftarkan gerakan apa pun.";
+"movement_register" = "Daftar";
+"movement_register_how_long" = "Selama berapa menit Anda melakukan aktivitas tersebut?";
+"movement_register_how_many" = "Berapa banyak dari Anda yang berpartisipasi dalam kegiatan tersebut?";
+"movement_statistics_cities" = "Itu kira-kira sejauh jarak antara %@ dan %@";
+"movement_statistics_how_far" = "Seberapa jauh itu?";
+"movement_statistics_see_distance" = "Mintalah seorang guru untuk mendapatkan iPad lain dan menyaksikan bersama seberapa jauh Anda melangkah %@ meter";
+"movement_statistics_title_today" = "Kerja bagus, hari ini Anda telah mengumpulkan %@ langkah, itu %@ meter.";
+"movement_statistics_title_weekday_1" = "Kerja bagus, pada hari Senin Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_weekday_2" = "Kerja bagus, pada hari Selasa Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_weekday_3" = "Kerja bagus, pada hari Rabu Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_weekday_4" = "Kerja bagus, pada hari Kamis Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_weekday_5" = "Kerja bagus, pada hari Jumat Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_weekday_6" = "Kerja bagus, pada hari Sabtu Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_weekday_7" = "Kerja bagus, pada hari Minggu Anda berjumlah %@ langkah, itu %@ meter";
+"movement_statistics_title_yesterday" = "Kerja bagus, kemarin kamu berjumlah %@ langkah, itu %@ meter.";
+"movement_weekly_stats" = "Anda telah mengumpulkan total energi %@ meter minggu ini";
 "outdoors_feedback_change_description" = "Apakah saran saya tidak bagus? Mintalah guru Anda untuk membantu Anda mengganti pakaian yang saya sarankan.";
 "outdoors_feedback_change_title" = "Pilih pakaian mana yang cocok untuk cuaca di luar";
 "outdoors_feedback_confirm" = "Tidak ada masalah! Apakah Anda dan guru Anda ingin mengganti pakaian apa yang harus saya tunjukkan?";
@@ -213,7 +234,7 @@ Itu tepat sebelum %@.";
 Itu tepat sebelum %@.";
 "tempus_child_arrives_during" = "%@ akan tiba di prasekolah sekitar %@.
 Itu selama %@.";
-"tempus_child_arrives_during_past" = "%@ tiba di prasekolah sekitar %@.
+"tempus_child_arrives_during_past" = "%@ tiba di prasekolah sekitar pukul %@.
 Itu tepat sebelum %@.";
 "tempus_child_arrives_past" = "%@ tiba di prasekolah sekitar %@";
 "tempus_child_has_left" = "%@ tampaknya telah pulang untuk hari itu.";
