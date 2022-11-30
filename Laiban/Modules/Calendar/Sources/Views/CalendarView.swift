@@ -21,10 +21,11 @@ struct TodayView: View {
             .background(Circle().foregroundColor(day.color))
     }
 }
-struct TodayViewModifier: ViewModifier {
+struct SelectedDayViewModifier: ViewModifier {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.locale) var locale
     var day: DayView.Day
+    var selectedDay: DayView.Day
     var name:String {
         return self.horizontalSizeClass == .regular ? self.day.name(in:locale) : self.day.shortName(in:locale)
     }
@@ -41,16 +42,20 @@ struct TodayViewModifier: ViewModifier {
                         .font(.system(size: size, weight: .semibold, design: .rounded))
                         .foregroundColor(self.day.altColor)
                 }
-                .opacity(self.day.isToday ? 1 : 0)
+                .opacity(self.day == self.selectedDay ? 1 : 0)
                 .frame(width: proxy.size.width + self.padding, height: proxy.size.width + self.padding).position(x: proxy.size.width / 2, y: proxy.size.height / 2)
             }).frame(alignment: .center)
     }
 }
+
 struct DayView: View {
     @EnvironmentObject var assistant:Assistant
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.locale) var locale
     @Environment(\.fullscreenContainerProperties) var properties
+    
+    @Binding var selectedDay:Day
+    
     enum Day : Int,CaseIterable {
         case monday = 1
         case tuesday
@@ -70,6 +75,7 @@ struct DayView: View {
             case .sunday: return Date().startOfWeek!.dateOffsetBy(days: 6)!
             }
         }
+   
         private var backgroundColorName:String {
             switch self {
             case .monday: return "CalendarColorMonday"
@@ -149,14 +155,19 @@ struct DayView: View {
                 return backgroundColor.opacity(0.5)
             }
             return backgroundColor
-
         }
         var isToday:Bool {
             date.actualWeekDay == self.rawValue
         }
+        
+        private var viewmodel:CalendarViewModel {
+            return CalendarViewModel()
+        }
+        
         func isFree(events:[OtherCalendarEvent]?) -> Bool {
             return events?.contains(where: { $0.date.isSameDay(as: day)}) ?? false
         }
+        
         static var current:Day {
             Day(rawValue: Date().actualWeekDay)!
         }
@@ -167,15 +178,16 @@ struct DayView: View {
     var day:Day
     var body: some View {
         Text(self.horizontalSizeClass == .regular ? self.day.name(in: locale) : self.day.shortName(in: locale))
+            .underline(day.isToday)
             .padding(EdgeInsets(top: 0, leading: self.padding, bottom: 0, trailing: self.padding))
             .frame(maxHeight: .infinity)
             .lineLimit(1)
             .foregroundColor(self.day.textColor)
             .font(properties.font, ofSize: .xs)
             .frame(alignment:.center)
-            .zIndex(day.isToday ? 10 : 0)
+            .zIndex(day == selectedDay ? 10 : 0)
             .background(DayBG(day: self.day))
-            .modifier(TodayViewModifier(day: self.day))
+            .modifier(SelectedDayViewModifier(day: self.day, selectedDay: self.selectedDay))
     }
 }
 
@@ -200,79 +212,138 @@ struct DayBG : View {
         .zIndex(day.isToday ? 10 : 0)
     }
 }
+
 public struct CalendarView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.fullscreenContainerProperties) var properties
+    @Environment(\.locale) var locale
     @EnvironmentObject var viewState:LBViewState
     @EnvironmentObject var assistant:Assistant
-    
+    @State var calendarEvent:CalendarEvent?
     @StateObject var viewModel = CalendarViewModel()
     @ObservedObject var service:CalendarService
+    
     var contentProvider:CalendarContentProvider?
     public init(service:CalendarService, contentProvider:CalendarContentProvider?) {
         self.service = service
         self.contentProvider = contentProvider
     }
+    
+    let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    
     public var body: some View {
-        VStack(alignment: .center, spacing: self.horizontalSizeClass == .regular ? 40 : 20) {
-            Text(self.viewModel.title)
-                .font(properties.font, ofSize: .n, weight: .heavy)
-            VStack {
-                Text(LocalizedStringKey(self.viewModel.selectedDay.descriptionKey), bundle: .module)
-            }.lineLimit(nil)
-            
-            HStack(spacing: 0) {
-                ForEach(DayView.Day.allCases, id: \.self) { day in
-                    DayView(day: day).onTapGesture {
-                        //self.viewModel.didTap(day: day)
-                    }
-                }
-            }
-            .frame(height: 44)
-            
-            .padding(.top, 20)
-            if self.viewModel.eventString != nil {
-                GeometryReader() { proxy in
-                    VStack() {
-                        Text(self.viewModel.eventIcon).font(Font.system(size: proxy.size.height * 0.3)).padding(.bottom, self.horizontalSizeClass == .regular ? 30 : 10)
-                        Text(self.viewModel.eventString?.description ?? "")
-                        if self.viewModel.selectedDay.isFree(events: self.viewModel.otherEvents) {
-                            Text(LocalizedStringKey("calendar_free_day"), bundle: .module)
+        GeometryReader { geometry in
+    
+            VStack(alignment: .center, spacing: self.horizontalSizeClass == .regular ? 40 : 20) {
+                Text(self.viewModel.title)
+                    .font(properties.font, ofSize: .n, weight: .heavy)
+                VStack {
+                    Text(LocalizedStringKey(self.viewModel.selectedDay.descriptionKey), bundle: .module)
+                }.lineLimit(nil)
+                
+                HStack(spacing: 0) {
+                    ForEach(DayView.Day.allCases, id: \.self) { day in
+                        DayView(selectedDay:$viewModel.selectedDay, day: day).onTapGesture {
+                            print(day.descriptionKey)
+                            self.calendarEvent = service.calendarEvents(on: day.day ).first
+                            self.viewModel.didTap(day: day)
                         }
                     }
-                    .lineLimit(nil)
-                    .frame(maxWidth: .infinity, maxHeight:.infinity)
-                    .padding(self.horizontalSizeClass == .regular ? 30 : 20)
-                    .background(Color.white)
-                    .cornerRadius(36)
-                    .shadow(color: Color.black.opacity(0.2), radius: 7, x: 0, y: 0)
-                    .padding(properties.spacing[.m])
                 }
+                .frame(height: 44)
+                .padding(.top, 20)
+                
+                if let selectedItem = self.calendarEvent {
+                    GeometryReader() { proxy in
+                        VStack() {
+                            
+                            Text(selectedItem.icon ?? "").font(Font.system(size: proxy.size.height * 0.3)).padding(.bottom, self.horizontalSizeClass == .regular ? 30 : 10)
+                            
+                            Text(viewModel.localizedString(for: selectedItem))
+                            
+                            if self.viewModel.selectedDay.isFree(events: self.viewModel.otherEvents) {
+                                Text(LocalizedStringKey("calendar_free_day"), bundle: .module)
+                            }
+                        }
+                        .lineLimit(nil)
+                        .frame(maxWidth: .infinity, maxHeight:.infinity)
+                        .padding(self.horizontalSizeClass == .regular ? 30 : 20)
+                        .background(Color.white)
+                        .cornerRadius(36)
+                        .shadow(color: Color.black.opacity(0.2), radius: 7, x: 0, y: 0)
+                        .padding(properties.spacing[.m])
+                    }
+                    .frame(maxWidth: .infinity, maxHeight:.infinity)
+                    .padding(.top, 10)
+                    
+                } else {
+                    Spacer()
+                }
+                
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 30) {
+                        Spacer()
+                        ForEach(self.viewModel.todaysEvents, id:\.id) { item in
+                            Button(action: {
+                                calendarEvent = item
+                                assistant.speak(assistant.string(forKey:item.content))
+                            }) {
+                                
+                                if let icon = item.icon {
+                                    EmojiCircleSimpleView(emoji: icon, disabled:assistant.isSpeaking)
+                                }
+                            }
+                            .frame(width: geometry.size.height * 0.1 * properties.windowRatio, height: geometry.size.height * 0.1 * properties.windowRatio)
+                            .scaleEffect(item.id == calendarEvent?.id ? 1.3 : 1)
+                            .animation(.easeInOut(duration: 0.2))
+                            .disabled(assistant.isSpeaking)
+                        }
+                        Spacer()
+                    }
+                    .frame(minWidth:geometry.size.width,alignment: .center)
+                    .frame(height: properties.windowRatio * geometry.size.height * 0.2)
+                }
+                .frame(maxWidth:.infinity,alignment: .center)
+                .frame(height: properties.windowRatio * geometry.size.height * 0.2)
+                .onAppear(perform: {
+                    self.calendarEvent = self.viewModel.todaysEvents.first ?? nil
+                })
+                .onReceive(timer) { time in
+                    
+                    if let calEv = self.calendarEvent {
+                        let currentIndex = self.viewModel.todaysEvents.firstIndex(of: calEv) ?? -1
+                        var nextIndex = currentIndex+1
+                        nextIndex = self.viewModel.todaysEvents.indices.contains(nextIndex) ? nextIndex : 0
+                        self.calendarEvent = self.viewModel.todaysEvents[nextIndex]
+                    }
+                }
+                
+                
+            }.font(properties.font, ofSize: .n)
+                .padding(properties.spacing[.m])
                 .frame(maxWidth: .infinity, maxHeight:.infinity)
-                .padding(.top, 10)
-            } else {
-                Spacer()
-            }
-        }
-        .font(properties.font, ofSize: .n)
-        .padding(properties.spacing[.m])
-        .frame(maxWidth: .infinity, maxHeight:.infinity)
-        .multilineTextAlignment(.center)
-        .wrap(overlay: .emoji("🗓", Color("RimColorCalendar",bundle: .module)))
-        .transition(.opacity.combined(with: .scale))
-        .onAppear {
-            AnalyticsService.shared.logPageView(self)
-            viewModel.initiate(with: service, and: assistant,contentProvider: contentProvider)
-        }
-        .onReceive(assistant.$translationBundle) { _ in
-            viewModel.update()
-        }
+                .multilineTextAlignment(.center)
+                .wrap(overlay: .emoji("🗓", Color("RimColorCalendar",bundle: .module)))
+                .transition(.opacity.combined(with: .scale))
+                .onAppear {
+                    AnalyticsService.shared.logPageView(self)
+                    viewModel.initiate(with: service, and: assistant,contentProvider: contentProvider)
+                }
+                .onReceive(assistant.$translationBundle) { _ in
+                    viewModel.update()
+                }
+        }.onDisappear(perform: {
+            timer.upstream.connect().cancel()
+        })
     }
 }
+
+
 struct CalendarView_Previews: PreviewProvider {
     static var service: CalendarService = {
         let service = CalendarService()
-        service.data = [CalendarEvent(date: Date(), content: "A test event", icon: "🗓")]
+        service.data = [CalendarEvent(date: Date(), content: "A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1", icon: "🗓"),CalendarEvent(date: Date(), content: "A is test event 2", icon: "🗓"),CalendarEvent(date: Date(), content: "A is test event 3", icon: "🗓"),CalendarEvent(date: Date().tomorrow!, content: "A is test event 4", icon: "🗓")]
         return service
     }()
     static var previews: some View {
