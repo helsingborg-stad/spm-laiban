@@ -17,6 +17,8 @@ struct AdminRecreationInventoryItemView: View {
     @State private var showImagePicker: Bool = false
     @State private var showDeleteConfirmation: Bool = false
     
+    @Binding var binding_inventory_item:Recreation.Inventory.Item
+    
     private var inventoryCategories = InventoryCategory()
     private var type:InventoryType
     
@@ -30,7 +32,7 @@ struct AdminRecreationInventoryItemView: View {
     
     var onUpdate: (Recreation.Inventory.Item,InventoryType) -> Void
     var onDelete: (Recreation.Inventory.Item,InventoryType) -> Void
-    init(inventoryItem:Recreation.Inventory.Item?,type:InventoryType ,onUpdate: @escaping (Recreation.Inventory.Item, InventoryType) -> Void,onDelete: @escaping (Recreation.Inventory.Item, InventoryType) -> Void) {
+    init(bi:Binding<Recreation.Inventory.Item>, inventoryItem:Recreation.Inventory.Item?,type:InventoryType ,onUpdate: @escaping (Recreation.Inventory.Item, InventoryType) -> Void,onDelete: @escaping (Recreation.Inventory.Item, InventoryType) -> Void) {
         
         let i = inventoryItem ?? Recreation.Inventory.Item()
         _item = State(initialValue: i)
@@ -42,6 +44,7 @@ struct AdminRecreationInventoryItemView: View {
         self.type = type
         self.onUpdate = onUpdate
         self.onDelete = onDelete
+        _binding_inventory_item = bi
     }
     
     
@@ -192,6 +195,7 @@ struct AdminRecreationInventoryItemView: View {
             if item == i || i.name == ""{
                 return
             }
+            binding_inventory_item = i
             self.onUpdate(i,type)
         }
     }

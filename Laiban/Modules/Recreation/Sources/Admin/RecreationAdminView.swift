@@ -12,7 +12,7 @@ struct RecreationAdminView: View {
     @State var showAdminView = false
     var body: some View {
         NavigationLink(
-            destination:AdminRecreationViews(service: service),
+            destination:AdminRecreationViews(service: service ,recreation: service.recreation),
             label: {
                 Text("Laiban föreslår aktivitet")
             }

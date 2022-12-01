@@ -10,6 +10,22 @@ import SwiftUI
 
 struct AdminRecreationViews: View {
     @ObservedObject var service:RecreationService
+    @State var recreation:Recreation
+    
+    
+    func delete(_ activity:Recreation.Activity) {
+        service.delete(activity)
+        save()
+    }
+    
+    func update(_ activity:Recreation.Activity) {
+        service.update(activity)
+        save()
+    }
+    
+    func save() {
+        service.save()
+    }
     
     var body: some View {
 
@@ -18,8 +34,9 @@ struct AdminRecreationViews: View {
                 AdminRecreationActivityListView(service: service)
                 AdminRecreationInventoriesListView(service: service)
             }
-        }.navigationBarTitle(Text("Laiban föreslår aktivitet"))
-            .onDisappear(perform: {
+        }
+        .navigationBarTitle(Text("Laiban föreslår aktivitet"))
+        .onDisappear(perform: {
             service.save()
         })
     }
@@ -46,14 +63,14 @@ struct AdminRecreationActivityListItem:View {
     
     func toggleIsActiveForActivity(activity:Recreation.Activity){
         
-        if let index = service.data[0].activities.firstIndex(where:{$0.id == activity.id}) {
+        if let index = service.recreation.activities.firstIndex(where:{$0.id == activity.id}) {
             service.data[0].activities[index].isActive.toggle()
         }
     }
     
     var body:some View {
         
-        NavigationLink(destination: AdminRecreationActivityView(activity: activity) { a in
+        NavigationLink(destination: AdminRecreationActivityView(ba:$activity, activity: activity) { a in
             update(a)
         } onDelete: {a in
             delete(a)
@@ -82,41 +99,42 @@ struct AdminRecreationActivityListItem:View {
 }
 
 struct AdminRecreationActivityListView: View {
-    
+
     @ObservedObject var service:RecreationService
-    @State private var showingSheet = false
+
+    
+    @State var empty_Activity = Recreation.Activity(name: String(), sentence: String(), emoji: String(), isActive: true, activityEmoji: String())
     
     func delete(_ activity:Recreation.Activity) {
         service.delete(activity)
         save()
     }
-    
+
     func update(_ activity:Recreation.Activity) {
         service.update(activity)
         save()
     }
-    
+
     func save() {
         service.save()
     }
-    
+
     var body: some View {
         Section {
-        
-            ForEach(service.data[0].activities, id: \.self) { activity in
+            ForEach(service.recreation.activities, id: \.id) { activity in
                 AdminRecreationActivityListItem(activity: activity, service: service)
             }.onDelete(perform: service.deleteActivity)
             
         } header: {
             
             VStack(alignment: .leading){
-                
                 Text("Välj vilka aktiviteter och föremål du vill ska vara aktiverade för 'Laiban föreslår aktivitet' genom att markera/avmarkera dessa i listorna här nedan. Du kan skapa en ny aktivitet eller lägga till nya föremål genom att klicka på + för respektive lista.")
                 Spacer(minLength: 40.0)
                 HStack{
                     Text("Aktiviteter")
                     Spacer()
-                    NavigationLink(destination: AdminRecreationActivityView(activity: nil) { a in
+                    
+                    NavigationLink(destination: AdminRecreationActivityView(ba: $empty_Activity,activity: nil) { a in
                         update(a)
                     } onDelete: {a in
                         delete(a)
@@ -133,6 +151,8 @@ struct AdminRecreationActivityListView: View {
         }
     }
 }
+
+
 
 struct InventoryListViewItem: View {
     let inventory:Recreation.Inventory
@@ -164,7 +184,7 @@ struct InventoryListViewItem: View {
     
     var body: some View {
         
-        NavigationLink(destination: AdminRecreationInventoryItemView(inventoryItem: item,type: type, onUpdate: {i,t in
+        NavigationLink(destination: AdminRecreationInventoryItemView(bi:$item, inventoryItem: item,type: type, onUpdate: {i,t in
             update(i ,type: t)
         }, onDelete: { i,t in
             delete(i,type:t)
@@ -190,6 +210,8 @@ struct AdminRecreationInventoriesListView: View {
     
     @ObservedObject var service:RecreationService
     
+    @State var empty_item = Recreation.Inventory.Item()
+    
     func delete(_ item:Recreation.Inventory.Item,type:InventoryType) {
         service.deleteInventoryItem(itemId: item.id,inventoryType: type)
         save()
@@ -206,7 +228,7 @@ struct AdminRecreationInventoriesListView: View {
     
     var body: some View {
         
-        ForEach(service.data[0].inventories, id:\.self){ inventory in
+        ForEach(service.recreation.inventories, id:\.id){ inventory in
             Section {
                 ForEach(inventory.items, id:\.id){ item in
                     InventoryListViewItem(inventory:inventory, item:item, service: service).foregroundColor(item.isActive ? .black : .gray)
@@ -221,7 +243,7 @@ struct AdminRecreationInventoriesListView: View {
                 HStack {
                     Text(inventory.name)
                     Spacer()
-                    NavigationLink(destination: AdminRecreationInventoryItemView(inventoryItem: item, type: type, onUpdate:{i,t in
+                    NavigationLink(destination: AdminRecreationInventoryItemView(bi:$empty_item, inventoryItem: item, type: type, onUpdate:{i,t in
                         update(i, type: t)
                     } , onDelete: {i,t in
                         delete(i, type: t)
@@ -244,7 +266,7 @@ struct AdminRecreationView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             Form {
-                AdminRecreationViews(service: service)
+                AdminRecreationViews(service: service, recreation: service.recreation)
             }
         }.navigationViewStyle(.stack)
     }

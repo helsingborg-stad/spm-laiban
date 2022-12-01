@@ -16,9 +16,9 @@ struct AdminRecreationActivityView:View {
     @State private var segmentedControlSelection = ActivityContentSelection.image
     @State private var showImagePicker: Bool = false
     @State private var showDeleteConfirmation: Bool = false
+    @Binding var binding_activity:Recreation.Activity
     
     private var inventoryCategories = InventoryCategory()
-    
     @State var activity: Recreation.Activity
     @State var emoji:String
     @State var name:String
@@ -32,7 +32,8 @@ struct AdminRecreationActivityView:View {
     
     var onUpdate: (Recreation.Activity) -> Void
     var onDelete: (Recreation.Activity) -> Void
-    init(activity:Recreation.Activity?,onUpdate: @escaping (Recreation.Activity) -> Void,onDelete: @escaping (Recreation.Activity) -> Void) {
+    init(ba: Binding<Recreation.Activity> ,activity:Recreation.Activity?,onUpdate: @escaping (Recreation.Activity) -> Void,onDelete: @escaping (Recreation.Activity) -> Void) {
+        
         
         let a = activity ?? Recreation.Activity.init(name: String(), sentence: String(), emoji: String(), isActive: true, activityEmoji: String())
         _activity = State(initialValue: a)
@@ -47,6 +48,7 @@ struct AdminRecreationActivityView:View {
         _inventories = State(initialValue: a.inventories)
         self.onUpdate = onUpdate
         self.onDelete = onDelete
+        _binding_activity = ba
     }
     
     
@@ -255,6 +257,7 @@ struct AdminRecreationActivityView:View {
                     if activity == a || a.emoji == "" || a.sentence == ""{
                         return
                     }
+                    binding_activity = a
                     self.onUpdate(a)
                 }
             }
