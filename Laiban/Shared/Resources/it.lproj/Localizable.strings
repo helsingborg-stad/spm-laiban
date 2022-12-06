@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Il venerdì è il quinto giorno della settimana. Il giorno dopo è sabato e poi domenica. Dopo di ciò, inizia una nuova settimana.";
 "calendar_weekday_friday_today" = "Il venerdì è il quinto giorno della settimana. Domani è sabato e poi domenica. Dopo di ciò, inizia una nuova settimana.";
 "calendar_weekday_monday" = "La settimana ha sette giorni e il lunedì è il primo giorno della settimana.";
-"calendar_weekday_saturday" = "Sabato è il sesto giorno della settimana. Siamo fuori oggi.";
+"calendar_weekday_saturday" = "Sabato è il sesto giorno della settimana.";
 "calendar_weekday_sunday" = "La domenica è il settimo giorno della settimana. Il giorno dopo inizia una nuova settimana.";
 "calendar_weekday_sunday_today" = "La domenica è il settimo giorno della settimana. Domani inizia una nuova settimana.";
 "calendar_weekday_thursday" = "La settimana ha sette giorni e il giovedì è il quarto giorno della settimana.";
@@ -155,6 +155,7 @@ Guarda cosa indosserai!";
 "garment_rainPants" = "Pantaloni antipioggia";
 "garment_rainPants_description" = "Pantaloni antipioggia";
 "garment_shoes" = "Scarpe";
+"garment_shoes_description" = "Scarpe";
 "garment_sweater" = "Maglione caldo";
 "garment_sweater_description" = "Maglione caldo";
 "garment_winterBoots" = "Scarpe";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Le tak viernes jach u yaalo'on jo'op'éel k'iin u le k'iino'ob. Uláak' k'iine' le sábado, ts'o'okole' domingo. Ka' lelo', káaj jump'éel túumben k'iino'ob.";
 "calendar_weekday_friday_today" = "Le tak viernes jach u yaalo'on jo'op'éel k'iin u le k'iino'ob. Sáamal jach sábado ka tu láak' domingo. Ka' lelo', káaj jump'éel túumben k'iino'ob.";
 "calendar_weekday_monday" = "Le k'iino'ob yaan ti' úuktúul k'iino'ob yéetel le lunes le yáax k'iinil le k'iino'ob.";
-"calendar_weekday_saturday" = "Le sábado jach u sexto k'iin u le k'iino'ob. Táan k náachil le k'iina'.";
+"calendar_weekday_saturday" = "Le sábado jach u sexto k'iin u le k'iino'ob.";
 "calendar_weekday_sunday" = "Le domingo jach u séptimo k'iin u le k'iino'ob. Uláak' k'iine' káaj jump'éel túumben k'iino'ob.";
 "calendar_weekday_sunday_today" = "Le domingo jach u séptimo k'iin u le k'iino'ob. Sáamal káaj jump'éel túumben k'iino'ob.";
 "calendar_weekday_thursday" = "Le k'iino'ob yaan ti' úuktúul k'iino'ob yéetel le jueves jach u muuk'il k'iin u le k'iino'ob.";
@@ -155,6 +155,7 @@ Il ba'ax ken a ts'áik!";
 "garment_rainPants" = "Nook'o'ob ja'";
 "garment_rainPants_description" = "Nook'o'ob ja'";
 "garment_shoes" = "Xanab";
+"garment_shoes_description" = "Xanab";
 "garment_sweater" = "Suéter chokoj";
 "garment_sweater_description" = "Suéter cálido";
 "garment_winterBoots" = "Xanab";
@@ -164,7 +165,7 @@ Il ba'ax ken a ts'áik!";
 "home_feedback_acitivity_title" = "Ba'ax a táakpajal ti' alguna actividad.
 Beet clic waye' utia'al xook k ba'ax ta tukultaj u beyo'!";
 "home_holiday" = "Sáamal jach %@. Ma'alo'ob xuul k'iino'ob!";
-"home_holiday_christmans" = "Sáamal jach Nochebuena. Ki'imak "navidad"!";
+"home_holiday_christmans" = "Sáamal jach Nochebuena. Ki'imak 'navidad'!";
 "home_holiday_easter" = "Sáamal jach jueves corte. Ki'imaktal u yóolo'ob Pascuas!";
 "home_survey_reminder" = "Yaan jump'éel túumben encuesta disponible. Much k'a'ajesik ti' u aj-ka'ansaj tu complete!";
 "home_take_action" = "Ba'ax a k'áat a wóojelte'ex.";

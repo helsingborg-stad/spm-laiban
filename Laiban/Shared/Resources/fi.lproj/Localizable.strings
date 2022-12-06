@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Perjantai on viikon viides päivä. Seuraavana päivänä on lauantai ja sitten sunnuntai. Sen jälkeen alkaa uusi viikko.";
 "calendar_weekday_friday_today" = "Perjantai on viikon viides päivä. Huomenna on lauantai ja sitten sunnuntai. Sen jälkeen alkaa uusi viikko.";
 "calendar_weekday_monday" = "Viikolla on seitsemän päivää ja maanantaina viikon ensimmäinen päivä.";
-"calendar_weekday_saturday" = "Lauantai on viikon kuudes päivä. Olemme poissa tänä päivänä.";
+"calendar_weekday_saturday" = "Lauantai on viikon kuudes päivä.";
 "calendar_weekday_sunday" = "Sunnuntai on viikon seitsemäs päivä. Seuraava päivä alkaa uusi viikko.";
 "calendar_weekday_sunday_today" = "Sunnuntai on viikon seitsemäs päivä. Huomenna alkaa uusi viikko.";
 "calendar_weekday_thursday" = "Viikolla on seitsemän päivää ja torstaina viikon neljäs päivä.";

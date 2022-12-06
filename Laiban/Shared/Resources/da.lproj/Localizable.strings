@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Fredag er den femte dag i ugen. Næste dag er det lørdag og så søndag. Derefter begynder en ny uge.";
 "calendar_weekday_friday_today" = "Fredag er den femte dag i ugen. I morgen er det lørdag og så søndag. Derefter begynder en ny uge.";
 "calendar_weekday_monday" = "Ugen har syv dage, og mandag er den første dag i ugen.";
-"calendar_weekday_saturday" = "Lørdag er den sjette dag i ugen. Vi har fri denne dag.";
+"calendar_weekday_saturday" = "Lørdag er den sjette dag i ugen.";
 "calendar_weekday_sunday" = "Søndag er den syvende dag i ugen. Den næste dag begynder en ny uge.";
 "calendar_weekday_sunday_today" = "Søndag er den syvende dag i ugen. I morgen begynder en ny uge.";
 "calendar_weekday_thursday" = "Ugen har syv dage, og torsdag er den fjerde dag i ugen.";

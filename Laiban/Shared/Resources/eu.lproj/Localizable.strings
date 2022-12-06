@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Ostirala asteko bosgarren eguna da. Hurrengo egunean larunbata da eta gero igandea. Horren ondoren, aste berri bat hasiko da.";
 "calendar_weekday_friday_today" = "Ostirala asteko bosgarren eguna da. Bihar larunbata da eta gero igandea. Horren ondoren, aste berri bat hasiko da.";
 "calendar_weekday_monday" = "Asteak zazpi egun ditu eta astelehena asteko lehen eguna da.";
-"calendar_weekday_saturday" = "Larunbata asteko seigarren eguna da. Kanpoan gaude egun honetan.";
+"calendar_weekday_saturday" = "Larunbata asteko seigarren eguna da.";
 "calendar_weekday_sunday" = "Igandea asteko zazpigarren eguna da. Hurrengo egunean aste berri bat hasiko da.";
 "calendar_weekday_sunday_today" = "Igandea asteko zazpigarren eguna da. Bihar aste berri bat hasiko da.";
 "calendar_weekday_thursday" = "Asteak zazpi egun ditu eta osteguna asteko laugarren eguna da.";
@@ -155,6 +155,7 @@ Begira zer jarriko duzun!";
 "garment_rainPants" = "Euri-galtzak";
 "garment_rainPants_description" = "Euri-galtzak";
 "garment_shoes" = "Oinetakoak";
+"garment_shoes_description" = "Oinetakoak";
 "garment_sweater" = "Suéter caliente";
 "garment_sweater_description" = "Suéter beroa";
 "garment_winterBoots" = "Oinetakoak";

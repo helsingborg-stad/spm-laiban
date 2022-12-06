@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "جمعه د اونۍ پنځمه ورځ ده. بله ورځ دا د شنبې او بیا د اتوار ورځ ده. له هغه وروسته، یوه نوې اونۍ پیل یږی.";
 "calendar_weekday_friday_today" = "جمعه د اونۍ پنځمه ورځ ده. سبا د شنبې او بیا د اتوار ورځ ده. له هغه وروسته، یوه نوې اونۍ پیل یږی.";
 "calendar_weekday_monday" = "دا اونۍ اووه ورځې لری او دوشنبه د اونۍ لومړۍ ورځ ده.";
-"calendar_weekday_saturday" = "شنبه د اونۍ شپږمه ورځ ده. مونږ نن ورځ رخصت یو.";
+"calendar_weekday_saturday" = "شنبه د اونۍ شپږمه ورځ ده.";
 "calendar_weekday_sunday" = "یکشنبه د اونۍ اوومه ورځ ده. بله ورځ یوه نوې اونۍ پیلیږی.";
 "calendar_weekday_sunday_today" = "یکشنبه د اونۍ اوومه ورځ ده. سبا یوه نوې اونۍ پیلیږی.";
 "calendar_weekday_thursday" = "دا اونۍ اووه ورځې لری او د پنجشنبې ورځ د اونۍ څلورمه ورځ ده.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "د باران پتلون";
 "garment_rainPants_description" = "د باران پتلون";
 "garment_shoes" = "بوټونه";
+"garment_shoes_description" = "بوټونه";
 "garment_sweater" = "تاوده سویټر";
 "garment_sweater_description" = "تاوده سویټر";
 "garment_winterBoots" = "بوټونه";

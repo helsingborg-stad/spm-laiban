@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Andro fahadimy amin'ny herinandro ny Zoma. Ny ampitson'iny dia Asabotsy ary avy eo Alahady. Aorian'izay, manomboka ny herinandro vaovao.";
 "calendar_weekday_friday_today" = "Andro fahadimy amin'ny herinandro ny Zoma. Rahampitso dia Sabotsy ary avy eo Alahady. Aorian'izay, manomboka ny herinandro vaovao.";
 "calendar_weekday_monday" = "Manana fito andro ny herinandro ary ny Alatsinainy no andro voalohany amin'ny herinandro.";
-"calendar_weekday_saturday" = "Ny Sabotsy no andro fahenina amin'ny herinandro. Tsy eo intsony izahay amin'izao andro izao.";
+"calendar_weekday_saturday" = "Ny Sabotsy no andro fahenina amin'ny herinandro.";
 "calendar_weekday_sunday" = "Ny Alahady no andro fahafito ao anatin'ny herinandro. Manomboka herinandro vaovao ny ampitson'iny.";
 "calendar_weekday_sunday_today" = "Ny Alahady no andro fahafito ao anatin'ny herinandro. Manomboka herinandro vaovao ny ampitso.";
 "calendar_weekday_thursday" = "Manana fito andro ny herinandro ary ny Alakamisy no andro fahaefatry ny herinandro.";
@@ -155,6 +155,7 @@ Jereo izay akanjo anaovanao!";
 "garment_rainPants" = "pataloha orana";
 "garment_rainPants_description" = "pataloha orana";
 "garment_shoes" = "Kiraro";
+"garment_shoes_description" = "Kiraro";
 "garment_sweater" = "Ny akanjo mafana";
 "garment_sweater_description" = "Ny akanjo mafana";
 "garment_winterBoots" = "Kiraro";

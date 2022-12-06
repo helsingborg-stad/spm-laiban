@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Hnub Friday yog lub fifth hnub ntawm lub limtiam ntawd. Hnub tom qab nws yog hnub Saturday thiab ces hnub xya. Tom qab ntawd, ib lub limtiam tshiab pib.";
 "calendar_weekday_friday_today" = "Hnub Friday yog lub fifth hnub ntawm lub limtiam ntawd. Tag kis yog hnub Saturday thiab ces hnub xya. Tom qab ntawd, ib lub limtiam tshiab pib.";
 "calendar_weekday_monday" = "Lub limtiam muaj xya hnub thiab hnub Monday yog thawj hnub ntawm lub limtiam ntawd.";
-"calendar_weekday_saturday" = "Hnub Saturday yog hnub rau (6) hnub ntawm lub limtiam ntawd. Peb nyob nraum tua hnub no.";
+"calendar_weekday_saturday" = "Hnub Saturday yog hnub rau (6) hnub ntawm lub limtiam ntawd.";
 "calendar_weekday_sunday" = "Sunday yog hnub xya hnub ntawm lub limtiam ntawd. Hnub tom qab pib ib lub limtiam tshiab.";
 "calendar_weekday_sunday_today" = "Sunday yog hnub xya hnub ntawm lub limtiam ntawd. Tag kis pib ib lub limtiam tshiab.";
 "calendar_weekday_thursday" = "Lub limtiam muaj xya hnub thiab Thursday yog plaub hnub ntawm lub limtiam ntawd.";
@@ -155,6 +155,7 @@ Saib seb koj yuav hnav!";
 "garment_rainPants" = "ris ris";
 "garment_rainPants_description" = "ris ris";
 "garment_shoes" = "nkawm khau";
+"garment_shoes_description" = "nkawm khau";
 "garment_sweater" = "sov sweater";
 "garment_sweater_description" = "sov sweater";
 "garment_winterBoots" = "nkawm khau";

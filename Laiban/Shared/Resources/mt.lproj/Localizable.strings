@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Il-Ġimgħa huwa l-ħames jum tal-ġimgħa. L-għada huwa s-Sibt u mbagħad il-Ħadd. Wara dan, tibda ġimgħa ġdida.";
 "calendar_weekday_friday_today" = "Il-Ġimgħa huwa l-ħames jum tal-ġimgħa. Għada s-Sibt u mbagħad il-Ħadd. Wara dan, tibda ġimgħa ġdida.";
 "calendar_weekday_monday" = "Il-ġimgħa għandha sebat ijiem u t-Tnejn hija l-ewwel ġurnata tal-ġimgħa.";
-"calendar_weekday_saturday" = "Is-Sibt huwa s-sitt jum tal-ġimgħa. Aħna off dan il-jum.";
+"calendar_weekday_saturday" = "Is-Sibt huwa s-sitt jum tal-ġimgħa.";
 "calendar_weekday_sunday" = "Il-Ħadd huwa s-seba' jum tal-ġimgħa. L-għada tibda ġimgħa ġdida.";
 "calendar_weekday_sunday_today" = "Il-Ħadd huwa s-seba' jum tal-ġimgħa. Għada tibda ġimgħa ġdida.";
 "calendar_weekday_thursday" = "Il-ġimgħa għandha sebat ijiem u l-Ħamis hija r-raba' ġurnata tal-ġimgħa.";
@@ -155,6 +155,7 @@ Ejja naraw dak li int ser tilbes!";
 "garment_rainPants" = "Qliezet tax-xita";
 "garment_rainPants_description" = "Qliezet tax-xita";
 "garment_shoes" = "Żraben";
+"garment_shoes_description" = "Żraben";
 "garment_sweater" = "Sweater sħun";
 "garment_sweater_description" = "Għaraq sħun";
 "garment_winterBoots" = "Żraben";
@@ -194,7 +195,7 @@ Ikklikkja hawn biex tgħidilna dak li ħsibt dwaru!";
 "public_calendar_celebration_today" = "Illum niċċelebraw il- %@";
 "public_calendar_respect" = "F'dan il-jum, nagħtu attenzjoni lill- %@";
 "recreation_nothing_to_do" = "M'għandekx xi ħaġa x'tagħmel?";
-"schedule_date_format" = "EEEE "il-" d MMMM";
+"schedule_date_format" = "EEEE 'il-' d MMMM";
 "singalong_repeat" = "Tixtieq terġa' tkanta?";
 "singalong_started" = "Ejja nkantaw!
 Lest?";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Na Vakaraubuka sa ikalima ni siga ni macawa. Ena siga ka tarava sa Vakarauwai ka Qai Sigatabu. Ni oti o ya, sa tekivu e dua na macawa vou.";
 "calendar_weekday_friday_today" = "Na Vakaraubuka sa ikalima ni siga ni macawa. Ni mataka sa Vakarauwai ka Sigatabu. Ni oti o ya, sa tekivu e dua na macawa vou.";
 "calendar_weekday_monday" = "E vitu na siga ni macawa ka sa imatai ni siga ni macawa na Moniti.";
-"calendar_weekday_saturday" = "Na Vakarauwai sa ikaono ni siga ni macawa. Eda sa lako yani nikua.";
+"calendar_weekday_saturday" = "Na Vakarauwai sa ikaono ni siga ni macawa.";
 "calendar_weekday_sunday" = "Na Sigatabu sa ikavitu ni siga ni macawa. Na siga ka tarava ena tekivu e dua na macawa vou.";
 "calendar_weekday_sunday_today" = "Na Sigatabu sa ikavitu ni siga ni macawa. Ni mataka ena tekivu e dua na macawa vou.";
 "calendar_weekday_thursday" = "E vitu na siga kei na Lotulevu na macawa oqo sa ikava ni siga ni macawa.";
@@ -155,6 +155,7 @@ Raica na ka o na dara!";
 "garment_rainPants" = "Tarausese uca";
 "garment_rainPants_description" = "Tarausese uca";
 "garment_shoes" = "Vava";
+"garment_shoes_description" = "Vava";
 "garment_sweater" = "Siqeleti katakata katakata";
 "garment_sweater_description" = "Siqeleti katakata katakata";
 "garment_winterBoots" = "Vava";

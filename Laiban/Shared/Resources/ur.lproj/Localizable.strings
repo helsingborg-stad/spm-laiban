@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "جمعہ ہفتے کا پانچواں دن ہوتا ہے۔ اگلے دن یہ ہفتہ اور پھر اتوار ہے. اس کے بعد ایک نیا ہفتہ شروع ہوتا ہے۔";
 "calendar_weekday_friday_today" = "جمعہ ہفتے کا پانچواں دن ہوتا ہے۔ کل ہفتہ اور پھر اتوار ہے۔ اس کے بعد ایک نیا ہفتہ شروع ہوتا ہے۔";
 "calendar_weekday_monday" = "ہفتے میں سات دن ہیں اور پیر ہفتے کا پہلا دن ہے۔";
-"calendar_weekday_saturday" = "ہفتہ ہفتے کا چھٹا دن ہوتا ہے۔ ہم اس دن بند کر رہے ہیں.";
+"calendar_weekday_saturday" = "ہفتہ ہفتے کا چھٹا دن ہوتا ہے۔";
 "calendar_weekday_sunday" = "اتوار ہفتے کا ساتواں دن ہوتا ہے۔ اگلے دن ایک نئے ہفتے کا آغاز ہوتا ہے.";
 "calendar_weekday_sunday_today" = "اتوار ہفتے کا ساتواں دن ہوتا ہے۔ کل سے ایک نیا ہفتہ شروع ہو رہا ہے۔";
 "calendar_weekday_thursday" = "ہفتے میں سات دن ہیں اور جمعرات ہفتے کا چوتھا دن ہے۔";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "بارش پتلون";
 "garment_rainPants_description" = "بارش پتلون";
 "garment_shoes" = "جوتے";
+"garment_shoes_description" = "جوتے";
 "garment_sweater" = "گرم سویٹر";
 "garment_sweater_description" = "گرم سویٹر";
 "garment_winterBoots" = "جوتے";

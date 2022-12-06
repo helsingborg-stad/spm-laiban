@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Vandredi se senkyèm jou semèn nan. Nan denmen, li nan Samdi ak Lè sa a, Dimanch. Apre sa, yon nouvo semèn kòmanse.";
 "calendar_weekday_friday_today" = "Vandredi se senkyèm jou semèn nan. Denmen se Samdi ak Lè sa a, Dimanch. Apre sa, yon nouvo semèn kòmanse.";
 "calendar_weekday_monday" = "Semèn nan gen sèt jou ak Lendi se premye jou nan semèn nan.";
-"calendar_weekday_saturday" = "Samdi se sizyèm jou semèn nan. Nou ap koupe jou sa a.";
+"calendar_weekday_saturday" = "Samdi se sizyèm jou semèn nan.";
 "calendar_weekday_sunday" = "Dimanch se setyèm jou nan semèn nan. Nan demen, jou kap vini an kòmanse yon nouvo semèn.";
 "calendar_weekday_sunday_today" = "Dimanch se setyèm jou nan semèn nan. Denmen kòmanse yon nouvo semèn.";
 "calendar_weekday_thursday" = "Semèn nan gen sèt jou ak Jedi se katriyèm jou nan semèn nan.";
@@ -155,6 +155,7 @@ Gade sa ou pral mete!";
 "garment_rainPants" = "Panno lapli";
 "garment_rainPants_description" = "Panno lapli";
 "garment_shoes" = "Soulye";
+"garment_shoes_description" = "Soulye";
 "garment_sweater" = "Chanson cho";
 "garment_sweater_description" = "Chanson cho";
 "garment_winterBoots" = "Soulye";

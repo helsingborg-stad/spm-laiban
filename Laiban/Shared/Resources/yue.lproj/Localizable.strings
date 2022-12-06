@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "星期五係一周嘅第五天。 第二日係禮拜六，然後係星期日。 之後，新嘅一周開始了。";
 "calendar_weekday_friday_today" = "星期五係一周嘅第五天。 聽日係禮拜六，然後係星期日。 之後，新嘅一周開始了。";
 "calendar_weekday_monday" = "一周有七天，星期一係一周嘅第一天。";
-"calendar_weekday_saturday" = "禮拜六係一周嘅第六天。 我哋今日休息咗。";
+"calendar_weekday_saturday" = "禮拜六係一周嘅第六天。";
 "calendar_weekday_sunday" = "禮拜日係一周嘅第七天。 第二日開始新嘅一周。";
 "calendar_weekday_sunday_today" = "禮拜日係一周嘅第七天。 聽日開始新嘅一周。";
 "calendar_weekday_thursday" = "一周有七天，星期四係一周嘅第四天。";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "雨褲";
 "garment_rainPants_description" = "雨褲";
 "garment_shoes" = "鞋";
+"garment_shoes_description" = "鞋";
 "garment_sweater" = "保暖毛衣";
 "garment_sweater_description" = "保暖毛衣";
 "garment_winterBoots" = "鞋";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Петък е петият ден от седмицата. На следващия ден е събота и след това неделя. След това започва нова седмица.";
 "calendar_weekday_friday_today" = "Петък е петият ден от седмицата. Утре е събота и след това неделя. След това започва нова седмица.";
 "calendar_weekday_monday" = "Седмицата има седем дни, а понеделник е първият ден от седмицата.";
-"calendar_weekday_saturday" = "Събота е шестият ден от седмицата. Тръгваме този ден.";
+"calendar_weekday_saturday" = "Събота е шестият ден от седмицата.";
 "calendar_weekday_sunday" = "Неделя е седмият ден от седмицата. На следващия ден започва нова седмица.";
 "calendar_weekday_sunday_today" = "Неделя е седмият ден от седмицата. Утре започва нова седмица.";
 "calendar_weekday_thursday" = "Седмицата има седем дни, а четвъртък е четвъртият ден от седмицата.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "Панталони за дъжд";
 "garment_rainPants_description" = "Панталони за дъжд";
 "garment_shoes" = "Обувки";
+"garment_shoes_description" = "Обувки";
 "garment_sweater" = "Топъл пуловер";
 "garment_sweater_description" = "Топъл пуловер";
 "garment_winterBoots" = "Обувки";
@@ -194,7 +195,7 @@
 "public_calendar_celebration_today" = "Днес празнуваме %@";
 "public_calendar_respect" = "На този ден обръщаме внимание на %@";
 "recreation_nothing_to_do" = "Нямаш ли какво да правиш?";
-"schedule_date_format" = "ЕЕО "the" d MMMM";
+"schedule_date_format" = "ЕЕО 'the' d MMMM";
 "singalong_repeat" = "Искате ли да пеете отново?";
 "singalong_started" = "Да пеем!
 Готови ли сте?";

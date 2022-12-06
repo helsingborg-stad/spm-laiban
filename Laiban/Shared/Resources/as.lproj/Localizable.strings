@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "শুক্ৰবাৰে সপ্তাহৰ পঞ্চম দিন। পিছদিনা শনিবাৰে আৰু তাৰ পিছত দেওবাৰে। তাৰ পিছত, এটা নতুন সপ্তাহ আৰম্ভ হয়।";
 "calendar_weekday_friday_today" = "শুক্ৰবাৰে সপ্তাহৰ পঞ্চম দিন। কাইলৈ শনিবাৰে আৰু তাৰ পিছত দেওবাৰে। তাৰ পিছত, এটা নতুন সপ্তাহ আৰম্ভ হয়।";
 "calendar_weekday_monday" = "সপ্তাহটোত সাত দিন আছে আৰু সোমবাৰে সপ্তাহৰ প্ৰথম দিন।";
-"calendar_weekday_saturday" = "শনিবাৰে সপ্তাহৰ ষষ্ঠ দিন। আমি আজিৰ দিনটোত বন্ধ আছোঁ।";
+"calendar_weekday_saturday" = "শনিবাৰে সপ্তাহৰ ষষ্ঠ দিন।";
 "calendar_weekday_sunday" = "দেওবাৰে সপ্তাহৰ সপ্তম দিন। পিছদিনা এটা নতুন সপ্তাহ আৰম্ভ হ'ব।";
 "calendar_weekday_sunday_today" = "দেওবাৰে সপ্তাহৰ সপ্তম দিন। কাইলৈ এটা নতুন সপ্তাহ আৰম্ভ হ'ব।";
 "calendar_weekday_thursday" = "সপ্তাহটোত সাত দিন আছে আৰু বৃহস্পতিবাৰে সপ্তাহৰ চতুৰ্থ দিন।";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "ৰেইন পেণ্ট";
 "garment_rainPants_description" = "ৰেইন পেণ্ট";
 "garment_shoes" = "জোতা";
+"garment_shoes_description" = "জোতা";
 "garment_sweater" = "গৰম চুৱেটাৰ";
 "garment_sweater_description" = "গৰম চুৱেটাৰ";
 "garment_winterBoots" = "জোতা";

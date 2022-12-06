@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Reede on viies nädalapäev. Järgmisel päeval on laupäev ja siis pühapäev. Pärast seda algab uus nädal.";
 "calendar_weekday_friday_today" = "Reede on viies nädalapäev. Homme on laupäev ja siis pühapäev. Pärast seda algab uus nädal.";
 "calendar_weekday_monday" = "Nädalal on seitse päeva ja esmaspäev on nädala esimene päev.";
-"calendar_weekday_saturday" = "Laupäev on nädala kuues päev. Me oleme sellest päevast väljas.";
+"calendar_weekday_saturday" = "Laupäev on nädala kuues päev.";
 "calendar_weekday_sunday" = "Pühapäev on nädala seitsmes päev. Järgmisel päeval algab uus nädal.";
 "calendar_weekday_sunday_today" = "Pühapäev on nädala seitsmes päev. Homme algab uus nädal.";
 "calendar_weekday_thursday" = "Nädalal on seitse päeva ja neljapäev on nädala neljas päev.";
@@ -155,6 +155,7 @@ Vaata, mida sa selga paned!";
 "garment_rainPants" = "Vihmapüksid";
 "garment_rainPants_description" = "Vihmapüksid";
 "garment_shoes" = "Kingad";
+"garment_shoes_description" = "Kingad";
 "garment_sweater" = "Soe kampsun";
 "garment_sweater_description" = "Soe kampsun";
 "garment_winterBoots" = "Kingad";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Йома — аҙнаның бишенсе көнө. Икенсе көндө шәмбе, унан һуң йәкшәмбе. Бынан һуң яңы аҙна башлана.";
 "calendar_weekday_friday_today" = "Йома — аҙнаның бишенсе көнө. Иртәгә — шәмбе, унан һуң йәкшәмбе. Бынан һуң яңы аҙна башлана.";
 "calendar_weekday_monday" = "Аҙнаның ете көнө бар һәм дүшәмбе — аҙнаның тәүге көнө.";
-"calendar_weekday_saturday" = "Шәмбе — аҙнаның алтынсы көнө. Беҙ был көндө ял итәбеҙ.";
+"calendar_weekday_saturday" = "Шәмбе — аҙнаның алтынсы көнө.";
 "calendar_weekday_sunday" = "Йәкшәмбе — аҙнаның етенсе көнө. Икенсе көн яңы аҙна башлана.";
 "calendar_weekday_sunday_today" = "Йәкшәмбе — аҙнаның етенсе көнө. Иртәгә яңы аҙна башлана.";
 "calendar_weekday_thursday" = "Аҙна ете көн һәм кесаҙна — аҙнаның дүртенсе көнө.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "Ямғыр салбары";
 "garment_rainPants_description" = "Ямғыр салбары";
 "garment_shoes" = "Аяҡ кейеме";
+"garment_shoes_description" = "Аяҡ кейеме";
 "garment_sweater" = "Йылы свитер";
 "garment_sweater_description" = "Йылы свитер";
 "garment_winterBoots" = "Аяҡ кейеме";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "ಶುಕ್ರವಾರ ವಾರದ ಐದನೇ ದಿನ. ಮರುದಿನ ಅದು ಶನಿವಾರ ಮತ್ತು ನಂತರ ಭಾನುವಾರ. ಅದರ ನಂತರ, ಹೊಸ ವಾರವು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
 "calendar_weekday_friday_today" = "ಶುಕ್ರವಾರ ವಾರದ ಐದನೇ ದಿನ. ನಾಳೆ ಶನಿವಾರ ಮತ್ತು ನಂತರ ಭಾನುವಾರ. ಅದರ ನಂತರ, ಹೊಸ ವಾರವು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
 "calendar_weekday_monday" = "ವಾರವು ಏಳು ದಿನಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಸೋಮವಾರವು ವಾರದ ಮೊದಲ ದಿನವಾಗಿದೆ.";
-"calendar_weekday_saturday" = "ಶನಿವಾರವು ವಾರದ ಆರನೇ ದಿನವಾಗಿದೆ. ನಾವು ಈ ದಿನ ರಜೆಯಲ್ಲಿದ್ದೇವೆ.";
+"calendar_weekday_saturday" = "ಶನಿವಾರವು ವಾರದ ಆರನೇ ದಿನವಾಗಿದೆ.";
 "calendar_weekday_sunday" = "ಭಾನುವಾರ ವಾರದ ಏಳನೇ ದಿನ. ಮರುದಿನ ಹೊಸ ವಾರ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
 "calendar_weekday_sunday_today" = "ಭಾನುವಾರ ವಾರದ ಏಳನೇ ದಿನ. ನಾಳೆ ಹೊಸ ವಾರ ಆರಂಭವಾಗುತ್ತದೆ.";
 "calendar_weekday_thursday" = "ವಾರವು ಏಳು ದಿನಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಗುರುವಾರವು ವಾರದ ನಾಲ್ಕನೇ ದಿನವಾಗಿದೆ.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "ಮಳೆ ಪ್ಯಾಂಟ್ ಗಳು";
 "garment_rainPants_description" = "ಮಳೆ ಪ್ಯಾಂಟ್ ಗಳು";
 "garment_shoes" = "ಶೂಗಳು";
+"garment_shoes_description" = "ಶೂಗಳು";
 "garment_sweater" = "ಬೆಚ್ಚಗಿನ ಸ್ವೆಟರ್";
 "garment_sweater_description" = "ಬೆಚ್ಚಗಿನ ಸ್ವೆಟರ್";
 "garment_winterBoots" = "ಶೂಗಳು";

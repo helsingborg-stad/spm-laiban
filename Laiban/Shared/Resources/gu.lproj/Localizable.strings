@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "શુક્રવાર એ અઠવાડિયાનો પાંચમો દિવસ છે. બીજા દિવસે શનિવાર અને પછી રવિવાર છે. ત્યાર બાદ નવા સપ્તાહની શરૂઆત થાય છે.";
 "calendar_weekday_friday_today" = "શુક્રવાર એ અઠવાડિયાનો પાંચમો દિવસ છે. આવતીકાલે શનિવાર અને પછી રવિવાર છે. ત્યાર બાદ નવા સપ્તાહની શરૂઆત થાય છે.";
 "calendar_weekday_monday" = "અઠવાડિયામાં સાત દિવસ હોય છે અને સોમવાર અઠવાડિયાનો પહેલો દિવસ હોય છે.";
-"calendar_weekday_saturday" = "શનિવાર એ અઠવાડિયાનો છઠ્ઠો દિવસ છે. અમે આ દિવસે રજા પર છીએ.";
+"calendar_weekday_saturday" = "શનિવાર એ અઠવાડિયાનો છઠ્ઠો દિવસ છે.";
 "calendar_weekday_sunday" = "રવિવાર એ અઠવાડિયાનો સાતમો દિવસ છે. બીજા દિવસે નવા સપ્તાહની શરૂઆત થાય છે.";
 "calendar_weekday_sunday_today" = "રવિવાર એ અઠવાડિયાનો સાતમો દિવસ છે. આવતીકાલથી એક નવું અઠવાડિયું શરૂ થશે.";
 "calendar_weekday_thursday" = "અઠવાડિયામાં સાત દિવસ હોય છે અને ગુરુવાર અઠવાડિયાનો ચોથો દિવસ હોય છે.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "રેઇન પેન્ટ્સ";
 "garment_rainPants_description" = "રેઇન પેન્ટ્સ";
 "garment_shoes" = "પગરખાંઓ";
+"garment_shoes_description" = "પગરખાંઓ";
 "garment_sweater" = "ગરમ સ્વેટર";
 "garment_sweater_description" = "ગરમ સ્વેટર";
 "garment_winterBoots" = "પગરખાંઓ";

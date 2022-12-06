@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Petak je peti dan u tjednu. Sutradan je subota, a onda nedjelja. Nakon toga počinje novi tjedan.";
 "calendar_weekday_friday_today" = "Petak je peti dan u tjednu. Sutra je subota, a onda nedjelja. Nakon toga počinje novi tjedan.";
 "calendar_weekday_monday" = "Tjedan ima sedam dana, a ponedjeljak je prvi dan u tjednu.";
-"calendar_weekday_saturday" = "Subota je šesti dan u tjednu. Nerado smo na ovaj dan.";
+"calendar_weekday_saturday" = "Subota je šesti dan u tjednu.";
 "calendar_weekday_sunday" = "Nedjelja je sedmi dan u tjednu. Sljedeći dan počinje novi tjedan.";
 "calendar_weekday_sunday_today" = "Nedjelja je sedmi dan u tjednu. Sutra počinje novi tjedan.";
 "calendar_weekday_thursday" = "Tjedan ima sedam dana, a četvrti dan u tjednu.";

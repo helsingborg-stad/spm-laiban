@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "शुक्रवार सप्ताह का पांचवा दिन है। अगले दिन शनिवार और फिर रविवार है। उसके बाद, एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_friday_today" = "शुक्रवार सप्ताह का पांचवा दिन है। कल शनिवार है और फिर रविवार है। उसके बाद, एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_monday" = "सप्ताह में सात दिन होते हैं और सोमवार सप्ताह का पहला दिन होता है।";
-"calendar_weekday_saturday" = "शनिवार सप्ताह का छठा दिन है। हम इस दिन बंद हैं।";
+"calendar_weekday_saturday" = "शनिवार सप्ताह का छठा दिन है।";
 "calendar_weekday_sunday" = "रविवार सप्ताह का सातवां दिन है। अगले दिन एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_sunday_today" = "रविवार सप्ताह का सातवां दिन है। कल एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_thursday" = "सप्ताह में सात दिन होते हैं और गुरुवार सप्ताह का चौथा दिन होता है।";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "बारिश की पैंट";
 "garment_rainPants_description" = "बारिश पैंट";
 "garment_shoes" = "जूते";
+"garment_shoes_description" = "जूते";
 "garment_sweater" = "गर्म स्वेटर";
 "garment_sweater_description" = "गर्म स्वेटर";
 "garment_winterBoots" = "जूते";

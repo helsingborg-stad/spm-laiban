@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "جمعه پنجمین روز هفته است. روز بعد شنبه و بعد یکشنبه است. بعد از اون، هفته جديدي شروع ميشه";
 "calendar_weekday_friday_today" = "جمعه پنجمین روز هفته است. فردا شنبه و بعد یکشنبه است. بعد از اون، هفته جديدي شروع ميشه";
 "calendar_weekday_monday" = "این هفته هفت روز دارد و دوشنبه اولین روز هفته است.";
-"calendar_weekday_saturday" = "شنبه ششمین روز هفته است. ما امروز از اين کار خارج شديم";
+"calendar_weekday_saturday" = "شنبه ششمین روز هفته است.";
 "calendar_weekday_sunday" = "یکشنبه هفتمین روز هفته است. روز بعد یک هفته جدید آغاز می شود.";
 "calendar_weekday_sunday_today" = "یکشنبه هفتمین روز هفته است. فردا هفته جديدي رو شروع مي کنه";
 "calendar_weekday_thursday" = "این هفته هفت روز دارد و پنجشنبه چهارمین روز هفته است.";
@@ -117,7 +117,7 @@
 "food_waste_info_more" = "شما امروز غذای بیشتری را نسبت به دیروز هديه کرديد.";
 "food_waste_info_why" = "چرا نبايد غذا رو هديه کنيم؟";
 "food_waste_info_why_description" = "برای اینکه غذا مفید باشد، ما باید تا حد امکان کم دور بینند. خوردن غذا در بشقاب باعث می شود شما احساس خوبی داشته باشید و وقتی غذا به معده شما ختم می شود، به شما انرژی می دهد تا هم بازی کنید و هم بیشتر یاد بگیرید.";
-"food_waste_kompostina_title" = "آیا می خواهید غذا وزن کنید؟ ⚖️ بهم فشار بده، "کومپوستینا"!";
+"food_waste_kompostina_title" = "آیا می خواهید غذا وزن کنید؟ ⚖️ بهم فشار بده، 'کومپوستینا'!";
 "food_waste_last_week" = "هفته گذشته شما یک گرم %@ دور انداختید، و این هفته، %@ گرم.";
 "food_waste_nothing" = "تا کنون این هفته شما هیچ غذایی را دور انداخته است.";
 "food_waste_statistics_title_today" = "امروز شما دور انداخت %@ گرم غذا. اين هم مثل...";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "شلوار باران";
 "garment_rainPants_description" = "شلوار باران";
 "garment_shoes" = "کفش";
+"garment_shoes_description" = "کفش";
 "garment_sweater" = "بلع گرم";
 "garment_sweater_description" = "بلع گرم";
 "garment_winterBoots" = "کفش";

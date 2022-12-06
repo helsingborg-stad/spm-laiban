@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Vineri este a cincea zi a săptămânii. A doua zi e sâmbătă și apoi duminică. După aceea, începe o nouă săptămână.";
 "calendar_weekday_friday_today" = "Vineri este a cincea zi a săptămânii. Mâine este sâmbătă și apoi duminică. După aceea, începe o nouă săptămână.";
 "calendar_weekday_monday" = "Săptămâna are șapte zile, iar luni este prima zi a săptămânii.";
-"calendar_weekday_saturday" = "Sâmbătă este a șasea zi a săptămânii. Suntem plecați în această zi.";
+"calendar_weekday_saturday" = "Sâmbătă este a șasea zi a săptămânii.";
 "calendar_weekday_sunday" = "Duminica este a șaptea zi a săptămânii. A doua zi începe o nouă săptămână.";
 "calendar_weekday_sunday_today" = "Duminica este a șaptea zi a săptămânii. Mâine începe o nouă săptămână.";
 "calendar_weekday_thursday" = "Săptămâna are șapte zile, iar joi este a patra zi a săptămânii.";
@@ -155,6 +155,7 @@ Uite ce ai de gând să poarte!";
 "garment_rainPants" = "Pantaloni de ploaie";
 "garment_rainPants_description" = "Pantaloni de ploaie";
 "garment_shoes" = "Pantofi";
+"garment_shoes_description" = "Pantofi";
 "garment_sweater" = "Pulover cald";
 "garment_sweater_description" = "Pulover cald";
 "garment_winterBoots" = "Pantofi";
@@ -194,7 +195,7 @@ Click aici pentru a ne spune ce te-ai gândit la ea!";
 "public_calendar_celebration_today" = "Astăzi sărbătorim %@";
 "public_calendar_respect" = "În această zi, acordăm atenție %@";
 "recreation_nothing_to_do" = "Nu aveți nimic de făcut?";
-"schedule_date_format" = "EEEE "the" d MMMM";
+"schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "Vrei să cânți din nou?";
 "singalong_started" = "Să cântăm!
 Eşti gata?";

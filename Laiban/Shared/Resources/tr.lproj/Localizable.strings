@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Cuma haftanın beşinci günüdür. Ertesi gün Cumartesi ve sonra Pazar. Bundan sonra yeni bir hafta başlar.";
 "calendar_weekday_friday_today" = "Cuma haftanın beşinci günüdür. Yarın cumartesi ve sonra pazar. Bundan sonra yeni bir hafta başlar.";
 "calendar_weekday_monday" = "Haftanın yedi günü vardır ve Pazartesi haftanın ilk günüdür.";
-"calendar_weekday_saturday" = "Cumartesi haftanın altıncı günüdür. Bugün kapalıyız.";
+"calendar_weekday_saturday" = "Cumartesi haftanın altıncı günüdür.";
 "calendar_weekday_sunday" = "Pazar haftanın yedinci günüdür. Ertesi gün yeni bir hafta başlar.";
 "calendar_weekday_sunday_today" = "Pazar haftanın yedinci günüdür. Yarın yeni bir hafta başlıyor.";
 "calendar_weekday_thursday" = "Haftanın yedi günü vardır ve Perşembe haftanın dördüncü günüdür.";

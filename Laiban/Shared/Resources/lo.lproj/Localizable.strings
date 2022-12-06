@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "ວັນ ສຸກ ເປັນ ມື້ ທີ ຫ້າ ຂອງ ອາທິດ. ມື້ຕໍ່ມາແມ່ນວັນເສົາແລ້ວວັນອາທິດ. ຫຼັງຈາກນັ້ນ, ອາທິດໃຫມ່ເລີ່ມຕົ້ນ.";
 "calendar_weekday_friday_today" = "ວັນ ສຸກ ເປັນ ມື້ ທີ ຫ້າ ຂອງ ອາທິດ. ມື້ອື່ນແມ່ນວັນເສົາແລ້ວວັນອາທິດ. ຫຼັງຈາກນັ້ນ, ອາທິດໃຫມ່ເລີ່ມຕົ້ນ.";
 "calendar_weekday_monday" = "ອາທິດ ມີ ເຈັດ ມື້ ແລະ ວັນ ຈັນ ເປັນ ມື້ ທໍາ ອິດ ຂອງ ອາທິດ.";
-"calendar_weekday_saturday" = "ວັນເສົາເປັນມື້ທີຫົກຂອງອາທິດ. ພວກ ເຮົາ ຫມົດ ມື້ ນີ້.";
+"calendar_weekday_saturday" = "ວັນເສົາເປັນມື້ທີຫົກຂອງອາທິດ.";
 "calendar_weekday_sunday" = "ວັນອາທິດເປັນມື້ທີເຈັດຂອງອາທິດ. ມື້ຕໍ່ມາເລີ່ມອາທິດໃຫມ່.";
 "calendar_weekday_sunday_today" = "ວັນອາທິດເປັນມື້ທີເຈັດຂອງອາທິດ. ມື້ອື່ນເລີ່ມຕົ້ນອາທິດໃຫມ່.";
 "calendar_weekday_thursday" = "ອາທິດ ມີ ເຈັດ ມື້ ແລະ ວັນ ພະຫັດ ເປັນ ມື້ ທີ ສີ່ ຂອງ ອາທິດ.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "pants ຝົນ";
 "garment_rainPants_description" = "pants ຝົນ";
 "garment_shoes" = "ເກີບ";
+"garment_shoes_description" = "ເກີບ";
 "garment_sweater" = "ເສື້ອອົບອຸ່ນ";
 "garment_sweater_description" = "ເສື້ອອົບອຸ່ນ";
 "garment_winterBoots" = "ເກີບ";

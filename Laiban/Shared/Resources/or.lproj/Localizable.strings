@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "ଶୁକ୍ରବାର ହେଉଛି ସପ୍ତାହର ପଞ୍ଚମ ଦିନ । ପରଦିନ ଏହା ଶନିବାର ଏବଂ ତା'ପରେ ରବିବାର | ଏହା ପରେ, ଏକ ନୂତନ ସପ୍ତାହ ଆରମ୍ଭ ହୁଏ |";
 "calendar_weekday_friday_today" = "ଶୁକ୍ରବାର ହେଉଛି ସପ୍ତାହର ପଞ୍ଚମ ଦିନ । ଆସନ୍ତାକାଲି ଶନିବାର ଏବଂ ତା'ପରେ ରବିବାର । ଏହା ପରେ, ଏକ ନୂତନ ସପ୍ତାହ ଆରମ୍ଭ ହୁଏ |";
 "calendar_weekday_monday" = "ସପ୍ତାହରେ ସାତ ଦିନ ଅଛି ଏବଂ ସୋମବାର ହେଉଛି ସପ୍ତାହର ପ୍ରଥମ ଦିନ |";
-"calendar_weekday_saturday" = "ଶନିବାର ହେଉଛି ସପ୍ତାହର ଷଷ୍ଠ ଦିନ | ଆମେ ଏହି ଦିନ ବନ୍ଦ ଅଛୁ ।";
+"calendar_weekday_saturday" = "ଶନିବାର ହେଉଛି ସପ୍ତାହର ଷଷ୍ଠ ଦିନ |";
 "calendar_weekday_sunday" = "ରବିବାର ହେଉଛି ସପ୍ତାହର ସପ୍ତମ ଦିନ | ପରଦିନ ଏକ ନୂତନ ସପ୍ତାହ ଆରମ୍ଭ ହୁଏ |";
 "calendar_weekday_sunday_today" = "ରବିବାର ହେଉଛି ସପ୍ତାହର ସପ୍ତମ ଦିନ | ଆସନ୍ତାକାଲି ଏକ ନୂତନ ସପ୍ତାହ ଆରମ୍ଭ ହେବ।";
 "calendar_weekday_thursday" = "ସପ୍ତାହରେ ସାତ ଦିନ ଅଛି ଏବଂ ଗୁରୁବାର ହେଉଛି ସପ୍ତାହର ଚତୁର୍ଥ ଦିନ |";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "ବର୍ଷା ପ୍ୟାଣ୍ଟ";
 "garment_rainPants_description" = "ବର୍ଷା ପ୍ୟାଣ୍ଟ";
 "garment_shoes" = "ଜୋତା";
+"garment_shoes_description" = "ଜୋତା";
 "garment_sweater" = "ଉଷ୍ମ ସ୍ୱେଟର";
 "garment_sweater_description" = "ଉଷ୍ମ ସ୍ୱେଟର";
 "garment_winterBoots" = "ଜୋତା";

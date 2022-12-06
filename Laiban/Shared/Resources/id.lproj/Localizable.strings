@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Jumat adalah hari kelima dalam seminggu. Keesokan harinya hari Sabtu dan kemudian Minggu. Setelah itu, minggu baru dimulai.";
 "calendar_weekday_friday_today" = "Jumat adalah hari kelima dalam seminggu. Besok adalah hari Sabtu dan kemudian Minggu. Setelah itu, minggu baru dimulai.";
 "calendar_weekday_monday" = "Minggu ini memiliki tujuh hari dan Senin adalah hari pertama dalam seminggu.";
-"calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu. Kami libur hari ini.";
+"calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu.";
 "calendar_weekday_sunday" = "Minggu adalah hari ketujuh dalam seminggu. Hari berikutnya dimulai minggu baru.";
 "calendar_weekday_sunday_today" = "Minggu adalah hari ketujuh dalam seminggu. Besok memulai minggu baru.";
 "calendar_weekday_thursday" = "Minggu ini memiliki tujuh hari dan Kamis adalah hari keempat dalam seminggu.";
@@ -155,6 +155,7 @@ Lihat apa yang akan Anda kenakan!";
 "garment_rainPants" = "Celana hujan";
 "garment_rainPants_description" = "Celana hujan";
 "garment_shoes" = "Sepatu";
+"garment_shoes_description" = "Sepatu";
 "garment_sweater" = "Sweter hangat";
 "garment_sweater_description" = "Sweter hangat";
 "garment_winterBoots" = "Sepatu";

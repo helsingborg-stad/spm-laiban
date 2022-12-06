@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Жума жума жуманын бешинчи күнү болуп саналат. Кийинки күнү ишемби, андан кийин жекшемби күнү болот. Андан кийин жаңы жума башталат.";
 "calendar_weekday_friday_today" = "Жума жума жуманын бешинчи күнү болуп саналат. Эртең ишемби, андан кийин жекшемби. Андан кийин жаңы жума башталат.";
 "calendar_weekday_monday" = "Жуманын жети күнү, дүйшөмбү – жуманын биринчи күнү.";
-"calendar_weekday_saturday" = "Ишемби – жуманын алтынчы күнү. Биз бул күнү эс алуудабыз.";
+"calendar_weekday_saturday" = "Ишемби – жуманын алтынчы күнү.";
 "calendar_weekday_sunday" = "Жекшемби – жуманын жетинчи күнү. Кийинки күнү жаңы жума башталат.";
 "calendar_weekday_sunday_today" = "Жекшемби – жуманын жетинчи күнү. Эртең жаңы жума башталат.";
 "calendar_weekday_thursday" = "Жума жети күн, бейшемби жуманын төртүнчү күнү болуп саналат.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "Жамгыр шалбары";
 "garment_rainPants_description" = "Жамгыр шалбары";
 "garment_shoes" = "Бут кийим";
+"garment_shoes_description" = "Бут кийим";
 "garment_sweater" = "Жылуу свитер";
 "garment_sweater_description" = "Жылуу свитер";
 "garment_winterBoots" = "Бут кийим";

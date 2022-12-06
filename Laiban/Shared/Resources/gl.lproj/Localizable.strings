@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "O venres é o quinto día da semana. Ao día seguinte é sábado e despois domingo. Despois diso, comeza unha nova semana.";
 "calendar_weekday_friday_today" = "O venres é o quinto día da semana. Mañá é sábado e despois domingo. Despois diso, comeza unha nova semana.";
 "calendar_weekday_monday" = "A semana ten sete días e o luns é o primeiro día da semana.";
-"calendar_weekday_saturday" = "O sábado é o sexto día da semana. Estamos fóra deste día.";
+"calendar_weekday_saturday" = "O sábado é o sexto día da semana.";
 "calendar_weekday_sunday" = "O domingo é o sétimo día da semana. Ao día seguinte comeza unha nova semana.";
 "calendar_weekday_sunday_today" = "O domingo é o sétimo día da semana. Mañá comeza unha nova semana.";
 "calendar_weekday_thursday" = "A semana ten sete días e o xoves é o cuarto día da semana.";
@@ -155,6 +155,7 @@ Ten que ver o que pon!";
 "garment_rainPants" = "Pantalón de choiva";
 "garment_rainPants_description" = "Pantalóns de choiva";
 "garment_shoes" = "Zapatos";
+"garment_shoes_description" = "Zapatillas";
 "garment_sweater" = "Calcetíns quentes";
 "garment_sweater_description" = "Suadoiro quente";
 "garment_winterBoots" = "Zapatillas";
@@ -194,7 +195,7 @@ Clica aquí para contarnos o que pensaches!";
 "public_calendar_celebration_today" = "Hoxe celebramos %@";
 "public_calendar_respect" = "Hoxe en día, prestamos atención ás %@";
 "recreation_nothing_to_do" = "Non tes nada que facer?";
-"schedule_date_format" = "EEEE "o" d MMMM";
+"schedule_date_format" = "EEEE 'o' d MMMM";
 "singalong_repeat" = "Queres cantar outra vez?";
 "singalong_started" = "Imos cantar!
 Estás preparado?";

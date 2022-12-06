@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Petek je peti dan v tednu. Naslednji dan je sobota in nedelja. Po tem se začne nov teden.";
 "calendar_weekday_friday_today" = "Petek je peti dan v tednu. Jutri je sobota in nedelja. Po tem se začne nov teden.";
 "calendar_weekday_monday" = "Teden ima sedem dni, ponedeljek pa je prvi dan v tednu.";
-"calendar_weekday_saturday" = "Sobota je šesti dan v tednu. Danes ne bova več.";
+"calendar_weekday_saturday" = "Sobota je šesti dan v tednu.";
 "calendar_weekday_sunday" = "Nedelja je sedmi dan v tednu. Naslednji dan se začne nov teden.";
 "calendar_weekday_sunday_today" = "Nedelja je sedmi dan v tednu. Jutri se začne nov teden.";
 "calendar_weekday_thursday" = "Teden ima sedem dni, četrtek pa je četrti dan v tednu.";
@@ -155,6 +155,7 @@ Poglej, kaj boš nosil!";
 "garment_rainPants" = "Dežne hlače";
 "garment_rainPants_description" = "Dežne hlače";
 "garment_shoes" = "Čevlji";
+"garment_shoes_description" = "Čevlji";
 "garment_sweater" = "Topel pulover";
 "garment_sweater_description" = "Topel pulover";
 "garment_winterBoots" = "Čevlji";
@@ -194,7 +195,7 @@ Kliknite tukaj, da nam poveste, kaj ste mislili o tem!";
 "public_calendar_celebration_today" = "Danes praznujemo %@";
 "public_calendar_respect" = "Na ta dan smo pozorni na %@";
 "recreation_nothing_to_do" = "Nimaš kaj delati?";
-"schedule_date_format" = "EEEO "the" d MMMM";
+"schedule_date_format" = "EEEO 'the' d MMMM";
 "singalong_repeat" = "Bi še enkrat zajele?";
 "singalong_started" = "Pojva!
 Si pripravljen?";

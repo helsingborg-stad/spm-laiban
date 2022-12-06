@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Cümə günü həftənin beşinci günüdür. Ertəsi gün şənbə, sonra bazar günü olur. Bundan sonra yeni bir həftə başlayır.";
 "calendar_weekday_friday_today" = "Cümə günü həftənin beşinci günüdür. Sabah şənbə, sonra isə bazar günü. Bundan sonra yeni bir həftə başlayır.";
 "calendar_weekday_monday" = "Həftənin yeddi günü var, bazar ertəsi isə həftənin ilk günüdür.";
-"calendar_weekday_saturday" = "Şənbə həftənin altıncı günüdür. Biz bu gün istirahət edirik.";
+"calendar_weekday_saturday" = "Şənbə həftənin altıncı günüdür.";
 "calendar_weekday_sunday" = "Bazar günü həftənin yeddinci günüdür. Növbəti gün yeni həftə başlayır.";
 "calendar_weekday_sunday_today" = "Bazar günü həftənin yeddinci günüdür. Sabah yeni həftə başlayır.";
 "calendar_weekday_thursday" = "Həftənin yeddi günü, cümə axşamı isə həftənin dördüncü günüdür.";
@@ -155,6 +155,7 @@ Bax, nə geyəcəksən!";
 "garment_rainPants" = "Yağış şalvarı";
 "garment_rainPants_description" = "Yağış şalvarı";
 "garment_shoes" = "Ayaqqabılar";
+"garment_shoes_description" = "Ayaqqabılar";
 "garment_sweater" = "İsti don";
 "garment_sweater_description" = "İsti don";
 "garment_winterBoots" = "Ayaqqabılar";

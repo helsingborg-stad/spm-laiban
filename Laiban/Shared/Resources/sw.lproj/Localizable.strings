@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Ijumaa ni siku ya tano ya juma. Siku inayofuata ni Jumamosi halafu Jumapili. Baada ya hapo, wiki mpya huanza.";
 "calendar_weekday_friday_today" = "Ijumaa ni siku ya tano ya juma. Kesho ni Jumamosi halafu Jumapili. Baada ya hapo, wiki mpya huanza.";
 "calendar_weekday_monday" = "Wiki ina siku saba na Jumatatu ni siku ya kwanza ya juma.";
-"calendar_weekday_saturday" = "Jumamosi ni siku ya sita ya juma. Tumeondoka siku hii.";
+"calendar_weekday_saturday" = "Jumamosi ni siku ya sita ya juma.";
 "calendar_weekday_sunday" = "Jumapili ni siku ya saba ya juma. Siku inayofuata inaanza wiki mpya.";
 "calendar_weekday_sunday_today" = "Jumapili ni siku ya saba ya juma. Kesho inaanza wiki mpya.";
 "calendar_weekday_thursday" = "Wiki ina siku saba na Alhamisi ni siku ya nne ya juma.";
@@ -155,6 +155,7 @@ Angalia utavaa nini!";
 "garment_rainPants" = "Suruali ya mvua";
 "garment_rainPants_description" = "Suruali ya mvua";
 "garment_shoes" = "Viatu";
+"garment_shoes_description" = "Viatu";
 "garment_sweater" = "Sweta la joto";
 "garment_sweater_description" = "Sweta la joto";
 "garment_winterBoots" = "Viatu";

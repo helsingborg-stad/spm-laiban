@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Piątek to piąty dzień tygodnia. Następnego dnia jest sobota, a potem niedziela. Potem zaczyna się nowy tydzień.";
 "calendar_weekday_friday_today" = "Piątek to piąty dzień tygodnia. Jutro jest sobota, a potem niedziela. Potem zaczyna się nowy tydzień.";
 "calendar_weekday_monday" = "Tydzień ma siedem dni, a poniedziałek jest pierwszym dniem tygodnia.";
-"calendar_weekday_saturday" = "Sobota jest szóstym dniem tygodnia. Dziś mamy wolne.";
+"calendar_weekday_saturday" = "Sobota jest szóstym dniem tygodnia.";
 "calendar_weekday_sunday" = "Niedziela jest siódmym dniem tygodnia. Następny dzień rozpoczyna nowy tydzień.";
 "calendar_weekday_sunday_today" = "Niedziela jest siódmym dniem tygodnia. Jutro zaczyna się nowy tydzień.";
 "calendar_weekday_thursday" = "Tydzień ma siedem dni, a czwartek jest czwartym dniem tygodnia.";
@@ -155,6 +155,7 @@ Zobacz, co zamierzasz nosić!";
 "garment_rainPants" = "Spodnie przeciwdeszczowe";
 "garment_rainPants_description" = "Spodnie przeciwdeszczowe";
 "garment_shoes" = "Buty";
+"garment_shoes_description" = "Buty";
 "garment_sweater" = "Ciepły sweter";
 "garment_sweater_description" = "Ciepły sweter";
 "garment_winterBoots" = "Buty";
@@ -194,7 +195,7 @@ Kliknij tutaj, aby powiedzieć nam, co o tym myślisz!";
 "public_calendar_celebration_today" = "Dziś świętujemy %@";
 "public_calendar_respect" = "W tym dniu zwracamy uwagę na %@";
 "recreation_nothing_to_do" = "Nie masz nic do roboty?";
-"schedule_date_format" = "EEEE "the" d MMMM";
+"schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "Chciałbyś jeszcze raz zaśpiewać?";
 "singalong_started" = "Śpiewajmy!
 Czy jesteś gotowy?";

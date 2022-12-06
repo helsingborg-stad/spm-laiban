@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Juma – haftaning beshinchi kuni. Ertasi kuni shanba, keyin yakshanba. Shundan so'ng yangi hafta boshlanadi.";
 "calendar_weekday_friday_today" = "Juma – haftaning beshinchi kuni. Ertaga shanba, keyin yakshanba. Shundan so'ng yangi hafta boshlanadi.";
 "calendar_weekday_monday" = "Haftada 7 kun, dushanba esa haftaning birinchi kuni hisoblanadi.";
-"calendar_weekday_saturday" = "Shanba – haftaning oltinchi kuni. Biz bu kun dam oldik.";
+"calendar_weekday_saturday" = "Shanba – haftaning oltinchi kuni.";
 "calendar_weekday_sunday" = "Yakshanba – haftaning yettinchi kuni. Ertasi kuni yangi hafta boshlanadi.";
 "calendar_weekday_sunday_today" = "Yakshanba – haftaning yettinchi kuni. Ertaga yangi hafta boshlanadi.";
 "calendar_weekday_thursday" = "Haftada yetti kun, payshanba esa haftaning toʻrtinchi kuni hisoblanadi.";
@@ -155,6 +155,7 @@ Qarang, nima kiyasiz!";
 "garment_rainPants" = "Yomg'ir pantoloni";
 "garment_rainPants_description" = "Yomg'ir pantoloni";
 "garment_shoes" = "Yakkabogʻ";
+"garment_shoes_description" = "Yakkabogʻ";
 "garment_sweater" = "Issiq svet";
 "garment_sweater_description" = "Issiq svet";
 "garment_winterBoots" = "Yakkabogʻ";

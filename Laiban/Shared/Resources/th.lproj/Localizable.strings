@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ วันรุ่งขึ้นเป็นวันเสาร์และวันอาทิตย์ หลังจากนั้นสัปดาห์ใหม่จะเริ่มขึ้น";
 "calendar_weekday_friday_today" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ พรุ่งนี้เป็นวันเสาร์และวันอาทิตย์ หลังจากนั้นสัปดาห์ใหม่จะเริ่มขึ้น";
 "calendar_weekday_monday" = "สัปดาห์มีเจ็ดวันและวันจันทร์เป็นวันแรกของสัปดาห์";
-"calendar_weekday_saturday" = "วันเสาร์เป็นวันที่หกของสัปดาห์ เราปิดวันนี้";
+"calendar_weekday_saturday" = "วันเสาร์เป็นวันที่หกของสัปดาห์";
 "calendar_weekday_sunday" = "วันอาทิตย์เป็นวันที่เจ็ดของสัปดาห์ วันรุ่งขึ้นเริ่มต้นสัปดาห์ใหม่";
 "calendar_weekday_sunday_today" = "วันอาทิตย์เป็นวันที่เจ็ดของสัปดาห์ พรุ่งนี้เริ่มสัปดาห์ใหม่";
 "calendar_weekday_thursday" = "สัปดาห์มีเจ็ดวันและวันพฤหัสบดีเป็นวันที่สี่ของสัปดาห์";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "กางเกงกันฝน";
 "garment_rainPants_description" = "กางเกงกันฝน";
 "garment_shoes" = "รองเท้า";
+"garment_shoes_description" = "รองเท้า";
 "garment_sweater" = "เสื้อสเวตเตอร์อุ่นๆ";
 "garment_sweater_description" = "เสื้อกันหนาวอุ่น";
 "garment_winterBoots" = "รองเท้า";

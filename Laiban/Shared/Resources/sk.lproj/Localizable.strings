@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Piatok je piaty deň v týždni. Nasledujúci deň je sobota a potom nedeľa. Potom sa začína nový týždeň.";
 "calendar_weekday_friday_today" = "Piatok je piaty deň v týždni. Zajtra je sobota a potom nedeľa. Potom sa začína nový týždeň.";
 "calendar_weekday_monday" = "Týždeň má sedem dní a pondelok je prvým dňom v týždni.";
-"calendar_weekday_saturday" = "Sobota je šiesty deň v týždni. Tento deň máme voľno.";
+"calendar_weekday_saturday" = "Sobota je šiesty deň v týždni.";
 "calendar_weekday_sunday" = "Nedeľa je siedmy deň v týždni. Nasledujúci deň začína nový týždeň.";
 "calendar_weekday_sunday_today" = "Nedeľa je siedmy deň v týždni. Zajtra začína nový týždeň.";
 "calendar_weekday_thursday" = "Týždeň má sedem dní a štvrtok je štvrtý deň v týždni.";
@@ -155,6 +155,7 @@ Pozrite sa, čo si oblečiete!";
 "garment_rainPants" = "Pršiplášťové nohavice";
 "garment_rainPants_description" = "Dažďové nohavice";
 "garment_shoes" = "Topánky";
+"garment_shoes_description" = "Topánky";
 "garment_sweater" = "Teplý sveter";
 "garment_sweater_description" = "Teplý sveter";
 "garment_winterBoots" = "Topánky";
@@ -194,7 +195,7 @@ Kliknite sem a povedzte nám, čo si o tom myslíte!";
 "public_calendar_celebration_today" = "Dnes oslavujeme %@";
 "public_calendar_respect" = "V tento deň venujeme pozornosť %@";
 "recreation_nothing_to_do" = "Nemáte čo robiť?";
-"schedule_date_format" = "EEZE "the" d MMMM";
+"schedule_date_format" = "EEZE 'the' d MMMM";
 "singalong_repeat" = "Chceli by ste znova spievať?";
 "singalong_started" = "Poďme si zaspievať!
 Ste pripravený?";

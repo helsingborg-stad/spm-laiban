@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "星期五周五日也。 明日为星期六,然后为星期天。 其后一周始矣。";
 "calendar_weekday_friday_today" = "星期五周五日也。 明日为星期六,然后为星期天。 其后一周始矣。";
 "calendar_weekday_monday" = "一周七日,星期一周之初日也。";
-"calendar_weekday_saturday" = "星期六,周之第六天也。 吾今休矣。";
+"calendar_weekday_saturday" = "星期六,周之第六天也。";
 "calendar_weekday_sunday" = "星期日,周七日也。 明日始一周。";
 "calendar_weekday_sunday_today" = "星期日,周七日也。 明日始新周。";
 "calendar_weekday_thursday" = "周七日,星期四四日也。";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "雨袴";
 "garment_rainPants_description" = "雨袴";
 "garment_shoes" = "鞋";
+"garment_shoes_description" = "鞋";
 "garment_sweater" = "暖毛衣";
 "garment_sweater_description" = "暖毛衣";
 "garment_winterBoots" = "鞋";

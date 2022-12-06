@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Жұма — аптаның бесінші күні. Келесі күні ол сенбі, содан кейін жексенбі. Осыдан кейін жаңа апта басталады.";
 "calendar_weekday_friday_today" = "Жұма — аптаның бесінші күні. Ертең - сенбі, содан кейін жексенбі. Осыдан кейін жаңа апта басталады.";
 "calendar_weekday_monday" = "Аптаның жеті күні және дүйсенбі — аптаның бірінші күні.";
-"calendar_weekday_saturday" = "Сенбі — аптаның алтыншы күні. Біз бұл күнді өшіріп тастаймыз.";
+"calendar_weekday_saturday" = "Сенбі — аптаның алтыншы күні.";
 "calendar_weekday_sunday" = "Жексенбі — аптаның жетінші күні. Келесі күні жаңа апта басталады.";
 "calendar_weekday_sunday_today" = "Жексенбі — аптаның жетінші күні. Ертең жаңа апта басталады.";
 "calendar_weekday_thursday" = "Аптаның жеті күні және бейсенбі — аптаның төртінші күні.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "Жаңбыр шалбары";
 "garment_rainPants_description" = "Жаңбыр шалбары";
 "garment_shoes" = "Аяқ киім";
+"garment_shoes_description" = "Аяқ киім";
 "garment_sweater" = "Жылы свитер";
 "garment_sweater_description" = "Жылы свитер";
 "garment_winterBoots" = "Аяқ киім";

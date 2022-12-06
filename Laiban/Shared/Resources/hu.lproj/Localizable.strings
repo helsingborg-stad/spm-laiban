@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Péntek a hét ötödik napja. Másnap szombat, majd vasárnap van. Ezután új hét kezdődik.";
 "calendar_weekday_friday_today" = "Péntek a hét ötödik napja. Holnap szombat, majd vasárnap van. Ezután új hét kezdődik.";
 "calendar_weekday_monday" = "A hétnek hét napja van, és hétfő a hét első napja.";
-"calendar_weekday_saturday" = "Szombat a hét hatodik napja. Ma indulunk.";
+"calendar_weekday_saturday" = "Szombat a hét hatodik napja.";
 "calendar_weekday_sunday" = "Vasárnap a hét hetedik napja. A következő nap új hetet kezd.";
 "calendar_weekday_sunday_today" = "Vasárnap a hét hetedik napja. Holnap kezdődik egy új hét.";
 "calendar_weekday_thursday" = "A hétnek hét napja van, és a csütörtök a hét negyedik napja.";
@@ -155,6 +155,7 @@ Nézd meg, mit fogsz viselni!";
 "garment_rainPants" = "Esőnadrág";
 "garment_rainPants_description" = "Esőnadrág";
 "garment_shoes" = "Cipők";
+"garment_shoes_description" = "Cipők";
 "garment_sweater" = "Meleg pulóver";
 "garment_sweater_description" = "Meleg pulóver";
 "garment_winterBoots" = "Cipők";

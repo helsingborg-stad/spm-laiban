@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "E premtja është dita e pestë e javës. Ditën tjetër është e shtunë dhe pastaj e diel. Pas kësaj, fillon një javë e re.";
 "calendar_weekday_friday_today" = "E premtja është dita e pestë e javës. Nesër është e shtuna dhe pastaj e diela. Pas kësaj, fillon një javë e re.";
 "calendar_weekday_monday" = "Java ka shtatë ditë dhe e hëna është dita e parë e javës.";
-"calendar_weekday_saturday" = "E shtuna është dita e gjashtë e javës. Ne jemi pushim këtë ditë.";
+"calendar_weekday_saturday" = "E shtuna është dita e gjashtë e javës.";
 "calendar_weekday_sunday" = "E diela është dita e shtatë e javës. Dita tjetër fillon një javë të re.";
 "calendar_weekday_sunday_today" = "E diela është dita e shtatë e javës. Nesër fillon një javë e re.";
 "calendar_weekday_thursday" = "Java ka shtatë ditë dhe e enjte është dita e katërt e javës.";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "शुक्रबार हप्ताको पाँचौं दिन हो । अर्को दिन शनिबार र त्यसपछि आइतबार। त्यसपछि नयाँ हप्ता सुरु हुन्छ ।";
 "calendar_weekday_friday_today" = "शुक्रबार हप्ताको पाँचौं दिन हो । भोलि शनिबार र त्यसपछि आइतबार । त्यसपछि नयाँ हप्ता सुरु हुन्छ ।";
 "calendar_weekday_monday" = "हप्ताको सात दिन हुन्छ र सोमबार हप्ताको पहिलो दिन हो।";
-"calendar_weekday_saturday" = "शनिबार हप्ताको छैटौं दिन हो । आज हामी बिदामा छौं ।";
+"calendar_weekday_saturday" = "शनिबार हप्ताको छैटौं दिन हो ।";
 "calendar_weekday_sunday" = "आइतबार हप्ताको सातौं दिन हो । अर्को दिन बाट नयाँ हप्ता सुरु हुन्छ।";
 "calendar_weekday_sunday_today" = "आइतबार हप्ताको सातौं दिन हो । भोलिबाट नयाँ हप्ता सुरु हुन्छ ।";
 "calendar_weekday_thursday" = "साताको सात दिन र बिहीबार हप्ताको चौथो दिन हो ।";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "रेन पैंट";
 "garment_rainPants_description" = "रेन पैंट";
 "garment_shoes" = "जुत्ता";
+"garment_shoes_description" = "जुत्ता";
 "garment_sweater" = "गर्म स्वेटर";
 "garment_sweater_description" = "गर्म स्वेटर";
 "garment_winterBoots" = "जुत्ता";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Freitag ist der fünfte Tag der Woche. Am nächsten Tag ist es Samstag und dann Sonntag. Danach beginnt eine neue Woche.";
 "calendar_weekday_friday_today" = "Freitag ist der fünfte Tag der Woche. Morgen ist Samstag und dann Sonntag. Danach beginnt eine neue Woche.";
 "calendar_weekday_monday" = "Die Woche hat sieben Tage und Montag ist der erste Tag der Woche.";
-"calendar_weekday_saturday" = "Samstag ist der sechste Tag der Woche. Wir haben diesen Tag frei.";
+"calendar_weekday_saturday" = "Samstag ist der sechste Tag der Woche.";
 "calendar_weekday_sunday" = "Sonntag ist der siebte Tag der Woche. Am nächsten Tag beginnt eine neue Woche.";
 "calendar_weekday_sunday_today" = "Sonntag ist der siebte Tag der Woche. Morgen beginnt eine neue Woche.";
 "calendar_weekday_thursday" = "Die Woche hat sieben Tage und Donnerstag ist der vierte Tag der Woche.";
@@ -155,6 +155,7 @@ Schau, was du anziehen wirst!";
 "garment_rainPants" = "Regenhose";
 "garment_rainPants_description" = "Regenhose";
 "garment_shoes" = "Schuhe";
+"garment_shoes_description" = "Schuhe";
 "garment_sweater" = "Warmer Pullover";
 "garment_sweater_description" = "Warmer Pullover";
 "garment_winterBoots" = "Schuhe";
@@ -194,7 +195,7 @@ Klicken Sie hier, um uns zu sagen, was Sie davon halten!";
 "public_calendar_celebration_today" = "Heute feiern wir %@";
 "public_calendar_respect" = "An diesem Tag achten wir auf %@";
 "recreation_nothing_to_do" = "Sie haben nichts zu tun?";
-"schedule_date_format" = "EEEE "die" d MMMM";
+"schedule_date_format" = "EEEE 'die' d MMMM";
 "singalong_repeat" = "Möchten Sie wieder singen?";
 "singalong_started" = "Lass uns singen!
 Bist du so weit?";

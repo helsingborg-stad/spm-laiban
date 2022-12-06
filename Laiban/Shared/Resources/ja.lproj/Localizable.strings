@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "金曜日は週の 5 日目です。翌日は土曜日、そして日曜日です。その後、新しい週が始まります。";
 "calendar_weekday_friday_today" = "金曜日は週の 5 日目です。明日は土曜日、そして日曜日です。その後、新しい週が始まります。";
 "calendar_weekday_monday" = "週は 7 日で、月曜日は週の最初の日です。";
-"calendar_weekday_saturday" = "土曜日は週の6日目です。この日は休みです。";
+"calendar_weekday_saturday" = "土曜日は週の6日目です。";
 "calendar_weekday_sunday" = "日曜日は週の7日目です。翌日は新しい週が始まります。";
 "calendar_weekday_sunday_today" = "日曜日は週の7日目です。明日は新しい週が始まります。";
 "calendar_weekday_thursday" = "週は 7 日で、木曜日は週の 4 日目です。";

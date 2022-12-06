@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Înê roja pêncemîn a hefteyê ye. Roja din Şemî û piştre yekşem e. Piştî wê hefteyeke nû dest pê dike.";
 "calendar_weekday_friday_today" = "Înê roja pêncemîn a hefteyê ye. Sibe şemî ye û piştre yekşem e. Piştî wê hefteyeke nû dest pê dike.";
 "calendar_weekday_monday" = "Heft rojên hefteyê hene û duşem roja pêşîn a hefteyê ye.";
-"calendar_weekday_saturday" = "Şemî roja şeşemîn a hefteyê ye. Em ji vê rojê veqetin.";
+"calendar_weekday_saturday" = "Şemî roja şeşemîn a hefteyê ye.";
 "calendar_weekday_sunday" = "Yekşem roja heftemîn a hefteyê ye. Roja din hefteyeke nû dest pê dike.";
 "calendar_weekday_sunday_today" = "Yekşem roja heftemîn a hefteyê ye. Sibe hefteyeka nû dest pê dike.";
 "calendar_weekday_thursday" = "Heft roj û pêncşem roja çaremîn a hefteyê ye.";
@@ -155,6 +155,7 @@ Binêre tu dê çi li xwe bikî!";
 "garment_rainPants" = "Pantolonê baranê";
 "garment_rainPants_description" = "Pantolonê baranê";
 "garment_shoes" = "Pêlav";
+"garment_shoes_description" = "Pêlav";
 "garment_sweater" = "Xwêdanka germ";
 "garment_sweater_description" = "Xwêdanka germ";
 "garment_winterBoots" = "Pêlav";

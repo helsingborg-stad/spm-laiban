@@ -10,10 +10,10 @@
 "activities_participants_future" = "para participar";
 "activities_participants_past" = "Participou";
 "activities_title" = "É isso que vamos fazer hoje!";
+"activity_today" = "Hoje %@";
 "are_you_ready" = "Está pronto?";
 "ask_teacher" = "Pergunte ao professor";
 "calendar_event" = "Neste dia %@";
-"calendar_event_today" = "Hoje %@";
 "calendar_free_day" = "Neste dia somos livres.";
 "calendar_free_day_after" = "No dia seguinte, estamos de folga.";
 "calendar_free_tomorrow" = "Amanhã somos livres.";
@@ -21,7 +21,7 @@
 "calendar_weekday_friday" = "Sexta-feira é o quinto dia da semana. No dia seguinte é sábado e depois domingo. Depois disso, uma nova semana começa.";
 "calendar_weekday_friday_today" = "Sexta-feira é o quinto dia da semana. Amanhã é sábado e depois domingo. Depois disso, uma nova semana começa.";
 "calendar_weekday_monday" = "A semana tem sete dias e segunda-feira é o primeiro dia da semana.";
-"calendar_weekday_saturday" = "Sábado é o sexto dia da semana. Estamos de folga neste dia.";
+"calendar_weekday_saturday" = "Sábado é o sexto dia da semana.";
 "calendar_weekday_sunday" = "Domingo é o sétimo dia da semana. O dia seguinte começa uma nova semana.";
 "calendar_weekday_sunday_today" = "Domingo é o sétimo dia da semana. Amanhã começa uma nova semana.";
 "calendar_weekday_thursday" = "A semana tem sete dias e quinta-feira é o quarto dia da semana.";
@@ -42,8 +42,8 @@
 "clock_time_8" = "Oito";
 "clock_time_9" = "Nove";
 "clock_time_description_0600_to_0730" = "Agora é de manhã e por volta desta hora tomamos café da manhã.";
-"clock_time_description_0730_to_0830" = "Agora é de manhã.";
 "clock_time_description_0830_to_0900" = "Por volta dessa época, comemos frutas.";
+"clock_time_description_0900_to_1045" = "Agora é de manhã.";
 "clock_time_description_1045_to_1230" = "Agora é meio-dia e hora do almoço.";
 "clock_time_description_1230_to_1400" = "Agora é tarde.";
 "clock_time_description_1400_to_1500" = "Agora é tarde e por volta dessa hora comemos lanches.";
@@ -132,18 +132,18 @@ Olha o que você vai vestir!";
 "garment_beanie" = "Gorro";
 "garment_cap" = "Boné";
 "garment_jacket_description" = "Jaqueta";
-"garment_mittens_description" = "Luvas";
+"garment_mittens" = "Luvas";
 "garment_neckWear" = "Gola rolê ou lenço";
 "garment_neckWear_description" = "Lenço ou gola rolê";
-"garment_pulloverPants_description" = "Calças de cobertura";
-"garment_rainBoots" = "Botas";
+"garment_pulloverPants" = "Calças de cobertura";
+"garment_rainBoots_description" = "Botas";
 "garment_rainCoat" = "Jaqueta de chuva";
-"garment_rainGloves" = "Luvas de chuva";
-"garment_rainPants_description" = "Calças de chuva";
+"garment_rainGloves_description" = "Luvas de chuva";
+"garment_rainPants" = "Calças de chuva";
 "garment_shoes" = "Calçado";
 "garment_sweater" = "Camisola quente";
 "garment_winterBoots_description" = "Botas de Inverno";
-"garment_winterOutfit" = "Macacão ou jaqueta com calça cover";
+"garment_winterOutfit_description" = "Macacão ou jaqueta com calça cover";
 "home_feedback_acitivity_title" = "Você já participou de uma atividade?
 Clique aqui para nos contar o que achou!";
 "home_holiday" = "Amanhã é %@. Um ótimo final de semana para você!";
@@ -191,10 +191,10 @@ Isso é logo após %@.";
 Isso foi logo após %@.";
 "tempus_child_arrives_before" = "%@ chegará à pré-escola por volta de %@.
 Isso é pouco antes %@.";
-"tempus_child_arrives_before_past" = "%@ chegou à pré-escola por volta de %@.
-Isso foi pouco antes %@.";
 "tempus_child_arrives_during" = "%@ chegará à pré-escola por volta de %@.
 Isso durante %@.";
+"tempus_child_arrives_during_past" = "%@ chegou à pré-escola por volta de %@.
+Isso foi pouco antes %@.";
 "tempus_child_arrives_past" = "%@ chegou à pré-escola por volta de %@";
 "tempus_child_has_left" = "%@ parece ter ido para casa durante o dia.";
 "tempus_child_has_left_returns_in_days" = "%@ parece ter ido para casa durante o dia, mas deve voltar novamente em %@ dias.";

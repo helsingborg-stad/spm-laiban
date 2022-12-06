@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "პარასკევი კვირის მეხუთე დღეა. მეორე დღეს ეს შაბათი და შემდეგ კვირაა. ამის შემდეგ, ახალი კვირა იწყება.";
 "calendar_weekday_friday_today" = "პარასკევი კვირის მეხუთე დღეა. სრპვ ვ ჟყბჲრა თ ჟლვე რჲგა მს. ამის შემდეგ, ახალი კვირა იწყება.";
 "calendar_weekday_monday" = "კვირას შვიდი დღე აქვს და ორშაბათი კვირის პირველი დღეა.";
-"calendar_weekday_saturday" = "შაბათი კვირის მეექვსე დღეა. ნთვ ჟმვ ჲრ რაჱთ ევნ.";
+"calendar_weekday_saturday" = "შაბათი კვირის მეექვსე დღეა.";
 "calendar_weekday_sunday" = "კვირა კვირის მეშვიდე დღეა. მეორე დღეს იწყება ახალი კვირა.";
 "calendar_weekday_sunday_today" = "კვირა კვირის მეშვიდე დღეა. ხვალ იწყება ახალი კვირა.";
 "calendar_weekday_thursday" = "კვირას შვიდი დღე აქვს და ხუთშაბათი კვირის მეოთხე დღეა.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "წვიმის შარვალი";
 "garment_rainPants_description" = "წვიმის შარვალი";
 "garment_shoes" = "ფეხსაცმელი";
+"garment_shoes_description" = "ფეხსაცმელი";
 "garment_sweater" = "თბილი სვიტერი";
 "garment_sweater_description" = "თბილი სვიტერი";
 "garment_winterBoots" = "ფეხსაცმელი";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Te mahana pae o te paeraa ïa o te mahana o te hepetoma. Te mahana no muri iho, e mahana maa ïa e i te sabati. I muri a'e i te reira, e haamata te hoê hebedoma apî.";
 "calendar_weekday_friday_today" = "Te mahana pae o te paeraa ïa o te mahana o te hepetoma. Ananahi o te mahana maa ïa e i muri iho te Sabati. I muri a'e i te reira, e haamata te hoê hebedoma apî.";
 "calendar_weekday_monday" = "E hitu mahana to te hepetoma e te monire, o te mahana matamua ïa o te hepetoma.";
-"calendar_weekday_saturday" = "Te mahana maa o te onoraa ïa o te mahana o te hepetoma. Te faaru'e nei tatou i teie mahana.";
+"calendar_weekday_saturday" = "Te mahana maa o te onoraa ïa o te mahana o te hepetoma.";
 "calendar_weekday_sunday" = "Te Sabati o te hitu ïa o te mahana o te hepetoma. E haamata te mahana no muri iho i te hoê hepetoma apî.";
 "calendar_weekday_sunday_today" = "Te Sabati o te hitu ïa o te mahana o te hepetoma. E haamata o Tomorrow i te hoê hebedoma apî.";
 "calendar_weekday_thursday" = "E hitu mahana e te mahana maha to te hepetoma, o te maharaa ïa o te mahana o te hepetoma.";
@@ -155,6 +155,7 @@ A hi'o na eaha ta outou e oomo!";
 "garment_rainPants" = "Te mau pa'epa'e ûa";
 "garment_rainPants_description" = "Te mau pa'epa'e ûa";
 "garment_shoes" = "Te mau tiaa";
+"garment_shoes_description" = "Te mau tiaa";
 "garment_sweater" = "Te mau mana'o tauturu no te haapiiraa";
 "garment_sweater_description" = "Te mau mana'o tauturu no te haapiiraa";
 "garment_winterBoots" = "Te mau tiaa";

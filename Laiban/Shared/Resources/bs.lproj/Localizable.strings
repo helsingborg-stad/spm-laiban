@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Petak je peti dan u sedmici. Sutradan je subota, a onda nedjelja. Nakon toga počinje nova sedmica.";
 "calendar_weekday_friday_today" = "Petak je peti dan u sedmici. Sutra je subota, a onda nedjelja. Nakon toga počinje nova sedmica.";
 "calendar_weekday_monday" = "Sedmica ima sedam dana i ponedjeljak je prvi dan u sedmici.";
-"calendar_weekday_saturday" = "Subota je šesti dan u sedmici. Slobodni smo danas.";
+"calendar_weekday_saturday" = "Subota je šesti dan u sedmici.";
 "calendar_weekday_sunday" = "Nedjelja je sedmi dan u sedmici. Sledeći dan počinje nova nedelja.";
 "calendar_weekday_sunday_today" = "Nedjelja je sedmi dan u sedmici. Sutra počinje nova sedmica.";
 "calendar_weekday_thursday" = "Sedmica ima sedam dana i četvrtak je četvrti dan u sedmici.";
@@ -155,6 +155,7 @@ Vidi šta ćeš da obučeš!";
 "garment_rainPants" = "Kišne pantalone";
 "garment_rainPants_description" = "Kišne hlače";
 "garment_shoes" = "Cipele";
+"garment_shoes_description" = "Cipele";
 "garment_sweater" = "Topao džemper";
 "garment_sweater_description" = "Topli džemper";
 "garment_winterBoots" = "Cipele";

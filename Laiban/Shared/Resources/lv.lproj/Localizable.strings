@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Piektdiena ir nedēļas piektā diena. Nākamajā dienā ir sestdiena un tad svētdiena. Pēc tam sākas jauna nedēļa.";
 "calendar_weekday_friday_today" = "Piektdiena ir nedēļas piektā diena. Rīt ir sestdiena un tad svētdiena. Pēc tam sākas jauna nedēļa.";
 "calendar_weekday_monday" = "Nedēļā ir septiņas dienas, un pirmdiena ir nedēļas pirmā diena.";
-"calendar_weekday_saturday" = "Sestdiena ir nedēļas sestā diena. Mēs esam prom no šīs dienas.";
+"calendar_weekday_saturday" = "Sestdiena ir nedēļas sestā diena.";
 "calendar_weekday_sunday" = "Svētdiena ir nedēļas septītā diena. Nākamajā dienā sākas jauna nedēļa.";
 "calendar_weekday_sunday_today" = "Svētdiena ir nedēļas septītā diena. Rīt sākas jauna nedēļa.";
 "calendar_weekday_thursday" = "Nedēļā ir septiņas dienas, un ceturtdiena ir ceturtā nedēļas diena.";
@@ -155,6 +155,7 @@ Paskaties, ko tu valkāsi!";
 "garment_rainPants" = "Lietus bikses";
 "garment_rainPants_description" = "Lietus bikses";
 "garment_shoes" = "Kurpes";
+"garment_shoes_description" = "Kurpes";
 "garment_sweater" = "Silts džemperis";
 "garment_sweater_description" = "Silts džemperis";
 "garment_winterBoots" = "Kurpes";

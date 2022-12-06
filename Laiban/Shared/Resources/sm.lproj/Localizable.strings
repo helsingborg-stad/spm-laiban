@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "O le Aso Faraile o le aso lona lima lea o le vaiaso. O le aso na sosoo ai o le Aso Toonai ona sosoo ai lea ma le Aso Sa. A maea lena, ona amata loa lea o se vaiaso fou.";
 "calendar_weekday_friday_today" = "O le Aso Faraile o le aso lona lima lea o le vaiaso. O taeao o le Aso Toonai ona sosoo ai lea ma le Aso Sa. A maea lena, ona amata loa lea o se vaiaso fou.";
 "calendar_weekday_monday" = "O le vaiaso e fitu aso ma le Aso Gafua o le aso muamua lea o le vaiaso.";
-"calendar_weekday_saturday" = "O le Aso Toonai o le aso lona ono lea o le vaiaso. Ua tatou o ese i le aso lenei.";
+"calendar_weekday_saturday" = "O le Aso Toonai o le aso lona ono lea o le vaiaso.";
 "calendar_weekday_sunday" = "O le Aso Sa o le aso lona fitu lea o le vaiaso. O le aso e sosoo ai e amata ai se vaiaso fou.";
 "calendar_weekday_sunday_today" = "O le Aso Sa o le aso lona fitu lea o le vaiaso. O taeao e amata ai se vaiaso fou.";
 "calendar_weekday_thursday" = "O le vaiaso e fitu aso ma le Aso Tofi o le aso lona fa lea o le vaiaso.";
@@ -155,6 +155,7 @@ Vaai po o le a le ofu o le a e ofuina!";
 "garment_rainPants" = "Ofuvae o le timu";
 "garment_rainPants_description" = "Ofuvae o le timu";
 "garment_shoes" = "Seevae";
+"garment_shoes_description" = "Seevae";
 "garment_sweater" = "Ofu mafanafana";
 "garment_sweater_description" = "Ofu mafanafana";
 "garment_winterBoots" = "Seevae";

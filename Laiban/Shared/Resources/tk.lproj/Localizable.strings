@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Anna — Hepdäniň bäşinji güni. Ertesi şenbe, soň ýekşenbe. Şondan soň täze hepde başlanýar.";
 "calendar_weekday_friday_today" = "Anna — Hepdäniň bäşinji güni. Ertir şenbe, soňra ýekşenbe. Şondan soň täze hepde başlanýar.";
 "calendar_weekday_monday" = "Hepdäniň ýedi güni, duşenbe güni bolsa hepdäniň birinji güni bolýar.";
-"calendar_weekday_saturday" = "Şenbe – hepdäniň altynjy güni. Biz bu gün işden rugsat.";
+"calendar_weekday_saturday" = "Şenbe – hepdäniň altynjy güni.";
 "calendar_weekday_sunday" = "Ýekşenbe — Hepdäniň ýedinji güni. Ertesi täze hepde başlanýar.";
 "calendar_weekday_sunday_today" = "Ýekşenbe — Hepdäniň ýedinji güni. Ertir täze hepde başlanýar.";
 "calendar_weekday_thursday" = "Hepdäniň ýedi güni, penşenbe güni bolsa hepdäniň dördünji güni bolýar.";
@@ -155,6 +155,7 @@ Gör, nägeş geýjek!";
 "garment_rainPants" = "Ýagyş pantolonlary";
 "garment_rainPants_description" = "Ýagyş pantolonlary";
 "garment_shoes" = "Aýakgap";
+"garment_shoes_description" = "Aýakgap";
 "garment_sweater" = "Ýyly dony";
 "garment_sweater_description" = "Ýyly dony";
 "garment_winterBoots" = "Aýakgap";

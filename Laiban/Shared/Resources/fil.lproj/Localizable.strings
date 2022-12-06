@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Ang Biyernes ay ang ikalimang araw ng linggo. Kinabukasan ay Sabado at pagkatapos ay Linggo. Pagkatapos nito, magsisimula ang isang bagong linggo.";
 "calendar_weekday_friday_today" = "Ang Biyernes ay ang ikalimang araw ng linggo. Bukas ay Sabado at pagkatapos ay Linggo. Pagkatapos nito, magsisimula ang isang bagong linggo.";
 "calendar_weekday_monday" = "Ang linggo ay may pitong araw at Lunes ang unang araw ng linggo.";
-"calendar_weekday_saturday" = "Ang Sabado ay ang ikaanim na araw ng linggo. Off kami sa araw na ito.";
+"calendar_weekday_saturday" = "Ang Sabado ay ang ikaanim na araw ng linggo.";
 "calendar_weekday_sunday" = "Ang Linggo ay ang ikapitong araw ng linggo. Ang susunod na araw ay nagsisimula ng isang bagong linggo.";
 "calendar_weekday_sunday_today" = "Ang Linggo ay ang ikapitong araw ng linggo. Bukas ay magsisimula ng bagong linggo.";
 "calendar_weekday_thursday" = "Ang linggo ay may pitong araw at Huwebes ang ikaapat na araw ng linggo.";
@@ -155,6 +155,7 @@ Tingnan kung ano ang isuot mo!";
 "garment_rainPants" = "Pantalon para sa ulan";
 "garment_rainPants_description" = "Ulan pantalon";
 "garment_shoes" = "Sapatos";
+"garment_shoes_description" = "Mga sapatos";
 "garment_sweater" = "Mainit-init sweater";
 "garment_sweater_description" = "Mainit na sweater";
 "garment_winterBoots" = "Mga sapatos";

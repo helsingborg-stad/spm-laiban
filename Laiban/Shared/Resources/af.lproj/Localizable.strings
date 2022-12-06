@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Vrydag is die vyfde dag van die week. Die volgende dag is dit Saterdag en dan Sondag. Daarna begin 'n nuwe week.";
 "calendar_weekday_friday_today" = "Vrydag is die vyfde dag van die week. Môre is Saterdag en dan Sondag. Daarna begin 'n nuwe week.";
 "calendar_weekday_monday" = "Die week het sewe dae en Maandag is die eerste dag van die week.";
-"calendar_weekday_saturday" = "Saterdag is die sesde dag van die week. Ons is vandag af.";
+"calendar_weekday_saturday" = "Saterdag is die sesde dag van die week.";
 "calendar_weekday_sunday" = "Sondag is die sewende dag van die week. Die volgende dag begin 'n nuwe week.";
 "calendar_weekday_sunday_today" = "Sondag is die sewende dag van die week. Môre begin 'n nuwe week.";
 "calendar_weekday_thursday" = "Die week het sewe dae en Donderdag is die vierde dag van die week.";
@@ -155,6 +155,7 @@ Kyk wat jy gaan dra!";
 "garment_rainPants" = "Reënbroek";
 "garment_rainPants_description" = "Reën broek";
 "garment_shoes" = "Skoene";
+"garment_shoes_description" = "Skoene";
 "garment_sweater" = "Warm trui";
 "garment_sweater_description" = "Warm trui";
 "garment_winterBoots" = "Skoene";

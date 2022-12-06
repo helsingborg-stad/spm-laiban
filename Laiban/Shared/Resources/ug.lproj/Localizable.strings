@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "جۈمە ھەپتىنىڭ بەشىنچى كۈنىدۇر. ئەتىسى شەنبە، ئاندىن يەكشەنبە. شۇنىڭدىن كېيىن يېڭى بىر ھەپتە باشلىنىدۇ.";
 "calendar_weekday_friday_today" = "جۈمە ھەپتىنىڭ بەشىنچى كۈنىدۇر. ئەتە شەنبە، ئاندىن يەكشەنبە. شۇنىڭدىن كېيىن يېڭى بىر ھەپتە باشلىنىدۇ.";
 "calendar_weekday_monday" = "ھەپتىنىڭ يەتتە كۈنى، دۈشەنبە ھەپتىنىڭ بىرىنچى كۈنىدۇر.";
-"calendar_weekday_saturday" = "شەنبە ھەپتىنىڭ ئالتىنچى كۈنىدۇر. بىز بۈگۈن ئىشتىن چۈشتۇق.";
+"calendar_weekday_saturday" = "شەنبە ھەپتىنىڭ ئالتىنچى كۈنىدۇر.";
 "calendar_weekday_sunday" = "يەكشەنبە ھەپتىنىڭ يەتتىنچى كۈنىدۇر. ئەتىسى يېڭى بىر ھەپتە باشلىنىدۇ.";
 "calendar_weekday_sunday_today" = "يەكشەنبە ھەپتىنىڭ يەتتىنچى كۈنىدۇر. ئەتە يېڭى بىر ھەپتە باشلىنىدۇ.";
 "calendar_weekday_thursday" = "ھەپتىنىڭ 7 كۈنى ۋە پەيشەنبە كۈنى ھەپتىنىڭ تۆتىنچى كۈنى بولىدۇ.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "يامغۇرلۇق ئىشتان";
 "garment_rainPants_description" = "يامغۇرلۇق ئىشتان";
 "garment_shoes" = "ئاياغ";
+"garment_shoes_description" = "ئاياغ";
 "garment_sweater" = "ئىلمان پوپايكا";
 "garment_sweater_description" = "ئىلمان پوپايكا";
 "garment_winterBoots" = "ئاياغ";

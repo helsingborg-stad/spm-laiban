@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Dydd Gwener yw pumed diwrnod yr wythnos. Y diwrnod wedyn mae'n ddydd Sadwrn ac yna dydd Sul. Ar ôl hynny, mae wythnos newydd yn dechrau.";
 "calendar_weekday_friday_today" = "Dydd Gwener yw pumed diwrnod yr wythnos. Yfory yw dydd Sadwrn ac yna dydd Sul. Ar ôl hynny, mae wythnos newydd yn dechrau.";
 "calendar_weekday_monday" = "Mae gan yr wythnos saith diwrnod a dydd Llun yw diwrnod cyntaf yr wythnos.";
-"calendar_weekday_saturday" = "Dydd Sadwrn yw chweched diwrnod yr wythnos. Rydyn ni i ffwrdd y diwrnod hwn.";
+"calendar_weekday_saturday" = "Dydd Sadwrn yw chweched diwrnod yr wythnos.";
 "calendar_weekday_sunday" = "Dydd Sul yw seithfed diwrnod yr wythnos. Mae'r diwrnod wedyn yn dechrau wythnos newydd.";
 "calendar_weekday_sunday_today" = "Dydd Sul yw seithfed diwrnod yr wythnos. Mae yfory'n dechrau wythnos newydd.";
 "calendar_weekday_thursday" = "Mae gan yr wythnos saith diwrnod a dydd Iau yw pedwerydd diwrnod yr wythnos.";
@@ -155,6 +155,7 @@ Edrychwch beth rydych chi'n mynd i'w wisgo!";
 "garment_rainPants" = "Pantiau glaw";
 "garment_rainPants_description" = "Pantsh glaw";
 "garment_shoes" = "Esgidiau";
+"garment_shoes_description" = "Esgidiau";
 "garment_sweater" = "Chwyslys cynnes";
 "garment_sweater_description" = "Chwysir cynnes";
 "garment_winterBoots" = "Esgidiau";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Divendres és el cinquè dia de la setmana. L'endemà és dissabte i després diumenge. Després d'això, comença una nova setmana.";
 "calendar_weekday_friday_today" = "Divendres és el cinquè dia de la setmana. Demà és dissabte i després diumenge. Després d'això, comença una nova setmana.";
 "calendar_weekday_monday" = "La setmana té set dies i dilluns és el primer dia de la setmana.";
-"calendar_weekday_saturday" = "Dissabte és el sisè dia de la setmana. Estem fora d'aquest dia.";
+"calendar_weekday_saturday" = "Dissabte és el sisè dia de la setmana.";
 "calendar_weekday_sunday" = "El diumenge és el setè dia de la setmana. L'endemà comença una nova setmana.";
 "calendar_weekday_sunday_today" = "El diumenge és el setè dia de la setmana. Demà comença una nova setmana.";
 "calendar_weekday_thursday" = "La setmana té set dies i dijous és el quart dia de la setmana.";
@@ -155,6 +155,7 @@ Mira el que vas a portar!";
 "garment_rainPants" = "Pantalons de pluja";
 "garment_rainPants_description" = "Pantalons de pluja";
 "garment_shoes" = "Sabates";
+"garment_shoes_description" = "Sabates";
 "garment_sweater" = "Jersei calent";
 "garment_sweater_description" = "Jersei calent";
 "garment_winterBoots" = "Sabates";

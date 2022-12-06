@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "El viernes es el quinto día de la semana. Al día siguiente es sábado y luego domingo. Después de eso, comienza una nueva semana.";
 "calendar_weekday_friday_today" = "El viernes es el quinto día de la semana. Mañana es sábado y luego domingo. Después de eso, comienza una nueva semana.";
 "calendar_weekday_monday" = "La semana tiene siete días y el lunes es el primer día de la semana.";
-"calendar_weekday_saturday" = "El sábado es el sexto día de la semana. Estamos fuera este día.";
+"calendar_weekday_saturday" = "El sábado es el sexto día de la semana.";
 "calendar_weekday_sunday" = "El domingo es el séptimo día de la semana. Al día siguiente comienza una nueva semana.";
 "calendar_weekday_sunday_today" = "El domingo es el séptimo día de la semana. Mañana comienza una nueva semana.";
 "calendar_weekday_thursday" = "La semana tiene siete días y el jueves es el cuarto día de la semana.";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Ko te Paraire te rima o nga rā o te wiki. A tērā rā ko te Hātarei, a, ko te Rātapu. I muri iho i tēnā, ka tīmata te wiki hou.";
 "calendar_weekday_friday_today" = "Ko te Paraire te rima o nga rā o te wiki. Āpōpō ko te Hātarei, a, ko te Rātapu. I muri iho i tēnā, ka tīmata te wiki hou.";
 "calendar_weekday_monday" = "E whitu nga rā o te wiki, a, ko te Mane te rā tuatahi o te wiki.";
-"calendar_weekday_saturday" = "Ko te Hātarei te ono o nga rā o te wiki. Kua weto mātau i tēnei rā.";
+"calendar_weekday_saturday" = "Ko te Hātarei te ono o nga rā o te wiki.";
 "calendar_weekday_sunday" = "Ko te Rātapu te whitu o nga rā o te wiki. A tērā rā ka tīmata i tētahi wiki hou.";
 "calendar_weekday_sunday_today" = "Ko te Rātapu te whitu o nga rā o te wiki. Āpōpō ka tīmata i tētahi wiki hou.";
 "calendar_weekday_thursday" = "E whitu nga rā o te wiki, a, ko te Tāite te whā o nga rā o te wiki.";
@@ -155,6 +155,7 @@ Titiro ki tāu e mau ai!";
 "garment_rainPants" = "tarau marangai";
 "garment_rainPants_description" = "tarau marangai";
 "garment_shoes" = "Ngā Shoes";
+"garment_shoes_description" = "Ngā Shoes";
 "garment_sweater" = "Pūngākau mahana";
 "garment_sweater_description" = "Pūngākau mahana";
 "garment_winterBoots" = "Ngā Shoes";

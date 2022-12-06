@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "fríggjadagin er fimti dagurin í vikuni. Dagin eftir er tað leygardagin og síðani sunnudag. Eftir tað byrjar ein nýggj vika.";
 "calendar_weekday_friday_today" = "fríggjadagin er fimti dagurin í vikuni. Í morgin er leygardagin og síðani sunnudag. Eftir tað byrjar ein nýggj vika.";
 "calendar_weekday_monday" = "Vikan hevur sjey dagar og mánadagin er fyrsti dagur í vikuni.";
-"calendar_weekday_saturday" = "leygardagin er seks ára gamal dagur í vikuni. Vit hava frí hendan dagin.";
+"calendar_weekday_saturday" = "leygardagin er seks ára gamal dagur í vikuni.";
 "calendar_weekday_sunday" = "Sunnudagin er sjeynda dagur í vikuni. Dagin eftir byrjar eina nýggja viku.";
 "calendar_weekday_sunday_today" = "Sunnudagin er sjeynda dagur í vikuni. Í morgin byrjar eina nýggja viku.";
 "calendar_weekday_thursday" = "Vikan hevur sjey dagar og hósdagur er fjórða dagur í vikuni.";
@@ -155,6 +155,7 @@ Hygg hvat tú fert í!";
 "garment_rainPants" = "Regn buksur.";
 "garment_rainPants_description" = "Regn buksur";
 "garment_shoes" = "Shoes";
+"garment_shoes_description" = "Shoes";
 "garment_sweater" = "Warm troyggju";
 "garment_sweater_description" = "Warm troyggju";
 "garment_winterBoots" = "Shoes";

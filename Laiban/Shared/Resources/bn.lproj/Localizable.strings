@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "শুক্রবার সপ্তাহের পঞ্চম দিন। পরের দিন শনি ও পরে রবিবার। এরপর শুরু হয় নতুন এক সপ্তাহ।";
 "calendar_weekday_friday_today" = "শুক্রবার সপ্তাহের পঞ্চম দিন। আগামীকাল শনিবার, তারপর রবিবার। এরপর শুরু হয় নতুন এক সপ্তাহ।";
 "calendar_weekday_monday" = "সপ্তাহে সাত দিন এবং সোমবার সপ্তাহের প্রথম দিন।";
-"calendar_weekday_saturday" = "শনিবার সপ্তাহের ষষ্ঠ দিন। আমরা এই দিনটা বন্ধ করে দিয়েছি।";
+"calendar_weekday_saturday" = "শনিবার সপ্তাহের ষষ্ঠ দিন।";
 "calendar_weekday_sunday" = "রবিবার সপ্তাহের সপ্তম দিন। পরের দিন শুরু হয় নতুন সপ্তাহ।";
 "calendar_weekday_sunday_today" = "রবিবার সপ্তাহের সপ্তম দিন। আগামীকাল থেকে শুরু হচ্ছে নতুন এক সপ্তাহ।";
 "calendar_weekday_thursday" = "সপ্তাহে সাত দিন এবং বৃহস্পতিবার সপ্তাহের চতুর্থ দিন।";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "বৃষ্টি প্যান্ট";
 "garment_rainPants_description" = "বৃষ্টি প্যান্ট";
 "garment_shoes" = "জুতা";
+"garment_shoes_description" = "জুতা";
 "garment_sweater" = "গরম সোয়েটার";
 "garment_sweater_description" = "গরম সোয়েটার";
 "garment_winterBoots" = "জুতা";

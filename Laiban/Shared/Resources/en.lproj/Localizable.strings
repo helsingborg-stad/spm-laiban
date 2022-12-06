@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Friday is the fifth day of the week. The next day it's Saturday and then Sunday. After that, a new week begins.";
 "calendar_weekday_friday_today" = "Friday is the fifth day of the week. Tomorrow is Saturday and then Sunday. After that, a new week begins.";
 "calendar_weekday_monday" = "The week has seven days and Monday is the first day of the week.";
-"calendar_weekday_saturday" = "Saturday is the sixth day of the week. We're off this day.";
+"calendar_weekday_saturday" = "Saturday is the sixth day of the week.";
 "calendar_weekday_sunday" = "Sunday is the seventh day of the week. The next day begins a new week.";
 "calendar_weekday_sunday_today" = "Sunday is the seventh day of the week. Tomorrow begins a new week.";
 "calendar_weekday_thursday" = "The week has seven days and Thursday is the fourth day of the week.";

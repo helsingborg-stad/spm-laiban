@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "አርብ የሳምንቱ ፭ኛው ቀን ነው። በሚቀጥለው ቀን ቅዳሜ ከዚያም እሁድ ነው። ከዚያ በኋላ አዲስ ሳምንት ይጀምራል።";
 "calendar_weekday_friday_today" = "አርብ የሳምንቱ ፭ኛው ቀን ነው። ነገ ቅዳሜ ከዚያም እሁድ ነው። ከዚያ በኋላ አዲስ ሳምንት ይጀምራል።";
 "calendar_weekday_monday" = "ሰሞኑን ሰባት ቀን እና ሰኞ የሳምንቱ የመጀመሪያ ቀን ነው።";
-"calendar_weekday_saturday" = "ቅዳሜ የሳምንቱ ስድስተኛ ቀን ነው። ዛሬ እረፍት አለን።";
+"calendar_weekday_saturday" = "ቅዳሜ የሳምንቱ ስድስተኛ ቀን ነው።";
 "calendar_weekday_sunday" = "እሁድ የሳምንቱ ሰባተኛ ቀን ነው። በሚቀጥለው ቀን አዲስ ሳምንት ይጀምራል ።";
 "calendar_weekday_sunday_today" = "እሁድ የሳምንቱ ሰባተኛ ቀን ነው። ነገ አዲስ ሳምንት ይጀምራል።";
 "calendar_weekday_thursday" = "ሳምንቱ ሰባት ቀን እና ሐሙስ የሳምንቱ አራተኛ ቀን ነው።";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "የዝናብ ሱሪ";
 "garment_rainPants_description" = "የዝናብ ሱሪ";
 "garment_shoes" = "ጫማ";
+"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ሞቅ ያለ ሹራብ";
 "garment_sweater_description" = "ሞቅ ያለ ሹራብ";
 "garment_winterBoots" = "ጫማ";

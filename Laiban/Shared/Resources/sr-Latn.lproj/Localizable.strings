@@ -10,10 +10,10 @@
 "activities_participants_future" = "da učestvujem";
 "activities_participants_past" = "Učestvovao";
 "activities_title" = "Ovo ćemo da uradimo danas!";
+"activity_today" = "Danas %@";
 "are_you_ready" = "Da li si spreman?";
 "ask_teacher" = "Pitaj učitelja";
 "calendar_event" = "Na ovaj %@";
-"calendar_event_today" = "Danas %@";
 "calendar_free_day" = "Na ovaj dan smo slobodni.";
 "calendar_free_day_after" = "Sledećeg dana nismo na dužnosti.";
 "calendar_free_tomorrow" = "Sutra smo slobodni.";
@@ -21,7 +21,7 @@
 "calendar_weekday_friday" = "Petak je peti dan u nedelji. Sledećeg dana je subota, a onda nedelja. Posle toga počinje nova nedelja.";
 "calendar_weekday_friday_today" = "Petak je peti dan u nedelji. Sutra je subota, a onda nedelja. Posle toga počinje nova nedelja.";
 "calendar_weekday_monday" = "Sedmica ima sedam dana, a ponedeljak je prvi dan u nedelji.";
-"calendar_weekday_saturday" = "Subota je šesti dan u nedelji. Danas smo slobodan.";
+"calendar_weekday_saturday" = "Subota je šesti dan u nedelji.";
 "calendar_weekday_sunday" = "Nedelja je sedmi dan u nedelji. Sledećeg dana počinje nova nedelja.";
 "calendar_weekday_sunday_today" = "Nedelja je sedmi dan u nedelji. Sutra počinje nova nedelja.";
 "calendar_weekday_thursday" = "Sedmica ima sedam dana, a četvrtak četvrti dan u nedelji.";
@@ -42,8 +42,8 @@
 "clock_time_8" = "Osam";
 "clock_time_9" = "Devet";
 "clock_time_description_0600_to_0730" = "Sada je jutro i negde u ovo vreme doručkujemo.";
-"clock_time_description_0730_to_0830" = "Sada je jutro.";
 "clock_time_description_0830_to_0900" = "Negde u ovo vreme jedemo voжe.";
+"clock_time_description_0900_to_1045" = "Sada je jutro.";
 "clock_time_description_1045_to_1230" = "Sada je podne i vreme ručka.";
 "clock_time_description_1230_to_1400" = "Sada je popodne.";
 "clock_time_description_1400_to_1500" = "Sada je popodne i negde u ovo vreme jedemo grickalice.";
@@ -132,18 +132,18 @@ Vidi šta ćeš da obučeš!";
 "garment_beanie" = "Beanie";
 "garment_cap" = "Kapetane";
 "garment_jacket_description" = "Jaknu";
-"garment_mittens_description" = "Rukavico";
+"garment_mittens" = "Rukavico";
 "garment_neckWear" = "Rolka ili šal";
 "garment_neckWear_description" = "Šal ili rolka";
-"garment_pulloverPants_description" = "Naslovna Pantalone";
-"garment_rainBoots" = "Иizme";
+"garment_pulloverPants" = "Naslovna Pantalone";
+"garment_rainBoots_description" = "Иizme";
 "garment_rainCoat" = "Kišna jakna";
-"garment_rainGloves" = "Kišne rukavice";
-"garment_rainPants_description" = "Kišne pantalone";
+"garment_rainGloves_description" = "Kišne rukavice";
+"garment_rainPants" = "Kišne pantalone";
 "garment_shoes" = "Cipele";
 "garment_sweater" = "Topao džemper";
 "garment_winterBoots_description" = "Zimske čizme";
-"garment_winterOutfit" = "Kombinezon ili jakna sa maskotama";
+"garment_winterOutfit_description" = "Kombinezon ili jakna sa maskotama";
 "home_feedback_acitivity_title" = "Da li ste učestvovali u aktivnosti?
 Kliknite ovde da biste nam rekli šta рeta рavole o tome!";
 "home_holiday" = "Sutra je %@. Ugodan vikend!";
@@ -191,10 +191,10 @@ To je odmah posle %@.";
 To je bilo odmah posle %@.";
 "tempus_child_arrives_before" = "%@ će stići u predškolsko oko %@.
 To je bilo pre %@.";
-"tempus_child_arrives_before_past" = "%@ je stigla u predškolsko oko %@.
-To je bilo neposredno pre %@.";
 "tempus_child_arrives_during" = "%@ će stići u predškolsko oko %@.
 To je tokom %@.";
+"tempus_child_arrives_during_past" = "%@ je stigla u predškolsko oko %@.
+To je bilo neposredno pre %@.";
 "tempus_child_arrives_past" = "%@ je stigla u predškolsko oko %@";
 "tempus_child_has_left" = "%@ izgleda da je otiљao kuжi za danas.";
 "tempus_child_has_left_returns_in_days" = "%@ da je otiљao kuжi na jedan dan, ali bi trebalo da se vrati %@ dana.";

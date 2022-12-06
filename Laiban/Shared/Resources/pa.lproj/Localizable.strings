@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "ਸ਼ੁੱਕਰਵਾਰ ਨੂੰ ਹਫਤੇ ਦਾ ਪੰਜਵਾਂ ਦਿਨ ਹੁੰਦਾ ਹੈ। ਅਗਲੇ ਦਿਨ ਸ਼ਨੀਵਾਰ ਅਤੇ ਫਿਰ ਐਤਵਾਰ ਹੈ। ਇਸ ਤੋਂ ਬਾਅਦ, ਇੱਕ ਨਵਾਂ ਹਫ਼ਤਾ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ.";
 "calendar_weekday_friday_today" = "ਸ਼ੁੱਕਰਵਾਰ ਨੂੰ ਹਫਤੇ ਦਾ ਪੰਜਵਾਂ ਦਿਨ ਹੁੰਦਾ ਹੈ। ਕੱਲ੍ਹ ਸ਼ਨੀਵਾਰ ਹੈ ਅਤੇ ਫਿਰ ਐਤਵਾਰ ਹੈ। ਇਸ ਤੋਂ ਬਾਅਦ, ਇੱਕ ਨਵਾਂ ਹਫ਼ਤਾ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ.";
 "calendar_weekday_monday" = "ਹਫਤੇ ਵਿੱਚ ਸੱਤ ਦਿਨ ਹੁੰਦੇ ਹਨ ਅਤੇ ਸੋਮਵਾਰ ਹਫਤੇ ਦਾ ਪਹਿਲਾ ਦਿਨ ਹੁੰਦਾ ਹੈ।";
-"calendar_weekday_saturday" = "ਸ਼ਨੀਵਾਰ ਹਫਤੇ ਦਾ ਛੇਵਾਂ ਦਿਨ ਹੈ. ਅਸੀਂ ਇਸ ਦਿਨ ਛੁੱਟੀ 'ਤੇ ਹਾਂ।";
+"calendar_weekday_saturday" = "ਸ਼ਨੀਵਾਰ ਹਫਤੇ ਦਾ ਛੇਵਾਂ ਦਿਨ ਹੈ.";
 "calendar_weekday_sunday" = "ਐਤਵਾਰ ਨੂੰ ਹਫ਼ਤੇ ਦਾ ਸੱਤਵਾਂ ਦਿਨ ਹੁੰਦਾ ਹੈ। ਅਗਲੇ ਦਿਨ ਇੱਕ ਨਵਾਂ ਹਫ਼ਤਾ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।";
 "calendar_weekday_sunday_today" = "ਐਤਵਾਰ ਨੂੰ ਹਫ਼ਤੇ ਦਾ ਸੱਤਵਾਂ ਦਿਨ ਹੁੰਦਾ ਹੈ। ਕੱਲ੍ਹ ਇੱਕ ਨਵਾਂ ਹਫ਼ਤਾ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ।";
 "calendar_weekday_thursday" = "ਹਫਤੇ ਵਿੱਚ ਸੱਤ ਦਿਨ ਹੁੰਦੇ ਹਨ ਅਤੇ ਵੀਰਵਾਰ ਹਫਤੇ ਦਾ ਚੌਥਾ ਦਿਨ ਹੁੰਦਾ ਹੈ।";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "ਪੈਂਟਾਂ ਮੀਂਹ";
 "garment_rainPants_description" = "ਪੈਂਟਾਂ ਮੀਂਹ";
 "garment_shoes" = "ਜੁੱਤੇ";
+"garment_shoes_description" = "ਜੁੱਤੇ";
 "garment_sweater" = "ਗਰਮ ਸਵੈਟਰ";
 "garment_sweater_description" = "ਗਰਮ ਸਵੈਟਰ";
 "garment_winterBoots" = "ਜੁੱਤੇ";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "శుక్రవారం వారంలో ఐదవ రోజు. మరుసటి రోజు శనివారం మరియు తరువాత ఆదివారం. ఆ తర్వాత కొత్త వారం మొదలవుతుంది.";
 "calendar_weekday_friday_today" = "శుక్రవారం వారంలో ఐదవ రోజు. రేపు శనివారం మరియు తరువాత ఆదివారం. ఆ తర్వాత కొత్త వారం మొదలవుతుంది.";
 "calendar_weekday_monday" = "వారానికి ఏడు రోజులు ఉంటాయి మరియు సోమవారం వారంలో మొదటి రోజు.";
-"calendar_weekday_saturday" = "శనివారము వారములో ఆరవ రోజు. మేము ఈ రోజు బయలుదేరాము.";
+"calendar_weekday_saturday" = "శనివారము వారములో ఆరవ రోజు.";
 "calendar_weekday_sunday" = "ఆదివారము వారములో ఏడవ రోజు. మరుసటి రోజు కొత్త వారం ప్రారంభమవుతుంది.";
 "calendar_weekday_sunday_today" = "ఆదివారము వారములో ఏడవ రోజు. రేపు కొత్త వారం మొదలవుతుంది.";
 "calendar_weekday_thursday" = "వారానికి ఏడు రోజులు మరియు గురువారం వారంలో నాల్గవ రోజు.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "రెయిన్ ప్యాంటు";
 "garment_rainPants_description" = "రెయిన్ ప్యాంట్లు";
 "garment_shoes" = "బూట్లు";
+"garment_shoes_description" = "బూట్లు";
 "garment_sweater" = "వెచ్చని స్వెటర్";
 "garment_sweater_description" = "వెచ్చని స్వెటర్";
 "garment_winterBoots" = "బూట్లు";

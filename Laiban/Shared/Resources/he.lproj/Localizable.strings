@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "יום שישי הוא היום החמישי בשבוע. למחרת זה יום שבת ואז יום ראשון. לאחר מכן, שבוע חדש מתחיל.";
 "calendar_weekday_friday_today" = "יום שישי הוא היום החמישי בשבוע. מחר שבת ואז יום ראשון. לאחר מכן, שבוע חדש מתחיל.";
 "calendar_weekday_monday" = "בשבוע יש שבעה ימים ויום שני הוא היום הראשון בשבוע.";
-"calendar_weekday_saturday" = "יום שבת הוא היום השישי בשבוע. אנחנו יוצאים מהיום הזה.";
+"calendar_weekday_saturday" = "יום שבת הוא היום השישי בשבוע.";
 "calendar_weekday_sunday" = "יום ראשון הוא היום השביעי בשבוע. למחרת מתחיל שבוע חדש.";
 "calendar_weekday_sunday_today" = "יום ראשון הוא היום השביעי בשבוע. מחר מתחיל שבוע חדש.";
 "calendar_weekday_thursday" = "השבוע כולל שבעה ימים ויום חמישי הוא היום הרביעי בשבוע.";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "מכנסי גשם";
 "garment_rainPants_description" = "מכנסי גשם";
 "garment_shoes" = "נעליים";
+"garment_shoes_description" = "נעליים";
 "garment_sweater" = "סוודר חם";
 "garment_sweater_description" = "סוודר חם";
 "garment_winterBoots" = "נעליים";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Ուրբաթը շաբաթվա հինգերորդ օրն է: Հաջորդ օրը շաբաթ է, իսկ հետո՝ կիրակի: Դրանից հետո սկսվում է նոր շաբաթ:";
 "calendar_weekday_friday_today" = "Ուրբաթը շաբաթվա հինգերորդ օրն է: Վաղը շաբաթ է, հետո՝ կիրակի։ Դրանից հետո սկսվում է նոր շաբաթ:";
 "calendar_weekday_monday" = "Շաբաթն ունի յոթ օր, իսկ երկուշաբթին շաբաթվա առաջին օրն է:";
-"calendar_weekday_saturday" = "Շաբաթը շաբաթվա վեցերորդ օրն է: Այս օրն ենք մենք ելել:";
+"calendar_weekday_saturday" = "Շաբաթը շաբաթվա վեցերորդ օրն է:";
 "calendar_weekday_sunday" = "Կիրակին շաբաթվա յոթերորդ օրն է: Հաջորդ օրը սկսվում է նոր շաբաթ:";
 "calendar_weekday_sunday_today" = "Կիրակին շաբաթվա յոթերորդ օրն է: Վաղը նոր շաբաթ է սկսվում.";
 "calendar_weekday_thursday" = "Շաբաթն ունի յոթ օր, իսկ հինգշաբթին՝ շաբաթվա չորրորդ օրը:";
@@ -155,6 +155,7 @@
 "garment_rainPants" = "Անձրեւային վարտիքներ";
 "garment_rainPants_description" = "Անձրեւային վարտիքներ";
 "garment_shoes" = "Կոշիկ";
+"garment_shoes_description" = "Կոշիկ";
 "garment_sweater" = "Տաք սվիտեր";
 "garment_sweater_description" = "Տաք սվիտեր";
 "garment_winterBoots" = "Կոշիկ";

@@ -22,7 +22,7 @@
 "calendar_weekday_friday" = "Pjatk je pjaty dźeń tydźenja. Na druhi dźeń je sobotu a potom njedźelu. Po tym započnje so nowy tydźeń.";
 "calendar_weekday_friday_today" = "Pjatk je pjaty dźeń tydźenja. Jutře je sobotu a potom njedźela. Po tym započnje so nowy tydźeń.";
 "calendar_weekday_monday" = "Tydźeń ma sydom dnjow a póndźelu je prěni dźeń tydźenja.";
-"calendar_weekday_saturday" = "Sobotu je šesty dźeń tydźenja. Mamy tutón dźeń swobodne.";
+"calendar_weekday_saturday" = "Sobotu je šesty dźeń tydźenja.";
 "calendar_weekday_sunday" = "Njedźelu je sedmy dźeń tydźenja. Na druhi dźeń započnje so nowy tydźeń.";
 "calendar_weekday_sunday_today" = "Njedźelu je sedmy dźeń tydźenja. Jutře započnje so nowy tydźeń.";
 "calendar_weekday_thursday" = "Tydźeń ma sydom dnjow a štwórtk je štwórty dźeń tydźenja.";
@@ -155,6 +155,7 @@ Hladaj, što budźeš so woblěkać!";
 "garment_rainPants" = "Regenhose";
 "garment_rainPants_description" = "Regenhose";
 "garment_shoes" = "Črije";
+"garment_shoes_description" = "Črije";
 "garment_sweater" = "Ćopły pulower";
 "garment_sweater_description" = "Ćopły pulower";
 "garment_winterBoots" = "Črije";
@@ -194,7 +195,7 @@ Klikńće tu, zo byšće nam prajili, što wo tym dźeržiće!";
 "public_calendar_celebration_today" = "Dźensa swjećimy %@";
 "public_calendar_respect" = "Na tutym dnju dźiwamy na %@";
 "recreation_nothing_to_do" = "Wy nimaće ničo činić?";
-"schedule_date_format" = "EEE "die" d MMMM";
+"schedule_date_format" = "EEE 'die' d MMMM";
 "singalong_repeat" = "Chceće Wy zaso spěwać?";
 "singalong_started" = "Spěwajmy so!
 Sy ty tak daloko?";
