@@ -206,12 +206,10 @@ public class RecreationService: CTS<RecreationServiceType,RecreationStorageServi
     
     func deleteActivity(at offsets: IndexSet) {
         data[0].activities.remove(atOffsets: offsets)
-        
         Task {
             await self.save()
         }
     }
-    
     
     
     // MANAGE ITEMS

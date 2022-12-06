@@ -30,6 +30,8 @@ struct AdminRecreationInventoryItemView: View {
     @State var emoji:String
     @State var isActive:Bool
     
+    @State var didDeleteItem:Bool = false
+    
     var onUpdate: (Recreation.Inventory.Item,InventoryType) -> Void
     var onDelete: (Recreation.Inventory.Item,InventoryType) -> Void
     init(bi:Binding<Recreation.Inventory.Item>, inventoryItem:Recreation.Inventory.Item?,type:InventoryType ,onUpdate: @escaping (Recreation.Inventory.Item, InventoryType) -> Void,onDelete: @escaping (Recreation.Inventory.Item, InventoryType) -> Void) {
@@ -46,7 +48,6 @@ struct AdminRecreationInventoryItemView: View {
         self.onDelete = onDelete
         _binding_inventory_item = bi
     }
-    
     
     var ImagePicker: some View {
         Section{
@@ -180,6 +181,7 @@ struct AdminRecreationInventoryItemView: View {
                         message: Text("Vill du fortsätta?"),
                         primaryButton: .destructive(Text("Ja, radera föremål/objekt.")) {
                             
+                            self.didDeleteItem = true
                             self.onDelete(self.item,self.type)
                             presentationMode.wrappedValue.dismiss()
                         },
@@ -192,10 +194,12 @@ struct AdminRecreationInventoryItemView: View {
             i.isActive = isActive
             i.name = name
             i.emoji = emoji
-            if item == i || i.name == ""{
+            if item == i || i.name == "" || didDeleteItem
+            {
                 return
             }
             binding_inventory_item = i
+            
             self.onUpdate(i,type)
         }
     }
