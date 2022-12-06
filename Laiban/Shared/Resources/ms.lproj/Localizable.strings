@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Keesokan harinya kami tidak bertugas.";
 "calendar_free_tomorrow" = "Esok kita bebas.";
 "calendar_title_date" = "Hari ini %@";
-"calendar_weekday_friday" = "Jumaat adalah hari kelima dalam seminggu. Keesokan harinya ia adalah hari Sabtu dan kemudian Ahad datang, dua hari kita bebas. Selepas itu, minggu baru bermula.";
-"calendar_weekday_friday_today" = "Jumaat adalah hari kelima dalam seminggu. Esok adalah hari Sabtu dan kemudian Ahad, dua hari kita bebas. Selepas itu, minggu baru bermula.";
+"calendar_weekday_friday" = "Jumaat adalah hari kelima dalam seminggu. Keesokan harinya ialah Sabtu dan kemudian Ahad. Selepas itu, minggu baru bermula.";
+"calendar_weekday_friday_today" = "Jumaat adalah hari kelima dalam seminggu. Esok adalah hari Sabtu dan kemudian Ahad. Selepas itu, minggu baru bermula.";
 "calendar_weekday_monday" = "Minggu ini mempunyai tujuh hari dan Isnin adalah hari pertama dalam seminggu.";
-"calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu. Kami cuti hari ini.";
-"calendar_weekday_sunday" = "Ahad adalah hari ketujuh dalam seminggu. Kami cuti hari ini. Keesokan harinya bermula minggu baru.";
-"calendar_weekday_sunday_today" = "Ahad adalah hari ketujuh dalam seminggu. Kami cuti hari ini. Esok bermula minggu baru.";
+"calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu. Kami mati hari ini.";
+"calendar_weekday_sunday" = "Ahad adalah hari ketujuh dalam seminggu. Keesokan harinya memulakan minggu baru.";
+"calendar_weekday_sunday_today" = "Ahad adalah hari ketujuh dalam seminggu. Esok bermula minggu baru.";
 "calendar_weekday_thursday" = "Minggu ini mempunyai tujuh hari dan Khamis adalah hari keempat dalam seminggu.";
 "calendar_weekday_tuesday" = "Minggu ini mempunyai tujuh hari dan Selasa adalah hari kedua dalam seminggu.";
 "calendar_weekday_wednesday" = "Minggu ini mempunyai tujuh hari dan Rabu adalah hari ketiga dalam seminggu.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Adakah anda ingin tahu bila anda akan dijemput hari ini dan rakan-rakan mana yang ada di sini? Klik di sini!";
 "clock_time_1" = "A";
 "clock_time_10" = "Sepuluh";
-"clock_time_11" = "Sebelas";
+"clock_time_11" = "Dua belas";
 "clock_time_12" = "Dua belas";
 "clock_time_2" = "Dua";
 "clock_time_3" = "Tiga";
@@ -46,11 +46,11 @@
 "clock_time_description_0600_to_0730" = "Sekarang pagi dan sekitar masa ini kita makan sarapan pagi.";
 "clock_time_description_0730_to_0830" = "Sekarang pagi.";
 "clock_time_description_0830_to_0900" = "Sekitar masa ini kita makan buah.";
-"clock_time_description_0900_to_1045" = "Sekarang pagi.";
+"clock_time_description_0900_to_1045" = "Sekarang sudah pagi.";
 "clock_time_description_1045_to_1230" = "Sekarang tengah hari dan waktu makan tengah hari.";
 "clock_time_description_1230_to_1400" = "Sekarang tengah hari.";
 "clock_time_description_1400_to_1500" = "Sekarang petang dan sekitar masa ini kita makan makanan ringan.";
-"clock_time_description_1500_to_1630" = "Sekarang tengah hari.";
+"clock_time_description_1500_to_1630" = "Sekarang sudah petang.";
 "clock_time_description_1630_to_1800" = "Ia hampir malam.";
 "clock_time_description_1800_to_2000" = "Sekarang malam. Tidur baik-baik!";
 "clock_time_description_2000_to_0600" = "Sekarang malam.";
@@ -155,9 +155,8 @@ Lihatlah apa yang akan anda pakai!";
 "garment_rainPants" = "Seluar hujan";
 "garment_rainPants_description" = "Seluar hujan";
 "garment_shoes" = "Kasut";
-"garment_shoes_description" = "Kasut";
 "garment_sweater" = "Sweater hangat";
-"garment_sweater_description" = "Sweater hangat";
+"garment_sweater_description" = "Baju sejuk hangat";
 "garment_winterBoots" = "Kasut";
 "garment_winterBoots_description" = "Kasut musim sejuk";
 "garment_winterOutfit" = "Pakaian atau jaket dengan seluar penutup";
@@ -213,7 +212,7 @@ Itu sebelum %@.";
 Itu sebelum %@.";
 "tempus_child_arrives_during" = "%@ akan tiba ke prasekolah pada kira-kira %@.
 Itu semasa %@.";
-"tempus_child_arrives_during_past" = "%@ tiba di prasekolah pada kira-kira %@.
+"tempus_child_arrives_during_past" = "%@ tiba ke prasekolah pada kira-kira %@.
 Itu sebelum %@.";
 "tempus_child_arrives_past" = "%@ tiba di prasekolah kira-kira pukul %@";
 "tempus_child_has_left" = "%@ nampaknya telah pulang ke rumah untuk hari itu.";

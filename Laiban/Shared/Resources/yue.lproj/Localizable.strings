@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "第二日我哋放工了。";
 "calendar_free_tomorrow" = "聽日我哋就自由了。";
 "calendar_title_date" = "呢一日係 %@";
-"calendar_weekday_friday" = "星期五係一周嘅第五天。 第二日係禮拜六，然後星期日咗嚟，我哋空閒咗兩日。 之後，新嘅一周開始了。";
-"calendar_weekday_friday_today" = "星期五係一周嘅第五天。 聽日係禮拜六，然後係星期日，呢兩日我哋得閒。 之後，新嘅一周開始了。";
+"calendar_weekday_friday" = "星期五係一周嘅第五天。 第二日係禮拜六，然後係星期日。 之後，新嘅一周開始了。";
+"calendar_weekday_friday_today" = "星期五係一周嘅第五天。 聽日係禮拜六，然後係星期日。 之後，新嘅一周開始了。";
 "calendar_weekday_monday" = "一周有七天，星期一係一周嘅第一天。";
-"calendar_weekday_saturday" = "禮拜六係一周中嘅第六天。 我哋呢一日唔見咗。";
-"calendar_weekday_sunday" = "禮拜日係一周嘅第七天。 我哋呢一日唔見咗。 第二日開始咗新嘅一周。";
-"calendar_weekday_sunday_today" = "禮拜日係一周嘅第七天。 我哋呢一日唔見咗。 聽日開始咗新嘅一周。";
+"calendar_weekday_saturday" = "禮拜六係一周嘅第六天。 我哋今日休息咗。";
+"calendar_weekday_sunday" = "禮拜日係一周嘅第七天。 第二日開始新嘅一周。";
+"calendar_weekday_sunday_today" = "禮拜日係一周嘅第七天。 聽日開始新嘅一周。";
 "calendar_weekday_thursday" = "一周有七天，星期四係一周嘅第四天。";
 "calendar_weekday_tuesday" = "一周有七天，星期二係一周嘅第二日。";
 "calendar_weekday_wednesday" = "一周有七天，星期三係一周嘅第三天。";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "你想知你今日幾時會被接走，哪些朋友喺呢度？ 點擊呢度！";
 "clock_time_1" = "一個";
 "clock_time_10" = "十";
-"clock_time_11" = "十一";
+"clock_time_11" = "十二";
 "clock_time_12" = "十二";
 "clock_time_2" = "二";
 "clock_time_3" = "三";
@@ -145,7 +145,7 @@
 "garment_neckWear" = "樽領毛衣或頸巾";
 "garment_neckWear_description" = "頸巾或樽領毛衣";
 "garment_pulloverPants" = "套褲";
-"garment_pulloverPants_description" = "套褲";
+"garment_pulloverPants_description" = "罩褲";
 "garment_rainBoots" = "靴子";
 "garment_rainBoots_description" = "靴子";
 "garment_rainCoat" = "雨衣";
@@ -155,13 +155,12 @@
 "garment_rainPants" = "雨褲";
 "garment_rainPants_description" = "雨褲";
 "garment_shoes" = "鞋";
-"garment_shoes_description" = "鞋";
 "garment_sweater" = "保暖毛衣";
 "garment_sweater_description" = "保暖毛衣";
 "garment_winterBoots" = "鞋";
 "garment_winterBoots_description" = "冬季鞾子";
 "garment_winterOutfit" = "工作服或jacket配蓋褲";
-"garment_winterOutfit_description" = "工作服或jacket配蓋褲";
+"garment_winterOutfit_description" = "工作服或jacket配罩褲";
 "home_feedback_acitivity_title" = "你參加過活動嗎？
 點擊呢度話畀我哋您的想法！";
 "home_holiday" = "聽日係 %@。 周末愉快!";

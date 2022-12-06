@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Kitą dieną mes nedirbame.";
 "calendar_free_tomorrow" = "Rytoj būsime laisvi.";
 "calendar_title_date" = "Ši diena %@";
-"calendar_weekday_friday" = "Penktadienis yra penktoji savaitės diena. Kitą dieną ateina šeštadienis, o tada ateina sekmadienis, dvi dienos mes esame laisvi. Po to prasideda nauja savaitė.";
-"calendar_weekday_friday_today" = "Penktadienis yra penktoji savaitės diena. Rytoj yra šeštadienis, o tada sekmadienis, dvi dienos mes esame laisvi. Po to prasideda nauja savaitė.";
+"calendar_weekday_friday" = "Penktadienis yra penktoji savaitės diena. Kitą dieną – šeštadienis, o paskui sekmadienis. Po to prasideda nauja savaitė.";
+"calendar_weekday_friday_today" = "Penktadienis yra penktoji savaitės diena. Rytoj yra šeštadienis, o tada sekmadienis. Po to prasideda nauja savaitė.";
 "calendar_weekday_monday" = "Savaitė turi septynias dienas, o pirmadienis yra pirmoji savaitės diena.";
-"calendar_weekday_saturday" = "Šeštadienis yra šeštoji savaitės diena. Šią dieną nedirbame.";
-"calendar_weekday_sunday" = "Sekmadienis yra septintoji savaitės diena. Šią dieną nedirbame. Kitą dieną prasideda nauja savaitė.";
-"calendar_weekday_sunday_today" = "Sekmadienis yra septintoji savaitės diena. Šią dieną nedirbame. Rytoj prasideda nauja savaitė.";
+"calendar_weekday_saturday" = "Šeštadienis yra šeštoji savaitės diena. Šią dieną mes išvykome.";
+"calendar_weekday_sunday" = "Sekmadienis yra septintoji savaitės diena. Kitą dieną prasideda nauja savaitė.";
+"calendar_weekday_sunday_today" = "Sekmadienis yra septintoji savaitės diena. Rytoj prasideda nauja savaitė.";
 "calendar_weekday_thursday" = "Savaitė turi septynias dienas, o ketvirtadienis yra ketvirtoji savaitės diena.";
 "calendar_weekday_tuesday" = "Savaitė turi septynias dienas, o antradienis yra antroji savaitės diena.";
 "calendar_weekday_wednesday" = "Savaitė turi septynias dienas, o trečiadienis yra trečioji savaitės diena.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Ar norite sužinoti, kada šiandien būsite paimtas ir kokie draugai yra čia? Spauskite čia!";
 "clock_time_1" = "A";
 "clock_time_10" = "Dešimt";
-"clock_time_11" = "Vienuolika";
+"clock_time_11" = "Dvylika";
 "clock_time_12" = "Dvylika";
 "clock_time_2" = "Du";
 "clock_time_3" = "Trys";
@@ -155,13 +155,12 @@ Pažiūrėkite, ką ketinate dėvėti!";
 "garment_rainPants" = "Lietaus kelnės";
 "garment_rainPants_description" = "Lietaus kelnės";
 "garment_shoes" = "Batai";
-"garment_shoes_description" = "Batai";
 "garment_sweater" = "Šiltas megztinis";
 "garment_sweater_description" = "Šiltas megztinis";
 "garment_winterBoots" = "Batai";
 "garment_winterBoots_description" = "Žieminiai batai";
 "garment_winterOutfit" = "Kombinezonai arba striukė su dengiamosiomis kelnėmis";
-"garment_winterOutfit_description" = "Kombinezonai arba striukė su dengiamosiomis kelnėmis";
+"garment_winterOutfit_description" = "Kombinezonas arba striukė su dengiamosiomis kelnėmis";
 "home_feedback_acitivity_title" = "Ar dalyvavote veikloje?
 Spauskite čia norėdami papasakoti, ką apie tai galvojote!";
 "home_holiday" = "Rytojus yra %@. Gero savaitgalio!";
@@ -213,7 +212,7 @@ Tai prieš pat %@.";
 Tai buvo prieš pat %@.";
 "tempus_child_arrives_during" = "%@ į ikimokyklinio amžiaus įstaigą atvyks apie %@.
 Tai per %@.";
-"tempus_child_arrives_during_past" = "%@ į ikimokyklinio ugdymo įstaigą atvyko apie %@.
+"tempus_child_arrives_during_past" = "%@ atvyko į ikimokyklinio ugdymo įstaigą maždaug %@.
 Tai buvo prieš pat %@.";
 "tempus_child_arrives_past" = "%@ į ikimokyklinio ugdymo įstaigą atvyko apie %@";
 "tempus_child_has_left" = "atrodo, kad %@ dienai grįžo namo.";

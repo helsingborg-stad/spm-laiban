@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Maalintii xigtayna hawsha ayaa naga maqan.";
 "calendar_free_tomorrow" = "Berrina xor ayaan nahay.";
 "calendar_title_date" = "Maanta waa %@";
-"calendar_weekday_friday" = "Jimco waa maalinta shanaad ee toddobaadka. Maalintii xigtay waa Sabti, ka dibna Axadduna way imanaysaa, labadii maalmood ee xorta ahaa ayaan nahay. Markaas ka dib waxaa billowday isbuuc cusub.";
-"calendar_weekday_friday_today" = "Jimco waa maalinta shanaad ee toddobaadka. Berrito waa sabti, kaddibna Axad, labada maalmood ee aan xorkada nahay ayaanu nahay. Markaas ka dib waxaa billowday isbuuc cusub.";
+"calendar_weekday_friday" = "Jimco waa maalinta shanaad ee toddobaadka. Maalinta ku xigta waa Sabti, ka dibna Axadda. Markaas ka dib waxaa billowday isbuuc cusub.";
+"calendar_weekday_friday_today" = "Jimco waa maalinta shanaad ee toddobaadka. Berrito waa sabti, ka dibna Axadda. Markaas ka dib waxaa billowday isbuuc cusub.";
 "calendar_weekday_monday" = "Toddobaadku waa toddoba maalmood Isniinna waa maalinta koowaad ee toddobaadka.";
 "calendar_weekday_saturday" = "Sabti waa maalinta lixaad ee toddobaadka. Maanta waxaan joognaa fasax.";
-"calendar_weekday_sunday" = "Axad waa maalinta toddobaad ee toddobaad. Maanta waxaan joognaa fasax. Maalinta xigta waxay billowdaa toddobaad cusub.";
-"calendar_weekday_sunday_today" = "Axad waa maalinta toddobaad ee toddobaad. Maanta waxaan joognaa fasax. Berrito waxay billowdaa toddobaad cusub.";
+"calendar_weekday_sunday" = "Axad waa maalinta toddobaad ee toddobaad. Maalinta xigta waxay billowdaa toddobaad cusub.";
+"calendar_weekday_sunday_today" = "Axad waa maalinta toddobaad ee toddobaad. Berrito waxay billowdaa toddobaad cusub.";
 "calendar_weekday_thursday" = "Toddobaadku waa toddoba maalmood, Khamiisduna waa maalinta afraad ee usbuuca.";
 "calendar_weekday_tuesday" = "Toddobaadku waa toddoba maalmood, Talaadaduna waa maalinta labaad ee todobaadka.";
 "calendar_weekday_wednesday" = "Toddobaadku waa toddoba maalmood Arbacadana waa maalinta saddexaad ee usbuuca.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Ma rabtaa inaad ogaato goorta la idinka qaadi doono maanta iyo saaxiibbada ay halkan joogaan? Riix halkan!";
 "clock_time_1" = "A";
 "clock_time_10" = "tobann";
-"clock_time_11" = "kow iyo tobann";
+"clock_time_11" = "laba iyo toban";
 "clock_time_12" = "laba iyo toban";
 "clock_time_2" = "Laba";
 "clock_time_3" = "Seddex";

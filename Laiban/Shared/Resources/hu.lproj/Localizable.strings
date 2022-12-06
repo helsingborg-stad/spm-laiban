@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Másnap szolgálaton kívül vagyunk.";
 "calendar_free_tomorrow" = "Holnap szabadok leszünk.";
 "calendar_title_date" = "Ez a nap %@";
-"calendar_weekday_friday" = "Péntek a hét ötödik napja. Másnap szombat van, majd vasárnap jön, a két nap szabadok vagyunk. Ezután új hét kezdődik.";
-"calendar_weekday_friday_today" = "Péntek a hét ötödik napja. Holnap szombat, majd vasárnap lesz, az a két nap, amikor szabadok vagyunk. Ezután új hét kezdődik.";
+"calendar_weekday_friday" = "Péntek a hét ötödik napja. Másnap szombat, majd vasárnap van. Ezután új hét kezdődik.";
+"calendar_weekday_friday_today" = "Péntek a hét ötödik napja. Holnap szombat, majd vasárnap van. Ezután új hét kezdődik.";
 "calendar_weekday_monday" = "A hétnek hét napja van, és hétfő a hét első napja.";
-"calendar_weekday_saturday" = "A szombat a hét hatodik napja. Ezen a napon kint vagyunk.";
-"calendar_weekday_sunday" = "A vasárnap a hét hetedik napja. Ezen a napon kint vagyunk. Másnap új hét kezdődik.";
-"calendar_weekday_sunday_today" = "A vasárnap a hét hetedik napja. Ezen a napon kint vagyunk. Holnap kezdődik az új hét.";
+"calendar_weekday_saturday" = "Szombat a hét hatodik napja. Ma indulunk.";
+"calendar_weekday_sunday" = "Vasárnap a hét hetedik napja. A következő nap új hetet kezd.";
+"calendar_weekday_sunday_today" = "Vasárnap a hét hetedik napja. Holnap kezdődik egy új hét.";
 "calendar_weekday_thursday" = "A hétnek hét napja van, és a csütörtök a hét negyedik napja.";
 "calendar_weekday_tuesday" = "A hét hét napból áll, és a kedd a hét második napja.";
 "calendar_weekday_wednesday" = "A hét hét napból áll, és a szerda a hét harmadik napja.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Szeretnéd tudni, hogy mikor vesznek fel ma, és mely barátok vannak itt? Kattintson ide!";
 "clock_time_1" = "Egy";
 "clock_time_10" = "Tíz";
-"clock_time_11" = "Tizenegy";
+"clock_time_11" = "Tizenkettő";
 "clock_time_12" = "Tizenkettő";
 "clock_time_2" = "Kettő";
 "clock_time_3" = "Három";
@@ -155,7 +155,6 @@ Nézd meg, mit fogsz viselni!";
 "garment_rainPants" = "Esőnadrág";
 "garment_rainPants_description" = "Esőnadrág";
 "garment_shoes" = "Cipők";
-"garment_shoes_description" = "Cipők";
 "garment_sweater" = "Meleg pulóver";
 "garment_sweater_description" = "Meleg pulóver";
 "garment_winterBoots" = "Cipők";
@@ -213,8 +212,8 @@ Ez közvetlenül %@előtt van .";
 Ez közvetlenül %@előtt volt .";
 "tempus_child_arrives_during" = "%@ körülbelül %@-kor érkezik az óvodába .
 Ez a %@alatt van .";
-"tempus_child_arrives_during_past" = "%@ kb. %@-kor érkezett az óvodába .
-Ez közvetlenül %@előtt volt .";
+"tempus_child_arrives_during_past" = "%@ körülbelül %@érkezett az óvodába .
+Ez közvetlenül %@előtt volt.";
 "tempus_child_arrives_past" = "%@ körülbelül %@-kor érkezett az óvodába";
 "tempus_child_has_left" = "úgy tűnik, %@ hazament a napra.";
 "tempus_child_has_left_returns_in_days" = "úgy tűnik, hogy %@ hazament aznapra, de %@ napon belül újra vissza kell térnie.";

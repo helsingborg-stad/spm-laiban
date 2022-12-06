@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "اگلے دن ہم ڈیوٹی سے فارغ ہیں.";
 "calendar_free_tomorrow" = "کل ہم آزاد ہیں.";
 "calendar_title_date" = "یہ دن %@";
-"calendar_weekday_friday" = "جمعہ ہفتے کا پانچواں دن ہے۔ اگلے دن ہفتہ ہے اور پھر اتوار آتا ہے، دو دن ہم آزاد ہیں. اس کے بعد ایک نیا ہفتہ شروع ہوتا ہے۔";
-"calendar_weekday_friday_today" = "جمعہ ہفتے کا پانچواں دن ہے۔ کل ہفتہ اور پھر اتوار ہے، دو دن ہم آزاد ہیں. اس کے بعد ایک نیا ہفتہ شروع ہوتا ہے۔";
+"calendar_weekday_friday" = "جمعہ ہفتے کا پانچواں دن ہوتا ہے۔ اگلے دن یہ ہفتہ اور پھر اتوار ہے. اس کے بعد ایک نیا ہفتہ شروع ہوتا ہے۔";
+"calendar_weekday_friday_today" = "جمعہ ہفتے کا پانچواں دن ہوتا ہے۔ کل ہفتہ اور پھر اتوار ہے۔ اس کے بعد ایک نیا ہفتہ شروع ہوتا ہے۔";
 "calendar_weekday_monday" = "ہفتے میں سات دن ہیں اور پیر ہفتے کا پہلا دن ہے۔";
-"calendar_weekday_saturday" = "ہفتہ ہفتے کا چھٹا دن ہے۔ ہم اس دن سے دور ہیں.";
-"calendar_weekday_sunday" = "اتوار ہفتے کا ساتواں دن ہے۔ ہم اس دن سے دور ہیں. اگلے دن ایک نئے ہفتے کا آغاز ہوتا ہے۔";
-"calendar_weekday_sunday_today" = "اتوار ہفتے کا ساتواں دن ہے۔ ہم اس دن سے دور ہیں. کل ایک نیا ہفتہ شروع ہوتا ہے۔";
+"calendar_weekday_saturday" = "ہفتہ ہفتے کا چھٹا دن ہوتا ہے۔ ہم اس دن بند کر رہے ہیں.";
+"calendar_weekday_sunday" = "اتوار ہفتے کا ساتواں دن ہوتا ہے۔ اگلے دن ایک نئے ہفتے کا آغاز ہوتا ہے.";
+"calendar_weekday_sunday_today" = "اتوار ہفتے کا ساتواں دن ہوتا ہے۔ کل سے ایک نیا ہفتہ شروع ہو رہا ہے۔";
 "calendar_weekday_thursday" = "ہفتے میں سات دن ہیں اور جمعرات ہفتے کا چوتھا دن ہے۔";
 "calendar_weekday_tuesday" = "ہفتے میں سات دن ہیں اور منگل ہفتے کا دوسرا دن ہے۔";
 "calendar_weekday_wednesday" = "ہفتے میں سات دن ہیں اور بدھ ہفتے کا تیسرا دن ہے۔";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "کیا آپ جاننا چاہتے ہیں کہ آج آپ کو کب اٹھایا جائے گا اور یہاں کون سے دوست ہیں؟ یہاں کلک کریں!";
 "clock_time_1" = "ایک";
 "clock_time_10" = "دس";
-"clock_time_11" = "گیارہ";
+"clock_time_11" = "بارہ";
 "clock_time_12" = "بارہ";
 "clock_time_2" = "دو";
 "clock_time_3" = "تین";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "بارش پتلون";
 "garment_rainPants_description" = "بارش پتلون";
 "garment_shoes" = "جوتے";
-"garment_shoes_description" = "جوتے";
 "garment_sweater" = "گرم سویٹر";
 "garment_sweater_description" = "گرم سویٹر";
 "garment_winterBoots" = "جوتے";

@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Den næste dag har vi fri.";
 "calendar_free_tomorrow" = "I morgen er vi fri.";
 "calendar_title_date" = "Denne dag er %@";
-"calendar_weekday_friday" = "Fredag er den femte dag i ugen. Den næste dag er det lørdag og så søndag kommer, de to dage, vi er gratis. Derefter begynder en ny uge.";
-"calendar_weekday_friday_today" = "Fredag er den femte dag i ugen. I morgen er lørdag og derefter søndag, de to dage, vi er gratis. Derefter begynder en ny uge.";
+"calendar_weekday_friday" = "Fredag er den femte dag i ugen. Næste dag er det lørdag og så søndag. Derefter begynder en ny uge.";
+"calendar_weekday_friday_today" = "Fredag er den femte dag i ugen. I morgen er det lørdag og så søndag. Derefter begynder en ny uge.";
 "calendar_weekday_monday" = "Ugen har syv dage, og mandag er den første dag i ugen.";
-"calendar_weekday_saturday" = "Lørdag er den sjette dag i ugen. Vi har fri i dag.";
-"calendar_weekday_sunday" = "Søndag er den syvende dag i ugen. Vi har fri i dag. Den næste dag begynder en ny uge.";
-"calendar_weekday_sunday_today" = "Søndag er den syvende dag i ugen. Vi har fri i dag. I morgen begynder en ny uge.";
+"calendar_weekday_saturday" = "Lørdag er den sjette dag i ugen. Vi har fri denne dag.";
+"calendar_weekday_sunday" = "Søndag er den syvende dag i ugen. Den næste dag begynder en ny uge.";
+"calendar_weekday_sunday_today" = "Søndag er den syvende dag i ugen. I morgen begynder en ny uge.";
 "calendar_weekday_thursday" = "Ugen har syv dage, og torsdag er den fjerde dag i ugen.";
 "calendar_weekday_tuesday" = "Ugen har syv dage, og tirsdag er den anden dag i ugen.";
 "calendar_weekday_wednesday" = "Ugen har syv dage, og onsdag er den tredje dag i ugen.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Vil du vide, hvornår du bliver hentet i dag, og hvilke venner der er her? Klik her!";
 "clock_time_1" = "A";
 "clock_time_10" = "Ti";
-"clock_time_11" = "Elleve";
+"clock_time_11" = "Tolv";
 "clock_time_12" = "Tolv";
 "clock_time_2" = "To";
 "clock_time_3" = "Tre";

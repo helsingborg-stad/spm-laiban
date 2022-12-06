@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "በሚቀጥለው ቀን ከሥራ ተፈናቅለናል።";
 "calendar_free_tomorrow" = "ነገ ነፃ ነን።";
 "calendar_title_date" = "ይህ ቀን %@";
-"calendar_weekday_friday" = "አርብ የሳምንቱ ፭ኛው ቀን ነው። በሚቀጥለው ቀን ቅዳሜ ከዚያም እሁድ ይመጣል። ሁለቱ ቀናት ነፃ ነን። ከዚያ በኋላ አዲስ ሳምንት ይጀምራል።";
-"calendar_weekday_friday_today" = "አርብ የሳምንቱ ፭ኛው ቀን ነው። ነገ ቅዳሜ ከዚያም እሁድ ነው። ሁለቱ ቀናት ነፃ ነን። ከዚያ በኋላ አዲስ ሳምንት ይጀምራል።";
+"calendar_weekday_friday" = "አርብ የሳምንቱ ፭ኛው ቀን ነው። በሚቀጥለው ቀን ቅዳሜ ከዚያም እሁድ ነው። ከዚያ በኋላ አዲስ ሳምንት ይጀምራል።";
+"calendar_weekday_friday_today" = "አርብ የሳምንቱ ፭ኛው ቀን ነው። ነገ ቅዳሜ ከዚያም እሁድ ነው። ከዚያ በኋላ አዲስ ሳምንት ይጀምራል።";
 "calendar_weekday_monday" = "ሰሞኑን ሰባት ቀን እና ሰኞ የሳምንቱ የመጀመሪያ ቀን ነው።";
 "calendar_weekday_saturday" = "ቅዳሜ የሳምንቱ ስድስተኛ ቀን ነው። ዛሬ እረፍት አለን።";
-"calendar_weekday_sunday" = "እሁድ የሳምንቱ ሰባተኛ ቀን ነው። ዛሬ እረፍት አለን። በሚቀጥለው ቀን አዲስ ሳምንት ይጀምራል ።";
-"calendar_weekday_sunday_today" = "እሁድ የሳምንቱ ሰባተኛ ቀን ነው። ዛሬ እረፍት አለን። ነገ አዲስ ሳምንት ይጀምራል።";
+"calendar_weekday_sunday" = "እሁድ የሳምንቱ ሰባተኛ ቀን ነው። በሚቀጥለው ቀን አዲስ ሳምንት ይጀምራል ።";
+"calendar_weekday_sunday_today" = "እሁድ የሳምንቱ ሰባተኛ ቀን ነው። ነገ አዲስ ሳምንት ይጀምራል።";
 "calendar_weekday_thursday" = "ሳምንቱ ሰባት ቀን እና ሐሙስ የሳምንቱ አራተኛ ቀን ነው።";
 "calendar_weekday_tuesday" = "ሰሞኑን ሰባት ቀን እና ማክሰኞ የሳምንቱ ሁለተኛ ቀን ነው።";
 "calendar_weekday_wednesday" = "ሰሞኑን ሰባት ቀን እና ረቡዕ የሳምንቱ ሶስተኛው ቀን ነው።";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ዛሬ መቼ እንደምትወሰድና የትኞቹ ጓደኞች እንዳሉ ማወቅ ትፈልጋለህ? እዚህ ይጫኑ!";
 "clock_time_1" = "A";
 "clock_time_10" = "አስር";
-"clock_time_11" = "አሰራ አንድ";
+"clock_time_11" = "አስራ ሁለት";
 "clock_time_12" = "አስራ ሁለት";
 "clock_time_2" = "ሁለት";
 "clock_time_3" = "ሶስት";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "የዝናብ ሱሪ";
 "garment_rainPants_description" = "የዝናብ ሱሪ";
 "garment_shoes" = "ጫማ";
-"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ሞቅ ያለ ሹራብ";
 "garment_sweater_description" = "ሞቅ ያለ ሹራብ";
 "garment_winterBoots" = "ጫማ";

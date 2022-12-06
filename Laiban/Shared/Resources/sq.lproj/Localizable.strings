@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Ditën tjetër do të jemi jashtë shërbimit.";
 "calendar_free_tomorrow" = "Nesër jemi të lirë.";
 "calendar_title_date" = "Kjo ditë është %@";
-"calendar_weekday_friday" = "E premtja është dita e pestë e javës. Ditën tjetër është e shtunë dhe pastaj vjen e diela, dy ditë që jemi të lirë. Pas kësaj, fillon një javë e re.";
-"calendar_weekday_friday_today" = "E premtja është dita e pestë e javës. Nesër është e shtunë dhe pastaj e diel, dy ditë ne jemi të lirë. Pas kësaj, fillon një javë e re.";
+"calendar_weekday_friday" = "E premtja është dita e pestë e javës. Ditën tjetër është e shtunë dhe pastaj e diel. Pas kësaj, fillon një javë e re.";
+"calendar_weekday_friday_today" = "E premtja është dita e pestë e javës. Nesër është e shtuna dhe pastaj e diela. Pas kësaj, fillon një javë e re.";
 "calendar_weekday_monday" = "Java ka shtatë ditë dhe e hëna është dita e parë e javës.";
 "calendar_weekday_saturday" = "E shtuna është dita e gjashtë e javës. Ne jemi pushim këtë ditë.";
-"calendar_weekday_sunday" = "E diela është dita e shtatë e javës. Ne jemi pushim këtë ditë. Dita tjetër fillon një javë të re.";
-"calendar_weekday_sunday_today" = "E diela është dita e shtatë e javës. Ne jemi pushim këtë ditë. Nesër fillon një javë e re.";
+"calendar_weekday_sunday" = "E diela është dita e shtatë e javës. Dita tjetër fillon një javë të re.";
+"calendar_weekday_sunday_today" = "E diela është dita e shtatë e javës. Nesër fillon një javë e re.";
 "calendar_weekday_thursday" = "Java ka shtatë ditë dhe e enjte është dita e katërt e javës.";
 "calendar_weekday_tuesday" = "Java ka shtatë ditë dhe e marta është dita e dytë e javës.";
 "calendar_weekday_wednesday" = "Java ka shtatë ditë dhe e mërkura është dita e tretë e javës.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Do ta dish se kur do të të marrin sot dhe cilët miq janë këtu? Kliko këtu!";
 "clock_time_1" = "A";
 "clock_time_10" = "Dhjetë";
-"clock_time_11" = "Njëmbëdhjetë";
+"clock_time_11" = "Dymbëdhjetë";
 "clock_time_12" = "Dymbëdhjetë";
 "clock_time_2" = "Dy";
 "clock_time_3" = "Tre";

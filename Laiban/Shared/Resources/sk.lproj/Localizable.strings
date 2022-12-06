@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Nasledujúci deň sme mimo služby.";
 "calendar_free_tomorrow" = "Zajtra budeme mať voľno.";
 "calendar_title_date" = "Tento deň je %@";
-"calendar_weekday_friday" = "Piatok je piaty deň v týždni. Nasledujúci deň je sobota a potom príde nedeľa, dva dni máme voľno. Potom začína nový týždeň.";
-"calendar_weekday_friday_today" = "Piatok je piaty deň v týždni. Zajtra je sobota a potom nedeľa, dva dni máme voľno. Potom začína nový týždeň.";
+"calendar_weekday_friday" = "Piatok je piaty deň v týždni. Nasledujúci deň je sobota a potom nedeľa. Potom sa začína nový týždeň.";
+"calendar_weekday_friday_today" = "Piatok je piaty deň v týždni. Zajtra je sobota a potom nedeľa. Potom sa začína nový týždeň.";
 "calendar_weekday_monday" = "Týždeň má sedem dní a pondelok je prvým dňom v týždni.";
 "calendar_weekday_saturday" = "Sobota je šiesty deň v týždni. Tento deň máme voľno.";
-"calendar_weekday_sunday" = "Nedeľa je siedmy deň v týždni. Tento deň máme voľno. Nasledujúci deň začína nový týždeň.";
-"calendar_weekday_sunday_today" = "Nedeľa je siedmy deň v týždni. Tento deň máme voľno. Zajtra začína nový týždeň.";
+"calendar_weekday_sunday" = "Nedeľa je siedmy deň v týždni. Nasledujúci deň začína nový týždeň.";
+"calendar_weekday_sunday_today" = "Nedeľa je siedmy deň v týždni. Zajtra začína nový týždeň.";
 "calendar_weekday_thursday" = "Týždeň má sedem dní a štvrtok je štvrtý deň v týždni.";
 "calendar_weekday_tuesday" = "Týždeň má sedem dní a utorok je druhý deň v týždni.";
 "calendar_weekday_wednesday" = "Týždeň má sedem dní a streda je tretím dňom v týždni.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Chcete vedieť, kedy vás dnes vyzdvihnú a ktorí priatelia sú tu? Kliknite sem!";
 "clock_time_1" = "A";
 "clock_time_10" = "Desať";
-"clock_time_11" = "Jedenásť";
+"clock_time_11" = "Dvanásť";
 "clock_time_12" = "Dvanásť";
 "clock_time_2" = "Dva";
 "clock_time_3" = "Tri";
@@ -148,20 +148,19 @@ Pozrite sa, čo si oblečiete!";
 "garment_pulloverPants_description" = "Krycie nohavice";
 "garment_rainBoots" = "Čižmy";
 "garment_rainBoots_description" = "Čižmy";
-"garment_rainCoat" = "Dažďová bunda";
+"garment_rainCoat" = "Bunda do dažďa";
 "garment_rainCoat_description" = "Dažďová bunda";
 "garment_rainGloves" = "Rukavice do dažďa";
-"garment_rainGloves_description" = "Rukavice do dažďa";
-"garment_rainPants" = "Dažďové nohavice";
+"garment_rainGloves_description" = "Dažďové rukavice";
+"garment_rainPants" = "Pršiplášťové nohavice";
 "garment_rainPants_description" = "Dažďové nohavice";
 "garment_shoes" = "Topánky";
-"garment_shoes_description" = "Topánky";
 "garment_sweater" = "Teplý sveter";
 "garment_sweater_description" = "Teplý sveter";
 "garment_winterBoots" = "Topánky";
 "garment_winterBoots_description" = "Zimné topánky";
 "garment_winterOutfit" = "Kombinézy alebo bunda s krycími nohavicami";
-"garment_winterOutfit_description" = "Kombinézy alebo bunda s krycími nohavicami";
+"garment_winterOutfit_description" = "Kombinéza alebo bunda s krycími nohavicami";
 "home_feedback_acitivity_title" = "Zúčastnili ste sa na nejakej aktivite?
 Kliknite sem a povedzte nám, čo si o tom myslíte!";
 "home_holiday" = "Zajtra je %@. Pekný víkend!";
@@ -213,7 +212,7 @@ To je tesne pred %@.";
 To bolo tesne pred %@.";
 "tempus_child_arrives_during" = "%@ príde do škôlky asi o %@.
 To je počas %@.";
-"tempus_child_arrives_during_past" = "%@ prišli do škôlky asi o %@.
+"tempus_child_arrives_during_past" = "%@ prišiel do škôlky asi o %@.
 To bolo tesne pred %@.";
 "tempus_child_arrives_past" = "%@ prišli do škôlky asi o %@";
 "tempus_child_has_left" = "Zdá sa, že %@ odišiel na tento deň domov.";

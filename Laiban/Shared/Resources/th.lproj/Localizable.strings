@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "วันรุ่งขึ้นเราออกจากหน้าที่";
 "calendar_free_tomorrow" = "พรุ่งนี้เราเป็นอิสระ";
 "calendar_title_date" = "วันนี้เป็นวัน <span translate='no'>string</span>";
-"calendar_weekday_friday" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ วันรุ่งขึ้นเป็นวันเสาร์แล้ววันอาทิตย์ก็มาถึงสองวันเราว่าง หลังจากนั้นสัปดาห์ใหม่ก็เริ่มขึ้น";
-"calendar_weekday_friday_today" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ พรุ่งนี้เป็นวันเสาร์และวันอาทิตย์สองวันเราเป็นอิสระ หลังจากนั้นสัปดาห์ใหม่ก็เริ่มขึ้น";
+"calendar_weekday_friday" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ วันรุ่งขึ้นเป็นวันเสาร์และวันอาทิตย์ หลังจากนั้นสัปดาห์ใหม่จะเริ่มขึ้น";
+"calendar_weekday_friday_today" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ พรุ่งนี้เป็นวันเสาร์และวันอาทิตย์ หลังจากนั้นสัปดาห์ใหม่จะเริ่มขึ้น";
 "calendar_weekday_monday" = "สัปดาห์มีเจ็ดวันและวันจันทร์เป็นวันแรกของสัปดาห์";
-"calendar_weekday_saturday" = "วันเสาร์เป็นวันที่หกของสัปดาห์ วันนี้เราปิดแล้ว";
-"calendar_weekday_sunday" = "วันอาทิตย์เป็นวันที่เจ็ดของสัปดาห์ วันนี้เราปิดแล้ว วันรุ่งขึ้นเริ่มสัปดาห์ใหม่";
-"calendar_weekday_sunday_today" = "วันอาทิตย์เป็นวันที่เจ็ดของสัปดาห์ วันนี้เราปิดแล้ว พรุ่งนี้เริ่มสัปดาห์ใหม่";
+"calendar_weekday_saturday" = "วันเสาร์เป็นวันที่หกของสัปดาห์ เราปิดวันนี้";
+"calendar_weekday_sunday" = "วันอาทิตย์เป็นวันที่เจ็ดของสัปดาห์ วันรุ่งขึ้นเริ่มต้นสัปดาห์ใหม่";
+"calendar_weekday_sunday_today" = "วันอาทิตย์เป็นวันที่เจ็ดของสัปดาห์ พรุ่งนี้เริ่มสัปดาห์ใหม่";
 "calendar_weekday_thursday" = "สัปดาห์มีเจ็ดวันและวันพฤหัสบดีเป็นวันที่สี่ของสัปดาห์";
 "calendar_weekday_tuesday" = "สัปดาห์มีเจ็ดวันและวันอังคารเป็นวันที่สองของสัปดาห์";
 "calendar_weekday_wednesday" = "สัปดาห์มีเจ็ดวันและวันพุธเป็นวันที่สามของสัปดาห์";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "คุณต้องการทราบหรือไม่ว่าวันนี้คุณจะได้รับการมารับคุณเมื่อไหร่และเพื่อนคนไหนอยู่ที่นี่? คลิกที่นี่!";
 "clock_time_1" = "A";
 "clock_time_10" = "สิบ";
-"clock_time_11" = "สิบเอ็ด";
+"clock_time_11" = "สิบสอง";
 "clock_time_12" = "สิบสอง";
 "clock_time_2" = "สอง";
 "clock_time_3" = "สาม";
@@ -46,7 +46,7 @@
 "clock_time_description_0600_to_0730" = "ตอนนี้มันเช้าและรอบเวลานี้เรากินอาหารเช้า";
 "clock_time_description_0730_to_0830" = "ตอนนี้ก็เช้า";
 "clock_time_description_0830_to_0900" = "ในช่วงเวลานี้เรากินผลไม้";
-"clock_time_description_0900_to_1045" = "ตอนนี้ก็เช้า";
+"clock_time_description_0900_to_1045" = "ตอนนี้ก็เช้าแล้ว";
 "clock_time_description_1045_to_1230" = "ตอนนี้เป็นเวลาเที่ยงวันและอาหารกลางวัน";
 "clock_time_description_1230_to_1400" = "ตอนนี้ก็บ่ายแล้ว";
 "clock_time_description_1400_to_1500" = "ตอนนี้ก็บ่ายและประมาณคราวนี้เรากินของว่าง";
@@ -135,7 +135,7 @@
 "food_waste_title" = "แตะรูปภาพเพื่อเพิ่มหรือลบออกจากเครื่องชั่ง";
 "food_waste_weekly_stats" = "สัปดาห์นี้คุณได้ทิ้งอาหาร <span translate='no'>string</span> กรัม";
 "garment_beanie" = "บีนี่";
-"garment_beanie_description" = "บีนี่";
+"garment_beanie_description" = "บีนนี่";
 "garment_cap" = "หมวก";
 "garment_cap_description" = "หมวก";
 "garment_jacket" = "เสื้อนอก";
@@ -155,13 +155,12 @@
 "garment_rainPants" = "กางเกงกันฝน";
 "garment_rainPants_description" = "กางเกงกันฝน";
 "garment_shoes" = "รองเท้า";
-"garment_shoes_description" = "รองเท้า";
 "garment_sweater" = "เสื้อสเวตเตอร์อุ่นๆ";
-"garment_sweater_description" = "เสื้อสเวตเตอร์อุ่นๆ";
+"garment_sweater_description" = "เสื้อกันหนาวอุ่น";
 "garment_winterBoots" = "รองเท้า";
 "garment_winterBoots_description" = "รองเท้าบูทฤดูหนาว";
 "garment_winterOutfit" = "ชุดหลวมๆ หรือเสื้อแจ็คเก็ตที่มีกางเกงครอบ";
-"garment_winterOutfit_description" = "ชุดหลวมๆ หรือเสื้อแจ็คเก็ตที่มีกางเกงครอบ";
+"garment_winterOutfit_description" = "ชุดหลวมหรือแจ็คเก็ตพร้อมกางเกงคลุม";
 "home_feedback_acitivity_title" = "คุณเคยเข้าร่วมกิจกรรมหรือไม่?
 คลิกที่นี่เพื่อบอกเราว่าคุณคิดอย่างไรกับมัน!";
 "home_holiday" = "พรุ่งนี้เป็น %@. ขอให้มีวันหยุดสุดสัปดาห์แสนสุข!";
@@ -213,8 +212,8 @@
 นั่นคือก่อน <span translate='no'>string</span>.";
 "tempus_child_arrives_during" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@.
 นั่นคือในช่วง <span translate='no'>string</span>.";
-"tempus_child_arrives_during_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ %@.
-นั่นคือก่อน <span translate='no'>string</span>.";
+"tempus_child_arrives_during_past" = "%@ มาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@
+นั่นเป็นเพียงก่อน <span translate='no'>string</span>.";
 "tempus_child_arrives_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ <span translate='no'>string</span>";
 "tempus_child_has_left" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น";
 "tempus_child_has_left_returns_in_days" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น แต่ควรกลับมาอีกครั้งในอีก <span translate='no'>string</span> วัน";

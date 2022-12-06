@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Na druhi dźeń nimamy w słužbje.";
 "calendar_free_tomorrow" = "Jutře smy swobodni.";
 "calendar_title_date" = "Tutón dźeń je %@";
-"calendar_weekday_friday" = "Pjatk je pjaty dźeń tydźenja. Na druhi dźeń je to sobota a potom přińdźe njedźela, dnjej mamy swobodne. Po tym započnje so nowy tydźeń.";
-"calendar_weekday_friday_today" = "Pjatk je pjaty dźeń tydźenja. Jutře je sobota a potom njedźela, dnjej mamy swobodne. Po tym započnje so nowy tydźeń.";
+"calendar_weekday_friday" = "Pjatk je pjaty dźeń tydźenja. Na druhi dźeń je sobotu a potom njedźelu. Po tym započnje so nowy tydźeń.";
+"calendar_weekday_friday_today" = "Pjatk je pjaty dźeń tydźenja. Jutře je sobotu a potom njedźela. Po tym započnje so nowy tydźeń.";
 "calendar_weekday_monday" = "Tydźeń ma sydom dnjow a póndźelu je prěni dźeń tydźenja.";
-"calendar_weekday_saturday" = "Sobotu je šesty dźeń tydźenja. Smy na tutym dnju preč.";
-"calendar_weekday_sunday" = "Njedźelu je sedmy dźeń tydźenja. Smy na tutym dnju preč. Na druhi dźeń započnje so nowy tydźeń.";
-"calendar_weekday_sunday_today" = "Njedźelu je sedmy dźeń tydźenja. Smy na tutym dnju preč. Jutře započnje so nowy tydźeń.";
+"calendar_weekday_saturday" = "Sobotu je šesty dźeń tydźenja. Mamy tutón dźeń swobodne.";
+"calendar_weekday_sunday" = "Njedźelu je sedmy dźeń tydźenja. Na druhi dźeń započnje so nowy tydźeń.";
+"calendar_weekday_sunday_today" = "Njedźelu je sedmy dźeń tydźenja. Jutře započnje so nowy tydźeń.";
 "calendar_weekday_thursday" = "Tydźeń ma sydom dnjow a štwórtk je štwórty dźeń tydźenja.";
 "calendar_weekday_tuesday" = "Tydźeń ma sydom dnjow a wutoru je druhi dźeń tydźenja.";
 "calendar_weekday_wednesday" = "Tydźeń ma sydom dnjow a srjedu je třeći dźeń tydźenja.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Chceće wědźeć, hdy so dźensa wotewzaće a kajcy přećeljo tu su? Klikńće tu!";
 "clock_time_1" = "Jedyn";
 "clock_time_10" = "Dźesać";
-"clock_time_11" = "Jědnaće";
+"clock_time_11" = "Dwanaće";
 "clock_time_12" = "Dwanaće";
 "clock_time_2" = "Dwaj";
 "clock_time_3" = "Tři";
@@ -145,7 +145,7 @@ Hladaj, što budźeš so woblěkać!";
 "garment_neckWear" = "Rollkragenpullover abo šawl";
 "garment_neckWear_description" = "Šawl abo rollkragenpullover";
 "garment_pulloverPants" = "Přećehnjene cholny";
-"garment_pulloverPants_description" = "Přećehnjene cholny";
+"garment_pulloverPants_description" = "Deckhose";
 "garment_rainBoots" = "Škórnje";
 "garment_rainBoots_description" = "Škórnje";
 "garment_rainCoat" = "Dešćikowy kapać";
@@ -155,13 +155,12 @@ Hladaj, što budźeš so woblěkać!";
 "garment_rainPants" = "Regenhose";
 "garment_rainPants_description" = "Regenhose";
 "garment_shoes" = "Črije";
-"garment_shoes_description" = "Črije";
 "garment_sweater" = "Ćopły pulower";
 "garment_sweater_description" = "Ćopły pulower";
 "garment_winterBoots" = "Črije";
 "garment_winterBoots_description" = "Zymske škórnje";
 "garment_winterOutfit" = "Overalls abo kapa z přećahami";
-"garment_winterOutfit_description" = "Overalls abo kapa z přećahami";
+"garment_winterOutfit_description" = "Overall abo kapa z přikrywne cholowy";
 "home_feedback_acitivity_title" = "Sće so na aktiwiće wobdźělił?
 Klikńće tu, zo byšće nam prajili, što wo tym dźeržiće!";
 "home_holiday" = "Jutře je %@. Ja přeju ći rjany kónc tydźenja!";
@@ -213,7 +212,7 @@ To je krótko do %@.";
 To bě krótko do %@.";
 "tempus_child_arrives_during" = "%@ budu wokoło %@hodźin w předšuli přijěć.
 To je za čas %@.";
-"tempus_child_arrives_during_past" = "%@ dóńdźechu wokoło %@hodźin w předšuli.
+"tempus_child_arrives_during_past" = "%@ přińdźe přećiwo %@do předšule.
 To bě krótko do %@.";
 "tempus_child_arrives_past" = "%@ přichadźachu přećiwo %@ hodźin w předšuli";
 "tempus_child_has_left" = "%@ zda so być za dźeń domoj.";

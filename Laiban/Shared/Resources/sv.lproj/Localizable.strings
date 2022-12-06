@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Dagen efter är vi lediga.";
 "calendar_free_tomorrow" = "Imorgon är vi lediga.";
 "calendar_title_date" = "Denna dag är %@";
-"calendar_weekday_friday" = "Fredag är veckans femte dag. Nästa dag är det lördag och sen kommer söndag, de två dagarna är vi lediga. Efter det börjar en ny vecka.";
-"calendar_weekday_friday_today" = "Fredag är veckans femte dag. Imorgon är det lördag och sen kommer söndag, de två dagarna är vi lediga. Efter det börjar en ny vecka.";
+"calendar_weekday_friday" = "Fredag är veckans femte dag. Nästa dag är det lördag och sen kommer söndag. Efter det börjar en ny vecka.";
+"calendar_weekday_friday_today" = "Fredag är veckans femte dag. Imorgon är det lördag och sen kommer söndag. Efter det börjar en ny vecka.";
 "calendar_weekday_monday" = "Veckan har sju dagar och måndag är veckans första dag.";
-"calendar_weekday_saturday" = "Lördag är veckans sjätte dag. Vi är lediga denna dag.";
-"calendar_weekday_sunday" = "Söndag är veckans sjunde dag. Vi är lediga denna dag. Dagen efter börjar en ny vecka.";
-"calendar_weekday_sunday_today" = "Söndag är veckans sjunde dag. Vi är lediga denna dag. Imorgon börjar en ny vecka.";
+"calendar_weekday_saturday" = "Lördag är veckans sjätte dag.";
+"calendar_weekday_sunday" = "Söndag är veckans sjunde dag. Dagen efter börjar en ny vecka.";
+"calendar_weekday_sunday_today" = "Söndag är veckans sjunde dag. Imorgon börjar en ny vecka.";
 "calendar_weekday_thursday" = "Veckan har sju dagar och torsdag är veckans fjärde dag.";
 "calendar_weekday_tuesday" = "Veckan har sju dagar och tisdag är veckans andra dag.";
 "calendar_weekday_wednesday" = "Veckan har sju dagar och onsdag är veckans tredje dag.";

@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Il giorno dopo siamo fuori servizio.";
 "calendar_free_tomorrow" = "Domani siamo liberi.";
 "calendar_title_date" = "Questo giorno è %@";
-"calendar_weekday_friday" = "Il venerdì è il quinto giorno della settimana. Il giorno dopo è sabato e poi arriva la domenica, i due giorni siamo liberi. Dopodiché, inizia una nuova settimana.";
-"calendar_weekday_friday_today" = "Il venerdì è il quinto giorno della settimana. Domani è sabato e poi domenica, i due giorni siamo liberi. Dopodiché, inizia una nuova settimana.";
+"calendar_weekday_friday" = "Il venerdì è il quinto giorno della settimana. Il giorno dopo è sabato e poi domenica. Dopo di ciò, inizia una nuova settimana.";
+"calendar_weekday_friday_today" = "Il venerdì è il quinto giorno della settimana. Domani è sabato e poi domenica. Dopo di ciò, inizia una nuova settimana.";
 "calendar_weekday_monday" = "La settimana ha sette giorni e il lunedì è il primo giorno della settimana.";
-"calendar_weekday_saturday" = "Il sabato è il sesto giorno della settimana. Siamo fuori questo giorno.";
-"calendar_weekday_sunday" = "La domenica è il settimo giorno della settimana. Siamo fuori questo giorno. Il giorno dopo inizia una nuova settimana.";
-"calendar_weekday_sunday_today" = "La domenica è il settimo giorno della settimana. Siamo fuori questo giorno. Domani inizia una nuova settimana.";
+"calendar_weekday_saturday" = "Sabato è il sesto giorno della settimana. Siamo fuori oggi.";
+"calendar_weekday_sunday" = "La domenica è il settimo giorno della settimana. Il giorno dopo inizia una nuova settimana.";
+"calendar_weekday_sunday_today" = "La domenica è il settimo giorno della settimana. Domani inizia una nuova settimana.";
 "calendar_weekday_thursday" = "La settimana ha sette giorni e il giovedì è il quarto giorno della settimana.";
 "calendar_weekday_tuesday" = "La settimana ha sette giorni e il martedì è il secondo giorno della settimana.";
 "calendar_weekday_wednesday" = "La settimana ha sette giorni e il mercoledì è il terzo giorno della settimana.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Vuoi sapere quando verrai prelevato oggi e quali amici sono qui? Clicca qui!";
 "clock_time_1" = "Un";
 "clock_time_10" = "Dieci";
-"clock_time_11" = "Undici";
+"clock_time_11" = "Dodici";
 "clock_time_12" = "Dodici";
 "clock_time_2" = "Due";
 "clock_time_3" = "Tre";
@@ -151,11 +151,10 @@ Guarda cosa indosserai!";
 "garment_rainCoat" = "Giacca antipioggia";
 "garment_rainCoat_description" = "Giacca antipioggia";
 "garment_rainGloves" = "Guanti da pioggia";
-"garment_rainGloves_description" = "Guanti da pioggia";
+"garment_rainGloves_description" = "Guanti antipioggia";
 "garment_rainPants" = "Pantaloni antipioggia";
 "garment_rainPants_description" = "Pantaloni antipioggia";
 "garment_shoes" = "Scarpe";
-"garment_shoes_description" = "Scarpe";
 "garment_sweater" = "Maglione caldo";
 "garment_sweater_description" = "Maglione caldo";
 "garment_winterBoots" = "Scarpe";
@@ -213,8 +212,8 @@ Questo è poco prima %@.";
 Questo è stato poco prima %@.";
 "tempus_child_arrives_during" = "%@ arriveranno all'asilo a circa %@.
 Questo è durante %@.";
-"tempus_child_arrives_during_past" = "%@ arrivati all'asilo a circa %@.
-Questo è stato poco prima %@.";
+"tempus_child_arrives_during_past" = "%@ arrivato all'asilo verso le %@.
+Questo accadeva poco prima %@.";
 "tempus_child_arrives_past" = "%@ arrivati all'asilo a circa %@";
 "tempus_child_has_left" = "%@ sembra essere tornato a casa per la giornata.";
 "tempus_child_has_left_returns_in_days" = "%@ sembra essere tornato a casa per la giornata, ma dovrebbe tornare di nuovo tra %@ giorni.";

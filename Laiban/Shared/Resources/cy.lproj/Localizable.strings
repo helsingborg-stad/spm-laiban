@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Y diwrnod wedyn ry'n ni off duty.";
 "calendar_free_tomorrow" = "Yfory rydyn ni am ddim.";
 "calendar_title_date" = "Mae'r diwrnod yma yn %@";
-"calendar_weekday_friday" = "Dydd Gwener yw pumed diwrnod yr wythnos. Y diwrnod wedyn mae'n ddydd Sadwrn ac yna dydd Sul yn dod, y deuddydd rydyn ni'n rhydd. Ar ôl hynny, mae wythnos newydd yn dechrau.";
-"calendar_weekday_friday_today" = "Dydd Gwener yw pumed diwrnod yr wythnos. Yfory yw dydd Sadwrn ac yna dydd Sul, y ddau ddiwrnod rydyn ni'n rhydd. Ar ôl hynny, mae wythnos newydd yn dechrau.";
+"calendar_weekday_friday" = "Dydd Gwener yw pumed diwrnod yr wythnos. Y diwrnod wedyn mae'n ddydd Sadwrn ac yna dydd Sul. Ar ôl hynny, mae wythnos newydd yn dechrau.";
+"calendar_weekday_friday_today" = "Dydd Gwener yw pumed diwrnod yr wythnos. Yfory yw dydd Sadwrn ac yna dydd Sul. Ar ôl hynny, mae wythnos newydd yn dechrau.";
 "calendar_weekday_monday" = "Mae gan yr wythnos saith diwrnod a dydd Llun yw diwrnod cyntaf yr wythnos.";
 "calendar_weekday_saturday" = "Dydd Sadwrn yw chweched diwrnod yr wythnos. Rydyn ni i ffwrdd y diwrnod hwn.";
-"calendar_weekday_sunday" = "Dydd Sul yw seithfed diwrnod yr wythnos. Rydyn ni i ffwrdd y diwrnod hwn. Mae'r diwrnod wedyn yn dechrau wythnos newydd.";
-"calendar_weekday_sunday_today" = "Dydd Sul yw seithfed diwrnod yr wythnos. Rydyn ni i ffwrdd y diwrnod hwn. Yfory yn dechrau wythnos newydd.";
+"calendar_weekday_sunday" = "Dydd Sul yw seithfed diwrnod yr wythnos. Mae'r diwrnod wedyn yn dechrau wythnos newydd.";
+"calendar_weekday_sunday_today" = "Dydd Sul yw seithfed diwrnod yr wythnos. Mae yfory'n dechrau wythnos newydd.";
 "calendar_weekday_thursday" = "Mae gan yr wythnos saith diwrnod a dydd Iau yw pedwerydd diwrnod yr wythnos.";
 "calendar_weekday_tuesday" = "Mae gan yr wythnos saith diwrnod a dydd Mawrth yw ail ddiwrnod yr wythnos.";
 "calendar_weekday_wednesday" = "Mae gan yr wythnos saith diwrnod a dydd Mercher yw trydydd diwrnod yr wythnos.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Ydych chi eisiau gwybod pryd fyddwch chi'n cael eich codi heddiw a pha ffrindiau sydd yma? Cliciwch yma!";
 "clock_time_1" = "A";
 "clock_time_10" = "Deg";
-"clock_time_11" = "Unarddeg";
+"clock_time_11" = "Deuddeg";
 "clock_time_12" = "Deuddeg";
 "clock_time_2" = "Dau";
 "clock_time_3" = "Tri";
@@ -140,28 +140,27 @@ Edrychwch beth rydych chi'n mynd i'w wisgo!";
 "garment_cap_description" = "Capio";
 "garment_jacket" = "Siaced";
 "garment_jacket_description" = "Siaced";
-"garment_mittens" = "Mittens";
+"garment_mittens" = "Gwiddonyn";
 "garment_mittens_description" = "Mittens";
 "garment_neckWear" = "Crwbanod neu sgarff";
 "garment_neckWear_description" = "Sgarff neu grwban";
 "garment_pulloverPants" = "Pants clawr";
-"garment_pulloverPants_description" = "Pants clawr";
+"garment_pulloverPants_description" = "Clawr pants";
 "garment_rainBoots" = "Boots";
 "garment_rainBoots_description" = "Boots";
 "garment_rainCoat" = "Siaced law";
 "garment_rainCoat_description" = "Siaced law";
 "garment_rainGloves" = "Menig glaw";
 "garment_rainGloves_description" = "Menig glaw";
-"garment_rainPants" = "Pantsh glaw";
+"garment_rainPants" = "Pantiau glaw";
 "garment_rainPants_description" = "Pantsh glaw";
 "garment_shoes" = "Esgidiau";
-"garment_shoes_description" = "Esgidiau";
 "garment_sweater" = "Chwyslys cynnes";
-"garment_sweater_description" = "Chwyslys cynnes";
+"garment_sweater_description" = "Chwysir cynnes";
 "garment_winterBoots" = "Esgidiau";
 "garment_winterBoots_description" = "Esgidiau'r gaeaf";
 "garment_winterOutfit" = "Overalls neu siaced gyda pants clawr";
-"garment_winterOutfit_description" = "Overalls neu siaced gyda pants clawr";
+"garment_winterOutfit_description" = "Overalls neu siaced gyda phants clawr";
 "home_feedback_acitivity_title" = "Ydych chi wedi cymryd rhan mewn gweithgaredd?
 Cliciwch yma i ddweud wrthym beth oeddech chi'n feddwl ohono!";
 "home_holiday" = "Mae yfory'n %@. Mwynha'r penwythnos!";
@@ -213,7 +212,7 @@ Mae hynny ychydig cyn %@.";
 Roedd hynny ychydig cyn %@.";
 "tempus_child_arrives_during" = "Bydd %@ yn cyrraedd cyn-ysgol tua %@.
 Mae hynny yn ystod %@.";
-"tempus_child_arrives_during_past" = "cyrhaeddodd %@ i gyn-ysgol tua %@.
+"tempus_child_arrives_during_past" = "Cyrhaeddodd %@ i gyn-ysgol tua %@.
 Roedd hynny ychydig cyn %@.";
 "tempus_child_arrives_past" = "Cyrhaeddodd %@ i rag-ysgol tua %@";
 "tempus_child_has_left" = "mae'n ymddangos bod %@ wedi mynd adref am y diwrnod.";

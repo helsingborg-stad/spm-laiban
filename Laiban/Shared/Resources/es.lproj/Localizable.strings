@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Al día siguiente estamos fuera de servicio.";
 "calendar_free_tomorrow" = "Mañana estamos libres.";
 "calendar_title_date" = "Este día es %@";
-"calendar_weekday_friday" = "El viernes es el quinto día de la semana. Al día siguiente es sábado y luego llega el domingo, los dos días estamos libres. Después de eso, comienza una nueva semana.";
-"calendar_weekday_friday_today" = "El viernes es el quinto día de la semana. Mañana es sábado y luego domingo, los dos días estamos libres. Después de eso, comienza una nueva semana.";
+"calendar_weekday_friday" = "El viernes es el quinto día de la semana. Al día siguiente es sábado y luego domingo. Después de eso, comienza una nueva semana.";
+"calendar_weekday_friday_today" = "El viernes es el quinto día de la semana. Mañana es sábado y luego domingo. Después de eso, comienza una nueva semana.";
 "calendar_weekday_monday" = "La semana tiene siete días y el lunes es el primer día de la semana.";
-"calendar_weekday_saturday" = "El sábado es el sexto día de la semana. Nos vamos este día.";
-"calendar_weekday_sunday" = "El domingo es el séptimo día de la semana. Nos vamos este día. Al día siguiente comienza una nueva semana.";
-"calendar_weekday_sunday_today" = "El domingo es el séptimo día de la semana. Nos vamos este día. Mañana empieza una nueva semana.";
+"calendar_weekday_saturday" = "El sábado es el sexto día de la semana. Estamos fuera este día.";
+"calendar_weekday_sunday" = "El domingo es el séptimo día de la semana. Al día siguiente comienza una nueva semana.";
+"calendar_weekday_sunday_today" = "El domingo es el séptimo día de la semana. Mañana comienza una nueva semana.";
 "calendar_weekday_thursday" = "La semana tiene siete días y el jueves es el cuarto día de la semana.";
 "calendar_weekday_tuesday" = "La semana tiene siete días y el martes es el segundo día de la semana.";
 "calendar_weekday_wednesday" = "La semana tiene siete días y el miércoles es el tercer día de la semana.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "¿Quieres saber cuándo te recogerán hoy y qué amigos están aquí? ¡Haga clic aquí!";
 "clock_time_1" = "Un";
 "clock_time_10" = "Diez";
-"clock_time_11" = "Once";
+"clock_time_11" = "Doce";
 "clock_time_12" = "Doce";
 "clock_time_2" = "Dos";
 "clock_time_3" = "Tres";

@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Le lendemain, on n’est pas en service.";
 "calendar_free_tomorrow" = "Demain, on sera libres.";
 "calendar_title_date" = "Ce jour est %@";
-"calendar_weekday_friday" = "Le vendredi est le cinquième jour de la semaine. Le lendemain, c’est samedi et puis le dimanche arrive, les deux jours que nous sommes libres. Après cela, une nouvelle semaine commence.";
-"calendar_weekday_friday_today" = "Le vendredi est le cinquième jour de la semaine. Demain, c’est samedi et dimanche, les deux jours que nous sommes libres. Après cela, une nouvelle semaine commence.";
+"calendar_weekday_friday" = "Le vendredi est le cinquième jour de la semaine. Le lendemain, c’est samedi puis dimanche. Après cela, une nouvelle semaine commence.";
+"calendar_weekday_friday_today" = "Le vendredi est le cinquième jour de la semaine. Demain, c’est samedi, puis dimanche. Après cela, une nouvelle semaine commence.";
 "calendar_weekday_monday" = "La semaine a sept jours et le lundi est le premier jour de la semaine.";
-"calendar_weekday_saturday" = "Le samedi est le sixième jour de la semaine. On est en congé ce jour-là.";
-"calendar_weekday_sunday" = "Le dimanche est le septième jour de la semaine. On est en congé ce jour-là. Le lendemain commence une nouvelle semaine.";
-"calendar_weekday_sunday_today" = "Le dimanche est le septième jour de la semaine. On est en congé ce jour-là. Demain commence une nouvelle semaine.";
+"calendar_weekday_saturday" = "Le samedi est le sixième jour de la semaine. Nous sommes partis ce jour-là.";
+"calendar_weekday_sunday" = "Le dimanche est le septième jour de la semaine. Le lendemain commence une nouvelle semaine.";
+"calendar_weekday_sunday_today" = "Le dimanche est le septième jour de la semaine. Demain commence une nouvelle semaine.";
 "calendar_weekday_thursday" = "La semaine a sept jours et le jeudi est le quatrième jour de la semaine.";
 "calendar_weekday_tuesday" = "La semaine a sept jours et le mardi est le deuxième jour de la semaine.";
 "calendar_weekday_wednesday" = "La semaine a sept jours et le mercredi est le troisième jour de la semaine.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Voulez-vous savoir quand vous serez pris en charge aujourd’hui et quels amis sont ici? Cliquez ici!";
 "clock_time_1" = "Un";
 "clock_time_10" = "dix";
-"clock_time_11" = "Onze";
+"clock_time_11" = "onze";
 "clock_time_12" = "douze";
 "clock_time_2" = "Deux";
 "clock_time_3" = "Trois";

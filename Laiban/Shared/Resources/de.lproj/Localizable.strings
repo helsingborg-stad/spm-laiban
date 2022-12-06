@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Am nächsten Tag haben wir nicht im Dienst.";
 "calendar_free_tomorrow" = "Morgen sind wir frei.";
 "calendar_title_date" = "Dieser Tag ist %@";
-"calendar_weekday_friday" = "Freitag ist der fünfte Tag der Woche. Am nächsten Tag ist es Samstag und dann kommt der Sonntag, die beiden Tage haben wir frei. Danach beginnt eine neue Woche.";
-"calendar_weekday_friday_today" = "Freitag ist der fünfte Tag der Woche. Morgen ist Samstag und dann Sonntag, die beiden Tage haben wir frei. Danach beginnt eine neue Woche.";
+"calendar_weekday_friday" = "Freitag ist der fünfte Tag der Woche. Am nächsten Tag ist es Samstag und dann Sonntag. Danach beginnt eine neue Woche.";
+"calendar_weekday_friday_today" = "Freitag ist der fünfte Tag der Woche. Morgen ist Samstag und dann Sonntag. Danach beginnt eine neue Woche.";
 "calendar_weekday_monday" = "Die Woche hat sieben Tage und Montag ist der erste Tag der Woche.";
-"calendar_weekday_saturday" = "Samstag ist der sechste Tag der Woche. Wir sind an diesem Tag weg.";
-"calendar_weekday_sunday" = "Sonntag ist der siebte Tag der Woche. Wir sind an diesem Tag weg. Am nächsten Tag beginnt eine neue Woche.";
-"calendar_weekday_sunday_today" = "Sonntag ist der siebte Tag der Woche. Wir sind an diesem Tag weg. Morgen beginnt eine neue Woche.";
+"calendar_weekday_saturday" = "Samstag ist der sechste Tag der Woche. Wir haben diesen Tag frei.";
+"calendar_weekday_sunday" = "Sonntag ist der siebte Tag der Woche. Am nächsten Tag beginnt eine neue Woche.";
+"calendar_weekday_sunday_today" = "Sonntag ist der siebte Tag der Woche. Morgen beginnt eine neue Woche.";
 "calendar_weekday_thursday" = "Die Woche hat sieben Tage und Donnerstag ist der vierte Tag der Woche.";
 "calendar_weekday_tuesday" = "Die Woche hat sieben Tage und Dienstag ist der zweite Tag der Woche.";
 "calendar_weekday_wednesday" = "Die Woche hat sieben Tage und Mittwoch ist der dritte Tag der Woche.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Möchten Sie wissen, wann Sie heute abgeholt werden und welche Freunde hier sind? Klicken Sie hier!";
 "clock_time_1" = "Ein";
 "clock_time_10" = "Zehn";
-"clock_time_11" = "Elf";
+"clock_time_11" = "Zwölf";
 "clock_time_12" = "Zwölf";
 "clock_time_2" = "Zwei";
 "clock_time_3" = "Drei";
@@ -145,7 +145,7 @@ Schau, was du anziehen wirst!";
 "garment_neckWear" = "Rollkragenpullover oder Schal";
 "garment_neckWear_description" = "Schal oder Rollkragenpullover";
 "garment_pulloverPants" = "Überziehhose";
-"garment_pulloverPants_description" = "Überziehhose";
+"garment_pulloverPants_description" = "Deckhose";
 "garment_rainBoots" = "Stiefel";
 "garment_rainBoots_description" = "Stiefel";
 "garment_rainCoat" = "Regenjacke";
@@ -155,13 +155,12 @@ Schau, was du anziehen wirst!";
 "garment_rainPants" = "Regenhose";
 "garment_rainPants_description" = "Regenhose";
 "garment_shoes" = "Schuhe";
-"garment_shoes_description" = "Schuhe";
 "garment_sweater" = "Warmer Pullover";
 "garment_sweater_description" = "Warmer Pullover";
 "garment_winterBoots" = "Schuhe";
 "garment_winterBoots_description" = "Winterstiefel";
 "garment_winterOutfit" = "Overalls oder Jacke mit Überziehhose";
-"garment_winterOutfit_description" = "Overalls oder Jacke mit Überziehhose";
+"garment_winterOutfit_description" = "Overall oder Jacke mit Deckhose";
 "home_feedback_acitivity_title" = "Haben Sie an einer Aktivität teilgenommen?
 Klicken Sie hier, um uns zu sagen, was Sie davon halten!";
 "home_holiday" = "Morgen ist %@. Ich wünsche dir ein schönes Wochenende!";
@@ -213,7 +212,7 @@ Das ist kurz vor %@.";
 Das war kurz vor %@.";
 "tempus_child_arrives_during" = "%@ werden gegen %@Uhr in der Vorschule ankommen.
 Das ist während %@.";
-"tempus_child_arrives_during_past" = "%@ kamen gegen %@Uhr in der Vorschule an.
+"tempus_child_arrives_during_past" = "%@ kam gegen %@in die Vorschule.
 Das war kurz vor %@.";
 "tempus_child_arrives_past" = "%@ kamen gegen %@ Uhr in der Vorschule an";
 "tempus_child_has_left" = "%@ scheint für den Tag nach Hause gegangen zu sein.";

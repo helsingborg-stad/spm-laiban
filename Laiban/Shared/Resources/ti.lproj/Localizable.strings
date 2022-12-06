@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "ንጽብሒቱ ኻብ ስራሕ ወጺእና ።";
 "calendar_free_tomorrow" = "ጽባሕ ሓራ ኢና።";
 "calendar_title_date" = "እዛ መዓልቲ እዚኣ %@";
-"calendar_weekday_friday" = "ዓርቢ ሓምሸይቲ መዓልቲ ናይታ ሰሙን ኢያ ። ንጽብሒቱ ቀዳም እዩ ፣ ድሕሪኡ ሰንበት ይመጸና ፣ ኣብተን ክልተ መዓልቲ ድማ ናጻ ዄንና ኢና ። ድሕሪኡ ሓድሽ ሰሙን ክትጅምር እያ ።";
-"calendar_weekday_friday_today" = "ዓርቢ ሓምሸይቲ መዓልቲ ናይታ ሰሙን ኢያ ። ጽባሕ ቀዳምን ሰንበትን እዩ ፣ እተን ክልተ መዓልቲ ድማ ናጻ እየን ። ድሕሪኡ ሓድሽ ሰሙን ክትጅምር እያ ።";
+"calendar_weekday_friday" = "ዓርቢ ሓምሸይቲ መዓልቲ ናይታ ሰሙን ኢያ ። ንጽብሒቱ ቀዳምን ሰንበትን እዩ ። ድሕሪኡ ሓድሽ ሰሙን ክትጅምር እያ ።";
+"calendar_weekday_friday_today" = "ዓርቢ ሓምሸይቲ መዓልቲ ናይታ ሰሙን ኢያ ። ጽባሕ ቀዳምን ሰንበትን እዩ ። ድሕሪኡ ሓድሽ ሰሙን ክትጅምር እያ ።";
 "calendar_weekday_monday" = "እታ ሰሙን ሸውዓተ መዓልትን ሰኑይን ኣለዋ ።";
 "calendar_weekday_saturday" = "ቀዳም ሻድሻይቲ መዓልቲ ናይታ ሰሙን እያ። ሎሚ ዕረፍቲ ረኺብና ኢና።";
-"calendar_weekday_sunday" = "ሰንበት ሻውዐይቲ መዓልቲ ናይታ ሰሙን እያ። ሎሚ ዕረፍቲ ረኺብና ኢና። ንጽብሒቱ ሓዳስ ሰሙን ትጅምር ።";
-"calendar_weekday_sunday_today" = "ሰንበት ሻውዐይቲ መዓልቲ ናይታ ሰሙን እያ። ሎሚ ዕረፍቲ ረኺብና ኢና። ጽባሕ ሓዳስ ሰሙን ክትጅምር እያ ።";
+"calendar_weekday_sunday" = "ሰንበት ሻውዐይቲ መዓልቲ ናይታ ሰሙን እያ። ንጽብሒቱ ሓዳስ ሰሙን ትጅምር ።";
+"calendar_weekday_sunday_today" = "ሰንበት ሻውዐይቲ መዓልቲ ናይታ ሰሙን እያ። ጽባሕ ሓዳስ ሰሙን ክትጅምር እያ ።";
 "calendar_weekday_thursday" = "እታ ሰሙን ሸውዓተ መዓልትን ሓሙስን ኣለዋ ።";
 "calendar_weekday_tuesday" = "እታ ሰሙን ሸውዓተ መዓልትን ሰሉስን ኣለዋ ።";
 "calendar_weekday_wednesday" = "እታ ሰሙን ሸውዓተ መዓልትን ረቡዕን ሳልሰይቲ መዓልቲ ናይታ ሰሙን እያ ።";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "ሎሚ መዓስ ከም እትማልኣካን ኣየኖት ኣዕሩኽ ከም ዘለዉን ክትፈልጥ ትደሊዶ ? ኣብዚ ጠውቕ!";
 "clock_time_1" = "A";
 "clock_time_10" = "ዓሰርተ";
-"clock_time_11" = "ዓሰርተ ሓደ";
+"clock_time_11" = "ዓሰርተ ክልተ";
 "clock_time_12" = "ዓሰርተ ክልተ";
 "clock_time_2" = "ክልተ";
 "clock_time_3" = "ሰለስተ";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "ስረን ዝናም";
 "garment_rainPants_description" = "ስረን ዝናም";
 "garment_shoes" = "ጫማ";
-"garment_shoes_description" = "ጫማ";
 "garment_sweater" = "ምዉቕ ስረ";
 "garment_sweater_description" = "ምዉቕ ስረ";
 "garment_winterBoots" = "ጫማ";

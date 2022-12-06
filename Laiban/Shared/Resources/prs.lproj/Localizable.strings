@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "روز بعد ما از انجام وظیفه خارج شدیم.";
 "calendar_free_tomorrow" = "فردا ما آزاديم";
 "calendar_title_date" = "امروز روز %@";
-"calendar_weekday_friday" = "جمعه پنجمین روز هفته است. روز بعد شنبه است و بعد یکشنبه می آید، دو روز ما آزاد هستیم. بعد از اون، هفته جديدي شروع ميشه";
-"calendar_weekday_friday_today" = "جمعه پنجمین روز هفته است. فردا شنبه و بعد یکشنبه است، دو روزی که ما آزاد هستیم. بعد از اون، هفته جديدي شروع ميشه";
+"calendar_weekday_friday" = "جمعه پنجمین روز هفته است. روز بعد شنبه و بعد یکشنبه است. بعد از اون، هفته جديدي شروع ميشه";
+"calendar_weekday_friday_today" = "جمعه پنجمین روز هفته است. فردا شنبه و بعد یکشنبه است. بعد از اون، هفته جديدي شروع ميشه";
 "calendar_weekday_monday" = "این هفته هفت روز دارد و دوشنبه اولین روز هفته است.";
 "calendar_weekday_saturday" = "شنبه ششمین روز هفته است. ما امروز از اين کار خارج شديم";
-"calendar_weekday_sunday" = "یکشنبه هفتمین روز هفته است. ما امروز از اين کار خارج شديم روز بعد یک هفته جدید آغاز می شود.";
-"calendar_weekday_sunday_today" = "یکشنبه هفتمین روز هفته است. ما امروز از اين کار خارج شديم فردا هفته جديدي رو شروع مي کنه";
+"calendar_weekday_sunday" = "یکشنبه هفتمین روز هفته است. روز بعد یک هفته جدید آغاز می شود.";
+"calendar_weekday_sunday_today" = "یکشنبه هفتمین روز هفته است. فردا هفته جديدي رو شروع مي کنه";
 "calendar_weekday_thursday" = "این هفته هفت روز دارد و پنجشنبه چهارمین روز هفته است.";
 "calendar_weekday_tuesday" = "این هفته هفت روز دارد و سه شنبه دومین روز هفته است.";
 "calendar_weekday_wednesday" = "این هفته هفت روز دارد و چهارشنبه سومین روز هفته است.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "آیا می خواهید بدانید که چه زمانی شما امروز برداشت خواهد شد و کدام دوستان اینجا هستند؟ اینجا را کلیک کنید!";
 "clock_time_1" = "A";
 "clock_time_10" = "ده";
-"clock_time_11" = "یازده";
+"clock_time_11" = "دوازده";
 "clock_time_12" = "دوازده";
 "clock_time_2" = "دو";
 "clock_time_3" = "سه";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "شلوار باران";
 "garment_rainPants_description" = "شلوار باران";
 "garment_shoes" = "کفش";
-"garment_shoes_description" = "کفش";
 "garment_sweater" = "بلع گرم";
 "garment_sweater_description" = "بلع گرم";
 "garment_winterBoots" = "کفش";

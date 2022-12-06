@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Икенче көнне без бурычка алынабыз.";
 "calendar_free_tomorrow" = "Иртәгә без ирекле.";
 "calendar_title_date" = "Бу көн %@";
-"calendar_weekday_friday" = "Җомга – атнаның бишенче көне. Икенче көнне бу шимбә, аннары якшәмбе килә, ике көн без ирекле. Шуннан соң яңа атна башлана.";
-"calendar_weekday_friday_today" = "Җомга – атнаның бишенче көне. Иртәгә – шимбә, аннары якшәмбе, ике көн без ирекле. Шуннан соң яңа атна башлана.";
+"calendar_weekday_friday" = "Җомга – атнаның бишенче көне. Икенче көнне бу шимбә, аннары якшәмбе. Шуннан соң яңа атна башлана.";
+"calendar_weekday_friday_today" = "Җомга – атнаның бишенче көне. Иртәгә шимбә, аннары якшәмбе. Шуннан соң яңа атна башлана.";
 "calendar_weekday_monday" = "Атнаның җиде көне һәм дүшәмбе атнаның беренче көне.";
 "calendar_weekday_saturday" = "Шимбә – атнаның алтынчы көне. Без бу көнне калдырабыз.";
-"calendar_weekday_sunday" = "Якшәмбе - атнаның җиденче көне. Без бу көнне калдырабыз. Икенче көнне яңа атна башлана.";
-"calendar_weekday_sunday_today" = "Якшәмбе - атнаның җиденче көне. Без бу көнне калдырабыз. Иртәгә яңа атна башлана.";
+"calendar_weekday_sunday" = "Якшәмбе - атнаның җиденче көне. Икенче көнне яңа атна башлана.";
+"calendar_weekday_sunday_today" = "Якшәмбе - атнаның җиденче көне. Иртәгә яңа атна башлана.";
 "calendar_weekday_thursday" = "Атнаның җиде көне һәм пәнҗешәмбе атнаның дүртенче көне.";
 "calendar_weekday_tuesday" = "Атнаның җиде көне һәм сишәмбе атнаның икенче көне.";
 "calendar_weekday_wednesday" = "Атнаның җиде көне һәм чәршәмбе атнаның өченче көне.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Әйә син беләсеңме кыямәт көненең килүеннән вә ґәзаб тиеш, ґәзаб тиеш! Монда басыгыз!";
 "clock_time_1" = "A";
 "clock_time_10" = "ун";
-"clock_time_11" = "унбер";
+"clock_time_11" = "унике";
 "clock_time_12" = "унике";
 "clock_time_2" = "Ике";
 "clock_time_3" = "Өч";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "Яңгыр чалбарлары";
 "garment_rainPants_description" = "Яңгыр чалбарлары";
 "garment_shoes" = "Аяк киеме";
-"garment_shoes_description" = "Аяк киеме";
 "garment_sweater" = "Җылы тире";
 "garment_sweater_description" = "Җылы тире";
 "garment_winterBoots" = "Аяк киеме";

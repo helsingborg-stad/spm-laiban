@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "পরের দিন আমরা ডিউটি থেকে সরে দাঁড়াই।";
 "calendar_free_tomorrow" = "আগামীকাল আমরা মুক্ত।";
 "calendar_title_date" = "এই দিনটি <span translate='no'>string</span>";
-"calendar_weekday_friday" = "শুক্রবার সপ্তাহের পঞ্চম দিন। পরের দিন এটা শনিবার এবং তারপর রবিবার আসে, দুই দিন আমরা মুক্ত। এরপর শুরু হয় নতুন এক সপ্তাহ।";
-"calendar_weekday_friday_today" = "শুক্রবার সপ্তাহের পঞ্চম দিন। আগামীকাল শনিবার এবং তারপরে রবিবার, এই দুই দিন আমরা মুক্ত। এরপর শুরু হয় নতুন এক সপ্তাহ।";
+"calendar_weekday_friday" = "শুক্রবার সপ্তাহের পঞ্চম দিন। পরের দিন শনি ও পরে রবিবার। এরপর শুরু হয় নতুন এক সপ্তাহ।";
+"calendar_weekday_friday_today" = "শুক্রবার সপ্তাহের পঞ্চম দিন। আগামীকাল শনিবার, তারপর রবিবার। এরপর শুরু হয় নতুন এক সপ্তাহ।";
 "calendar_weekday_monday" = "সপ্তাহে সাত দিন এবং সোমবার সপ্তাহের প্রথম দিন।";
 "calendar_weekday_saturday" = "শনিবার সপ্তাহের ষষ্ঠ দিন। আমরা এই দিনটা বন্ধ করে দিয়েছি।";
-"calendar_weekday_sunday" = "রবিবার সপ্তাহের সপ্তম দিন। আমরা এই দিনটা বন্ধ করে দিয়েছি। পরের দিন শুরু হয় নতুন সপ্তাহ।";
-"calendar_weekday_sunday_today" = "রবিবার সপ্তাহের সপ্তম দিন। আমরা এই দিনটা বন্ধ করে দিয়েছি। আগামীকাল থেকে শুরু হচ্ছে নতুন এক সপ্তাহ।";
+"calendar_weekday_sunday" = "রবিবার সপ্তাহের সপ্তম দিন। পরের দিন শুরু হয় নতুন সপ্তাহ।";
+"calendar_weekday_sunday_today" = "রবিবার সপ্তাহের সপ্তম দিন। আগামীকাল থেকে শুরু হচ্ছে নতুন এক সপ্তাহ।";
 "calendar_weekday_thursday" = "সপ্তাহে সাত দিন এবং বৃহস্পতিবার সপ্তাহের চতুর্থ দিন।";
 "calendar_weekday_tuesday" = "সপ্তাহে সাত দিন এবং মঙ্গলবার সপ্তাহের দ্বিতীয় দিন।";
 "calendar_weekday_wednesday" = "সপ্তাহে সাত দিন এবং বুধবার সপ্তাহের তৃতীয় দিন।";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "আপনি কি জানতে চান যে আজ আপনাকে কখন তুলে নেওয়া হবে এবং কোন বন্ধুরা এখানে রয়েছে? এখানে ক্লিক করুন!";
 "clock_time_1" = "একটি";
 "clock_time_10" = "দশ";
-"clock_time_11" = "এগারো";
+"clock_time_11" = "বারো";
 "clock_time_12" = "বারো";
 "clock_time_2" = "দুই";
 "clock_time_3" = "তিন";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "বৃষ্টি প্যান্ট";
 "garment_rainPants_description" = "বৃষ্টি প্যান্ট";
 "garment_shoes" = "জুতা";
-"garment_shoes_description" = "জুতা";
 "garment_sweater" = "গরম সোয়েটার";
 "garment_sweater_description" = "গরম সোয়েটার";
 "garment_winterBoots" = "জুতা";

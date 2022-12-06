@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "K'iin uláak' k paach mayaj.";
 "calendar_free_tomorrow" = "Sáamal chan libres.";
 "calendar_title_date" = "Le k'iina' je'ela %@";
-"calendar_weekday_friday" = "Le tak viernes jach u yaalo'on jo'op'éel k'iin u le k'iino'ob. Uláak' k'iine' le sábado ka ts'o'okole' ku k'uchul le domingo, le ka'ap'éel k'iin ku k libres. Ka' lelo', káaj jump'éel túumben k'iino'ob.";
-"calendar_weekday_friday_today" = "Le tak viernes jach u yaalo'on jo'op'éel k'iin u le k'iino'ob. Sáamal le sábado ka tu láak' domingo, le ka'ap'éel k'iin ba'ax k libres. Ka' lelo', káaj jump'éel túumben k'iino'ob.";
+"calendar_weekday_friday" = "Le tak viernes jach u yaalo'on jo'op'éel k'iin u le k'iino'ob. Uláak' k'iine' le sábado, ts'o'okole' domingo. Ka' lelo', káaj jump'éel túumben k'iino'ob.";
+"calendar_weekday_friday_today" = "Le tak viernes jach u yaalo'on jo'op'éel k'iin u le k'iino'ob. Sáamal jach sábado ka tu láak' domingo. Ka' lelo', káaj jump'éel túumben k'iino'ob.";
 "calendar_weekday_monday" = "Le k'iino'ob yaan ti' úuktúul k'iino'ob yéetel le lunes le yáax k'iinil le k'iino'ob.";
-"calendar_weekday_saturday" = "Le sábado jach u sexto k'iin u le k'iino'ob. K paach le k'iina'.";
-"calendar_weekday_sunday" = "Le domingo jach u séptimo k'iin u le k'iino'ob. K paach le k'iina'. Uláak' k'iine' káaj jump'éel túumben k'iino'ob.";
-"calendar_weekday_sunday_today" = "Le domingo jach u séptimo k'iin u le k'iino'ob. K paach le k'iina'. Sáamal káaj jump'éel túumben k'iino'ob.";
+"calendar_weekday_saturday" = "Le sábado jach u sexto k'iin u le k'iino'ob. Táan k náachil le k'iina'.";
+"calendar_weekday_sunday" = "Le domingo jach u séptimo k'iin u le k'iino'ob. Uláak' k'iine' káaj jump'éel túumben k'iino'ob.";
+"calendar_weekday_sunday_today" = "Le domingo jach u séptimo k'iin u le k'iino'ob. Sáamal káaj jump'éel túumben k'iino'ob.";
 "calendar_weekday_thursday" = "Le k'iino'ob yaan ti' úuktúul k'iino'ob yéetel le jueves jach u muuk'il k'iin u le k'iino'ob.";
 "calendar_weekday_tuesday" = "Le k'iino'ob yaan ti' úuktúul k'iino'ob yéetel le martes jach u ka' k'iin u le k'iino'ob.";
 "calendar_weekday_wednesday" = "Le k'iino'ob yaan ti' úuktúul k'iino'ob yéetel le miércoles jach u tercer k'iin u le k'iino'ob.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Táak wáaj a wojeltik k'iin a recogerán be'elajke' yéetel ba'ax etail táan waye'. Mentej clic waye'!";
 "clock_time_1" = "Un";
 "clock_time_10" = "Lajune'";
-"clock_time_11" = "Once";
+"clock_time_11" = "Doce";
 "clock_time_12" = "Doce";
 "clock_time_2" = "Ka'atúul";
 "clock_time_3" = "Óoxp'éel";
@@ -148,20 +148,19 @@ Il ba'ax ken a ts'áik!";
 "garment_pulloverPants_description" = "Nook'o'ob cubierta";
 "garment_rainBoots" = "Botas";
 "garment_rainBoots_description" = "Botas";
-"garment_rainCoat" = "Chaqueta ja'";
+"garment_rainCoat" = "Chaqueta impermeable";
 "garment_rainCoat_description" = "Chaqueta ja'";
 "garment_rainGloves" = "Guantes ja'";
 "garment_rainGloves_description" = "Guantes ja'";
 "garment_rainPants" = "Nook'o'ob ja'";
 "garment_rainPants_description" = "Nook'o'ob ja'";
 "garment_shoes" = "Xanab";
-"garment_shoes_description" = "Xanab";
 "garment_sweater" = "Suéter chokoj";
-"garment_sweater_description" = "Suéter chokoj";
+"garment_sweater_description" = "Suéter cálido";
 "garment_winterBoots" = "Xanab";
 "garment_winterBoots_description" = "Botas ke'elil";
 "garment_winterOutfit" = "Ba'ats wa chaqueta yéetel nook'o'ob piixil";
-"garment_winterOutfit_description" = "Ba'ats wa chaqueta yéetel nook'o'ob piixil";
+"garment_winterOutfit_description" = "Ba'ats wa chaqueta yéetel nook'o'ob cubiertos";
 "home_feedback_acitivity_title" = "Ba'ax a táakpajal ti' alguna actividad.
 Beet clic waye' utia'al xook k ba'ax ta tukultaj u beyo'!";
 "home_holiday" = "Sáamal jach %@. Ma'alo'ob xuul k'iino'ob!";
@@ -213,7 +212,7 @@ Lelo' justo bey ma' %@.";
 Lelo' bin justo bey ma' %@.";
 "tempus_child_arrives_during" = "%@ llegarán ti' le preescolar mentik kex le %@.
 Lelo' ti' %@.";
-"tempus_child_arrives_during_past" = "%@ 'uch ti' le preescolar mentik kex le %@.
+"tempus_child_arrives_during_past" = "%@ 'uch ti' le preescolar mentik kex %@.
 Lelo' bin justo bey ma' %@.";
 "tempus_child_arrives_past" = "%@ k'uch ti' le preescolar u lelo' le %@";
 "tempus_child_has_left" = "%@ bey yantalto'on u biin tin wotoch tumen k'iin.";

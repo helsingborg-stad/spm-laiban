@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "अगले दिन हम ड्यूटी से बाहर हैं।";
 "calendar_free_tomorrow" = "कल हम आज़ाद हैं।";
 "calendar_title_date" = "यह दिन %@ है";
-"calendar_weekday_friday" = "शुक्रवार सप्ताह का पांचवा दिन होता है। अगले दिन शनिवार है और फिर रविवार आता है, दो दिन हम स्वतंत्र हैं। इसके बाद एक नया सप्ताह शुरू होता है।";
-"calendar_weekday_friday_today" = "शुक्रवार सप्ताह का पांचवा दिन होता है। कल शनिवार है और फिर रविवार है, दो दिन हम स्वतंत्र हैं। इसके बाद एक नया सप्ताह शुरू होता है।";
+"calendar_weekday_friday" = "शुक्रवार सप्ताह का पांचवा दिन है। अगले दिन शनिवार और फिर रविवार है। उसके बाद, एक नया सप्ताह शुरू होता है।";
+"calendar_weekday_friday_today" = "शुक्रवार सप्ताह का पांचवा दिन है। कल शनिवार है और फिर रविवार है। उसके बाद, एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_monday" = "सप्ताह में सात दिन होते हैं और सोमवार सप्ताह का पहला दिन होता है।";
-"calendar_weekday_saturday" = "शनिवार सप्ताह का छठा दिन होता है। हम इस दिन छुट्टी पर हैं।";
-"calendar_weekday_sunday" = "रविवार सप्ताह का सातवां दिन होता है। हम इस दिन छुट्टी पर हैं। अगले दिन एक नया सप्ताह शुरू होता है।";
-"calendar_weekday_sunday_today" = "रविवार सप्ताह का सातवां दिन होता है। हम इस दिन छुट्टी पर हैं। कल एक नया सप्ताह शुरू हो रहा है।";
+"calendar_weekday_saturday" = "शनिवार सप्ताह का छठा दिन है। हम इस दिन बंद हैं।";
+"calendar_weekday_sunday" = "रविवार सप्ताह का सातवां दिन है। अगले दिन एक नया सप्ताह शुरू होता है।";
+"calendar_weekday_sunday_today" = "रविवार सप्ताह का सातवां दिन है। कल एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_thursday" = "सप्ताह में सात दिन होते हैं और गुरुवार सप्ताह का चौथा दिन होता है।";
 "calendar_weekday_tuesday" = "सप्ताह में सात दिन होते हैं और मंगलवार सप्ताह का दूसरा दिन होता है।";
 "calendar_weekday_wednesday" = "सप्ताह में सात दिन होते हैं और बुधवार सप्ताह का तीसरा दिन होता है।";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "क्या आप जानना चाहते हैं कि आज आपको कब उठाया जाएगा और कौन से दोस्त यहां हैं? यहाँ क्लिक करें!";
 "clock_time_1" = "एक";
 "clock_time_10" = "दस";
-"clock_time_11" = "ग्यारह";
+"clock_time_11" = "बारह";
 "clock_time_12" = "बारह";
 "clock_time_2" = "दो";
 "clock_time_3" = "तीन";
@@ -46,11 +46,11 @@
 "clock_time_description_0600_to_0730" = "अब सुबह है और इस समय के आसपास हम नाश्ता करते हैं।";
 "clock_time_description_0730_to_0830" = "अब सुबह हो गई है।";
 "clock_time_description_0830_to_0900" = "इस समय के आसपास हम फल खाते हैं।";
-"clock_time_description_0900_to_1045" = "अब सुबह हो गई है।";
+"clock_time_description_0900_to_1045" = "अब सुबह हो चुकी है।";
 "clock_time_description_1045_to_1230" = "अब दोपहर और दोपहर के भोजन का समय है।";
 "clock_time_description_1230_to_1400" = "अब दोपहर हो गई है।";
 "clock_time_description_1400_to_1500" = "अब दोपहर हो गई है और इस समय के आसपास हम स्नैक्स खाते हैं।";
-"clock_time_description_1500_to_1630" = "अब दोपहर हो गई है।";
+"clock_time_description_1500_to_1630" = "अब दोपहर हो चुकी है।";
 "clock_time_description_1630_to_1800" = "लगभग रात हो चुकी है।";
 "clock_time_description_1800_to_2000" = "अब रात हो चुकी है। चैन से सोओ!";
 "clock_time_description_2000_to_0600" = "अब रात हो चुकी है।";
@@ -135,12 +135,12 @@
 "food_waste_title" = "स्केल से जोड़ने या निकालने के लिए छवियों को टैप करें";
 "food_waste_weekly_stats" = "इस सप्ताह आपने %@ ग्राम खाना फेंक दिया है।";
 "garment_beanie" = "बीनी";
-"garment_beanie_description" = "बीनी";
+"garment_beanie_description" = "Beanie";
 "garment_cap" = "टोपी";
 "garment_cap_description" = "टोपी";
 "garment_jacket" = "जैकेट";
 "garment_jacket_description" = "जैकेट";
-"garment_mittens" = "मिटन्स";
+"garment_mittens" = "Mittens";
 "garment_mittens_description" = "मिटन्स";
 "garment_neckWear" = "कछुआ या दुपट्टा";
 "garment_neckWear_description" = "स्कार्फ या कछुआ";
@@ -148,20 +148,19 @@
 "garment_pulloverPants_description" = "कवर पैंट";
 "garment_rainBoots" = "जूते";
 "garment_rainBoots_description" = "जूते";
-"garment_rainCoat" = "बारिश जैकेट";
+"garment_rainCoat" = "रेन जैकेट";
 "garment_rainCoat_description" = "बारिश जैकेट";
 "garment_rainGloves" = "बारिश के दस्ताने";
 "garment_rainGloves_description" = "बारिश के दस्ताने";
-"garment_rainPants" = "बारिश पैंट";
+"garment_rainPants" = "बारिश की पैंट";
 "garment_rainPants_description" = "बारिश पैंट";
 "garment_shoes" = "जूते";
-"garment_shoes_description" = "जूते";
 "garment_sweater" = "गर्म स्वेटर";
 "garment_sweater_description" = "गर्म स्वेटर";
 "garment_winterBoots" = "जूते";
 "garment_winterBoots_description" = "शीतकालीन जूते";
 "garment_winterOutfit" = "कवर पैंट के साथ चौग़ा या जैकेट";
-"garment_winterOutfit_description" = "कवर पैंट के साथ चौग़ा या जैकेट";
+"garment_winterOutfit_description" = "कवर पैंट के साथ ओवरऑल या जैकेट";
 "home_feedback_acitivity_title" = "क्या आपने किसी गतिविधि में भाग लिया है?
 यहाँ क्लिक करें हमें बताने के लिए कि आपने इसके बारे में क्या सोचा था!";
 "home_holiday" = "कल %@है। आपका सप्ताहांत शुभ हो!";
@@ -213,7 +212,7 @@
 यह %@से ठीक पहले की बात है।";
 "tempus_child_arrives_during" = "%@ लगभग %@पर पूर्वस्कूली पहुंचेगा।
 यह <span translate='no'>string</span>के दौरान है।";
-"tempus_child_arrives_during_past" = "%@ लगभग %@में पूर्वस्कूली पहुंचे।
+"tempus_child_arrives_during_past" = "%@ लगभग %@में पूर्वस्कूली में पहुंचे।
 यह %@से ठीक पहले की बात है।";
 "tempus_child_arrives_past" = "%@ लगभग %@ में पूर्वस्कूली पहुंचे";
 "tempus_child_has_left" = "ऐसा लगता है कि %@ दिन के लिए घर चले गए हैं।";

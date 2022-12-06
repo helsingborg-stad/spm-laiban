@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "למחרת אנחנו מחוץ לתפקיד.";
 "calendar_free_tomorrow" = "מחר אנחנו חופשיים.";
 "calendar_title_date" = "היום הזה %@";
-"calendar_weekday_friday" = "יום שישי הוא היום החמישי בשבוע. למחרת זה יום שבת ואז מגיע יום ראשון, היומיים אנחנו חופשיים. לאחר מכן מתחיל שבוע חדש.";
-"calendar_weekday_friday_today" = "יום שישי הוא היום החמישי בשבוע. מחר בשבת ואז ביום ראשון, ביומיים אנחנו חופשיים. לאחר מכן מתחיל שבוע חדש.";
+"calendar_weekday_friday" = "יום שישי הוא היום החמישי בשבוע. למחרת זה יום שבת ואז יום ראשון. לאחר מכן, שבוע חדש מתחיל.";
+"calendar_weekday_friday_today" = "יום שישי הוא היום החמישי בשבוע. מחר שבת ואז יום ראשון. לאחר מכן, שבוע חדש מתחיל.";
 "calendar_weekday_monday" = "בשבוע יש שבעה ימים ויום שני הוא היום הראשון בשבוע.";
-"calendar_weekday_saturday" = "יום שבת הוא היום השישי בשבוע. אנחנו יוצאים לדרך היום הזה.";
-"calendar_weekday_sunday" = "יום ראשון הוא היום השביעי בשבוע. אנחנו יוצאים לדרך היום הזה. למחרת מתחיל שבוע חדש.";
-"calendar_weekday_sunday_today" = "יום ראשון הוא היום השביעי בשבוע. אנחנו יוצאים לדרך היום הזה. מחר מתחיל שבוע חדש.";
+"calendar_weekday_saturday" = "יום שבת הוא היום השישי בשבוע. אנחנו יוצאים מהיום הזה.";
+"calendar_weekday_sunday" = "יום ראשון הוא היום השביעי בשבוע. למחרת מתחיל שבוע חדש.";
+"calendar_weekday_sunday_today" = "יום ראשון הוא היום השביעי בשבוע. מחר מתחיל שבוע חדש.";
 "calendar_weekday_thursday" = "השבוע כולל שבעה ימים ויום חמישי הוא היום הרביעי בשבוע.";
 "calendar_weekday_tuesday" = "בשבוע יש שבעה ימים ויום שלישי הוא היום השני בשבוע.";
 "calendar_weekday_wednesday" = "השבוע כולל שבעה ימים ויום רביעי הוא היום השלישי בשבוע.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "האם אתה רוצה לדעת מתי יאספו אותך היום ואילו חברים נמצאים כאן? לחצו כאן!";
 "clock_time_1" = "A";
 "clock_time_10" = "עשר";
-"clock_time_11" = "אחד עשר";
+"clock_time_11" = "שנים עשר";
 "clock_time_12" = "שנים עשר";
 "clock_time_2" = "שניים";
 "clock_time_3" = "שלוש";
@@ -46,11 +46,11 @@
 "clock_time_description_0600_to_0730" = "עכשיו זה בוקר ובסביבות הזמן הזה אנחנו אוכלים ארוחת בוקר.";
 "clock_time_description_0730_to_0830" = "עכשיו זה בוקר.";
 "clock_time_description_0830_to_0900" = "בערך בתקופה זו אנו אוכלים פירות.";
-"clock_time_description_0900_to_1045" = "עכשיו זה בוקר.";
+"clock_time_description_0900_to_1045" = "עכשיו בוקר.";
 "clock_time_description_1045_to_1230" = "עכשיו השעה צהריים וצהריים.";
 "clock_time_description_1230_to_1400" = "עכשיו זה אחר הצהריים.";
 "clock_time_description_1400_to_1500" = "עכשיו זה אחר הצהריים ובסביבות הזמן הזה אנחנו אוכלים חטיפים.";
-"clock_time_description_1500_to_1630" = "עכשיו זה אחר הצהריים.";
+"clock_time_description_1500_to_1630" = "עכשיו אחר הצהריים.";
 "clock_time_description_1630_to_1800" = "זה כמעט לילה.";
 "clock_time_description_1800_to_2000" = "עכשיו זה לילה. תישן טוב!";
 "clock_time_description_2000_to_0600" = "עכשיו זה לילה.";
@@ -155,13 +155,12 @@
 "garment_rainPants" = "מכנסי גשם";
 "garment_rainPants_description" = "מכנסי גשם";
 "garment_shoes" = "נעליים";
-"garment_shoes_description" = "נעליים";
 "garment_sweater" = "סוודר חם";
 "garment_sweater_description" = "סוודר חם";
 "garment_winterBoots" = "נעליים";
 "garment_winterBoots_description" = "מגפי חורף";
 "garment_winterOutfit" = "סרבלים או ז'קט עם מכנסי כיסוי";
-"garment_winterOutfit_description" = "סרבלים או ז'קט עם מכנסי כיסוי";
+"garment_winterOutfit_description" = "אוברול או ז'קט עם מכנסי כיסוי";
 "home_feedback_acitivity_title" = "האם השתתפת בפעילות?
 לחצו כאן כדי לספר לנו מה חשבתם על זה!";
 "home_holiday" = "מחר %@. שיהיה לך סוף שבוע נחמד!";
@@ -213,7 +212,7 @@
 זה היה ממש לפני %@.";
 "tempus_child_arrives_during" = "%@ יגיעו לגן בערך בשעה %@.
 זה במהלך %@.";
-"tempus_child_arrives_during_past" = "%@ הגיע לגן בערך בשעה %@.
+"tempus_child_arrives_during_past" = "%@ הגיע לגן בסביבות %@.
 זה היה ממש לפני %@.";
 "tempus_child_arrives_past" = "%@ הגיע לגן בערך בשעה %@";
 "tempus_child_has_left" = "נראה %@ הלך הביתה במשך היום.";

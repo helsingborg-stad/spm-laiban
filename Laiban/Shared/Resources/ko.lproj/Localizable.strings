@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "다음날 우리는 근무를 그만 둡니다.";
 "calendar_free_tomorrow" = "내일 우리는 자유롭습니다.";
 "calendar_title_date" = "오늘은 %@";
-"calendar_weekday_friday" = "금요일은 주중 다섯 번째 날입니다. 다음 날은 토요일이고 일요일은 오는데, 이틀은 무료입니다. 그 후, 새로운 주가 시작됩니다.";
-"calendar_weekday_friday_today" = "금요일은 주중 다섯 번째 날입니다. 내일은 토요일이고 일요일은 우리가 자유로워지는 이틀입니다. 그 후, 새로운 주가 시작됩니다.";
+"calendar_weekday_friday" = "금요일은 주중 다섯 번째 날입니다. 다음날은 토요일과 일요일입니다. 그 후 새로운 주가 시작됩니다.";
+"calendar_weekday_friday_today" = "금요일은 주중 다섯 번째 날입니다. 내일은 토요일이고 일요일입니다. 그 후 새로운 주가 시작됩니다.";
 "calendar_weekday_monday" = "일주일에는 칠일이 있고 월요일은 그 주의 첫날입니다.";
-"calendar_weekday_saturday" = "토요일은 주중 여섯째 날입니다. 우리는 오늘 벗어났습니다.";
-"calendar_weekday_sunday" = "일요일은 주일의 일곱째 날입니다. 우리는 오늘 벗어났습니다. 다음 날은 새로운 주를 시작합니다.";
-"calendar_weekday_sunday_today" = "일요일은 주일의 일곱째 날입니다. 우리는 오늘 벗어났습니다. 내일은 새로운 주를 시작합니다.";
+"calendar_weekday_saturday" = "토요일은 주일의 여섯째 날입니다. 우리는 오늘 출발합니다.";
+"calendar_weekday_sunday" = "일요일은 주일의 일곱째 날입니다. 다음날은 새로운 주를 시작합니다.";
+"calendar_weekday_sunday_today" = "일요일은 주일의 일곱째 날입니다. 내일은 새로운 한 주를 시작합니다.";
 "calendar_weekday_thursday" = "일주일에는 칠일이 있고 목요일은 그 주의 넷째 날입니다.";
 "calendar_weekday_tuesday" = "일주일에는 칠일이 있고 화요일은 그 주의 둘째 날입니다.";
 "calendar_weekday_wednesday" = "일주일에는 칠일이 있고 수요일은 그 주의 셋째 날입니다.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "오늘 언제 데리러 올지, 어떤 친구가 여기에 있는지 알고 싶습니까? 여기를 클릭하십시오!";
 "clock_time_1" = "A";
 "clock_time_10" = "10";
-"clock_time_11" = "11";
+"clock_time_11" = "12";
 "clock_time_12" = "12";
 "clock_time_2" = "2";
 "clock_time_3" = "3";
@@ -145,23 +145,22 @@
 "garment_neckWear" = "터틀넥 또는 스카프";
 "garment_neckWear_description" = "스카프 또는 터틀넥";
 "garment_pulloverPants" = "커버 바지";
-"garment_pulloverPants_description" = "커버 바지";
+"garment_pulloverPants_description" = "커버 팬츠";
 "garment_rainBoots" = "장화";
 "garment_rainBoots_description" = "장화";
-"garment_rainCoat" = "비 재킷";
+"garment_rainCoat" = "레인 재킷";
 "garment_rainCoat_description" = "비 재킷";
 "garment_rainGloves" = "비 장갑";
-"garment_rainGloves_description" = "비 장갑";
-"garment_rainPants" = "레인 바지";
+"garment_rainGloves_description" = "레인 글러브";
+"garment_rainPants" = "레인 팬츠";
 "garment_rainPants_description" = "레인 바지";
 "garment_shoes" = "신발";
-"garment_shoes_description" = "신발";
 "garment_sweater" = "따뜻한 스웨터";
 "garment_sweater_description" = "따뜻한 스웨터";
 "garment_winterBoots" = "신발";
 "garment_winterBoots_description" = "겨울 부츠";
 "garment_winterOutfit" = "커버 팬츠가있는 작업복 또는 재킷";
-"garment_winterOutfit_description" = "커버 팬츠가있는 작업복 또는 재킷";
+"garment_winterOutfit_description" = "커버 바지가 달린 바지 또는 재킷";
 "home_feedback_acitivity_title" = "활동에 참여하셨습니까?
 여기를 클릭하여 당신이 그것에 대해 어떻게 생각했는지 알려주십시오!";
 "home_holiday" = "내일은 %@입니다. 주말 잘 보내세요!";
@@ -213,7 +212,7 @@
 그것은 %@직전이었습니다.";
 "tempus_child_arrives_during" = "%@ 약 %@에 유치원에 도착할 것입니다.
 그것은 %@동안입니다.";
-"tempus_child_arrives_during_past" = "%@ 약 %@에 유치원에 도착했다.
+"tempus_child_arrives_during_past" = "%@ 약 %@시에 유치원에 도착했습니다.
 그것은 %@직전이었습니다.";
 "tempus_child_arrives_past" = "%@ 약 %@에 유치원에 도착했다.";
 "tempus_child_has_left" = "%@ 하루 동안 집에 간 것 같습니다.";

@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "An lá dár gcionn táimid as dualgas.";
 "calendar_free_tomorrow" = "Amárach táimid saor in aisce.";
 "calendar_title_date" = "Tá an lá seo %@";
-"calendar_weekday_friday" = "Is í an Aoine an cúigiú lá den tseachtain. An lá dár gcionn is Dé Sathairn é agus ansin tagann an Domhnach, an dá lá atá saor againn. Ina dhiaidh sin, tosaíonn seachtain nua.";
-"calendar_weekday_friday_today" = "Is í an Aoine an cúigiú lá den tseachtain. Amárach an Satharn agus ansin Dé Domhnaigh, an dá lá atá muid saor in aisce. Ina dhiaidh sin, tosaíonn seachtain nua.";
+"calendar_weekday_friday" = "Is í an Aoine an cúigiú lá den tseachtain. An lá dár gcionn is é Dé Sathairn agus ansin Dé Domhnaigh. Ina dhiaidh sin, tosaíonn seachtain nua.";
+"calendar_weekday_friday_today" = "Is í an Aoine an cúigiú lá den tseachtain. Amárach an Satharn agus ansin Dé Domhnaigh. Ina dhiaidh sin, tosaíonn seachtain nua.";
 "calendar_weekday_monday" = "Tá seacht lá ag an tseachtain agus is é an Luan an chéad lá den tseachtain.";
 "calendar_weekday_saturday" = "Is é an Satharn an séú lá den tseachtain. Táimid as an lá seo.";
-"calendar_weekday_sunday" = "Is é an Domhnach an seachtú lá den tseachtain. Táimid as an lá seo. Cuirfear tús le seachtain nua an lá dár gcionn.";
-"calendar_weekday_sunday_today" = "Is é an Domhnach an seachtú lá den tseachtain. Táimid as an lá seo. Cuirfear tús amárach le seachtain nua.";
+"calendar_weekday_sunday" = "Is é an Domhnach an seachtú lá den tseachtain. Tosaíonn an lá dar gcionn seachtain nua.";
+"calendar_weekday_sunday_today" = "Is é an Domhnach an seachtú lá den tseachtain. Tosaíonn amárach seachtain nua.";
 "calendar_weekday_thursday" = "Tá seacht lá ag an tseachtain agus is é Déardaoin an ceathrú lá den tseachtain.";
 "calendar_weekday_tuesday" = "Tá seacht lá ag an tseachtain agus is é Dé Máirt an dara lá den tseachtain.";
 "calendar_weekday_wednesday" = "Tá seacht lá ag an tseachtain agus is é Dé Céadaoin an tríú lá den tseachtain.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Ar mhaith leat a fháil amach cathain a phiocfar suas tú inniu agus cé na cairde atá anseo? Cliceáil anseo!";
 "clock_time_1" = "A";
 "clock_time_10" = "deichniúr";
-"clock_time_11" = "aon bhliain déag";
+"clock_time_11" = "dhá cheann déag";
 "clock_time_12" = "dhá cheann déag";
 "clock_time_2" = "Dhá";
 "clock_time_3" = "Triúr";

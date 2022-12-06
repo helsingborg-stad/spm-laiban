@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Ertesi gün izindeyiz.";
 "calendar_free_tomorrow" = "Yarın özgüruz.";
 "calendar_title_date" = "Bu gün. %@";
-"calendar_weekday_friday" = "Cuma haftanın beşinci günüdür. Ertesi gün cumartesi, pazar geliyor, iki gün boşuz. Ondan sonra yeni bir hafta başlıyor.";
-"calendar_weekday_friday_today" = "Cuma haftanın beşinci günüdür. Yarın cumartesi, sonra pazar, iki gün boşuz. Ondan sonra yeni bir hafta başlıyor.";
+"calendar_weekday_friday" = "Cuma haftanın beşinci günüdür. Ertesi gün Cumartesi ve sonra Pazar. Bundan sonra yeni bir hafta başlar.";
+"calendar_weekday_friday_today" = "Cuma haftanın beşinci günüdür. Yarın cumartesi ve sonra pazar. Bundan sonra yeni bir hafta başlar.";
 "calendar_weekday_monday" = "Haftanın yedi günü vardır ve Pazartesi haftanın ilk günüdür.";
-"calendar_weekday_saturday" = "Cumartesi haftanın altıncı günüdür. Bu gün izinliyiz.";
-"calendar_weekday_sunday" = "Pazar haftanın yedinci günüdür. Bu gün izinliyiz. Ertesi gün yeni bir hafta başlar.";
-"calendar_weekday_sunday_today" = "Pazar haftanın yedinci günüdür. Bu gün izinliyiz. Yarın yeni bir hafta başlıyor.";
+"calendar_weekday_saturday" = "Cumartesi haftanın altıncı günüdür. Bugün kapalıyız.";
+"calendar_weekday_sunday" = "Pazar haftanın yedinci günüdür. Ertesi gün yeni bir hafta başlar.";
+"calendar_weekday_sunday_today" = "Pazar haftanın yedinci günüdür. Yarın yeni bir hafta başlıyor.";
 "calendar_weekday_thursday" = "Haftanın yedi günü vardır ve Perşembe haftanın dördüncü günüdür.";
 "calendar_weekday_tuesday" = "Haftanın yedi günü vardır ve Salı haftanın ikinci günüdür.";
 "calendar_weekday_wednesday" = "Haftanın yedi günü vardır ve Çarşamba haftanın üçüncü günüdür.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Bugün ne zaman alınacağınızı ve hangi arkadaşlarınızın burada olduğunu bilmek ister misiniz? Buraya tıklayın!";
 "clock_time_1" = "A";
 "clock_time_10" = "on";
-"clock_time_11" = "On bir";
+"clock_time_11" = "onbir";
 "clock_time_12" = "oniki";
 "clock_time_2" = "Iki";
 "clock_time_3" = "Üç";

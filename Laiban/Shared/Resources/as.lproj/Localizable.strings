@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "পিছদিনা আমি কৰ্তব্যৰ পৰা আঁতৰি আছোঁ।";
 "calendar_free_tomorrow" = "কাইলৈ আমি মুক্ত।";
 "calendar_title_date" = "এই দিনটো <span translate='no'>string</span>";
-"calendar_weekday_friday" = "শুক্ৰবাৰে সপ্তাহৰ পঞ্চম দিন। পিছদিনা শনিবাৰে আৰু তাৰ পিছত দেওবাৰে আহে, দুদিন আমি মুক্ত। তাৰ পিছত, এটা নতুন সপ্তাহ আৰম্ভ হয়।";
-"calendar_weekday_friday_today" = "শুক্ৰবাৰে সপ্তাহৰ পঞ্চম দিন। কাইলৈ শনিবাৰে আৰু তাৰ পিছত দেওবাৰে, দুদিন আমি মুক্ত। তাৰ পিছত, এটা নতুন সপ্তাহ আৰম্ভ হয়।";
+"calendar_weekday_friday" = "শুক্ৰবাৰে সপ্তাহৰ পঞ্চম দিন। পিছদিনা শনিবাৰে আৰু তাৰ পিছত দেওবাৰে। তাৰ পিছত, এটা নতুন সপ্তাহ আৰম্ভ হয়।";
+"calendar_weekday_friday_today" = "শুক্ৰবাৰে সপ্তাহৰ পঞ্চম দিন। কাইলৈ শনিবাৰে আৰু তাৰ পিছত দেওবাৰে। তাৰ পিছত, এটা নতুন সপ্তাহ আৰম্ভ হয়।";
 "calendar_weekday_monday" = "সপ্তাহটোত সাত দিন আছে আৰু সোমবাৰে সপ্তাহৰ প্ৰথম দিন।";
 "calendar_weekday_saturday" = "শনিবাৰে সপ্তাহৰ ষষ্ঠ দিন। আমি আজিৰ দিনটোত বন্ধ আছোঁ।";
-"calendar_weekday_sunday" = "দেওবাৰে সপ্তাহৰ সপ্তম দিন। আমি আজিৰ দিনটোত বন্ধ আছোঁ। পিছদিনা এটা নতুন সপ্তাহ আৰম্ভ হ'ব।";
-"calendar_weekday_sunday_today" = "দেওবাৰে সপ্তাহৰ সপ্তম দিন। আমি আজিৰ দিনটোত বন্ধ আছোঁ। কাইলৈ এটা নতুন সপ্তাহ আৰম্ভ হ'ব।";
+"calendar_weekday_sunday" = "দেওবাৰে সপ্তাহৰ সপ্তম দিন। পিছদিনা এটা নতুন সপ্তাহ আৰম্ভ হ'ব।";
+"calendar_weekday_sunday_today" = "দেওবাৰে সপ্তাহৰ সপ্তম দিন। কাইলৈ এটা নতুন সপ্তাহ আৰম্ভ হ'ব।";
 "calendar_weekday_thursday" = "সপ্তাহটোত সাত দিন আছে আৰু বৃহস্পতিবাৰে সপ্তাহৰ চতুৰ্থ দিন।";
 "calendar_weekday_tuesday" = "সপ্তাহটোত সাত দিন আছে আৰু মঙলবাৰে সপ্তাহৰ দ্বিতীয় দিন।";
 "calendar_weekday_wednesday" = "সপ্তাহটোত সাত দিন আছে আৰু বুধবাৰে সপ্তাহৰ তৃতীয় দিন।";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "আপুনি জানিব বিচাৰে নেকি যে আপোনাক আজি কেতিয়া উঠোৱা হ'ব আৰু কোনবোৰ বন্ধু ইয়াত আছে? ইয়াত ক্লিক কৰক!";
 "clock_time_1" = "A";
 "clock_time_10" = "দহ";
-"clock_time_11" = "এঘাৰ";
+"clock_time_11" = "বাৰ";
 "clock_time_12" = "বাৰ";
 "clock_time_2" = "দুই";
 "clock_time_3" = "তিনি";
@@ -155,7 +155,6 @@
 "garment_rainPants" = "ৰেইন পেণ্ট";
 "garment_rainPants_description" = "ৰেইন পেণ্ট";
 "garment_shoes" = "জোতা";
-"garment_shoes_description" = "জোতা";
 "garment_sweater" = "গৰম চুৱেটাৰ";
 "garment_sweater_description" = "গৰম চুৱেটাৰ";
 "garment_winterBoots" = "জোতা";

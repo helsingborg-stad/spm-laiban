@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "The next day we're off duty.";
 "calendar_free_tomorrow" = "Tomorrow we're free.";
 "calendar_title_date" = "This day is %@";
-"calendar_weekday_friday" = "Friday is the fifth day of the week. The next day it's Saturday and then Sunday comes, the two days we're free. After that, a new week begins.";
-"calendar_weekday_friday_today" = "Friday is the fifth day of the week. Tomorrow is Saturday and then Sunday, the two days we are free. After that, a new week begins.";
+"calendar_weekday_friday" = "Friday is the fifth day of the week. The next day it's Saturday and then Sunday. After that, a new week begins.";
+"calendar_weekday_friday_today" = "Friday is the fifth day of the week. Tomorrow is Saturday and then Sunday. After that, a new week begins.";
 "calendar_weekday_monday" = "The week has seven days and Monday is the first day of the week.";
 "calendar_weekday_saturday" = "Saturday is the sixth day of the week. We're off this day.";
-"calendar_weekday_sunday" = "Sunday is the seventh day of the week. We're off this day. The next day begins a new week.";
-"calendar_weekday_sunday_today" = "Sunday is the seventh day of the week. We're off this day. Tomorrow begins a new week.";
+"calendar_weekday_sunday" = "Sunday is the seventh day of the week. The next day begins a new week.";
+"calendar_weekday_sunday_today" = "Sunday is the seventh day of the week. Tomorrow begins a new week.";
 "calendar_weekday_thursday" = "The week has seven days and Thursday is the fourth day of the week.";
 "calendar_weekday_tuesday" = "The week has seven days and Tuesday is the second day of the week.";
 "calendar_weekday_wednesday" = "The week has seven days and Wednesday is the third day of the week.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Do you want to know when you will be picked up today and which friends are here? Click here!";
 "clock_time_1" = "A";
 "clock_time_10" = "ten";
-"clock_time_11" = "eleven";
+"clock_time_11" = "twelve";
 "clock_time_12" = "twelve";
 "clock_time_2" = "Two";
 "clock_time_3" = "Three";

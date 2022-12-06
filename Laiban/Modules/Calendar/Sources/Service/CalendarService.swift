@@ -40,13 +40,9 @@ public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, 
         
         $data.sink { [weak self] data in
             var strings = [String]()
-            print("------------------------Strings To Translate CalendarService----------------------------")
             for e in data {
-                print(e.content)
                 strings.append(e.content)
             }
-            print("------------------------END Strings To Translate CalendarService----------------------------")
-            
             self?.stringsToTranslate = strings
         }.store(in: &cancellables)
     }

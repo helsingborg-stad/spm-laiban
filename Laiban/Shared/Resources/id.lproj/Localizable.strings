@@ -19,12 +19,12 @@
 "calendar_free_day_after" = "Keesokan harinya kami tidak bertugas.";
 "calendar_free_tomorrow" = "Besok kita bebas.";
 "calendar_title_date" = "Hari ini %@";
-"calendar_weekday_friday" = "Jumat adalah hari kelima dalam seminggu. Keesokan harinya hari Sabtu dan kemudian minggu datang, dua hari kita bebas. Setelah itu, minggu baru dimulai.";
-"calendar_weekday_friday_today" = "Jumat adalah hari kelima dalam seminggu. Besok adalah hari Sabtu dan kemudian Minggu, dua hari kita bebas. Setelah itu, minggu baru dimulai.";
+"calendar_weekday_friday" = "Jumat adalah hari kelima dalam seminggu. Keesokan harinya hari Sabtu dan kemudian Minggu. Setelah itu, minggu baru dimulai.";
+"calendar_weekday_friday_today" = "Jumat adalah hari kelima dalam seminggu. Besok adalah hari Sabtu dan kemudian Minggu. Setelah itu, minggu baru dimulai.";
 "calendar_weekday_monday" = "Minggu ini memiliki tujuh hari dan Senin adalah hari pertama dalam seminggu.";
 "calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu. Kami libur hari ini.";
-"calendar_weekday_sunday" = "Hari Minggu adalah hari ketujuh dalam seminggu. Kami libur hari ini. Keesokan harinya dimulai minggu baru.";
-"calendar_weekday_sunday_today" = "Hari Minggu adalah hari ketujuh dalam seminggu. Kami libur hari ini. Besok dimulai minggu baru.";
+"calendar_weekday_sunday" = "Minggu adalah hari ketujuh dalam seminggu. Hari berikutnya dimulai minggu baru.";
+"calendar_weekday_sunday_today" = "Minggu adalah hari ketujuh dalam seminggu. Besok memulai minggu baru.";
 "calendar_weekday_thursday" = "Minggu ini memiliki tujuh hari dan Kamis adalah hari keempat dalam seminggu.";
 "calendar_weekday_tuesday" = "Minggu ini memiliki tujuh hari dan Selasa adalah hari kedua dalam seminggu.";
 "calendar_weekday_wednesday" = "Minggu ini memiliki tujuh hari dan Rabu adalah hari ketiga dalam seminggu.";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "Apakah Anda ingin tahu kapan Anda akan dijemput hari ini dan teman mana yang ada di sini? Klik di sini!";
 "clock_time_1" = "Sebuah";
 "clock_time_10" = "Sepuluh";
-"clock_time_11" = "Sebelas";
+"clock_time_11" = "Dua belas";
 "clock_time_12" = "Dua belas";
 "clock_time_2" = "Dua";
 "clock_time_3" = "Tiga";
@@ -155,7 +155,6 @@ Lihat apa yang akan Anda kenakan!";
 "garment_rainPants" = "Celana hujan";
 "garment_rainPants_description" = "Celana hujan";
 "garment_shoes" = "Sepatu";
-"garment_shoes_description" = "Sepatu";
 "garment_sweater" = "Sweter hangat";
 "garment_sweater_description" = "Sweter hangat";
 "garment_winterBoots" = "Sepatu";
@@ -213,7 +212,7 @@ Itu tepat sebelum %@.";
 Itu tepat sebelum %@.";
 "tempus_child_arrives_during" = "%@ akan tiba di prasekolah sekitar %@.
 Itu selama %@.";
-"tempus_child_arrives_during_past" = "%@ tiba di prasekolah sekitar %@.
+"tempus_child_arrives_during_past" = "%@ tiba di prasekolah sekitar pukul %@.
 Itu tepat sebelum %@.";
 "tempus_child_arrives_past" = "%@ tiba di prasekolah sekitar %@";
 "tempus_child_has_left" = "%@ tampaknya telah pulang untuk hari itu.";
