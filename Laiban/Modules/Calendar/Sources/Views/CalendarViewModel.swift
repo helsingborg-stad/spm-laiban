@@ -27,7 +27,6 @@ class CalendarViewModel : ObservableObject {
             voiceStrings = []
             title = todayString
             eventString = nil
-            update()
         }
     }
     @Published var todaysEvents:[CalendarEvent] = [CalendarEvent]()
@@ -78,8 +77,7 @@ class CalendarViewModel : ObservableObject {
             return
         }
         
-        var strings = [title]
-        //strings.append(assistant.string(forKey: todayString))
+        var strings = [todayString]
         strings.append(assistant.string(forKey: selectedDay.descriptionKey))
         
         if let event = service.calendarEvents(on: selectedDay.day).first {
@@ -93,7 +91,6 @@ class CalendarViewModel : ObservableObject {
         }
         if let h = eventString {
             strings.append(h)
-//            strings.append(assistant.string(forKey: "calendar_free_day"))
         }
         assistant.speak(strings)
     }
@@ -102,13 +99,14 @@ class CalendarViewModel : ObservableObject {
         self.assistant = assistant
         self.contentProvider = contentProvider
         self.todaysEvents = service.todaysCalendarEvents
-        self.selectedDay = DayView.Day.current
         contentProvider?.otherCalendarEventsPublisher().sink { events in
             self.otherEvents = events ?? []
         }.store(in: &cancellables)
+        self.selectedDay = DayView.Day.current
         self.update()
     }
     func didTap(day:DayView.Day) {
         self.selectedDay = day
+        self.update()
     }
 }
