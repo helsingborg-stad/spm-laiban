@@ -23,7 +23,11 @@ class CalendarViewModel : ObservableObject {
     @Published var eventIcon:String = "🎉"
     @Published var selectedDay = DayView.Day.current {
         didSet{
+            
             self.todaysEvents = service?.calendarEvents(on: selectedDay.day) ?? []
+            if let celebrationDay =  isCelebrationDay(date: selectedDay.day){
+                self.todaysEvents.append(celebrationDay)
+            }
             voiceStrings = []
             title = todayString
             eventString = nil
@@ -31,6 +35,14 @@ class CalendarViewModel : ObservableObject {
     }
     @Published var todaysEvents:[CalendarEvent] = [CalendarEvent]()
     
+    
+    func isCelebrationDay(date:Date) -> CalendarEvent? {
+        guard let celebrationDay = otherEvents.first(where: {$0.date == date}) else {
+            return nil
+        }
+        
+        return CalendarEvent(date: celebrationDay.date, content: celebrationDay.title, icon: celebrationDay.emoji ?? "🎉")
+    }
     
     var formattedDate:String {
         guard let assistant = assistant else {
@@ -68,8 +80,6 @@ class CalendarViewModel : ObservableObject {
         return assistant.formattedString(forKey: "public_calendar_celebration", e)
     }
     
-    
-    
     var otherEvents = [OtherCalendarEvent]()
     
     func update() {
@@ -84,13 +94,18 @@ class CalendarViewModel : ObservableObject {
             print(event.content)
             eventString = localizedString(for: event)
             eventIcon = event.icon ?? "🗓"
-            
+
         } else if let event = otherEvents.first(where: { $0.date.isSameDay(as: selectedDay.day) }) {
             eventString = assistant.string(forKey: event.title)
             eventIcon = event.emoji ?? "🗓"
         }
+        
         if let h = eventString {
             strings.append(h)
+            if otherEvents.contains(where: {$0.title.lowercased() == h.lowercased() }) {
+                strings.append(assistant.formattedString(forKey: "public_calendar_celebration",h))
+                strings.append(assistant.string(forKey: "calendar_free_day"))
+            }
         }
         assistant.speak(strings)
     }

@@ -78,6 +78,7 @@ public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, 
     public func calendarEvents(on date:Date) -> [CalendarEvent] {
         data.filter { event in event.date.isSameDay(as: date)}
     }
+    
     public func sortCalendarEvents() {
         data.sort { (a1, a2) in a1.date > a2.date }
     }
