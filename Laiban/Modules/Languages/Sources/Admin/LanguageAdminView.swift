@@ -23,6 +23,7 @@ extension TTSGender {
 struct LanguageAdminView: View {
     @ObservedObject var service:LanguageService
     @EnvironmentObject var assistant:Assistant
+    @State private var showingCacheAlert = false
     var supportedGenders:[TTSGender] {
         var genders = [TTSGender]()
         for g in TTSGender.allCases {
@@ -86,6 +87,13 @@ struct LanguageAdminView: View {
                 )
                 assistant.interrupt(using: [u])
             }
+            Button("Rensa cache") {
+                assistant.tts.clearCache()
+                showingCacheAlert = true
+            }
+            .alert(isPresented: $showingCacheAlert, content: {
+                Alert(title: Text("Cachen rensad!"), message: Text("De temporära ljudfilerna har tagits bort"), dismissButton: .default(Text("Ok")))
+            })
         }.onDisappear {
             service.save()
         }

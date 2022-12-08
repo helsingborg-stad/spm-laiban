@@ -86,12 +86,14 @@ public actor CodableLocalJSONService<T>: CodableStorage where T: Codable {
         return fm.urls(for: .libraryDirectory, in: .userDomainMask)[0].appendingPathComponent(options.foldername)
     }
     var fileURL:URL {
+        print("URL: \(dir.appendingPathComponent(options.filename + ".json"))")
         return dir.appendingPathComponent(options.filename + ".json")
     }
     public func write(_ value:T) async throws {
         let fm = FileManager.default
         let dir = dir
         let file = fileURL
+        
         if !fm.fileExists(atPath: dir.path) {
             try fm.createDirectory(at: dir, withIntermediateDirectories: false, attributes: nil) // [.protectionKey : FileProtectionType.complete]
         }
