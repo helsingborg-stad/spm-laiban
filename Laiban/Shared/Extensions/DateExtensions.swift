@@ -12,8 +12,9 @@ public extension Date {
     
     static var defaultCalendar:Calendar {
         if _defaultCalendar == nil {
-            var c = Calendar(identifier: Calendar.Identifier.gregorian)
-            c.firstWeekday = 2
+            var c = Calendar(identifier: Calendar.Identifier.iso8601)
+            c.timeZone = TimeZone(abbreviation: "CET") ?? TimeZone.current
+            // c.firstWeekday = 2
             self._defaultCalendar = c
         }
         return _defaultCalendar!

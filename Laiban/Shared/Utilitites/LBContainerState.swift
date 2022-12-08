@@ -61,6 +61,7 @@ public extension LBViewIdentity {
     static var time           = LBViewIdentity("time-viewidentity")
     static var food           = LBViewIdentity("food-viewidentity")
     static var foodwaste      = LBViewIdentity("foodwaste-viewidentity")
+    static var movement       = LBViewIdentity("movement-viewidentity")
     static var instagram      = LBViewIdentity("instagram-viewidentity")
     static var languages      = LBViewIdentity("languages-viewidentity")
     static var memory         = LBViewIdentity("memory-viewidentity")

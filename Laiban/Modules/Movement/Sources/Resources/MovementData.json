@@ -1,0 +1,82 @@
+{
+    "movement": [{
+        "emojis": "",
+        "minutes": 25,
+        "reported": false,
+        "numMoving": 12,
+        "date": "2022-10-07"
+    }, {
+        "emojis": "",
+        "minutes": 25,
+        "reported": false,
+        "numMoving": 4,
+        "date": "2022-10-07"
+    }, {
+        "emojis": "",
+        "minutes": 60,
+        "reported": false,
+        "numMoving": 4,
+        "date": "2022-10-07"
+    }, {
+        "emojis": "",
+        "minutes": 65,
+        "reported": false,
+        "numMoving": 10,
+        "date": "2022-10-08"
+    }, {
+        "emojis": "",
+        "minutes": 109,
+        "reported": false,
+        "numMoving": 16,
+        "date": "2022-10-09"
+    }, {
+        "emojis": "",
+        "minutes": 22,
+        "reported": false,
+        "numMoving": 5,
+        "date": "2022-10-10"
+    }, {
+        "emojis": "",
+        "minutes": 14,
+        "reported": false,
+        "numMoving": 3,
+        "date": "2022-10-11"
+    }],
+    "activities": [{
+        "id": "1",
+        "colorString": "RimColorClock",
+        "title": "Springa",
+        "emoji": "🏃‍♀️",
+        "isActive": true
+    },{
+        "id": "2",
+        "colorString": "RimColorInstagram",
+        "title": "Klättra",
+        "emoji": "🧗",
+        "isActive": true
+    },{
+        "id": "3",
+        "colorString": "RimColorActivities",
+        "title": "Cykla",
+        "emoji": "🚴",
+        "isActive": true
+    },{
+        "id": "4",
+        "colorString": "RimColorInstagram",
+        "title": "Jogga",
+        "emoji": "🚶",
+        "isActive": true
+    },{
+        "id": "5",
+        "colorString": "RimColorWeather",
+        "title": "Dansa",
+        "emoji": "💃",
+        "isActive": true
+    }],
+    "settings": {
+      "id": "1",
+      "maxMetersPerDay": 250000,
+      "stepsPerMinute": 100,
+      "stepLength": 0.33
+    }
+}

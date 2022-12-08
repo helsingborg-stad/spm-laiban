@@ -247,7 +247,7 @@ public struct LBFullscreenContainer<Content:View,ActionBar:View>: View {
         .transition(.scale)
     }
     var adminButton: some View {
-        LBActionBarCircleAdminView().hold(minimumDuration: 1.5) {
+        LBActionBarCircleAdminView().hold(minimumDuration: 1.5, maximumDistance: 30) {
             containerActionTrigger(.admin)
         }
         .id("ActionAdminButton")

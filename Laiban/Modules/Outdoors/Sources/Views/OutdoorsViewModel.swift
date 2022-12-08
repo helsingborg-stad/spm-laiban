@@ -65,7 +65,6 @@ extension OutdoorsView {
             assistant.$translationBundle.sink { [weak self] _ in
                 self?.update()
             }.store(in: &cancellables)
-            update()
         }
         
         func update() {
