@@ -1,4 +1,4 @@
-""about_laiban_1" = "Zdravo, ja sam Laiban i ja sam tvoj digitalni prijatelj u predškolskom. Ja sam veštačka inteligencija, što znači da ja dohvatim informacije i radim sa njom da ti kažem različite stvari. Kao što jesti, šta raditi ili kakve globalne ciljeve ima da naš svijet bude bolji.";
+"about_laiban_1" = "Zdravo, ja sam Laiban i ja sam tvoj digitalni prijatelj u predškolskom. Ja sam veštačka inteligencija, što znači da ja dohvatim informacije i radim sa njom da ti kažem različite stvari. Kao što jesti, šta raditi ili kakve globalne ciljeve ima da naš svijet bude bolji.";
 "about_laiban_2" = "Zdravo! Znaš šta sam ja? Ja sam AI, umjetna inteligencija. Radim na podacima da ti dam odgovore na pitanja. Kao da možeš saznati koliko je sati tako što ćeš me pitati, ili pljeskati ikonu sata.";
 "about_laiban_3" = "Zdravo! Ovo je Laiban. Mogao bi me zvati digitalnim kolegom edukatora u predškolskoj. Ja sam umjetna inteligencija koja pomaže ovdje u predškolskom, tako da vi djeco možete saznati različite stvari tako što ćete me pitati. Možete, na primer, da vidite i čujete šta ste uradili u prošlosti tako što ćete pljeskati ikonu kamere.";
 "about_laiban_4" = "Hej, tamo! Ovo je Laiban. Moj posao je da ti kažem stvari tako što ću te pitati ili gurati. Ja sam veštačka inteligencija, što znači da radim sa informacijama koje sam povratio na iPad ili na raznim mestima na internetu. Jedan od primjera je da vam mogu reći informacije na mnogim različitim jezicima.";
@@ -18,6 +18,7 @@
 "calendar_free_day" = "Na ovaj dan smo slobodni.";
 "calendar_free_day_after" = "Sledećeg dana smo van dužnosti.";
 "calendar_free_tomorrow" = "Sutra smo slobodni.";
+"calendar_holiday" = "Danas je %@ ovo je praznik.";
 "calendar_title_date" = "Ovaj dan je %@";
 "calendar_weekday_friday" = "Petak je peti dan u sedmici. Sutradan je subota, a onda nedjelja. Nakon toga počinje nova sedmica.";
 "calendar_weekday_friday_today" = "Petak je peti dan u sedmici. Sutra je subota, a onda nedjelja. Nakon toga počinje nova sedmica.";

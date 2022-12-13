@@ -15,6 +15,8 @@ public typealias CalendarServiceType = [CalendarEvent]
 public typealias CalendarStorageService = CodableLocalJSONService<CalendarServiceType>
 
 public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, LBAdminService,LBDashboardItem,LBTranslatableContentProvider {
+   
+    
     public let viewIdentity: LBViewIdentity = .calendar
     public var isAvailablePublisher: AnyPublisher<Bool, Never> {
         $isAvailable.eraseToAnyPublisher()
@@ -44,6 +46,7 @@ public class CalendarService: CTS<CalendarServiceType, CalendarStorageService>, 
                 strings.append(e.content)
             }
             self?.stringsToTranslate = strings
+            
         }.store(in: &cancellables)
     }
     

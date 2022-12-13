@@ -100,11 +100,16 @@ class CalendarViewModel : ObservableObject {
             eventIcon = event.emoji ?? "🗓"
         }
         
+        otherEvents.forEach({e in
+            print(e.date)
+            print(e.title)
+        })
+        
+        //Byta till datum istället för titel..
         if let h = eventString {
             strings.append(h)
             if otherEvents.contains(where: {$0.title.lowercased() == h.lowercased() }) {
-                strings.append(assistant.formattedString(forKey: "public_calendar_celebration",h))
-                strings.append(assistant.string(forKey: "calendar_free_day"))
+                strings.append(assistant.formattedString(forKey: "calendar_holiday",h))
             }
         }
         assistant.speak(strings)

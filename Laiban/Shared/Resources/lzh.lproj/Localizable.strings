@@ -18,6 +18,7 @@
 "calendar_free_day" = "当此之日,我辈自由。";
 "calendar_free_day_after" = "明日下班。";
 "calendar_free_tomorrow" = "明日自由。";
+"calendar_holiday" = "今日 %@ 假期也。";
 "calendar_title_date" = "是日 %@";
 "calendar_weekday_friday" = "星期五周五日也。 明日为星期六,然后为星期天。 其后一周始矣。";
 "calendar_weekday_friday_today" = "星期五周五日也。 明日为星期六,然后为星期天。 其后一周始矣。";

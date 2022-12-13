@@ -18,6 +18,7 @@
 "calendar_free_day" = "Nuna ar pa jar dí xi hño.";
 "calendar_free_day_after" = "Nä'ä je̲ya'bya fuera de hontho.";
 "calendar_free_tomorrow" = "Ar xudi dí xi hño.";
+"calendar_holiday" = "Nu'bya ge %@ nuna gehna 'nar pa dängo.";
 "calendar_title_date" = "Nuna ar pa ar %@";
 "calendar_weekday_friday" = "Ar Mbehe ge ar ku̲t'a ya pa ar su̲mänä. Nä'ä ar nsabdo ne gem'bu̲ ndomingo. 'Me̲fa eso comienza 'ra'yo 'nar su̲mänä.";
 "calendar_weekday_friday_today" = "Ar Mbehe ge ar ku̲t'a ya pa ar su̲mänä. Ar xudi ar nsabdo ne gem'bu̲ ndomingo. 'Me̲fa eso comienza 'ra'yo 'nar su̲mänä.";

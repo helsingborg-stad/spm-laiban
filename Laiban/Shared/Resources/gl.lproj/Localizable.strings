@@ -18,6 +18,7 @@
 "calendar_free_day" = "Neste día somos libres.";
 "calendar_free_day_after" = "Ao día seguinte, estamos de servizo.";
 "calendar_free_tomorrow" = "Mañá somos libres.";
+"calendar_holiday" = "Hoxe é %@ isto é festivo.";
 "calendar_title_date" = "Este día é %@";
 "calendar_weekday_friday" = "O venres é o quinto día da semana. Ao día seguinte é sábado e despois domingo. Despois diso, comeza unha nova semana.";
 "calendar_weekday_friday_today" = "O venres é o quinto día da semana. Mañá é sábado e despois domingo. Despois diso, comeza unha nova semana.";
