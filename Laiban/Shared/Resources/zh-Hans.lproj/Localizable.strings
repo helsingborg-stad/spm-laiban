@@ -10,10 +10,10 @@
 "activities_participants_future" = "参与";
 "activities_participants_past" = "参与";
 "activities_title" = "这就是我们今天要做的！";
+"activity_today" = "今天 %@";
 "are_you_ready" = "准备好了吗？";
 "ask_teacher" = "问老师";
 "calendar_event" = "这一天 %@";
-"calendar_event_today" = "今天 %@";
 "calendar_free_day" = "在这一天，我们自由了。";
 "calendar_free_day_after" = "第二天我们下班了。";
 "calendar_free_tomorrow" = "明天我们自由了。";
@@ -33,7 +33,7 @@
 "clock_select_show_tempus_info" = "你想知道今天什么时候接你，哪些朋友在这里吗？点击这里！";
 "clock_time_1" = "一个";
 "clock_time_10" = "十";
-"clock_time_12" = "十二";
+"clock_time_11" = "十二";
 "clock_time_2" = "二";
 "clock_time_3" = "三";
 "clock_time_4" = "四";
@@ -46,8 +46,8 @@
 "clock_time_description_0730_to_0830" = "现在是早上。";
 "clock_time_description_0830_to_0900" = "大约在这个时候，我们吃水果。";
 "clock_time_description_1045_to_1230" = "现在是中午和午餐时间。";
-"clock_time_description_1230_to_1400" = "现在是下午。";
 "clock_time_description_1400_to_1500" = "现在是下午，大约在这个时候我们吃零食。";
+"clock_time_description_1500_to_1630" = "现在是下午。";
 "clock_time_description_1630_to_1800" = "快到晚上了。";
 "clock_time_description_1800_to_2000" = "现在是晚上。睡得好！";
 "clock_time_description_2000_to_0600" = "现在是晚上。";
@@ -131,15 +131,15 @@
 "food_waste_title" = "点按要在比例中添加或删除的图像";
 "food_waste_weekly_stats" = "本周你扔掉了 %@ 克食物。";
 "garment_beanie_description" = "豆 豆";
-"garment_cap_description" = "帽";
-"garment_jacket_description" = "夹克";
-"garment_mittens" = "手套";
+"garment_cap" = "帽";
+"garment_jacket" = "夹克";
+"garment_mittens_description" = "手套";
 "garment_neckWear" = "高领毛衣或围巾";
 "garment_neckWear_description" = "围巾或高领毛衣";
 "garment_pulloverPants_description" = "罩裤";
-"garment_rainBoots" = "靴子";
-"garment_rainCoat_description" = "雨衣";
-"garment_rainGloves_description" = "雨手套";
+"garment_rainBoots_description" = "靴子";
+"garment_rainCoat" = "雨衣";
+"garment_rainGloves" = "雨手套";
 "garment_rainPants_description" = "雨裤";
 "garment_shoes" = "鞋";
 "garment_sweater_description" = "保暖毛衣";
@@ -168,6 +168,27 @@
 "message_category_info_title" = "工作人员寄语";
 "message_category_reminder_title" = "记得";
 "message_no_messages" = "我们现在没有任何消息。";
+"movement_choose_activity" = "你做了什么活动？";
+"movement_close" = "关闭";
+"movement_last_week" = "上周您总共收集了 %@ 米的能量，本周您收集了 %@ 米的能量";
+"movement_next" = "下一个";
+"movement_nothing" = "本周到目前为止，您还没有记录任何动静。";
+"movement_register" = "注册";
+"movement_register_how_long" = "你做了多少分钟的活动？";
+"movement_register_how_many" = "你们中有多少人参加了这次活动？";
+"movement_statistics_cities" = "这大约是%@和%@之间的距离";
+"movement_statistics_how_far" = "那有多远？";
+"movement_statistics_see_distance" = "让老师再拿一台iPad，一起观察你走 %@ 米时能走多远。";
+"movement_statistics_title_today" = "干得好，今天你已经收集了 %@ 步，那是 %@ 米。";
+"movement_statistics_title_weekday_1" = "干得好，周一你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_weekday_2" = "干得好，周二你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_weekday_3" = "干得好，周三你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_weekday_4" = "干得好，周四你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_weekday_5" = "干得好，周五你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_weekday_6" = "干得好，星期六你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_weekday_7" = "干得好，星期天你总共走了 %@ 步，那是 %@ 米";
+"movement_statistics_title_yesterday" = "干得好，昨天你总共走了 %@ 步，那是 %@ 米。";
+"movement_weekly_stats" = "本周您总共收集了 %@ 米的能量";
 "outdoors_feedback_change_description" = "我的建议不好吗？请你的老师帮你换我建议的衣服。";
 "outdoors_feedback_change_title" = "选择适合户外天气的衣服";
 "outdoors_feedback_confirm" = "没关系！你和你的老师想换我应该穿的衣服吗？";
@@ -192,10 +213,10 @@
 那是在 %@之后.";
 "tempus_child_arrives_before" = "%@ 将在大约 %@到达幼儿园。
 那是在 %@之前.";
+"tempus_child_arrives_before_past" = "%@ 大约 %@到达幼儿园。
+那是在 %@之前.";
 "tempus_child_arrives_during" = "%@ 将在大约 %@到达幼儿园。
 那是在 %@期间.";
-"tempus_child_arrives_during_past" = "%@ 大约 %@到达幼儿园。
-那是在 %@之前.";
 "tempus_child_arrives_past" = "%@大约%@到达幼儿园";
 "tempus_child_has_left" = "%@ 似乎已经回家了一天。";
 "tempus_child_has_left_returns_in_days" = "%@ 似乎已经回家了一天，但应该 %@ 天后再回来。";

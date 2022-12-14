@@ -10,16 +10,16 @@
 "activities_participants_future" = "ເພື່ອເຂົ້າຮ່ວມ";
 "activities_participants_past" = "ມີສ່ວນຮ່ວມ";
 "activities_title" = "ນີ້ແມ່ນສິ່ງທີ່ພວກເຮົາຈະເຮັດໃນມື້ນີ້!";
-"activity_today" = "ມື້ ນີ້ <span translate='no'>string</span>";
+"activity_today" = "ມື້ ນີ້ %@";
 "are_you_ready" = "ເຈົ້າພ້ອມແລ້ວບໍ?";
 "ask_teacher" = "ຖາມຄູ";
-"calendar_event" = "ໃນວັນນີ້ <span translate='no'>string</span>";
-"calendar_event_today" = "ມື້ ນີ້ <span translate='no'>string</span>";
+"calendar_event" = "ໃນວັນນີ້ %@";
+"calendar_event_today" = "ມື້ ນີ້ %@";
 "calendar_free_day" = "ໃນວັນນີ້ພວກເຮົາເປັນອິດສະຫຼະ.";
 "calendar_free_day_after" = "ມື້ຕໍ່ມາພວກເຮົາບໍ່ໄດ້ປະຕິບັດຫນ້າທີ່.";
 "calendar_free_tomorrow" = "ມື້ອື່ນເຮົາຈະເປັນອິດສະຫຼະ.";
 "calendar_holiday" = "ມື້ ນີ້ %@ ນີ້ ເປັນ ວັນ ພັກ.";
-"calendar_title_date" = "ມື້ ນີ້ ແມ່ນ <span translate='no'>string</span>";
+"calendar_title_date" = "ມື້ ນີ້ ແມ່ນ %@";
 "calendar_weekday_friday" = "ວັນ ສຸກ ເປັນ ມື້ ທີ ຫ້າ ຂອງ ອາທິດ. ມື້ຕໍ່ມາແມ່ນວັນເສົາແລ້ວວັນອາທິດ. ຫຼັງຈາກນັ້ນ, ອາທິດໃຫມ່ເລີ່ມຕົ້ນ.";
 "calendar_weekday_friday_today" = "ວັນ ສຸກ ເປັນ ມື້ ທີ ຫ້າ ຂອງ ອາທິດ. ມື້ອື່ນແມ່ນວັນເສົາແລ້ວວັນອາທິດ. ຫຼັງຈາກນັ້ນ, ອາທິດໃຫມ່ເລີ່ມຕົ້ນ.";
 "calendar_weekday_monday" = "ອາທິດ ມີ ເຈັດ ມື້ ແລະ ວັນ ຈັນ ເປັນ ມື້ ທໍາ ອິດ ຂອງ ອາທິດ.";
@@ -29,7 +29,7 @@
 "calendar_weekday_thursday" = "ອາທິດ ມີ ເຈັດ ມື້ ແລະ ວັນ ພະຫັດ ເປັນ ມື້ ທີ ສີ່ ຂອງ ອາທິດ.";
 "calendar_weekday_tuesday" = "ອາທິດ ມີ ເຈັດ ມື້ ແລະ ວັນ ອັງຄານ ເປັນ ມື້ ທີ ສອງ ຂອງ ອາທິດ.";
 "calendar_weekday_wednesday" = "ອາທິດມີເຈັດມື້ແລະວັນພຸດເປັນມື້ທີສາມຂອງອາທິດ.";
-"clock_current_time" = "ເວ ລາ ແມ່ນ <span translate='no'>string</span>";
+"clock_current_time" = "ເວ ລາ ແມ່ນ %@";
 "clock_select_person" = "ທ່ານຢາກຮູ້ເພີ່ມເຕີມກ່ຽວກັບເດັກນ້ອຍຄົນໃດ?";
 "clock_select_show_tempus_info" = "ທ່ານຢາກຮູ້ວ່າເມື່ອໃດທີ່ທ່ານຈະໄດ້ຮັບການເກັບກໍາໃນມື້ນີ້ແລະຫມູ່ຄົນໃດຢູ່ທີ່ນີ້? ຄລິກທີ່ນີ້!";
 "clock_time_1" = "A";
@@ -70,7 +70,7 @@
 ມາເບິ່ງວ່າຈະໃສ່ຫຍັງ!";
 "content_title_clothes_link" = "ເຈົ້າຢາກອອກໄປບໍ?
 ເບິ່ງວ່າຈະໃສ່ຫຍັງ!";
-"current_date" = "ມື້ນີ້ <span translate='no'>string</span>";
+"current_date" = "ມື້ນີ້ %@";
 "emoji_1F348_name" = "ເມລອນ";
 "emoji_1F348_name_plural" = "ເມລອນ";
 "emoji_1F34A_name" = "Orange";
@@ -97,7 +97,7 @@
 "emoji_1F969_name_plural" = "Steaks";
 "emoji_1F990_name" = "ຫົດ";
 "emoji_1F990_name_plural" = "ຫົດ";
-"feedback_activity_question" = "ທ່ານຄິດແນວໃດກ່ຽວກັບກິດຈະກໍາ: <span translate='no'>string</span>";
+"feedback_activity_question" = "ທ່ານຄິດແນວໃດກ່ຽວກັບກິດຈະກໍາ: %@";
 "feedback_activity_question_basic" = "ທ່ານຄິດແນວໃດກ່ຽວກັບກິດຈະກໍານີ້?";
 "feedback_activity_statistics" = "Du ທ່ານຕ້ອງການທີ່ຈະເຫັນສິ່ງທີ່ຄົນອື່ນເຖິງແມ່ນວ່າກິດຈະກໍານີ້?";
 "feedback_activity_statistics_title" = "ນີ້ແມ່ນສິ່ງທີ່ທ່ານໄດ້ຄິດກ່ຽວກັບກິດຈະກໍານີ້";
@@ -119,7 +119,7 @@
 "food_waste_info_why" = "ເປັນຫຍັງເຮົາຈຶ່ງບໍ່ຄວນເສຍອາຫານ?";
 "food_waste_info_why_description" = "ເພື່ອໃຫ້ອາຫານມີປະໂຫຍດ, ພວກເຮົາຄວນຖິ້ມໃຫ້ຫນ້ອຍທີ່ສຸດເທົ່າທີ່ຈະເປັນໄປໄດ້. ການກິນອາຫານໃນແຜ່ນເຮັດໃຫ້ທ່ານຮູ້ສຶກດີແລະເມື່ອອາຫານຈົບລົງໃນທ້ອງ, ມັນເຮັດໃຫ້ທ່ານມີພະລັງງານທີ່ຈະທັງຫຼິ້ນແລະຮຽນຮູ້ເພີ່ມເຕີມ.";
 "food_waste_kompostina_title" = "ທ່ານຕ້ອງການນ້ໍາຫນັກອາຫານບໍ? ⚖️ ກົດຂ້ອຍ, Kompostina!";
-"food_waste_last_week" = "ອາທິດແລ້ວນີ້ທ່ານໄດ້ຖິ້ມອາຫານ %@ ກຣາມ, ແລະອາທິດນີ້, <span translate='no'>string</span> ກຣາມ.";
+"food_waste_last_week" = "ອາທິດແລ້ວນີ້ທ່ານໄດ້ຖິ້ມອາຫານ %@ ກຣາມ, ແລະອາທິດນີ້, %@ ກຣາມ.";
 "food_waste_nothing" = "ມາ ຮອດ ອາທິດ ນີ້ ທ່ານ ຍັງ ບໍ່ ໄດ້ ຖິ້ມ ອາຫານ ໃດໆ ເລີຍ.";
 "food_waste_statistics_title_today" = "ມື້ນີ້ທ່ານໄດ້ຖິ້ມອາຫານ %@ ກຣາມ. ຄືກັນກັບວ່າ...";
 "food_waste_statistics_title_weekday_1" = "ໃນ ວັນ ຈັນ ວານ ນີ້ ທ່ານ ໄດ້ ຖິ້ມ ອາຫານ %@ ກຣາມ. ຄືກັນກັບວ່າ...";
@@ -134,7 +134,7 @@
 "food_waste_tip_2" = "buds ລົດຊາດຂອງທ່ານຈໍາເປັນຕ້ອງໄດ້ຝຶກລົດຊາດໃຫມ່ຫຼາຍຄັ້ງເພື່ອໃຫ້ທ່ານຮຽນຮູ້ທີ່ຈະມັກພວກເຂົາ. ຕາດລົດຊາດຢູ່ໃນລີ້ນຂອງທ່ານ.";
 "food_waste_tip_3" = "ຈົ່ງ ຈື່ ຈໍາ ທີ່ ຈະ ນັ່ງ ຢູ່ ໃນ ຄວາມ ສະຫງົບ ແລະ ງຽບ ສະຫງົບ ແລະ ຊີມ ອາຫານ ທັງ ຫມົດ. buds ລົດຊາດຂອງທ່ານຈໍາເປັນຕ້ອງໄດ້ຝຶກລົດຊາດໃຫມ່ຫຼາຍຄັ້ງເພື່ອໃຫ້ທ່ານຮຽນຮູ້ທີ່ຈະມັກພວກເຂົາ. ປ້ອຍລົດຊາດແມ່ນຢູ່ໃນລີ້ນຂອງທ່ານ";
 "food_waste_title" = "Tap ຮູບພາບເພື່ອເພີ່ມຫຼືເອົາອອກຈາກຂະຫນາດ";
-"food_waste_weekly_stats" = "ອາທິດນີ້ທ່ານໄດ້ຖິ້ມອາຫານ <span translate='no'>string</span> ກຣາມ.";
+"food_waste_weekly_stats" = "ອາທິດນີ້ທ່ານໄດ້ຖິ້ມອາຫານ %@ ກຣາມ.";
 "garment_beanie" = "Beanie";
 "garment_beanie_description" = "Beanie";
 "garment_cap" = "Cap";
@@ -186,15 +186,36 @@
 "message_category_info_title" = "ຂ່າວສານຈາກພະນັກງານ";
 "message_category_reminder_title" = "ື່ື່ງື່";
 "message_no_messages" = "ພວກເຮົາບໍ່ມີຂ່າວສານໃດໆໃນຕອນນີ້.";
+"movement_choose_activity" = "ທ່ານໄດ້ເຮັດກິດຈະກໍາຫຍັງແດ່?";
+"movement_close" = "ປິດ";
+"movement_last_week" = "ອາທິດ ແລ້ວ ນີ້ ທ່ານ ໄດ້ ເກັບ ກໍາ ພະລັງງານ ຈໍານວນ %@ ແມັດ ແລະ ໃນ ສັບປະດາ ນີ້ %@ ແມັດ";
+"movement_next" = "ຕໍ່ໄປ";
+"movement_nothing" = "ມາ ຮອດ ສັບປະດາ ນີ້ ທ່ານ ຍັງ ບໍ່ ໄດ້ ຈົດ ທະບຽນ ການ ເຄື່ອນ ໄຫວ ໃດໆ.";
+"movement_register" = "ລົງທະບຽນ";
+"movement_register_how_long" = "ຈັກ ນາ ທີ ທີ່ ທ່ານ ເຮັດ ກິດ ຈະ ກໍາ ?";
+"movement_register_how_many" = "ມີຈັກທ່ານທີ່ເຂົ້າຮ່ວມກິດຈະກໍາ?";
+"movement_statistics_cities" = "ນັ້ນແມ່ນກ່ຽວກັບໄລຍະຫ່າງລະຫວ່າງ %@ ແລະ %@";
+"movement_statistics_how_far" = "ໄກປານໃດ?";
+"movement_statistics_see_distance" = "ຂໍໃຫ້ຄູໄດ້ຮັບ iPad ອີກຫນຶ່ງແລະເບິ່ງນໍາກັນວ່າທ່ານໄດ້ໄກປານໃດເມື່ອຍ່າງ %@ ແມັດ";
+"movement_statistics_title_today" = "ວຽກທີ່ດີ, ມື້ນີ້ທ່ານໄດ້ເກັບກໍາ %@ ຂັ້ນຕອນ, %@ ແມັດ.";
+"movement_statistics_title_weekday_1" = "ງານທີ່ດີ, ໃນວັນຈັນວານນີ້ ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_weekday_2" = "ງານທີ່ດີ, ໃນວັນອັງຄານວານນີ້ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_weekday_3" = "ງານທີ່ດີ, ໃນວັນພຸດວານນີ້ ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_weekday_4" = "ງານທີ່ດີ, ໃນວັນພະຫັດວານນີ້ ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_weekday_5" = "ງານທີ່ດີ, ໃນວັນສຸກວານນີ້ ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_weekday_6" = "ງານທີ່ດີ, ໃນວັນເສົາວານນີ້ ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_weekday_7" = "ງານທີ່ດີ, ໃນວັນອາທິດວານນີ້ທ່ານໄດ້ທັງຫມົດ %@ ບາດກ້າວ, ນັ້ນແມ່ນ %@ ແມັດ";
+"movement_statistics_title_yesterday" = "ວຽກທີ່ດີ, ມື້ວານນີ້ທ່ານໄດ້ທັງຫມົດ %@ ຂັ້ນຕອນ, ນັ້ນແມ່ນ %@ ແມັດ.";
+"movement_weekly_stats" = "ທ່ານໄດ້ເກັບກໍາພະລັງງານທັງຫມົດ %@ ແມັດໃນສັບປະດານີ້";
 "outdoors_feedback_change_description" = "ຄໍາແນະນໍາຂອງຂ້ອຍບໍ່ດີບໍ? ຂໍໃຫ້ນາຍຄູຊ່ວຍປ່ຽນເຄື່ອງນຸ່ງທີ່ຂ້ອຍແນະນໍາ.";
 "outdoors_feedback_change_title" = "ເລືອກວ່າເຄື່ອງນຸ່ງໃດທີ່ເຫມາະສົມກັບສະພາບອາກາດພາຍນອກ";
 "outdoors_feedback_confirm" = "ບໍ່ມີປັນຫາ! ທ່ານແລະນາຍຄູຂອງທ່ານຕ້ອງການປ່ຽນສິ່ງທີ່ຂ້ອຍຄວນສະແດງເຄື່ອງນຸ່ງທີ່ຂ້ອຍຄວນຈະສະແດງ?";
 "outdoors_feedback_provideFeedback" = "ເຈົ້າຄິດວ່າຄໍາແນະນໍາຂອງຂ້ອຍກ່ຽວກັບເຄື່ອງນຸ່ງແມ່ນດີບໍ?";
 "outdoors_feedback_thanks" = "ຂອບໃຈ! ຕອນນີ້ເຈົ້າໄດ້ຊ່ວຍຂ້ອຍໃຫ້ເຂົ້າໃຈຫຼາຍຂຶ້ນວ່າທ່ານຕ້ອງການເຄື່ອງນຸ່ງອັນໃດໃນສະພາບອາກາດນີ້!";
 "outdoors_go_out" = "ຖ້າຫາກວ່າທ່ານຈະອອກໄປ, ນີ້ແມ່ນສິ່ງທີ່ທ່ານຈະໃສ່.";
-"public_calendar_celebration" = "ໃນ ມື້ ນີ້ ພວກ ເຮົາ ສະ ເຫຼີມ ສະຫຼອງ <span translate='no'>string</span>";
-"public_calendar_celebration_today" = "ມື້ ນີ້ ພວກ ເຮົາ ສະ ເຫຼີມ ສະຫຼອງ <span translate='no'>string</span>";
-"public_calendar_respect" = "ໃນວັນນີ້, ພວກເຮົາໄດ້ເອົາໃຈໃສ່ <span translate='no'>string</span>";
+"public_calendar_celebration" = "ໃນ ມື້ ນີ້ ພວກ ເຮົາ ສະ ເຫຼີມ ສະຫຼອງ %@";
+"public_calendar_celebration_today" = "ມື້ ນີ້ ພວກ ເຮົາ ສະ ເຫຼີມ ສະຫຼອງ %@";
+"public_calendar_respect" = "ໃນວັນນີ້, ພວກເຮົາໄດ້ເອົາໃຈໃສ່ %@";
 "recreation_nothing_to_do" = "ບໍ່ຕ້ອງເຮັດຫຍັງ?";
 "schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "ຢາກຮ້ອງເພງອີກບໍ?";
@@ -203,38 +224,38 @@
 "singalong_time_deactivated" = "ຂ້ອຍບໍ່ຄິດວ່າເຮົາຄວນຮ້ອງເພງດຽວນີ້. ເຮົາຈະຮ້ອງກ່ອນຈະກິນແທນ.";
 "tempus_arrives_short" = "%@ %@";
 "tempus_arrives_short_past" = "%@ %@";
-"tempus_child_arrives" = "%@ ຈະມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ <span translate='no'>string</span>.";
+"tempus_child_arrives" = "%@ ຈະມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.";
 "tempus_child_arrives_after" = "%@ ຈະມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
- <span translate='no'>string</span>.";
+ %@.";
 "tempus_child_arrives_after_past" = "%@ ໄດ້ມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
-ນັ້ນ ແມ່ນ ຫຼັງ ຈາກ ທີ່ <span translate='no'>string</span>.";
+ນັ້ນ ແມ່ນ ຫຼັງ ຈາກ ທີ່ %@.";
 "tempus_child_arrives_before" = "%@ ຈະມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
-ນັ້ນກ່ອນ <span translate='no'>string</span>.";
+ນັ້ນກ່ອນ %@.";
 "tempus_child_arrives_before_past" = "%@ ໄດ້ມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
-ນັ້ນກ່ອນ <span translate='no'>string</span>.";
+ນັ້ນກ່ອນ %@.";
 "tempus_child_arrives_during" = "%@ ຈະມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
- <span translate='no'>string</span>.";
+ %@.";
 "tempus_child_arrives_during_past" = "%@ ໄດ້ມາເຖິງໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
-ນັ້ນກ່ອນ <span translate='no'>string</span>.";
-"tempus_child_arrives_past" = "%@ ໄດ້ ໄປ ເຖິງ ໂຮງຮຽນ ມັດທະຍົມ ຕອນ ປະມານ <span translate='no'>string</span>";
+ນັ້ນກ່ອນ %@.";
+"tempus_child_arrives_past" = "%@ ໄດ້ ໄປ ເຖິງ ໂຮງຮຽນ ມັດທະຍົມ ຕອນ ປະມານ %@";
 "tempus_child_has_left" = "%@ ເບິ່ງ ຄື ວ່າ ໄດ້ ກັບ ບ້ານ ໄປ ແລ້ວ ໃນ ມື້ ນັ້ນ.";
-"tempus_child_has_left_returns_in_days" = "ເບິ່ງ ຄື ວ່າ %@ ໄດ້ ກັບ ບ້ານ ສໍາ ລັບ ມື້ ນັ້ນ ແຕ່ ຄວນ ກັບ ມາ ອີກ ໃນ <span translate='no'>string</span> ມື້.";
+"tempus_child_has_left_returns_in_days" = "ເບິ່ງ ຄື ວ່າ %@ ໄດ້ ກັບ ບ້ານ ສໍາ ລັບ ມື້ ນັ້ນ ແຕ່ ຄວນ ກັບ ມາ ອີກ ໃນ %@ ມື້.";
 "tempus_child_has_left_returns_tomorrow" = "ເບິ່ງ ຄື ວ່າ %@ ໄດ້ ກັບ ບ້ານ ໃນ ມື້ ນັ້ນ ແຕ່ ຄວນ ກັບ ມາ ອີກ ໃນ ມື້ ອື່ນ.";
-"tempus_child_leaves" = "%@ ຢູ່ທີ່ນີ້ແລະຈະອອກຈາກໂຮງຮຽນກ່ອນໄວຮຽນປະມານ <span translate='no'>string</span>.";
+"tempus_child_leaves" = "%@ ຢູ່ທີ່ນີ້ແລະຈະອອກຈາກໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.";
 "tempus_child_leaves_after" = "%@ ຢູ່ທີ່ນີ້ແລະຈະອອກຈາກໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
- <span translate='no'>string</span>.";
+ %@.";
 "tempus_child_leaves_after_past" = "%@ %@.
-ນັ້ນ ແມ່ນ ຫຼັງ ຈາກ ທີ່ <span translate='no'>string</span>.";
+ນັ້ນ ແມ່ນ ຫຼັງ ຈາກ ທີ່ %@.";
 "tempus_child_leaves_before" = "%@ ຢູ່ທີ່ນີ້ແລະຈະອອກຈາກໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
-ນັ້ນກ່ອນ <span translate='no'>string</span>.";
+ນັ້ນກ່ອນ %@.";
 "tempus_child_leaves_before_past" = "%@ %@.
-ນັ້ນກ່ອນ <span translate='no'>string</span>.";
+ນັ້ນກ່ອນ %@.";
 "tempus_child_leaves_during" = "%@ ຢູ່ທີ່ນີ້ແລະຈະອອກຈາກໂຮງຮຽນກ່ອນໄວຮຽນປະມານ %@.
- <span translate='no'>string</span>.";
+ %@.";
 "tempus_child_leaves_during_past" = "%@ %@.
-ນັ້ນ ແມ່ນ ໃນ ໄລຍະ <span translate='no'>string</span>.";
+ນັ້ນ ແມ່ນ ໃນ ໄລຍະ %@.";
 "tempus_child_leaves_past" = "%@ %@.";
-"tempus_child_not_here_returns_in_days" = "%@ ເບິ່ງ ຄື ວ່າ ບໍ່ ໄດ້ ຢູ່ ທີ່ ນີ້ ໃນ ມື້ ນີ້ ແຕ່ ຄວນ ກັບ ມາ ຢູ່ ທີ່ ນີ້ ໃນ <span translate='no'>string</span> ມື້.";
+"tempus_child_not_here_returns_in_days" = "%@ ເບິ່ງ ຄື ວ່າ ບໍ່ ໄດ້ ຢູ່ ທີ່ ນີ້ ໃນ ມື້ ນີ້ ແຕ່ ຄວນ ກັບ ມາ ຢູ່ ທີ່ ນີ້ ໃນ %@ ມື້.";
 "tempus_child_not_here_returns_tomorrow" = "%@ ເບິ່ງ ຄື ວ່າ ບໍ່ ໄດ້ ມາ ທີ່ ນີ້ ໃນ ມື້ ນີ້ ແຕ່ ຄວນ ຈະ ກັບ ມາ ທີ່ ນີ້ ໃນ ມື້ ອື່ນ.";
 "tempus_child_not_here_today" = "%@ ເບິ່ງ ຄື ວ່າ ບໍ່ ໄດ້ ມາ ທີ່ ນີ້ ໃນ ມື້ ນີ້.";
 "tempus_leaves_short" = "ໃບ %@ %@";
@@ -262,7 +283,7 @@
 "trashmonster_textilia_description" = "Textilia ແມ່ນ ງາມ ໃຫມ່ ກັບ gang ໄດ້ . ນາງເກັບເຄື່ອງນຸ່ງເກົ່າ ແລະ ນຸ່ງຫົ່ມ ແລະ ເກີບ, ແຕ່ຍັງມີເສື້ອຜ້າທີ່ດີ ແລະ ສາມາດໃຊ້ໄດ້ອີກ.";
 "trashmonster_towalett_description" = "Pee, poop ແລະເຈ້ຍຫ້ອງນໍ້າເປັນສິ່ງດຽວທີ່ Towalett ເກັບ. ດ້ວຍ ຕາ ຫ້າ ຕາ ນາງ ຊອກ ຫາ thigs ຄື ກັນ ກັບ swabs ຜ້າ ຝ້າຍ, ຢາ ສູບ ຫຼື ເຊັດ ປຽກ, ເຫຼົ່າ ນີ້ ບໍ່ ໄດ້ ເປັນ ຂອງ ໃນ ຫ້ອງ ນ້ໍາ!";
 "trashmonster_wellmer_description" = "ແພັກເກັດທີ່ອ່ອນແອຫຼາຍຢ່າງມາໃນກະດານcorrugated, ເຊິ່ງເປັນເຫດຜົນທີ່ Wellmer ຮູ້ສຶກຄືກັບ knight ທີ່ປົກປ້ອງສິ່ງທີ່ອ່ອນແອ. ລາວມັກໃຊ້ແຜ່ນກະດານcorrugated ຄືນໃຫມ່ແລະມັກຈະເຮັດໃຫ້castles knights ອອກຈາກກ່ອງເກົ່າ.";
-"undp_goal" = "ເປົ້າຫມາຍ <span translate='no'>string</span>";
+"undp_goal" = "ເປົ້າຫມາຍ %@";
 "undp_goal_10_description" = "ນີ້ ຫມາຍ ຄວາມ ວ່າ ບໍ່ ວ່າ ທ່ານ ຈະ ອາ ໄສ ຢູ່ ບ່ອນ ໃດ ກໍ ຕາມ ໃນ ໂລກ, ທ່ານ ຄວນ ມີ ສິດ ແລະ ໂອ ກາດ ທີ່ ຄ້າຍ ຄື ກັນ ກັບ ຄົນ ອື່ນ.";
 "undp_goal_10_title" = "ເປົ້າຫມາຍ 10: ຄວາມບໍ່ສະເຫມີພາບຫຼຸດລົງ";
 "undp_goal_11_description" = "ນີ້ ຫມາຍ ຄວາມ ວ່າ ທຸກ ຄົນ ຄວນ ຈະ ສາ ມາດ ອາ ໄສ ຢູ່ ໃນ ບ້ານ ທີ່ ປອດ ໄພ ແລະ ດີ ໄດ້.";
@@ -333,23 +354,23 @@
 "undp_you_found_goal_8" = "ທ່ານໄດ້ພົບເຫັນເປົ້າຫມາຍທີ 8: ວຽກງານທີ່ດີ ແລະ ການເຕີບໂຕທາງດ້ານເສດຖະກິດ";
 "undp_you_found_goal_9" = "ທ່ານໄດ້ພົບເຫັນເປົ້າຫມາຍ 9: ອຸດສາຫະກໍາ, ການປະດິດສ້າງ ແລະ ໂຄງລ່າງພື້ນຖານ";
 "weather_cold" = "ເບິ່ງ ຄື ວ່າ ຫນາວ ຢູ່ ຂ້າງ ນອກ.
- <span translate='no'>string</span> .";
+ %@ .";
 "weather_coldAndRainy" = "ເບິ່ງ ຄື ວ່າ ຫນາວ ແລະ ຝົນ ຢູ່ ຂ້າງ ນອກ.
- <span translate='no'>string</span> .";
+ %@ .";
 "weather_cool" = "ເບິ່ງ ຄື ວ່າ ຈະ ເຢັນ ຢູ່ ທີ່ ນັ້ນ.
- <span translate='no'>string</span> .";
+ %@ .";
 "weather_coolAndRainy" = "ເບິ່ງ ຄື ວ່າ ຈະ ເຢັນ ແລະ ຝົນ ຢູ່ ຂ້າງ ນອກ.
- <span translate='no'>string</span> .";
+ %@ .";
 "weather_hot" = "ເບິ່ງ ຄື ວ່າ ຮ້ອນ ຢູ່ ຂ້າງ ນອກ ແທ້ໆ.
  %@ .
  ຢ່າລືມດື່ມແລະຊອກຫາຮົ່ມທີ່ຈະຢູ່ໃນ";
 "weather_rainy" = "ເບິ່ງ ຄື ວ່າ ຝົນ ຢູ່ ຂ້າງ ນອກ.
- <span translate='no'>string</span> .";
+ %@ .";
 "weather_unknown" = "ເບິ່ງອອກປ່ອງຢ້ຽມ";
 "weather_warm" = "ເບິ່ງ ຄື ວ່າ ຮ້ອນ ຢູ່ ຂ້າງ ນອກ.
- <span translate='no'>string</span> .";
+ %@ .";
 "weather_warmish" = "ເບິ່ງ ຄື ວ່າ ຮ້ອນ ຢູ່ ທີ່ ນັ້ນ.
- <span translate='no'>string</span> .";
+ %@ .";
 "word_and" = "ແລະ";
 "word_done" = "ເຮັດແລ້ວ";
 "word_or" = "ຫຼື";

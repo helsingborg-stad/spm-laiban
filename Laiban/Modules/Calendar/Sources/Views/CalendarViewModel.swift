@@ -20,10 +20,10 @@ class CalendarViewModel : ObservableObject {
     @Published var title:String = ""
     @Published var voiceStrings = [String]()
     @Published var eventString:String? = nil
+    @Published var currentlySpeaking:String? = nil
     @Published var eventIcon:String = "🎉"
     @Published var selectedDay = DayView.Day.current {
         didSet{
-            
             self.todaysEvents = service?.calendarEvents(on: selectedDay.day) ?? []
             if let celebrationDay =  isCelebrationDay(date: selectedDay.day){
                 self.todaysEvents.append(celebrationDay)
@@ -37,11 +37,19 @@ class CalendarViewModel : ObservableObject {
     
     
     func isCelebrationDay(date:Date) -> CalendarEvent? {
-        guard let celebrationDay = otherEvents.first(where: {$0.date == date}) else {
+        guard let celebrationDay = otherEvents.first(where: {$0.date.isSameDay(as: date)}) else {
             return nil
         }
         
-        return CalendarEvent(date: celebrationDay.date, content: celebrationDay.title, icon: celebrationDay.emoji ?? "🎉")
+        return CalendarEvent(date: celebrationDay.date, content: celebrationDay.title, icon: getHolidayEmoji(holiday: celebrationDay.title) ?? celebrationDay.emoji, type: .fetchedEvent)
+    }
+    
+    func isCurrentlySpeaking(string: String, isKey: Bool = false) -> Bool {
+        var textString: String? = string
+        if isKey {
+            textString = assistant?.string(forKey: string)
+        }
+        return self.currentlySpeaking == textString
     }
     
     var formattedDate:String {
@@ -90,26 +98,23 @@ class CalendarViewModel : ObservableObject {
         var strings = [todayString]
         strings.append(assistant.string(forKey: selectedDay.descriptionKey))
         
-        if let event = service.calendarEvents(on: selectedDay.day).first {
-            print(event.content)
-            eventString = localizedString(for: event)
-            eventIcon = event.icon ?? "🗓"
+        var event: CalendarEvent? = service.calendarEvents(on: selectedDay.day).first ?? isCelebrationDay(date: selectedDay.day)
 
-        } else if let event = otherEvents.first(where: { $0.date.isSameDay(as: selectedDay.day) }) {
-            eventString = assistant.string(forKey: event.title)
-            eventIcon = event.emoji ?? "🗓"
-        }
-        
         otherEvents.forEach({e in
             print(e.date)
             print(e.title)
         })
         
-        //Byta till datum istället för titel..
-        if let h = eventString {
-            strings.append(h)
-            if otherEvents.contains(where: {$0.title.lowercased() == h.lowercased() }) {
-                strings.append(assistant.formattedString(forKey: "calendar_holiday",h))
+        if let event = event {
+            eventString = localizedString(for: event)
+            eventIcon = event.icon ?? "🗓"
+        }
+
+        if let eventName = eventString {
+            if otherEvents.contains(where: {$0.title.lowercased() == eventName.lowercased() }) {
+                strings.append(assistant.formattedString(forKey: "calendar_holiday", eventName))
+            } else {
+                strings.append(eventName)
             }
         }
         assistant.speak(strings)
@@ -122,11 +127,25 @@ class CalendarViewModel : ObservableObject {
         contentProvider?.otherCalendarEventsPublisher().sink { events in
             self.otherEvents = events ?? []
         }.store(in: &cancellables)
+        assistant.$currentlySpeaking.sink { [weak self] utterance in
+            self?.currentlySpeaking = utterance?.speechString
+        }.store(in: &cancellables)
         self.selectedDay = DayView.Day.current
         self.update()
     }
     func didTap(day:DayView.Day) {
         self.selectedDay = day
         self.update()
+    }
+    func getHolidayEmoji(holiday: String) -> String? {
+        if holiday.lowercased().contains("jul") {
+            return "🎄"
+        } else if holiday.lowercased().contains("påsk") {
+            return "🐣"
+        } else if holiday.lowercased().contains("nyår") {
+            return "🎆"
+        }
+        
+        return nil
     }
 }

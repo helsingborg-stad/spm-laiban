@@ -165,7 +165,7 @@
 "garment_winterOutfit_description" = "ملابس عامة أو سترة مع سراويل تغطية";
 "home_feedback_acitivity_title" = "هل شاركت في نشاط؟
 انقر هنا لتخبرنا عن رأيك في ذلك!";
-"home_holiday" = "غداً هو %@ . إجازة سعيدة!";
+"home_holiday" = "غدا %@. إجازة سعيدة!";
 "home_holiday_christmans" = "غداً هو عشية عيد الميلاد عيدميلادمجيد!";
 "home_holiday_easter" = "غداً سُقطع الخميس عيد فصح سعيد!";
 "home_survey_reminder" = "هناك مسح جديد متاح. يرجى تذكير المعلم الخاص بك لإكمال ذلك!";
@@ -186,6 +186,27 @@
 "message_category_info_title" = "رسائل من الموظفين";
 "message_category_reminder_title" = "تذكر";
 "message_no_messages" = "ليس لدينا أي رسائل الآن";
+"movement_choose_activity" = "ما النشاط الذي قمت به؟";
+"movement_close" = "غلق";
+"movement_last_week" = "في الأسبوع الماضي جمعت ما مجموعه %@ متر من الطاقة ، وهذا الأسبوع %@ متر";
+"movement_next" = "مقبل";
+"movement_nothing" = "حتى الآن هذا الأسبوع لم تسجل أي حركة.";
+"movement_register" = "سجل";
+"movement_register_how_long" = "كم دقيقة قمت بهذا النشاط؟";
+"movement_register_how_many" = "كم منكم شارك في النشاط؟";
+"movement_statistics_cities" = "هذا هو المسافة بين %@ و %@";
+"movement_statistics_how_far" = "إلى أي مدى هذا الحد؟";
+"movement_statistics_see_distance" = "اطلب من المعلم الحصول على جهاز iPad آخر ومشاهدة المسافة التي تصل إليها عند المشي %@ متر";
+"movement_statistics_title_today" = "عمل جيد ، اليوم قمت بجمع خطوات %@ ، وهذا %@ متر.";
+"movement_statistics_title_weekday_1" = "عمل جيد ، يوم الاثنين ، بلغ مجموعك خطوات %@ ، وهذا %@ متر";
+"movement_statistics_title_weekday_2" = "عمل جيد ، يوم الثلاثاء ، بلغ مجموعك %@ خطوة ، أي %@ متر";
+"movement_statistics_title_weekday_3" = "عمل جيد ، يوم الأربعاء ، بلغ مجموعك %@ خطوات ، وهذا %@ متر";
+"movement_statistics_title_weekday_4" = "عمل جيد ، يوم الخميس ، بلغ مجموعك %@ الخطوات ، أي %@ متر";
+"movement_statistics_title_weekday_5" = "عمل جيد ، يوم الجمعة ، بلغ مجموعك %@ خطوات ، وهذا %@ متر";
+"movement_statistics_title_weekday_6" = "عمل جيد ، يوم السبت ، بلغ مجموعك %@ خطوة ، أي %@ متر";
+"movement_statistics_title_weekday_7" = "عمل جيد ، يوم الأحد ، بلغ مجموعك %@ خطوات ، أي %@ متر";
+"movement_statistics_title_yesterday" = "عمل جيد ، بالأمس ، بلغ مجموعك %@ خطوات ، وهذا %@ متر.";
+"movement_weekly_stats" = "لقد جمعت ما مجموعه %@ متر من الطاقة هذا الأسبوع";
 "outdoors_feedback_change_description" = "هل اقتراحاتي ليست جيدة؟ اطلب من معلمك مساعدتك في تغيير الملابس التي أقترحها.";
 "outdoors_feedback_change_title" = "اختيار الملابس التي تناسب الطقس في الخارج";
 "outdoors_feedback_confirm" = "لا توجد مشكلة! هل تريد أنت ومعلمك تغيير الملابس التي يجب أن أريها؟";

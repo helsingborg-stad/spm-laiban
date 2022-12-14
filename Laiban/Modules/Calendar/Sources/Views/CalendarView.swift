@@ -237,8 +237,12 @@ public struct CalendarView: View {
             VStack(alignment: .center, spacing: self.horizontalSizeClass == .regular ? 40 : 20) {
                 Text(self.viewModel.title)
                     .font(properties.font, ofSize: .n, weight: .heavy)
+                    .scaleEffect(self.viewModel.isCurrentlySpeaking(string: self.viewModel.title) ? 1.1 : 1.0)
+                    .animation(.easeInOut(duration: 0.2))
                 VStack {
                     Text(LocalizedStringKey(self.viewModel.selectedDay.descriptionKey), bundle: .module)
+                        .scaleEffect(self.viewModel.isCurrentlySpeaking(string: self.viewModel.selectedDay.descriptionKey, isKey: true) ? 1.1 : 1.0)
+                        .animation(.easeInOut(duration: 0.2))
                 }.lineLimit(nil)
                 
                 HStack(spacing: 0) {
@@ -254,16 +258,14 @@ public struct CalendarView: View {
                 .padding(.top, 20)
                 
                 if let selectedItem = self.calendarEvent {
+                    let text = selectedItem.type == .fetchedEvent ?
+                    assistant.formattedString(forKey: "calendar_holiday", assistant.string(forKey: selectedItem.content)) :
+                    assistant.string(forKey: selectedItem.content)
+                    
                     GeometryReader() { proxy in
                         VStack() {
-                            
                             Text(selectedItem.icon ?? "").font(Font.system(size: proxy.size.height * 0.3)).padding(.bottom, self.horizontalSizeClass == .regular ? 30 : 10)
-                            
-                            Text(assistant.string(forKey: viewModel.eventString ?? viewModel.localizedString(for: selectedItem)))
-                            
-                            if self.viewModel.selectedDay.isFree(events: self.viewModel.otherEvents) {
-                                Text(LocalizedStringKey("calendar_free_day"), bundle: .module)
-                            }
+                            Text(text)
                         }
                         .lineLimit(nil)
                         .frame(maxWidth: .infinity, maxHeight:.infinity)
@@ -272,6 +274,8 @@ public struct CalendarView: View {
                         .cornerRadius(36)
                         .shadow(color: Color.black.opacity(0.2), radius: 7, x: 0, y: 0)
                         .padding(properties.spacing[.m])
+                        .scaleEffect(self.viewModel.isCurrentlySpeaking(string: text) ? 1.1 : 1.0)
+                        .animation(.easeInOut(duration: 0.2))
                     }
                     .frame(maxWidth: .infinity, maxHeight:.infinity)
                     .padding(.top, 10)
@@ -280,16 +284,18 @@ public struct CalendarView: View {
                     Spacer()
                 }
                 
-                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 30) {
                         Spacer()
                         ForEach(self.viewModel.todaysEvents, id:\.id) { item in
                             Button(action: {
                                 calendarEvent = item
-                                assistant.speak(assistant.string(forKey:item.content))
+                                if item.type == .fetchedEvent {
+                                    assistant.speak(assistant.formattedString(forKey: "calendar_holiday", assistant.string(forKey: item.content)))
+                                } else {
+                                    assistant.speak(assistant.string(forKey:item.content))
+                                }
                             }) {
-                                
                                 if let icon = item.icon {
                                     EmojiCircleSimpleView(emoji: icon, disabled:assistant.isSpeaking)
                                 }
@@ -310,7 +316,6 @@ public struct CalendarView: View {
                     self.calendarEvent = self.viewModel.todaysEvents.first ?? nil
                 })
                 .onReceive(timer) { time in
-                    
                     if let calEv = self.calendarEvent {
                         let currentIndex = self.viewModel.todaysEvents.firstIndex(of: calEv) ?? -1
                         var nextIndex = currentIndex+1
@@ -318,8 +323,6 @@ public struct CalendarView: View {
                         self.calendarEvent = self.viewModel.todaysEvents[nextIndex]
                     }
                 }
-                
-                
             }.font(properties.font, ofSize: .n)
                 .padding(properties.spacing[.m])
                 .frame(maxWidth: .infinity, maxHeight:.infinity)
@@ -343,7 +346,7 @@ public struct CalendarView: View {
 struct CalendarView_Previews: PreviewProvider {
     static var service: CalendarService = {
         let service = CalendarService()
-        service.data = [CalendarEvent(date: Date(), content: "A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1", icon: "🗓"),CalendarEvent(date: Date(), content: "A is test event 2", icon: "🗓"),CalendarEvent(date: Date(), content: "A is test event 3", icon: "🗓"),CalendarEvent(date: Date().tomorrow!, content: "A is test event 4", icon: "🗓")]
+        service.data = [CalendarEvent(date: Date(), content: "A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1 A is test event 1", icon: "🗓", type: .userEvent),CalendarEvent(date: Date(), content: "A is test event 2", icon: "🗓", type: .userEvent),CalendarEvent(date: Date(), content: "A is test event 3", icon: "🗓", type: .userEvent),CalendarEvent(date: Date().tomorrow!, content: "A is test event 4", icon: "🗓", type: .userEvent)]
         return service
     }()
     static var previews: some View {

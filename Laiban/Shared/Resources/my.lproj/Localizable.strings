@@ -13,13 +13,13 @@
 "activity_today" = "ယနေ့ %@ ယနေ့ ";
 "are_you_ready" = "အဆင်သင့်ဖြစ်ပြီလား?";
 "ask_teacher" = "ဆရာမမေးပါ";
-"calendar_event" = "ဒီနေ့မှာ <span translate='no'>string</span>";
+"calendar_event" = "ဒီနေ့မှာ %@";
 "calendar_event_today" = "ယနေ့ %@ ယနေ့ ";
 "calendar_free_day" = "ဒီနေ့မှာ ကျွန်တော်တို့ လွတ်လပ်နေပါတယ်။";
 "calendar_free_day_after" = "နောက်တစ်နေ့မှာ တာဝန်မကျတော့ဘူး။";
 "calendar_free_tomorrow" = "မနက်ဖြန်မှာ ကျွန်တော်တို့ အခမဲ့ပါ။";
 "calendar_holiday" = "ယနေ့ ယင်းသည် %@ အားလပ်ရက်ဖြစ်သည်။";
-"calendar_title_date" = "ဒီနေ့ဟာ <span translate='no'>string</span>";
+"calendar_title_date" = "ဒီနေ့ဟာ %@";
 "calendar_weekday_friday" = "သောကြာနေ့သည် သီတင်းပတ်၏ ပဉ္စမနေ့ဖြစ်သည်။ နောက်တစ်နေ့ စနေနေ့နဲ့ တနင်္ဂနွေနေ့ပါ။ ပြီးတော့ တစ်ပတ်သစ် စတင်တယ်။";
 "calendar_weekday_friday_today" = "သောကြာနေ့သည် သီတင်းပတ်၏ ပဉ္စမနေ့ဖြစ်သည်။ မနက်ဖြန်ဆိုတာ စနေနေ့နဲ့ တနင်္ဂနွေနေ့ပါ။ ပြီးတော့ တစ်ပတ်သစ် စတင်တယ်။";
 "calendar_weekday_monday" = "သီတင်းပတ် တွင် ခုနစ် ရက် ရှိ ပြီး တနင်္လာ နေ့ သည် သီတင်းပတ် ၏ ပထမ နေ့ ဖြစ် သည် ။";
@@ -70,7 +70,7 @@
 ဘာဝတ်ရမလဲဆိုတာ ကြည့်ရအောင်။";
 "content_title_clothes_link" = "အပြင်ထွက်ချင်လား။
 ဘာဝတ်ရမလဲဆိုတာ ကြည့်ပါ။";
-"current_date" = "ဒီနေ့ခေတ်မှာ <span translate='no'>string</span>";
+"current_date" = "ဒီနေ့ခေတ်မှာ %@";
 "emoji_1F348_name" = "မယ်လွန်";
 "emoji_1F348_name_plural" = "မဲလွန်း";
 "emoji_1F34A_name" = "လိမ္မော်ရောင်";
@@ -97,7 +97,7 @@
 "emoji_1F969_name_plural" = "စတီး";
 "emoji_1F990_name" = "ပုစ္ဆာပုစ္ဆာ";
 "emoji_1F990_name_plural" = "ပုစ္ဆာ";
-"feedback_activity_question" = "လှုပ်ရှားမှုနဲ့ ခင်ဗျား ဘယ်လိုထင်သလဲ– <span translate='no'>string</span>";
+"feedback_activity_question" = "လှုပ်ရှားမှုနဲ့ ခင်ဗျား ဘယ်လိုထင်သလဲ– %@";
 "feedback_activity_question_basic" = "ဒီလုပ်ဆောင်မှုနဲ့ ခင်ဗျား ဘယ်လိုထင်သလဲ။";
 "feedback_activity_statistics" = "ဒီလိုလုပ်ဆောင်နေပေမဲ့ တခြားသူတွေကို ဘာသိချင်သလဲ။";
 "feedback_activity_statistics_title" = "ဒီလုပ်ဆောင်မှုနဲ့ပတ်သက်ပြီး ခင်ဗျားတွေးမိတာက";
@@ -119,7 +119,7 @@
 "food_waste_info_why" = "အစားအစာတွေကို ဘာလို့ မဖြုန်းသင့်တာလဲ။";
 "food_waste_info_why_description" = "အစားအစာကို အသုံးဝင်စေရန် အတတ်နိုင်ဆုံး နည်းနည်းလေး စွန့်ပစ်သင့်သည်။ ပန်းကန်ပြားပေါ်က အစားအစာကိုစားခြင်းက သင့်ကို ပျော်ရွှင်စေပြီး အစာအိမ်ထဲမှာ အစားအစာတွေ အဆုံးသတ်သွားတဲ့အခါ ကစားဖို့နဲ့ ပိုသင်ယူဖို့ ခွန်အားပေးတယ်။";
 "food_waste_kompostina_title" = "အစားအစာကို ချိန်တွယ်ချင်သလား။ ⚖️ ကိုမ်ပိုစတီနာကိုနှိပ်ပါ။";
-"food_waste_last_week" = "လွန်ခဲ့တဲ့အပတ်က %@ အစားအစာဂရမ်တွေကို စွန့်ပစ်လိုက်ပြီး ဒီအပတ်မှာတော့ <span translate='no'>string</span> ဂရမ်တွေပေါ့။";
+"food_waste_last_week" = "လွန်ခဲ့တဲ့အပတ်က %@ အစားအစာဂရမ်တွေကို စွန့်ပစ်လိုက်ပြီး ဒီအပတ်မှာတော့ %@ ဂရမ်တွေပေါ့။";
 "food_waste_nothing" = "ဒီအပတ်အထိ ခင်ဗျားဟာ ဘယ်အစားအစာကိုမှ မစွန့်ပစ်လိုက်ပါဘူး။";
 "food_waste_statistics_title_today" = "ယနေ့ သင်သည် %@ အစားအစာကို လွှင့်ပစ်လိုက်ပြီ။ အဲဒါနဲ့ တူပါတယ်......";
 "food_waste_statistics_title_weekday_1" = "တနင်္လာနေ့မှာ %@ အစားအစာတွေကို စွန့်ပစ်လိုက်တယ်။ အဲဒါနဲ့ တူပါတယ်......";
@@ -186,15 +186,36 @@
 "message_category_info_title" = "ဝန်ထမ်းထံမှ သတင်းစကားများ";
 "message_category_reminder_title" = "အောက်မေ့";
 "message_no_messages" = "အခု ကျွန်တော်တို့မှာ သတင်းအချက်အလက်တွေ မရှိပါဘူး။";
+"movement_choose_activity" = "အဘယ်လုပ်ဆောင်မှုပြုလုပ်ခဲ့ပြီနည်း။";
+"movement_close" = "ပိတ်ပါ";
+"movement_last_week" = "ပြီး ခဲ့ သည့် အပတ် က သင် သည် စွမ်းအင် စုစုပေါင်း မီတာ တစ် ခု ကို %@ စုဆောင်း ခဲ့ ပြီး ၊ ဒီ အပတ် %@ မီတာ များ";
+"movement_next" = "နောက်တစ်ခေါ";
+"movement_nothing" = "ဒီအပတ်အထိ ဘယ်လှုပ်ရှားမှုကိုမှ မှတ်ပုံတင်မထားပါဘူး။";
+"movement_register" = "မှတ်ပုံတင်";
+"movement_register_how_long" = "ဒီလုပ်ဆောင်မှုကို မိနစ်ဘယ်နှစ်မိနစ်လောက် လုပ်ခဲ့သလဲ။";
+"movement_register_how_many" = "ဒီလုပ်ငန်းမှာ ခင်ဗျားတို့ ဘယ်နှစ်ယောက် ပါဝင်ခဲ့သလဲ။";
+"movement_statistics_cities" = "ဒါက %@ နဲ့ %@";
+"movement_statistics_how_far" = "ယင်းသည် မည်မျှအထိအထိရှိသနည်း။";
+"movement_statistics_see_distance" = "ဆရာတစ်ယောက်ကို iPad နောက်တစ်ခုရဖို့ တောင်းဆိုပြီး မီတာလမ်းလျှောက်တဲ့အခါ ဘယ်လောက်ဝေးသွားမလဲဆိုတာ အတူကြည့်ပါလို့ %@ မီတာတွေမှာ ";
+"movement_statistics_title_today" = "ကောင်းတဲ့အလုပ်ကတော့ ဒီနေ့ ခင်ဗျားတို့ဟာ %@ အဆင့်တွေကို စုဆောင်းပြီး %@ မီတာပါ။";
+"movement_statistics_title_weekday_1" = "တနင်္လာနေ့မှာ ခင်ဗျားဟာ %@ စုစုပေါင်း  %@";
+"movement_statistics_title_weekday_2" = "အင်္ဂါနေ့မှာ အင်္ဂါနေ့မှာ %@ စုစုပေါင်း ခြေလှမ်းတွေရှိတယ်၊ ဒါက %@ မီတာတွေပါ";
+"movement_statistics_title_weekday_3" = "ဗုဒ္ဓဟူးနေ့မှာ %@ စုစုပေါင်း ခြေလှမ်းတွေကို %@";
+"movement_statistics_title_weekday_4" = "ကြာသပတေးနေ့မှာ ခင်ဗျားဟာ %@ စုစုပေါင်း ခြေလှမ်းတွေကို %@";
+"movement_statistics_title_weekday_5" = "သောကြာနေ့မှာ %@ စုစုပေါင်းလုပ်ဆောင်ခဲ့တာက %@ မီတာတွေပါ";
+"movement_statistics_title_weekday_6" = "စနေနေ့မှာ စနေနေ့မှာ %@ စုစုပေါင်း ခြေလှမ်းတွေကို %@";
+"movement_statistics_title_weekday_7" = "တနင်္ဂနွေနေ့မှာ %@ စုစုပေါင်း ခြေလှမ်းတွေကို %@";
+"movement_statistics_title_yesterday" = "မနေ့က ခင်ဗျားဟာ %@ စုစုပေါင်း  မီတာ %@ တွေပါ။";
+"movement_weekly_stats" = "ဒီအပတ် စွမ်းအင်နဲ့ %@ စုစုပေါင်း စုဆောင်းထားတာပါ။";
 "outdoors_feedback_change_description" = "ကျွန်တော့်အကြံပြုချက်တွေက မကောင်းဘူးလား။ ကျွန်တော်အကြံပြုထားတဲ့ အဝတ်တွေကို ပြောင်းလဲပေးဖို့ သင့်ဆရာကို တောင်းပါ။";
 "outdoors_feedback_change_title" = "အပြင်ဘက် ရာသီဥတုအတွက် ဘယ်အဝတ်အစားတွေ သင့်တော်သလဲဆိုတာ ရွေးချယ်ပါ";
 "outdoors_feedback_confirm" = "ပြဿနာမရှိပါဘူး! သင်နဲ့ သင့်ဆရာမက ဘယ်အဝတ်တွေကို ကျွန်တော်ပြသင့်သလဲဆိုတာ ပြောင်းလဲချင်သလား။";
 "outdoors_feedback_provideFeedback" = "အဝတ်အစားနဲ့ဆိုင်တဲ့ ကျွန်မရဲ့အကြံပြုချက်က ကောင်းတယ်လို့ ထင်သလား။";
 "outdoors_feedback_thanks" = "ကျေးဇူးတင်ပါတယ်! အခုတော့ ဒီရာသီဥတုမှာ ဘယ်အဝတ်အစားတွေလိုအပ်တယ်ဆိုတာ ပိုနားလည်လာအောင် ကူညီပေးခဲ့ပြီ!";
 "outdoors_go_out" = "အပြင်ထွက်မယ်ဆိုရင် ဒါက ဝတ်ရမယ့် ဝတ်ရမယ့် အရာပါ။";
-"public_calendar_celebration" = "ဒီနေ့မှာ <span translate='no'>string</span>";
-"public_calendar_celebration_today" = "ဒီနေ့ ကျွန်တော်တို့ ကျင်းပနေကြတဲ့ <span translate='no'>string</span>";
-"public_calendar_respect" = "ဒီနေ့မှာ <span translate='no'>string</span>";
+"public_calendar_celebration" = "ဒီနေ့မှာ %@";
+"public_calendar_celebration_today" = "ဒီနေ့ ကျွန်တော်တို့ ကျင်းပနေကြတဲ့ %@";
+"public_calendar_respect" = "ဒီနေ့မှာ %@";
 "recreation_nothing_to_do" = "ဘာမှမလုပ်ရဘူးလား။";
 "schedule_date_format" = "EEEE ''d MMMMM";
 "singalong_repeat" = "သီဆိုချင်ပါသလား။";
@@ -207,32 +228,32 @@
 "tempus_child_arrives_after" = "%@ %@ ။
 ဒါက %@ပြီးတဲ့နောက်မှာပဲပေါ့ ။";
 "tempus_child_arrives_after_past" = "%@ %@ ။
-အဲဒီနောက်မှာပဲ <span translate='no'>string</span> ။";
+အဲဒီနောက်မှာပဲ %@ ။";
 "tempus_child_arrives_before" = "%@ %@ ။
 ဒါက %@မတိုင်ခင်လေးမှာပဲ ။";
 "tempus_child_arrives_before_past" = "%@ %@ ။
  %@ မတိုင်မီလေးတွင်  ။";
 "tempus_child_arrives_during" = "%@ %@ ။
-အဲဒီအချိန်မှာ <span translate='no'>string</span>။";
+အဲဒီအချိန်မှာ %@။";
 "tempus_child_arrives_during_past" = "%@ %@ ။
  %@ မတိုင်မီလေးတွင်  ။";
 "tempus_child_arrives_past" = "%@ %@";
 "tempus_child_has_left" = "%@ တစ်နေ့တာအတွက် အိမ်ပြန်နေပုံရတယ်။";
 "tempus_child_has_left_returns_in_days" = "%@ တစ်နေ့တာအတွက် အိမ်ပြန်သွားပုံရပေမဲ့ %@ ရက်တွေမှာ ပြန်လာသင့်တယ်။";
 "tempus_child_has_left_returns_tomorrow" = "%@ တစ်နေ့တာအတွက် အိမ်ပြန်သွားပုံရပေမဲ့ မနက်ဖြန် ပြန်လာသင့်တယ်။";
-"tempus_child_leaves" = "%@ ဒီနေရာမှာရှိနေပြီး ပြင်ဆင်မထားခင် <span translate='no'>string</span>။";
+"tempus_child_leaves" = "%@ ဒီနေရာမှာရှိနေပြီး ပြင်ဆင်မထားခင် %@။";
 "tempus_child_leaves_after" = "%@ ဒီနေရာမှာရှိနေပြီး ပြင်ဆင်မထားခင် %@။
 ဒါက %@ပြီးတဲ့နောက်မှာပဲပေါ့ ။";
 "tempus_child_leaves_after_past" = "%@ %@ ။
-အဲဒီနောက်မှာပဲ <span translate='no'>string</span> ။";
+အဲဒီနောက်မှာပဲ %@ ။";
 "tempus_child_leaves_before" = "%@ ဒီနေရာမှာရှိနေပြီး ပြင်ဆင်မထားခင် %@။
 ဒါက %@မတိုင်ခင်လေးမှာပဲ ။";
 "tempus_child_leaves_before_past" = "%@ %@ ။
  %@ မတိုင်မီလေးတွင်  ။";
 "tempus_child_leaves_during" = "%@ ဒီနေရာမှာရှိနေပြီး ပြင်ဆင်မထားခင် %@။
-အဲဒီအချိန်မှာ <span translate='no'>string</span>။";
+အဲဒီအချိန်မှာ %@။";
 "tempus_child_leaves_during_past" = "%@ %@ ။
-အဲဒီအချိန်အတွင်းမှာ <span translate='no'>string</span>။";
+အဲဒီအချိန်အတွင်းမှာ %@။";
 "tempus_child_leaves_past" = "%@ %@ ။";
 "tempus_child_not_here_returns_in_days" = "%@ ဒီနေ့ ဒီမှာရှိနေပုံမရပေမဲ့ %@ ဒီနေရာကို ပြန်ရောက်သင့်ပါတယ်။";
 "tempus_child_not_here_returns_tomorrow" = "%@ ဒီနေ့ ဒီမှာရှိနေပုံမရပေမဲ့ မနက်ဖြန် ဒီကို ပြန်ရောက်သင့်ပါတယ်။";
@@ -262,7 +283,7 @@
 "trashmonster_textilia_description" = "Textilia ဟာ ဂိုဏ်းအတွက် တော်တော် အသစ်ပါ။ အဝတ်အဟောင်းများနှင့် ဖိနပ်များကို စုဆောင်းထားသော်လည်း ကောင်းမွန်ပြီး ပြန်အသုံးပြုနိုင်သည့် အဝတ်အစားများကိုလည်း စုဆောင်းသည်။";
 "trashmonster_towalett_description" = "ပီ ၊ ပေါ့ နှင့် အိမ်သာ စက္ကူ သည် တိုဝေလက် စုဆောင်း သည့် တစ်ခုတည်း သော အရာ များ ဖြစ် သည် ။ ဆေးရွက်ကြီး သို့မဟုတ် စိုစွတ်သောဆေးရောင်ခြည်ကဲ့သို့သောပေါင်များကို မျက်လုံးငါးလုံးရှာဖွေကာ အိမ်သာတွင် မပါဝင်ချေ!";
 "trashmonster_wellmer_description" = "ချို့ယွင်းလွယ်သော အထုပ်အပိုးများစွာသည် ကျိုးပဲ့လွယ်သောပစ္စည်းများကို ကာကွယ်ပေးသည့် သူရဲကောင်းတစ်ဦးနှင့်တူသည်ဟု ခံစားရခြင်းဖြစ်သည်။ သူက ကတ်ထူကို ပြန်အာရုံစိုက်ချင်ပြီး သေတ္တာအဟောင်းတွေထဲက ဓားပြရဲတိုက်တွေ လုပ်လေ့ရှိတယ်။";
-"undp_goal" = "ပန်းတိုင် <span translate='no'>string</span>";
+"undp_goal" = "ပန်းတိုင် %@";
 "undp_goal_10_description" = "ယင်းက သင်သည် ဤလောကတွင် မည်သည့်နေရာတွင်မဆို အခြားသူများကဲ့သို့ အလားတူအခွင့်အရေးများနှင့် အခွင့်အရေးများ ရှိသင့်သည်ဟု ဆိုလိုသည်။";
 "undp_goal_10_title" = "ပန်းတိုင် ၁၀– မညီမျှမှု လျော့နည်းသွားခြင်း";
 "undp_goal_11_description" = "ယင်းက လူတိုင်း လုံခြုံပြီး ကောင်းမွန်သောအိမ်များတွင် နေထိုင်နိုင်သင့်သည်ဟု ဆိုလိုသည်။";
@@ -333,23 +354,23 @@
 "undp_you_found_goal_8" = "ပန်းတိုင် ၈– သင့်တော်တဲ့အလုပ်နဲ့ စီးပွားရေးတိုးတက်မှု";
 "undp_you_found_goal_9" = "ပန်းတိုင် ၉– စက်မှုလုပ်ငန်း၊ ဆန်းသစ်တီထွင်မှုနဲ့ အခြေခံအဆောက်အအုံတွေ";
 "weather_cold" = "အပြင်ဘက်မှာ အေးနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "weather_coldAndRainy" = "အပြင်ဘက်မှာ အေးပြီး မိုးရွာနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "weather_cool" = "အပြင်မှာတော့ အေးနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "weather_coolAndRainy" = "အပြင်ဘက်မှာ အေးအေးဆေးဆေး မိုးရွာနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "weather_hot" = "အပြင်မှာ တကယ့်ကို ပူနေပုံရတယ်။
  %@ ဒီဂရီပါ။
  အရက်သောက်ပြီး အရိပ်ရှာဖို့ သတိရပါ";
 "weather_rainy" = "အပြင်ဘက်မှာ မိုးရွာနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "weather_unknown" = "ပြတင်းပေါက်ကနေ ကြည့်ပါ";
 "weather_warm" = "အပြင်မှာ ပူနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "weather_warmish" = "အပြင်မှာ တော်တော်ပူနေပုံရတယ်။
- <span translate='no'>string</span> ဒီဂရီပါ။";
+ %@ ဒီဂရီပါ။";
 "word_and" = "ပြီးတော့";
 "word_done" = "လုပ်ကိုင်ခဲ့";
 "word_or" = "ဒါမှမဟုတ် ဒါမှ";

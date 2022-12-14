@@ -10,16 +10,16 @@
 "activities_participants_future" = "เพื่อเข้าร่วม";
 "activities_participants_past" = "เข้าร่วม";
 "activities_title" = "นี่คือสิ่งที่เรากําลังจะทําในวันนี้!";
-"activity_today" = "วันนี้ <span translate='no'>string</span>";
+"activity_today" = "วันนี้ %@";
 "are_you_ready" = "เสร็จแล้วยัง ";
 "ask_teacher" = "ถามครู";
-"calendar_event" = "ในวันนี้ <span translate='no'>string</span>";
-"calendar_event_today" = "วันนี้ <span translate='no'>string</span>";
+"calendar_event" = "ในวันนี้ %@";
+"calendar_event_today" = "วันนี้ %@";
 "calendar_free_day" = "ในวันนี้เราเป็นอิสระ";
 "calendar_free_day_after" = "วันรุ่งขึ้นเราออกจากหน้าที่";
 "calendar_free_tomorrow" = "พรุ่งนี้เราเป็นอิสระ";
 "calendar_holiday" = "วันนี้เป็น %@ นี่เป็นวันหยุด";
-"calendar_title_date" = "วันนี้เป็นวัน <span translate='no'>string</span>";
+"calendar_title_date" = "วันนี้เป็นวัน %@";
 "calendar_weekday_friday" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ วันรุ่งขึ้นเป็นวันเสาร์และวันอาทิตย์ หลังจากนั้นสัปดาห์ใหม่จะเริ่มขึ้น";
 "calendar_weekday_friday_today" = "วันศุกร์เป็นวันที่ห้าของสัปดาห์ พรุ่งนี้เป็นวันเสาร์และวันอาทิตย์ หลังจากนั้นสัปดาห์ใหม่จะเริ่มขึ้น";
 "calendar_weekday_monday" = "สัปดาห์มีเจ็ดวันและวันจันทร์เป็นวันแรกของสัปดาห์";
@@ -29,7 +29,7 @@
 "calendar_weekday_thursday" = "สัปดาห์มีเจ็ดวันและวันพฤหัสบดีเป็นวันที่สี่ของสัปดาห์";
 "calendar_weekday_tuesday" = "สัปดาห์มีเจ็ดวันและวันอังคารเป็นวันที่สองของสัปดาห์";
 "calendar_weekday_wednesday" = "สัปดาห์มีเจ็ดวันและวันพุธเป็นวันที่สามของสัปดาห์";
-"clock_current_time" = "เวลาคือ <span translate='no'>string</span>";
+"clock_current_time" = "เวลาคือ %@";
 "clock_select_person" = "คุณอยากรู้เพิ่มเติมเกี่ยวกับเด็กคนไหน?";
 "clock_select_show_tempus_info" = "คุณต้องการทราบหรือไม่ว่าวันนี้คุณจะได้รับการมารับคุณเมื่อไหร่และเพื่อนคนไหนอยู่ที่นี่? คลิกที่นี่!";
 "clock_time_1" = "A";
@@ -70,7 +70,7 @@
 เรามาดูกันว่าคุณจะใส่ชุดอะไร!";
 "content_title_clothes_link" = "คุณต้องการที่จะออกไป?
 ดูสิ่งที่คุณกําลังจะสวมใส่!";
-"current_date" = "วันนี้มันเป็น <span translate='no'>string</span>";
+"current_date" = "วันนี้มันเป็น %@";
 "emoji_1F348_name" = "แตง";
 "emoji_1F348_name_plural" = "แตง";
 "emoji_1F34A_name" = "ส้ม";
@@ -97,7 +97,7 @@
 "emoji_1F969_name_plural" = "สเต็ก";
 "emoji_1F990_name" = "กุ้ง";
 "emoji_1F990_name_plural" = "กุ้ง";
-"feedback_activity_question" = "คุณคิดอย่างไรกับกิจกรรมนี้: <span translate='no'>string</span>";
+"feedback_activity_question" = "คุณคิดอย่างไรกับกิจกรรมนี้: %@";
 "feedback_activity_question_basic" = "ท่านคิดอย่างไรกับกิจกรรมนี้";
 "feedback_activity_statistics" = "คุณต้องการที่จะเห็นสิ่งที่คนอื่น ๆ แม้ว่าของกิจกรรมนี้หรือไม่";
 "feedback_activity_statistics_title" = "นี่คือสิ่งที่คุณคิดเกี่ยวกับกิจกรรมนี้";
@@ -119,7 +119,7 @@
 "food_waste_info_why" = "ทําไมเราไม่ควรเสียอาหาร?";
 "food_waste_info_why_description" = "เพื่อให้อาหารมีประโยชน์เราควรทิ้งให้น้อยที่สุด การกินอาหารบนจานทําให้คุณรู้สึกดีและเมื่ออาหารจบลงในท้องของคุณมันจะช่วยให้คุณมีพลังงานในการเล่นและเรียนรู้เพิ่มเติม";
 "food_waste_kompostina_title" = "คุณต้องการชั่งน้ําหนักอาหารหรือไม่? ⚖️ กดฉัน, Kompostina!";
-"food_waste_last_week" = "สัปดาห์ที่แล้วคุณโยนอาหารออกไป %@ กรัมและสัปดาห์นี้ <span translate='no'>string</span> กรัม";
+"food_waste_last_week" = "สัปดาห์ที่แล้วคุณโยนอาหารออกไป %@ กรัมและสัปดาห์นี้ %@ กรัม";
 "food_waste_nothing" = "จนถึงสัปดาห์นี้คุณยังไม่ได้ทิ้งอาหารใด ๆ";
 "food_waste_statistics_title_today" = "วันนี้คุณโยนอาหาร %@ กรัมออกไป นั่นเหมือนกับ ...";
 "food_waste_statistics_title_weekday_1" = "ในวันจันทร์ที่คุณโยนออกไป %@ กรัมของอาหาร นั่นเหมือนกับ ...";
@@ -134,7 +134,7 @@
 "food_waste_tip_2" = "ต่อมรับรสของคุณต้องฝึกฝนรสชาติใหม่ ๆ หลายครั้งเพื่อให้คุณเรียนรู้ที่จะชอบรสชาติเหล่านั้น ต่อมรับรสอยู่บนลิ้นของคุณ";
 "food_waste_tip_3" = "อย่าลืมนั่งอย่างสงบและเงียบสงบและลิ้มรสอาหารทั้งหมด ต่อมรับรสของคุณต้องฝึกฝนรสชาติใหม่ ๆ หลายครั้งเพื่อให้คุณเรียนรู้ที่จะชอบรสชาติเหล่านั้น ต่อมรับรสอยู่บนลิ้นของคุณ";
 "food_waste_title" = "แตะรูปภาพเพื่อเพิ่มหรือลบออกจากเครื่องชั่ง";
-"food_waste_weekly_stats" = "สัปดาห์นี้คุณได้ทิ้งอาหาร <span translate='no'>string</span> กรัม";
+"food_waste_weekly_stats" = "สัปดาห์นี้คุณได้ทิ้งอาหาร %@ กรัม";
 "garment_beanie" = "บีนี่";
 "garment_beanie_description" = "บีนนี่";
 "garment_cap" = "หมวก";
@@ -186,59 +186,80 @@
 "message_category_info_title" = "ข้อความจากเจ้าหน้าที่";
 "message_category_reminder_title" = "จำ";
 "message_no_messages" = "เราไม่มีข้อความใด ๆ ในขณะนี้";
+"movement_choose_activity" = "ท่านได้ทํากิจกรรมอะไรมาบ้าง";
+"movement_close" = "ปิด";
+"movement_last_week" = "สัปดาห์ที่แล้วคุณรวบรวมพลังงานทั้งหมด %@ เมตรและสัปดาห์นี้ %@ เมตร";
+"movement_next" = "ต่อไป";
+"movement_nothing" = "จนถึงสัปดาห์นี้คุณยังไม่ได้ลงทะเบียนการเคลื่อนไหวใด ๆ";
+"movement_register" = "ลงทะเบียน";
+"movement_register_how_long" = "คุณทํากิจกรรมนี้กี่นาที?";
+"movement_register_how_many" = "มีกี่คนที่เข้าร่วมกิจกรรมนี้?";
+"movement_statistics_cities" = "นั่นคือระยะทางระหว่าง %@ และ %@";
+"movement_statistics_how_far" = "มันไกลแค่ไหน?";
+"movement_statistics_see_distance" = "ขอให้ครูคนหนึ่งหยิบ iPad อีกเครื่องหนึ่งและดูด้วยกันว่าคุณไปได้ไกลแค่ไหนเมื่อคุณเดิน %@ เมตร";
+"movement_statistics_title_today" = "งานที่ดีวันนี้คุณได้รวบรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_1" = "งานที่ดีในวันจันทร์ที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_2" = "งานที่ดีในวันอังคารที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_3" = "งานที่ดีในวันพุธที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_4" = "งานที่ดีในวันพฤหัสบดีที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_5" = "งานที่ดีในวันศุกร์ที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_6" = "งานที่ดีในวันเสาร์ที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_weekday_7" = "งานที่ดีในวันอาทิตย์ที่คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_statistics_title_yesterday" = "งานที่ดีเมื่อวานนี้คุณรวม %@ ขั้นตอนที่ %@ เมตร";
+"movement_weekly_stats" = "คุณได้รวบรวมพลังงานทั้งหมด %@ เมตรในสัปดาห์นี้";
 "outdoors_feedback_change_description" = "คําแนะนําของฉันไม่ดีหรือไม่? ขอให้ครูของคุณช่วยท่านเปลี่ยนเสื้อผ้าที่ผมแนะนํา";
 "outdoors_feedback_change_title" = "เลือกเสื้อผ้าที่เหมาะกับสภาพอากาศภายนอก";
 "outdoors_feedback_confirm" = "ไม่มีปัญหา! คุณและครูของคุณต้องการเปลี่ยนเสื้อผ้าที่ฉันควรแสดงหรือไม่?";
 "outdoors_feedback_provideFeedback" = "คุณคิดว่าคําแนะนําของฉันเกี่ยวกับเสื้อผ้านั้นดีหรือไม่?";
 "outdoors_feedback_thanks" = "ขอบคุณ! ตอนนี้คุณได้ช่วยให้ฉันเข้าใจได้ดีขึ้นว่าคุณต้องการเสื้อผ้าอะไรในสภาพอากาศนี้!";
 "outdoors_go_out" = "หากคุณกําลังจะออกไปข้างนอกนี่คือสิ่งที่คุณจะสวมใส่";
-"public_calendar_celebration" = "ในวันนี้เราเฉลิมฉลอง <span translate='no'>string</span>";
-"public_calendar_celebration_today" = "วันนี้เราเฉลิมฉลอง <span translate='no'>string</span>";
-"public_calendar_respect" = "ในวันนี้เราให้ความสนใจกับ <span translate='no'>string</span>";
+"public_calendar_celebration" = "ในวันนี้เราเฉลิมฉลอง %@";
+"public_calendar_celebration_today" = "วันนี้เราเฉลิมฉลอง %@";
+"public_calendar_respect" = "ในวันนี้เราให้ความสนใจกับ %@";
 "recreation_nothing_to_do" = "ไม่ได้มีอะไรจะทําอย่างไร?";
 "schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "คุณต้องการที่จะร้องเพลงอีกครั้ง?";
 "singalong_started" = "มาร้องเพลงกันเถอะ!
 เสร็จแล้วยัง ";
 "singalong_time_deactivated" = "ฉันไม่คิดว่าเราควรร้องเพลงเพียงแค่ตอนนี้ เราจะร้องเพลงก่อนที่เราจะกินแทน";
-"tempus_arrives_short" = "%@ มาถึง <span translate='no'>string</span>";
-"tempus_arrives_short_past" = "%@ มาถึง <span translate='no'>string</span>";
-"tempus_child_arrives" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ <span translate='no'>string</span>.";
+"tempus_arrives_short" = "%@ มาถึง %@";
+"tempus_arrives_short_past" = "%@ มาถึง %@";
+"tempus_child_arrives" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@.";
 "tempus_child_arrives_after" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@.
-นั่นเป็นเพียงหลังจาก <span translate='no'>string</span>.";
+นั่นเป็นเพียงหลังจาก %@.";
 "tempus_child_arrives_after_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ %@.
-นั่นคือหลังจาก <span translate='no'>string</span>.";
+นั่นคือหลังจาก %@.";
 "tempus_child_arrives_before" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@.
-นั่นเป็นเพียงก่อนที่ <span translate='no'>string</span>.";
+นั่นเป็นเพียงก่อนที่ %@.";
 "tempus_child_arrives_before_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ %@.
-นั่นคือก่อน <span translate='no'>string</span>.";
+นั่นคือก่อน %@.";
 "tempus_child_arrives_during" = "%@ จะมาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@.
-นั่นคือในช่วง <span translate='no'>string</span>.";
+นั่นคือในช่วง %@.";
 "tempus_child_arrives_during_past" = "%@ มาถึงโรงเรียนอนุบาลที่เกี่ยวกับ %@
-นั่นเป็นเพียงก่อน <span translate='no'>string</span>.";
-"tempus_child_arrives_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ <span translate='no'>string</span>";
+นั่นเป็นเพียงก่อน %@.";
+"tempus_child_arrives_past" = "%@ มาถึงโรงเรียนอนุบาลเมื่อประมาณ %@";
 "tempus_child_has_left" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น";
-"tempus_child_has_left_returns_in_days" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น แต่ควรกลับมาอีกครั้งในอีก <span translate='no'>string</span> วัน";
+"tempus_child_has_left_returns_in_days" = "%@ ดูเหมือนจะกลับบ้านไปแล้วในวันนั้น แต่ควรกลับมาอีกครั้งในอีก %@ วัน";
 "tempus_child_has_left_returns_tomorrow" = "%@ ดูเหมือนจะได้กลับบ้านสําหรับวัน แต่ควรกลับมาอีกครั้งในวันพรุ่งนี้";
-"tempus_child_leaves" = "%@ อยู่ที่นี่และจะออกจากโรงเรียนอนุบาลรอบ <span translate='no'>string</span>.";
+"tempus_child_leaves" = "%@ อยู่ที่นี่และจะออกจากโรงเรียนอนุบาลรอบ %@.";
 "tempus_child_leaves_after" = "%@ อยู่ที่นี่และจะออกจากโรงเรียนอนุบาลรอบ %@.
-นั่นเป็นเพียงหลังจาก <span translate='no'>string</span>.";
+นั่นเป็นเพียงหลังจาก %@.";
 "tempus_child_leaves_after_past" = "%@ อยู่ที่นี่จนกระทั่งประมาณ %@.
-นั่นคือหลังจาก <span translate='no'>string</span>.";
+นั่นคือหลังจาก %@.";
 "tempus_child_leaves_before" = "%@ อยู่ที่นี่และจะออกจากโรงเรียนอนุบาลรอบ %@.
-นั่นเป็นเพียงก่อนที่ <span translate='no'>string</span>.";
+นั่นเป็นเพียงก่อนที่ %@.";
 "tempus_child_leaves_before_past" = "%@ อยู่ที่นี่จนกระทั่งประมาณ %@.
-นั่นคือก่อน <span translate='no'>string</span>.";
+นั่นคือก่อน %@.";
 "tempus_child_leaves_during" = "%@ อยู่ที่นี่และจะออกจากโรงเรียนอนุบาลรอบ %@.
-นั่นคือในช่วง <span translate='no'>string</span>.";
+นั่นคือในช่วง %@.";
 "tempus_child_leaves_during_past" = "%@ อยู่ที่นี่จนกระทั่งประมาณ %@.
-นั่นคือในช่วง <span translate='no'>string</span>.";
-"tempus_child_leaves_past" = "%@ อยู่ที่นี่จนกระทั่งประมาณ <span translate='no'>string</span>.";
-"tempus_child_not_here_returns_in_days" = "%@ ดูเหมือนจะไม่อยู่ที่นี่ในวันนี้ แต่ควรจะกลับมาที่นี่ใน <span translate='no'>string</span> วัน";
+นั่นคือในช่วง %@.";
+"tempus_child_leaves_past" = "%@ อยู่ที่นี่จนกระทั่งประมาณ %@.";
+"tempus_child_not_here_returns_in_days" = "%@ ดูเหมือนจะไม่อยู่ที่นี่ในวันนี้ แต่ควรจะกลับมาที่นี่ใน %@ วัน";
 "tempus_child_not_here_returns_tomorrow" = "%@ ดูเหมือนจะไม่อยู่ที่นี่ในวันนี้ แต่ควรจะกลับมาที่นี่ในวันพรุ่งนี้";
 "tempus_child_not_here_today" = "%@ ดูเหมือนจะไม่อยู่ที่นี่ในวันนี้";
-"tempus_leaves_short" = "%@ ใบที่ <span translate='no'>string</span>";
-"tempus_leaves_short_past" = "%@ ทิ้งไว้ที่ <span translate='no'>string</span>";
+"tempus_leaves_short" = "%@ ใบที่ %@";
+"tempus_leaves_short_past" = "%@ ทิ้งไว้ที่ %@";
 "timeline_evening" = "เย็น";
 "timeline_morning" = "เช้า";
 "timeline_now" = "เดี๋ยวนี้";
@@ -337,19 +358,19 @@
 "weather_coldAndRainy" = "ข้างนอกน่าจะเย็นและฝนตก
 มัน %@ องศา";
 "weather_cool" = "ดูเหมือนว่าจะเย็นออกมี
-มัน <span translate='no'>string</span> องศา";
+มัน %@ องศา";
 "weather_coolAndRainy" = "ดูเหมือนว่าจะเย็นและฝนตกข้างนอก
-มัน <span translate='no'>string</span> องศา";
+มัน %@ องศา";
 "weather_hot" = "ดูเหมือนว่าจะร้อนจริงๆข้างนอก
 มัน %@ องศา
  อย่าลืมดื่มและหาที่ร่มให้อยู่";
 "weather_rainy" = "ดูเหมือนว่าจะมีฝนตกข้างนอก
-มัน <span translate='no'>string</span> องศา";
+มัน %@ องศา";
 "weather_unknown" = "มองออกไปนอกหน้าต่าง";
 "weather_warm" = "ดูเหมือนว่าจะร้อนข้างนอก
-มัน <span translate='no'>string</span> องศา";
+มัน %@ องศา";
 "weather_warmish" = "ดูเหมือนว่าจะร้อนสวยออกมี
-มัน <span translate='no'>string</span> องศา";
+มัน %@ องศา";
 "word_and" = "และ";
 "word_done" = "เสร็จแล้ว";
 "word_or" = "หรือ";

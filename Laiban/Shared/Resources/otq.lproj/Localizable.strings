@@ -97,7 +97,7 @@ Gi hyandi nä'ä gi ma ma ga japi!";
 "emoji_1F969_name_plural" = "Filetes";
 "emoji_1F990_name" = "Camarón";
 "emoji_1F990_name_plural" = "Camarones";
-"feedback_activity_question" = "¿Temu̲ gi pareció ar nt'ot'e: <span translate='no'>string</span>";
+"feedback_activity_question" = "¿Temu̲ gi pareció ar nt'ot'e: %@";
 "feedback_activity_question_basic" = "¿Temu̲ gi pareció nuna ar nt'ot'e?";
 "feedback_activity_statistics" = "¿Gi ne ga nä'ä ma'ra mbeni ar nuna ar nt'ot'e?";
 "feedback_activity_statistics_title" = "Nuna gehna pensaste dige nuna ar nt'ot'e";
@@ -186,6 +186,27 @@ Gi hyoki ya clic nuwa pa contar ga nä'ä pensaste ar nä'ä di 'bui!";
 "message_category_info_title" = "Mensajes ya jä'i";
 "message_category_reminder_title" = "Tsa̲ gi mbeni";
 "message_no_messages" = "Hinti di pe̲ts'u̲hu̲ ar ningún 'me̲hni pa jar nuna t'olo ora.";
+"movement_choose_activity" = "¿Temu̲ ar nt'ot'e xka realizado?";
+"movement_close" = "Cerrar";
+"movement_last_week" = "Ar su̲mänä bi thogi recolectaste 'nar Nxoge %@ metros energía, ne nuna ar su̲mänä %@ metros.";
+"movement_next" = "Xtí";
+"movement_nothing" = "Jar nä'ä gi su̲mänä hingi habéis Nthuts'i ningún yá 'ñäni.";
+"movement_register" = "Registro";
+"movement_register_how_long" = "¿Tengu ya t'olo ora Nxoge gá 'yo̲t'e ar nt'ot'e?";
+"movement_register_how_many" = "¿Cuántos nu'u̲hu̲ participaron jar ar nt'ot'e?";
+"movement_statistics_cities" = "Ge'ä kasu̲ ga̲tho nä'ä na ya'bu̲ mbi entre %@ ne %@";
+"movement_statistics_how_far" = "¿Temu̲ xi na ya'bu̲ 'bu̲i nä'ä?";
+"movement_statistics_see_distance" = "Da bí ma 'nar xa̲mbate compre ma'na iPad ne miren ga̲tho Temu̲ ngut'ä na ya'bu̲ llegan nu'bu̲ caminan %@ metros.";
+"movement_statistics_title_today" = "Ar hño 'be̲fi, nu'bya xka recogido %@ 'be̲fi ts'u̲t'u̲bi, ge'ä %@ ar metros.";
+"movement_statistics_title_weekday_1" = "Ar hño 'be̲fi, ar nonxi totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_weekday_2" = "Ar hño 'be̲fi, ar yopa totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_weekday_3" = "Ar hño 'be̲fi, ar pa totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_weekday_4" = "Ar hño 'be̲fi, ar Nhwebe totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_weekday_5" = "Ar hño 'be̲fi, ar Mbehe totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_weekday_6" = "Ar hño 'be̲fi, ar nsabdo totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_weekday_7" = "Ar hño 'be̲fi, ar ndomingo totalizaste %@ pasos, ge'ä %@ metros";
+"movement_statistics_title_yesterday" = "Ar hño 'be̲fi, ma totalizaste %@ pasos, ge'ä %@ ar metros.";
+"movement_weekly_stats" = "Xka recogido 'nar Nxoge %@ metros energía nuna ar su̲mänä";
 "outdoors_feedback_change_description" = "¿Ma sugerencias hingi ya te? Da bí ja ir xa̲mbate da ma̲xu̲'i mpa̲ti 'bitu ga sugiero.";
 "outdoors_feedback_change_title" = "Elija Temu̲ ya 'bitu ar adecuada pa ar pa exterior";
 "outdoors_feedback_confirm" = "'Ñotho ar hñäki! ¿Nu'i ne ir xa̲mbate queréis mpa̲ti 'bitu debo mostrar?";
@@ -194,43 +215,43 @@ Gi hyoki ya clic nuwa pa contar ga nä'ä pensaste ar nä'ä di 'bui!";
 "outdoors_go_out" = "Nu'bu̲ ma gi po̲ni, nuna gehna nä'ä gi ma ma ga japi.";
 "public_calendar_celebration" = "Nuna ar pa jar celebramos %@";
 "public_calendar_celebration_today" = "Nu'bya celebramos %@";
-"public_calendar_respect" = "Jar nuna ar pa, ga hmi'u̲'be Ntheti <span translate='no'>string</span>";
+"public_calendar_respect" = "Jar nuna ar pa, ga hmi'u̲'be Ntheti %@";
 "recreation_nothing_to_do" = "¿Hingi gi 'ñehe otho da 'yo̲t'e?";
 "schedule_date_format" = "EEEE 'ar' d MMMM";
 "singalong_repeat" = "¿Gi ne ga volver da ntuhu?";
 "singalong_started" = "Cantemos!
 ¿Gi hñoki?";
 "singalong_time_deactivated" = "Hingi pe da debamos ntuhu jar nuna t'olo ora. Da su lugar, cantaremos 'bu̲ 'be̲tho ñuni.";
-"tempus_arrives_short" = "%@ tso̲ho̲ <span translate='no'>string</span>";
-"tempus_arrives_short_past" = "%@ zo̲ni <span translate='no'>string</span>";
+"tempus_arrives_short" = "%@ tso̲ho̲ %@";
+"tempus_arrives_short_past" = "%@ zo̲ni %@";
 "tempus_child_arrives" = "%@ llegarán ja ar preescolar mi 'be̲ni ya %@.";
 "tempus_child_arrives_after" = "%@ llegarán ja ar preescolar mi 'be̲ni ya %@.
 Ge'ä xa 'mefa xta %@.";
 "tempus_child_arrives_after_past" = "%@ zo̲ni ar preescolar mi 'be̲ni ya %@.
-Nä'ä bí xa 'mefa xta <span translate='no'>string</span>.";
+Nä'ä bí xa 'mefa xta %@.";
 "tempus_child_arrives_before" = "%@ llegarán ja ar preescolar mi 'be̲ni ya %@.
-Ge'ä xa 'be̲tho <span translate='no'>string</span>.";
+Ge'ä xa 'be̲tho %@.";
 "tempus_child_arrives_before_past" = "%@ zo̲ni ar preescolar mi 'be̲ni ya %@.
-Nä'ä bí xa 'be̲tho <span translate='no'>string</span>.";
+Nä'ä bí xa 'be̲tho %@.";
 "tempus_child_arrives_during" = "%@ llegarán ja ar preescolar mi 'be̲ni ya %@.
 Ge'ä Nxoge %@.";
 "tempus_child_arrives_during_past" = "%@ zo̲ni ar preescolar mi 'be̲ni ya %@.
-Nä'ä bí xa 'be̲tho <span translate='no'>string</span>.";
-"tempus_child_arrives_past" = "%@ zo̲ni ar preescolar Komo ya <span translate='no'>string</span>";
+Nä'ä bí xa 'be̲tho %@.";
+"tempus_child_arrives_past" = "%@ zo̲ni ar preescolar Komo ya %@";
 "tempus_child_has_left" = "%@ mä porke bí ma ngú ir nge ar pa.";
 "tempus_child_has_left_returns_in_days" = "%@ mä porke bí ma ngú ir nge ar pa, pe debería volver jar %@ ya pa.";
 "tempus_child_has_left_returns_tomorrow" = "%@ mä porke bí ma ngú ir nge ar pa, pe debería volver ar xudi.";
-"tempus_child_leaves" = "%@ 'bu̲i nuwa ne nts'ogi ar preescolar mi 'be̲ni <span translate='no'>string</span>.";
+"tempus_child_leaves" = "%@ 'bu̲i nuwa ne nts'ogi ar preescolar mi 'be̲ni %@.";
 "tempus_child_leaves_after" = "%@ 'bu̲i nuwa ne nts'ogi ar preescolar mi 'be̲ni %@.
-Ge'ä xa 'mefa xta <span translate='no'>string</span>.";
+Ge'ä xa 'mefa xta %@.";
 "tempus_child_leaves_after_past" = "%@ bi 'mu̲i nuwa asta aproximadamente %@.
 Nä'ä bí xa 'mefa xta %@.";
 "tempus_child_leaves_before" = "%@ 'bu̲i nuwa ne nts'ogi ar preescolar mi 'be̲ni %@.
-Ge'ä xa 'be̲tho <span translate='no'>string</span>.";
+Ge'ä xa 'be̲tho %@.";
 "tempus_child_leaves_before_past" = "%@ bi 'mu̲i nuwa asta aproximadamente %@.
-Nä'ä bí xa 'be̲tho <span translate='no'>string</span>.";
+Nä'ä bí xa 'be̲tho %@.";
 "tempus_child_leaves_during" = "%@ 'bu̲i nuwa ne nts'ogi ar preescolar mi 'be̲ni %@.
-Ge'ä Nxoge <span translate='no'>string</span>.";
+Ge'ä Nxoge %@.";
 "tempus_child_leaves_during_past" = "%@ bi 'mu̲i nuwa asta aproximadamente %@.
 Nä'ä bí Nxoge %@.";
 "tempus_child_leaves_past" = "%@ bi 'mu̲i nuwa asta aproximadamente %@.";
