@@ -25,7 +25,7 @@ struct AdminRecreationActivityView:View {
     @State var sentence:String
     @State var objectSentence:String
     @State var activityEmoji:String
-    @State var imageName:String
+    @State var imageName:String?
     @State var imageOrEmojiDescription:String
     @State var inventories:[String]
     @State var isActive:Bool
@@ -43,7 +43,7 @@ struct AdminRecreationActivityView:View {
         _activityEmoji = State(initialValue: a.activityEmoji)
         _sentence = State(initialValue: a.sentence)
         _objectSentence = State(initialValue: a.objectSentence ?? "")
-        _imageName = State(initialValue: a.imageName ?? "")
+        _imageName = State(initialValue: a.imageName)
         _imageOrEmojiDescription = State(initialValue: a.imageOrEmojiDescription ?? "")
         _inventories = State(initialValue: a.inventories)
         self.onUpdate = onUpdate
@@ -51,21 +51,16 @@ struct AdminRecreationActivityView:View {
         _binding_activity = ba
     }
     
-    
     var ImagePickerView: some View {
-        
         Section{
-            
             Button(action: {
-                
-                if $imageName.wrappedValue == "" {
-                    self.showImagePicker = true
-                } else {
+                if let _ = $imageName.wrappedValue {
                     self.activity.deleteImage()
+                } else {
+                    self.showImagePicker = true
                 }
-                
             }) {
-                Text($imageName.wrappedValue == "" ? "Välj bild" : "Radera bild").foregroundColor($imageName.wrappedValue == "" ? .accentColor : .red)
+                Text($imageName.wrappedValue == nil ? "Välj bild" : "Radera bild").foregroundColor($imageName.wrappedValue == nil ? .accentColor : .red)
             }
             TextField("Beskrivning av bild", text:$imageOrEmojiDescription)
         }footer: {
@@ -73,9 +68,7 @@ struct AdminRecreationActivityView:View {
         }
     }
     
-    
     var CategoryPickerView: some View {
-        
         Section {
             List{
                 ForEach(inventoryCategories.all) { type in
@@ -158,7 +151,7 @@ struct AdminRecreationActivityView:View {
                                     Text(sentence).padding(EdgeInsets(top: 0, leading: 10, bottom:0, trailing: 10))
                                     Text(objectSentence).padding(EdgeInsets(top: 0, leading: 10, bottom:0, trailing: 10))
                                     
-                                    if let imageName = $imageName.wrappedValue, imageName != "", let image = Recreation.Activity.imageStorage.image(with: imageName){
+                                    if let imageName = $imageName.wrappedValue, let image = Recreation.Activity.imageStorage.image(with: imageName){
                                         
                                         image.resizable()
                                             .aspectRatio(contentMode: .fill)

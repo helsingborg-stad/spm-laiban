@@ -192,7 +192,7 @@ struct InventoryListViewItem: View {
             HStack{
                 if let emoji = item.emoji, emoji != "" {
                     Text(emoji)
-                }else if let imageName = item.imageName, imageName != "" {
+                }else if let imageName = item.imageName {
                     Image(systemName: "photo")
                 }
                 Text(item.itemDescription())

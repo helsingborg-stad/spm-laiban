@@ -26,7 +26,7 @@ struct AdminRecreationInventoryItemView: View {
     @State var item: Recreation.Inventory.Item
     @State var prefix:String
     @State var name:String
-    @State var imageName:String
+    @State var imageName:String?
     @State var emoji:String
     @State var isActive:Bool
     
@@ -42,7 +42,7 @@ struct AdminRecreationInventoryItemView: View {
         _name = State(initialValue: i.name)
         _emoji = State(initialValue: i.emoji ?? "")
         _isActive = State(initialValue: i.isActive)
-        _imageName = State(initialValue: i.imageName ?? "")
+        _imageName = State(initialValue: i.imageName)
         self.type = type
         self.onUpdate = onUpdate
         self.onDelete = onDelete
@@ -52,13 +52,13 @@ struct AdminRecreationInventoryItemView: View {
     var ImagePicker: some View {
         Section{
             Button(action: {
-                if $imageName.wrappedValue == "" {
-                    self.showImagePicker = true
+                if let _ = $imageName.wrappedValue {
+                    $imageName.wrappedValue = nil
                 } else {
-                    $imageName.wrappedValue = ""
+                    self.showImagePicker = true
                 }
             }) {
-                Text($imageName.wrappedValue == "" ? "Välj bild" : "Radera bild").foregroundColor($imageName.wrappedValue == "" ? .accentColor : .red)
+                Text($imageName.wrappedValue == nil ? "Välj bild" : "Radera bild").foregroundColor($imageName.wrappedValue == nil ? .accentColor : .red)
             }
         }
     }
@@ -102,9 +102,7 @@ struct AdminRecreationInventoryItemView: View {
                         HStack{
                             Spacer()
                             VStack(){
-                               
                                 if let imageName = $imageName.wrappedValue, let image = Recreation.Activity.imageStorage.image(with: imageName){
-                                   
                                    image.resizable()
                                        .aspectRatio(contentMode: .fill )
                                        .frame(width:proxy.size.height*0.2,height:proxy.size.height*0.2)

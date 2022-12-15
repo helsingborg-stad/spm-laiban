@@ -53,11 +53,10 @@ public struct Recreation : Codable {
             }
            
            mutating func deleteImage() {
-               Activity.imageStorage.delete(image: self.imageName)
-               imageName = nil
+               guard let imageName = imageName else { return }
+               Activity.imageStorage.delete(imageName: imageName)
+               self.imageName = nil
            }
-           
-           
         }
     }
     
@@ -105,7 +104,7 @@ public struct Recreation : Codable {
         }
         
         mutating func deleteImage() {
-            Activity.imageStorage.delete(image: self.imageName)
+            Activity.imageStorage.delete(imageName: self.imageName)
             imageName = nil
         }
     }
