@@ -19,14 +19,14 @@ public struct CalendarEvent : Codable,Identifiable,Hashable {
         self.date = Date()
         self.type = .userEvent
     }
-    public init(date:Date, content:String,icon:String?,type:EventType) {
+    public init(date:Date, content:String,icon:String?,type:EventType = .userEvent) {
         self.id = UUID().uuidString
         self.date = date
         self.content = content
         self.icon = icon
         self.type = type
     }
-    public init(id:String, date:Date, content:String,icon:String?,type:EventType) {
+    public init(id:String, date:Date, content:String,icon:String?,type:EventType = .userEvent) {
         self.id = id
         self.date = date
         self.content = content

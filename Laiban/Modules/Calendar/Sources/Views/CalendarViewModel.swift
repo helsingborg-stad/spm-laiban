@@ -98,13 +98,7 @@ class CalendarViewModel : ObservableObject {
         var strings = [todayString]
         strings.append(assistant.string(forKey: selectedDay.descriptionKey))
         
-        var event: CalendarEvent? = service.calendarEvents(on: selectedDay.day).first ?? isCelebrationDay(date: selectedDay.day)
-
-        otherEvents.forEach({e in
-            print(e.date)
-            print(e.title)
-        })
-        
+        /*var event: CalendarEvent? = service.calendarEvents(on: selectedDay.day).first ?? isCelebrationDay(date: selectedDay.day)
         if let event = event {
             eventString = localizedString(for: event)
             eventIcon = event.icon ?? "🗓"
@@ -116,7 +110,7 @@ class CalendarViewModel : ObservableObject {
             } else {
                 strings.append(eventName)
             }
-        }
+        }*/
         assistant.speak(strings)
     }
     func initiate(with service:CalendarService, and assistant:Assistant, contentProvider:CalendarContentProvider?) {
