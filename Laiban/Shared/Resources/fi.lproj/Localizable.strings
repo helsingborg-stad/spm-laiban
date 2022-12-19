@@ -18,13 +18,14 @@
 "calendar_free_day" = "Tänä päivänä olemme vapaita.";
 "calendar_free_day_after" = "Seuraavana päivänä olemme vapaalla.";
 "calendar_free_tomorrow" = "Huomenna olemme vapaita.";
+"calendar_holiday" = "Tänään on %@ tämä on loma.";
 "calendar_title_date" = "Tämä päivä on. %@";
-"calendar_weekday_friday" = "Perjantai on viikon viides päivä. Seuraavana päivänä on lauantai ja sunnuntaina kaksi päivää, jolloin olemme vapaita. Sen jälkeen alkaa uusi viikko.";
-"calendar_weekday_friday_today" = "Perjantai on viikon viides päivä. Huomenna on lauantai ja sitten sunnuntai, kaksi päivää olemme vapaita. Sen jälkeen alkaa uusi viikko.";
+"calendar_weekday_friday" = "Perjantai on viikon viides päivä. Seuraavana päivänä on lauantai ja sitten sunnuntai. Sen jälkeen alkaa uusi viikko.";
+"calendar_weekday_friday_today" = "Perjantai on viikon viides päivä. Huomenna on lauantai ja sitten sunnuntai. Sen jälkeen alkaa uusi viikko.";
 "calendar_weekday_monday" = "Viikolla on seitsemän päivää ja maanantaina viikon ensimmäinen päivä.";
-"calendar_weekday_saturday" = "Lauantai on viikon kuudes päivä. Tämä päivä on vapaalla.";
-"calendar_weekday_sunday" = "Sunnuntai on viikon seitsemäs päivä. Tämä päivä on vapaalla. Seuraavana päivänä alkaa uusi viikko.";
-"calendar_weekday_sunday_today" = "Sunnuntai on viikon seitsemäs päivä. Tämä päivä on vapaalla. Huomenna alkaa uusi viikko.";
+"calendar_weekday_saturday" = "Lauantai on viikon kuudes päivä.";
+"calendar_weekday_sunday" = "Sunnuntai on viikon seitsemäs päivä. Seuraava päivä alkaa uusi viikko.";
+"calendar_weekday_sunday_today" = "Sunnuntai on viikon seitsemäs päivä. Huomenna alkaa uusi viikko.";
 "calendar_weekday_thursday" = "Viikolla on seitsemän päivää ja torstaina viikon neljäs päivä.";
 "calendar_weekday_tuesday" = "Viikolla on seitsemän päivää ja tiistaina on viikon toinen päivä.";
 "calendar_weekday_wednesday" = "Viikolla on seitsemän päivää ja keskiviikkona on viikon kolmas päivä.";
@@ -164,7 +165,7 @@ Katso, mitä aiot pukea päällesi!";
 "garment_winterOutfit_description" = "Haalarit tai takki, jossa on peitehousut";
 "home_feedback_acitivity_title" = "Oletko osallistunut toimintaan?
 Klikkaa tästä kertoaksemme meille, mitä ajattelit siitä!";
-"home_holiday" = "Huominen %@ on. Hyvää viikonloppua!";
+"home_holiday" = "Huomenna on %@. Hyvää viikonloppua!";
 "home_holiday_christmans" = "Huomenna on jouluaatto. Iloista joulua!";
 "home_holiday_easter" = "Huomenna on torstain leikkaus. Hyvää pääsiäistä!";
 "home_survey_reminder" = "Uusi tutkimus on saatavilla. Muistuta opettajaasi, että suoritat sen loppuun!";

@@ -13,18 +13,19 @@
 "activity_today" = "आज %@";
 "are_you_ready" = "क्या तुम तैयार हो?";
 "ask_teacher" = "अध्यापक से पूछें";
-"calendar_event" = "इस दिन <span translate='no'>string</span>";
+"calendar_event" = "इस दिन %@";
 "calendar_event_today" = "आज %@";
 "calendar_free_day" = "इस दिन हम आज़ाद हैं।";
 "calendar_free_day_after" = "अगले दिन हम ड्यूटी से बाहर हैं।";
 "calendar_free_tomorrow" = "कल हम आज़ाद हैं।";
+"calendar_holiday" = "आज %@ यह छुट्टी का दिन है।";
 "calendar_title_date" = "यह दिन %@ है";
-"calendar_weekday_friday" = "शुक्रवार सप्ताह का पांचवा दिन होता है। अगले दिन शनिवार है और फिर रविवार आता है, दो दिन हम स्वतंत्र हैं। इसके बाद एक नया सप्ताह शुरू होता है।";
-"calendar_weekday_friday_today" = "शुक्रवार सप्ताह का पांचवा दिन होता है। कल शनिवार है और फिर रविवार है, दो दिन हम स्वतंत्र हैं। इसके बाद एक नया सप्ताह शुरू होता है।";
+"calendar_weekday_friday" = "शुक्रवार सप्ताह का पांचवा दिन है। अगले दिन शनिवार और फिर रविवार है। उसके बाद, एक नया सप्ताह शुरू होता है।";
+"calendar_weekday_friday_today" = "शुक्रवार सप्ताह का पांचवा दिन है। कल शनिवार है और फिर रविवार है। उसके बाद, एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_monday" = "सप्ताह में सात दिन होते हैं और सोमवार सप्ताह का पहला दिन होता है।";
-"calendar_weekday_saturday" = "शनिवार सप्ताह का छठा दिन होता है। हम इस दिन छुट्टी पर हैं।";
-"calendar_weekday_sunday" = "रविवार सप्ताह का सातवां दिन होता है। हम इस दिन छुट्टी पर हैं। अगले दिन एक नया सप्ताह शुरू होता है।";
-"calendar_weekday_sunday_today" = "रविवार सप्ताह का सातवां दिन होता है। हम इस दिन छुट्टी पर हैं। कल एक नया सप्ताह शुरू हो रहा है।";
+"calendar_weekday_saturday" = "शनिवार सप्ताह का छठा दिन है।";
+"calendar_weekday_sunday" = "रविवार सप्ताह का सातवां दिन है। अगले दिन एक नया सप्ताह शुरू होता है।";
+"calendar_weekday_sunday_today" = "रविवार सप्ताह का सातवां दिन है। कल एक नया सप्ताह शुरू होता है।";
 "calendar_weekday_thursday" = "सप्ताह में सात दिन होते हैं और गुरुवार सप्ताह का चौथा दिन होता है।";
 "calendar_weekday_tuesday" = "सप्ताह में सात दिन होते हैं और मंगलवार सप्ताह का दूसरा दिन होता है।";
 "calendar_weekday_wednesday" = "सप्ताह में सात दिन होते हैं और बुधवार सप्ताह का तीसरा दिन होता है।";
@@ -96,7 +97,7 @@
 "emoji_1F969_name_plural" = "स्टीक्स";
 "emoji_1F990_name" = "झींगा";
 "emoji_1F990_name_plural" = "चिंराट";
-"feedback_activity_question" = "गतिविधि के बारे में आप क्या सोचते हैं: <span translate='no'>string</span>";
+"feedback_activity_question" = "गतिविधि के बारे में आप क्या सोचते हैं: %@";
 "feedback_activity_question_basic" = "आप इस गतिविधि के बारे में क्या सोचते हैं?";
 "feedback_activity_statistics" = "डु आप देखना चाहते हैं कि इस गतिविधि के अन्य लोग क्या हैं?";
 "feedback_activity_statistics_title" = "इस गतिविधि के बारे में आपने यही सोचा था";
@@ -118,7 +119,7 @@
 "food_waste_info_why" = "हमें खाना बर्बाद क्यों नहीं करना चाहिए?";
 "food_waste_info_why_description" = "भोजन उपयोगी होने के लिए, हमें जितना संभव हो उतना कम फेंक देना चाहिए। प्लेट में खाना खाने से आपको अच्छा महसूस होता है और जब खाना आपके पेट में खत्म हो जाता है, तो यह आपको खेलने और अधिक सीखने दोनों की ऊर्जा देता है।";
 "food_waste_kompostina_title" = "क्या आप भोजन का वजन करना चाहते हैं? ⚖️ मुझे दबाओ, कोम्पोस्टिना!";
-"food_waste_last_week" = "पिछले हफ्ते आपने %@ ग्राम खाना फेंक दिया था, और इस हफ्ते, <span translate='no'>string</span> ग्राम।";
+"food_waste_last_week" = "पिछले हफ्ते आपने %@ ग्राम खाना फेंक दिया था, और इस हफ्ते, %@ ग्राम।";
 "food_waste_nothing" = "इस हफ्ते अब तक आपने कोई खाना नहीं फेंका है।";
 "food_waste_statistics_title_today" = "आज आपने %@ ग्राम भोजन फेंक दिया। यह वैसा ही है जैसे ...";
 "food_waste_statistics_title_weekday_1" = "सोमवार को आपने %@ ग्राम खाना फेंक दिया। यह वैसा ही है जैसे ...";
@@ -187,7 +188,7 @@
 "message_no_messages" = "अभी हमारे पास कोई संदेश नहीं है।";
 "movement_choose_activity" = "आपने कौन सी गतिविधि की है?";
 "movement_close" = "बंद करना";
-"movement_last_week" = "पिछले हफ्ते आपने कुल %@ मीटर ऊर्जा एकत्र की, और इस सप्ताह <span translate='no'>string</span> मीटर";
+"movement_last_week" = "पिछले हफ्ते आपने कुल %@ मीटर ऊर्जा एकत्र की, और इस सप्ताह %@ मीटर";
 "movement_next" = "अगला";
 "movement_nothing" = "इस सप्ताह अब तक आपने कोई मूवमेंट रजिस्टर नहीं कराया है।";
 "movement_register" = "पंजीकृत करें";
@@ -196,14 +197,14 @@
 "movement_statistics_cities" = "यह %@ और %@ के बीच की दूरी के बारे में है";
 "movement_statistics_how_far" = "यह कहां तक है?";
 "movement_statistics_see_distance" = "एक शिक्षक को एक और आईपैड प्राप्त करने के लिए कहें और एक साथ देखें कि जब आप %@ मीटर चलते हैं तो आप कितनी दूर जाते हैं";
-"movement_statistics_title_today" = "अच्छा काम, आज आपने %@ कदम उठाए हैं, यानी मीटर <span translate='no'>string</span> .";
-"movement_statistics_title_weekday_1" = "अच्छा काम, सोमवार को आप कदम %@ कुल, कि <span translate='no'>string</span> मीटर है";
-"movement_statistics_title_weekday_2" = "अच्छा काम, मंगलवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
-"movement_statistics_title_weekday_3" = "अच्छा काम, बुधवार को आप कदम %@ कुल, कि <span translate='no'>string</span> मीटर है";
-"movement_statistics_title_weekday_4" = "अच्छा काम, गुरुवार को आप कदम %@ कुल, कि <span translate='no'>string</span> मीटर है";
-"movement_statistics_title_weekday_5" = "अच्छा काम, शुक्रवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
-"movement_statistics_title_weekday_6" = "अच्छा काम, शनिवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
-"movement_statistics_title_weekday_7" = "अच्छा काम, रविवार को आप %@ कदम कुल, कि <span translate='no'>string</span> मीटर है";
+"movement_statistics_title_today" = "अच्छा काम, आज आपने %@ कदम उठाए हैं, यानी मीटर %@ .";
+"movement_statistics_title_weekday_1" = "अच्छा काम, सोमवार को आप कदम %@ कुल, कि %@ मीटर है";
+"movement_statistics_title_weekday_2" = "अच्छा काम, मंगलवार को आप %@ कदम कुल, कि %@ मीटर है";
+"movement_statistics_title_weekday_3" = "अच्छा काम, बुधवार को आप कदम %@ कुल, कि %@ मीटर है";
+"movement_statistics_title_weekday_4" = "अच्छा काम, गुरुवार को आप कदम %@ कुल, कि %@ मीटर है";
+"movement_statistics_title_weekday_5" = "अच्छा काम, शुक्रवार को आप %@ कदम कुल, कि %@ मीटर है";
+"movement_statistics_title_weekday_6" = "अच्छा काम, शनिवार को आप %@ कदम कुल, कि %@ मीटर है";
+"movement_statistics_title_weekday_7" = "अच्छा काम, रविवार को आप %@ कदम कुल, कि %@ मीटर है";
 "movement_statistics_title_yesterday" = "अच्छा काम, कल आप %@ कदम कुल, कि %@ मीटर है.";
 "movement_weekly_stats" = "आपने इस सप्ताह कुल %@ मीटर ऊर्जा एकत्र की है";
 "outdoors_feedback_change_description" = "क्या मेरे सुझाव अच्छे नहीं हैं? अपने शिक्षक से मेरे द्वारा सुझाए गए कपड़े बदलने में आपकी मदद करने के लिए कहें।";
@@ -214,7 +215,7 @@
 "outdoors_go_out" = "यदि आप बाहर जा रहे हैं, तो यह वही है जो आप पहनने जा रहे हैं।";
 "public_calendar_celebration" = "इस दिन हम %@ मनाते हैं";
 "public_calendar_celebration_today" = "आज हम %@ मना रहे हैं";
-"public_calendar_respect" = "इस दिन हम ध्यान देते <span translate='no'>string</span>";
+"public_calendar_respect" = "इस दिन हम ध्यान देते %@";
 "recreation_nothing_to_do" = "क्या करने के लिए कुछ नहीं है?";
 "schedule_date_format" = "ईईईई 'द' डी एमएमएमएम";
 "singalong_repeat" = "क्या आप फिर से गाना चाहेंगे?";
@@ -225,7 +226,7 @@
 "tempus_arrives_short_past" = "%@ %@ पहुंचे";
 "tempus_child_arrives" = "%@ लगभग %@पर पूर्वस्कूली पहुंचेगा।";
 "tempus_child_arrives_after" = "%@ लगभग %@पर पूर्वस्कूली पहुंचेगा।
-यह <span translate='no'>string</span>के ठीक बाद है।";
+यह %@के ठीक बाद है।";
 "tempus_child_arrives_after_past" = "%@ लगभग %@में पूर्वस्कूली पहुंचे।
 यह %@के ठीक बाद की बात है।";
 "tempus_child_arrives_before" = "%@ लगभग %@पर पूर्वस्कूली पहुंचेगा।
@@ -233,7 +234,7 @@
 "tempus_child_arrives_before_past" = "%@ लगभग %@में पूर्वस्कूली पहुंचे।
 यह %@से ठीक पहले की बात है।";
 "tempus_child_arrives_during" = "%@ लगभग %@पर पूर्वस्कूली पहुंचेगा।
-यह <span translate='no'>string</span>के दौरान है।";
+यह %@के दौरान है।";
 "tempus_child_arrives_during_past" = "%@ लगभग %@में पूर्वस्कूली पहुंचे।
 यह %@से ठीक पहले की बात है।";
 "tempus_child_arrives_past" = "%@ लगभग %@ में पूर्वस्कूली पहुंचे";
@@ -242,7 +243,7 @@
 "tempus_child_has_left_returns_tomorrow" = "ऐसा लगता है कि %@ दिन के लिए घर चला गया है, लेकिन कल फिर से आना चाहिए।";
 "tempus_child_leaves" = "%@ यहां है और %@के आसपास पूर्वस्कूली छोड़ देगा।";
 "tempus_child_leaves_after" = "%@ यहां है और %@के आसपास पूर्वस्कूली छोड़ देगा।
-यह <span translate='no'>string</span>के ठीक बाद है।";
+यह %@के ठीक बाद है।";
 "tempus_child_leaves_after_past" = "%@ लगभग %@तक यहाँ था।
 यह %@के ठीक बाद की बात है।";
 "tempus_child_leaves_before" = "%@ यहां है और %@के आसपास पूर्वस्कूली छोड़ देगा।
@@ -250,7 +251,7 @@
 "tempus_child_leaves_before_past" = "%@ लगभग %@तक यहाँ था।
 यह %@से ठीक पहले की बात है।";
 "tempus_child_leaves_during" = "%@ यहां है और %@के आसपास पूर्वस्कूली छोड़ देगा।
-यह <span translate='no'>string</span>के दौरान है।";
+यह %@के दौरान है।";
 "tempus_child_leaves_during_past" = "%@ लगभग %@तक यहाँ था।
 यह %@के दौरान की बात है।";
 "tempus_child_leaves_past" = "%@ लगभग %@तक यहाँ था।";
@@ -282,7 +283,7 @@
 "trashmonster_textilia_description" = "टेक्स्टिलिया गिरोह के लिए बहुत नया है। वह पुराने और पहने हुए कपड़े और जूते इकट्ठा करती है, लेकिन ऐसे कपड़े भी जो अच्छे हैं और फिर से इस्तेमाल किए जा सकते हैं।";
 "trashmonster_towalett_description" = "पेशाब, पोप और टॉयलेट पेपर एकमात्र चीजें हैं जो टोवेलेट एकत्र करती हैं। अपनी पांच आँखों से वह कॉटन स्वैब, तंबाकू या गीले पोंछे जैसे थिग्स की तलाश करती है, ये टॉयलेट में नहीं हैं!";
 "trashmonster_wellmer_description" = "कई नाजुक पैकेज नालीदार कार्डबोर्ड में आते हैं, यही कारण है कि वेल्मर एक शूरवीर की तरह महसूस करता है जो नाजुक चीजों की रक्षा करता है। वह नालीदार कार्डबोर्ड का पुन: उपयोग करना पसंद करता है और अक्सर पुराने बक्से से शूरवीरों के महल बनाता है।";
-"undp_goal" = "लक्ष्य <span translate='no'>string</span>";
+"undp_goal" = "लक्ष्य %@";
 "undp_goal_10_description" = "इसका मतलब है कि आप दुनिया में जहां भी रहते हैं, आपके पास हर किसी के समान अधिकार और अवसर होने चाहिए।";
 "undp_goal_10_title" = "लक्ष्य 10: असमानताओं को कम करना";
 "undp_goal_11_description" = "इसका मतलब है कि हर कोई सुरक्षित और अच्छे घरों में रहने में सक्षम होना चाहिए।";
@@ -357,19 +358,19 @@
 "weather_coldAndRainy" = "बाहर ठंड और बरसात हो रही है।
 यह %@ डिग्री है।";
 "weather_cool" = "यह वहाँ से बाहर ठंडा लगता है।
-यह <span translate='no'>string</span> डिग्री है।";
+यह %@ डिग्री है।";
 "weather_coolAndRainy" = "बाहर ठंडी और बरसात लगती है।
 यह %@ डिग्री है।";
 "weather_hot" = "बाहर बहुत गर्मी लग रही है।
 यह %@ डिग्री है।
  पीने के लिए याद रखें और छाया में होना चाहिए";
 "weather_rainy" = "बाहर बरसात होती दिख रही है।
-यह <span translate='no'>string</span> डिग्री है।";
+यह %@ डिग्री है।";
 "weather_unknown" = "खिड़की से बाहर देखो";
 "weather_warm" = "बाहर गर्मी पड़ती दिख रही है।
-यह <span translate='no'>string</span> डिग्री है।";
+यह %@ डिग्री है।";
 "weather_warmish" = "वहाँ बहुत गर्मी लग रही है।
-यह <span translate='no'>string</span> डिग्री है।";
+यह %@ डिग्री है।";
 "word_and" = "और";
 "word_done" = "समाज-सम्मत";
 "word_or" = "नहीं तो";

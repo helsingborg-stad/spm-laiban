@@ -18,13 +18,14 @@
 "calendar_free_day" = "V tento deň sme slobodní.";
 "calendar_free_day_after" = "Nasledujúci deň sme mimo služby.";
 "calendar_free_tomorrow" = "Zajtra budeme mať voľno.";
+"calendar_holiday" = "Dnes je to %@ toto je sviatok.";
 "calendar_title_date" = "Tento deň je %@";
-"calendar_weekday_friday" = "Piatok je piaty deň v týždni. Nasledujúci deň je sobota a potom príde nedeľa, dva dni máme voľno. Potom začína nový týždeň.";
-"calendar_weekday_friday_today" = "Piatok je piaty deň v týždni. Zajtra je sobota a potom nedeľa, dva dni máme voľno. Potom začína nový týždeň.";
+"calendar_weekday_friday" = "Piatok je piaty deň v týždni. Nasledujúci deň je sobota a potom nedeľa. Potom sa začína nový týždeň.";
+"calendar_weekday_friday_today" = "Piatok je piaty deň v týždni. Zajtra je sobota a potom nedeľa. Potom sa začína nový týždeň.";
 "calendar_weekday_monday" = "Týždeň má sedem dní a pondelok je prvým dňom v týždni.";
-"calendar_weekday_saturday" = "Sobota je šiesty deň v týždni. Tento deň máme voľno.";
-"calendar_weekday_sunday" = "Nedeľa je siedmy deň v týždni. Tento deň máme voľno. Nasledujúci deň začína nový týždeň.";
-"calendar_weekday_sunday_today" = "Nedeľa je siedmy deň v týždni. Tento deň máme voľno. Zajtra začína nový týždeň.";
+"calendar_weekday_saturday" = "Sobota je šiesty deň v týždni.";
+"calendar_weekday_sunday" = "Nedeľa je siedmy deň v týždni. Nasledujúci deň začína nový týždeň.";
+"calendar_weekday_sunday_today" = "Nedeľa je siedmy deň v týždni. Zajtra začína nový týždeň.";
 "calendar_weekday_thursday" = "Týždeň má sedem dní a štvrtok je štvrtý deň v týždni.";
 "calendar_weekday_tuesday" = "Týždeň má sedem dní a utorok je druhý deň v týždni.";
 "calendar_weekday_wednesday" = "Týždeň má sedem dní a streda je tretím dňom v týždni.";
@@ -164,7 +165,7 @@ Pozrite sa, čo si oblečiete!";
 "garment_winterOutfit_description" = "Kombinéza alebo bunda s krycími nohavicami";
 "home_feedback_acitivity_title" = "Zúčastnili ste sa na nejakej aktivite?
 Kliknite sem a povedzte nám, čo si o tom myslíte!";
-"home_holiday" = "Zajtra je %@. Pekný víkend!";
+"home_holiday" = "Zajtrajšok je %@. Pekný víkend!";
 "home_holiday_christmans" = "Zajtra je Štedrý večer. Veselé Vianoce!";
 "home_holiday_easter" = "Zajtra je štvrtok rezania. Veselú Veľkú noc!";
 "home_survey_reminder" = "K dispozícii je nový prieskum. Pripomeňte svojmu učiteľovi, aby ho dokončil!";

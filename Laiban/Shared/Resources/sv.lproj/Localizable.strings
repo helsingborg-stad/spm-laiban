@@ -18,12 +18,13 @@
 "calendar_free_day" = "Denna dag är vi lediga.";
 "calendar_free_day_after" = "Dagen efter är vi lediga.";
 "calendar_free_tomorrow" = "Imorgon är vi lediga.";
+"calendar_holiday" = "Idag är det %@. Det är en helgdag.";
 "calendar_title_date" = "Denna dag är %@";
-"calendar_weekday_friday" = "Fredag är veckans femte dag. Nästa dag är det lördag och sen kommer söndag, de två dagarna är vi lediga. Efter det börjar en ny vecka.";
-"calendar_weekday_friday_today" = "Fredag är veckans femte dag. Imorgon är det lördag och sen kommer söndag, de två dagarna är vi lediga. Efter det börjar en ny vecka.";
+"calendar_weekday_friday" = "Fredag är veckans femte dag. Nästa dag är det lördag och sen kommer söndag. Efter det börjar en ny vecka.";
+"calendar_weekday_friday_today" = "Fredag är veckans femte dag. Imorgon är det lördag och sen kommer söndag. Efter det börjar en ny vecka.";
 "calendar_weekday_monday" = "Veckan har sju dagar och måndag är veckans första dag.";
-"calendar_weekday_saturday" = "Lördag är veckans sjätte dag. Vi är lediga denna dag.";
-"calendar_weekday_sunday" = "Söndag är veckans sjunde dag. Vi är lediga denna dag. Dagen efter börjar en ny vecka.";
+"calendar_weekday_saturday" = "Lördag är veckans sjätte dag.";
+"calendar_weekday_sunday" = "Söndag är veckans sjunde dag. Dagen efter börjar en ny vecka.";
 "calendar_weekday_sunday_today" = "Söndag är veckans sjunde dag. Vi är lediga denna dag. Imorgon börjar en ny vecka.";
 "calendar_weekday_thursday" = "Veckan har sju dagar och torsdag är veckans fjärde dag.";
 "calendar_weekday_tuesday" = "Veckan har sju dagar och tisdag är veckans andra dag.";
@@ -164,7 +165,7 @@ Kolla vad ni ska ha på er!";
 "garment_winterOutfit_description" = "Overall eller jacka och överdragsbyxor";
 "home_feedback_acitivity_title" = "Har du gjort en aktivitet?
 Klicka här för att berätta vad du tyckte om den!";
-"home_holiday" = "Imorgon är det %@, då är ni lediga. Trevlig helg!";
+"home_holiday" = "Imorgon är det %@. Trevlig helg!";
 "home_holiday_christmans" = "Imorgon är det julafton. God jul!";
 "home_holiday_easter" = "Imorgon är det skärtorsdag. Glad påsk!";
 "home_survey_reminder" = "Det finns en ny enkät tillgänglig. Påminn gärna din pedagog om att svara på den!";

@@ -18,13 +18,14 @@
 "calendar_free_day" = "F'dan il-jum aħna ħielsa.";
 "calendar_free_day_after" = "L-għada ninsabu barra mid-dmir.";
 "calendar_free_tomorrow" = "Għada aħna b'xejn.";
+"calendar_holiday" = "Illum huwa %@ din hija festa.";
 "calendar_title_date" = "Din il-ġurnata hija %@";
-"calendar_weekday_friday" = "Il-Ġimgħa huwa l-ħames jum tal-ġimgħa. L-għada huwa s-Sibt u mbagħad jiġi l-Ħadd, il-jumejn li aħna b'xejn. Wara dan, tibda ġimgħa ġdida.";
-"calendar_weekday_friday_today" = "Il-Ġimgħa huwa l-ħames jum tal-ġimgħa. Għada huwa s-Sibt u mbagħad il-Ħadd, il-jumejn li aħna ħielsa. Wara dan, tibda ġimgħa ġdida.";
+"calendar_weekday_friday" = "Il-Ġimgħa huwa l-ħames jum tal-ġimgħa. L-għada huwa s-Sibt u mbagħad il-Ħadd. Wara dan, tibda ġimgħa ġdida.";
+"calendar_weekday_friday_today" = "Il-Ġimgħa huwa l-ħames jum tal-ġimgħa. Għada s-Sibt u mbagħad il-Ħadd. Wara dan, tibda ġimgħa ġdida.";
 "calendar_weekday_monday" = "Il-ġimgħa għandha sebat ijiem u t-Tnejn hija l-ewwel ġurnata tal-ġimgħa.";
-"calendar_weekday_saturday" = "Is-Sibt huwa s-sitt jum tal-ġimgħa. Aħna mitfija din il-ġurnata.";
-"calendar_weekday_sunday" = "Il-Ħadd huwa s-seba' jum tal-ġimgħa. Aħna mitfija din il-ġurnata. L-għada tibda ġimgħa ġdida.";
-"calendar_weekday_sunday_today" = "Il-Ħadd huwa s-seba' jum tal-ġimgħa. Aħna mitfija din il-ġurnata. Għada tibda ġimgħa ġdida.";
+"calendar_weekday_saturday" = "Is-Sibt huwa s-sitt jum tal-ġimgħa.";
+"calendar_weekday_sunday" = "Il-Ħadd huwa s-seba' jum tal-ġimgħa. L-għada tibda ġimgħa ġdida.";
+"calendar_weekday_sunday_today" = "Il-Ħadd huwa s-seba' jum tal-ġimgħa. Għada tibda ġimgħa ġdida.";
 "calendar_weekday_thursday" = "Il-ġimgħa għandha sebat ijiem u l-Ħamis hija r-raba' ġurnata tal-ġimgħa.";
 "calendar_weekday_tuesday" = "Il-ġimgħa għandha sebat ijiem u t-Tlieta hija t-tieni jum tal-ġimgħa.";
 "calendar_weekday_wednesday" = "Il-ġimgħa għandha sebat ijiem u l-Erbgħa hija t-tielet ġurnata tal-ġimgħa.";
@@ -164,7 +165,7 @@ Ejja naraw dak li int ser tilbes!";
 "garment_winterOutfit_description" = "Baverolli jew ġakketta bil-qliezet tal-għata";
 "home_feedback_acitivity_title" = "Ipparteċipajt f'attività?
 Ikklikkja hawn biex tgħidilna dak li ħsibt dwaru!";
-"home_holiday" = "Għada %@. Gawdi tmiem il-ġimgħa!";
+"home_holiday" = "Għada huwa %@. Gawdi tmiem il-ġimgħa!";
 "home_holiday_christmans" = "Għada lejlet il-Milied. Il-Milied It-Tajjeb!";
 "home_holiday_easter" = "Għada qed taqta 'l-Ħamis. L-Għid it-Tajjeb!";
 "home_survey_reminder" = "Hemm stħarriġ ġdid disponibbli. Jekk jogħġbok fakkar lill-għalliem tiegħek biex itemmha!";

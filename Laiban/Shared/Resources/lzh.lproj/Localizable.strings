@@ -18,13 +18,14 @@
 "calendar_free_day" = "当此之日,我辈自由。";
 "calendar_free_day_after" = "明日下班。";
 "calendar_free_tomorrow" = "明日自由。";
+"calendar_holiday" = "今日 %@ 假期也。";
 "calendar_title_date" = "是日 %@";
-"calendar_weekday_friday" = "星期五周五日也。 明日为星期六,然后星期天至,余暇二日。 其后一周始矣。";
-"calendar_weekday_friday_today" = "星期五周五日也。 明日为星期六,然后为星期天,二日我有空。 其后一周始矣。";
+"calendar_weekday_friday" = "星期五周五日也。 明日为星期六,然后为星期天。 其后一周始矣。";
+"calendar_weekday_friday_today" = "星期五周五日也。 明日为星期六,然后为星期天。 其后一周始矣。";
 "calendar_weekday_monday" = "一周七日,星期一周之初日也。";
-"calendar_weekday_saturday" = "星期六者,周之第六天也。 我们这一天不见了。";
-"calendar_weekday_sunday" = "星期日,周七日也。 我们这一天不见了。 明日始一周。";
-"calendar_weekday_sunday_today" = "星期日,周七日也。 我们这一天不见了。 明日新一周。";
+"calendar_weekday_saturday" = "星期六,周之第六天也。";
+"calendar_weekday_sunday" = "星期日,周七日也。 明日始一周。";
+"calendar_weekday_sunday_today" = "星期日,周七日也。 明日始新周。";
 "calendar_weekday_thursday" = "周七日,星期四四日也。";
 "calendar_weekday_tuesday" = "一周七日,星期二一周之明日也。";
 "calendar_weekday_wednesday" = "一周七日,星期三周三日也。";
@@ -164,7 +165,7 @@
 "garment_winterOutfit_description" = "工作服或夹克配罩裤";
 "home_feedback_acitivity_title" = "你与么?
 点击以告!";
-"home_holiday" = "明日 %@。 末悦!";
+"home_holiday" = "明日 %@. 末悦!";
 "home_holiday_christmans" = "明日平安夜。 圣诞快乐!";
 "home_holiday_easter" = "明日割星期四。 复活节安康!";
 "home_survey_reminder" = "有新勘可用。 请言子之师成之!";

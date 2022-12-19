@@ -18,13 +18,14 @@
 "calendar_free_day" = "Šią dieną esame laisvi.";
 "calendar_free_day_after" = "Kitą dieną mes nedirbame.";
 "calendar_free_tomorrow" = "Rytoj būsime laisvi.";
+"calendar_holiday" = "Šiandien %@ tai yra atostogos.";
 "calendar_title_date" = "Ši diena %@";
-"calendar_weekday_friday" = "Penktadienis yra penktoji savaitės diena. Kitą dieną ateina šeštadienis, o tada ateina sekmadienis, dvi dienos mes esame laisvi. Po to prasideda nauja savaitė.";
-"calendar_weekday_friday_today" = "Penktadienis yra penktoji savaitės diena. Rytoj yra šeštadienis, o tada sekmadienis, dvi dienos mes esame laisvi. Po to prasideda nauja savaitė.";
+"calendar_weekday_friday" = "Penktadienis yra penktoji savaitės diena. Kitą dieną – šeštadienis, o paskui sekmadienis. Po to prasideda nauja savaitė.";
+"calendar_weekday_friday_today" = "Penktadienis yra penktoji savaitės diena. Rytoj yra šeštadienis, o tada sekmadienis. Po to prasideda nauja savaitė.";
 "calendar_weekday_monday" = "Savaitė turi septynias dienas, o pirmadienis yra pirmoji savaitės diena.";
-"calendar_weekday_saturday" = "Šeštadienis yra šeštoji savaitės diena. Šią dieną nedirbame.";
-"calendar_weekday_sunday" = "Sekmadienis yra septintoji savaitės diena. Šią dieną nedirbame. Kitą dieną prasideda nauja savaitė.";
-"calendar_weekday_sunday_today" = "Sekmadienis yra septintoji savaitės diena. Šią dieną nedirbame. Rytoj prasideda nauja savaitė.";
+"calendar_weekday_saturday" = "Šeštadienis yra šeštoji savaitės diena.";
+"calendar_weekday_sunday" = "Sekmadienis yra septintoji savaitės diena. Kitą dieną prasideda nauja savaitė.";
+"calendar_weekday_sunday_today" = "Sekmadienis yra septintoji savaitės diena. Rytoj prasideda nauja savaitė.";
 "calendar_weekday_thursday" = "Savaitė turi septynias dienas, o ketvirtadienis yra ketvirtoji savaitės diena.";
 "calendar_weekday_tuesday" = "Savaitė turi septynias dienas, o antradienis yra antroji savaitės diena.";
 "calendar_weekday_wednesday" = "Savaitė turi septynias dienas, o trečiadienis yra trečioji savaitės diena.";
@@ -164,7 +165,7 @@ Pažiūrėkite, ką ketinate dėvėti!";
 "garment_winterOutfit_description" = "Kombinezonas arba striukė su dengiamosiomis kelnėmis";
 "home_feedback_acitivity_title" = "Ar dalyvavote veikloje?
 Spauskite čia norėdami papasakoti, ką apie tai galvojote!";
-"home_holiday" = "Rytojus yra %@. Gero savaitgalio!";
+"home_holiday" = "Rytoj %@. Gero savaitgalio!";
 "home_holiday_christmans" = "Rytoj – Kūčios. Linksmų Šv. Kalėdų!";
 "home_holiday_easter" = "Rytoj – ketvirtadienis. Su Velykomis!";
 "home_survey_reminder" = "Yra nauja apklausa. Prašome priminti savo mokytojui, kad jis tai užbaigtų!";

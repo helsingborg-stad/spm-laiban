@@ -18,13 +18,14 @@
 "calendar_free_day" = "この日、私たちは自由です。";
 "calendar_free_day_after" = "次の日、私たちは非番です。";
 "calendar_free_tomorrow" = "明日は自由です。";
+"calendar_holiday" = "今日はこれが休日 %@ です。";
 "calendar_title_date" = "この日は %@";
-"calendar_weekday_friday" = "金曜日は週の5日目です。次の日は土曜日で、日曜日が来て、私たちは自由です。その後、新しい週が始まります。";
-"calendar_weekday_friday_today" = "金曜日は週の5日目です。明日は土曜日と日曜日、私たちは自由です。その後、新しい週が始まります。";
+"calendar_weekday_friday" = "金曜日は週の 5 日目です。翌日は土曜日、そして日曜日です。その後、新しい週が始まります。";
+"calendar_weekday_friday_today" = "金曜日は週の 5 日目です。明日は土曜日、そして日曜日です。その後、新しい週が始まります。";
 "calendar_weekday_monday" = "週は 7 日で、月曜日は週の最初の日です。";
-"calendar_weekday_saturday" = "土曜日は週の6日目です。私たちはこの日休みです。";
-"calendar_weekday_sunday" = "日曜日は週の7日目です。私たちはこの日休みです。次の日は新しい週を始めます。";
-"calendar_weekday_sunday_today" = "日曜日は週の7日目です。私たちはこの日休みです。明日は新しい週を始めます。";
+"calendar_weekday_saturday" = "土曜日は週の6日目です。";
+"calendar_weekday_sunday" = "日曜日は週の7日目です。翌日は新しい週が始まります。";
+"calendar_weekday_sunday_today" = "日曜日は週の7日目です。明日は新しい週が始まります。";
 "calendar_weekday_thursday" = "週は 7 日で、木曜日は週の 4 日目です。";
 "calendar_weekday_tuesday" = "週は 7 日で、火曜日は週の 2 日目です。";
 "calendar_weekday_wednesday" = "週は 7 日で、水曜日は週の 3 日目です。";
@@ -164,7 +165,7 @@
 "garment_winterOutfit_description" = "オーバーオールまたはジャケット(カバーパンツ付)";
 "home_feedback_acitivity_title" = "活動に参加しましたか?
 こちらをクリックして、どう思ったか教えてください。";
-"home_holiday" = "明日は %@ .楽しい週末を過ごしてください！";
+"home_holiday" = "明日は %@です.楽しい週末を過ごしてください！";
 "home_holiday_christmans" = "明日はクリスマスイブです。メリークリスマス！";
 "home_holiday_easter" = "明日は木曜日を切る。ハッピーイースター!";
 "home_survey_reminder" = "新しい調査が利用可能です。先生に完了を思い出させてください!";

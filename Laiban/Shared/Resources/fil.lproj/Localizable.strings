@@ -18,13 +18,14 @@
 "calendar_free_day" = "Sa araw na ito tayo ay malaya.";
 "calendar_free_day_after" = "Kinabukasan wala kaming tungkulin.";
 "calendar_free_tomorrow" = "Bukas ay malaya tayo.";
+"calendar_holiday" = "Ngayon ay %@ ito ay isang holiday.";
 "calendar_title_date" = "Ang araw na ito %@";
-"calendar_weekday_friday" = "Biyernes ay ang ikalimang araw ng linggo. Kinabukasan sabado iyon at pagkatapos ay linggo ng Linggo, malaya kami. Pagkatapos niyon, nagsisimula ang isang bagong linggo.";
-"calendar_weekday_friday_today" = "Biyernes ay ang ikalimang araw ng linggo. Bukas ay Sabado at pagkatapos ng Linggo, ang dalawang araw na malaya tayo. Pagkatapos niyon, nagsisimula ang isang bagong linggo.";
+"calendar_weekday_friday" = "Ang Biyernes ay ang ikalimang araw ng linggo. Kinabukasan ay Sabado at pagkatapos ay Linggo. Pagkatapos nito, magsisimula ang isang bagong linggo.";
+"calendar_weekday_friday_today" = "Ang Biyernes ay ang ikalimang araw ng linggo. Bukas ay Sabado at pagkatapos ay Linggo. Pagkatapos nito, magsisimula ang isang bagong linggo.";
 "calendar_weekday_monday" = "Ang linggo ay may pitong araw at Lunes ang unang araw ng linggo.";
-"calendar_weekday_saturday" = "Sabado ang ikaanim na araw ng linggo. Malayo tayo sa araw na ito.";
-"calendar_weekday_sunday" = "Linggo ang ikapitong araw ng linggo. Malayo tayo sa araw na ito. Kinabukasan ay nagsisimula sa isang bagong linggo.";
-"calendar_weekday_sunday_today" = "Linggo ang ikapitong araw ng linggo. Malayo tayo sa araw na ito. Bukas ay nagsisimula sa isang bagong linggo.";
+"calendar_weekday_saturday" = "Ang Sabado ay ang ikaanim na araw ng linggo.";
+"calendar_weekday_sunday" = "Ang Linggo ay ang ikapitong araw ng linggo. Ang susunod na araw ay nagsisimula ng isang bagong linggo.";
+"calendar_weekday_sunday_today" = "Ang Linggo ay ang ikapitong araw ng linggo. Bukas ay magsisimula ng bagong linggo.";
 "calendar_weekday_thursday" = "Ang linggo ay may pitong araw at Huwebes ang ikaapat na araw ng linggo.";
 "calendar_weekday_tuesday" = "Ang linggo ay may pitong araw at Martes ang ikalawang araw ng linggo.";
 "calendar_weekday_wednesday" = "Ang linggo ay may pitong araw at Miyerkules ang ikatlong araw ng linggo.";
@@ -164,7 +165,7 @@ Tingnan kung ano ang isuot mo!";
 "garment_winterOutfit_description" = "Overalls o jacket na may takip na pantalon";
 "home_feedback_acitivity_title" = "Nakibahagi na ba kayo sa isang aktibidad?
 Mag-click dito upang sabihin sa amin kung ano ang naisip mo tungkol dito!";
-"home_holiday" = "Bukas ay %@. Magkaroon ng isang magandang katapusan ng linggo!";
+"home_holiday" = "Bukas ay %@. Maging maganda ang weekend!";
 "home_holiday_christmans" = "Bukas ay Bisperas ng Pasko. Maawain pasko!";
 "home_holiday_easter" = "Bukas ay pagputol Huwebes. Maligayang pasko ng Pagkabuhay!";
 "home_survey_reminder" = "May bagong survey na magagamit. Mangyaring paalalahanan ang iyong guro na kumpletuhin ito!";

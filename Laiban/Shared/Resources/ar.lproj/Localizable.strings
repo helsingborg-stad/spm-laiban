@@ -18,13 +18,14 @@
 "calendar_free_day" = "في هذا اليوم نحن أحرار.";
 "calendar_free_day_after" = "في اليوم التالي سنكون خارج الخدمة";
 "calendar_free_tomorrow" = "غداً سنكون أحراراً";
+"calendar_holiday" = "اليوم هو %@ هذه عطلة.";
 "calendar_title_date" = "هذا اليوم هو %@";
-"calendar_weekday_friday" = "الجمعة هو اليوم الخامس من الأسبوع. في اليوم التالي هو السبت ثم يوم الأحد يأتي، اليومان نحن أحرار. بعد ذلك، يبدأ أسبوع جديد.";
-"calendar_weekday_friday_today" = "الجمعة هو اليوم الخامس من الأسبوع. غداً يوم السبت ثم الأحد، اليومان الأحرار. بعد ذلك، يبدأ أسبوع جديد.";
+"calendar_weekday_friday" = "الجمعة هو اليوم الخامس من الأسبوع. في اليوم التالي يكون السبت ثم الأحد. بعد ذلك ، يبدأ أسبوع جديد.";
+"calendar_weekday_friday_today" = "الجمعة هو اليوم الخامس من الأسبوع. غدا هو السبت ثم الأحد. بعد ذلك ، يبدأ أسبوع جديد.";
 "calendar_weekday_monday" = "الأسبوع سبعة أيام والاثنين هو اليوم الأول من الأسبوع.";
-"calendar_weekday_saturday" = "السبت هو اليوم السادس من الأسبوع. نحن خارج هذا اليوم.";
-"calendar_weekday_sunday" = "الأحد هو اليوم السابع من الأسبوع. نحن خارج هذا اليوم. في اليوم التالي يبدأ أسبوع جديد.";
-"calendar_weekday_sunday_today" = "الأحد هو اليوم السابع من الأسبوع. نحن خارج هذا اليوم. غداً يبدأ أسبوع جديد";
+"calendar_weekday_saturday" = "السبت هو اليوم السادس من الأسبوع.";
+"calendar_weekday_sunday" = "الأحد هو اليوم السابع من الأسبوع. في اليوم التالي يبدأ أسبوع جديد.";
+"calendar_weekday_sunday_today" = "الأحد هو اليوم السابع من الأسبوع. غدا يبدأ أسبوع جديد.";
 "calendar_weekday_thursday" = "الأسبوع سبعة أيام والخميس هو اليوم الرابع من الأسبوع.";
 "calendar_weekday_tuesday" = "الأسبوع سبعة أيام والثلاثاء هو اليوم الثاني من الأسبوع.";
 "calendar_weekday_wednesday" = "الأسبوع سبعة أيام والأربعاء هو اليوم الثالث من الأسبوع.";
@@ -164,7 +165,7 @@
 "garment_winterOutfit_description" = "ملابس عامة أو سترة مع سراويل تغطية";
 "home_feedback_acitivity_title" = "هل شاركت في نشاط؟
 انقر هنا لتخبرنا عن رأيك في ذلك!";
-"home_holiday" = "غداً هو %@ . إجازة سعيدة!";
+"home_holiday" = "غدا %@. إجازة سعيدة!";
 "home_holiday_christmans" = "غداً هو عشية عيد الميلاد عيدميلادمجيد!";
 "home_holiday_easter" = "غداً سُقطع الخميس عيد فصح سعيد!";
 "home_survey_reminder" = "هناك مسح جديد متاح. يرجى تذكير المعلم الخاص بك لإكمال ذلك!";
@@ -193,7 +194,7 @@
 "movement_register" = "سجل";
 "movement_register_how_long" = "كم دقيقة قمت بهذا النشاط؟";
 "movement_register_how_many" = "كم منكم شارك في النشاط؟";
-"movement_statistics_cities" = "هذا هو تقريبا المسافة بين %@ و %@";
+"movement_statistics_cities" = "هذا هو المسافة بين %@ و %@";
 "movement_statistics_how_far" = "إلى أي مدى هذا الحد؟";
 "movement_statistics_see_distance" = "اطلب من المعلم الحصول على جهاز iPad آخر ومشاهدة المسافة التي تصل إليها عند المشي %@ متر";
 "movement_statistics_title_today" = "عمل جيد ، اليوم قمت بجمع خطوات %@ ، وهذا %@ متر.";

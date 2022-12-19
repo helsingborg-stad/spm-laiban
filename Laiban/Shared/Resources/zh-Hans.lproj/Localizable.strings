@@ -10,20 +10,21 @@
 "activities_participants_future" = "参与";
 "activities_participants_past" = "参与";
 "activities_title" = "这就是我们今天要做的！";
+"activity_today" = "今天 %@";
 "are_you_ready" = "准备好了吗？";
 "ask_teacher" = "问老师";
 "calendar_event" = "这一天 %@";
-"calendar_event_today" = "今天 %@";
 "calendar_free_day" = "在这一天，我们自由了。";
 "calendar_free_day_after" = "第二天我们下班了。";
 "calendar_free_tomorrow" = "明天我们自由了。";
+"calendar_holiday" = "今天 %@ 这是一个假期。";
 "calendar_title_date" = "这一天 %@";
-"calendar_weekday_friday" = "星期五是一周的第五天。第二天是星期六，然后星期天来了，这两天我们自由了。之后，新的一周开始了。";
-"calendar_weekday_friday_today" = "星期五是一周的第五天。明天是星期六，然后是星期天，这两天我们自由了。之后，新的一周开始了。";
+"calendar_weekday_friday" = "星期五是一周的第五天。第二天是星期六，然后是星期天。之后，新的一周开始了。";
+"calendar_weekday_friday_today" = "星期五是一周的第五天。明天是星期六，然后是星期天。之后，新的一周开始了。";
 "calendar_weekday_monday" = "一周有七天，星期一是一周的第一天。";
-"calendar_weekday_saturday" = "星期六是一周的第六天。我们今天休息了。";
-"calendar_weekday_sunday" = "星期日是一周的第七天。我们今天休息了。第二天开始新的一周。";
-"calendar_weekday_sunday_today" = "星期日是一周的第七天。我们今天休息了。明天开始新的一周。";
+"calendar_weekday_saturday" = "星期六是一周的第六天。";
+"calendar_weekday_sunday" = "星期日是一周的第七天。第二天开始新的一周。";
+"calendar_weekday_sunday_today" = "星期日是一周的第七天。明天开始新的一周。";
 "calendar_weekday_thursday" = "一周有七天，星期四是一周的第四天。";
 "calendar_weekday_tuesday" = "一周有七天，星期二是一周的第二天。";
 "calendar_weekday_wednesday" = "一周有七天，星期三是一周的第三天。";
@@ -42,11 +43,11 @@
 "clock_time_8" = "八";
 "clock_time_9" = "九";
 "clock_time_description_0600_to_0730" = "现在是早上，大约在这个时候我们吃早餐。";
+"clock_time_description_0730_to_0830" = "现在是早上。";
 "clock_time_description_0830_to_0900" = "大约在这个时候，我们吃水果。";
-"clock_time_description_0900_to_1045" = "现在是早上。";
 "clock_time_description_1045_to_1230" = "现在是中午和午餐时间。";
-"clock_time_description_1230_to_1400" = "现在是下午。";
 "clock_time_description_1400_to_1500" = "现在是下午，大约在这个时候我们吃零食。";
+"clock_time_description_1500_to_1630" = "现在是下午。";
 "clock_time_description_1630_to_1800" = "快到晚上了。";
 "clock_time_description_1800_to_2000" = "现在是晚上。睡得好！";
 "clock_time_description_2000_to_0600" = "现在是晚上。";
@@ -82,7 +83,7 @@
 "emoji_1F35E_name_plural" = "一块面包";
 "emoji_1F41F_name" = "鱼";
 "emoji_1F41F_name_plural" = "鱼";
-"emoji_1F954_name_plural" = "土豆";
+"emoji_1F954_name" = "土豆";
 "emoji_1F955_name" = "胡萝卜";
 "emoji_1F955_name_plural" = "胡萝卜";
 "emoji_1F95D_name" = "几维鸟";
@@ -129,21 +130,21 @@
 "food_waste_tip_3" = "记得安静地坐着，品尝所有的食物。您的味蕾需要多次练习新口味，才能学会喜欢它们。味蕾在你的舌头上";
 "food_waste_title" = "点按要在比例中添加或删除的图像";
 "food_waste_weekly_stats" = "本周你扔掉了 %@ 克食物。";
-"garment_beanie" = "豆 豆";
+"garment_beanie_description" = "豆 豆";
 "garment_cap" = "帽";
-"garment_jacket_description" = "夹克";
-"garment_mittens" = "手套";
+"garment_jacket" = "夹克";
+"garment_mittens_description" = "手套";
 "garment_neckWear" = "高领毛衣或围巾";
 "garment_neckWear_description" = "围巾或高领毛衣";
-"garment_pulloverPants" = "罩裤";
-"garment_rainBoots" = "靴子";
-"garment_rainCoat_description" = "雨衣";
-"garment_rainGloves_description" = "雨手套";
-"garment_rainPants" = "雨裤";
-"garment_shoes_description" = "鞋";
+"garment_pulloverPants_description" = "罩裤";
+"garment_rainBoots_description" = "靴子";
+"garment_rainCoat" = "雨衣";
+"garment_rainGloves" = "雨手套";
+"garment_rainPants_description" = "雨裤";
+"garment_shoes" = "鞋";
 "garment_sweater_description" = "保暖毛衣";
 "garment_winterBoots_description" = "冬季靴子";
-"garment_winterOutfit_description" = "工作服或夹克配罩裤";
+"garment_winterOutfit" = "工作服或夹克配罩裤";
 "home_feedback_acitivity_title" = "你参加过活动吗？
 点击这里告诉我们你的想法！";
 "home_holiday" = "明天是 %@.周末愉快！";
@@ -212,10 +213,10 @@
 那是在 %@之后.";
 "tempus_child_arrives_before" = "%@ 将在大约 %@到达幼儿园。
 那是在 %@之前.";
+"tempus_child_arrives_before_past" = "%@ 大约 %@到达幼儿园。
+那是在 %@之前.";
 "tempus_child_arrives_during" = "%@ 将在大约 %@到达幼儿园。
 那是在 %@期间.";
-"tempus_child_arrives_during_past" = "%@ 大约 %@到达幼儿园。
-那是在 %@之前.";
 "tempus_child_arrives_past" = "%@大约%@到达幼儿园";
 "tempus_child_has_left" = "%@ 似乎已经回家了一天。";
 "tempus_child_has_left_returns_in_days" = "%@ 似乎已经回家了一天，但应该 %@ 天后再回来。";

@@ -18,13 +18,14 @@
 "calendar_free_day" = "På denne dag er vi frie.";
 "calendar_free_day_after" = "Den næste dag har vi fri.";
 "calendar_free_tomorrow" = "I morgen er vi fri.";
+"calendar_holiday" = "I dag er det %@ dette er en ferie.";
 "calendar_title_date" = "Denne dag er %@";
-"calendar_weekday_friday" = "Fredag er den femte dag i ugen. Den næste dag er det lørdag og så søndag kommer, de to dage, vi er gratis. Derefter begynder en ny uge.";
-"calendar_weekday_friday_today" = "Fredag er den femte dag i ugen. I morgen er lørdag og derefter søndag, de to dage, vi er gratis. Derefter begynder en ny uge.";
+"calendar_weekday_friday" = "Fredag er den femte dag i ugen. Næste dag er det lørdag og så søndag. Derefter begynder en ny uge.";
+"calendar_weekday_friday_today" = "Fredag er den femte dag i ugen. I morgen er det lørdag og så søndag. Derefter begynder en ny uge.";
 "calendar_weekday_monday" = "Ugen har syv dage, og mandag er den første dag i ugen.";
-"calendar_weekday_saturday" = "Lørdag er den sjette dag i ugen. Vi har fri i dag.";
-"calendar_weekday_sunday" = "Søndag er den syvende dag i ugen. Vi har fri i dag. Den næste dag begynder en ny uge.";
-"calendar_weekday_sunday_today" = "Søndag er den syvende dag i ugen. Vi har fri i dag. I morgen begynder en ny uge.";
+"calendar_weekday_saturday" = "Lørdag er den sjette dag i ugen.";
+"calendar_weekday_sunday" = "Søndag er den syvende dag i ugen. Den næste dag begynder en ny uge.";
+"calendar_weekday_sunday_today" = "Søndag er den syvende dag i ugen. I morgen begynder en ny uge.";
 "calendar_weekday_thursday" = "Ugen har syv dage, og torsdag er den fjerde dag i ugen.";
 "calendar_weekday_tuesday" = "Ugen har syv dage, og tirsdag er den anden dag i ugen.";
 "calendar_weekday_wednesday" = "Ugen har syv dage, og onsdag er den tredje dag i ugen.";
@@ -164,7 +165,7 @@ Se, hvad du skal have på!";
 "garment_winterOutfit_description" = "Overalls eller jakke med cover bukser";
 "home_feedback_acitivity_title" = "Har du deltaget i en aktivitet?
 Klik her for at fortælle os, hvad du syntes om det!";
-"home_holiday" = "I morgen er %@ . Hav en god weekend!";
+"home_holiday" = "I morgen er %@. Hav en god weekend!";
 "home_holiday_christmans" = "I morgen er juleaften. Glædelig jul!";
 "home_holiday_easter" = "I morgen er Skæring torsdag. God påske!";
 "home_survey_reminder" = "Der er en ny undersøgelse til rådighed. Mind din lærer om at fuldføre det!";

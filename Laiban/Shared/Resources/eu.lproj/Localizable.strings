@@ -18,13 +18,14 @@
 "calendar_free_day" = "Egun honetan aske gara.";
 "calendar_free_day_after" = "Hurrengo egunean zerbitzuz kanpo gaude.";
 "calendar_free_tomorrow" = "Bihar aske gara.";
+"calendar_holiday" = "Gaur %@ jaieguna da hau.";
 "calendar_title_date" = "Egun hau %@ da";
-"calendar_weekday_friday" = "Ostirala asteko bosgarren eguna da. Hurrengo eguna larunbata da eta gero igandean dator, libre gauden bi egunak. Horren ondoren, aste berri bat hasiko da.";
-"calendar_weekday_friday_today" = "Ostirala asteko bosgarren eguna da. Bihar larunbata da eta gero igandea, libre gauden bi egunak. Horren ondoren, aste berri bat hasiko da.";
+"calendar_weekday_friday" = "Ostirala asteko bosgarren eguna da. Hurrengo egunean larunbata da eta gero igandea. Horren ondoren, aste berri bat hasiko da.";
+"calendar_weekday_friday_today" = "Ostirala asteko bosgarren eguna da. Bihar larunbata da eta gero igandea. Horren ondoren, aste berri bat hasiko da.";
 "calendar_weekday_monday" = "Asteak zazpi egun ditu eta astelehena asteko lehen eguna da.";
-"calendar_weekday_saturday" = "Larunbata asteko seigarren eguna da. Egun honetatik kanpo gaude.";
-"calendar_weekday_sunday" = "Igandea asteko zazpigarren eguna da. Egun honetatik kanpo gaude. Hurrengo egunean aste berri bat hasiko da.";
-"calendar_weekday_sunday_today" = "Igandea asteko zazpigarren eguna da. Egun honetatik kanpo gaude. Bihar aste berri bat hasiko da.";
+"calendar_weekday_saturday" = "Larunbata asteko seigarren eguna da.";
+"calendar_weekday_sunday" = "Igandea asteko zazpigarren eguna da. Hurrengo egunean aste berri bat hasiko da.";
+"calendar_weekday_sunday_today" = "Igandea asteko zazpigarren eguna da. Bihar aste berri bat hasiko da.";
 "calendar_weekday_thursday" = "Asteak zazpi egun ditu eta osteguna asteko laugarren eguna da.";
 "calendar_weekday_tuesday" = "Asteak zazpi egun ditu eta asteartea asteko bigarren eguna da.";
 "calendar_weekday_wednesday" = "Asteak zazpi egun ditu eta asteazkena asteko hirugarren eguna da.";
@@ -164,7 +165,7 @@ Begira zer jarriko duzun!";
 "garment_winterOutfit_description" = "Monoa edo txaketa, galtza estaliekin";
 "home_feedback_acitivity_title" = "Parte hartu al duzu jardueraren batean?
 Klik egin hemen horretaz pentsatu zenuena kontatzeko!";
-"home_holiday" = "Bihar %@da. Asteburu ona pasa!";
+"home_holiday" = "Bihar da %@. Asteburu ona pasa!";
 "home_holiday_christmans" = "Bihar Gabon-gaua da. Eguberri on!";
 "home_holiday_easter" = "Bihar osteguna da. Eguberri on!";
 "home_survey_reminder" = "Inkesta berri bat eskuragarri. Mesedez, gogoan izan zure maisuari hura osatzeko!";

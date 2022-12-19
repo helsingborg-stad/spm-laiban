@@ -20,18 +20,37 @@ class CalendarViewModel : ObservableObject {
     @Published var title:String = ""
     @Published var voiceStrings = [String]()
     @Published var eventString:String? = nil
+    @Published var currentlySpeaking:String? = nil
     @Published var eventIcon:String = "🎉"
     @Published var selectedDay = DayView.Day.current {
         didSet{
             self.todaysEvents = service?.calendarEvents(on: selectedDay.day) ?? []
+            if let celebrationDay =  isCelebrationDay(date: selectedDay.day){
+                self.todaysEvents.append(celebrationDay)
+            }
             voiceStrings = []
             title = todayString
             eventString = nil
-            update()
         }
     }
     @Published var todaysEvents:[CalendarEvent] = [CalendarEvent]()
     
+    
+    func isCelebrationDay(date:Date) -> CalendarEvent? {
+        guard let celebrationDay = otherEvents.first(where: {$0.date.isSameDay(as: date)}) else {
+            return nil
+        }
+        
+        return CalendarEvent(date: celebrationDay.date, content: celebrationDay.title, icon: getHolidayEmoji(holiday: celebrationDay.title) ?? celebrationDay.emoji, type: .fetchedEvent)
+    }
+    
+    func isCurrentlySpeaking(string: String, isKey: Bool = false) -> Bool {
+        var textString: String? = string
+        if isKey {
+            textString = assistant?.string(forKey: string)
+        }
+        return self.currentlySpeaking == textString
+    }
     
     var formattedDate:String {
         guard let assistant = assistant else {
@@ -69,8 +88,6 @@ class CalendarViewModel : ObservableObject {
         return assistant.formattedString(forKey: "public_calendar_celebration", e)
     }
     
-    
-    
     var otherEvents = [OtherCalendarEvent]()
     
     func update() {
@@ -78,23 +95,22 @@ class CalendarViewModel : ObservableObject {
             return
         }
         
-        var strings = [title]
-        //strings.append(assistant.string(forKey: todayString))
+        var strings = [todayString]
         strings.append(assistant.string(forKey: selectedDay.descriptionKey))
         
-        if let event = service.calendarEvents(on: selectedDay.day).first {
-            print(event.content)
+        /*var event: CalendarEvent? = service.calendarEvents(on: selectedDay.day).first ?? isCelebrationDay(date: selectedDay.day)
+        if let event = event {
             eventString = localizedString(for: event)
             eventIcon = event.icon ?? "🗓"
-            
-        } else if let event = otherEvents.first(where: { $0.date.isSameDay(as: selectedDay.day) }) {
-            eventString = assistant.string(forKey: event.title)
-            eventIcon = event.emoji ?? "🗓"
         }
-        if let h = eventString {
-            strings.append(h)
-//            strings.append(assistant.string(forKey: "calendar_free_day"))
-        }
+
+        if let eventName = eventString {
+            if otherEvents.contains(where: {$0.title.lowercased() == eventName.lowercased() }) {
+                strings.append(assistant.formattedString(forKey: "calendar_holiday", eventName))
+            } else {
+                strings.append(eventName)
+            }
+        }*/
         assistant.speak(strings)
     }
     func initiate(with service:CalendarService, and assistant:Assistant, contentProvider:CalendarContentProvider?) {
@@ -102,13 +118,28 @@ class CalendarViewModel : ObservableObject {
         self.assistant = assistant
         self.contentProvider = contentProvider
         self.todaysEvents = service.todaysCalendarEvents
-        self.selectedDay = DayView.Day.current
         contentProvider?.otherCalendarEventsPublisher().sink { events in
             self.otherEvents = events ?? []
         }.store(in: &cancellables)
+        assistant.$currentlySpeaking.sink { [weak self] utterance in
+            self?.currentlySpeaking = utterance?.speechString
+        }.store(in: &cancellables)
+        self.selectedDay = DayView.Day.current
         self.update()
     }
     func didTap(day:DayView.Day) {
         self.selectedDay = day
+        self.update()
+    }
+    func getHolidayEmoji(holiday: String) -> String? {
+        if holiday.lowercased().contains("jul") {
+            return "🎄"
+        } else if holiday.lowercased().contains("påsk") {
+            return "🐣"
+        } else if holiday.lowercased().contains("nyår") {
+            return "🎆"
+        }
+        
+        return nil
     }
 }

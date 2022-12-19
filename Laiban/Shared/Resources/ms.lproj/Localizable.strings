@@ -18,13 +18,14 @@
 "calendar_free_day" = "Pada hari ini kita bebas.";
 "calendar_free_day_after" = "Keesokan harinya kami tidak bertugas.";
 "calendar_free_tomorrow" = "Esok kita bebas.";
+"calendar_holiday" = "Hari ini %@ ini adalah percutian.";
 "calendar_title_date" = "Hari ini %@";
-"calendar_weekday_friday" = "Jumaat adalah hari kelima dalam seminggu. Keesokan harinya ia adalah hari Sabtu dan kemudian Ahad datang, dua hari kita bebas. Selepas itu, minggu baru bermula.";
-"calendar_weekday_friday_today" = "Jumaat adalah hari kelima dalam seminggu. Esok adalah hari Sabtu dan kemudian Ahad, dua hari kita bebas. Selepas itu, minggu baru bermula.";
+"calendar_weekday_friday" = "Jumaat adalah hari kelima dalam seminggu. Keesokan harinya ialah Sabtu dan kemudian Ahad. Selepas itu, minggu baru bermula.";
+"calendar_weekday_friday_today" = "Jumaat adalah hari kelima dalam seminggu. Esok adalah hari Sabtu dan kemudian Ahad. Selepas itu, minggu baru bermula.";
 "calendar_weekday_monday" = "Minggu ini mempunyai tujuh hari dan Isnin adalah hari pertama dalam seminggu.";
-"calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu. Kami cuti hari ini.";
-"calendar_weekday_sunday" = "Ahad adalah hari ketujuh dalam seminggu. Kami cuti hari ini. Keesokan harinya bermula minggu baru.";
-"calendar_weekday_sunday_today" = "Ahad adalah hari ketujuh dalam seminggu. Kami cuti hari ini. Esok bermula minggu baru.";
+"calendar_weekday_saturday" = "Sabtu adalah hari keenam dalam seminggu.";
+"calendar_weekday_sunday" = "Ahad adalah hari ketujuh dalam seminggu. Keesokan harinya memulakan minggu baru.";
+"calendar_weekday_sunday_today" = "Ahad adalah hari ketujuh dalam seminggu. Esok bermula minggu baru.";
 "calendar_weekday_thursday" = "Minggu ini mempunyai tujuh hari dan Khamis adalah hari keempat dalam seminggu.";
 "calendar_weekday_tuesday" = "Minggu ini mempunyai tujuh hari dan Selasa adalah hari kedua dalam seminggu.";
 "calendar_weekday_wednesday" = "Minggu ini mempunyai tujuh hari dan Rabu adalah hari ketiga dalam seminggu.";
@@ -164,7 +165,7 @@ Lihatlah apa yang akan anda pakai!";
 "garment_winterOutfit_description" = "Pakaian atau jaket dengan seluar penutup";
 "home_feedback_acitivity_title" = "Pernahkah anda mengambil bahagian dalam aktiviti?
 Klik di sini untuk memberitahu kami apa yang anda fikirkan!";
-"home_holiday" = "Esok %@. Selamat menikmati hujung minggu!";
+"home_holiday" = "Esok adalah %@. Selamat menjalani hujung minggu yang baik!";
 "home_holiday_christmans" = "Esok adalah Malam Krismas. Selamat Hari Krismas!";
 "home_holiday_easter" = "Esok adalah Memotong Khamis. Selamat paskah!";
 "home_survey_reminder" = "Terdapat tinjauan baharu yang tersedia. Sila ingatkan guru anda untuk menyelesaikannya!";

@@ -18,13 +18,14 @@
 "calendar_free_day" = "Ar an lá seo táimid saor in aisce.";
 "calendar_free_day_after" = "An lá dár gcionn táimid as dualgas.";
 "calendar_free_tomorrow" = "Amárach táimid saor in aisce.";
+"calendar_holiday" = "Sa lá atá inniu ann is saoire é seo %@ .";
 "calendar_title_date" = "Tá an lá seo %@";
-"calendar_weekday_friday" = "Is í an Aoine an cúigiú lá den tseachtain. An lá dár gcionn is Dé Sathairn é agus ansin tagann an Domhnach, an dá lá atá saor againn. Ina dhiaidh sin, tosaíonn seachtain nua.";
-"calendar_weekday_friday_today" = "Is í an Aoine an cúigiú lá den tseachtain. Amárach an Satharn agus ansin Dé Domhnaigh, an dá lá atá muid saor in aisce. Ina dhiaidh sin, tosaíonn seachtain nua.";
+"calendar_weekday_friday" = "Is í an Aoine an cúigiú lá den tseachtain. An lá dár gcionn is é Dé Sathairn agus ansin Dé Domhnaigh. Ina dhiaidh sin, tosaíonn seachtain nua.";
+"calendar_weekday_friday_today" = "Is í an Aoine an cúigiú lá den tseachtain. Amárach an Satharn agus ansin Dé Domhnaigh. Ina dhiaidh sin, tosaíonn seachtain nua.";
 "calendar_weekday_monday" = "Tá seacht lá ag an tseachtain agus is é an Luan an chéad lá den tseachtain.";
-"calendar_weekday_saturday" = "Is é an Satharn an séú lá den tseachtain. Táimid as an lá seo.";
-"calendar_weekday_sunday" = "Is é an Domhnach an seachtú lá den tseachtain. Táimid as an lá seo. Cuirfear tús le seachtain nua an lá dár gcionn.";
-"calendar_weekday_sunday_today" = "Is é an Domhnach an seachtú lá den tseachtain. Táimid as an lá seo. Cuirfear tús amárach le seachtain nua.";
+"calendar_weekday_saturday" = "Is é an Satharn an séú lá den tseachtain.";
+"calendar_weekday_sunday" = "Is é an Domhnach an seachtú lá den tseachtain. Tosaíonn an lá dar gcionn seachtain nua.";
+"calendar_weekday_sunday_today" = "Is é an Domhnach an seachtú lá den tseachtain. Tosaíonn amárach seachtain nua.";
 "calendar_weekday_thursday" = "Tá seacht lá ag an tseachtain agus is é Déardaoin an ceathrú lá den tseachtain.";
 "calendar_weekday_tuesday" = "Tá seacht lá ag an tseachtain agus is é Dé Máirt an dara lá den tseachtain.";
 "calendar_weekday_wednesday" = "Tá seacht lá ag an tseachtain agus is é Dé Céadaoin an tríú lá den tseachtain.";
@@ -164,7 +165,7 @@ Féach an méid atá le caitheamh agat!";
 "garment_winterOutfit_description" = "Foriomlán nó seaicéad le pants clúdaigh";
 "home_feedback_acitivity_title" = "Ar ghlac tú páirt i ngníomhaíocht?
 Cliceáil anseo chun a insint dúinn cad a shíl tú de!";
-"home_holiday" = "Amárach %@. Go raibh deireadh seachtaine deas agat!";
+"home_holiday" = "Tá amárach %@. Go raibh deireadh seachtaine deas agat!";
 "home_holiday_christmans" = "Amárach Oíche Nollag. Nollaig Shona!";
 "home_holiday_easter" = "Amárach gearradh Déardaoin. Cáisc shona!";
 "home_survey_reminder" = "Tá suirbhé nua ar fáil. Cuir i gcuimhne do do mhúinteoir é a chríochnú!";

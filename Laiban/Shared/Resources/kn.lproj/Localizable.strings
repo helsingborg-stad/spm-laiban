@@ -10,21 +10,22 @@
 "activities_participants_future" = "ಭಾಗವಹಿಸಲು";
 "activities_participants_past" = "ಭಾಗವಹಿಸಿದ";
 "activities_title" = "ಇದನ್ನೇ ನಾವು ಇಂದು ಮಾಡಲಿದ್ದೇವೆ!";
-"activity_today" = "ಇಂದು <span translate='no'>string</span>";
+"activity_today" = "ಇಂದು %@";
 "are_you_ready" = "ನೀನು ಸಿದ್ಧವಾಗಿದ್ದೀಯಾ?";
 "ask_teacher" = "ಶಿಕ್ಷಕರನ್ನು ಕೇಳಿ";
-"calendar_event" = "ಈ ದಿನ <span translate='no'>string</span>";
-"calendar_event_today" = "ಇಂದು <span translate='no'>string</span>";
+"calendar_event" = "ಈ ದಿನ %@";
+"calendar_event_today" = "ಇಂದು %@";
 "calendar_free_day" = "ಈ ದಿನ ನಾವು ಸ್ವತಂತ್ರರಾಗಿದ್ದೇವೆ.";
 "calendar_free_day_after" = "ಮರುದಿನ ನಾವು ಕರ್ತವ್ಯದಿಂದ ಹೊರಗಿದ್ದೇವೆ.";
 "calendar_free_tomorrow" = "ನಾಳೆ ನಾವು ಸ್ವತಂತ್ರರಾಗಿದ್ದೇವೆ.";
-"calendar_title_date" = "ಈ ದಿನ <span translate='no'>string</span>";
-"calendar_weekday_friday" = "ಶುಕ್ರವಾರ ವಾರದ ಐದನೇ ದಿನ. ಮರುದಿನ ಶನಿವಾರ ಮತ್ತು ನಂತರ ಭಾನುವಾರ ಬರುತ್ತದೆ, ಎರಡು ದಿನಗಳು ನಾವು ಮುಕ್ತವಾಗಿದ್ದೇವೆ. ಅದರ ನಂತರ, ಹೊಸ ವಾರವು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
-"calendar_weekday_friday_today" = "ಶುಕ್ರವಾರ ವಾರದ ಐದನೇ ದಿನ. ನಾಳೆ ಶನಿವಾರ ಮತ್ತು ನಂತರ ಭಾನುವಾರ, ನಾವು ಎರಡು ದಿನಗಳು ಸ್ವತಂತ್ರರಾಗಿದ್ದೇವೆ. ಅದರ ನಂತರ, ಹೊಸ ವಾರವು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
+"calendar_holiday" = "ಇಂದು ಇದು ರಜಾದಿನ %@ .";
+"calendar_title_date" = "ಈ ದಿನ %@";
+"calendar_weekday_friday" = "ಶುಕ್ರವಾರ ವಾರದ ಐದನೇ ದಿನ. ಮರುದಿನ ಅದು ಶನಿವಾರ ಮತ್ತು ನಂತರ ಭಾನುವಾರ. ಅದರ ನಂತರ, ಹೊಸ ವಾರವು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
+"calendar_weekday_friday_today" = "ಶುಕ್ರವಾರ ವಾರದ ಐದನೇ ದಿನ. ನಾಳೆ ಶನಿವಾರ ಮತ್ತು ನಂತರ ಭಾನುವಾರ. ಅದರ ನಂತರ, ಹೊಸ ವಾರವು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
 "calendar_weekday_monday" = "ವಾರವು ಏಳು ದಿನಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಸೋಮವಾರವು ವಾರದ ಮೊದಲ ದಿನವಾಗಿದೆ.";
-"calendar_weekday_saturday" = "ಶನಿವಾರವು ವಾರದ ಆರನೇ ದಿನವಾಗಿದೆ. ನಾವು ಈ ದಿನ ರಜೆಯಲ್ಲಿದ್ದೇವೆ.";
-"calendar_weekday_sunday" = "ಭಾನುವಾರ ವಾರದ ಏಳನೇ ದಿನ. ನಾವು ಈ ದಿನ ರಜೆಯಲ್ಲಿದ್ದೇವೆ. ಮರುದಿನ ಹೊಸ ವಾರ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
-"calendar_weekday_sunday_today" = "ಭಾನುವಾರ ವಾರದ ಏಳನೇ ದಿನ. ನಾವು ಈ ದಿನ ರಜೆಯಲ್ಲಿದ್ದೇವೆ. ನಾಳೆ ಹೊಸ ವಾರ ಆರಂಭವಾಗುತ್ತದೆ.";
+"calendar_weekday_saturday" = "ಶನಿವಾರವು ವಾರದ ಆರನೇ ದಿನವಾಗಿದೆ.";
+"calendar_weekday_sunday" = "ಭಾನುವಾರ ವಾರದ ಏಳನೇ ದಿನ. ಮರುದಿನ ಹೊಸ ವಾರ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.";
+"calendar_weekday_sunday_today" = "ಭಾನುವಾರ ವಾರದ ಏಳನೇ ದಿನ. ನಾಳೆ ಹೊಸ ವಾರ ಆರಂಭವಾಗುತ್ತದೆ.";
 "calendar_weekday_thursday" = "ವಾರವು ಏಳು ದಿನಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಗುರುವಾರವು ವಾರದ ನಾಲ್ಕನೇ ದಿನವಾಗಿದೆ.";
 "calendar_weekday_tuesday" = "ವಾರವು ಏಳು ದಿನಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಮಂಗಳವಾರವು ವಾರದ ಎರಡನೇ ದಿನವಾಗಿದೆ.";
 "calendar_weekday_wednesday" = "ವಾರವು ಏಳು ದಿನಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಬುಧವಾರವು ವಾರದ ಮೂರನೇ ದಿನವಾಗಿದೆ.";
@@ -69,7 +70,7 @@
 ನೀವು ಏನನ್ನು ಧರಿಸಲಿದ್ದೀರಿ ಎಂದು ನೋಡೋಣ!";
 "content_title_clothes_link" = "ನೀವು ಹೊರಗೆ ಹೋಗಲು ಬಯಸುವಿರಾ?
 ನೀವು ಏನನ್ನು ಧರಿಸಲಿದ್ದೀರಿ ಎಂದು ನೋಡಿ!";
-"current_date" = "ಇಂದು ಅದು <span translate='no'>string</span>";
+"current_date" = "ಇಂದು ಅದು %@";
 "emoji_1F348_name" = "ಕಲ್ಲಂಗಡಿ ಹಣ್ಣು";
 "emoji_1F348_name_plural" = "ಕಲ್ಲಂಗಡಿ ಹಣ್ಣುಗಳು";
 "emoji_1F34A_name" = "ಕಿತ್ತಳೆ";
@@ -96,7 +97,7 @@
 "emoji_1F969_name_plural" = "ಸ್ಟೀಕ್ಸ್";
 "emoji_1F990_name" = "ಸೀಗಡಿ";
 "emoji_1F990_name_plural" = "ಸೀಗಡಿಗಳು";
-"feedback_activity_question" = "ಆ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯವೇನು: <span translate='no'>string</span>";
+"feedback_activity_question" = "ಆ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯವೇನು: %@";
 "feedback_activity_question_basic" = "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯವೇನು?";
 "feedback_activity_statistics" = "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ಇತರರು ಏನು ಎಂದು ನೀವು ನೋಡಲು ಬಯಸುವಿರಾ?";
 "feedback_activity_statistics_title" = "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನೀವು ಯೋಚಿಸಿದ್ದು ಇದನ್ನೇ";
@@ -118,7 +119,7 @@
 "food_waste_info_why" = "ನಾವು ಆಹಾರವನ್ನು ಏಕೆ ವ್ಯರ್ಥ ಮಾಡಬಾರದು?";
 "food_waste_info_why_description" = "ಆಹಾರವು ಉಪಯುಕ್ತವಾಗಬೇಕಾದರೆ, ನಾವು ಸಾಧ್ಯವಾದಷ್ಟು ಕಡಿಮೆ ಎಸೆಯಬೇಕು. ತಟ್ಟೆಯಲ್ಲಿ ಆಹಾರವನ್ನು ತಿನ್ನುವುದರಿಂದ ನಿಮಗೆ ಉತ್ತಮ ಅನುಭವವಾಗುತ್ತದೆ ಮತ್ತು ಆಹಾರವು ನಿಮ್ಮ ಹೊಟ್ಟೆಯಲ್ಲಿ ಕೊನೆಗೊಂಡಾಗ, ಅದು ನಿಮಗೆ ಆಟವಾಡಲು ಮತ್ತು ಹೆಚ್ಚು ಕಲಿಯಲು ಶಕ್ತಿಯನ್ನು ನೀಡುತ್ತದೆ.";
 "food_waste_kompostina_title" = "ನೀವು ಆಹಾರವನ್ನು ತೂಕ ಮಾಡಲು ಬಯಸುವಿರಾ? ⚖️ ನನ್ನನ್ನು ಒತ್ತಿರಿ, ಕೊಂಪೊಸ್ಟಿನಾ!";
-"food_waste_last_week" = "ಕಳೆದ ವಾರ ನೀವು %@ ಗ್ರಾಂ ಆಹಾರವನ್ನು ಎಸೆದಿದ್ದೀರಿ, ಮತ್ತು ಈ ವಾರ, <span translate='no'>string</span> ಗ್ರಾಂ.";
+"food_waste_last_week" = "ಕಳೆದ ವಾರ ನೀವು %@ ಗ್ರಾಂ ಆಹಾರವನ್ನು ಎಸೆದಿದ್ದೀರಿ, ಮತ್ತು ಈ ವಾರ, %@ ಗ್ರಾಂ.";
 "food_waste_nothing" = "ಇಲ್ಲಿಯವರೆಗೆ ಈ ವಾರ ನೀವು ಯಾವುದೇ ಆಹಾರವನ್ನು ಎಸೆದಿಲ್ಲ.";
 "food_waste_statistics_title_today" = "ಇಂದು ನೀವು %@ ಗ್ರಾಂ ಆಹಾರವನ್ನು ಎಸೆದಿದ್ದೀರಿ. ಅದೇ ರೀತಿ...";
 "food_waste_statistics_title_weekday_1" = "ಸೋಮವಾರ ನೀವು %@ ಗ್ರಾಂ ಆಹಾರವನ್ನು ಎಸೆದಿದ್ದೀರಿ. ಅದೇ ರೀತಿ...";
@@ -187,7 +188,7 @@
 "message_no_messages" = "ನಮ್ಮಲ್ಲಿ ಈಗ ಯಾವುದೇ ಸಂದೇಶಗಳಿಲ್ಲ.";
 "movement_choose_activity" = "ನೀವು ಯಾವ ಚಟುವಟಿಕೆಯನ್ನು ಮಾಡಿದ್ದೀರಿ?";
 "movement_close" = "ಮುಚ್ಚು";
-"movement_last_week" = "ಕಳೆದ ವಾರ ನೀವು ಒಟ್ಟು %@ ಮೀಟರ್ ಶಕ್ತಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದ್ದೀರಿ, ಮತ್ತು ಈ ವಾರ <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
+"movement_last_week" = "ಕಳೆದ ವಾರ ನೀವು ಒಟ್ಟು %@ ಮೀಟರ್ ಶಕ್ತಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದ್ದೀರಿ, ಮತ್ತು ಈ ವಾರ %@ ಮೀಟರ್ ಗಳು";
 "movement_next" = "ಮುಂದೆ";
 "movement_nothing" = "ಇಲ್ಲಿಯವರೆಗೆ ಈ ವಾರ ನೀವು ಯಾವುದೇ ಚಲನೆಯನ್ನು ನೋಂದಾಯಿಸಿಲ್ಲ.";
 "movement_register" = "ರಿಜಿಸ್ಟರ್ ಮಾಡಿ";
@@ -196,15 +197,15 @@
 "movement_statistics_cities" = "ಅದು %@ ಮತ್ತು %@ ನಡುವಿನ ಅಂತರದವರೆಗೆ";
 "movement_statistics_how_far" = "ಅದು ಎಷ್ಟು ದೂರದಲ್ಲಿದೆ?";
 "movement_statistics_see_distance" = "ಮತ್ತೊಂದು ಐಪ್ಯಾಡ್ ಪಡೆಯುವಂತೆ ಶಿಕ್ಷಕರಿಗೆ ತಿಳಿಸಿ ಮತ್ತು ನೀವು %@ ಮೀಟರ್ ನಡೆದಾಗ ನೀವು ಎಷ್ಟು ದೂರ ಹೋಗುತ್ತೀರಿ ಎಂಬುದನ್ನು ಒಟ್ಟಿಗೆ ವೀಕ್ಷಿಸಿ";
-"movement_statistics_title_today" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಇಂದು ನೀವು %@ ಹಂತಗಳನ್ನು ಸಂಗ್ರಹಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು.";
-"movement_statistics_title_weekday_1" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಸೋಮವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_weekday_2" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಮಂಗಳವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_weekday_3" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಬುಧವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_weekday_4" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಗುರುವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_weekday_5" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಶುಕ್ರವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_weekday_6" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಶನಿವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_weekday_7" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಭಾನುವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು";
-"movement_statistics_title_yesterday" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ನಿನ್ನೆ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು <span translate='no'>string</span> ಮೀಟರ್ ಗಳು.";
+"movement_statistics_title_today" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಇಂದು ನೀವು %@ ಹಂತಗಳನ್ನು ಸಂಗ್ರಹಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು.";
+"movement_statistics_title_weekday_1" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಸೋಮವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_weekday_2" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಮಂಗಳವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_weekday_3" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಬುಧವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_weekday_4" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಗುರುವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_weekday_5" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಶುಕ್ರವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_weekday_6" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಶನಿವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_weekday_7" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ಭಾನುವಾರ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು";
+"movement_statistics_title_yesterday" = "ಒಳ್ಳೆಯ ಕೆಲಸ, ನಿನ್ನೆ ನೀವು %@ ಹಂತಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿದ್ದೀರಿ, ಅದು %@ ಮೀಟರ್ ಗಳು.";
 "movement_weekly_stats" = "ಈ ವಾರ ನೀವು ಒಟ್ಟು %@ ಮೀಟರ್ ಶಕ್ತಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದ್ದೀರಿ";
 "outdoors_feedback_change_description" = "ನನ್ನ ಸಲಹೆಗಳು ಒಳ್ಳೆಯದಲ್ಲವೇ? ನಾನು ಸೂಚಿಸುವ ಬಟ್ಟೆಗಳನ್ನು ಬದಲಾಯಿಸಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುವಂತೆ ನಿಮ್ಮ ಶಿಕ್ಷಕರನ್ನು ಕೇಳಿ.";
 "outdoors_feedback_change_title" = "ಹೊರಗಿನ ಹವಾಮಾನಕ್ಕೆ ಯಾವ ಬಟ್ಟೆಗಳು ಸೂಕ್ತವೆಂದು ಆಯ್ಕೆಮಾಡಿ";
@@ -212,9 +213,9 @@
 "outdoors_feedback_provideFeedback" = "ಬಟ್ಟೆಗಳ ಬಗ್ಗೆ ನನ್ನ ಸಲಹೆ ಒಳ್ಳೆಯದು ಎಂದು ನೀವು ಭಾವಿಸುತ್ತೀರಾ?";
 "outdoors_feedback_thanks" = "ಧನ್ಯವಾದಗಳು! ಈ ಹವಾಮಾನದಲ್ಲಿ ನಿಮಗೆ ಯಾವ ಬಟ್ಟೆಗಳು ಬೇಕು ಎಂದು ಉತ್ತಮವಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ನೀವು ಈಗ ನನಗೆ ಸಹಾಯ ಮಾಡಿದ್ದೀರಿ!";
 "outdoors_go_out" = "ನೀವು ಹೊರಗೆ ಹೋಗುತ್ತಿದ್ದರೆ, ನೀವು ಇದನ್ನು ಧರಿಸಲಿದ್ದೀರಿ.";
-"public_calendar_celebration" = "ಈ ದಿನದಂದು ನಾವು <span translate='no'>string</span>";
-"public_calendar_celebration_today" = "ಇಂದು ನಾವು <span translate='no'>string</span>";
-"public_calendar_respect" = "ಈ ದಿನದಂದು, ನಾವು <span translate='no'>string</span>";
+"public_calendar_celebration" = "ಈ ದಿನದಂದು ನಾವು %@";
+"public_calendar_celebration_today" = "ಇಂದು ನಾವು %@";
+"public_calendar_respect" = "ಈ ದಿನದಂದು, ನಾವು %@";
 "recreation_nothing_to_do" = "ಮಾಡಲು ಏನೂ ಇಲ್ಲವೆ?";
 "schedule_date_format" = "EEEE 'the' d MMMM";
 "singalong_repeat" = "ನೀವು ಮತ್ತೆ ಹಾಡಲು ಬಯಸುವಿರಾ?";
@@ -225,34 +226,34 @@
 "tempus_arrives_short_past" = "%@ %@";
 "tempus_child_arrives" = "%@ ಸುಮಾರು %@ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬರುತ್ತಾನೆ.";
 "tempus_child_arrives_after" = "%@ ಸುಮಾರು %@ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬರುತ್ತಾನೆ.
-ಅದು <span translate='no'>string</span>ನಂತರ.";
+ಅದು %@ನಂತರ.";
 "tempus_child_arrives_after_past" = "%@ ಸುಮಾರು %@ಗಂಟೆಗೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬಂದಳು.
-ಅದು <span translate='no'>string</span>ನಂತರ.";
+ಅದು %@ನಂತರ.";
 "tempus_child_arrives_before" = "%@ ಸುಮಾರು %@ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬರುತ್ತಾನೆ.
-ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
+ಅದು %@ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_arrives_before_past" = "%@ ಸುಮಾರು %@ಗಂಟೆಗೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬಂದಳು.
-ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
+ಅದು %@ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_arrives_during" = "%@ ಸುಮಾರು %@ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬರುತ್ತಾನೆ.
-ಅದು <span translate='no'>string</span>ಸಮಯದಲ್ಲಿ.";
+ಅದು %@ಸಮಯದಲ್ಲಿ.";
 "tempus_child_arrives_during_past" = "%@ ಸುಮಾರು %@ಗಂಟೆಗೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬಂದಳು.
-ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
+ಅದು %@ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_arrives_past" = "%@ ಸುಮಾರು %@ ಕ್ಕೆ ಪ್ರಿಸ್ಕೂಲ್ ಗೆ ಬಂದಳು";
 "tempus_child_has_left" = "%@ ಆ ದಿನ ಮನೆಗೆ ಹೋದಂತೆ ತೋರುತ್ತದೆ.";
 "tempus_child_has_left_returns_in_days" = "%@ ಒಂದು ದಿನದ ಮಟ್ಟಿಗೆ ಮನೆಗೆ ಹೋದಂತೆ ತೋರುತ್ತದೆ ಆದರೆ %@ ದಿನಗಳಲ್ಲಿ ಮತ್ತೆ ಹಿಂತಿರುಗಬೇಕು.";
 "tempus_child_has_left_returns_tomorrow" = "%@ ಒಂದು ದಿನ ಮನೆಗೆ ಹೋದಂತೆ ತೋರುತ್ತದೆ ಆದರೆ ನಾಳೆ ಮತ್ತೆ ಹಿಂತಿರುಗಬೇಕು.";
 "tempus_child_leaves" = "%@ ಇಲ್ಲಿದ್ದಾರೆ ಮತ್ತು %@ಸುಮಾರಿಗೆ ಪ್ರಿಸ್ಕೂಲ್ ತೊರೆಯುತ್ತಾರೆ.";
 "tempus_child_leaves_after" = "%@ ಇಲ್ಲಿದ್ದಾರೆ ಮತ್ತು %@ಸುಮಾರಿಗೆ ಪ್ರಿಸ್ಕೂಲ್ ತೊರೆಯುತ್ತಾರೆ.
-ಅದು <span translate='no'>string</span>ನಂತರ.";
+ಅದು %@ನಂತರ.";
 "tempus_child_leaves_after_past" = "%@ ಸುಮಾರು %@ರವರೆಗೆ ಇಲ್ಲಿಯೇ ಇದ್ದೆ.
-ಅದು <span translate='no'>string</span>ನಂತರ.";
+ಅದು %@ನಂತರ.";
 "tempus_child_leaves_before" = "%@ ಇಲ್ಲಿದ್ದಾರೆ ಮತ್ತು %@ಸುಮಾರಿಗೆ ಪ್ರಿಸ್ಕೂಲ್ ತೊರೆಯುತ್ತಾರೆ.
-ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
+ಅದು %@ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_leaves_before_past" = "%@ ಸುಮಾರು %@ರವರೆಗೆ ಇಲ್ಲಿಯೇ ಇದ್ದೆ.
-ಅದು <span translate='no'>string</span>ಸ್ವಲ್ಪ ಮೊದಲು.";
+ಅದು %@ಸ್ವಲ್ಪ ಮೊದಲು.";
 "tempus_child_leaves_during" = "%@ ಇಲ್ಲಿದ್ದಾರೆ ಮತ್ತು %@ಸುಮಾರಿಗೆ ಪ್ರಿಸ್ಕೂಲ್ ತೊರೆಯುತ್ತಾರೆ.
-ಅದು <span translate='no'>string</span>ಸಮಯದಲ್ಲಿ.";
+ಅದು %@ಸಮಯದಲ್ಲಿ.";
 "tempus_child_leaves_during_past" = "%@ ಸುಮಾರು %@ರವರೆಗೆ ಇಲ್ಲಿಯೇ ಇದ್ದೆ.
-ಅದು <span translate='no'>string</span>ಸಮಯದಲ್ಲಿ.";
+ಅದು %@ಸಮಯದಲ್ಲಿ.";
 "tempus_child_leaves_past" = "%@ ಸುಮಾರು %@ರವರೆಗೆ ಇಲ್ಲಿಯೇ ಇದ್ದೆ.";
 "tempus_child_not_here_returns_in_days" = "%@ ಇಂದು ಇಲ್ಲಿರುವಂತೆ ಕಾಣುತ್ತಿಲ್ಲ ಆದರೆ %@ ದಿನಗಳಲ್ಲಿ ಇಲ್ಲಿಗೆ ಮರಳಬೇಕು.";
 "tempus_child_not_here_returns_tomorrow" = "%@ ಇಂದು ಇಲ್ಲಿರುವಂತೆ ಕಾಣುತ್ತಿಲ್ಲ ಆದರೆ ನಾಳೆ ಇಲ್ಲಿಗೆ ಹಿಂತಿರುಗಬೇಕು.";
@@ -282,7 +283,7 @@
 "trashmonster_textilia_description" = "ಟೆಕ್ಸ್ಟಿಲಿಯಾ ಗ್ಯಾಂಗ್ ಗೆ ತುಂಬಾ ಹೊಸದು. ಅವಳು ಹಳೆಯ ಮತ್ತು ಸವೆದ ಬಟ್ಟೆಗಳು ಮತ್ತು ಬೂಟುಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತಾಳೆ, ಆದರೆ ಸುಂದರವಾದ ಮತ್ತು ಮತ್ತೆ ಬಳಸಬಹುದಾದ ಉಡುಪುಗಳನ್ನು ಸಹ ಸಂಗ್ರಹಿಸುತ್ತಾಳೆ.";
 "trashmonster_towalett_description" = "ಮೂತ್ರ, ಮಲ ಮತ್ತು ಟಾಯ್ಲೆಟ್ ಪೇಪರ್ ಮಾತ್ರ ಟೊವಾಲೆಟ್ ಸಂಗ್ರಹಿಸುವ ವಸ್ತುಗಳು. ಅವಳು ತನ್ನ ಐದು ಕಣ್ಣುಗಳಿಂದ ಹತ್ತಿಯ ಸ್ವ್ಯಾಬ್ ಗಳು, ತಂಬಾಕು ಅಥವಾ ಒದ್ದೆ ವೈಪ್ ಗಳಂತಹ ತಿಗ್ ಗಳನ್ನು ಹುಡುಕುತ್ತಾಳೆ, ಇವು ಶೌಚಾಲಯಕ್ಕೆ ಸೇರುವುದಿಲ್ಲ!";
 "trashmonster_wellmer_description" = "ಅನೇಕ ದುರ್ಬಲ ಪ್ಯಾಕೇಜ್ ಗಳು ತುಕ್ಕು ಹಿಡಿದ ಕಾರ್ಡ್ ಬೋರ್ಡ್ ನಲ್ಲಿ ಬರುತ್ತವೆ, ಆದ್ದರಿಂದಲೇ ವೆಲ್ಮರ್ ದುರ್ಬಲ ವಸ್ತುಗಳನ್ನು ರಕ್ಷಿಸುವ ನೈಟ್ ನಂತೆ ಭಾವಿಸುತ್ತಾನೆ. ಅವನು ತುಕ್ಕು ಹಿಡಿದ ರಟ್ಟಿನ ಹಲಗೆಯನ್ನು ಮರುಬಳಕೆ ಮಾಡಲು ಇಷ್ಟಪಡುತ್ತಾನೆ ಮತ್ತು ಆಗಾಗ್ಗೆ ಹಳೆಯ ಪೆಟ್ಟಿಗೆಗಳಿಂದ ನೈಟ್ಸ್ ನ ಕೋಟೆಗಳನ್ನು ತಯಾರಿಸುತ್ತಾನೆ.";
-"undp_goal" = "ಗೋಲ್ <span translate='no'>string</span>";
+"undp_goal" = "ಗೋಲ್ %@";
 "undp_goal_10_description" = "ಇದರರ್ಥ ನೀವು ಪ್ರಪಂಚದಲ್ಲಿ ಎಲ್ಲಿಯೇ ವಾಸಿಸುತ್ತಿದ್ದರೂ, ನೀವು ಇತರರಂತೆ ಸಮಾನ ಹಕ್ಕುಗಳು ಮತ್ತು ಅವಕಾಶಗಳನ್ನು ಹೊಂದಿರಬೇಕು.";
 "undp_goal_10_title" = "ಗುರಿ 10: ಅಸಮಾನತೆ ಕಡಿಮೆಯಾಗುವುದು";
 "undp_goal_11_description" = "ಇದರರ್ಥ ಪ್ರತಿಯೊಬ್ಬರೂ ಸುರಕ್ಷಿತ ಮತ್ತು ಉತ್ತಮ ಮನೆಗಳಲ್ಲಿ ವಾಸಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.";
@@ -353,23 +354,23 @@
 "undp_you_found_goal_8" = "ನೀವು ಗುರಿ 8 ಅನ್ನು ಕಂಡುಕೊಂಡಿದ್ದೀರಿ: ಸಭ್ಯ ಕೆಲಸ ಮತ್ತು ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆ";
 "undp_you_found_goal_9" = "ನೀವು ಗುರಿ 9 ಅನ್ನು ಕಂಡುಕೊಂಡಿದ್ದೀರಿ: ಕೈಗಾರಿಕೆ, ನಾವಿನ್ಯತೆ ಮತ್ತು ಮೂಲಸೌಕರ್ಯ";
 "weather_cold" = "ಹೊರಗೆ ಚಳಿ ಇದ್ದಂತೆ ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "weather_coldAndRainy" = "ಹೊರಗೆ ಚಳಿ ಮತ್ತು ಮಳೆ ಎಂದು ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "weather_cool" = "ಅದು ಅಲ್ಲಿ ತಂಪಾಗಿದೆ ಎಂದು ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "weather_coolAndRainy" = "ಇದು ಹೊರಗೆ ತಂಪಾದ ಮತ್ತು ಮಳೆ ಎಂದು ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "weather_hot" = "ಇದು ಹೊರಗೆ ನಿಜವಾಗಿಯೂ ಬಿಸಿಯಾಗಿದೆ ಎಂದು ತೋರುತ್ತದೆ.
 ಇದು %@ ಡಿಗ್ರಿಗಳು.
  ಕುಡಿಯಲು ಮರೆಯದಿರಿ ಮತ್ತು ಅದರಲ್ಲಿರಲು ನೆರಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ";
 "weather_rainy" = "ಇದು ಹೊರಗೆ ಮಳೆಗಾಲದಂತೆ ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "weather_unknown" = "ಕಿಟಕಿಯ ಹೊರಗೆ ನೋಡಿ";
 "weather_warm" = "ಇದು ಹೊರಗೆ ಬಿಸಿಯಾಗಿರುವಂತೆ ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "weather_warmish" = "ಅಲ್ಲಿ ಇದು ತುಂಬಾ ಬಿಸಿಯಾಗಿದೆ ಎಂದು ತೋರುತ್ತದೆ.
-ಇದು <span translate='no'>string</span> ಡಿಗ್ರಿಗಳು.";
+ಇದು %@ ಡಿಗ್ರಿಗಳು.";
 "word_and" = "ಮತ್ತು";
 "word_done" = "ಮುಗಿದಿದೆ";
 "word_or" = "ಅಥವಾ";
