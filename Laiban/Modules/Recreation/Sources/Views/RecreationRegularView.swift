@@ -31,7 +31,7 @@ struct RecreationRegularView: View {
                 if let a = activity {
                     VStack(spacing: properties.spacing[.m]) {
                         
-                        Text(assistant.string(forKey: a.sentence))
+                        Text(assistant.string(forKey: a.activityDescription(hasObject: item != nil, using: assistant)))
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
                             .multilineTextAlignment(.center)
