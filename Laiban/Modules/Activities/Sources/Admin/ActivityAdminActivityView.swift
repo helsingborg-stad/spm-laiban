@@ -100,7 +100,7 @@ struct ActivityAdminActivityView: View {
             image = Activity.imageStorage.image(with: imageName)
         }
         mutating  func deleteImage() {
-            Activity.imageStorage.delete(image: self.imageName)
+            Activity.imageStorage.delete(imageName: self.imageName)
             imageName = nil
             image = nil
         }

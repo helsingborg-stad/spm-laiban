@@ -15,13 +15,16 @@ public struct RecreationView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     @State var activity: Recreation.Activity?
     @State var item: Recreation.Inventory.Item?
+    @State var image:Image?
     @EnvironmentObject var viewState:LBViewState
-    let recreations = Recreation.standard
-    public init() {
-        
+    var service:RecreationService
+    let recreations:Recreation
+    public init(service:RecreationService) {
+        self.service = service
+        self.recreations = service.getRecreation()
     }
     public var body: some View {
-        Group() {
+        Group(){
             if horizontalSizeClass == .regular {
                 RecreationRegularView(activity: activity, item: item)
             } else {
@@ -31,6 +34,7 @@ public struct RecreationView: View {
         .onAppear {
             if let act = recreations.activities.randomElement() {
                 activity = act
+                
                 if let inv = activity?.inventories.randomElement(), let inventory = recreations.inventories.first(where: { i in i.id == inv }) {
                     item = inventory.items.randomElement()
                 } else {
@@ -42,13 +46,20 @@ public struct RecreationView: View {
 
                 if (activity != nil) {
                     let activitySentence = activity!.activityDescription(hasObject: item != nil, using: assistant)
+                    
                     sentences.append((activitySentence, activitySentence))
+                }
+                
+                if let unWrappedActivity = activity, let unWrappedImageOrEmojiDescription = unWrappedActivity.imageOrEmojiDescription, unWrappedImageOrEmojiDescription != ""{
+                    
+                    sentences.append((unWrappedImageOrEmojiDescription, unWrappedImageOrEmojiDescription))
                 }
                 
                 if (item != nil) {
                     let itemSentence = item!.itemDescription()
                     sentences.append((itemSentence, itemSentence))
                 }
+                
                 viewState.characterHidden(true, for: .recreation)
                 assistant.speak(sentences)
             }
@@ -60,10 +71,10 @@ public struct RecreationView: View {
 
 struct RecreationView_Previews: PreviewProvider {
     static var contentProvider = 1
-    
+    static var service = RecreationService()
     static var previews: some View {
         LBFullscreenContainer { _ in 
-            RecreationView()
+            RecreationView(service: service)
         }
         .attachPreviewEnvironmentObjects()
     }

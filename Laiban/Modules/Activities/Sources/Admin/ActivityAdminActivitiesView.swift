@@ -96,7 +96,7 @@ struct ActivityAdminActivitiesView: View {
                         }.id(item.id)
                 }.onDelete { (indexSet) in
                     indexSet.forEach { (i) in
-                        Activity.imageStorage.delete(image: service.data[i].image)
+                        Activity.imageStorage.delete(imageName: service.data[i].image)
                     }
                     service.data.remove(atOffsets: indexSet)
                     service.save()

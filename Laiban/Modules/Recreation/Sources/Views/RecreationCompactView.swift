@@ -29,7 +29,22 @@ struct RecreationCompactView: View {
                     .multilineTextAlignment(.center)
                     .font(properties.font, ofSize: .n)
                     .frame(maxWidth: .infinity, alignment: .center)
-                if item?.imageName != nil   {
+                
+                if let imageName = activity?.imageName, let image = Recreation.Activity.imageStorage.image(with: imageName){
+                    
+                    image.resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:200,height:200)
+                        .clipped()
+                        .cornerRadius(20)
+                        .shadow(radius: 4)
+                    
+                    if let sentence = activity?.objectSentence {
+                        Text(assistant.string(forKey: sentence))
+                    }
+                    
+                    
+                }else if item?.imageName != nil   {
                     Image(item!.imageName!)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -58,13 +73,13 @@ struct RecreationCompactView: View {
 @available(iOS 15.0, *)
 struct RecreationCompactView_Previews: PreviewProvider {
     static let item: Recreation.Inventory.Item = .init(prefix: "en", name: "elefant",emoji:"🐘")
-    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️")
+    static let activity: Recreation.Activity = .init(name: "Måla", sentence: "Gå till ateljén tillsammans med en kompis och rita. Ni kanske kan rita...",  emoji: "✏️", isActive: true, activityEmoji: "")
     
     static var previews: some View {
         LBFullscreenContainer { _ in
             RecreationCompactView(activity: activity, item: item)
         }
-        .previewDevice("iPod touch (7th generation)")
+//        .previewDevice("iPod touch (7th generation)")
         .attachPreviewEnvironmentObjects()
     }
 }

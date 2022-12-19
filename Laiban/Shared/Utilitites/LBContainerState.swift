@@ -73,7 +73,6 @@ public extension LBViewIdentity {
     static var home           = LBViewIdentity("home-viewidentity")
 }
 
-
 public class LBContainerState<T:Equatable & Hashable>: ObservableObject {
     struct Config  {
         var characterHidden:Bool = false

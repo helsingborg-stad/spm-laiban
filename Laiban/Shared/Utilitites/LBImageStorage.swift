@@ -65,14 +65,17 @@ public struct LBImageStorage {
         }
         return nil
     }
-    public func delete(image:String?) {
-        if let url = url(for: image) {
-            do {
-                try FileManager.default.removeItem(at: url)
-            } catch {
-                AnalyticsService.shared.logError(error)
-                print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
-            }
+    public func delete(imageName:String?) {
+        guard let imageName = imageName,
+              imageName.count > 0,
+              let url = url(for: imageName),
+              exists(name: imageName) else { return }
+        
+        do {
+            try FileManager.default.removeItem(at: url)
+        } catch {
+            AnalyticsService.shared.logError(error)
+            print("⛔️ [\(#fileID):\(#function):\(#line)] " + String(describing: error))
         }
     }
     public func exists(name:String?) -> Bool {
@@ -94,9 +97,11 @@ public struct LBImageStorage {
         return nil
     }
     public func image(with name:String?) -> Image? {
-        guard let name = name, let url = url(for: name) else {
-            return nil
-        }
+        guard let name = name,
+              name.count > 0,
+              let url = url(for: name),
+              exists(name: name) else { return nil }
+
         do {
             let data = try Data(contentsOf: url)
             if let img = UIImage(data: data) {

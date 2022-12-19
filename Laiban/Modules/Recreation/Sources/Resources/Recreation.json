@@ -1,0 +1,374 @@
+[{
+   "activities":[
+      {
+         "isActive":true,
+         "emoji":"🎤",
+         "id":"singing",
+         "objectSentence":"Till kan till exempel sjunga...",
+         "sentence":"Gå till någon bra plats för att dansa och sjunga med en eller flera kompisar.",
+         "activityEmoji":"",
+         "name":"Sjunga",
+         "inventories":[
+            "songs"
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"🧩",
+         "id":"puzzleSolving",
+         "objectSentence":"Till exempel...",
+         "sentence":"Gå och lägg ett pussel.",
+         "activityEmoji":"",
+         "name":"Pussel",
+         "inventories":[
+            
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"🎲",
+         "id":"games",
+         "objectSentence":"Till exempel kan ni spela...",
+         "sentence":"Gå och spela ett spel tillsammans med en kompis.",
+         "activityEmoji":"",
+         "name":"Spel",
+         "inventories":[
+            
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"🎧",
+         "id":"listen",
+         "objectSentence":"Ni kan till exempel lyssna på...",
+         "sentence":"Gå och hämta en iPad med en kompis och lyssna på en saga.",
+         "activityEmoji":"",
+         "name":"Spel",
+         "inventories":[
+            
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"📚",
+         "id":"read",
+         "objectSentence":"Ni kan till exempel titta i...",
+         "sentence":"Gå och hämta en bok tillsammans med en kompis och prata om bilderna.",
+         "activityEmoji":"",
+         "name":"Läsa",
+         "inventories":[
+            
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"✏️",
+         "id":"trace",
+         "objectSentence":"Till exempel...",
+         "sentence":"Gå och hämta en iPad och be en vuxen om hjälp för att kalkera av ett djur.",
+         "activityEmoji":"",
+         "name":"Kalkera",
+         "inventories":[
+            
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"🎨",
+         "id":"painting",
+         "objectSentence":"Försök att måla...",
+         "sentence":"Gå till ateljén och måla.",
+         "activityEmoji":"",
+         "name":"Måla",
+         "inventories":[
+            "misc",
+            "animals"
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"🎨",
+         "id":"drawing",
+         "objectSentence":"Ni kanske kan rita...",
+         "sentence":"Gå till ateljén tillsammans med en kompis och rita.",
+         "activityEmoji":"",
+         "name":"Draw",
+         "inventories":[
+            "misc",
+            "animals"
+         ]
+      },
+      {
+         "isActive":true,
+         "emoji":"🏗",
+         "id":"legoBuilding",
+         "objectSentence":"Testa att bygga...",
+         "sentence":"Gå till legot och bygg.",
+         "activityEmoji":"",
+         "name":"Lego",
+         "inventories":[
+            "misc"
+         ]
+      },
+      {
+         "id":"building",
+         "inventories":[
+            
+         ],
+         "emoji":"🗼",
+         "name":"Bygga",
+         "isActive":true,
+         "sentence":"Gå till byggrummet tillsammans med en kompis och bygg ett så högt torn som möjligt.",
+         "activityEmoji":""
+      },
+      {
+         "id":"movie",
+         "inventories":[
+            
+         ],
+         "emoji":"🎬",
+         "name":"Skapa film",
+         "isActive":true,
+         "sentence":"Hämta en iPad och gå till fantasirummet och skapa en film tillsammans med en kompis.",
+         "activityEmoji":""
+      },
+      {
+         "id":"create",
+         "inventories":[
+            
+         ],
+         "emoji":"✂️",
+         "name":"Skapa",
+         "isActive":true,
+         "sentence":"Gå till ateljén och skapa med lim och annat material.",
+         "activityEmoji":""
+      },
+      {
+         "isActive":true,
+         "emoji":"🤔",
+         "id":"clay",
+         "objectSentence":"Försök göra...",
+         "sentence":"Gå till något bra bord och skapa med lera.",
+         "activityEmoji":"",
+         "name":"Lera",
+         "inventories":[
+            "misc",
+            "animals"
+         ]
+      },
+      {
+         "id":"enlarge",
+         "inventories":[
+            
+         ],
+         "emoji":"🔍",
+         "name":"Förstora",
+         "isActive":true,
+         "sentence":"Gå och hämta en iPad och förstora saker så du kan undersöka dem nära.",
+         "activityEmoji":""
+      }
+   ],
+   "inventories":[
+      {
+         "id":"songs",
+         "name":"Sånger",
+         "items":[
+            
+         ]
+      },
+      {
+         "id":"misc",
+         "name":"Diverse",
+         "items":[
+            {
+               "id":"rainbow",
+               "isActive":true,
+               "prefix":"en",
+               "name":"regnbåge",
+               "emoji":"🌈"
+            },
+            {
+               "id":"house",
+               "isActive":true,
+               "prefix":"ett",
+               "name":"hus",
+               "emoji":"🏡"
+            },
+            {
+               "id":"car",
+               "isActive":true,
+               "prefix":"en",
+               "name":"bil",
+               "emoji":"🚗"
+            },
+            {
+               "id":"airplane",
+               "isActive":true,
+               "prefix":"ett",
+               "name":"flygplan",
+               "emoji":"✈️"
+            },
+            {
+               "id":"boat",
+               "isActive":true,
+               "prefix":"en",
+               "name":"båt",
+               "emoji":"⛵️"
+            },
+            {
+               "id":"helicopter",
+               "isActive":true,
+               "prefix":"en",
+               "name":"helikopter",
+               "emoji":"🚁"
+            },
+            {
+               "id":"tree",
+               "isActive":true,
+               "prefix":"ett",
+               "name":"träd",
+               "emoji":"🌳"
+            },
+            {
+               "id":"playground",
+               "isActive":true,
+               "prefix":"en",
+               "name":"lekplats",
+               "emoji":"🧗‍♂️"
+            }
+         ]
+      },
+      {
+         "id":"animals",
+         "name":"Djur",
+         "items":[
+            {
+               "id":"elephant",
+               "isActive":true,
+               "prefix":"en",
+               "name":"elefant",
+               "emoji":"🐘"
+            },
+            {
+               "id":"cow",
+               "isActive":true,
+               "prefix":"en",
+               "name":"kossa",
+               "emoji":"🐄"
+            },
+            {
+               "id":"pig",
+               "isActive":true,
+               "prefix":"en",
+               "name":"gris",
+               "emoji":"🐖"
+            },
+            {
+               "id":"vildsvin",
+               "isActive":true,
+               "prefix":"ett",
+               "name":"vildsvin",
+               "emoji":"🐗"
+            },
+            {
+               "id":"ape",
+               "isActive":true,
+               "prefix":"en",
+               "name":"apa",
+               "emoji":"🐒"
+            },
+            {
+               "id":"fox",
+               "isActive":true,
+               "prefix":"en",
+               "name":"räv",
+               "emoji":"🦊"
+            },
+            {
+               "id":"lion",
+               "isActive":true,
+               "prefix":"ett",
+               "name":"lejon",
+               "emoji":"🦁"
+            },
+            {
+               "id":"frog",
+               "isActive":true,
+               "prefix":"en",
+               "name":"groda",
+               "emoji":"🐸"
+            },
+            {
+               "id":"lizzard",
+               "isActive":true,
+               "prefix":"en",
+               "name":"ödla",
+               "emoji":"🦎"
+            },
+            {
+               "id":"owl",
+               "isActive":true,
+               "prefix":"en",
+               "name":"ugla",
+               "emoji":"🦉"
+            },
+            {
+               "id":"fish",
+               "isActive":true,
+               "prefix":"en",
+               "name":"fisk",
+               "emoji":"🐠"
+            },
+            {
+               "id":"panda",
+               "isActive":true,
+               "prefix":"en",
+               "name":"panda",
+               "emoji":"🐼"
+            },
+            {
+               "id":"giraffe",
+               "isActive":true,
+               "prefix":"en",
+               "name":"giraff",
+               "emoji":"🦒"
+            },
+            {
+               "id":"gorilla",
+               "isActive":true,
+               "prefix":"en",
+               "name":"gorilla",
+               "emoji":"🦍"
+            },
+            {
+               "id":"cat",
+               "isActive":true,
+               "prefix":"en",
+               "name":"katt",
+               "emoji":"🐈"
+            },
+            {
+               "id":"hund",
+               "isActive":true,
+               "prefix":"en",
+               "name":"hund",
+               "emoji":"🐕"
+            },
+            {
+               "id":"horse",
+               "isActive":true,
+               "prefix":"en",
+               "name":"häst",
+               "emoji":"🐎"
+            },
+            {
+               "id":"llama",
+               "isActive":true,
+               "prefix":"en",
+               "name":"lama",
+               "emoji":"🦙"
+            }
+         ]
+      }
+   ]
+}]
