@@ -200,6 +200,9 @@ public struct TimeView: View {
             }).store(in: &cancellables)
             AnalyticsService.shared.logPageView(self)
         }
+        .onDisappear() {
+            cancellables.removeAll()
+        }
         .onReceive(viewState.$options) { val in
             guard let opt = viewState.options, opt == TimeView.showChildInfoId else {
                 viewModel.setChildInfoVisible(false)
