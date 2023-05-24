@@ -109,9 +109,8 @@ struct AdminRecreationInventoryItemView: View {
                                        .cornerRadius(20)
                                        .shadow(radius: 4)
                                    
-                               }else if let activityEmoji = $emoji.wrappedValue, activityEmoji != "" {
-                                   
-                                   Text(activityEmoji)
+                               }else if $emoji.wrappedValue != "" {
+                                   Text($emoji.wrappedValue)
                                        .font(Font.system(size: proxy.size.height*0.1))
                                        .frame(width:proxy.size.height*0.2,height:proxy.size.height*0.2)
                                        .background(Color.white)

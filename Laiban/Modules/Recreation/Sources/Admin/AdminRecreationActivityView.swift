@@ -160,9 +160,9 @@ struct AdminRecreationActivityView:View {
                                             .cornerRadius(20)
                                             .shadow(radius: 4)
                                         
-                                    }else if let activityEmoji = $activityEmoji.wrappedValue, activityEmoji != "" {
+                                    }else if $activityEmoji.wrappedValue != "" {
                                         
-                                        Text(activityEmoji)
+                                        Text($activityEmoji.wrappedValue)
                                             .font(Font.system(size: proxy.size.height*0.05))
                                             .frame(width:proxy.size.height*0.1,height:proxy.size.height*0.1)
                                             .background(Color.white)
