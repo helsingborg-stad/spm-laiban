@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Laiban",
     defaultLocalization: "sv",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v14)],
     products: [
         .library(name: "Laiban",               targets: ["Laiban"]),
         .library(name: "TextAutoCorrector",    targets: ["TextAutoCorrector"]),
