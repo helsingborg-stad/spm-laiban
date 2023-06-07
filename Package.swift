@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Laiban",
     defaultLocalization: "sv",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v14)],
     products: [
         .library(name: "Laiban",               targets: ["Laiban"]),
         .library(name: "TextAutoCorrector",    targets: ["TextAutoCorrector"]),
@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "UDPipe",               targets: ["UDPipe"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.0.0"),
+        .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.2.3"),
         .package(url: "https://github.com/helsingborg-stad/spm-daisy", from: "1.0.4")
     ],
     targets: [
