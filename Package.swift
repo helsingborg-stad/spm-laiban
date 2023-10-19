@@ -15,7 +15,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.2.3"),
-        .package(url: "https://github.com/helsingborg-stad/spm-daisy", from: "1.0.4")
+        .package(url: "https://github.com/helsingborg-stad/spm-daisy", from: "1.0.4"),
+        .package(url: "https://github.com/apple/ml-stable-diffusion.git", from: "1.1.0")
     ],
     targets: [
         .target(
