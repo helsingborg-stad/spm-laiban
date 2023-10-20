@@ -32,6 +32,9 @@ public extension StableDiffusionPipeline {
         onProgress: (_ progress: Foundation.Progress) -> Void) throws -> StableDiffusionPipeline {
             print("initPrewarmed")
             
+            let progress = Foundation.Progress(totalUnitCount: 6)
+            onProgress(progress)
+            
             /// Expect URL of each resource
             let urls = ResourceURLs(resourcesAt: resourcesAt)
             let textEncoder: TextEncoderModel
@@ -90,9 +93,6 @@ public extension StableDiffusionPipeline {
             }
             
             // Begin warmup
-            let progress = Foundation.Progress(totalUnitCount: 6)
-            onProgress(progress)
-            
             print("textEncoder.loadResources")
             try textEncoder.loadResources()
             progress.completedUnitCount = 1
@@ -163,9 +163,11 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             print("downloading model '\(modelName)'")
             let downloadProgress = Progress(totalUnitCount: 100)
             progress.addChild(downloadProgress, withPendingUnitCount: 100)
-            progress.localizedDescription = "laddar ner AI model"
             try await modelProvider.fetchModel(modelName) { fractionDone in
                 downloadProgress.completedUnitCount = Int64(floor(fractionDone * 100.0))
+                let percentage = fractionDone * 100
+                let formattedPercentage = String(format: "%.0f%%", percentage)
+                progress.localizedDescription = "laddar ner AI model (\(formattedPercentage))"
                 onProgress(progress)
                 print("fetch progress: \(fractionDone)")
             }
@@ -184,8 +186,10 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         if let newPipeline = try? StableDiffusionPipeline.initPrewarmed(resourcesAt: modelResourceUrl, controlNetModelNames: [], config: config, onProgress: { warmupProgress in
             let count = Int64(floor(warmupProgress.fractionCompleted * 100))
             print("count = \(count)")
+            let percentage = warmupProgress.fractionCompleted * 100
+            let formattedPercentage = String(format: "%.0f%%", percentage)
             progress.completedUnitCount = 100 + count
-            progress.localizedDescription = "Laddar in data"
+            progress.localizedDescription = "Laddar in data (\(formattedPercentage))"
             onProgress(progress)
         }) {
             pipeline = newPipeline
@@ -198,7 +202,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         onProgress(progress)
     }
     
-    func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Void) async throws -> UIImage {
+    func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
         guard pipeline != nil else {
             throw SDImageGeneratorError.notWarmedUp
         }
@@ -207,10 +211,11 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         configuration.negativePrompt = negativePrompt
         configuration.imageCount = 1
         configuration.seed = UInt32.random(in: 0...1_000_000)
-        configuration.stepCount = 15
+        configuration.stepCount = 25
         configuration.guidanceScale = 7.0
         configuration.disableSafety = false
         configuration.schedulerType = .pndmScheduler
+        configuration.targetSize = 512
         
         print("generate seed: \(configuration.seed)")
         
@@ -218,9 +223,10 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             let fraction = Float(progress.step) / Float(progress.stepCount)
             
             let firstImage = progress.currentImages.first!
-            onProgress(fraction, firstImage != nil ? UIImage(cgImage: firstImage!) : nil)
-            return true
+            return onProgress(fraction, firstImage != nil ? UIImage(cgImage: firstImage!) : nil)
         })
+        
+        pipeline!.unloadResources()
         
         guard let firstEntry = images.first, let firstImage = firstEntry else {
             throw SDImageGeneratorError.generateFailed

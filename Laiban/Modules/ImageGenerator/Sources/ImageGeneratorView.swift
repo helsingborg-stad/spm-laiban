@@ -8,12 +8,6 @@ enum Step: String {
     case Render
 }
 
-enum GenerateStatus {
-    case ShouldGenerate
-    case IsGenerating
-    case DoneGenerating(error: Error?)
-}
-
 struct SelectionView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     let items: [String: String]
@@ -117,6 +111,7 @@ struct RenderBugView: View {
     }
 }
 
+@available(iOS 17, *)
 public struct ImageGeneratorView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     
@@ -143,10 +138,8 @@ public struct ImageGeneratorView: View {
     @State var selectedShapeImageName: String?
     @State var selectedBugImageName: String?
     
-    @State var generateStatus: GenerateStatus = .ShouldGenerate
-    @State var generatedImage: UIImage?
-    @State var generateStatusText: String = ""
-
+    @State var generator: AIImageGeneratorManager = AIImageGeneratorManager()
+    
     public init() {}
 
     public var body: some View {
@@ -154,7 +147,7 @@ public struct ImageGeneratorView: View {
             if selectedStep == .Home {
                 HomeBugView(selectedStep: $selectedStep)
                     .onAppear {
-                        generateStatus = .ShouldGenerate
+                        generator.initialize()
                     }
             }
             
@@ -178,17 +171,14 @@ public struct ImageGeneratorView: View {
 
             if selectedStep == .Render {
                 RenderBugView(selectedStep: $selectedStep,
-                              image: generatedImage,
-                              statusText: generateStatusText
+                              image: generator.generatedImage,
+                              statusText: generator.statusMessage
                 )
                 .onAppear {
-                    print("Render view! \(generateStatus)")
-                    switch(generateStatus) {
-                    case .ShouldGenerate:
-                        generateImage()
-                    default:
-                        break
-                    }
+                    generateImage()
+                }
+                .onDisappear {
+                    generator.cancelGenerate()
                 }
             }
         }
@@ -211,46 +201,12 @@ public struct ImageGeneratorView: View {
     }
     
     func generateImage() {
-        Task.detached(priority: .high) {
-            do {
-                generateStatus = .IsGenerating
-                
-//                var imageGenerator = StableDiffusionImageGenerator(modelProvider: UrlModelProvider())
-                let imageGenerator = MockImageGenerator()
-                
-                print("Warming up 🔥...")
-                generateStatusText = "Värmer upp 🔥..."
-                try await imageGenerator.warmup() { progress in
-                    let percentage = progress.fractionCompleted * 100
-                    let formattedPercentage = String(format: "%.0f%%", percentage)
-                    generateStatusText = "\(formattedPercentage) \(progress.localizedDescription!)"
-                }
-                
-                let (positive, negative) = getPrompts()
-                
-                print("positive: \(positive)")
-                print("negative: \(negative)")
-                
-                print("Generating 📸...")
-                generatedImage = try await imageGenerator.generate(positivePrompt: positive, negativePrompt: negative) { fractionDone, partialImage in
-                    let percentage = fractionDone * 100
-                    let formattedPercentage = String(format: "%.0f%%", percentage)
-                    generateStatusText = "\(formattedPercentage) färdig 🚀"
-                    generatedImage = partialImage
-                }
-                
-                generateStatusText = "Klar! Så här blev din bild 🪲"
-                generateStatus = .DoneGenerating(error: nil)
-                print("image generation done")
-            } catch {
-                print("image generation failed: \(error)")
-                generateStatus = .DoneGenerating(error: error)
-                generateStatusText = "Hoppsan, något gick snett 😞"
-            }
-        }
+        let (positive, negative) = getPrompts()
+        generator.generateImage(positivePrompt: positive, negativePrompt: negative)
     }
 }
 
+@available(iOS 17, *)
 struct ImageGeneratorView_Preview: PreviewProvider {
     static var previews: some View {
         LBFullscreenContainer { _ in

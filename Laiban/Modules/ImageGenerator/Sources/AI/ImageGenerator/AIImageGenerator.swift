@@ -24,5 +24,5 @@ struct ImageGeneratorParameters {
 
 protocol AIImageGenerator {
     mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws
-    func generate(positivePrompt: String, negativePrompt: String, onProgress: (_ fractionDone: Float, _ partialImage: UIImage?) -> Void) async throws -> UIImage
+    func generate(positivePrompt: String, negativePrompt: String, onProgress: (_ fractionDone: Float, _ partialImage: UIImage?) -> Bool) async throws -> UIImage
 }

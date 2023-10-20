@@ -23,26 +23,26 @@ struct MockImageGenerator: AIImageGenerator {
         progress.localizedDescription = "laddar ner..."
         for i in 1...100 {
             dlProgress.completedUnitCount = Int64(i)
-            progress.localizedDescription = "laddar ner \(i)/100"
+            progress.localizedDescription = "laddar ner (\(i)%)"
             onProgress(progress)
-            try await Task.sleep(nanoseconds: 30_000_000)
+            try await Task.sleep(nanoseconds: 200_000_000)
         }
         
         let warmupProgress = Progress.init(totalUnitCount: 100)
         progress.addChild(warmupProgress, withPendingUnitCount: 100)
         for i in 1...100 {
             warmupProgress.completedUnitCount = Int64(i)
-            progress.localizedDescription = "warmup \(i)/100"
+            progress.localizedDescription = "warmup (\(i)%)"
             onProgress(progress)
-            try await Task.sleep(nanoseconds: 20_000_000)
+            try await Task.sleep(nanoseconds: 200_000_000)
         }
         
         
         print("MockImageGenerator warmup done")
     }
     
-    func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Void) async throws -> UIImage {
-        guard   let image = UIImage(named: "aiMockGenerate100") else {
+    func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
+        guard let image = UIImage(named: "aiMockGenerate100") else {
             throw MockImageGeneratorError.noPlaceholderImage
         }
         
@@ -52,7 +52,8 @@ struct MockImageGenerator: AIImageGenerator {
             let imageStep = i * 20
             print("imageStep: \(imageStep)")
             let image = UIImage(named: "aiMockGenerate\(imageStep)")
-            onProgress(Float(i) / 5, image)
+            
+            guard onProgress(Float(i) / 5, image) else { break }
         }
         
         return image

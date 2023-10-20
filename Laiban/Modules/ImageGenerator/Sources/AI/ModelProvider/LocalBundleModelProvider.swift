@@ -21,12 +21,12 @@ struct LocalBundleModelProvider : AIModelProvider {
     func fetchModel(_ modelName: String, _ onFetchProgress: (Float) -> Void) async throws {
         throw LocalBundleModelError.fetchMakesNoSense
     }
-
+    
     func getStoredModelURL(_ modelName: String) throws -> URL {
         guard let path = Bundle.main.path(forResource: modelName, ofType: nil, inDirectory: nil) else {
             throw LocalBundleModelError.noLocalModelFound
         }
-
+        
         return URL(filePath: path)
     }
 }
