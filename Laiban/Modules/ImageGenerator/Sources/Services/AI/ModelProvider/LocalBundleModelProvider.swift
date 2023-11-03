@@ -29,4 +29,8 @@ struct LocalBundleModelProvider : AIModelProvider {
         
         return URL(filePath: path)
     }
+    
+    func cleanModelCache() {
+        //
+    }
 }

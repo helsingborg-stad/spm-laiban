@@ -11,4 +11,5 @@ protocol AIModelProvider {
     func isModelAvailable(_ modelName: String) -> Bool
     func fetchModel(_ modelName: String, _ onFetchProgress: @escaping (_ fractionDone: Float) -> Void) async throws -> Void
     func getStoredModelURL(_ modelName: String) throws -> URL
+    func cleanModelCache() -> Void
 }

@@ -29,6 +29,7 @@ public extension StableDiffusionPipeline {
         resourcesAt: URL,
         controlNetModelNames: [String],
         config: MLModelConfiguration,
+        reduceMemory: Bool,
         onProgress: (_ progress: Foundation.Progress) -> Void) throws -> StableDiffusionPipeline {
             print("initPrewarmed")
             
@@ -130,7 +131,7 @@ public extension StableDiffusionPipeline {
                 encoder: encoder,
                 controlNet: controlNet,
                 safetyChecker: safetyChecker,
-                reduceMemory: true,
+                reduceMemory: reduceMemory,
                 useMultilingualTextEncoder: false,
                 script: nil
             )
@@ -144,8 +145,17 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
     var modelProvider: AIModelProvider
     var pipeline: StableDiffusionPipeline?
     
-    init(modelProvider: AIModelProvider) {
+    var steps: Int
+    var scale: Float
+    var size: Float
+    var reduceMemory: Bool
+    
+    init(modelProvider: AIModelProvider, steps: Int, scale: Float, size: Float, reduceMemory: Bool) {
         self.modelProvider = modelProvider
+        self.steps = steps
+        self.scale = scale
+        self.size = size
+        self.reduceMemory = reduceMemory
     }
     
     mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws {
@@ -183,15 +193,20 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         let config = MLModelConfiguration()
         config.computeUnits = .all
         
-        if let newPipeline = try? StableDiffusionPipeline.initPrewarmed(resourcesAt: modelResourceUrl, controlNetModelNames: [], config: config, onProgress: { warmupProgress in
-            let count = Int64(floor(warmupProgress.fractionCompleted * 100))
-            print("count = \(count)")
-            let percentage = warmupProgress.fractionCompleted * 100
-            let formattedPercentage = String(format: "%.0f%%", percentage)
-            progress.completedUnitCount = 100 + count
-            progress.localizedDescription = "Laddar in data (\(formattedPercentage))"
-            onProgress(progress)
-        }) {
+        if let newPipeline = try? StableDiffusionPipeline.initPrewarmed(
+                resourcesAt: modelResourceUrl,
+                controlNetModelNames: [],
+                config: config,
+                reduceMemory: self.reduceMemory,
+                onProgress: { warmupProgress in
+                    let count = Int64(floor(warmupProgress.fractionCompleted * 100))
+                    print("count = \(count)")
+                    let percentage = warmupProgress.fractionCompleted * 100
+                    let formattedPercentage = String(format: "%.0f%%", percentage)
+                    progress.completedUnitCount = 100 + count
+                    progress.localizedDescription = "Laddar in data (\(formattedPercentage))"
+                    onProgress(progress)
+                }) {
             pipeline = newPipeline
         } else {
             throw SDImageGeneratorError.warmupFailed
@@ -211,11 +226,11 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         configuration.negativePrompt = negativePrompt
         configuration.imageCount = 1
         configuration.seed = UInt32.random(in: 0...1_000_000)
-        configuration.stepCount = 25
-        configuration.guidanceScale = 7.0
+        configuration.stepCount = steps
+        configuration.guidanceScale = scale
         configuration.disableSafety = false
         configuration.schedulerType = .pndmScheduler
-        configuration.targetSize = 512
+        configuration.targetSize = size
         
         print("generate seed: \(configuration.seed)")
         

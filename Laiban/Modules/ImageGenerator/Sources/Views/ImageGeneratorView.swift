@@ -114,6 +114,7 @@ struct RenderBugView: View {
 @available(iOS 17, *)
 public struct ImageGeneratorView: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @ObservedObject var service: ImageGeneratorService
     
     let colorImageTextMapping: [String: String] = [
         "splash.red": "color red",
@@ -138,16 +139,19 @@ public struct ImageGeneratorView: View {
     @State var selectedShapeImageName: String?
     @State var selectedBugImageName: String?
     
-    @State var generator: AIImageGeneratorManager = AIImageGeneratorManager()
+    var generator: AIImageGeneratorManager?
     
-    public init() {}
+    public init(service: ImageGeneratorService) {
+        self.service = service
+        self.generator = AIImageGeneratorManager(service: service)
+    }
 
     public var body: some View {
         VStack {
             if selectedStep == .Home {
                 HomeBugView(selectedStep: $selectedStep)
                     .onAppear {
-                        generator.initialize()
+                        self.generator!.initialize()
                     }
             }
             
@@ -171,14 +175,14 @@ public struct ImageGeneratorView: View {
 
             if selectedStep == .Render {
                 RenderBugView(selectedStep: $selectedStep,
-                              image: generator.generatedImage,
-                              statusText: generator.statusMessage
+                              image: self.generator!.generatedImage,
+                              statusText: self.generator!.statusMessage
                 )
                 .onAppear {
                     generateImage()
                 }
                 .onDisappear {
-                    generator.cancelGenerate()
+                    self.generator!.cancelGenerate()
                 }
             }
         }
@@ -195,22 +199,23 @@ public struct ImageGeneratorView: View {
         ].joined(separator: ", ")
         
         return (
-            positive: userPrompt + ", bug, insect, beetle, ant, bee, single, solo, masterpiece, highres, photorealistic, realistic, photography, soft lighting, Nikon RAW Photo, Fujifilm XT3, best quality",
-            negative: "low quality, worst quality, bad hands, human, people, person, man, woman, blurry, motion blur, close up, watermark, camouflage"
+            positive: userPrompt + ", " + service.data.positivePrompt,
+            negative: service.data.negativePrompt
         )
     }
     
     func generateImage() {
         let (positive, negative) = getPrompts()
-        generator.generateImage(positivePrompt: positive, negativePrompt: negative)
+        self.generator!.generateImage(positivePrompt: positive, negativePrompt: negative)
     }
 }
 
 @available(iOS 17, *)
 struct ImageGeneratorView_Preview: PreviewProvider {
+    static var service = ImageGeneratorService()
     static var previews: some View {
         LBFullscreenContainer { _ in
-            ImageGeneratorView()
+            ImageGeneratorView(service: service)
         }.attachPreviewEnvironmentObjects()
     }
 }

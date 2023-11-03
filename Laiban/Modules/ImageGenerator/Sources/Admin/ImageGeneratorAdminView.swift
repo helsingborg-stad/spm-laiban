@@ -94,9 +94,16 @@ struct ImageGeneratorAdminViewSettings : View {
                         TextEditor(text: urlProxy)
                     }
                     
-                    Button {
-                    } label: {
-                        Text("Radera nedladdade modeller").foregroundColor(.red)
+                    if #available(iOS 16.0, *) {
+                        HStack {
+                            Button {
+                                UrlModelProvider.cleanModels()
+                            } label: {
+                                Text("Radera nedladdade modeller").foregroundColor(.red)
+                            }
+                            
+                            Text(UrlModelProvider.getModelCacheSizeString() ?? "")
+                        }
                     }
                 }
             }

@@ -27,8 +27,14 @@ class AIImageGeneratorManager {
     public var statusMessage: String
     public var generatedImage: UIImage?
     
-    init() {
-        imageGenerator = StableDiffusionImageGenerator(modelProvider: UrlModelProvider())
+    init(service: ImageGeneratorService) {
+        imageGenerator = StableDiffusionImageGenerator(
+            modelProvider: UrlModelProvider(rawUrl: service.data.downloadUrl),
+            steps: service.data.steps,
+            scale: service.data.scale,
+            size: Float(service.data.size),
+            reduceMemory: service.data.reduceMemory
+        )
 //        imageGenerator = MockImageGenerator()
         status = .WaitingForInit
         statusMessage = ""

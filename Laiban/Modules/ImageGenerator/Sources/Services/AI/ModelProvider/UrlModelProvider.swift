@@ -96,6 +96,12 @@ class ZipFileDownloader : NSObject, URLSessionDelegate, URLSessionDownloadDelega
 
 @available(iOS 16.0, *)
 struct UrlModelProvider : AIModelProvider {
+    var rawUrl: String
+    
+    init(rawUrl: String) {
+        self.rawUrl = rawUrl
+    }
+    
     static func destinationDirOf(downloadName: String) -> URL {
         let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
         return documentURL!.appendingPathComponent("models/\(downloadName)")
@@ -107,12 +113,8 @@ struct UrlModelProvider : AIModelProvider {
     
     func fetchModel(_ modelName: String, _ onFetchProgress: @escaping (Float) -> Void) async throws {
         print("fetching model.....")
-        let rawUrl =
-            """
-            https://laiban-test.s3.eu-north-1.amazonaws.com/apple_coreml-stable-diffusion-2-1-base_einsum.zip?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRzBFAiBARuuJHiDbQPsf3RODkCDfcTECrJhevpGjFV88KmQvuQIhAN7ChWVez3xO2dJJDsPmEAy7PYPOVBCywSiUIYvgsaxhKoAECNL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNDk3MDI0MzMzMTUxIgzVjF9pvVYYo%2BakcgEq1AOlNGqOBOSCDJEtqD179BLT1ItpTncsXE3fiHXOJ9gNVz13bq%2FhjMJv3FStchS55WSbIMfHZtu80CvG4PFY4XuFy1ys0D%2BQAV09YlebyXxMWEzY9jpGNZ2%2Fp%2B%2FFgfk2TIRgtpmhEy3hziR6mv5Z4e%2Bq%2BoW9ryvkbQ1dJSWhTLctXx5Ssu0AlyAndZvpcEwaJi1ZXCcsz6QhuLamXASVS7jNnFzlidzWX%2FnioA5xHGtWWRbpJLGM7yVwqwze3neGqm9m1pmrVZ6kvKB7XoOl%2BM782GQcUeJwDG%2Bk2LGb4%2FLc0oa69Wj%2B2Hu88QxkCS5YHndQmky%2Bk2%2Bmx9YTajv6PPZXc7UmrQBcXgbzzDP7imoLSRBYMxGyblXQC6snUW%2FC8hznJuMTRJq9Rf%2FfUzYkgutQvH8l%2FOQkejzbp178xOBO9a1sehoModkUn%2F5f7M9Im%2BoscDz4Q9hM2b1xT%2B%2F%2FnEyFxvE1DcueuEuin8jbHs3U6TpEeaEpipeyfS7hrisirPy3qaB5EHcPDcGIjnfWweSIwWciV4Jdv2lzzwUijTE%2BIoeIiC8uOmlTPcw%2F7mOMTO%2Fr0iq8R9zEOcWcxUd0V%2FWnWaHuldUsP8kmXU2VTXrpTJH9%2Fu8w9IjJqQY6lAKEl%2BkOn8Q1r7QL6XPDfc7oSHGEX6X%2FIrb4n1qooa8svVukdkZdcLaygLSvPzEeRfFAgHEAnNpp7%2BoTxZ04tlRINs0nDZox%2BCn2ZL3ma7iJowq7FiNpXGsTMAiU3dveSYkt3An%2BZrlzbDEjPFc%2B0awIl%2FeJeET1pJgsSlbs%2Ft603xmDc65N%2FL05pEgJ5RWyHVzEeITKzPrY%2FfFr3yi49CgoWgc5WqZSpVhzrM5c7fK947DqmX6RfV3wLCdFFCUnUT6Jzmn%2B9xn3A%2FPu7sDUdYzoMbsLWWElDLj16Iz7S2cnySxX4GYOsymPvAVRGnEEPg%2F%2BnjBpX7BhYWgRYYHWxncgI3ahGt5iDyEd6yJxkv3P0QhhMd0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231020T091244Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAXHOHVOVP23C2K47F%2F20231020%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=58b7d29690c108b234fe6a241814c15ad85f1fc6aba4b92d37081931d8ff3a83
-            """
         
-        guard let url = URL(string: rawUrl) else {
+        guard let url = URL(string: self.rawUrl) else {
             throw UrlDownloadError.badUrl
         }
         
@@ -138,5 +140,62 @@ struct UrlModelProvider : AIModelProvider {
         return UrlModelProvider.destinationDirOf(downloadName: modelName)
     }
     
+    func cleanModelCache() {
+        UrlModelProvider.cleanModels()
+    }
     
+    static func cleanModels() {
+        print("Cleaning models")
+        let modelsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            .first!
+            .appendingPathComponent("models/")
+        try? FileManager.default.removeItem(atPath: modelsURL.path())
+    }
+    
+    static func getModelCacheSizeString() -> String? {
+        let modelsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            .first!
+            .appendingPathComponent("models/")
+        
+        guard let size = try? modelsURL.sizeOnDisk() else {
+            return "Det finns inga nedladdade modeller"
+        }
+        return size
+    }
+}
+
+// https://stackoverflow.com/a/32814710
+extension URL {
+    /// check if the URL is a directory and if it is reachable
+    func isDirectoryAndReachable() throws -> Bool {
+        guard try resourceValues(forKeys: [.isDirectoryKey]).isDirectory == true else {
+            return false
+        }
+        return try checkResourceIsReachable()
+    }
+    
+    /// returns total allocated size of a the directory including its subFolders or not
+    func directoryTotalAllocatedSize(includingSubfolders: Bool = false) throws -> Int? {
+        guard try isDirectoryAndReachable() else { return nil }
+        if includingSubfolders {
+            guard
+                let urls = FileManager.default.enumerator(at: self, includingPropertiesForKeys: nil)?.allObjects as? [URL] else { return nil }
+            return try urls.lazy.reduce(0) {
+                (try $1.resourceValues(forKeys: [.totalFileAllocatedSizeKey]).totalFileAllocatedSize ?? 0) + $0
+            }
+        }
+        return try FileManager.default.contentsOfDirectory(at: self, includingPropertiesForKeys: nil).lazy.reduce(0) {
+            (try $1.resourceValues(forKeys: [.totalFileAllocatedSizeKey])
+                .totalFileAllocatedSize ?? 0) + $0
+        }
+    }
+    
+    /// returns the directory total size on disk
+    func sizeOnDisk() throws -> String? {
+        guard let size = try directoryTotalAllocatedSize(includingSubfolders: true) else { return nil }
+        URL.byteCountFormatter.countStyle = .file
+        guard let byteCount = URL.byteCountFormatter.string(for: size) else { return nil}
+        return byteCount
+    }
+    private static let byteCountFormatter = ByteCountFormatter()
 }
