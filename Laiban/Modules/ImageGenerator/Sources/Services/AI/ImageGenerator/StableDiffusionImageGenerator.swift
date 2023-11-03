@@ -44,12 +44,14 @@ public extension StableDiffusionPipeline {
             textEncoder = TextEncoder(tokenizer: tokenizer, modelAt: urls.textEncoderURL, configuration: config)
             
             // ControlNet model
+            print("control net model name(s): \(controlNetModelNames)")
             var controlNet: ControlNet? = nil
             let controlNetURLs = controlNetModelNames.map { model in
                 let fileName = model + ".mlmodelc"
                 return urls.controlNetDirURL.appending(path: fileName)
             }
             if !controlNetURLs.isEmpty {
+                print("Loading controlnet(s): \(controlNetURLs)")
                 controlNet = ControlNet(modelAt: controlNetURLs, configuration: config)
             }
             
@@ -195,7 +197,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         
         if let newPipeline = try? StableDiffusionPipeline.initPrewarmed(
                 resourcesAt: modelResourceUrl,
-                controlNetModelNames: [],
+                controlNetModelNames: ["Canny-SE"],
                 config: config,
                 reduceMemory: self.reduceMemory,
                 onProgress: { warmupProgress in
@@ -222,6 +224,8 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             throw SDImageGeneratorError.notWarmedUp
         }
         
+        let controlNetImage = UIImage(named: "controlnet-test")?.cgImage
+        
         var configuration = StableDiffusionPipeline.Configuration(prompt: positivePrompt)
         configuration.negativePrompt = negativePrompt
         configuration.imageCount = 1
@@ -231,6 +235,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         configuration.disableSafety = false
         configuration.schedulerType = .pndmScheduler
         configuration.targetSize = size
+        configuration.controlNetInputs = [controlNetImage!]
         
         print("generate seed: \(configuration.seed)")
         
