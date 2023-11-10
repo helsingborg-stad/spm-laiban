@@ -42,7 +42,7 @@ struct MockImageGenerator: AIImageGenerator {
     }
     
     func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
-        guard let image = UIImage(named: "aiMockGenerate100") else {
+        guard let image = UIImage(named: "aiMockGenerate100", in: .module, with: nil) else {
             throw MockImageGeneratorError.noPlaceholderImage
         }
         
@@ -51,7 +51,7 @@ struct MockImageGenerator: AIImageGenerator {
             
             let imageStep = i * 20
             print("imageStep: \(imageStep)")
-            let image = UIImage(named: "aiMockGenerate\(imageStep)")
+            let image = UIImage(named: "aiMockGenerate\(imageStep)", in: .module, with: nil)
             
             guard onProgress(Float(i) / 5, image) else { break }
         }

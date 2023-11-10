@@ -224,7 +224,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             throw SDImageGeneratorError.notWarmedUp
         }
         
-        let controlNetImage = UIImage(named: "controlnet-test")?.cgImage
+        let controlNetImage = UIImage(named: "controlnet-test", in: .module, with: nil)?.cgImage
         
         var configuration = StableDiffusionPipeline.Configuration(prompt: positivePrompt)
         configuration.negativePrompt = negativePrompt

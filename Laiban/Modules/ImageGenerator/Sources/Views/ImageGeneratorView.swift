@@ -20,7 +20,7 @@ struct SelectionView: View {
             Button(action: {
                 selectedItem = items[item]
             }, label: {
-                Image(item)
+                Image(item, bundle: .module)
                     .resizable()
                     .aspectRatio(1, contentMode: .fit)
                     .frame(width: (properties.contentSize.width / 3) * 0.8)
@@ -59,7 +59,7 @@ struct HomeBugView: View {
     @Binding var selectedStep: Step
 
     var body: some View {
-        Image("intro")
+        Image("intro", bundle: .module)
             .resizable()
             .aspectRatio(contentMode: .fill)
             .cornerRadius(18.0)
