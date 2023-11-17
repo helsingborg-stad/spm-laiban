@@ -111,17 +111,17 @@ public extension StableDiffusionPipeline {
             progress.completedUnitCount = 3
             onProgress(progress)
             
-            print("encoder?.loadResources")
+            print("encoder?.loadResources \(encoder != nil)")
             try encoder?.loadResources()
             progress.completedUnitCount = 4
             onProgress(progress)
             
-            print("controlNet?.loadResources")
+            print("controlNet?.loadResources \(controlNet != nil)")
             try controlNet?.loadResources()
             progress.completedUnitCount = 5
             onProgress(progress)
             
-            print("safetyChecker?.loadResources")
+            print("safetyChecker?.loadResources \(safetyChecker != nil)")
             try safetyChecker?.loadResources()
             progress.completedUnitCount = 6
             onProgress(progress)
@@ -193,11 +193,11 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         let modelResourceUrl = try modelProvider.getStoredModelURL(modelName)
         
         let config = MLModelConfiguration()
-        config.computeUnits = .all
+        config.computeUnits = .cpuAndNeuralEngine
         
         if let newPipeline = try? StableDiffusionPipeline.initPrewarmed(
                 resourcesAt: modelResourceUrl,
-                controlNetModelNames: ["Canny-SE"],
+                controlNetModelNames: ["LllyasvielSdControlnetCanny"],
                 config: config,
                 reduceMemory: self.reduceMemory,
                 onProgress: { warmupProgress in
@@ -224,7 +224,15 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             throw SDImageGeneratorError.notWarmedUp
         }
         
-        let controlNetImage = UIImage(named: "controlnet-test", in: .module, with: nil)?.cgImage
+        guard let controlNetImage = UIImage(named: "controlnet-test", in: .module, with: nil) else {
+            print("controlNetImage not found")
+            throw SDImageGeneratorError.generateFailed
+        }
+        
+        guard let cnCgImage = controlNetImage.cgImage else {
+            print("cnCgImage not valid")
+            throw SDImageGeneratorError.generateFailed
+        }
         
         var configuration = StableDiffusionPipeline.Configuration(prompt: positivePrompt)
         configuration.negativePrompt = negativePrompt
@@ -235,7 +243,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         configuration.disableSafety = false
         configuration.schedulerType = .pndmScheduler
         configuration.targetSize = size
-        configuration.controlNetInputs = [controlNetImage!]
+        configuration.controlNetInputs = [cnCgImage]
         
         print("generate seed: \(configuration.seed)")
         

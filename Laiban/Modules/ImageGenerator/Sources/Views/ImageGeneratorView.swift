@@ -117,21 +117,21 @@ public struct ImageGeneratorView: View {
     @ObservedObject var service: ImageGeneratorService
     
     let colorImageTextMapping: [String: String] = [
-        "splash.red": "color red",
-        "splash.blue": "color blue",
-        "splash.yellow": "color yellow",
+        "splash.red": "red bug, red insect, red thorax",
+        "splash.blue": "blue bug, blue insect, blue thorax",
+        "splash.yellow": "yellow bug, yellow insect, yellow thorax",
     ]
 
     let shapeImageTextMapping: [String: String] = [
-        "shape.square": "square shape",
-        "shape.tri": "triangle shape",
-        "shape.circle": "circle shape",
+        "shape.square": "",
+        "shape.tri": "",
+        "shape.circle": "",
     ]
 
     let bugImageTextMapping: [String: String] = [
-        "bug.beatle": "bug beatle",
-        "bug.butterfly": "bug butterfly",
-        "bug.wasp": "bug wasp",
+        "bug.beatle": "beetle",
+        "bug.butterfly": "butterfly",
+        "bug.wasp": "wasp",
     ]
     
     @State var selectedStep: Step = .Home
