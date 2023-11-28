@@ -157,12 +157,12 @@ public struct ImageGeneratorView: View {
     ]
 
     @State var selectedStep: Step = .Home
-    @State var selectedColorImageName: String?
-    @State var selectedShapeImageName: String?
-    @State var selectedBugImageName: String?
-    
-    var generator: AIImageGeneratorManager?
-    
+    @State var selectedColorImageName: String? = ""
+    @State var selectedShapeImageName: String? = ""
+    @State var selectedBugImageName: String? = ""
+
+    var generator: AIImageGeneratorManager
+
     public init(service: ImageGeneratorService) {
         self.service = service
         self.generator = AIImageGeneratorManager(service: service)
@@ -173,7 +173,7 @@ public struct ImageGeneratorView: View {
             if selectedStep == .Home {
                 HomeBugView(selectedStep: $selectedStep)
                     .onAppear {
-                        self.generator!.initialize()
+                        self.generator.initialize()
                     }
             }
             
@@ -197,14 +197,14 @@ public struct ImageGeneratorView: View {
 
             if selectedStep == .Render {
                 RenderView(selectedStep: $selectedStep,
-                              image: self.generator!.generatedImage,
-                              statusText: self.generator!.statusMessage
+                              image: self.generator.generatedImage,
+                              statusText: self.generator.statusMessage
                 )
                 .onAppear {
                     generateImage()
                 }
                 .onDisappear {
-                    self.generator!.cancelGenerate()
+                    self.generator.cancelGenerate()
                 }
             }
         }
@@ -229,7 +229,7 @@ public struct ImageGeneratorView: View {
     
     func generateImage() {
         let (positive, negative) = getPrompts()
-        self.generator!.generateImage(positivePrompt: positive, negativePrompt: negative)
+        self.generator.generateImage(positivePrompt: positive, negativePrompt: negative)
     }
 }
 
