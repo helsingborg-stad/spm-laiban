@@ -10,10 +10,12 @@ enum Step: String {
 
 @available(iOS 15.0, *)
 struct DefaultButton: ButtonStyle {
+    @Environment(\.fullscreenContainerProperties) var properties
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.title)
-            .padding()
+            .padding(properties.spacing[.m])
             .background(Color(.systemPurple))
             .foregroundStyle(.white)
             .clipShape(Capsule())
@@ -135,7 +137,7 @@ struct RenderView: View {
 public struct ImageGeneratorView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     @ObservedObject var service: ImageGeneratorService
-    
+
     let colorImageTextMapping: [String: String] = [
         "splash.red": "red bug, red insect, red thorax",
         "splash.blue": "blue bug, blue insect, blue thorax",
@@ -143,9 +145,9 @@ public struct ImageGeneratorView: View {
     ]
 
     let shapeImageTextMapping: [String: String] = [
-        "shape.square": "",
-        "shape.tri": "",
-        "shape.circle": "",
+        "shape.square": "square",
+        "shape.tri": "triangle",
+        "shape.circle": "circle",
     ]
 
     let bugImageTextMapping: [String: String] = [
@@ -153,7 +155,7 @@ public struct ImageGeneratorView: View {
         "bug.butterfly": "butterfly",
         "bug.wasp": "wasp",
     ]
-    
+
     @State var selectedStep: Step = .Home
     @State var selectedColorImageName: String?
     @State var selectedShapeImageName: String?
@@ -206,7 +208,8 @@ public struct ImageGeneratorView: View {
                 }
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(maxWidth: .infinity,
+               maxHeight: .infinity)
         .padding(properties.spacing[.m])
         .primaryContainerBackground()
     }
