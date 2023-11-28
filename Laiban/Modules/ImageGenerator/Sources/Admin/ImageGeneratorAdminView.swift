@@ -85,6 +85,15 @@ struct ImageGeneratorAdminViewSettings : View {
         })
     }
     
+    var useControlNetProxy: Binding<Bool> {
+        Binding<Bool>(get: {
+            return service.data.useControlNet
+        }, set: {
+            service.data.useControlNet = $0
+            service.save()
+        })
+    }
+    
     var body: some View {
         Form() {
             Section(header: Text("Modelinställningar"), footer: Text("Dessa inställningar påverkar modelen som används för bildgenerering. Modellen styr i grova drag utseendet på bilderna (t.ex. realistisk eller tecknad) samt kan påverka kvaliteten på subjektet i bilden.")) {
@@ -149,6 +158,12 @@ struct ImageGeneratorAdminViewSettings : View {
             Section(footer: Text("Att reducera minnesanvändningen kan förhindra att appen kraschar, men gör att bildgenereringen tar längre tid. Rekommenderat: på.")) {
                 Toggle(isOn: reduceMemoryProxy) {
                     Text("Reducera minnesanvändning")
+                }
+            }
+            
+            Section(footer: Text("ControlNet används för att i detalj finjustera formen som genereras (t.ex. att vara en fyrkant eller cirkel) men kräver att modellen som används stödjer det. Rekommenderat: beroende på modell.")) {
+                Toggle(isOn: useControlNetProxy) {
+                    Text("Använd ControlNet")
                 }
             }
         }

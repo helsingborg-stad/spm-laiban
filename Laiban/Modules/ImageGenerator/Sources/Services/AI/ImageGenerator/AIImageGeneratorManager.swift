@@ -33,7 +33,8 @@ class AIImageGeneratorManager {
             steps: service.data.steps,
             scale: service.data.scale,
             size: Float(service.data.size),
-            reduceMemory: service.data.reduceMemory
+            reduceMemory: service.data.reduceMemory,
+            useControlNet: service.data.useControlNet
         )
 //        imageGenerator = MockImageGenerator()
         status = .WaitingForInit
@@ -51,11 +52,10 @@ class AIImageGeneratorManager {
                 print("[AIImageGeneratorManager] warming up...")
                 statusMessage = "Laddar..."
                 
-                try await imageGenerator.warmup { [self] progress in
-                    print("[AIImageGeneratorManager] warmup: \(progress.fractionCompleted)")
-//                    let percentage = progress.fractionCompleted * 100
-//                    let formattedPercentage = String(format: "%.0f%%", percentage)
-                    statusMessage = progress.localizedDescription //"\(formattedPercentage) \(progress.localizedDescription!)"
+                try await ImageGeneratorUtils.withBenchmark("warmup") {
+                    try await imageGenerator.warmup { [self] progress in
+                        statusMessage = progress.localizedDescription
+                    }
                 }
                 
                 print("[AIImageGeneratorManager] warmup done")
@@ -87,14 +87,16 @@ class AIImageGeneratorManager {
                 print("[AIImageGeneratorManager] positive: \(positivePrompt)")
                 print("[AIImageGeneratorManager] negative: \(negativePrompt)")
                 
-                generatedImage = try await imageGenerator.generate(
-                    positivePrompt: positivePrompt,
-                    negativePrompt: negativePrompt) { fractionDone, partialImage in
-                    let percentage = fractionDone * 100
-                    let formattedPercentage = String(format: "%.0f%%", percentage)
-                    statusMessage = "\(formattedPercentage) färdig 🚀"
-                    generatedImage = partialImage
-                    return status == .Generating
+                try await ImageGeneratorUtils.withBenchmark("generate") {
+                    generatedImage = try await imageGenerator.generate(
+                        positivePrompt: positivePrompt,
+                        negativePrompt: negativePrompt) { fractionDone, partialImage in
+                            let percentage = fractionDone * 100
+                            let formattedPercentage = String(format: "%.0f%%", percentage)
+                            statusMessage = "\(formattedPercentage) färdig 🚀"
+                            generatedImage = partialImage
+                            return status == .Generating
+                        }
                 }
                 
                 guard status == .Generating else {

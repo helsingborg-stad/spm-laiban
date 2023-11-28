@@ -70,16 +70,20 @@ class ZipFileDownloader : NSObject, URLSessionDelegate, URLSessionDownloadDelega
             return
         }
         
+        print("Download done (status: \(response.statusCode))")
+        
         guard response.statusCode == 200 else {
             self.onDone(location, UrlDownloadError.badStatus(code: response.statusCode))
             return
         }
         
         do {
+            print("Unzipping files")
             let destinationURL = UrlModelProvider.destinationDirOf(downloadName: self.downloadName)
             let fileManager = FileManager()
             try fileManager.createDirectory(at: destinationURL, withIntermediateDirectories: true, attributes: nil)
             try fileManager.unzipItem(at: location, to: destinationURL)
+            print("Unzip done")
             self.onDone(destinationURL, nil)
         } catch {
             self.onDone(nil, error)
@@ -108,31 +112,41 @@ struct UrlModelProvider : AIModelProvider {
     }
     
     func isModelAvailable(_ modelName: String) -> Bool {
+        print("model files -----")
+        let fileManager = FileManager()
+        let dirEnum = fileManager.enumerator(atPath: UrlModelProvider.destinationDirOf(downloadName: modelName).path())
+        while let file = dirEnum?.nextObject() as? String {
+            print(file)
+        }
+        print("--------------------")
         return FileManager.default.fileExists(atPath: UrlModelProvider.destinationDirOf(downloadName: modelName).path())
     }
     
     func fetchModel(_ modelName: String, _ onFetchProgress: @escaping (Float) -> Void) async throws {
-        print("fetching model.....")
-        
         guard let url = URL(string: self.rawUrl) else {
             throw UrlDownloadError.badUrl
         }
+        
+        print("fetchModel \(url)")
         
         let downloader = ZipFileDownloader(onProgress: onFetchProgress)
         
         var done = false
         var dlError: Error? = nil
-        downloader.startDownload(modelName, url: url) { location, error in
-            done = true
-            dlError = error
+        
+        try await ImageGeneratorUtils.withBenchmark("fetchModel") {
+            downloader.startDownload(modelName, url: url) { location, error in
+                done = true
+                dlError = error
+            }
+            
+            while !done {
+                try await Task.sleep(nanoseconds: 1 * 1_000_000_000)
+            }
         }
         
         guard (dlError == nil) else {
             throw dlError!
-        }
-        
-        while !done {
-            try await Task.sleep(nanoseconds: 1 * 1_000_000_000)
         }
     }
     

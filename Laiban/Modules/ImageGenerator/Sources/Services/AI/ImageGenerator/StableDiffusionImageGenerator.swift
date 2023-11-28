@@ -151,17 +151,19 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
     var scale: Float
     var size: Float
     var reduceMemory: Bool
+    var useControlNet: Bool
     
-    init(modelProvider: AIModelProvider, steps: Int, scale: Float, size: Float, reduceMemory: Bool) {
+    init(modelProvider: AIModelProvider, steps: Int, scale: Float, size: Float, reduceMemory: Bool, useControlNet: Bool) {
         self.modelProvider = modelProvider
         self.steps = steps
         self.scale = scale
         self.size = size
         self.reduceMemory = reduceMemory
+        self.useControlNet = useControlNet
     }
     
     mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws {
-        let modelName = "apple_coreml-stable-diffusion-2-1-base_einsum"
+        let modelName = "ai-sd-model"
         
         guard pipeline == nil else {
             print("already warmed up")
@@ -172,7 +174,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         let progress = Progress(totalUnitCount: 200)
         
         if !modelProvider.isModelAvailable(modelName) {
-            print("downloading model '\(modelName)'")
+            print("downloading model")
             let downloadProgress = Progress(totalUnitCount: 100)
             progress.addChild(downloadProgress, withPendingUnitCount: 100)
             try await modelProvider.fetchModel(modelName) { fractionDone in
@@ -181,8 +183,8 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
                 let formattedPercentage = String(format: "%.0f%%", percentage)
                 progress.localizedDescription = "laddar ner AI model (\(formattedPercentage))"
                 onProgress(progress)
-                print("fetch progress: \(fractionDone)")
             }
+            print("download done")
         } else {
             print("model '\(modelName)' already available")
             progress.completedUnitCount = 100
@@ -195,22 +197,22 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         let config = MLModelConfiguration()
         config.computeUnits = .cpuAndNeuralEngine
         
-        if let newPipeline = try? StableDiffusionPipeline.initPrewarmed(
-                resourcesAt: modelResourceUrl,
-                controlNetModelNames: ["LllyasvielSdControlnetCanny"],
-                config: config,
-                reduceMemory: self.reduceMemory,
-                onProgress: { warmupProgress in
-                    let count = Int64(floor(warmupProgress.fractionCompleted * 100))
-                    print("count = \(count)")
-                    let percentage = warmupProgress.fractionCompleted * 100
-                    let formattedPercentage = String(format: "%.0f%%", percentage)
-                    progress.completedUnitCount = 100 + count
-                    progress.localizedDescription = "Laddar in data (\(formattedPercentage))"
-                    onProgress(progress)
-                }) {
-            pipeline = newPipeline
-        } else {
+        do {
+            pipeline = try StableDiffusionPipeline.initPrewarmed(
+                            resourcesAt: modelResourceUrl,
+                            controlNetModelNames: self.useControlNet ? ["LllyasvielSdControlnetCanny"] : [],
+                            config: config,
+                            reduceMemory: self.reduceMemory,
+                            onProgress: { warmupProgress in
+                                let count = Int64(floor(warmupProgress.fractionCompleted * 100))
+                                let percentage = warmupProgress.fractionCompleted * 100
+                                let formattedPercentage = String(format: "%.0f%%", percentage)
+                                progress.completedUnitCount = 100 + count
+                                progress.localizedDescription = "Laddar in data (\(formattedPercentage))"
+                                onProgress(progress)
+                            })
+        } catch {
+            print("warmup failed: \(error)")
             throw SDImageGeneratorError.warmupFailed
         }
         
@@ -224,16 +226,6 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             throw SDImageGeneratorError.notWarmedUp
         }
         
-        guard let controlNetImage = UIImage(named: "controlnet-test", in: .module, with: nil) else {
-            print("controlNetImage not found")
-            throw SDImageGeneratorError.generateFailed
-        }
-        
-        guard let cnCgImage = controlNetImage.cgImage else {
-            print("cnCgImage not valid")
-            throw SDImageGeneratorError.generateFailed
-        }
-        
         var configuration = StableDiffusionPipeline.Configuration(prompt: positivePrompt)
         configuration.negativePrompt = negativePrompt
         configuration.imageCount = 1
@@ -243,7 +235,19 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         configuration.disableSafety = false
         configuration.schedulerType = .pndmScheduler
         configuration.targetSize = size
-        configuration.controlNetInputs = [cnCgImage]
+        
+        if(self.useControlNet) {
+            guard let controlNetImage = UIImage(named: "controlnet-test", in: .module, with: nil) else {
+                print("controlNetImage not found")
+                throw SDImageGeneratorError.generateFailed
+            }
+            
+            guard let cnCgImage = controlNetImage.cgImage else {
+                print("cnCgImage not valid")
+                throw SDImageGeneratorError.generateFailed
+            }
+            configuration.controlNetInputs = [cnCgImage]
+        }
         
         print("generate seed: \(configuration.seed)")
         
