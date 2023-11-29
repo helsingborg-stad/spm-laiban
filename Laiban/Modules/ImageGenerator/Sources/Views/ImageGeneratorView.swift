@@ -165,7 +165,7 @@ public struct ImageGeneratorView: View {
         "bug.dragonfly": "dragonfly",
         "bug.grasshopper": "grasshopper",
         "bug.spider": "spider",
-        "bug.unknown": "unknown",
+        "bug.ladybug": "ladybug",
         "bug.wasp": "wasp",
     ]
 
@@ -230,7 +230,7 @@ public struct ImageGeneratorView: View {
     func getPrompts() -> (positive: String, negative: String) {
         let userPrompt = [
             selectedColorImageName!,
-            selectedShapeImageName!,
+//            selectedShapeImageName!,
             selectedBugImageName!
         ].joined(separator: ", ")
         
