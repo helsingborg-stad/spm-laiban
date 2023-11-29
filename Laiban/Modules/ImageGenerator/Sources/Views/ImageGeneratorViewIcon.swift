@@ -2,8 +2,8 @@ import SwiftUI
 
 public struct ImageGeneratorViewIcon : View {
     public var body:some View {
-        LBEmojiBadgeView(emoji: "🤖", rimColor: .pink)
+        LBEmojiBadgeView(emoji: "🤖", rimColor: .purple)
     }
-    
+
     public init() {}
 }

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "bug.beatle.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "control-weird-filled-canny.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

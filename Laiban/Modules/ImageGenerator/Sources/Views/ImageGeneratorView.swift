@@ -48,11 +48,11 @@ struct SelectionView: View {
         }
         .frame(maxWidth: .infinity)
 
-//        let displayText: String = selectedItem != nil ? "Prompt: \(selectedItem!)" : selectedStep.rawValue
-//
-//        Text(displayText)
-//            .font(properties.font, ofSize: .xxl)
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        let displayText: String = selectedItem != nil ? "Prompt: \(selectedItem!)" : selectedStep.rawValue
+
+        Text(displayText)
+            .font(properties.font, ofSize: .xxl)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
 
         if selectedItem != nil {
             Button("Gå vidare") {
