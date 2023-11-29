@@ -119,7 +119,7 @@ struct RenderView: View {
                         .resizable()
                         .cornerRadius(18.0)
                         .aspectRatio(contentMode: .fit)
-                        .frame(maxWidth: .infinity, maxHeight: 512)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -142,13 +142,13 @@ public struct ImageGeneratorView: View {
         "splash.red": "red bug, red insect, red thorax",
         "splash.blue": "blue bug, blue insect, blue thorax",
         "splash.yellow": "yellow bug, yellow insect, yellow thorax",
-        "splash.pink": "pink bug, yellow insect, pink thorax",
-        "splash.black": "black bug, yellow insect, black thorax",
-        "splash.brown": "brown bug, yellow insect, brown thorax",
-        "splash.gray": "gray bug, yellow insect, gray thorax",
-        "splash.green": "green bug, yellow insect, green thorax",
-        "splash.purple": "purple bug, yellow insect, purple thorax",
-        "splash.turquoise-blue": "turquoise bug, yellow insect, turquoise thorax",
+        "splash.pink": "pink bug, pink insect, pink thorax",
+        "splash.black": "black bug, black insect, black thorax",
+        "splash.brown": "brown bug, brown insect, brown thorax",
+        "splash.gray": "gray bug, gray insect, gray thorax",
+        "splash.green": "green bug, green insect, green thorax",
+        "splash.purple": "purple bug, purple insect, purple thorax",
+        "splash.turquoise-blue": "turquoise bug, turquoise insect, turquoise thorax",
     ]
 
     let shapeImageTextMapping: [String: String] = [
