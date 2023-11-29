@@ -41,7 +41,7 @@ struct SelectionView: View {
                     .resizable()
                     .aspectRatio(1, contentMode: .fit)
                     .cornerRadius(18.0)
-                    .frame(width: (properties.contentSize.width / 3) * 0.8)
+                    .frame(width: (properties.contentSize.width / 3) * 0.6)
                     .padding(10)
                     .shadow(color: selectedItem == items[item] ? Color.gray : Color.clear, radius: 5)
             })
@@ -142,6 +142,13 @@ public struct ImageGeneratorView: View {
         "splash.red": "red bug, red insect, red thorax",
         "splash.blue": "blue bug, blue insect, blue thorax",
         "splash.yellow": "yellow bug, yellow insect, yellow thorax",
+        "splash.pink": "pink bug, yellow insect, pink thorax",
+        "splash.black": "black bug, yellow insect, black thorax",
+        "splash.brown": "brown bug, yellow insect, brown thorax",
+        "splash.gray": "gray bug, yellow insect, gray thorax",
+        "splash.green": "green bug, yellow insect, green thorax",
+        "splash.purple": "purple bug, yellow insect, purple thorax",
+        "splash.turquoise-blue": "turquoise bug, yellow insect, turquoise thorax",
     ]
 
     let shapeImageTextMapping: [String: String] = [
@@ -151,8 +158,14 @@ public struct ImageGeneratorView: View {
     ]
 
     let bugImageTextMapping: [String: String] = [
-        "bug.beatle": "beetle",
+        "bug.ant": "ant",
+        "bug.beetle": "beetle",
         "bug.butterfly": "butterfly",
+        "bug.cockroach": "cockroach",
+        "bug.dragonfly": "dragonfly",
+        "bug.grasshopper": "grasshopper",
+        "bug.spider": "spider",
+        "bug.unknown": "unknown",
         "bug.wasp": "wasp",
     ]
 
