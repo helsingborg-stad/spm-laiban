@@ -126,10 +126,18 @@ struct RenderView: View {
             .padding(50)
         }
 
-        Button("Börja om från början") {
-            selectedStep = .Home
+        if statusText == "Klar 🎉 Så här blev din bild:" {
+            Button("Spara bilden till 'Bilder'") {
+                guard let image = image else { return }
+                let imageSaver = ImageSaver()
+                imageSaver.writeToPhotoAlbum(image: image)
+            }.buttonStyle(DefaultButton())
+            Spacer()
+            Button("Börja om från början") {
+                selectedStep = .Home
+            }
+            .buttonStyle(DefaultButton())
         }
-        .buttonStyle(DefaultButton())
     }
 }
 
