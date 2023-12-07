@@ -129,7 +129,16 @@ struct RenderView: View {
         if statusText == "Klar 🎉 Så här blev din bild:" {
             Button("Spara bilden till 'Bilder'") {
                 guard let image = image else { return }
+
                 let imageSaver = ImageSaver()
+                imageSaver.successHandler = {
+                    print("Save success!")
+                }
+
+                imageSaver.errorHandler = {
+                    print("Oops: \($0.localizedDescription)")
+                }
+
                 imageSaver.writeToPhotoAlbum(image: image)
             }.buttonStyle(DefaultButton())
             Spacer()
@@ -161,18 +170,22 @@ public struct ImageGeneratorView: View {
 
     let shapeImageTextMapping: [String: String] = [
         "shape.square": "square",
-        "shape.tri": "triangle",
+        "shape.tri": "a plane figure with three straight sides and three angles",
         "shape.circle": "circle",
     ]
 
     let bugImageTextMapping: [String: String] = [
         "bug.ant": "ant",
         "bug.beetle": "beetle",
-        "bug.butterfly": "butterfly",
+        "bug.butterfly": """
+        A nectar-feeding insect with two pairs of large, typically brightly colored wings that are covered with microscopic scales. Butterflies are distinguished from moths by having clubbed or dilated antennae, holding their wings erect when at rest, and being active by day, fit frame
+        """,
         "bug.cockroach": "cockroach",
         "bug.dragonfly": "dragonfly",
         "bug.grasshopper": "grasshopper",
-        "bug.spider": "spider",
+        "bug.spider": """
+        an eight-legged predatory arachnid with an unsegmented body consisting of a fused head and thorax and a rounded abdomen. Spiders have fangs which inject poison into their prey, and most kinds spin webs in which to capture insects, fit frame
+        """,
         "bug.ladybug": "ladybug",
         "bug.wasp": "wasp",
     ]
@@ -238,7 +251,7 @@ public struct ImageGeneratorView: View {
     func getPrompts() -> (positive: String, negative: String) {
         let userPrompt = [
             selectedColorImageName!,
-//            selectedShapeImageName!,
+            selectedShapeImageName!,
             selectedBugImageName!
         ].joined(separator: ", ")
         
