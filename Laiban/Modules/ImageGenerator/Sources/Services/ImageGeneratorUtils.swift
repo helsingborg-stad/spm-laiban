@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import Shout
 
 class ImageGeneratorUtils {
+    static var Logger = Shout("ImageGenerator")
+    
     static func withBenchmark(_ tag: String, _ block: () async throws -> Void) async throws {
         let start = Date()
         try await block()
@@ -19,6 +22,6 @@ class ImageGeneratorUtils {
         formatter.zeroFormattingBehavior = .pad
         let formattedString = formatter.string(from: time)
         
-        print("'\(tag)' done. Took \(formattedString ?? "?")")
+        Logger.info("'\(tag)' done. Took \(formattedString ?? "?")")
     }
 }

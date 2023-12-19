@@ -43,13 +43,13 @@ class AIImageGeneratorManager {
     }
     
     func initialize() {
-        Task.detached(priority: .high) { [self] in
+        Task.init(priority: .high) { [self] in
             guard status == .WaitingForInit else { return }
             
             status = .Initializing
             
             do {
-                print("[AIImageGeneratorManager] warming up...")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] warming up...")
                 statusMessage = "Laddar..."
                 
                 try await ImageGeneratorUtils.withBenchmark("warmup") {
@@ -58,11 +58,11 @@ class AIImageGeneratorManager {
                     }
                 }
                 
-                print("[AIImageGeneratorManager] warmup done")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] warmup done")
                 status = .Idle
                 statusMessage = "Redo för att skapa bilder 🖼️"
             } catch {
-                print("[AIImageGeneratorManager] warmup failed (\(error))")
+                ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] warmup failed (\(error))")
                 status = .InitializeFailed
                 statusMessage = "Hoppsan, kunde inte starta upp ordentligt ☔️"
             }
@@ -70,12 +70,12 @@ class AIImageGeneratorManager {
     }
     
     func generateImage(positivePrompt: String, negativePrompt: String) {
-        Task.detached(priority: .high) { [self] in
+        Task.init(priority: .high) { [self] in
             do {
                 while status == .Initializing { try await Task.sleep(nanoseconds: 1_000_000_000) }
                 
                 guard status == .Idle || status == .GenerateSuccess || status == .GenerateFailed else {
-                    print("[AIImageGeneratorManager] unexpected status for generate image: \(status)")
+                    ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] unexpected status for generate image: \(status)")
                     return
                 }
                 
@@ -83,9 +83,9 @@ class AIImageGeneratorManager {
                 status = .Generating
                 statusMessage = "Vänta lite..."
                 
-                print("[AIImageGeneratorManager] generating")
-                print("[AIImageGeneratorManager] positive: \(positivePrompt)")
-                print("[AIImageGeneratorManager] negative: \(negativePrompt)")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generating")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] positive: \(positivePrompt)")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] negative: \(negativePrompt)")
                 
                 try await ImageGeneratorUtils.withBenchmark("generate") {
                     generatedImage = try await imageGenerator.generate(
@@ -100,15 +100,15 @@ class AIImageGeneratorManager {
                 }
                 
                 guard status == .Generating else {
-                    print("[AIImageGeneratorManager] generate cancelled")
+                    ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generate cancelled")
                     return
                 }
                 
-                print("[AIImageGeneratorManager] generate success")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generate success")
                 status = .GenerateSuccess
                 statusMessage = "Klar 🎉 Så här blev din bild:"
             } catch {
-                print("[AIImageGeneratorManager] generate failed: \(error)")
+                ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] generate failed: \(error)")
                 status = .GenerateFailed
                 statusMessage = "Hoppsan, något gick snett 😞"
             }

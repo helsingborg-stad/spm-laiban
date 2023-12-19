@@ -38,7 +38,7 @@ class ZipFileDownloader : NSObject, URLSessionDelegate, URLSessionDownloadDelega
         
         let expectedDestination = UrlModelProvider.destinationDirOf(downloadName: name)
         guard !FileManager.default.fileExists(atPath: expectedDestination.path()) else {
-            print("\(downloadName) already exists (assuming OK): \(expectedDestination.path())")
+            ImageGeneratorUtils.Logger.info("\(downloadName) already exists (assuming OK): \(expectedDestination.path())")
             onDone(expectedDestination, nil)
             return
         }
@@ -70,7 +70,7 @@ class ZipFileDownloader : NSObject, URLSessionDelegate, URLSessionDownloadDelega
             return
         }
         
-        print("Download done (status: \(response.statusCode))")
+        ImageGeneratorUtils.Logger.info("Download done (status: \(response.statusCode))")
         
         guard response.statusCode == 200 else {
             self.onDone(location, UrlDownloadError.badStatus(code: response.statusCode))
@@ -78,12 +78,12 @@ class ZipFileDownloader : NSObject, URLSessionDelegate, URLSessionDownloadDelega
         }
         
         do {
-            print("Unzipping files")
+            ImageGeneratorUtils.Logger.info("Unzipping files")
             let destinationURL = UrlModelProvider.destinationDirOf(downloadName: self.downloadName)
             let fileManager = FileManager()
             try fileManager.createDirectory(at: destinationURL, withIntermediateDirectories: true, attributes: nil)
             try fileManager.unzipItem(at: location, to: destinationURL)
-            print("Unzip done")
+            ImageGeneratorUtils.Logger.info("Unzip done")
             self.onDone(destinationURL, nil)
         } catch {
             self.onDone(nil, error)
@@ -112,13 +112,13 @@ struct UrlModelProvider : AIModelProvider {
     }
     
     func isModelAvailable(_ modelName: String) -> Bool {
-        print("model files -----")
+        ImageGeneratorUtils.Logger.info("model files -----")
         let fileManager = FileManager()
         let dirEnum = fileManager.enumerator(atPath: UrlModelProvider.destinationDirOf(downloadName: modelName).path())
         while let file = dirEnum?.nextObject() as? String {
-            print(file)
+            ImageGeneratorUtils.Logger.info(file)
         }
-        print("--------------------")
+        ImageGeneratorUtils.Logger.info("--------------------")
         return FileManager.default.fileExists(atPath: UrlModelProvider.destinationDirOf(downloadName: modelName).path())
     }
     
@@ -127,7 +127,7 @@ struct UrlModelProvider : AIModelProvider {
             throw UrlDownloadError.badUrl
         }
         
-        print("fetchModel \(url)")
+        ImageGeneratorUtils.Logger.info("fetchModel \(url)")
         
         let downloader = ZipFileDownloader(onProgress: onFetchProgress)
         
@@ -159,7 +159,7 @@ struct UrlModelProvider : AIModelProvider {
     }
     
     static func cleanModels() {
-        print("Cleaning models")
+        ImageGeneratorUtils.Logger.info("Cleaning models")
         let modelsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             .first!
             .appendingPathComponent("models/")

@@ -31,7 +31,7 @@ public extension StableDiffusionPipeline {
         config: MLModelConfiguration,
         reduceMemory: Bool,
         onProgress: (_ progress: Foundation.Progress) -> Void) throws -> StableDiffusionPipeline {
-            print("initPrewarmed")
+            ImageGeneratorUtils.Logger.info("initPrewarmed")
             
             let progress = Foundation.Progress(totalUnitCount: 6)
             onProgress(progress)
@@ -44,14 +44,14 @@ public extension StableDiffusionPipeline {
             textEncoder = TextEncoder(tokenizer: tokenizer, modelAt: urls.textEncoderURL, configuration: config)
             
             // ControlNet model
-            print("control net model name(s): \(controlNetModelNames)")
+            ImageGeneratorUtils.Logger.info("control net model name(s): \(controlNetModelNames)")
             var controlNet: ControlNet? = nil
             let controlNetURLs = controlNetModelNames.map { model in
                 let fileName = model + ".mlmodelc"
                 return urls.controlNetDirURL.appending(path: fileName)
             }
             if !controlNetURLs.isEmpty {
-                print("Loading controlnet(s): \(controlNetURLs)")
+                ImageGeneratorUtils.Logger.info("Loading controlnet(s): \(controlNetURLs)")
                 controlNet = ControlNet(modelAt: controlNetURLs, configuration: config)
             }
             
@@ -83,46 +83,52 @@ public extension StableDiffusionPipeline {
             
             // Optional safety checker
             var safetyChecker: SafetyChecker? = nil
-            if FileManager.default.fileExists(atPath: urls.safetyCheckerURL.path) {
-                safetyChecker = SafetyChecker(modelAt: urls.safetyCheckerURL, configuration: config)
-            }
+//            if FileManager.default.fileExists(atPath: urls.safetyCheckerURL.path) {
+//                safetyChecker = SafetyChecker(modelAt: urls.safetyCheckerURL, configuration: config)
+//            }
             
             // Optional Image Encoder
-            let encoder: Encoder?
-            if FileManager.default.fileExists(atPath: urls.encoderURL.path) {
-                encoder = Encoder(modelAt: urls.encoderURL, configuration: config)
-            } else {
-                encoder = nil
-            }
+            let encoder: Encoder? = nil
+//            if FileManager.default.fileExists(atPath: urls.encoderURL.path) {
+//                encoder = Encoder(modelAt: urls.encoderURL, configuration: config)
+//            } else {
+//                encoder = nil
+//            }
             
             // Begin warmup
-            print("textEncoder.loadResources")
+            ImageGeneratorUtils.Logger.info("textEncoder.loadResources")
             try textEncoder.loadResources()
+            try textEncoder.unloadResources()
             progress.completedUnitCount = 1
             onProgress(progress)
             
-            print("unet.loadResources")
+            ImageGeneratorUtils.Logger.info("unet.loadResources")
             try unet.loadResources()
+            try unet.unloadResources()
             progress.completedUnitCount = 2
             onProgress(progress)
             
-            print("decoder.loadResources")
+            ImageGeneratorUtils.Logger.info("decoder.loadResources")
             try decoder.loadResources()
+            try decoder.unloadResources()
             progress.completedUnitCount = 3
             onProgress(progress)
             
-            print("encoder?.loadResources \(encoder != nil)")
+            ImageGeneratorUtils.Logger.info("encoder?.loadResources \(encoder != nil)")
             try encoder?.loadResources()
+            try encoder?.unloadResources()
             progress.completedUnitCount = 4
             onProgress(progress)
             
-            print("controlNet?.loadResources \(controlNet != nil)")
+            ImageGeneratorUtils.Logger.info("controlNet?.loadResources \(controlNet != nil)")
             try controlNet?.loadResources()
+            try controlNet?.unloadResources()
             progress.completedUnitCount = 5
             onProgress(progress)
             
-            print("safetyChecker?.loadResources \(safetyChecker != nil)")
+            ImageGeneratorUtils.Logger.info("safetyChecker?.loadResources \(safetyChecker != nil)")
             try safetyChecker?.loadResources()
+            try safetyChecker?.unloadResources()
             progress.completedUnitCount = 6
             onProgress(progress)
             
@@ -140,6 +146,68 @@ public extension StableDiffusionPipeline {
             
             return newPipeline
         }
+    
+    static func loadTest(resourcesAt: URL, config: MLModelConfiguration) {
+        Task.init(priority: .high) {
+            do {
+                ImageGeneratorUtils.Logger.info("model files -----")
+                let fileManager = FileManager()
+                let dirEnum = fileManager.enumerator(atPath: UrlModelProvider.destinationDirOf(downloadName: "ai-sd-model").path())
+                while let file = dirEnum?.nextObject() as? String {
+                    ImageGeneratorUtils.Logger.info(file)
+                }
+                ImageGeneratorUtils.Logger.info("--------------------")
+                
+                if #available(iOS 17.0, *) {
+                    let computeUnits = MLModel.availableComputeDevices
+                    for computeUnit in computeUnits {
+                        ImageGeneratorUtils.Logger.info("computeUnit: \(String(describing: computeUnit))")
+                    }
+                }
+                
+                ImageGeneratorUtils.Logger.info("start load test")
+                let urls = ResourceURLs(resourcesAt: resourcesAt)
+                let cnUrl = urls.controlNetDirURL.appending(path: "LllyasvielSdControlnetCanny.mlmodelc")
+                var mlModel, mlModel1, mlModel2, cnModel: MLModel?
+                var unet: Unet?
+                var cn: ControlNet?
+                
+//                ImageGeneratorUtils.Logger.info("loadTest manual async")
+//                try await ImageGeneratorUtils.withBenchmark("loadTest manual") {
+//                    mlModel = try await MLModel.load(contentsOf: urls.unetURL, configuration: config)
+//                }
+//                try await ImageGeneratorUtils.withBenchmark("loadTest (chunk1) manual") {
+//                    mlModel1 = try await MLModel.load(contentsOf: urls.controlledUnetChunk1URL, configuration: config)
+//                }
+//                try await ImageGeneratorUtils.withBenchmark("loadTest (chunk2) manual") {
+//                    mlModel2 = try await MLModel.load(contentsOf: urls.controlledUnetChunk2URL, configuration: config)
+//                }
+//                try await ImageGeneratorUtils.withBenchmark("loadTest (controlNet) manual") {
+//                    cnModel = try await MLModel.load(contentsOf: cnUrl)
+//                }
+                
+                ImageGeneratorUtils.Logger.info("loadTest stable-diffusion Unet.loadResources")
+//                try await ImageGeneratorUtils.withBenchmark("loadTest Unet.loadResources()") {
+//                    unet = Unet(modelAt: urls.unetURL, configuration: config)
+//                    try unet!.loadResources()
+//                }
+                try await ImageGeneratorUtils.withBenchmark("loadTest (chunked) Unet.loadResources()") {
+                    unet = Unet(chunksAt: [urls.controlledUnetChunk1URL, urls.controlledUnetChunk2URL],
+                                configuration: config)
+                    try unet!.loadResources()
+                }
+                try await ImageGeneratorUtils.withBenchmark("loadTest ControlNet.loadResources()") {
+                    cn = ControlNet(modelAt: [cnUrl], configuration: config)
+                    try cn!.loadResources()
+                }
+                
+                ImageGeneratorUtils.Logger.info("load test done")
+            } catch {
+                ImageGeneratorUtils.Logger.error("load test failed: \(String(describing: error))")
+            }
+            
+        }
+    }
 }
 
 @available(iOS 17, *)
@@ -160,21 +228,30 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         self.size = size
         self.reduceMemory = reduceMemory
         self.useControlNet = useControlNet
+        //doLoadTest()
+    }
+    
+    func doLoadTest() {
+        let modelName = "ai-sd-model"
+        let modelResourceUrl = try! modelProvider.getStoredModelURL(modelName)
+        let config = MLModelConfiguration()
+        config.computeUnits = .cpuAndNeuralEngine
+        StableDiffusionPipeline.loadTest(resourcesAt: modelResourceUrl, config: config)
     }
     
     mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws {
         let modelName = "ai-sd-model"
         
         guard pipeline == nil else {
-            print("already warmed up")
+            ImageGeneratorUtils.Logger.info("already warmed up")
             return
         }
-        print("warming up")
+        ImageGeneratorUtils.Logger.info("warming up")
         
         let progress = Progress(totalUnitCount: 200)
         
         if !modelProvider.isModelAvailable(modelName) {
-            print("downloading model")
+            ImageGeneratorUtils.Logger.info("downloading model")
             let downloadProgress = Progress(totalUnitCount: 100)
             progress.addChild(downloadProgress, withPendingUnitCount: 100)
             try await modelProvider.fetchModel(modelName) { fractionDone in
@@ -184,9 +261,9 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
                 progress.localizedDescription = "laddar ner AI model (\(formattedPercentage))"
                 onProgress(progress)
             }
-            print("download done")
+            ImageGeneratorUtils.Logger.info("download done")
         } else {
-            print("model '\(modelName)' already available")
+            ImageGeneratorUtils.Logger.info("model '\(modelName)' already available")
             progress.completedUnitCount = 100
             progress.localizedDescription = "Sätter upp bildgenerering"
             onProgress(progress)
@@ -212,7 +289,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
                                 onProgress(progress)
                             })
         } catch {
-            print("warmup failed: \(error)")
+            ImageGeneratorUtils.Logger.error("warmup failed: \(error)")
             throw SDImageGeneratorError.warmupFailed
         }
         
@@ -237,19 +314,19 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         configuration.targetSize = size
         
         if(self.useControlNet) {
-            guard let controlNetImage = UIImage(named: "controlnet-test", in: .module, with: nil) else {
-                print("controlNetImage not found")
+            guard let controlNetImage = UIImage(named: "cn_input_triangle_canny", in: .module, with: nil) else {
+                ImageGeneratorUtils.Logger.error("controlNetImage not found")
                 throw SDImageGeneratorError.generateFailed
             }
             
             guard let cnCgImage = controlNetImage.cgImage else {
-                print("cnCgImage not valid")
+                ImageGeneratorUtils.Logger.error("cnCgImage not valid")
                 throw SDImageGeneratorError.generateFailed
             }
             configuration.controlNetInputs = [cnCgImage]
         }
         
-        print("generate seed: \(configuration.seed)")
+        ImageGeneratorUtils.Logger.info("generate seed: \(configuration.seed)")
         
         let images = try pipeline!.generateImages(configuration: configuration, progressHandler: { progress in
             let fraction = Float(progress.step) / Float(progress.stepCount)
@@ -261,6 +338,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         pipeline!.unloadResources()
         
         guard let firstEntry = images.first, let firstImage = firstEntry else {
+            ImageGeneratorUtils.Logger.error("No image generated (unknown error)")
             throw SDImageGeneratorError.generateFailed
         }
         
