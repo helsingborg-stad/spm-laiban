@@ -20,4 +20,5 @@ public struct ImageGeneratorServiceModel: Codable {
     public var size: Int = 512
     public var reduceMemory: Bool = true
     public var useControlNet: Bool = true
+    public var initOnStartup: Bool = false
 }

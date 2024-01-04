@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 17, *)
 struct ImageGeneratorAdminView : View {
     @ObservedObject var service: ImageGeneratorService
     var body: some View {
@@ -19,6 +20,7 @@ struct ImageGeneratorAdminView : View {
     }
 }
 
+@available(iOS 17, *)
 struct ImageGeneratorAdminViewSettings : View {
     @ObservedObject var service: ImageGeneratorService
     
@@ -94,8 +96,23 @@ struct ImageGeneratorAdminViewSettings : View {
         })
     }
     
+    var initOnStartupProxy: Binding<Bool> {
+        Binding<Bool>(get: {
+            return service.data.initOnStartup
+        }, set: {
+            service.data.initOnStartup = $0
+            service.save()
+        })
+    }
+    
     var body: some View {
         Form() {
+            Section(footer: Text("Att ladda in data vid app-start gör så att man snabbare kan komma igång med att generera bilder, men tar upp mer minne på enheten. Rekommenderat: på om bildgenerering används mycket, annars av.")) {
+                Toggle(isOn: initOnStartupProxy) {
+                    Text("Ladda in data vid app-start")
+                }
+            }
+            
             Section(header: Text("Modelinställningar"), footer: Text("Dessa inställningar påverkar modelen som används för bildgenerering. Modellen styr i grova drag utseendet på bilderna (t.ex. realistisk eller tecknad) samt kan påverka kvaliteten på subjektet i bilden.")) {
                 Section {
                     HStack {

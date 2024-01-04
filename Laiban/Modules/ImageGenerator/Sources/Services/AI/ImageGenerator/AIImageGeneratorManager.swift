@@ -20,7 +20,7 @@ enum GenerateStatus {
 
 @available(iOS 17, *)
 @Observable
-class AIImageGeneratorManager {
+public class AIImageGeneratorManager {
     var imageGenerator: AIImageGenerator
     var status: GenerateStatus
     
@@ -36,7 +36,9 @@ class AIImageGeneratorManager {
             reduceMemory: service.data.reduceMemory,
             useControlNet: service.data.useControlNet
         )
+        
 //        imageGenerator = MockImageGenerator()
+        
         status = .WaitingForInit
         statusMessage = ""
         generatedImage = nil

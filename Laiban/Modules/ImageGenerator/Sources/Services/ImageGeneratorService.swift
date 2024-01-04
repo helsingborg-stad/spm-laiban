@@ -15,7 +15,10 @@ public extension LBViewIdentity {
 
 public typealias ImageGeneratorStorageService = CodableLocalJSONService<ImageGeneratorServiceModel>
 
+@available(iOS 17, *)
 public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGeneratorStorageService>, LBAdminService, LBDashboardItem {
+    lazy var manager: AIImageGeneratorManager = AIImageGeneratorManager(service: self)
+    
     public convenience init() {
         self.init(
             emptyValue: ImageGeneratorServiceModel(),
@@ -52,4 +55,10 @@ public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGenera
     ///----------------------------------------
     /// end LBAdminService
     ///----------------------------------------
+
+    public func initStartupCheck() {
+        if(data.initOnStartup && manager.status == .WaitingForInit) {
+            manager.initialize()
+        }
+    }
 }

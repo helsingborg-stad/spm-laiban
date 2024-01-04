@@ -199,7 +199,7 @@ public struct ImageGeneratorView: View {
 
     public init(service: ImageGeneratorService) {
         self.service = service
-        self.generator = AIImageGeneratorManager(service: service)
+        self.generator = service.manager
     }
 
     public var body: some View {
