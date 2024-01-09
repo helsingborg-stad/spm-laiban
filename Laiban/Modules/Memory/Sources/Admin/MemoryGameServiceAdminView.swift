@@ -18,6 +18,7 @@ struct MemoryGameServiceAdminView: View {
             }
             Toggle("Slumpa bland aktiva spel", isOn: $service.data.memoryGamesAtRandomEnabled)
                 .disabled(service.data.defaultMemoryGames.count < 2)
+            Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
         }
     }
     var body: some View {

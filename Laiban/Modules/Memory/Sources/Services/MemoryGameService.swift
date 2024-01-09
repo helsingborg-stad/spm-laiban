@@ -25,7 +25,7 @@ public class MemoryGameService : CTS<MemoryGameServiceModel,CodableLocalJSONServ
     public convenience init() {
         self.init(emptyValue: MemoryGameServiceModel(), storageOptions: .init(filename: "MemoryGameData", foldername: "MemoryGameService"))
         self.$data.sink { model in
-            self.isAvailable = model.defaultMemoryGames.isEmpty == false
+            self.isAvailable = !model.defaultMemoryGames.isEmpty && model.showOnDashboard
         }.store(in: &cancellabled)
     }
 }
