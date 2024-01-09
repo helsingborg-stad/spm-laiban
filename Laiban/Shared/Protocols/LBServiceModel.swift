@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol LBServiceModel {
-    var showOnDashboard: Bool { get, set }
+    var showOnDashboard: Bool { get set }
 }
