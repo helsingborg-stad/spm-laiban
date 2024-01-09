@@ -39,6 +39,7 @@ struct FoodAdminView: View {
             //            }.id("FoodWasteStatistics")
 
             Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
+                .foregroundColor(service.data.foodLink != nil ? .blue : .gray)
                 .disabled(service.data.foodLink == nil)
         }
         .onReceive(service.$data) { _ in
