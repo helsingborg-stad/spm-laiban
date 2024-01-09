@@ -8,7 +8,7 @@
 import Foundation
 import Meals
 
-public struct FoodServiceModel: Equatable, Decodable, Encodable {
+public struct FoodServiceModel: LBServiceModel, Equatable, Decodable, Encodable {
 //    var unitCode: String = ""
     public var foodProcessingMethod = FoodProcessingMethod.wordFilter
     public var foodLink: Skolmaten.School? = nil

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MemoryGameServiceModel: Codable, Equatable {
+public struct MemoryGameServiceModel: LBServiceModel, Codable, Equatable {
     public var defaultMemoryGames:[DefaultMemoryGame] = []
     public var memoryGamesAtRandomEnabled:Bool = false
     public var showOnDashboard: Bool = false
