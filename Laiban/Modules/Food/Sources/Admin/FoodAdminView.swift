@@ -37,6 +37,9 @@ struct FoodAdminView: View {
             //            NavigationLink(destination: AdminFoodWasteView(model: model, wasteManager: appState.foodWasteManager)) {
             //                Text("Matsvinn")
             //            }.id("FoodWasteStatistics")
+
+            Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
+                .disabled(service.data.foodLink == nil)
         }
         .onReceive(service.$data) { _ in
             service.save()

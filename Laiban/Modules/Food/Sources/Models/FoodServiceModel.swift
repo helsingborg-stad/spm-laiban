@@ -14,4 +14,5 @@ public struct FoodServiceModel: Equatable, Decodable, Encodable {
     public var foodLink: Skolmaten.School? = nil
 //    var maxFoodWastePerPerson: Int = 300
 //    var maxNumberOfPeoapleEating: Int = 50
+    public var showOnDashboard: Bool = false
 }

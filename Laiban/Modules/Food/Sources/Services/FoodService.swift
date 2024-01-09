@@ -91,7 +91,7 @@ public class FoodService: CTS<FoodServiceModel, FoodProcessingStorageService>, L
         
         self.$data.sink { model in
             self.mealsService.service = model.foodLink
-            self.isAvailable = model.foodLink != nil
+            self.isAvailable = model.foodLink != nil && model.showOnDashboard
             // makes sure that the translation script is triggered
             if model.foodProcessingMethod != self.data.foodProcessingMethod {
                 self.mealsService.fetch(force: true)
