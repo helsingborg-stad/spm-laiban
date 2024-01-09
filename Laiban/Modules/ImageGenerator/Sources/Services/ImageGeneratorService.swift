@@ -24,6 +24,10 @@ public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGenera
             emptyValue: ImageGeneratorServiceModel(),
             storageOptions: .init(filename: "ImagGeneratorServiceModel", foldername: "ImageGenerator")
         )
+
+        self.$data.sink { model in
+            self.isAvailable =  model.showOnDashboard
+        }.store(in: &cancellables)
     }
     
     ///----------------------------------------
@@ -35,7 +39,7 @@ public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGenera
         $isAvailable.eraseToAnyPublisher()
     }
     
-    @Published public var isAvailable: Bool = true
+    @Published public private(set) var isAvailable: Bool = false
     ///----------------------------------------
     /// end LBDashboardItem
     ///----------------------------------------

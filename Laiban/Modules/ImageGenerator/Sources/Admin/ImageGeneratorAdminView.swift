@@ -17,6 +17,8 @@ struct ImageGeneratorAdminView : View {
                 Text("Bildgenerering")
             }.id("ImageGeneratorSettings")
         }
+        Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
+            .disabled(service.data.downloadUrl == nil)
     }
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ImageGeneratorServiceModel: Codable {
+public struct ImageGeneratorServiceModel: LBServiceModel, Codable {
     public var downloadUrl: String = "https://laiban-test.s3.eu-north-1.amazonaws.com/sd-15-se-q6-canny.zip"
     public var positivePrompt: String = """
     masterpiece, best quality, absurdres, high quality, photorealistic, photography, macro, symmetrical, centered, simple background, plain background, single, sharp
@@ -21,4 +21,5 @@ public struct ImageGeneratorServiceModel: Codable {
     public var reduceMemory: Bool = true
     public var useControlNet: Bool = true
     public var initOnStartup: Bool = false
+    public var showOnDashboard: Bool = false
 }
