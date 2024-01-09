@@ -41,7 +41,7 @@ struct MockImageGenerator: AIImageGenerator {
         print("MockImageGenerator warmup done")
     }
     
-    func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
+    func generate(params: ImageGeneratorParameters, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
         guard let image = UIImage(named: "aiMockGenerate100", in: .module, with: nil) else {
             throw MockImageGeneratorError.noPlaceholderImage
         }

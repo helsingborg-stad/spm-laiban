@@ -13,7 +13,7 @@ public struct ImageGeneratorServiceModel: Codable {
     masterpiece, best quality, absurdres, high quality, photorealistic, photography, macro, symmetrical, centered, simple background, plain background, single, sharp
     """
     public var negativePrompt: String = """
-    low quality, bad quality, worst quality, blurry, distorted, deformed, text, watermark, nsfw, nudity, human, people, person, man, woman, child, asymmetrical, cropped, cut off, frame, framed, painting, drawing, multiple, many
+    low quality, bad quality, framed, frame, painting, worst quality, blurry, distorted, deformed, text, watermark, nsfw, nudity, human, people, person, man, woman, child, asymmetrical, cropped, cut off, drawing, multiple, many
     """
     public var steps: Int = 15
     public var scale: Float = 9.0

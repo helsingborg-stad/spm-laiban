@@ -18,7 +18,7 @@ public typealias ImageGeneratorStorageService = CodableLocalJSONService<ImageGen
 @available(iOS 17, *)
 public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGeneratorStorageService>, LBAdminService, LBDashboardItem {
     lazy var manager: AIImageGeneratorManager = AIImageGeneratorManager(service: self)
-    
+    public var cancellables = Set<AnyCancellable>()
     public convenience init() {
         self.init(
             emptyValue: ImageGeneratorServiceModel(),

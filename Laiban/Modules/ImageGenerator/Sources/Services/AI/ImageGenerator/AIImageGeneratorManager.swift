@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Combine
 
 enum GenerateStatus {
     case WaitingForInit
@@ -27,6 +28,8 @@ public class AIImageGeneratorManager {
     public var statusMessage: String
     public var generatedImage: UIImage?
     
+    private var cancellables = Set<AnyCancellable>()
+    
     init(service: ImageGeneratorService) {
         imageGenerator = StableDiffusionImageGenerator(
             modelProvider: UrlModelProvider(rawUrl: service.data.downloadUrl),
@@ -42,6 +45,16 @@ public class AIImageGeneratorManager {
         status = .WaitingForInit
         statusMessage = ""
         generatedImage = nil
+        
+        service.$data.sink() { _ in
+            var sdig = self.imageGenerator as? StableDiffusionImageGenerator
+            sdig?.updateGenenerationSettings(
+                steps: service.data.steps,
+                scale: service.data.scale,
+                size: Float(service.data.size),
+                reduceMemory: service.data.reduceMemory,
+                useControlNet: service.data.useControlNet)
+        }.store(in: &cancellables)
     }
     
     func initialize() {
@@ -71,7 +84,7 @@ public class AIImageGeneratorManager {
         }
     }
     
-    func generateImage(positivePrompt: String, negativePrompt: String) {
+    func generateImage(params: ImageGeneratorParameters) {
         Task.init(priority: .high) { [self] in
             do {
                 while status == .Initializing { try await Task.sleep(nanoseconds: 1_000_000_000) }
@@ -86,13 +99,12 @@ public class AIImageGeneratorManager {
                 statusMessage = "Vänta lite..."
                 
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generating")
-                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] positive: \(positivePrompt)")
-                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] negative: \(negativePrompt)")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] positive: \(params.positivePrompt)")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] negative: \(params.negativePrompt)")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] shape image: \(params.shapeImageId)")
                 
                 try await ImageGeneratorUtils.withBenchmark("generate") {
-                    generatedImage = try await imageGenerator.generate(
-                        positivePrompt: positivePrompt,
-                        negativePrompt: negativePrompt) { fractionDone, partialImage in
+                    generatedImage = try await imageGenerator.generate(params: params) { fractionDone, partialImage in
                             let percentage = fractionDone * 100
                             let formattedPercentage = String(format: "%.0f%%", percentage)
                             statusMessage = "\(formattedPercentage) färdig 🚀"

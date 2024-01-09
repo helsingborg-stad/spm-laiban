@@ -211,7 +211,7 @@ public extension StableDiffusionPipeline {
 }
 
 @available(iOS 17, *)
-struct StableDiffusionImageGenerator: AIImageGenerator {
+class StableDiffusionImageGenerator: AIImageGenerator {
     var modelProvider: AIModelProvider
     var pipeline: StableDiffusionPipeline?
     
@@ -229,6 +229,15 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         self.reduceMemory = reduceMemory
         self.useControlNet = useControlNet
         //doLoadTest()
+        ImageGeneratorUtils.Logger.info("[StableDiffusionImageGenerator] init")
+    }
+    
+    public func updateGenenerationSettings(steps: Int, scale: Float, size: Float, reduceMemory: Bool, useControlNet: Bool) {
+        self.steps = steps
+        self.scale = scale
+        self.size = size
+        self.reduceMemory = reduceMemory
+        self.useControlNet = useControlNet
     }
     
     func doLoadTest() {
@@ -239,7 +248,7 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         StableDiffusionPipeline.loadTest(resourcesAt: modelResourceUrl, config: config)
     }
     
-    mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws {
+    func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws {
         let modelName = "ai-sd-model"
         
         guard pipeline == nil else {
@@ -298,23 +307,25 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
         onProgress(progress)
     }
     
-    func generate(positivePrompt: String, negativePrompt: String, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
+    func generate(params: ImageGeneratorParameters, onProgress: (Float, UIImage?) -> Bool) async throws -> UIImage {
         guard pipeline != nil else {
             throw SDImageGeneratorError.notWarmedUp
         }
         
-        var configuration = StableDiffusionPipeline.Configuration(prompt: positivePrompt)
-        configuration.negativePrompt = negativePrompt
+        var configuration = StableDiffusionPipeline.Configuration(prompt: params.positivePrompt)
+        configuration.negativePrompt = params.negativePrompt
         configuration.imageCount = 1
-        configuration.seed = UInt32.random(in: 0...1_000_000)
+        configuration.seed = params.seed ?? UInt32.random(in: 0...1_000_000)
         configuration.stepCount = steps
         configuration.guidanceScale = scale
         configuration.disableSafety = false
         configuration.schedulerType = .pndmScheduler
         configuration.targetSize = size
+        configuration.useDenoisedIntermediates = true
+        ImageGeneratorUtils.Logger.info("generate seed: \(configuration.seed), steps: \(configuration.stepCount), size: \(configuration.targetSize)")
         
         if(self.useControlNet) {
-            guard let controlNetImage = UIImage(named: "cn_input_triangle_canny", in: .module, with: nil) else {
+            guard let controlNetImage = UIImage(named: params.shapeImageId ?? "cn_canny_triangle_1", in: .module, with: nil) else {
                 ImageGeneratorUtils.Logger.error("controlNetImage not found")
                 throw SDImageGeneratorError.generateFailed
             }
@@ -325,8 +336,6 @@ struct StableDiffusionImageGenerator: AIImageGenerator {
             }
             configuration.controlNetInputs = [cnCgImage]
         }
-        
-        ImageGeneratorUtils.Logger.info("generate seed: \(configuration.seed)")
         
         let images = try pipeline!.generateImages(configuration: configuration, progressHandler: { progress in
             let fraction = Float(progress.step) / Float(progress.stepCount)

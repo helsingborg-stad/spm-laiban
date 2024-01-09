@@ -35,7 +35,7 @@ struct SelectionView: View {
         LBGridView(items: items.count, columns: 3, verticalSpacing: 7, horizontalSpacing: 7, verticalAlignment: .top, horizontalAlignment: .center) { i in
             let item = Array(items.keys)[i]
             Button(action: {
-                selectedItem = items[item]
+                selectedItem = item
             }, label: {
                 Image(item, bundle: .module)
                     .resizable()
@@ -43,7 +43,7 @@ struct SelectionView: View {
                     .cornerRadius(18.0)
                     .frame(width: (properties.contentSize.width / 3) * 0.6)
                     .padding(10)
-                    .shadow(color: selectedItem == items[item] ? Color.gray : Color.clear, radius: 5)
+                    .shadow(color: selectedItem == item ? Color.gray : Color.clear, radius: 5)
             })
         }
         .frame(maxWidth: .infinity)
@@ -169,25 +169,27 @@ public struct ImageGeneratorView: View {
     ]
 
     let shapeImageTextMapping: [String: String] = [
-        "shape.square": "square",
-        "shape.tri": "a plane figure with three straight sides and three angles",
-        "shape.circle": "circle",
+        "shape.square": "square, rounded square",
+        "shape.tri": "triangle, a plane figure with three straight sides and three angles",
+        "shape.circle": "circle, round",
+    ]
+    
+    let shapeImageIdMapping: [String: [String]] = [
+        "shape.square": ["cn_canny_square_1", "cn_canny_square_2"],
+        "shape.tri": ["cn_canny_triangle_1", "cn_canny_triangle_2", "cn_canny_triangle_3"],
+        "shape.circle": ["cn_canny_circle_1", "cn_canny_circle_2"],
     ]
 
     let bugImageTextMapping: [String: String] = [
-        "bug.ant": "ant",
-        "bug.beetle": "beetle",
-        "bug.butterfly": """
-        A nectar-feeding insect with two pairs of large, typically brightly colored wings that are covered with microscopic scales. Butterflies are distinguished from moths by having clubbed or dilated antennae, holding their wings erect when at rest, and being active by day, fit frame
-        """,
-        "bug.cockroach": "cockroach",
-        "bug.dragonfly": "dragonfly",
-        "bug.grasshopper": "grasshopper",
-        "bug.spider": """
-        an eight-legged predatory arachnid with an unsegmented body consisting of a fused head and thorax and a rounded abdomen. Spiders have fangs which inject poison into their prey, and most kinds spin webs in which to capture insects, fit frame
-        """,
-        "bug.ladybug": "ladybug",
-        "bug.wasp": "wasp",
+        "bug.ant": "ant, antennas, six legs",
+        "bug.beetle": "beetle, wings, legs, hard shell",
+        "bug.butterfly": "butterfly, moth",
+        "bug.cockroach": "cockroach, roach",
+        "bug.dragonfly": "dragonfly, damselfly, anisoptera",
+        "bug.grasshopper": "grasshopper, cricket, katydid",
+        "bug.spider": "spider, eight legs, arachnid",
+        "bug.ladybug": "ladybug, wings, dotted, spots",
+        "bug.wasp": "wasp, hornet, bee, wings",
     ]
 
     @State var selectedStep: Step = .Home
@@ -250,9 +252,9 @@ public struct ImageGeneratorView: View {
     
     func getPrompts() -> (positive: String, negative: String) {
         let userPrompt = [
-            selectedColorImageName!,
-            selectedShapeImageName!,
-            selectedBugImageName!
+            bugImageTextMapping[selectedBugImageName!]!,
+            colorImageTextMapping[selectedColorImageName!]!,
+            shapeImageTextMapping[selectedShapeImageName!]!
         ].joined(separator: ", ")
         
         return (
@@ -261,9 +263,18 @@ public struct ImageGeneratorView: View {
         )
     }
     
+    func getRandomShapeImageId() -> String {
+        let possibilities = shapeImageIdMapping[selectedShapeImageName!]
+        let randomIndex = Int.random(in: 0...(possibilities!.count - 1))
+        return possibilities![randomIndex]
+    }
+    
     func generateImage() {
         let (positive, negative) = getPrompts()
-        self.generator.generateImage(positivePrompt: positive, negativePrompt: negative)
+        self.generator.generateImage(params: ImageGeneratorParameters(
+            positivePrompt: positive,
+            negativePrompt: negative,
+            shapeImageId: getRandomShapeImageId()))
     }
 }
 

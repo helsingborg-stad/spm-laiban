@@ -105,8 +105,14 @@ struct ImageGeneratorAdminViewSettings : View {
         })
     }
     
+    
     var body: some View {
-        Form() {
+        var managerIsBusy = [.Initializing, .Generating].contains(service.manager.status)
+        Form {
+            if managerIsBusy {
+                Section(header: Text("Väntar på att bildgeneratorn ska bli redo...(\(service.manager.statusMessage))")) { }
+            }
+            
             Section(footer: Text("Att ladda in data vid app-start gör så att man snabbare kan komma igång med att generera bilder, men tar upp mer minne på enheten. Rekommenderat: på om bildgenerering används mycket, annars av.")) {
                 Toggle(isOn: initOnStartupProxy) {
                     Text("Ladda in data vid app-start")
@@ -151,7 +157,7 @@ struct ImageGeneratorAdminViewSettings : View {
             Section(footer: Text("Antal steg är hur 'djupt' AI:n går in på detalj. Fler steg ger generellt bättre/tydligare bilder men tar längre tid att generera. För många steg kan resultera i att appen kraschar. Rekommenderat: 10-30.")) {
                 HStack {
                     Text("Steg")
-                    Slider(value: stepsProxy, in: 1...50, step: 1)
+                    Slider(value: stepsProxy, in: 2...50, step: 1)
                     Text("\(service.data.steps)")
                 }
             }
@@ -183,6 +189,6 @@ struct ImageGeneratorAdminViewSettings : View {
                     Text("Använd ControlNet")
                 }
             }
-        }
+        }.disabled(managerIsBusy)
     }
 }

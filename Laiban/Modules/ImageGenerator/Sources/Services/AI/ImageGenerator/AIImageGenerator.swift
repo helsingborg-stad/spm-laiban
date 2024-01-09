@@ -11,18 +11,18 @@ import UIKit
 struct ImageGeneratorParameters {
     var positivePrompt: String
     var negativePrompt: String
-    var seed: UInt32
-    var scale: Float
+    var shapeImageId: String?
+    var seed: UInt32?
     
-    init(positivePrompt: String, negativePrompt: String, seed: UInt32, scale: Float) {
+    init(positivePrompt: String, negativePrompt: String, shapeImageId: String? = nil, seed: UInt32? = nil) {
         self.positivePrompt = positivePrompt
         self.negativePrompt = negativePrompt
+        self.shapeImageId = shapeImageId
         self.seed = seed
-        self.scale = scale
     }
 }
 
 protocol AIImageGenerator {
     mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws
-    func generate(positivePrompt: String, negativePrompt: String, onProgress: (_ fractionDone: Float, _ partialImage: UIImage?) -> Bool) async throws -> UIImage
+    func generate(params: ImageGeneratorParameters, onProgress: (_ fractionDone: Float, _ partialImage: UIImage?) -> Bool) async throws -> UIImage
 }
