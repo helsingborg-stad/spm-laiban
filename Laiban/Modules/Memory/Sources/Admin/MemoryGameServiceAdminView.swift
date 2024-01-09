@@ -10,16 +10,22 @@ import SwiftUI
 struct MemoryGameServiceAdminView: View {
     @ObservedObject var service:MemoryGameService
     var group: some View {
-        Group {
+        let gamesCount = service.data.defaultMemoryGames.count
+        return Group {
             NavigationLink(destination: MemoryGameServiceGamesAdminView(service: service)){
                 Text("Aktiva memoryspel")
                 Spacer()
-                Text("\(service.data.defaultMemoryGames.count)")
+                Text("\(gamesCount)")
             }
             Toggle("Slumpa bland aktiva spel", isOn: $service.data.memoryGamesAtRandomEnabled)
-                .disabled(service.data.defaultMemoryGames.count < 2)
+                .disabled(gamesCount < 2)
             Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
-                .disabled(service.data.defaultMemoryGames.count < 1)
+                .onAppear {
+                    if gamesCount < 1 {
+                        service.data.showOnDashboard = false
+                    }
+                }
+                .disabled(gamesCount < 1)
         }
     }
     var body: some View {
