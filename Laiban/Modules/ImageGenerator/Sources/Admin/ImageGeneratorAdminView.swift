@@ -12,13 +12,20 @@ import SwiftUI
 struct ImageGeneratorAdminView : View {
     @ObservedObject var service: ImageGeneratorService
     var body: some View {
-        Group {
+        let serviceNotEnabled = $service.data.downloadUrl == nil || [.Initializing, .Generating].contains(service.manager.status)
+        return Group {
             NavigationLink(destination: ImageGeneratorAdminViewSettings(service: service)){
                 Text("Bildgenerering")
             }.id("ImageGeneratorSettings")
+
+            Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
+                .onAppear {
+                    if serviceNotEnabled {
+                        service.data.showOnDashboard = false
+                    }
+                }
+                .disabled(serviceNotEnabled)
         }
-        Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
-            .disabled(service.data.downloadUrl == nil)
     }
 }
 
