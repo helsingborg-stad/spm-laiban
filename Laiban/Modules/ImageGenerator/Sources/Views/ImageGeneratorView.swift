@@ -175,21 +175,21 @@ public struct ImageGeneratorView: View {
     ]
     
     let shapeImageIdMapping: [String: [String]] = [
-        "shape.square": ["cn_canny_square_1", "cn_canny_square_2"],
-        "shape.tri": ["cn_canny_triangle_1", "cn_canny_triangle_2", "cn_canny_triangle_3"],
-        "shape.circle": ["cn_canny_circle_1", "cn_canny_circle_2"],
+        "shape.square": ["cn_scribble_square_1", "cn_scribble_square_2", "cn_scribble_square_3"],
+        "shape.tri": ["cn_scribble_triangle_1", "cn_scribble_triangle_2", "cn_scribble_triangle_3"],
+        "shape.circle": ["cn_scribble_circle_3"],
     ]
 
     let bugImageTextMapping: [String: String] = [
-        "bug.ant": "ant, antennas, six legs",
-        "bug.beetle": "beetle, wings, legs, hard shell",
-        "bug.butterfly": "butterfly, moth",
-        "bug.cockroach": "cockroach, roach",
-        "bug.dragonfly": "dragonfly, damselfly, anisoptera",
-        "bug.grasshopper": "grasshopper, cricket, katydid",
-        "bug.spider": "spider, eight legs, arachnid",
-        "bug.ladybug": "ladybug, wings, dotted, spots",
-        "bug.wasp": "wasp, hornet, bee, wings",
+        "bug.ant": "ant, antennas, six legs, insect, bug, EdobBugs",
+        "bug.beetle": "beetle, wings, legs, hard shell, insect, bug, EdobBugs",
+        "bug.butterfly": "butterfly, moth, insect, bug, EdobBugs",
+        "bug.cockroach": "cockroach, roach, insect, bug, EdobBugs",
+        "bug.dragonfly": "dragonfly, damselfly, anisoptera, insect, bug, EdobBugs",
+        "bug.grasshopper": "grasshopper, cricket, katydid, insect, bug, EdobBugs",
+        "bug.spider": "spider, eight legs, arachnid, insect, bug, EdobBugs",
+        "bug.ladybug": "ladybug, wings, dotted, spots, insect, bug, EdobBugs",
+        "bug.wasp": "wasp, hornet, bee, wings, insect, bug, EdobBugs",
     ]
 
     @State var selectedStep: Step = .Home

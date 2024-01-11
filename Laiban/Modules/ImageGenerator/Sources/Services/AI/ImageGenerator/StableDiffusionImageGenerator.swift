@@ -286,7 +286,7 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         do {
             pipeline = try StableDiffusionPipeline.initPrewarmed(
                             resourcesAt: modelResourceUrl,
-                            controlNetModelNames: self.useControlNet ? ["LllyasvielSdControlnetCanny"] : [],
+                            controlNetModelNames: self.useControlNet ? ["LllyasvielSdControlnetScribble"] : [],
                             config: config,
                             reduceMemory: self.reduceMemory,
                             onProgress: { warmupProgress in
@@ -319,7 +319,8 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         configuration.stepCount = steps
         configuration.guidanceScale = scale
         configuration.disableSafety = false
-        configuration.schedulerType = .pndmScheduler
+        configuration.schedulerType = .dpmSolverMultistepScheduler
+        configuration.schedulerTimestepSpacing = .karras
         configuration.targetSize = size
         configuration.useDenoisedIntermediates = true
         ImageGeneratorUtils.Logger.info("generate seed: \(configuration.seed), steps: \(configuration.stepCount), size: \(configuration.targetSize)")
