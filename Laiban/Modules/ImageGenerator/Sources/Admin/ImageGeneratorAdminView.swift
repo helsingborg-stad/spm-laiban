@@ -14,9 +14,14 @@ struct ImageGeneratorAdminView : View {
     var body: some View {
         let serviceNotEnabled = $service.data.downloadUrl == nil || [.Initializing, .Generating].contains(service.manager.status)
         return Group {
-            NavigationLink(destination: ImageGeneratorAdminViewSettings(service: service)){
+            NavigationLink(destination: ImageGeneratorAdminViewSettings(service: service)) {
                 Text("Bildgenerering")
             }.id("ImageGeneratorSettings")
+
+            NavigationLink(destination: InstructionsAdminView()) {
+                Text("Lärarhandledning")
+            }.id("ImageGeneratornInstructions")
+
 
             Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
                 .onAppear {
