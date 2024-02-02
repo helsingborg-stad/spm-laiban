@@ -16,7 +16,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.2.3"),
         .package(url: "https://github.com/helsingborg-stad/spm-daisy", from: "1.0.4"),
-        .package(url: "https://github.com/apple/ml-stable-diffusion.git", from: "1.1.0")
+        .package(url: "https://github.com/apple/ml-stable-diffusion.git", from: "1.1.0"),
+        .package(url: "https://github.com/weichsel/ZIPFoundation.git", .upToNextMajor(from: "0.9.0"))
     ],
     targets: [
         .target(
@@ -26,6 +27,7 @@ let package = Package(
                 "SharedActivities",
                 "TextAutoCorrector",
                 "UDPipe",
+                "ZIPFoundation",
                 .product(name: "TTS",                package: "spm-daisy"),
                 .product(name: "Shout",              package: "spm-daisy"),
                 .product(name: "Assistant",          package: "spm-daisy"),
@@ -36,6 +38,7 @@ let package = Package(
                 .product(name: "Instagram",          package: "spm-daisy"),
                 .product(name: "Weather",            package: "spm-daisy"),
                 .product(name: "Analytics",          package: "spm-daisy"),
+                .product(name: "StableDiffusion",    package: "ml-stable-diffusion")
             ],
             path: "Laiban",
             exclude: ["Modules/Movement/Tests"],

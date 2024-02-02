@@ -151,9 +151,15 @@ struct RenderView: View {
 }
 
 @available(iOS 17, *)
+public protocol ImageGeneratorServiceProtocol {
+    var data: ImageGeneratorServiceModel { get }
+    var generator: AIImageGeneratorManagerProtocol { get }
+}
+
+@available(iOS 17, *)
 public struct ImageGeneratorView: View {
     @Environment(\.fullscreenContainerProperties) var properties
-    @ObservedObject var service: ImageGeneratorService
+    var service: ImageGeneratorServiceProtocol
 
     let colorImageTextMapping: [String: String] = [
         "splash.red": "red bug, red insect, red thorax",
@@ -197,11 +203,8 @@ public struct ImageGeneratorView: View {
     @State var selectedShapeImageName: String? = ""
     @State var selectedBugImageName: String? = ""
 
-    var generator: AIImageGeneratorManager
-
-    public init(service: ImageGeneratorService) {
+    public init(service: ImageGeneratorServiceProtocol) {
         self.service = service
-        self.generator = service.manager
     }
 
     public var body: some View {
@@ -209,7 +212,7 @@ public struct ImageGeneratorView: View {
             if selectedStep == .Home {
                 HomeBugView(selectedStep: $selectedStep)
                     .onAppear {
-                        self.generator.initialize()
+                        self.service.generator.initialize()
                     }
             }
             
@@ -233,14 +236,14 @@ public struct ImageGeneratorView: View {
 
             if selectedStep == .Render {
                 RenderView(selectedStep: $selectedStep,
-                              image: self.generator.generatedImage,
-                              statusText: self.generator.statusMessage
+                           image: self.service.generator.generatedImage,
+                           statusText: self.service.generator.statusMessage
                 )
                 .onAppear {
                     generateImage()
                 }
                 .onDisappear {
-                    self.generator.cancelGenerate()
+                    self.service.generator.cancelGenerate()
                 }
             }
         }
@@ -271,7 +274,7 @@ public struct ImageGeneratorView: View {
     
     func generateImage() {
         let (positive, negative) = getPrompts()
-        self.generator.generateImage(params: ImageGeneratorParameters(
+        self.service.generator.generateImage(params: ImageGeneratorParameters(
             positivePrompt: positive,
             negativePrompt: negative,
             shapeImageId: getRandomShapeImageId()))
@@ -279,11 +282,35 @@ public struct ImageGeneratorView: View {
 }
 
 @available(iOS 17, *)
+class MockDeps : ImageGeneratorServiceProtocol {
+    class MockManager : AIImageGeneratorManagerProtocol {
+        var generatedImage: UIImage? {
+            get {
+                return UIImage(named: "aiMockGenerate100", in: .module, with: nil)
+            }
+        }
+        var statusMessage: String = "Klar 🎉 Så här blev din bild:"
+        func initialize() { }
+        func generateImage(params: ImageGeneratorParameters) { }
+        func cancelGenerate() { }
+    }
+    
+    var data: ImageGeneratorServiceModel
+    
+    var generator: AIImageGeneratorManagerProtocol
+    
+    init() {
+        data = ImageGeneratorServiceModel()
+        generator = MockManager()
+    }
+}
+
+@available(iOS 17, *)
 struct ImageGeneratorView_Preview: PreviewProvider {
-    static var service = ImageGeneratorService()
+    static var service: ImageGeneratorService? = nil
     static var previews: some View {
         LBFullscreenContainer { _ in
-            ImageGeneratorView(service: service)
+            ImageGeneratorView(service: MockDeps())
         }.attachPreviewEnvironmentObjects()
     }
 }

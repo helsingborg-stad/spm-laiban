@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct ImageGeneratorParameters {
+public struct ImageGeneratorParameters {
     var positivePrompt: String
     var negativePrompt: String
     var shapeImageId: String?
@@ -25,4 +25,12 @@ struct ImageGeneratorParameters {
 protocol AIImageGenerator {
     mutating func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws
     func generate(params: ImageGeneratorParameters, onProgress: (_ fractionDone: Float, _ partialImage: UIImage?) -> Bool) async throws -> UIImage
+}
+
+public protocol AIImageGeneratorManagerProtocol {
+    var generatedImage: UIImage? { get }
+    var statusMessage: String { get }
+    func initialize()
+    func generateImage(params: ImageGeneratorParameters)
+    func cancelGenerate()
 }

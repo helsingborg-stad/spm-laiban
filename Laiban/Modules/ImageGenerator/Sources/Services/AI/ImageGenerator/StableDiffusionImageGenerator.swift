@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
+
 import StableDiffusion
+
 import CoreML
 
 enum SDImageGeneratorError: Error {
@@ -355,4 +357,3 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         return UIImage(cgImage: firstImage)
     }
 }
-

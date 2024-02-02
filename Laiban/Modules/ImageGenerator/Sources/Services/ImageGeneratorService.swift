@@ -9,7 +9,11 @@ public extension LBViewIdentity {
 public typealias ImageGeneratorStorageService = CodableLocalJSONService<ImageGeneratorServiceModel>
 
 @available(iOS 17, *)
-public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGeneratorStorageService>, LBAdminService, LBDashboardItem {
+public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGeneratorStorageService>, LBAdminService, LBDashboardItem, ImageGeneratorServiceProtocol {
+    public var generator: AIImageGeneratorManagerProtocol {
+        get { return manager }
+    }
+    
     lazy var manager: AIImageGeneratorManager = AIImageGeneratorManager(service: self)
     public var cancellables = Set<AnyCancellable>()
     public convenience init() {

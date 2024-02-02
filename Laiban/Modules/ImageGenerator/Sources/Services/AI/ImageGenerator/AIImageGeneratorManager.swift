@@ -21,7 +21,7 @@ enum GenerateStatus {
 
 @available(iOS 17, *)
 @Observable
-public class AIImageGeneratorManager {
+public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
     var imageGenerator: AIImageGenerator
     var status: GenerateStatus
     
@@ -57,7 +57,7 @@ public class AIImageGeneratorManager {
         }.store(in: &cancellables)
     }
     
-    func initialize() {
+    public func initialize() {
         Task.init(priority: .high) { [self] in
             guard status == .WaitingForInit else { return }
             
@@ -84,7 +84,7 @@ public class AIImageGeneratorManager {
         }
     }
     
-    func generateImage(params: ImageGeneratorParameters) {
+    public func generateImage(params: ImageGeneratorParameters) {
         Task.init(priority: .high) { [self] in
             do {
                 while status == .Initializing { try await Task.sleep(nanoseconds: 1_000_000_000) }
@@ -101,7 +101,7 @@ public class AIImageGeneratorManager {
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generating")
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] positive: \(params.positivePrompt)")
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] negative: \(params.negativePrompt)")
-                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] shape image: \(params.shapeImageId)")
+                ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] shape image: \(String(describing: params.shapeImageId))")
                 
                 try await ImageGeneratorUtils.withBenchmark("generate") {
                     generatedImage = try await imageGenerator.generate(params: params) { fractionDone, partialImage in
@@ -129,7 +129,7 @@ public class AIImageGeneratorManager {
         }
     }
     
-    func cancelGenerate() {
+    public func cancelGenerate() {
         if status == .Generating {
             status = .Idle
         }
