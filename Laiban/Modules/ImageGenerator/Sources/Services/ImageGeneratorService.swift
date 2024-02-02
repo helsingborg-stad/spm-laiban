@@ -1,10 +1,3 @@
-//
-//  MyCustomService.swift
-//  LaibanExample
-//
-//  Created by Tomas Green on 2022-09-19.
-//
-
 import Foundation
 import Combine
 import SwiftUI

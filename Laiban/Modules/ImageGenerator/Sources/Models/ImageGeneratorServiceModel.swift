@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ImageGeneratorServiceModel: LBServiceModel, Codable {
+public struct ImageGeneratorServiceModel: LBServiceModel, Codable, Equatable {
     public var downloadUrl: String = "https://laiban-test.s3.eu-north-1.amazonaws.com/photon_edobbugs_se_q6_all.zip"
     public var positivePrompt: String = """
     masterpiece, best quality, absurdres, high quality, photorealistic, photography, macro, symmetrical, centered, simple background, white background, single, sharp focus
