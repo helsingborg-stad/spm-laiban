@@ -79,7 +79,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
             } catch {
                 ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] warmup failed (\(error))")
                 status = .InitializeFailed
-                statusMessage = "Hoppsan, kunde inte starta upp ordentligt ☔️"
+                statusMessage = "Hoppsan, kunde inte starta upp ordentligt ☔️ (\(error))"
             }
         }
     }

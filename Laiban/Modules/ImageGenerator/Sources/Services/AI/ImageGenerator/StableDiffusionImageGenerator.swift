@@ -85,9 +85,9 @@ public extension StableDiffusionPipeline {
             
             // Optional safety checker
             var safetyChecker: SafetyChecker? = nil
-//            if FileManager.default.fileExists(atPath: urls.safetyCheckerURL.path) {
-//                safetyChecker = SafetyChecker(modelAt: urls.safetyCheckerURL, configuration: config)
-//            }
+            if FileManager.default.fileExists(atPath: urls.safetyCheckerURL.path) {
+                safetyChecker = SafetyChecker(modelAt: urls.safetyCheckerURL, configuration: config)
+            }
             
             // Optional Image Encoder
             let encoder: Encoder? = nil
@@ -328,7 +328,7 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         ImageGeneratorUtils.Logger.info("generate seed: \(configuration.seed), steps: \(configuration.stepCount), size: \(configuration.targetSize)")
         
         if(self.useControlNet) {
-            guard let controlNetImage = UIImage(named: params.shapeImageId ?? "cn_canny_triangle_1", in: .module, with: nil) else {
+            guard let controlNetImage = UIImage(named: params.shapeImageId ?? "cn_scribble_triangle_1", in: .module, with: nil) else {
                 ImageGeneratorUtils.Logger.error("controlNetImage not found")
                 throw SDImageGeneratorError.generateFailed
             }
