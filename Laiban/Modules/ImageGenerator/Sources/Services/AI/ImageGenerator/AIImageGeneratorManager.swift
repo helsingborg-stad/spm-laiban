@@ -84,7 +84,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
         }
     }
     
-    public func generateImage(params: ImageGeneratorParameters) {
+    public func generateImage(params: ImageGeneratorParameters, onDone: @escaping (Bool) -> Void) {
         Task.init(priority: .high) { [self] in
             do {
                 while status == .Initializing { try await Task.sleep(nanoseconds: 1_000_000_000) }
@@ -121,10 +121,12 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generate success")
                 status = .GenerateSuccess
                 statusMessage = "Klar 🎉 Så här blev din bild:"
+                onDone(true)
             } catch {
                 ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] generate failed: \(error)")
                 status = .GenerateFailed
                 statusMessage = "Hoppsan, något gick snett 😞"
+                onDone(false)
             }
         }
     }

@@ -31,6 +31,6 @@ public protocol AIImageGeneratorManagerProtocol {
     var generatedImage: UIImage? { get }
     var statusMessage: String { get }
     func initialize()
-    func generateImage(params: ImageGeneratorParameters)
+    func generateImage(params: ImageGeneratorParameters, onDone: @escaping (_ success: Bool) -> Void)
     func cancelGenerate()
 }
