@@ -23,6 +23,11 @@ struct InstructionsAdminView: View {
 
     var body: some View {
         Form {
+            if #available(iOS 16.0, *) {
+                Section() {
+                    ShareLink(item: Bundle.module.url(forResource: "insect_guide", withExtension: "pdf")!)
+                }
+            }
             Section(header: Text("Lärarhandledning")) {
                 VStack(alignment: .leading, spacing: 26) {
                     Image("Header", bundle: .module)

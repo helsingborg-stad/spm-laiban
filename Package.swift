@@ -58,7 +58,8 @@ let package = Package(
                 .process("Modules/Outdoors/Sources/Resources/ClothesAssets.xcassets"),
                 .copy("Modules/Outdoors/Sources/Resources/AttireSuggestionPredictionModel.mlmodelc"),
                 .process("Modules/Food/Sources/Resources"),
-                .process("Modules/UNDP/Sources/Resources")
+                .process("Modules/UNDP/Sources/Resources"),
+                .process("Modules/ImageGenerator/Sources/Resources")
             ]
         ),
         .target(name: "UDPipe",                     path: "UDPipe/Sources"),
