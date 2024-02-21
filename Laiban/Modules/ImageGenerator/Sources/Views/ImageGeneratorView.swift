@@ -289,13 +289,7 @@ struct ResultView: View {
     }
 }
 
-@available(iOS 17, *)
-public protocol ImageGeneratorServiceProtocol {
-    var data: ImageGeneratorServiceModel { get }
-    var generator: AIImageGeneratorManagerProtocol { get }
-}
-
-@available(iOS 17, *)
+@available(iOS 15.0, *)
 public struct ImageGeneratorView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     var service: ImageGeneratorServiceProtocol
@@ -460,8 +454,8 @@ public struct ImageGeneratorView: View {
         ].joined(separator: ", ")
         
         return (
-            positive: userPrompt + ", " + service.data.positivePrompt,
-            negative: service.data.negativePrompt
+            positive: userPrompt + ", " + service.model.positivePrompt,
+            negative: service.model.negativePrompt
         )
     }
     
@@ -482,10 +476,9 @@ public struct ImageGeneratorView: View {
     }
 }
 
-@available(iOS 17, *)
 class MockDeps : ImageGeneratorServiceProtocol {
+    func initStartupCheck() {}
     
-    @Observable
     class MockManager : AIImageGeneratorManagerProtocol {
         var generatedImage: UIImage? {
             get {
@@ -504,19 +497,19 @@ class MockDeps : ImageGeneratorServiceProtocol {
         func cancelGenerate() { }
     }
     
-    var data: ImageGeneratorServiceModel
+    var model: ImageGeneratorServiceModel
     
     var generator: AIImageGeneratorManagerProtocol
     
     init() {
-        data = ImageGeneratorServiceModel()
+        model = ImageGeneratorServiceModel()
         generator = MockManager()
     }
 }
 
-@available(iOS 17, *)
+@available(iOS 15.0, *)
 struct ImageGeneratorView_Preview: PreviewProvider {
-    static var service: ImageGeneratorService? = nil
+    static var service: ImageGeneratorServiceProtocol? = nil
     static var previews: some View {
         LBFullscreenContainer { _ in
             ImageGeneratorView(service: MockDeps())
