@@ -129,12 +129,13 @@ struct ImageGeneratorOptions {
 @available(iOS 15.0, *)
 struct DefaultButton: ButtonStyle {
     @Environment(\.fullscreenContainerProperties) var properties
+    var color: UIColor? = nil
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.title)
             .padding(properties.spacing[.m])
-            .background(Color(.systemPurple))
+            .background(Color(color ?? .systemPurple))
             .foregroundStyle(.white)
             .clipShape(Capsule())
             .scaleEffect(configuration.isPressed ? 1.2 : 1)
@@ -261,6 +262,8 @@ struct ResultView: View {
     var image: UIImage?
     var statusText: String
     
+    @State var imageSaved = false
+    
     var body: some View {
         VStack {
             Text(statusText)
@@ -282,12 +285,14 @@ struct ResultView: View {
             .padding(50)
         }
         
-        Button("Spara bilden till 'Bilder'") {
+        Button(imageSaved ? "✓" : "Spara bilden till 'Bilder'") {
+            guard !imageSaved else { return }
             guard let image = image else { return }
             
             let imageSaver = ImageSaver()
             imageSaver.successHandler = {
                 print("Save success!")
+                imageSaved = true
             }
             
             imageSaver.errorHandler = {
@@ -295,7 +300,12 @@ struct ResultView: View {
             }
             
             imageSaver.writeToPhotoAlbum(image: image)
-        }.buttonStyle(DefaultButton())
+        }
+        .buttonStyle(DefaultButton(color: imageSaved ? .systemGreen : nil))
+        .onAppear {
+            imageSaved = false
+        }
+        
         Spacer()
         Button("Börja om från början") {
             selectedStep = .Home
@@ -504,7 +514,7 @@ class MockDeps : ImageGeneratorServiceProtocol {
         func initialize() { }
         func generateImage(params: ImageGeneratorParameters, onDone: @escaping (Bool) -> Void) {
             statusMessage = "Laddar..."
-            Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false) { [self] _ in
+            Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { [self] _ in
                 statusMessage = "Klar!"
                 onDone(true)
             }
