@@ -1,4 +1,5 @@
 import SwiftUI
+import Assistant
 
 enum Step: UInt8 {
     case Home = 0
@@ -144,6 +145,7 @@ struct DefaultButton: ButtonStyle {
 @available(iOS 15.0, *)
 struct SelectionView<T: Hashable>: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @EnvironmentObject var assistant:Assistant
     let text: String
     let items: [T: String]
     let tintSelector: ((T) -> Color)?
@@ -180,13 +182,19 @@ struct SelectionView<T: Hashable>: View {
                 maxWidth: .infinity,
                 alignment: .center)
             .padding(properties.spacing[.m])
+            .onAppear {
+                assistant.speak(text)
+            }
     }
 }
 
 @available(iOS 15.0, *)
 struct HomeBugView: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @EnvironmentObject var assistant:Assistant
     @Binding var selectedStep: Step
+    
+    var text = "Vill du skapa en bild på en insekt utifrån form och färg? Tryck på knappen för att tala om för en AI hur insekten ska se ut."
     
     var body: some View {
         Image("intro", bundle: .module)
@@ -194,7 +202,7 @@ struct HomeBugView: View {
             .aspectRatio(contentMode: .fill)
             .cornerRadius(18.0)
         
-        Text("Vill du skapa en bild på en insekt utifrån form och färg? Tryck på knappen för att tala om för en AI hur insekten ska se ut.")
+        Text(text)
             .font(properties.font, ofSize: .xl)
             .multilineTextAlignment(.center)
             .frame(
@@ -202,6 +210,9 @@ struct HomeBugView: View {
                 alignment: .center)
             .padding(properties.spacing[.m])
             .secondaryContainerBackground(borderColor: .purple)
+            .onAppear {
+                assistant.speak(text)
+            }
         Spacer()
             .frame(maxWidth: .infinity,
                    alignment: .center)
@@ -244,6 +255,7 @@ struct RenderView: View {
 @available(iOS 15.0, *)
 struct ResultView: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @EnvironmentObject var assistant:Assistant
     @Binding var selectedStep: Step
     
     var image: UIImage?
@@ -253,6 +265,9 @@ struct ResultView: View {
         VStack {
             Text(statusText)
                 .font(properties.font, ofSize: .xl)
+                .onAppear {
+                    assistant.speak(statusText)
+                }
             
             ZStack {
                 if let image = image {
