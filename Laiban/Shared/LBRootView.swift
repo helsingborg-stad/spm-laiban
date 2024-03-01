@@ -21,6 +21,8 @@ public struct LBRootViewConfig {
         self.homescreenService = adminServices.first(where: { $0 is ReturnToHomeScreenService }) as? ReturnToHomeScreenService
     }
 }
+
+@available(iOS 15.0, *)
 public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
     public typealias ShouldDisable = () -> Bool
     public typealias InactivityTimeInterval = TimeInterval
@@ -28,6 +30,7 @@ public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
     public typealias ViewDidChange = (LBViewIdentity?) -> Void
     public typealias LanguageDidChange = (Locale) -> Void
     @EnvironmentObject var assistant:Assistant
+    @EnvironmentObject var dashboardItemVisibilityService: DashboardItemVisibilityService
     @StateObject var viewState = LBViewState()
     @Environment(\.locale) var locale
     @State private var cancellables = Set<AnyCancellable>()
@@ -120,13 +123,26 @@ public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
         .onAppear {
             for item in flatten(config.dashboardItems) {
                 item.isAvailablePublisher.sink { available in
-                    if available {
+                    if available && dashboardItemVisibilityService.isVisible(id: item.viewIdentity) {
                         self.nonAvailableItems.removeAll { $0 == item.viewIdentity }
                     } else {
                         self.nonAvailableItems.append(item.viewIdentity)
                     }
                 }.store(in: &cancellables)
             }
+            
+            dashboardItemVisibilityService.onVisibilityChanged.sink { (id, visible) in
+                guard let item = flatten(config.dashboardItems).first(where: { $0.viewIdentity == id }) else {
+                    return
+                }
+                
+                if item.isAvailable && visible {
+                    self.nonAvailableItems.removeAll { $0 == item.viewIdentity }
+                } else {
+                    self.nonAvailableItems.append(item.viewIdentity)
+                }
+            }.store(in: &cancellables)
+            
             config.homescreenService?.$data.sink { val in
                 self.viewState.inactivityTimeInterval = val.timeInterval
             }.store(in: &cancellables)
@@ -147,6 +163,8 @@ public struct LBRootView<Screen:View, Icon:View, ActionBar:View> : View {
         return arr
     }
 }
+
+@available(iOS 15.0, *)
 public extension LBRootView {
     func screen<B:View>(@ViewBuilder screen: @escaping (LBViewIdentity?,LBFullscreenContainerProperties) -> B) -> LBRootView<B,Icon,ActionBar> {
         LBRootView<B,Icon,ActionBar>(
@@ -375,6 +393,7 @@ public extension LBRootView {
     }
 }
 
+@available(iOS 15.0, *)
 private struct LBRootViewPreview : View {
     static private let previewItemIdentity: LBViewIdentity = .init("LBRootViewPreview")
     class PreviewService: ObservableObject, LBDashboardItem {
@@ -385,6 +404,7 @@ private struct LBRootViewPreview : View {
         @Published var isAvailable: Bool = true
     }
     @StateObject var assistant = createPreviewAssistant()
+    @StateObject var dashboardItemVisibilityService = DashboardItemVisibilityService()
     @StateObject var dashboardItem = PreviewService()
     @StateObject var returnToHomeScreenService = ReturnToHomeScreenService()
     var config: LBRootViewConfig {
@@ -398,6 +418,12 @@ private struct LBRootViewPreview : View {
         VStack {
             Spacer()
             Text("Returns to homescreen interval set to **\(val.title)**")
+            Button {
+                dashboardItemVisibilityService.setVisibility(id: LBRootViewPreview.previewItemIdentity, visible: false)
+            } label: {
+                Text("Hide on dashboard").padding(20)
+            }
+            .buttonStyle(LBPrimaryButtonStyle())
             Button {
                 if val == .never {
                     returnToHomeScreenService.data = .after30seconds
@@ -429,12 +455,13 @@ private struct LBRootViewPreview : View {
                 }
             }
             .environmentObject(assistant)
+            .environmentObject(dashboardItemVisibilityService)
     }
 }
 
+@available(iOS 15.0, *)
 struct LBRootView_Previews: PreviewProvider {
     static var previews: some View {
        LBRootViewPreview()
-            
     }
 }

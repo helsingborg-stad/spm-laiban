@@ -21,14 +21,6 @@ struct ImageGeneratorAdminView: View {
             NavigationLink(destination: SettingsAdminView(service: service)) {
                 Text("Bildgenerering")
             }.id("ImageGeneratorSettings")
-
-            Toggle("Visa på startskärmen", isOn: $service.data.showOnDashboard)
-                .onAppear {
-                    if serviceNotEnabled {
-                        service.data.showOnDashboard = false
-                    }
-                }
-                .disabled(serviceNotEnabled)
         }
     }
 

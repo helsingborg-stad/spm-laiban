@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ImageGeneratorServiceModel: LBServiceModel, Codable, Equatable {
+public struct ImageGeneratorServiceModel: Codable, Equatable {
     public var downloadUrl: String = "https://laiban-public.s3.eu-north-1.amazonaws.com/ml-models/photon_edobbugs_se_q6_scribble.zip"
     public var positivePrompt: String = """
     masterpiece, best quality, absurdres, high quality, photorealistic, photography, macro, symmetrical, centered, simple background, white background, single, sharp focus
@@ -21,5 +21,4 @@ public struct ImageGeneratorServiceModel: LBServiceModel, Codable, Equatable {
     public var reduceMemory: Bool = true
     public var useControlNet: Bool = true
     public var initOnStartup: Bool = false
-    public var showOnDashboard: Bool = false
 }

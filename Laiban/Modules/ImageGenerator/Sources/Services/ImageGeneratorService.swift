@@ -39,10 +39,7 @@ public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGenera
             emptyValue: ImageGeneratorServiceModel(),
             storageOptions: .init(filename: "ImagGeneratorServiceModel", foldername: "ImageGenerator")
         )
-
-        self.$data.sink { model in
-            self.isAvailable =  model.showOnDashboard
-        }.store(in: &cancellables)
+        self.isAvailable = true
     }
     
     ///----------------------------------------
@@ -82,8 +79,7 @@ public class ImageGeneratorService : CTS<ImageGeneratorServiceModel, ImageGenera
     }
 }
 
-public struct StubImageGeneratorServiceModel: LBServiceModel, Codable, Equatable {
-    public var showOnDashboard: Bool = false
+public struct StubImageGeneratorServiceModel: Codable, Equatable {
 }
 
 public typealias StubImageGeneratorStorageService = CodableLocalJSONService<StubImageGeneratorServiceModel>
@@ -121,10 +117,7 @@ public class StubImageGeneratorService : CTS<StubImageGeneratorServiceModel, Stu
             emptyValue: StubImageGeneratorServiceModel(),
             storageOptions: .init(filename: "StubImagGeneratorServiceModel", foldername: "ImageGenerator")
         )
-
-        self.$data.sink { model in
-            self.isAvailable =  model.showOnDashboard
-        }.store(in: &cancellables)
+        self.isAvailable = false
     }
     
     ///----------------------------------------
