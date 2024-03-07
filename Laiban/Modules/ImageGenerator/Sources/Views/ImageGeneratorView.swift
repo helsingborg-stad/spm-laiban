@@ -352,9 +352,7 @@ public struct ImageGeneratorView: View {
                             .padding(10)
                             .animation(.easeIn)
                             .colorMultiply(ImageGeneratorOptions.GetColor(color: selectedColor))
-                    }
-                    
-                    if selectedStep.rawValue > Step.Shape.rawValue {
+                        
                         Image(conditionalContrast("mask.plus.outline", "mask.plus"), bundle: .module)
                             .resizable()
                             .aspectRatio(1, contentMode: .fit)
@@ -364,6 +362,9 @@ public struct ImageGeneratorView: View {
                             .animation(.easeIn)
                             .colorMultiply(ImageGeneratorOptions.GetColor(color: selectedColor))
                             .opacity(0.6)
+                    }
+                    
+                    if selectedStep.rawValue > Step.Shape.rawValue {
                         
                         Image(conditionalContrast(ImageGeneratorOptions.ShapeImageMap[selectedShape]![1], ImageGeneratorOptions.ShapeImageMap[selectedShape]![0]), bundle: .module)
                             .resizable()
@@ -373,9 +374,7 @@ public struct ImageGeneratorView: View {
                             .padding(10)
                             .animation(.easeIn)
                             .colorMultiply(ImageGeneratorOptions.GetColor(color: selectedColor))
-                    }
-                    
-                    if selectedStep.rawValue > Step.Bug.rawValue {
+                        
                         Image(conditionalContrast("mask.plus.outline", "mask.plus"), bundle: .module)
                             .resizable()
                             .aspectRatio(1, contentMode: .fit)
@@ -385,7 +384,9 @@ public struct ImageGeneratorView: View {
                             .animation(.easeIn)
                             .colorMultiply(ImageGeneratorOptions.GetColor(color: selectedColor))
                             .opacity(0.6)
-                        
+                    }
+                    
+                    if selectedStep.rawValue > Step.Bug.rawValue {
                         Image(conditionalContrast(ImageGeneratorOptions.BugImageMap[selectedBug]![1], ImageGeneratorOptions.BugImageMap[selectedBug]![0]), bundle: .module)
                             .resizable()
                             .aspectRatio(1, contentMode: .fit)
