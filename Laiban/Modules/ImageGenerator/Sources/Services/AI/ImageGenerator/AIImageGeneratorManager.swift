@@ -120,7 +120,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generate success")
                 status = .GenerateSuccess
-                statusMessage = "Klar 🎉 Så här blev din bild:"
+                statusMessage = "Klar 🎉! Så här blev din bild:"
                 onDone(true)
             } catch {
                 ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] generate failed: \(error)")
