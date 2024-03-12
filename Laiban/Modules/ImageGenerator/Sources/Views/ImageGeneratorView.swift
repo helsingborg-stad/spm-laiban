@@ -176,7 +176,7 @@ struct SelectionView<T: Hashable>: View {
         
         Spacer()
         
-        Text(text)
+        Text(LocalizedStringKey(text), bundle: LBBundle)
             .font(properties.font, ofSize: .xl)
             .multilineTextAlignment(.center)
             .frame(
@@ -195,7 +195,7 @@ struct HomeBugView: View {
     @EnvironmentObject var assistant:Assistant
     @Binding var selectedStep: Step
     
-    var text = "Vill du skapa en bild på en insekt utifrån form och färg? Tryck på knappen för att tala om för en AI hur insekten ska se ut."
+    var textKey = "image_generator_intro"
     
     var body: some View {
         Image("intro", bundle: .module)
@@ -203,7 +203,7 @@ struct HomeBugView: View {
             .aspectRatio(contentMode: .fill)
             .cornerRadius(18.0)
         
-        Text(text)
+        Text(LocalizedStringKey(textKey),bundle:LBBundle)
             .font(properties.font, ofSize: .xl)
             .multilineTextAlignment(.center)
             .frame(
@@ -212,14 +212,16 @@ struct HomeBugView: View {
             .padding(properties.spacing[.m])
             .secondaryContainerBackground(borderColor: .purple)
             .onAppear {
-                assistant.speak(text)
+                assistant.speak(textKey)
             }
         Spacer()
             .frame(maxWidth: .infinity,
                    alignment: .center)
-        Button("Klicka här för att starta") {
+        Button(action: {
             selectedStep = .Color
-        }
+        }, label: {
+            Text(LocalizedStringKey("image_generator_start"),bundle:LBBundle)
+        })
         .buttonStyle(DefaultButton())
     }
 }
@@ -285,7 +287,7 @@ struct ResultView: View {
             .padding(50)
         }
         
-        Button(imageSaved ? "✓" : "Spara bilden till 'Bilder'") {
+        Button(action: {
             guard !imageSaved else { return }
             guard let image = image else { return }
             
@@ -300,16 +302,22 @@ struct ResultView: View {
             }
             
             imageSaver.writeToPhotoAlbum(image: image)
-        }
+        }, label: {
+            imageSaved
+            ? Text("✓")
+            : Text(LocalizedStringKey("image_generator_save"), bundle: LBBundle)
+        })
         .buttonStyle(DefaultButton(color: imageSaved ? .systemGreen : nil))
         .onAppear {
             imageSaved = false
         }
         
         Spacer()
-        Button("Börja om från början") {
+        Button(action: {
             selectedStep = .Home
-        }
+        }, label: {
+            Text(LocalizedStringKey("image_generator_restart"), bundle: LBBundle)
+        })
         .buttonStyle(DefaultButton())
     }
 }
@@ -317,6 +325,8 @@ struct ResultView: View {
 @available(iOS 15.0, *)
 public struct ImageGeneratorView: View {
     @Environment(\.fullscreenContainerProperties) var properties
+    @EnvironmentObject var assistant:Assistant
+    
     var service: ImageGeneratorServiceProtocol
     
     @State var selectedStep: Step = .Home
@@ -411,7 +421,7 @@ public struct ImageGeneratorView: View {
             
             if selectedStep == .Color {
                 SelectionView(
-                    text: "Börja med att välja färg",
+                    text: "image_generator_step_color",
                     items: ImageGeneratorOptions.ColorImageMap,
                     tintSelector: ImageGeneratorOptions.GetColor,
                     selectedStep: $selectedStep,
@@ -420,7 +430,7 @@ public struct ImageGeneratorView: View {
             
             if selectedStep == .Shape {
                 SelectionView(
-                    text: "Välj en geometrisk form",
+                    text: "image_generator_step_shape",
                     items: conditionalContrast(
                         slicedDict(ImageGeneratorOptions.ShapeImageMap, 1),
                         slicedDict(ImageGeneratorOptions.ShapeImageMap, 0)),
@@ -433,7 +443,7 @@ public struct ImageGeneratorView: View {
             
             if selectedStep == .Bug {
                 SelectionView(
-                    text: "Välj en typ av insekt",
+                    text: "image_generator_step_bug",
                     items: conditionalContrast(
                         slicedDict(ImageGeneratorOptions.BugImageMap, 1),
                         slicedDict(ImageGeneratorOptions.BugImageMap, 0)),
@@ -470,6 +480,9 @@ public struct ImageGeneratorView: View {
                maxHeight: .infinity)
         .padding(properties.spacing[.m])
         .primaryContainerBackground()
+        .onAppear {
+            self.service.generator.provideAssistant(assistant: assistant)
+        }
     }
     
     func getPrompts() -> (positive: String, negative: String) {
@@ -521,6 +534,7 @@ class MockDeps : ImageGeneratorServiceProtocol {
             }
         }
         func cancelGenerate() { }
+        func provideAssistant(assistant: Assistant) {}
     }
     
     var model: ImageGeneratorServiceModel

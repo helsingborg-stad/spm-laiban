@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Combine
+import Assistant
 
 enum GenerateStatus {
     case WaitingForInit
@@ -28,6 +29,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
     public var statusMessage: String
     public var generatedImage: UIImage?
     
+    private var assistant: Assistant?
     private var cancellables = Set<AnyCancellable>()
     
     init(service: ImageGeneratorService) {
@@ -65,7 +67,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
             
             do {
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] warming up...")
-                statusMessage = "Laddar..."
+                statusMessage = self.assistant?.string(forKey: "image_generator_warmup") ?? "image_generator_warmup"
                 
                 try await ImageGeneratorUtils.withBenchmark("warmup") {
                     try await imageGenerator.warmup { [self] progress in
@@ -75,11 +77,11 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] warmup done")
                 status = .Idle
-                statusMessage = "Redo för att skapa bilder 🖼️"
+                statusMessage = self.assistant?.string(forKey: "image_generator_ready") ?? "image_generator_ready"
             } catch {
                 ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] warmup failed (\(error))")
                 status = .InitializeFailed
-                statusMessage = "Hoppsan, kunde inte starta upp ordentligt ☔️ (\(error))"
+                statusMessage = self.assistant?.formattedString(forKey: "image_generator_warmup_failed", String(describing: error)) ?? "image_generator_warmup_failed"
             }
         }
     }
@@ -96,7 +98,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 
                 generatedImage = nil
                 status = .Generating
-                statusMessage = "Vänta lite..."
+                statusMessage = self.assistant?.string(forKey: "image_generator_setting_up") ?? "image_generator_setting_up"
                 
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generating")
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] positive: \(params.positivePrompt)")
@@ -105,12 +107,12 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 
                 try await ImageGeneratorUtils.withBenchmark("generate") {
                     generatedImage = try await imageGenerator.generate(params: params) { fractionDone, partialImage in
-                            let percentage = fractionDone * 100
-                            let formattedPercentage = String(format: "%.0f%%", percentage)
-                            statusMessage = "\(formattedPercentage) färdig 🚀"
-                            generatedImage = partialImage
-                            return status == .Generating
-                        }
+                        let percentage = fractionDone * 100
+                        let formattedPercentage = String(format: "%.0f%%", percentage)
+                        statusMessage = self.assistant?.formattedString(forKey: "image_generator_generating", formattedPercentage) ?? "image_generator_generating"
+                        generatedImage = partialImage
+                        return status == .Generating
+                    }
                 }
                 
                 guard status == .Generating else {
@@ -120,12 +122,12 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 
                 ImageGeneratorUtils.Logger.info("[AIImageGeneratorManager] generate success")
                 status = .GenerateSuccess
-                statusMessage = "Klar 🎉! Så här blev din bild:"
+                statusMessage = self.assistant?.string(forKey: "image_generator_done") ?? "image_generator_done"
                 onDone(true)
             } catch {
                 ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] generate failed: \(error)")
                 status = .GenerateFailed
-                statusMessage = "Hoppsan, något gick snett 😞"
+                statusMessage = self.assistant?.string(forKey: "image_generator_failed") ?? "image_generator_failed"
                 onDone(false)
             }
         }
@@ -135,5 +137,13 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
         if status == .Generating {
             status = .Idle
         }
+    }
+    
+    public func provideAssistant(assistant: Assistant) {
+        guard let sdig = imageGenerator as? StableDiffusionImageGenerator else {
+            return
+        }
+        sdig.provideAssistant(assistant: assistant)
+        self.assistant = assistant
     }
 }

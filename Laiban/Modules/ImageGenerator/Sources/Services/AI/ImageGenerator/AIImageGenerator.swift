@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Assistant
 
 public struct ImageGeneratorParameters {
     var positivePrompt: String
@@ -33,4 +34,5 @@ public protocol AIImageGeneratorManagerProtocol {
     func initialize()
     func generateImage(params: ImageGeneratorParameters, onDone: @escaping (_ success: Bool) -> Void)
     func cancelGenerate()
+    func provideAssistant(assistant: Assistant)
 }

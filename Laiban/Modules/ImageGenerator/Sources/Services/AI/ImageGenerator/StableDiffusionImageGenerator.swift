@@ -11,6 +11,7 @@ import UIKit
 import StableDiffusion
 
 import CoreML
+import Assistant
 
 enum SDImageGeneratorError: Error {
     case notWarmedUp
@@ -148,68 +149,6 @@ public extension StableDiffusionPipeline {
             
             return newPipeline
         }
-    
-    static func loadTest(resourcesAt: URL, config: MLModelConfiguration) {
-        Task.init(priority: .high) {
-            do {
-                ImageGeneratorUtils.Logger.info("model files -----")
-                let fileManager = FileManager()
-                let dirEnum = fileManager.enumerator(atPath: UrlModelProvider.destinationDirOf(downloadName: "ai-sd-model").path())
-                while let file = dirEnum?.nextObject() as? String {
-                    ImageGeneratorUtils.Logger.info(file)
-                }
-                ImageGeneratorUtils.Logger.info("--------------------")
-                
-                if #available(iOS 17.0, *) {
-                    let computeUnits = MLModel.availableComputeDevices
-                    for computeUnit in computeUnits {
-                        ImageGeneratorUtils.Logger.info("computeUnit: \(String(describing: computeUnit))")
-                    }
-                }
-                
-                ImageGeneratorUtils.Logger.info("start load test")
-                let urls = ResourceURLs(resourcesAt: resourcesAt)
-                let cnUrl = urls.controlNetDirURL.appending(path: "LllyasvielSdControlnetCanny.mlmodelc")
-                var mlModel, mlModel1, mlModel2, cnModel: MLModel?
-                var unet: Unet?
-                var cn: ControlNet?
-                
-//                ImageGeneratorUtils.Logger.info("loadTest manual async")
-//                try await ImageGeneratorUtils.withBenchmark("loadTest manual") {
-//                    mlModel = try await MLModel.load(contentsOf: urls.unetURL, configuration: config)
-//                }
-//                try await ImageGeneratorUtils.withBenchmark("loadTest (chunk1) manual") {
-//                    mlModel1 = try await MLModel.load(contentsOf: urls.controlledUnetChunk1URL, configuration: config)
-//                }
-//                try await ImageGeneratorUtils.withBenchmark("loadTest (chunk2) manual") {
-//                    mlModel2 = try await MLModel.load(contentsOf: urls.controlledUnetChunk2URL, configuration: config)
-//                }
-//                try await ImageGeneratorUtils.withBenchmark("loadTest (controlNet) manual") {
-//                    cnModel = try await MLModel.load(contentsOf: cnUrl)
-//                }
-                
-                ImageGeneratorUtils.Logger.info("loadTest stable-diffusion Unet.loadResources")
-//                try await ImageGeneratorUtils.withBenchmark("loadTest Unet.loadResources()") {
-//                    unet = Unet(modelAt: urls.unetURL, configuration: config)
-//                    try unet!.loadResources()
-//                }
-                try await ImageGeneratorUtils.withBenchmark("loadTest (chunked) Unet.loadResources()") {
-                    unet = Unet(chunksAt: [urls.controlledUnetChunk1URL, urls.controlledUnetChunk2URL],
-                                configuration: config)
-                    try unet!.loadResources()
-                }
-                try await ImageGeneratorUtils.withBenchmark("loadTest ControlNet.loadResources()") {
-                    cn = ControlNet(modelAt: [cnUrl], configuration: config)
-                    try cn!.loadResources()
-                }
-                
-                ImageGeneratorUtils.Logger.info("load test done")
-            } catch {
-                ImageGeneratorUtils.Logger.error("load test failed: \(String(describing: error))")
-            }
-            
-        }
-    }
 }
 
 @available(iOS 17, *)
@@ -223,6 +162,8 @@ class StableDiffusionImageGenerator: AIImageGenerator {
     var reduceMemory: Bool
     var useControlNet: Bool
     
+    var assistant: Assistant?
+    
     init(modelProvider: AIModelProvider, steps: Int, scale: Float, size: Float, reduceMemory: Bool, useControlNet: Bool) {
         self.modelProvider = modelProvider
         self.steps = steps
@@ -230,7 +171,6 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         self.size = size
         self.reduceMemory = reduceMemory
         self.useControlNet = useControlNet
-        //doLoadTest()
         ImageGeneratorUtils.Logger.info("[StableDiffusionImageGenerator] init")
     }
     
@@ -240,14 +180,6 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         self.size = size
         self.reduceMemory = reduceMemory
         self.useControlNet = useControlNet
-    }
-    
-    func doLoadTest() {
-        let modelName = "ai-sd-model"
-        let modelResourceUrl = try! modelProvider.getStoredModelURL(modelName)
-        let config = MLModelConfiguration()
-        config.computeUnits = .cpuAndNeuralEngine
-        StableDiffusionPipeline.loadTest(resourcesAt: modelResourceUrl, config: config)
     }
     
     func warmup(onProgress: @escaping (_ progress: Progress) -> Void) async throws {
@@ -269,14 +201,14 @@ class StableDiffusionImageGenerator: AIImageGenerator {
                 downloadProgress.completedUnitCount = Int64(floor(fractionDone * 100.0))
                 let percentage = fractionDone * 100
                 let formattedPercentage = String(format: "%.0f%%", percentage)
-                progress.localizedDescription = "laddar ner AI model (\(formattedPercentage))"
+                progress.localizedDescription = self.assistant?.formattedString(forKey: "image_generator_downloading", formattedPercentage)
                 onProgress(progress)
             }
             ImageGeneratorUtils.Logger.info("download done")
         } else {
             ImageGeneratorUtils.Logger.info("model '\(modelName)' already available")
             progress.completedUnitCount = 100
-            progress.localizedDescription = "Sätter upp bildgenerering"
+            progress.localizedDescription = self.assistant?.string(forKey: "image_generator_setting_up")
             onProgress(progress)
         }
         
@@ -296,7 +228,7 @@ class StableDiffusionImageGenerator: AIImageGenerator {
                                 let percentage = warmupProgress.fractionCompleted * 100
                                 let formattedPercentage = String(format: "%.0f%%", percentage)
                                 progress.completedUnitCount = 100 + count
-                                progress.localizedDescription = "Laddar in data (\(formattedPercentage))"
+                                progress.localizedDescription = self.assistant?.formattedString(forKey: "image_generator_loading", formattedPercentage)
                                 onProgress(progress)
                             })
         } catch {
@@ -305,7 +237,7 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         }
         
         progress.completedUnitCount = 200
-        progress.localizedDescription = "Redo att generera bilder!"
+        progress.localizedDescription = ""
         onProgress(progress)
     }
     
@@ -355,5 +287,9 @@ class StableDiffusionImageGenerator: AIImageGenerator {
         }
         
         return UIImage(cgImage: firstImage)
+    }
+    
+    func provideAssistant(assistant: Assistant) {
+        self.assistant = assistant
     }
 }

@@ -1,4 +1,5 @@
 import Foundation
+import Assistant
 import Combine
 import SwiftUI
 
@@ -101,6 +102,7 @@ public class StubImageGeneratorService : CTS<StubImageGeneratorServiceModel, Stu
         func initialize() {}
         func generateImage(params: ImageGeneratorParameters, onDone: @escaping (Bool) -> Void) {}
         func cancelGenerate() {}
+        func provideAssistant(assistant: Assistant) {}
     }
     
     public var model: ImageGeneratorServiceModel {
