@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import Combine
 import Assistant
+import SwiftUI
 
 enum GenerateStatus {
     case WaitingForInit
@@ -42,7 +43,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
             useControlNet: service.data.useControlNet
         )
         
-//        imageGenerator = MockImageGenerator()
+        //        imageGenerator = MockImageGenerator()
         
         status = .WaitingForInit
         statusMessage = ""
@@ -124,6 +125,7 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
                 status = .GenerateSuccess
                 statusMessage = self.assistant?.string(forKey: "image_generator_done") ?? "image_generator_done"
                 onDone(true)
+                saveToLatest()
             } catch {
                 ImageGeneratorUtils.Logger.error("[AIImageGeneratorManager] generate failed: \(error)")
                 status = .GenerateFailed
@@ -145,5 +147,48 @@ public class AIImageGeneratorManager : AIImageGeneratorManagerProtocol {
         }
         sdig.provideAssistant(assistant: assistant)
         self.assistant = assistant
+    }
+    
+    private func saveToLatest() {
+        let MAX_SAVED_IMAGES = 12
+        
+        do {
+            guard let generatedImage = generatedImage else {
+                return
+            }
+            
+            let fileManager = FileManager()
+            let baseUrl = ImageGeneratorUtils.getSavedImagesDirectoryUrl()
+            
+            if !fileManager.fileExists(atPath: baseUrl.path()) {
+                try fileManager.createDirectory(at: baseUrl, withIntermediateDirectories: true, attributes: nil)
+            }
+            
+            let saved = ImageGeneratorUtils.getSavedImageFilenames()
+            print("[AIImageGeneratorManager] Existing saved images: \(saved)")
+            let oldestFile = saved.first
+            let latestFile = saved.last
+            
+            let newIndex = ImageGeneratorUtils.getSavedImageIndex(filename: latestFile) + 1
+            let newFilename = String(format: "image_%d.png", newIndex)
+            let newUrl = baseUrl.appendingPathComponent(newFilename)
+            
+            let data = generatedImage.pngData()
+            try data?.write(to: newUrl)
+            print("[AIImageGeneratorManager] Saved new file \(newUrl)")
+            
+            if let oldestFile = oldestFile {
+                if saved.count >= MAX_SAVED_IMAGES {
+                    let oldestUrl = baseUrl.appendingPathComponent(oldestFile)
+                    if fileManager.fileExists(atPath: oldestUrl.path()) {
+                        try fileManager.removeItem(at: oldestUrl)
+                        print("[AIImageGeneratorManager] Removed oldest file \(oldestUrl)")
+                    }
+                }
+            }
+            
+        } catch {
+            ImageGeneratorUtils.Logger.warning("[AIImageGeneratorManager] failed to save generated image (\(error))")
+        }
     }
 }

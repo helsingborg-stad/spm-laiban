@@ -11,6 +11,8 @@ import SwiftUI
 @available(iOS 17, *)
 struct ImageGeneratorAdminView: View {
     @ObservedObject var service: ImageGeneratorService
+    @State var savedImageCount: Int = 0
+    
     var group: some View {
         let serviceNotEnabled = [.Initializing, .Generating].contains(service.manager.status)
         return Group {
@@ -21,6 +23,14 @@ struct ImageGeneratorAdminView: View {
             NavigationLink(destination: SettingsAdminView(service: service)) {
                 Text("Bildgenerering")
             }.id("ImageGeneratorSettings")
+            
+            Button("Rensa sparade bilder (\(savedImageCount) st)") {
+                ImageGeneratorUtils.clearSavedImages()
+                savedImageCount = ImageGeneratorUtils.getSavedImageFilenames().count
+            }.disabled(savedImageCount == 0)
+        }
+        .onAppear {
+            savedImageCount = ImageGeneratorUtils.getSavedImageFilenames().count
         }
     }
 

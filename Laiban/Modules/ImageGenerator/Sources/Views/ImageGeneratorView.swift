@@ -194,35 +194,72 @@ struct HomeBugView: View {
     @Environment(\.fullscreenContainerProperties) var properties
     @EnvironmentObject var assistant:Assistant
     @Binding var selectedStep: Step
+    @State var savedImages: [UIImage] = []
     
     var textKey = "image_generator_intro"
     
     var body: some View {
-        Image("intro", bundle: .module)
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .cornerRadius(18.0)
-        
-        Text(LocalizedStringKey(textKey),bundle:LBBundle)
-            .font(properties.font, ofSize: .xl)
-            .multilineTextAlignment(.center)
-            .frame(
-                maxWidth: .infinity,
-                alignment: .center)
-            .padding(properties.spacing[.m])
-            .secondaryContainerBackground(borderColor: .purple)
-            .onAppear {
-                assistant.speak(textKey)
+        VStack {
+            if self.savedImages.count > 0 {
+                LBGridView(items: savedImages.count, columns: 4, verticalSpacing: 0, horizontalSpacing: 0, verticalAlignment: .top, horizontalAlignment: .center) { i in
+                    Image(uiImage: self.savedImages[i])
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                }
+                .frame(height: 600)
+                .cornerRadius(18)
+            } else {
+                Image("intro", bundle: .module)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(18.0)
             }
-        Spacer()
-            .frame(maxWidth: .infinity,
-                   alignment: .center)
-        Button(action: {
-            selectedStep = .Color
-        }, label: {
-            Text(LocalizedStringKey("image_generator_start"),bundle:LBBundle)
-        })
-        .buttonStyle(DefaultButton())
+            
+            Text(LocalizedStringKey(textKey),bundle:LBBundle)
+                .font(properties.font, ofSize: .xl)
+                .multilineTextAlignment(.center)
+                .frame(
+                    maxWidth: .infinity,
+                    alignment: .center)
+                .padding(properties.spacing[.m])
+                .secondaryContainerBackground(borderColor: .purple)
+                .onAppear {
+                    assistant.speak(textKey)
+                }
+            Spacer()
+                .frame(maxWidth: .infinity,
+                       alignment: .center)
+            Button(action: {
+                selectedStep = .Color
+            }, label: {
+                Text(LocalizedStringKey("image_generator_start"),bundle:LBBundle)
+            })
+            .buttonStyle(DefaultButton())
+        }
+        .onAppear {
+            if #available(iOS 16.0, *) {
+                do {
+                    var images: [UIImage] = []
+                    let fileManager = FileManager()
+                    let filenames = ImageGeneratorUtils.getSavedImageFilenames()
+                    print("files \(filenames)")
+                    
+                    for filename in filenames {
+                        guard filename.contains(".png") else {
+                            continue
+                        }
+                        
+                        let pathURL = ImageGeneratorUtils.getSavedImagesDirectoryUrl().appendingPathComponent(filename)
+                        let imageData = try Data(contentsOf: pathURL)
+                        images.append(UIImage(data: imageData)!)
+                    }
+                    
+                    self.savedImages = images
+                } catch {
+                    print("Failed to read saved images: \(error)")
+                }
+            }
+        }
     }
 }
 
