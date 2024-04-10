@@ -182,7 +182,7 @@ Click here to tell us what you thought of it!";
 "image_generator_save" = "Save this image to 'Photos'";
 "image_generator_setting_up" = "Setting up image generator";
 "image_generator_start" = "Click here to begin";
-"image_generator_step_bug" = "Choose a type of insect";
+"image_generator_step_bug" = "Choose a type of critter";
 "image_generator_step_color" = "Start by choosing a color";
 "image_generator_step_shape" = "Choose a geometric shape";
 "image_generator_warmup_failed" = "Oops, couldn't start up AI ☔️ (%@)";

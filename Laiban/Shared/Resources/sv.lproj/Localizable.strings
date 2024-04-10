@@ -182,7 +182,7 @@ Klicka här för att berätta vad du tyckte om den!";
 "image_generator_save" = "Spara bilden till 'Bilder'";
 "image_generator_setting_up" = "Sätter upp bildgenerering";
 "image_generator_start" = "Klicka här för att starta";
-"image_generator_step_bug" = "Välj en typ av insekt";
+"image_generator_step_bug" = "Välj en typ av småkryp";
 "image_generator_step_color" = "Börja med att välja färg";
 "image_generator_step_shape" = "Välj en geometrisk form";
 "image_generator_warmup_failed" = "Hoppsan, kunde inte starta AI ☔️ (%@)";
