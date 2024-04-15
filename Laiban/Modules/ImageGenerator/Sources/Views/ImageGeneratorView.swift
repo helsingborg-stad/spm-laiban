@@ -222,6 +222,9 @@ struct HomeBugView: View {
                     maxWidth: .infinity,
                     alignment: .center)
                 .padding(properties.spacing[.m])
+                .fixedSize(horizontal: false, vertical: true)
+                .lineLimit(nil)
+                .minimumScaleFactor(0.8)
                 .secondaryContainerBackground(borderColor: .purple)
                 .onAppear {
                     assistant.speak(textKey)
@@ -389,7 +392,7 @@ public struct ImageGeneratorView: View {
         VStack {
             HStack {
                 if [.Color, .Shape, .Bug, .Render].contains(selectedStep) {
-                    
+
                     if selectedStep.rawValue > Step.Color.rawValue {
                         Image(ImageGeneratorOptions.ColorImageMap[selectedColor]!, bundle: .module)
                             .resizable()
