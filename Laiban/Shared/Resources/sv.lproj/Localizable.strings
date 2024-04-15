@@ -175,7 +175,7 @@ Klicka här för att berätta vad du tyckte om den!";
 "image_generator_downloading" = "laddar ner AI model (%@)";
 "image_generator_failed" = "Hoppsan, något gick snett 😞";
 "image_generator_generating" = "%@ färdig 🚀";
-"image_generator_intro" = "Vill du skapa en bild på en insekt utifrån form och färg? Tryck på knappen för att tala om för en AI hur insekten ska se ut.";
+"image_generator_intro" = "Vill du skapa en bild på ett småkryp utifrån form och färg? Tryck på knappen för att tala om för en AI hur den ska se ut.";
 "image_generator_loading" = "Laddar in AI (%@)";
 "image_generator_ready" = "Redo för att skapa bilder 🖼️";
 "image_generator_restart" = "Börja om från början";
